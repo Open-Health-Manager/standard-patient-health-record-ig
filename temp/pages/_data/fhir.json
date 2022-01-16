@@ -14,8 +14,8 @@
   "toolingVersionFull": "5.0.0-snapshot1 (3)",
   "totalFiles": 3,
   "processedFiles": 10,
-  "genDate": "Thu, Jan 6, 2022 20:47-0600",
-  "genDay": "06/01/2022",
+  "genDate": "Sun, Jan 16, 2022 16:24-0600",
+  "genDay": "16/01/2022",
   "ig": {
     "id": "HelloImplementationGuide",
     "name": "HelloImplementationGuide",
@@ -24,7 +24,7 @@
     "status": "draft",
     "experimental": false,
     "publisher": "MITRE",
-    "gitstatus": "master",
+    "gitstatus": "main",
     "contact": [
       {
         "name": "MITRE",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2022-01-06T20:47:49-06:00",
+    "date": "2022-01-16T16:24:13-06:00",
     "fhirVersion": "4.0.1"
   }
 }
