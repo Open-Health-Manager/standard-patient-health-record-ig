@@ -1,0 +1,39 @@
+{
+  "path": "http://hl7.org/fhir/R4/",
+  "canonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide",
+  "igId": "HelloImplementationGuide",
+  "igName": "HelloImplementationGuide",
+  "packageId": "HelloImplementationGuide",
+  "igVer": "0.1.0",
+  "errorCount": 0,
+  "version": "4.0.1",
+  "revision": "a53ec6ee1b",
+  "versionFull": "4.0.1-a53ec6ee1b",
+  "toolingVersion": "5.0.0-snapshot1",
+  "toolingRevision": "3",
+  "toolingVersionFull": "5.0.0-snapshot1 (3)",
+  "totalFiles": 3,
+  "processedFiles": 10,
+  "genDate": "Thu, Jan 6, 2022 20:47-0600",
+  "genDay": "06/01/2022",
+  "ig": {
+    "id": "HelloImplementationGuide",
+    "name": "HelloImplementationGuide",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/HelloImplementationGuide",
+    "version": "0.1.0",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "MITRE",
+    "gitstatus": "master",
+    "contact": [
+      {
+        "name": "MITRE",
+        "telecom": [
+          "https://gitlab.mitre.org/awatson/hello-implementation-guide"
+        ]
+      }
+    ],
+    "date": "2022-01-06T20:47:49-06:00",
+    "fhirVersion": "4.0.1"
+  }
+}

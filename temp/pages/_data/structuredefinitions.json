@@ -1,0 +1,20 @@
+{
+  "MyPatient": {
+    "index": 0,
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient",
+    "name": "MyPatient",
+    "title": "MyPatient",
+    "path": "StructureDefinition-MyPatient.html",
+    "kind": "resource",
+    "type": "Patient",
+    "base": "http://hl7.org/fhir/StructureDefinition/Patient",
+    "basename": "Patient",
+    "basepath": "http://hl7.org/fhir/R4/patient.html",
+    "status": "active",
+    "date": "Thu Jan 06 20:47:49 CST 2022",
+    "abstract": false,
+    "derivation": "constraint",
+    "publisher": "MITRE",
+    "description": "An example profile of the Patient resource."
+  }
+}

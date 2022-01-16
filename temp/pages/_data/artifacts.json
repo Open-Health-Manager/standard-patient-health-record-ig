@@ -1,0 +1,1 @@
+{"StructureDefinition-MyPatient.html":{"type":"StructureDefinition"},"Patient-PatientExample.html":{"type":"Patient","example":true,"exampleOf":{"name":"MyPatient","url":"StructureDefinition-MyPatient.html"}}}
