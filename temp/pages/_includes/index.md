@@ -1,3 +1,26 @@
-# HelloImplementationGuide
+# Standard Personal Health Record  
 
-Kazaaam.  
+
+
+## Profiles  
+
+- AllergyIntolerance
+- CareTeam
+- CarePlan
+- Device
+- Communication
+- Condition
+- Consent
+- FamilyMemberHistory
+- Goal
+- Immunization
+- ImagingStudy
+- Medication
+- MedicationStatement
+- MedicationOrder
+- Patient
+- Observation
+- Practitioner 
+- Procedure
+- RelatedPerson
+- Sequence

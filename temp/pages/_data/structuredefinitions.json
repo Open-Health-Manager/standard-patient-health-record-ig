@@ -11,7 +11,7 @@
     "basename": "Patient",
     "basepath": "http://hl7.org/fhir/R4/patient.html",
     "status": "active",
-    "date": "Thu Jan 06 20:47:49 CST 2022",
+    "date": "Sun Jan 16 16:24:13 CST 2022",
     "abstract": false,
     "derivation": "constraint",
     "publisher": "MITRE",
