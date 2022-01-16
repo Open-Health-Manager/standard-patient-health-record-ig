@@ -1,0 +1,16 @@
+image: ruby:2.7
+
+workflow:
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+pages:
+  script:
+    - pwd
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+
