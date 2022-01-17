@@ -33,6 +33,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MyBodyStructure"
+        },
+        "name": "MyBodyStructure",
+        "description": "An example profile of the BodyStructure resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MyCarePlan"
         },
         "name": "MyCarePlan",
@@ -77,6 +85,14 @@
         },
         "name": "MyDevice",
         "description": "An example profile of the Device resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyDiagnosticReport"
+        },
+        "name": "MyDiagnosticReport",
+        "description": "An example profile of the DiagnosticReport resource.",
         "exampleBoolean": false
       },
       {
@@ -169,11 +185,51 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/MySpecimen"
+        },
+        "name": "MySpecimen",
+        "description": "An example profile of the Specimen resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Environmental"
+        },
+        "name": "Environmental",
+        "description": "An example profile of the Environmental resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HealthReceipt"
+        },
+        "name": "HealthReceipt",
+        "description": "An example profile of the HealthReceipt resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SocialMedia"
+        },
+        "name": "SocialMedia",
+        "description": "An example profile of the SocialMedia resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "AllergyIntolerance/AllergyIntoleranceExample"
         },
         "name": "AllergyIntoleranceExample",
         "description": "An example of an AllergyIntolerance.",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "DomainResource/BodyStructureExample"
+        },
+        "name": "BodyStructureExample",
+        "description": "An example of a BodyStructure .",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"
       },
       {
         "reference": {
@@ -222,6 +278,14 @@
         "name": "DeviceExample",
         "description": "An example of a Device .",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/DiagnosticReportExample"
+        },
+        "name": "DiagnosticReportExample",
+        "description": "An example of a DiagnosticReport .",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"
       },
       {
         "reference": {
@@ -310,6 +374,14 @@
         "name": "RelatedPersonExample",
         "description": "An example of a RelatedPerson .",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/SpecimenExample"
+        },
+        "name": "SpecimenExample",
+        "description": "An example of a Specimen .",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen"
       }
     ],
     "page": {
@@ -319,7 +391,22 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home",
+          "title": "Consent Engine Implementation Guide",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datastorage.html",
+          "title": "Data Storage",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "physiology.html",
+          "title": "Physiology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "syntheticdata.html",
+          "title": "Synthea",
           "generation": "markdown"
         }
       ]

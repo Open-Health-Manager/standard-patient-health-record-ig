@@ -13,7 +13,7 @@
    <version value="0.1.0"/>
    <name value="StandardPersonalHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-01-16T18:37:33-06:00"/>
+   <date value="2022-01-17T13:00:50-06:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -30,7 +30,10 @@
 
 
 
-
+      <grouping id="-str-logicalmodel">
+         <name value="Structures: Logical Models"/>
+         <description value="These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources."/>
+      </grouping>
 
 
       <grouping id="-str-profile">
@@ -66,6 +69,21 @@
          </reference>
          <name value="MyAllergyIntolerance"/>
          <description value="An example profile of the AllergyIntolerance resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyBodyStructure.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyBodyStructure"/>
+         </reference>
+         <name value="MyBodyStructure"/>
+         <description value="An example profile of the BodyStructure resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -156,6 +174,21 @@
          </reference>
          <name value="MyDevice"/>
          <description value="An example profile of the Device resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyDiagnosticReport.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyDiagnosticReport"/>
+         </reference>
+         <name value="MyDiagnosticReport"/>
+         <description value="An example profile of the DiagnosticReport resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -326,6 +359,66 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MySpecimen.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MySpecimen"/>
+         </reference>
+         <name value="MySpecimen"/>
+         <description value="An example profile of the Specimen resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-Environmental.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/Environmental"/>
+         </reference>
+         <name value="Environmental"/>
+         <description value="An example profile of the Environmental resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-HealthReceipt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/HealthReceipt"/>
+         </reference>
+         <name value="HealthReceipt"/>
+         <description value="An example profile of the HealthReceipt resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-SocialMedia.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/SocialMedia"/>
+         </reference>
+         <name value="SocialMedia"/>
+         <description value="An example profile of the SocialMedia resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="AllergyIntolerance"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -337,6 +430,21 @@
          <name value="AllergyIntoleranceExample"/>
          <description value="An example of an AllergyIntolerance."/>
          <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="DomainResource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="DomainResource-BodyStructureExample.html"/>
+         </extension>
+         <reference>
+            <reference value="DomainResource/BodyStructureExample"/>
+         </reference>
+         <name value="BodyStructureExample"/>
+         <description value="An example of a BodyStructure ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -427,6 +535,21 @@
          <name value="DeviceExample"/>
          <description value="An example of a Device ."/>
          <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="DiagnosticReport"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="DiagnosticReport-DiagnosticReportExample.html"/>
+         </extension>
+         <reference>
+            <reference value="DiagnosticReport/DiagnosticReportExample"/>
+         </reference>
+         <name value="DiagnosticReportExample"/>
+         <description value="An example of a DiagnosticReport ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -594,13 +717,43 @@
          <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"/>
          <groupingId value="-ex-example"/>
       </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Specimen"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Specimen-SpecimenExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Specimen/SpecimenExample"/>
+         </reference>
+         <name value="SpecimenExample"/>
+         <description value="An example of a Specimen ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen"/>
+         <groupingId value="-ex-example"/>
+      </resource>
       <page>
          <nameUrl value="toc.html"/>
          <title value="Table of Contents"/>
          <generation value="html"/>
          <page>
             <nameUrl value="index.html"/>
-            <title value="Home"/>
+            <title value="Consent Engine Implementation Guide"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="datastorage.html"/>
+            <title value="Data Storage"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="physiology.html"/>
+            <title value="Physiology"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="syntheticdata.html"/>
+            <title value="Synthea"/>
             <generation value="markdown"/>
          </page>
          <page>
@@ -608,8 +761,28 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
+               <nameUrl value="StructureDefinition-Environmental.html"/>
+               <title value="Environmental"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-HealthReceipt.html"/>
+               <title value="HealthReceipt"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-SocialMedia.html"/>
+               <title value="SocialMedia"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-MyAllergyIntolerance.html"/>
                <title value="MyAllergyIntolerance"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyBodyStructure.html"/>
+               <title value="MyBodyStructure"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -640,6 +813,11 @@
             <page>
                <nameUrl value="StructureDefinition-MyDevice.html"/>
                <title value="MyDevice"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyDiagnosticReport.html"/>
+               <title value="MyDiagnosticReport"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -698,8 +876,18 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-MySpecimen.html"/>
+               <title value="MySpecimen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="AllergyIntolerance-AllergyIntoleranceExample.html"/>
                <title value="AllergyIntoleranceExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="DomainResource-BodyStructureExample.html"/>
+               <title value="BodyStructureExample"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -730,6 +918,11 @@
             <page>
                <nameUrl value="Device-DeviceExample.html"/>
                <title value="DeviceExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="DiagnosticReport-DiagnosticReportExample.html"/>
+               <title value="DiagnosticReportExample"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -785,6 +978,11 @@
             <page>
                <nameUrl value="RelatedPerson-RelatedPersonExample.html"/>
                <title value="RelatedPersonExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Specimen-SpecimenExample.html"/>
+               <title value="SpecimenExample"/>
                <generation value="generated"/>
             </page>
          </page>

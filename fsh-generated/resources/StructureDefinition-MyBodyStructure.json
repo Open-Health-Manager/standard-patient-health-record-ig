@@ -1,0 +1,30 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MyBodyStructure",
+  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
+  "version": "0.1.0",
+  "name": "MyBodyStructure",
+  "status": "active",
+  "description": "An example profile of the BodyStructure resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DomainResource",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DomainResource",
+        "path": "DomainResource"
+      }
+    ]
+  }
+}

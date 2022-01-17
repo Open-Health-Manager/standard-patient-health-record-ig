@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/hello-implementation-guide/Immunization/ImmunizationExample> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ImmunizationExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization";
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ImmunizationExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyImmunization.html\">MyImmunization</a></p></div><p><b>status</b>: active</p><p><b>vaccineCode</b>: MMR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a>#MMR)</span></p><p><b>patient</b>: <a href=\"Patient/jane-doe\">Patient/jane-doe: Jane Doe</a></p><p><b>occurrence</b>: 2022-01-02</p></div>"
+  ];
+  fhir:Immunization.status [ fhir:value "active"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:Coding.code [ fhir:value "MMR" ];
+       fhir:Coding.display [ fhir:value "MMR" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/jane-doe>;
+     fhir:Reference.reference [ fhir:value "Patient/jane-doe" ];
+     fhir:Reference.display [ fhir:value "Jane Doe" ]
+  ];
+  fhir:Immunization.occurrenceString [ fhir:value "2022-01-02"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/hello-implementation-guide/Immunization/ImmunizationExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

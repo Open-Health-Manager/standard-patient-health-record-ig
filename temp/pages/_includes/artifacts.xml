@@ -5,10 +5,13 @@
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#2">Example: Example Instances</a>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -17,6 +20,41 @@
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+   <p>{% capture grouping_desc %}These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.{% endcapture %}
+    {{ grouping_desc | markdownify}}</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Environmental.html"
+                     title="StructureDefinition/Environmental">Environmental</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Environmental resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-HealthReceipt.html"
+                     title="StructureDefinition/HealthReceipt">HealthReceipt</a>
+               </td>
+               <td>{% capture desc %}An example profile of the HealthReceipt resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SocialMedia.html"
+                     title="StructureDefinition/SocialMedia">SocialMedia</a>
+               </td>
+               <td>{% capture desc %}An example profile of the SocialMedia resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>{% capture grouping_desc %}These define constraints on FHIR resources for systems conforming to this implementation guide{% endcapture %}
     {{ grouping_desc | markdownify}}</p>
@@ -30,6 +68,14 @@
                      title="StructureDefinition/MyAllergyIntolerance">MyAllergyIntolerance</a>
                </td>
                <td>{% capture desc %}An example profile of the AllergyIntolerance resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyBodyStructure.html"
+                     title="StructureDefinition/MyBodyStructure">MyBodyStructure</a>
+               </td>
+               <td>{% capture desc %}An example profile of the BodyStructure resource.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -78,6 +124,14 @@
                      title="StructureDefinition/MyDevice">MyDevice</a>
                </td>
                <td>{% capture desc %}An example profile of the Device resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyDiagnosticReport.html"
+                     title="StructureDefinition/MyDiagnosticReport">MyDiagnosticReport</a>
+               </td>
+               <td>{% capture desc %}An example profile of the DiagnosticReport resource.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -168,10 +222,18 @@
                <td>{% capture desc %}An example profile of the RelatedPerson resource.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MySpecimen.html"
+                     title="StructureDefinition/MySpecimen">MySpecimen</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Specimen resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
    <p>{% capture grouping_desc %}These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like{% endcapture %}
     {{ grouping_desc | markdownify}}</p>
@@ -185,6 +247,14 @@
                      title="AllergyIntolerance/AllergyIntoleranceExample">AllergyIntoleranceExample</a>
                </td>
                <td>{% capture desc %}An example of an AllergyIntolerance.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DomainResource-BodyStructureExample.html"
+                     title="DomainResource/BodyStructureExample">BodyStructureExample</a>
+               </td>
+               <td>{% capture desc %}An example of a BodyStructure .{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -229,6 +299,14 @@
                   <a href="Device-DeviceExample.html" title="Device/DeviceExample">DeviceExample</a>
                </td>
                <td>{% capture desc %}An example of a Device .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-DiagnosticReportExample.html"
+                     title="DiagnosticReport/DiagnosticReportExample">DiagnosticReportExample</a>
+               </td>
+               <td>{% capture desc %}An example of a DiagnosticReport .{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -315,6 +393,13 @@
                      title="RelatedPerson/RelatedPersonExample">RelatedPersonExample</a>
                </td>
                <td>{% capture desc %}An example of a RelatedPerson .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-SpecimenExample.html" title="Specimen/SpecimenExample">SpecimenExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Specimen .{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>

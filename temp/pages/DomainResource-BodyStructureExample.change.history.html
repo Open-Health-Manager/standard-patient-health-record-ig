@@ -1,0 +1,21 @@
+---
+---
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='DomainResource' id='BodyStructureExample' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{type}}: DomainResource/BodyStructureExample - Change History</h2>
+  <p>History of changes for BodyStructureExample {{type | downcase}}.</p>
+
+  {%include DomainResource-BodyStructureExample-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}
