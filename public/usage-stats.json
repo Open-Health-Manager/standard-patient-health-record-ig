@@ -94,6 +94,12 @@
         "title": "MyMedicationStatement"
       }
     ],
+    "MolecularSequence": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
+        "title": "MyMolecularSequence"
+      }
+    ],
     "Observation": [
       {
         "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation",

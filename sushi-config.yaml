@@ -9,7 +9,7 @@ name: StandardPersonalHealthRecordIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.2.0
+version: 0.2.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -75,19 +75,19 @@ publisher:
 menu:
   Home: index.html
   Data Storage: datastorage.html
-  Physiology Model: physiology.html
   Synthetic Data: syntheticdata.html
+  Physiology Model: physiology.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
-    title: Consent Engine Implementation Guide
+    title: Getting Started
   datastorage.md:
     title: Data Storage
-  physiology.md:
-    title: Physiology
   syntheticdata.md:
     title: Synthea
+  physiology.md:
+    title: Physiology
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

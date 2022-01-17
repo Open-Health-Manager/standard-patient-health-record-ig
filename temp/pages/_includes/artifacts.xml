@@ -45,10 +45,34 @@
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-NutrientIntake.html"
+                     title="StructureDefinition/NutrientIntake">NutrientIntake</a>
+               </td>
+               <td>{% capture desc %}An example profile of the NutrientIntake resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NutrientOuttake.html"
+                     title="StructureDefinition/NutrientOuttake">NutrientOuttake</a>
+               </td>
+               <td>{% capture desc %}An example profile of the NutrientOuttake resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-SocialMedia.html"
                      title="StructureDefinition/SocialMedia">SocialMedia</a>
                </td>
                <td>{% capture desc %}An example profile of the SocialMedia resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-VitalSigns.html"
+                     title="StructureDefinition/VitalSigns">VitalSigns</a>
+               </td>
+               <td>{% capture desc %}An example profile of the VitalSigns resource.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>
@@ -180,6 +204,14 @@
                      title="StructureDefinition/MyMedicationStatement">MyMedicationStatement</a>
                </td>
                <td>{% capture desc %}An example profile of the MedicationStatement resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyMolecularSequence.html"
+                     title="StructureDefinition/MyMolecularSequence">MyMolecularSequence</a>
+               </td>
+               <td>{% capture desc %}An example profile of the MolecularSequence resource.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>

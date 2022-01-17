@@ -9,7 +9,7 @@
   <version value="0.2.0"/>
   <name value="StandardPersonalHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-01-17T13:06:47-06:00"/>
+  <date value="2022-01-17T13:47:18-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -344,6 +344,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MyMolecularSequence"/>
+      </reference>
+      <name value="MyMolecularSequence"/>
+      <description value="An example profile of the MolecularSequence resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/MyObservation"/>
       </reference>
       <name value="MyObservation"/>
@@ -432,10 +443,43 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NutrientIntake"/>
+      </reference>
+      <name value="NutrientIntake"/>
+      <description value="An example profile of the NutrientIntake resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NutrientOuttake"/>
+      </reference>
+      <name value="NutrientOuttake"/>
+      <description value="An example profile of the NutrientOuttake resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SocialMedia"/>
       </reference>
       <name value="SocialMedia"/>
       <description value="An example profile of the SocialMedia resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VitalSigns"/>
+      </reference>
+      <name value="VitalSigns"/>
+      <description value="An example profile of the VitalSigns resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -675,7 +719,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Consent Engine Implementation Guide"/>
+        <title value="Getting Started"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -684,13 +728,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="physiology.html"/>
-        <title value="Physiology"/>
+        <nameUrl value="syntheticdata.html"/>
+        <title value="Synthea"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="syntheticdata.html"/>
-        <title value="Synthea"/>
+        <nameUrl value="physiology.html"/>
+        <title value="Physiology"/>
         <generation value="markdown"/>
       </page>
     </page>

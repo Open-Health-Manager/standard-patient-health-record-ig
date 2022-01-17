@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MyMolecularSequence",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
+  "version": "0.2.0",
+  "name": "MyMolecularSequence",
+  "status": "active",
+  "description": "An example profile of the MolecularSequence resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MolecularSequence",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MolecularSequence",
+        "path": "MolecularSequence"
+      }
+    ]
+  }
+}

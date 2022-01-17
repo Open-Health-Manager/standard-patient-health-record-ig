@@ -1,10 +1,10 @@
 ﻿StandardPersonalHealthRecordIG : Validation Results
 =========================================
 
-err = 29, warn = 1, info = 0
+err = 32, warn = 2, info = 0
 IG Publisher Version: 1.1.93 Out of date - current version is ?pub-ver-1?
-Generated Mon Jan 17 13:07:33 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.0 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
- Build Errors : 15 / 0 / 0
+Generated Mon Jan 17 13:48:09 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.0 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
+ Build Errors : 18 / 0 / 0
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample : 2 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careplan-CarePlanExample : 1 / 0 / 1
@@ -44,13 +44,17 @@ Generated Mon Jan 17 13:07:33 CST 2022. FHIR version 4.0.1 for StandardPersonalH
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyImmunization : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedication : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedicationStatement : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMolecularSequence : 0 / 1 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyObservation : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPatient : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPractitioner : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyProcedure : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyRelatedPerson : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MySpecimen : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientIntake : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientOuttake : 1 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-SocialMedia : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-VitalSigns : 1 / 0 / 1
 </table>
 == n/a ==
 ERROR: /Users/awatson/Code/gitlab/sphr/output/AllergyIntolerance-AllergyIntoleranceExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 462: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
@@ -68,6 +72,9 @@ ERROR: /Users/awatson/Code/gitlab/sphr/output/RelatedPerson-RelatedPersonExample
 ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link '' for "HealthReceipt" cannot be resolved
 ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 212, column 8: The link '' for "SocialMedia" cannot be resolved
 ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 213, column 8: The link '' for "Environmental" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 214, column 8: The link '' for "VitalSigns" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 215, column 8: The link '' for "NutrientIntake" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 216, column 8: The link '' for "NutrientOuttake" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG.json ==
 == fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceExample.json ==
 ERROR: AllergyIntolerance/AllergyIntoleranceExample: AllergyIntolerance: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Rule 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Failed
@@ -136,11 +143,19 @@ ERROR: StructureDefinition/MyConsent: StructureDefinition.snapshot.element[9].ex
 == fsh-generated/resources/StructureDefinition-MyImmunization.json ==
 == fsh-generated/resources/StructureDefinition-MyMedication.json ==
 == fsh-generated/resources/StructureDefinition-MyMedicationStatement.json ==
+== fsh-generated/resources/StructureDefinition-MyMolecularSequence.json ==
+WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MyObservation.json ==
 == fsh-generated/resources/StructureDefinition-MyPatient.json ==
 == fsh-generated/resources/StructureDefinition-MyPractitioner.json ==
 == fsh-generated/resources/StructureDefinition-MyProcedure.json ==
 == fsh-generated/resources/StructureDefinition-MyRelatedPerson.json ==
 == fsh-generated/resources/StructureDefinition-MySpecimen.json ==
+== fsh-generated/resources/StructureDefinition-NutrientIntake.json ==
+ERROR: StructureDefinition/NutrientIntake: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-NutrientOuttake.json ==
+ERROR: StructureDefinition/NutrientOuttake: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
 == fsh-generated/resources/StructureDefinition-SocialMedia.json ==
 ERROR: StructureDefinition/SocialMedia: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-VitalSigns.json ==
+ERROR: StructureDefinition/VitalSigns: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)

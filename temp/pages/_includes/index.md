@@ -22,10 +22,10 @@ Proin non diam eu est tincidunt accumsan ac vitae sem. Lorem ipsum dolor sit ame
 - [Media](https://www.hl7.org/fhir/media.html)
 - [Medication](https://www.hl7.org/fhir/medication.html)
 - [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
+- [MolecularSequence](https://www.hl7.org/fhir/molecularsequence.html)
 - [Patient](https://www.hl7.org/fhir/patient.html)
 - [Observation](https://www.hl7.org/fhir/observation.html)
 - [Procedure](https://www.hl7.org/fhir/procedure.html)
-- [Sequence](https://www.hl7.org/fhir/sequence.html)
 - [Specimen](https://www.hl7.org/fhir/specimen.html)
 
 ### Social
@@ -60,4 +60,6 @@ Suspendisse vel eleifend nunc. Integer nec dolor gravida, pharetra metus nec, ti
 - [HealthReceipt]()
 - [SocialMedia]()
 - [Environmental]()
-
+- [VitalSigns]()
+- [NutrientIntake]()
+- [NutrientOuttake]()

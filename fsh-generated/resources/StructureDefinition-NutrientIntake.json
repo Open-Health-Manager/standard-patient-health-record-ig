@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NutrientIntake",
+  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
+  "version": "0.2.0",
+  "name": "NutrientIntake",
+  "status": "active",
+  "description": "An example profile of the NutrientIntake resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "NutrientIntake",
+        "path": "NutrientIntake",
+        "definition": "An example profile of the NutrientIntake resource."
+      }
+    ]
+  }
+}

@@ -9,7 +9,7 @@
   "version": "0.2.0",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-01-17T13:06:47-06:00",
+  "date": "2022-01-17T13:47:18-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -496,6 +496,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/MyMolecularSequence"
+        },
+        "name": "MyMolecularSequence",
+        "description": "An example profile of the MolecularSequence resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/MyObservation"
         },
         "name": "MyObservation",
@@ -608,10 +622,52 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/NutrientIntake"
+        },
+        "name": "NutrientIntake",
+        "description": "An example profile of the NutrientIntake resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NutrientOuttake"
+        },
+        "name": "NutrientOuttake",
+        "description": "An example profile of the NutrientOuttake resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/SocialMedia"
         },
         "name": "SocialMedia",
         "description": "An example profile of the SocialMedia resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VitalSigns"
+        },
+        "name": "VitalSigns",
+        "description": "An example profile of the VitalSigns resource.",
         "exampleBoolean": false
       },
       {
@@ -916,7 +972,7 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Consent Engine Implementation Guide",
+          "title": "Getting Started",
           "generation": "markdown"
         },
         {
@@ -925,13 +981,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "physiology.html",
-          "title": "Physiology",
+          "nameUrl": "syntheticdata.html",
+          "title": "Synthea",
           "generation": "markdown"
         },
         {
-          "nameUrl": "syntheticdata.html",
-          "title": "Synthea",
+          "nameUrl": "physiology.html",
+          "title": "Physiology",
           "generation": "markdown"
         }
       ]
