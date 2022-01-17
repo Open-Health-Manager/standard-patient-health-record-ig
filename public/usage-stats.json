@@ -1,6 +1,6 @@
 {
   "package": "StandardPersonalHealthRecordIG",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
@@ -8,6 +8,12 @@
       {
         "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
         "title": "MyAllergyIntolerance"
+      }
+    ],
+    "DomainResource": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
+        "title": "MyBodyStructure"
       }
     ],
     "CarePlan": [
@@ -44,6 +50,12 @@
       {
         "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
         "title": "MyDevice"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport",
+        "title": "MyDiagnosticReport"
       }
     ],
     "FamilyMemberHistory": [
@@ -110,6 +122,12 @@
       {
         "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson",
         "title": "MyRelatedPerson"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen",
+        "title": "MySpecimen"
       }
     ]
   },

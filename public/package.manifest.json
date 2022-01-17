@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20220116183716",
+  "date": "20220117130629",
   "name": "StandardPersonalHealthRecordIG"
 }

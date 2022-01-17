@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-01-16T18:37:33-06:00",
+  "date": "2022-01-17T13:06:47-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -300,6 +300,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/MyBodyStructure"
+        },
+        "name": "MyBodyStructure",
+        "description": "An example profile of the BodyStructure resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/MyCarePlan"
         },
         "name": "MyCarePlan",
@@ -374,6 +388,20 @@
         },
         "name": "MyDevice",
         "description": "An example profile of the Device resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MyDiagnosticReport"
+        },
+        "name": "MyDiagnosticReport",
+        "description": "An example profile of the DiagnosticReport resource.",
         "exampleBoolean": false
       },
       {
@@ -534,6 +562,62 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MySpecimen"
+        },
+        "name": "MySpecimen",
+        "description": "An example profile of the Specimen resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Environmental"
+        },
+        "name": "Environmental",
+        "description": "An example profile of the Environmental resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/HealthReceipt"
+        },
+        "name": "HealthReceipt",
+        "description": "An example profile of the HealthReceipt resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/SocialMedia"
+        },
+        "name": "SocialMedia",
+        "description": "An example profile of the SocialMedia resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "AllergyIntolerance"
           }
         ],
@@ -543,6 +627,20 @@
         "name": "AllergyIntoleranceExample",
         "description": "An example of an AllergyIntolerance.",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DomainResource"
+          }
+        ],
+        "reference": {
+          "reference": "DomainResource/BodyStructureExample"
+        },
+        "name": "BodyStructureExample",
+        "description": "An example of a BodyStructure .",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"
       },
       {
         "extension": [
@@ -627,6 +725,20 @@
         "name": "DeviceExample",
         "description": "An example of a Device .",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/DiagnosticReportExample"
+        },
+        "name": "DiagnosticReportExample",
+        "description": "An example of a DiagnosticReport .",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"
       },
       {
         "extension": [
@@ -781,6 +893,20 @@
         "name": "RelatedPersonExample",
         "description": "An example of a RelatedPerson .",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/SpecimenExample"
+        },
+        "name": "SpecimenExample",
+        "description": "An example of a Specimen .",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen"
       }
     ],
     "page": {
@@ -790,7 +916,22 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home",
+          "title": "Consent Engine Implementation Guide",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datastorage.html",
+          "title": "Data Storage",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "physiology.html",
+          "title": "Physiology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "syntheticdata.html",
+          "title": "Synthea",
           "generation": "markdown"
         }
       ]

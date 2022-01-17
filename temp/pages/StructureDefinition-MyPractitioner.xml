@@ -13,10 +13,10 @@
     <valueCode value="individual"/>
   </extension>
   <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="MyPractitioner"/>
   <status value="active"/>
-  <date value="2022-01-17T13:00:50-06:00"/>
+  <date value="2022-01-17T13:06:47-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
