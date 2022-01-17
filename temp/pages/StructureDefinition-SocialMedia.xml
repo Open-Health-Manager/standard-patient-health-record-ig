@@ -7,10 +7,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="SocialMedia"/>
   <status value="active"/>
-  <date value="2022-01-17T13:47:18-06:00"/>
+  <date value="2022-01-17T14:13:39-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "StandardPersonalHealthRecordIG",
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
   "publisher": "MITRE",

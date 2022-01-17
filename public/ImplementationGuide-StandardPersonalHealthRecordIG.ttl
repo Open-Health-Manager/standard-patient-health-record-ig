@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
   fhir:ImplementationGuide.name [ fhir:value "StandardPersonalHealthRecordIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-17T13:47:18-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-17T14:13:39-06:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

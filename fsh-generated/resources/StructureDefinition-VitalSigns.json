@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "VitalSigns",
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/VitalSigns",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "VitalSigns",
   "status": "active",
   "description": "An example profile of the VitalSigns resource.",

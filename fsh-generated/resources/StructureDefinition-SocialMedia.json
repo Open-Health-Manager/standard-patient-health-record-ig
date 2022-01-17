@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "SocialMedia",
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "SocialMedia",
   "status": "active",
   "description": "An example profile of the SocialMedia resource.",
