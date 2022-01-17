@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="HelloImplementationGuide"/>
+   <id value="StandardPersonalHealthRecordIG"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>HelloImplementationGuide</h2>
+         <h2>StandardPersonalHealthRecordIG</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/HelloImplementationGuide</pre>
+         <pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre>
       </div>
    </text>
-   <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/HelloImplementationGuide"/>
+   <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG"/>
    <version value="0.1.0"/>
-   <name value="HelloImplementationGuide"/>
+   <name value="StandardPersonalHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-01-16T16:24:13-06:00"/>
+   <date value="2022-01-16T18:37:33-06:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
       <telecom>
          <system value="url"/>
-         <value value="https://gitlab.mitre.org/awatson/hello-implementation-guide"/>
+         <value value="https://gitlab.mitre.org/awatson/sphr"/>
       </telecom>
    </contact>
-   <packageId value="HelloImplementationGuide"/>
+   <packageId value="StandardPersonalHealthRecordIG"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <definition>
@@ -59,6 +59,216 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyAllergyIntolerance.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyAllergyIntolerance"/>
+         </reference>
+         <name value="MyAllergyIntolerance"/>
+         <description value="An example profile of the AllergyIntolerance resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyCarePlan.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyCarePlan"/>
+         </reference>
+         <name value="MyCarePlan"/>
+         <description value="An example profile of the CarePlan resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyCareTeam.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyCareTeam"/>
+         </reference>
+         <name value="MyCareTeam"/>
+         <description value="An example profile of the CareTeam resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyCommunication.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyCommunication"/>
+         </reference>
+         <name value="MyCommunication"/>
+         <description value="An example profile of the Communication resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyCondition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyCondition"/>
+         </reference>
+         <name value="MyCondition"/>
+         <description value="An example profile of the Condition resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyConsent.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyConsent"/>
+         </reference>
+         <name value="MyConsent"/>
+         <description value="An example profile of the Consent resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyDevice.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyDevice"/>
+         </reference>
+         <name value="MyDevice"/>
+         <description value="An example profile of the Device resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyFamilyMemberHistory.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyFamilyMemberHistory"/>
+         </reference>
+         <name value="MyFamilyMemberHistory"/>
+         <description value="An example profile of the FamilyMemberHistory resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyGoal.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyGoal"/>
+         </reference>
+         <name value="MyGoal"/>
+         <description value="An example profile of the Goal resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyImagingStudy.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyImagingStudy"/>
+         </reference>
+         <name value="MyImagingStudy"/>
+         <description value="An example profile of the ImagingStudy resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyImmunization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyImmunization"/>
+         </reference>
+         <name value="MyImmunization"/>
+         <description value="An example profile of the Immunization resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyMedication.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyMedication"/>
+         </reference>
+         <name value="MyMedication"/>
+         <description value="An example profile of the Medication resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyMedicationStatement.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyMedicationStatement"/>
+         </reference>
+         <name value="MyMedicationStatement"/>
+         <description value="An example profile of the MedicationStatement resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyObservation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyObservation"/>
+         </reference>
+         <name value="MyObservation"/>
+         <description value="An example profile of the Observation resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-MyPatient.html"/>
          </extension>
          <reference>
@@ -71,6 +281,261 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyPractitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyPractitioner"/>
+         </reference>
+         <name value="MyPractitioner"/>
+         <description value="An example profile of the Practitioner resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyProcedure.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyProcedure"/>
+         </reference>
+         <name value="MyProcedure"/>
+         <description value="An example profile of the Procedure resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MyRelatedPerson.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MyRelatedPerson"/>
+         </reference>
+         <name value="MyRelatedPerson"/>
+         <description value="An example profile of the RelatedPerson resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="AllergyIntolerance"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="AllergyIntolerance-AllergyIntoleranceExample.html"/>
+         </extension>
+         <reference>
+            <reference value="AllergyIntolerance/AllergyIntoleranceExample"/>
+         </reference>
+         <name value="AllergyIntoleranceExample"/>
+         <description value="An example of an AllergyIntolerance."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CarePlan"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CarePlan-CarePlanExample.html"/>
+         </extension>
+         <reference>
+            <reference value="CarePlan/CarePlanExample"/>
+         </reference>
+         <name value="CarePlanExample"/>
+         <description value="An example of a CarePlan ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CareTeam"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CareTeam-CareTeamExample.html"/>
+         </extension>
+         <reference>
+            <reference value="CareTeam/CareTeamExample"/>
+         </reference>
+         <name value="CareTeamExample"/>
+         <description value="An example of a CareTeam ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Communication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Communication-CommunicationExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Communication/CommunicationExample"/>
+         </reference>
+         <name value="CommunicationExample"/>
+         <description value="An example of a Communication ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Condition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Condition-ConditionExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Condition/ConditionExample"/>
+         </reference>
+         <name value="ConditionExample"/>
+         <description value="An example of a Condition ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Consent"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Consent-ConsentExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Consent/ConsentExample"/>
+         </reference>
+         <name value="ConsentExample"/>
+         <description value="An example of a Consent ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Device"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Device-DeviceExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Device/DeviceExample"/>
+         </reference>
+         <name value="DeviceExample"/>
+         <description value="An example of a Device ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="FamilyMemberHistory"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="FamilyMemberHistory-FamilyMemberHistoryExample.html"/>
+         </extension>
+         <reference>
+            <reference value="FamilyMemberHistory/FamilyMemberHistoryExample"/>
+         </reference>
+         <name value="FamilyMemberHistoryExample"/>
+         <description value="An example of a FamilyMemberHistory ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Goal"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Goal-GoalExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Goal/GoalExample"/>
+         </reference>
+         <name value="GoalExample"/>
+         <description value="An example of a patient ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ImagingStudy"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ImagingStudy-ImagingStudyExample.html"/>
+         </extension>
+         <reference>
+            <reference value="ImagingStudy/ImagingStudyExample"/>
+         </reference>
+         <name value="ImagingStudyExample"/>
+         <description value="An example of a ImagingStudy ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Immunization"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Immunization-ImmunizationExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Immunization/ImmunizationExample"/>
+         </reference>
+         <name value="ImmunizationExample"/>
+         <description value="An example of a Immunization ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Medication"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Medication-MedicationExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Medication/MedicationExample"/>
+         </reference>
+         <name value="MedicationExample"/>
+         <description value="An example of a Medication ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MedicationStatement"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MedicationStatement-MedicationStatementExample.html"/>
+         </extension>
+         <reference>
+            <reference value="MedicationStatement/MedicationStatementExample"/>
+         </reference>
+         <name value="MedicationStatementExample"/>
+         <description value="An example of a MedicationStatement ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ObservationExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ObservationExample"/>
+         </reference>
+         <name value="ObservationExample"/>
+         <description value="An example of a Observation ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -80,8 +545,53 @@
             <reference value="Patient/PatientExample"/>
          </reference>
          <name value="PatientExample"/>
-         <description value="An example of a patient with a license to krill."/>
+         <description value="An example of a patient ."/>
          <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Practitioner"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Practitioner-PractitionerExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Practitioner/PractitionerExample"/>
+         </reference>
+         <name value="PractitionerExample"/>
+         <description value="An example of a Practitioner ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Procedure"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Procedure-ProcedureExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Procedure/ProcedureExample"/>
+         </reference>
+         <name value="ProcedureExample"/>
+         <description value="An example of a Procedure ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="RelatedPerson"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="RelatedPerson-RelatedPersonExample.html"/>
+         </extension>
+         <reference>
+            <reference value="RelatedPerson/RelatedPersonExample"/>
+         </reference>
+         <name value="RelatedPersonExample"/>
+         <description value="An example of a RelatedPerson ."/>
+         <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -98,13 +608,183 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
+               <nameUrl value="StructureDefinition-MyAllergyIntolerance.html"/>
+               <title value="MyAllergyIntolerance"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyCarePlan.html"/>
+               <title value="MyCarePlan"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyCareTeam.html"/>
+               <title value="MyCareTeam"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyCommunication.html"/>
+               <title value="MyCommunication"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyCondition.html"/>
+               <title value="MyCondition"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyConsent.html"/>
+               <title value="MyConsent"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyDevice.html"/>
+               <title value="MyDevice"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyFamilyMemberHistory.html"/>
+               <title value="MyFamilyMemberHistory"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyGoal.html"/>
+               <title value="MyGoal"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyImagingStudy.html"/>
+               <title value="MyImagingStudy"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyImmunization.html"/>
+               <title value="MyImmunization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyMedication.html"/>
+               <title value="MyMedication"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyMedicationStatement.html"/>
+               <title value="MyMedicationStatement"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyObservation.html"/>
+               <title value="MyObservation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-MyPatient.html"/>
                <title value="MyPatient"/>
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-MyPractitioner.html"/>
+               <title value="MyPractitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyProcedure.html"/>
+               <title value="MyProcedure"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MyRelatedPerson.html"/>
+               <title value="MyRelatedPerson"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="AllergyIntolerance-AllergyIntoleranceExample.html"/>
+               <title value="AllergyIntoleranceExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CarePlan-CarePlanExample.html"/>
+               <title value="CarePlanExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CareTeam-CareTeamExample.html"/>
+               <title value="CareTeamExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Communication-CommunicationExample.html"/>
+               <title value="CommunicationExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Condition-ConditionExample.html"/>
+               <title value="ConditionExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Consent-ConsentExample.html"/>
+               <title value="ConsentExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Device-DeviceExample.html"/>
+               <title value="DeviceExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="FamilyMemberHistory-FamilyMemberHistoryExample.html"/>
+               <title value="FamilyMemberHistoryExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Goal-GoalExample.html"/>
+               <title value="GoalExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ImagingStudy-ImagingStudyExample.html"/>
+               <title value="ImagingStudyExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Immunization-ImmunizationExample.html"/>
+               <title value="ImmunizationExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Medication-MedicationExample.html"/>
+               <title value="MedicationExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="MedicationStatement-MedicationStatementExample.html"/>
+               <title value="MedicationStatementExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ObservationExample.html"/>
+               <title value="ObservationExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-PatientExample.html"/>
                <title value="PatientExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Practitioner-PractitionerExample.html"/>
+               <title value="PractitionerExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Procedure-ProcedureExample.html"/>
+               <title value="ProcedureExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="RelatedPerson-RelatedPersonExample.html"/>
+               <title value="RelatedPersonExample"/>
                <generation value="generated"/>
             </page>
          </page>

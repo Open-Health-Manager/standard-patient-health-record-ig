@@ -1,0 +1,18 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "MedicationStatementExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement"
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  },
+  "medicationReference": {
+    "display": "Acetaminophen",
+    "reference": "Medication/acetaminophen"
+  }
+}

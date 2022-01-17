@@ -1,0 +1,13 @@
+{
+  "resourceType": "Condition",
+  "id": "ConditionExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition"
+    ]
+  },
+  "subject": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  }
+}

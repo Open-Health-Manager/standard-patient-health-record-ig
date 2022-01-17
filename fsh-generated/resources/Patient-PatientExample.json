@@ -5,13 +5,5 @@
     "profile": [
       "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient"
     ]
-  },
-  "name": [
-    {
-      "given": [
-        "James"
-      ],
-      "family": "Pond"
-    }
-  ]
+  }
 }

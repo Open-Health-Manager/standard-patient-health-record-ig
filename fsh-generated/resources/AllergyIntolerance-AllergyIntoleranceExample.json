@@ -1,0 +1,13 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "AllergyIntoleranceExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"
+    ]
+  },
+  "patient": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  }
+}

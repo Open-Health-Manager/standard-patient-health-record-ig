@@ -1,0 +1,30 @@
+{
+  "resourceType": "Consent",
+  "id": "ConsentExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent"
+    ]
+  },
+  "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "code": "patient-privacy",
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "display": "Patient Privacy"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "acd",
+          "system": "https://www.hl7.org/fhir/valueset-consent-category.html",
+          "display": "Advanced Directive"
+        }
+      ]
+    }
+  ]
+}

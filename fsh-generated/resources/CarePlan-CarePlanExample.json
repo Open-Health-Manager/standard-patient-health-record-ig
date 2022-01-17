@@ -1,0 +1,15 @@
+{
+  "resourceType": "CarePlan",
+  "id": "CarePlanExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan"
+    ]
+  },
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  }
+}

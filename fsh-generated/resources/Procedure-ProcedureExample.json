@@ -1,0 +1,14 @@
+{
+  "resourceType": "Procedure",
+  "id": "ProcedureExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure"
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  }
+}

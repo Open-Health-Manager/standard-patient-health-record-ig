@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "ObservationExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation"
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "10200-4",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "display": "Physical findings of Heart Narrative"
+      }
+    ]
+  }
+}
