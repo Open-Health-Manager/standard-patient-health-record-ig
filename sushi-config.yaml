@@ -74,7 +74,21 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Data Storage: datastorage.html
+  Physiology Model: physiology.html
+  Synthetic Data: syntheticdata.html
   Artifacts: artifacts.html
+
+pages:
+  index.md:
+    title: Consent Engine Implementation Guide
+  datastorage.md:
+    title: Data Storage
+  physiology.md:
+    title: Physiology
+  syntheticdata.md:
+    title: Synthea
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

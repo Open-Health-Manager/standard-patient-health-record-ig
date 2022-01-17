@@ -7,11 +7,32 @@
     "name": "StandardPersonalHealthRecordIG"
   },
   {
+    "id": "Environmental",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/Environmental",
+    "version": "0.1.0",
+    "name": "Environmental"
+  },
+  {
+    "id": "HealthReceipt",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/HealthReceipt",
+    "version": "0.1.0",
+    "name": "HealthReceipt"
+  },
+  {
     "id": "MyAllergyIntolerance",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
     "version": "0.1.0",
     "name": "MyAllergyIntolerance"
+  },
+  {
+    "id": "MyBodyStructure",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
+    "version": "0.1.0",
+    "name": "MyBodyStructure"
   },
   {
     "id": "MyCarePlan",
@@ -54,6 +75,13 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
     "version": "0.1.0",
     "name": "MyDevice"
+  },
+  {
+    "id": "MyDiagnosticReport",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport",
+    "version": "0.1.0",
+    "name": "MyDiagnosticReport"
   },
   {
     "id": "MyFamilyMemberHistory",
@@ -131,5 +159,19 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson",
     "version": "0.1.0",
     "name": "MyRelatedPerson"
+  },
+  {
+    "id": "MySpecimen",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen",
+    "version": "0.1.0",
+    "name": "MySpecimen"
+  },
+  {
+    "id": "SocialMedia",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia",
+    "version": "0.1.0",
+    "name": "SocialMedia"
   }
 ]

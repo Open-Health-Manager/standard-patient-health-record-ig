@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>STANDARDPERSONALHEALTHRECORDIG\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.1.0 - ci-build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="datastorage.html">Data Storage</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Model</a>
+  </li>
+  <li>
+    <a href="syntheticdata.html">Synthetic Data</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">StandardPersonalHealthRecordIG - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+   <p>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Environmental.html"
+                     title="StructureDefinition/Environmental">Environmental</a>
+               </td>
+               <td>
+<p>An example profile of the Environmental resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-HealthReceipt.html"
+                     title="StructureDefinition/HealthReceipt">HealthReceipt</a>
+               </td>
+               <td>
+<p>An example profile of the HealthReceipt resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SocialMedia.html"
+                     title="StructureDefinition/SocialMedia">SocialMedia</a>
+               </td>
+               <td>
+<p>An example profile of the SocialMedia resource.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyAllergyIntolerance.html"
+                     title="StructureDefinition/MyAllergyIntolerance">MyAllergyIntolerance</a>
+               </td>
+               <td>
+<p>An example profile of the AllergyIntolerance resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyBodyStructure.html"
+                     title="StructureDefinition/MyBodyStructure">MyBodyStructure</a>
+               </td>
+               <td>
+<p>An example profile of the BodyStructure resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCarePlan.html"
+                     title="StructureDefinition/MyCarePlan">MyCarePlan</a>
+               </td>
+               <td>
+<p>An example profile of the CarePlan resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCareTeam.html"
+                     title="StructureDefinition/MyCareTeam">MyCareTeam</a>
+               </td>
+               <td>
+<p>An example profile of the CareTeam resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCommunication.html"
+                     title="StructureDefinition/MyCommunication">MyCommunication</a>
+               </td>
+               <td>
+<p>An example profile of the Communication resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCondition.html"
+                     title="StructureDefinition/MyCondition">MyCondition</a>
+               </td>
+               <td>
+<p>An example profile of the Condition resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyConsent.html"
+                     title="StructureDefinition/MyConsent">MyConsent</a>
+               </td>
+               <td>
+<p>An example profile of the Consent resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyDevice.html"
+                     title="StructureDefinition/MyDevice">MyDevice</a>
+               </td>
+               <td>
+<p>An example profile of the Device resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyDiagnosticReport.html"
+                     title="StructureDefinition/MyDiagnosticReport">MyDiagnosticReport</a>
+               </td>
+               <td>
+<p>An example profile of the DiagnosticReport resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyFamilyMemberHistory.html"
+                     title="StructureDefinition/MyFamilyMemberHistory">MyFamilyMemberHistory</a>
+               </td>
+               <td>
+<p>An example profile of the FamilyMemberHistory resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyGoal.html"
+                     title="StructureDefinition/MyGoal">MyGoal</a>
+               </td>
+               <td>
+<p>An example profile of the Goal resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyImagingStudy.html"
+                     title="StructureDefinition/MyImagingStudy">MyImagingStudy</a>
+               </td>
+               <td>
+<p>An example profile of the ImagingStudy resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyImmunization.html"
+                     title="StructureDefinition/MyImmunization">MyImmunization</a>
+               </td>
+               <td>
+<p>An example profile of the Immunization resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyMedication.html"
+                     title="StructureDefinition/MyMedication">MyMedication</a>
+               </td>
+               <td>
+<p>An example profile of the Medication resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyMedicationStatement.html"
+                     title="StructureDefinition/MyMedicationStatement">MyMedicationStatement</a>
+               </td>
+               <td>
+<p>An example profile of the MedicationStatement resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyObservation.html"
+                     title="StructureDefinition/MyObservation">MyObservation</a>
+               </td>
+               <td>
+<p>An example profile of the Observation resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyPatient.html"
+                     title="StructureDefinition/MyPatient">MyPatient</a>
+               </td>
+               <td>
+<p>An example profile of the Patient resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyPractitioner.html"
+                     title="StructureDefinition/MyPractitioner">MyPractitioner</a>
+               </td>
+               <td>
+<p>An example profile of the Practitioner resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyProcedure.html"
+                     title="StructureDefinition/MyProcedure">MyProcedure</a>
+               </td>
+               <td>
+<p>An example profile of the Procedure resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyRelatedPerson.html"
+                     title="StructureDefinition/MyRelatedPerson">MyRelatedPerson</a>
+               </td>
+               <td>
+<p>An example profile of the RelatedPerson resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MySpecimen.html"
+                     title="StructureDefinition/MySpecimen">MySpecimen</a>
+               </td>
+               <td>
+<p>An example profile of the Specimen resource.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-AllergyIntoleranceExample.html"
+                     title="AllergyIntolerance/AllergyIntoleranceExample">AllergyIntoleranceExample</a>
+               </td>
+               <td>
+<p>An example of an AllergyIntolerance.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DomainResource-BodyStructureExample.html"
+                     title="DomainResource/BodyStructureExample">BodyStructureExample</a>
+               </td>
+               <td>
+<p>An example of a BodyStructure .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-CarePlanExample.html" title="CarePlan/CarePlanExample">CarePlanExample</a>
+               </td>
+               <td>
+<p>An example of a CarePlan .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CareTeam-CareTeamExample.html" title="CareTeam/CareTeamExample">CareTeamExample</a>
+               </td>
+               <td>
+<p>An example of a CareTeam .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Communication-CommunicationExample.html"
+                     title="Communication/CommunicationExample">CommunicationExample</a>
+               </td>
+               <td>
+<p>An example of a Communication .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-ConditionExample.html"
+                     title="Condition/ConditionExample">ConditionExample</a>
+               </td>
+               <td>
+<p>An example of a Condition .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ConsentExample.html" title="Consent/ConsentExample">ConsentExample</a>
+               </td>
+               <td>
+<p>An example of a Consent .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-DeviceExample.html" title="Device/DeviceExample">DeviceExample</a>
+               </td>
+               <td>
+<p>An example of a Device .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-DiagnosticReportExample.html"
+                     title="DiagnosticReport/DiagnosticReportExample">DiagnosticReportExample</a>
+               </td>
+               <td>
+<p>An example of a DiagnosticReport .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-FamilyMemberHistoryExample.html"
+                     title="FamilyMemberHistory/FamilyMemberHistoryExample">FamilyMemberHistoryExample</a>
+               </td>
+               <td>
+<p>An example of a FamilyMemberHistory .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Goal-GoalExample.html" title="Goal/GoalExample">GoalExample</a>
+               </td>
+               <td>
+<p>An example of a patient .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ImagingStudy-ImagingStudyExample.html"
+                     title="ImagingStudy/ImagingStudyExample">ImagingStudyExample</a>
+               </td>
+               <td>
+<p>An example of a ImagingStudy .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-ImmunizationExample.html"
+                     title="Immunization/ImmunizationExample">ImmunizationExample</a>
+               </td>
+               <td>
+<p>An example of a Immunization .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Medication-MedicationExample.html"
+                     title="Medication/MedicationExample">MedicationExample</a>
+               </td>
+               <td>
+<p>An example of a Medication .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-MedicationStatementExample.html"
+                     title="MedicationStatement/MedicationStatementExample">MedicationStatementExample</a>
+               </td>
+               <td>
+<p>An example of a MedicationStatement .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ObservationExample.html"
+                     title="Observation/ObservationExample">ObservationExample</a>
+               </td>
+               <td>
+<p>An example of a Observation .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-PatientExample.html" title="Patient/PatientExample">PatientExample</a>
+               </td>
+               <td>
+<p>An example of a patient .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-PractitionerExample.html"
+                     title="Practitioner/PractitionerExample">PractitionerExample</a>
+               </td>
+               <td>
+<p>An example of a Practitioner .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-ProcedureExample.html"
+                     title="Procedure/ProcedureExample">ProcedureExample</a>
+               </td>
+               <td>
+<p>An example of a Procedure .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RelatedPerson-RelatedPersonExample.html"
+                     title="RelatedPerson/RelatedPersonExample">RelatedPersonExample</a>
+               </td>
+               <td>
+<p>An example of a RelatedPerson .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-SpecimenExample.html" title="Specimen/SpecimenExample">SpecimenExample</a>
+               </td>
+               <td>
+<p>An example of a Specimen .</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 13:00-0600">2022-01-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
