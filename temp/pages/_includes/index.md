@@ -22,5 +22,14 @@
 - Observation
 - Practitioner 
 - Procedure
+- Provenance
 - RelatedPerson
 - Sequence
+
+
+## New Resources  
+
+- Receipt
+- HealthReceipt
+- SocialMedia
+- Environmental

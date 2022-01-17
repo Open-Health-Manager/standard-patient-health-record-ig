@@ -26,10 +26,146 @@
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-MyAllergyIntolerance.html"
+                     title="StructureDefinition/MyAllergyIntolerance">MyAllergyIntolerance</a>
+               </td>
+               <td>{% capture desc %}An example profile of the AllergyIntolerance resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCarePlan.html"
+                     title="StructureDefinition/MyCarePlan">MyCarePlan</a>
+               </td>
+               <td>{% capture desc %}An example profile of the CarePlan resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCareTeam.html"
+                     title="StructureDefinition/MyCareTeam">MyCareTeam</a>
+               </td>
+               <td>{% capture desc %}An example profile of the CareTeam resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCommunication.html"
+                     title="StructureDefinition/MyCommunication">MyCommunication</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Communication resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyCondition.html"
+                     title="StructureDefinition/MyCondition">MyCondition</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Condition resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyConsent.html"
+                     title="StructureDefinition/MyConsent">MyConsent</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Consent resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyDevice.html"
+                     title="StructureDefinition/MyDevice">MyDevice</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Device resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyFamilyMemberHistory.html"
+                     title="StructureDefinition/MyFamilyMemberHistory">MyFamilyMemberHistory</a>
+               </td>
+               <td>{% capture desc %}An example profile of the FamilyMemberHistory resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyGoal.html"
+                     title="StructureDefinition/MyGoal">MyGoal</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Goal resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyImagingStudy.html"
+                     title="StructureDefinition/MyImagingStudy">MyImagingStudy</a>
+               </td>
+               <td>{% capture desc %}An example profile of the ImagingStudy resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyImmunization.html"
+                     title="StructureDefinition/MyImmunization">MyImmunization</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Immunization resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyMedication.html"
+                     title="StructureDefinition/MyMedication">MyMedication</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Medication resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyMedicationStatement.html"
+                     title="StructureDefinition/MyMedicationStatement">MyMedicationStatement</a>
+               </td>
+               <td>{% capture desc %}An example profile of the MedicationStatement resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyObservation.html"
+                     title="StructureDefinition/MyObservation">MyObservation</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Observation resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-MyPatient.html"
                      title="StructureDefinition/MyPatient">MyPatient</a>
                </td>
                <td>{% capture desc %}An example profile of the Patient resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyPractitioner.html"
+                     title="StructureDefinition/MyPractitioner">MyPractitioner</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Practitioner resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyProcedure.html"
+                     title="StructureDefinition/MyProcedure">MyProcedure</a>
+               </td>
+               <td>{% capture desc %}An example profile of the Procedure resource.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MyRelatedPerson.html"
+                     title="StructureDefinition/MyRelatedPerson">MyRelatedPerson</a>
+               </td>
+               <td>{% capture desc %}An example profile of the RelatedPerson resource.{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>
@@ -45,9 +181,140 @@
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="AllergyIntolerance-AllergyIntoleranceExample.html"
+                     title="AllergyIntolerance/AllergyIntoleranceExample">AllergyIntoleranceExample</a>
+               </td>
+               <td>{% capture desc %}An example of an AllergyIntolerance.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-CarePlanExample.html" title="CarePlan/CarePlanExample">CarePlanExample</a>
+               </td>
+               <td>{% capture desc %}An example of a CarePlan .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CareTeam-CareTeamExample.html" title="CareTeam/CareTeamExample">CareTeamExample</a>
+               </td>
+               <td>{% capture desc %}An example of a CareTeam .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Communication-CommunicationExample.html"
+                     title="Communication/CommunicationExample">CommunicationExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Communication .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-ConditionExample.html"
+                     title="Condition/ConditionExample">ConditionExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Condition .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ConsentExample.html" title="Consent/ConsentExample">ConsentExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Consent .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-DeviceExample.html" title="Device/DeviceExample">DeviceExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Device .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-FamilyMemberHistoryExample.html"
+                     title="FamilyMemberHistory/FamilyMemberHistoryExample">FamilyMemberHistoryExample</a>
+               </td>
+               <td>{% capture desc %}An example of a FamilyMemberHistory .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Goal-GoalExample.html" title="Goal/GoalExample">GoalExample</a>
+               </td>
+               <td>{% capture desc %}An example of a patient .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ImagingStudy-ImagingStudyExample.html"
+                     title="ImagingStudy/ImagingStudyExample">ImagingStudyExample</a>
+               </td>
+               <td>{% capture desc %}An example of a ImagingStudy .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-ImmunizationExample.html"
+                     title="Immunization/ImmunizationExample">ImmunizationExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Immunization .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Medication-MedicationExample.html"
+                     title="Medication/MedicationExample">MedicationExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Medication .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-MedicationStatementExample.html"
+                     title="MedicationStatement/MedicationStatementExample">MedicationStatementExample</a>
+               </td>
+               <td>{% capture desc %}An example of a MedicationStatement .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ObservationExample.html"
+                     title="Observation/ObservationExample">ObservationExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Observation .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Patient-PatientExample.html" title="Patient/PatientExample">PatientExample</a>
                </td>
-               <td>{% capture desc %}An example of a patient with a license to krill.{% endcapture %}
+               <td>{% capture desc %}An example of a patient .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-PractitionerExample.html"
+                     title="Practitioner/PractitionerExample">PractitionerExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Practitioner .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-ProcedureExample.html"
+                     title="Procedure/ProcedureExample">ProcedureExample</a>
+               </td>
+               <td>{% capture desc %}An example of a Procedure .{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RelatedPerson-RelatedPersonExample.html"
+                     title="RelatedPerson/RelatedPersonExample">RelatedPersonExample</a>
+               </td>
+               <td>{% capture desc %}An example of a RelatedPerson .{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>

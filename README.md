@@ -21,6 +21,7 @@
 - Observation
 - Practitioner 
 - Procedure
+- Provenance
 - RelatedPerson
 - Sequence
 

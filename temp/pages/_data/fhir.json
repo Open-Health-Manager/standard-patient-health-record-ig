@@ -1,25 +1,25 @@
 {
   "path": "http://hl7.org/fhir/R4/",
   "canonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide",
-  "igId": "HelloImplementationGuide",
-  "igName": "HelloImplementationGuide",
-  "packageId": "HelloImplementationGuide",
+  "igId": "StandardPersonalHealthRecordIG",
+  "igName": "StandardPersonalHealthRecordIG",
+  "packageId": "StandardPersonalHealthRecordIG",
   "igVer": "0.1.0",
-  "errorCount": 0,
+  "errorCount": 25,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
   "toolingVersion": "5.0.0-snapshot1",
   "toolingRevision": "3",
   "toolingVersionFull": "5.0.0-snapshot1 (3)",
-  "totalFiles": 3,
-  "processedFiles": 10,
-  "genDate": "Sun, Jan 16, 2022 16:24-0600",
+  "totalFiles": 37,
+  "processedFiles": 44,
+  "genDate": "Sun, Jan 16, 2022 18:37-0600",
   "genDay": "16/01/2022",
   "ig": {
-    "id": "HelloImplementationGuide",
-    "name": "HelloImplementationGuide",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/HelloImplementationGuide",
+    "id": "StandardPersonalHealthRecordIG",
+    "name": "StandardPersonalHealthRecordIG",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
     "version": "0.1.0",
     "status": "draft",
     "experimental": false,
@@ -29,11 +29,11 @@
       {
         "name": "MITRE",
         "telecom": [
-          "https://gitlab.mitre.org/awatson/hello-implementation-guide"
+          "https://gitlab.mitre.org/awatson/sphr"
         ]
       }
     ],
-    "date": "2022-01-16T16:24:13-06:00",
+    "date": "2022-01-16T18:37:33-06:00",
     "fhirVersion": "4.0.1"
   }
 }

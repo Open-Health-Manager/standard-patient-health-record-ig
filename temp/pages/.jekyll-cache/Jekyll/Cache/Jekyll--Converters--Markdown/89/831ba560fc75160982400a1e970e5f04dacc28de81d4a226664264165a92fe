@@ -1,0 +1,42 @@
+I"­<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="standard-personal-health-record">Standard Personal Health Record</h1>
+
+<h2 id="profiles">Profiles</h2>
+
+<ul>
+  <li>AllergyIntolerance</li>
+  <li>CareTeam</li>
+  <li>CarePlan</li>
+  <li>Device</li>
+  <li>Communication</li>
+  <li>Condition</li>
+  <li>Consent</li>
+  <li>FamilyMemberHistory</li>
+  <li>Goal</li>
+  <li>Immunization</li>
+  <li>ImagingStudy</li>
+  <li>Medication</li>
+  <li>MedicationStatement</li>
+  <li>MedicationOrder</li>
+  <li>Patient</li>
+  <li>Observation</li>
+  <li>Practitioner</li>
+  <li>Procedure</li>
+  <li>Provenance</li>
+  <li>RelatedPerson</li>
+  <li>Sequence</li>
+</ul>
+
+<h2 id="new-resources">New Resources</h2>
+
+<ul>
+  <li>Receipt</li>
+  <li>HealthReceipt</li>
+  <li>SocialMedia</li>
+  <li>Environmental</li>
+</ul>
+
+:ET
