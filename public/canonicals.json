@@ -3,133 +3,175 @@
     "id": "StandardPersonalHealthRecordIG",
     "type": "ImplementationGuide",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "StandardPersonalHealthRecordIG"
+  },
+  {
+    "id": "Environmental",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/Environmental",
+    "version": "0.2.0",
+    "name": "Environmental"
+  },
+  {
+    "id": "HealthReceipt",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/HealthReceipt",
+    "version": "0.2.0",
+    "name": "HealthReceipt"
   },
   {
     "id": "MyAllergyIntolerance",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyAllergyIntolerance"
+  },
+  {
+    "id": "MyBodyStructure",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
+    "version": "0.2.0",
+    "name": "MyBodyStructure"
   },
   {
     "id": "MyCarePlan",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyCarePlan"
   },
   {
     "id": "MyCareTeam",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyCareTeam"
   },
   {
     "id": "MyCommunication",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyCommunication"
   },
   {
     "id": "MyCondition",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyCondition"
   },
   {
     "id": "MyConsent",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyConsent"
   },
   {
     "id": "MyDevice",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyDevice"
+  },
+  {
+    "id": "MyDiagnosticReport",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport",
+    "version": "0.2.0",
+    "name": "MyDiagnosticReport"
   },
   {
     "id": "MyFamilyMemberHistory",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyFamilyMemberHistory"
   },
   {
     "id": "MyGoal",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyGoal"
   },
   {
     "id": "MyImagingStudy",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyImagingStudy"
   },
   {
     "id": "MyImmunization",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyImmunization"
   },
   {
     "id": "MyMedication",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyMedication"
   },
   {
     "id": "MyMedicationStatement",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyMedicationStatement"
   },
   {
     "id": "MyObservation",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyObservation"
   },
   {
     "id": "MyPatient",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyPatient"
   },
   {
     "id": "MyPractitioner",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyPractitioner"
   },
   {
     "id": "MyProcedure",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyProcedure"
   },
   {
     "id": "MyRelatedPerson",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "name": "MyRelatedPerson"
+  },
+  {
+    "id": "MySpecimen",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen",
+    "version": "0.2.0",
+    "name": "MySpecimen"
+  },
+  {
+    "id": "SocialMedia",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia",
+    "version": "0.2.0",
+    "name": "SocialMedia"
   }
 ]

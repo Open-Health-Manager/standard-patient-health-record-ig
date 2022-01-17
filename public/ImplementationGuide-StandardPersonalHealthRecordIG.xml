@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="StandardPersonalHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-01-16T18:37:33-06:00"/>
+  <date value="2022-01-17T13:06:47-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -190,6 +190,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MyBodyStructure"/>
+      </reference>
+      <name value="MyBodyStructure"/>
+      <description value="An example profile of the BodyStructure resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/MyCarePlan"/>
       </reference>
       <name value="MyCarePlan"/>
@@ -249,6 +260,17 @@
       </reference>
       <name value="MyDevice"/>
       <description value="An example profile of the Device resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MyDiagnosticReport"/>
+      </reference>
+      <name value="MyDiagnosticReport"/>
+      <description value="An example profile of the DiagnosticReport resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -374,6 +396,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MySpecimen"/>
+      </reference>
+      <name value="MySpecimen"/>
+      <description value="An example profile of the Specimen resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Environmental"/>
+      </reference>
+      <name value="Environmental"/>
+      <description value="An example profile of the Environmental resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HealthReceipt"/>
+      </reference>
+      <name value="HealthReceipt"/>
+      <description value="An example profile of the HealthReceipt resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SocialMedia"/>
+      </reference>
+      <name value="SocialMedia"/>
+      <description value="An example profile of the SocialMedia resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="AllergyIntolerance"/>
       </extension>
       <reference>
@@ -382,6 +448,17 @@
       <name value="AllergyIntoleranceExample"/>
       <description value="An example of an AllergyIntolerance."/>
       <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DomainResource"/>
+      </extension>
+      <reference>
+        <reference value="DomainResource/BodyStructureExample"/>
+      </reference>
+      <name value="BodyStructureExample"/>
+      <description value="An example of a BodyStructure ."/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -448,6 +525,17 @@
       <name value="DeviceExample"/>
       <description value="An example of a Device ."/>
       <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/DiagnosticReportExample"/>
+      </reference>
+      <name value="DiagnosticReportExample"/>
+      <description value="An example of a DiagnosticReport ."/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -570,13 +658,39 @@
       <description value="An example of a RelatedPerson ."/>
       <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/SpecimenExample"/>
+      </reference>
+      <name value="SpecimenExample"/>
+      <description value="An example of a Specimen ."/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
+        <title value="Consent Engine Implementation Guide"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="datastorage.html"/>
+        <title value="Data Storage"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="physiology.html"/>
+        <title value="Physiology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="syntheticdata.html"/>
+        <title value="Synthea"/>
         <generation value="markdown"/>
       </page>
     </page>

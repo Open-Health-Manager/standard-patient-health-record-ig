@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "StandardPersonalHealthRecordIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-16T18:37:33-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-17T13:06:47-06:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -285,6 +285,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MyBodyStructure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MyBodyStructure" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the BodyStructure resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MyCarePlan" ]
        ];
@@ -292,7 +306,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the CarePlan resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -306,7 +320,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the CareTeam resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -320,7 +334,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Communication resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -334,7 +348,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Condition resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -348,7 +362,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Consent resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -362,7 +376,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Device resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MyDiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MyDiagnosticReport" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the DiagnosticReport resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,7 +404,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the FamilyMemberHistory resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -390,7 +418,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Goal resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -404,7 +432,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the ImagingStudy resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -418,7 +446,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Immunization resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -432,7 +460,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Medication resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -446,7 +474,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the MedicationStatement resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -460,7 +488,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Observation resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -474,7 +502,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Patient resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -488,7 +516,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Practitioner resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -502,7 +530,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Procedure resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -516,7 +544,63 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the RelatedPerson resource." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MySpecimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MySpecimen" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Specimen resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/Environmental>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Environmental" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Environmental" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the Environmental resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/HealthReceipt>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/HealthReceipt" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HealthReceipt" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the HealthReceipt resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SocialMedia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SocialMedia" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example profile of the SocialMedia resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -533,7 +617,24 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DomainResource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/DomainResource/BodyStructureExample>;
+         fhir:Reference.reference [ fhir:value "DomainResource/BodyStructureExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BodyStructureExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a BodyStructure ." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure";
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure>
+       ]
+     ], [
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -550,7 +651,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -567,7 +668,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -584,7 +685,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -601,7 +702,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -618,7 +719,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -635,7 +736,24 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/DiagnosticReport/DiagnosticReportExample>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/DiagnosticReportExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReportExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a DiagnosticReport ." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport";
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport>
+       ]
+     ], [
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -652,7 +770,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -669,7 +787,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -686,7 +804,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -703,7 +821,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -720,7 +838,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -737,7 +855,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -754,7 +872,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -771,7 +889,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -788,7 +906,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -805,7 +923,7 @@
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -821,6 +939,23 @@
          fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson";
          fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson>
        ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Specimen/SpecimenExample>;
+         fhir:Reference.reference [ fhir:value "Specimen/SpecimenExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SpecimenExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a Specimen ." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen";
+         fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -829,7 +964,22 @@
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Consent Engine Implementation Guide" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "datastorage.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Storage" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "physiology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Physiology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "syntheticdata.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Synthea" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

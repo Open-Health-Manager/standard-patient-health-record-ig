@@ -16,10 +16,10 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "MyAllergyIntolerance",
   "status": "active",
-  "date": "2022-01-16T18:37:33-06:00",
+  "date": "2022-01-17T13:06:47-06:00",
   "publisher": "MITRE",
   "contact": [
     {
