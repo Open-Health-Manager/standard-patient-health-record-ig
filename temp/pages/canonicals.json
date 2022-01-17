@@ -126,6 +126,13 @@
     "name": "MyMedicationStatement"
   },
   {
+    "id": "MyMolecularSequence",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
+    "version": "0.2.0",
+    "name": "MyMolecularSequence"
+  },
+  {
     "id": "MyObservation",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation",
@@ -168,10 +175,31 @@
     "name": "MySpecimen"
   },
   {
+    "id": "NutrientIntake",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
+    "version": "0.2.0",
+    "name": "NutrientIntake"
+  },
+  {
+    "id": "NutrientOuttake",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientOuttake",
+    "version": "0.2.0",
+    "name": "NutrientOuttake"
+  },
+  {
     "id": "SocialMedia",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia",
     "version": "0.2.0",
     "name": "SocialMedia"
+  },
+  {
+    "id": "VitalSigns",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/VitalSigns",
+    "version": "0.2.0",
+    "name": "VitalSigns"
   }
 ]
