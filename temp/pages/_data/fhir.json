@@ -4,7 +4,7 @@
   "igId": "StandardPersonalHealthRecordIG",
   "igName": "StandardPersonalHealthRecordIG",
   "packageId": "StandardPersonalHealthRecordIG",
-  "igVer": "0.2.0",
+  "igVer": "0.2.1",
   "errorCount": 32,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
@@ -14,13 +14,13 @@
   "toolingVersionFull": "5.0.0-snapshot1 (3)",
   "totalFiles": 50,
   "processedFiles": 62,
-  "genDate": "Mon, Jan 17, 2022 13:47-0600",
+  "genDate": "Mon, Jan 17, 2022 14:13-0600",
   "genDay": "17/01/2022",
   "ig": {
     "id": "StandardPersonalHealthRecordIG",
     "name": "StandardPersonalHealthRecordIG",
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "status": "draft",
     "experimental": false,
     "publisher": "MITRE",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2022-01-17T13:47:18-06:00",
+    "date": "2022-01-17T14:13:39-06:00",
     "fhirVersion": "4.0.1"
   }
 }

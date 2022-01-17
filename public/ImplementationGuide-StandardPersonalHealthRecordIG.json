@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-01-17T13:47:18-06:00",
+  "date": "2022-01-17T14:13:39-06:00",
   "publisher": "MITRE",
   "contact": [
     {

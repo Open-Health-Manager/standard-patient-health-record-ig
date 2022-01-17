@@ -16,10 +16,10 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "MyMolecularSequence",
   "status": "active",
-  "date": "2022-01-17T13:47:18-06:00",
+  "date": "2022-01-17T14:13:39-06:00",
   "publisher": "MITRE",
   "contact": [
     {
