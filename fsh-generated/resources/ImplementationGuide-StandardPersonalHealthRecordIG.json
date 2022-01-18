@@ -427,18 +427,18 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "usecases.html",
+          "title": "Use Cases",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "datastorage.html",
           "title": "Data Storage",
           "generation": "markdown"
         },
         {
-          "nameUrl": "syntheticdata.html",
-          "title": "Synthea",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "physiology.html",
-          "title": "Physiology",
+          "title": "Physiology Model",
           "generation": "markdown"
         }
       ]

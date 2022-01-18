@@ -13,7 +13,7 @@
    <version value="0.2.1"/>
    <name value="StandardPersonalHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-01-17T14:13:39-06:00"/>
+   <date value="2022-01-17T18:26:03-06:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -802,18 +802,18 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="usecases.html"/>
+            <title value="Use Cases"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="datastorage.html"/>
             <title value="Data Storage"/>
             <generation value="markdown"/>
          </page>
          <page>
-            <nameUrl value="syntheticdata.html"/>
-            <title value="Synthea"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
             <nameUrl value="physiology.html"/>
-            <title value="Physiology"/>
+            <title value="Physiology Model"/>
             <generation value="markdown"/>
          </page>
          <page>

@@ -1,0 +1,161 @@
+﻿StandardPersonalHealthRecordIG : Validation Results
+=========================================
+
+err = 32, warn = 2, info = 0
+IG Publisher Version: 1.1.93 Out of date - current version is ?pub-ver-1?
+Generated Mon Jan 17 18:27:00 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
+ Build Errors : 18 / 0 / 0
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample : 2 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careplan-CarePlanExample : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careteam-CareTeamExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/communication-CommunicationExample : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/condition-ConditionExample : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/consent-ConsentExample : 2 / 1 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/device-DeviceExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/diagnosticreport-DiagnosticReportExample : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/domainresource-BodyStructureExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/familymemberhistory-FamilyMemberHistoryExample : 3 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/goal-GoalExample : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/imagingstudy-ImagingStudyExample : 2 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/immunization-ImmunizationExample : 3 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medication-MedicationExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medicationstatement-MedicationStatementExample : 2 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/observation-ObservationExample : 3 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/patient-PatientExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/practitioner-PractitionerExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/procedure-ProcedureExample : 2 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/relatedperson-RelatedPersonExample : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/specimen-SpecimenExample : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-Environmental : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-HealthReceipt : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyAllergyIntolerance : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyBodyStructure : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCarePlan : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCareTeam : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCommunication : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCondition : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyConsent : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyDevice : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyDiagnosticReport : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyFamilyMemberHistory : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyGoal : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyImagingStudy : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyImmunization : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedication : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedicationStatement : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMolecularSequence : 0 / 1 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyObservation : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPatient : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPractitioner : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyProcedure : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyRelatedPerson : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MySpecimen : 0 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientIntake : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientOuttake : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-SocialMedia : 1 / 0 / 1
+ /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-VitalSigns : 1 / 0 / 1
+</table>
+== n/a ==
+ERROR: /Users/awatson/Code/gitlab/sphr/output/AllergyIntolerance-AllergyIntoleranceExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 462: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/CarePlan-CarePlanExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 486: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Condition-ConditionExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 435: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/FamilyMemberHistory-FamilyMemberHistoryExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 493: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Goal-GoalExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 665: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/ImagingStudy-ImagingStudyExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 472: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Immunization-ImmunizationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 703: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/MedicationStatement-MedicationStatementExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 496: The link 'Medication/acetaminophen' for "Medication/acetaminophen: Acetaminophen" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/MedicationStatement-MedicationStatementExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 597: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Observation-ObservationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 714: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Procedure-ProcedureExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 463: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/RelatedPerson-RelatedPersonExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 447: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link '' for "HealthReceipt" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 212, column 8: The link '' for "SocialMedia" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 213, column 8: The link '' for "Environmental" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 214, column 8: The link '' for "VitalSigns" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 215, column 8: The link '' for "NutrientIntake" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 216, column 8: The link '' for "NutrientOuttake" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG.json ==
+== fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceExample.json ==
+ERROR: AllergyIntolerance/AllergyIntoleranceExample: AllergyIntolerance: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Rule 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Failed
+ERROR: AllergyIntolerance/AllergyIntoleranceExample: AllergyIntolerance.patient: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/CarePlan-CarePlanExample.json ==
+ERROR: CarePlan/CarePlanExample: CarePlan.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/CareTeam-CareTeamExample.json ==
+== fsh-generated/resources/Communication-CommunicationExample.json ==
+ERROR: Communication/CommunicationExample: Communication.status: The value provided ('active') is not in the value set 'EventStatus' (http://hl7.org/fhir/ValueSet/event-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#active in http://hl7.org/fhir/event-status)
+== fsh-generated/resources/Condition-ConditionExample.json ==
+ERROR: Condition/ConditionExample: Condition.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/Consent-ConsentExample.json ==
+ERROR: Consent/ConsentExample: Consent: ppc-1: 'Either a Policy or PolicyRule' Rule 'Either a Policy or PolicyRule' Failed
+WARNING: Consent/ConsentExample: Consent.scope: Display Name for http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy should be one of 'Privacy Consent' instead of 'Patient Privacy'
+ERROR: Consent/ConsentExample: Consent.category[0].coding[0]: The code system reference https://www.hl7.org/fhir/valueset-consent-category.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}
+== fsh-generated/resources/Device-DeviceExample.json ==
+== fsh-generated/resources/DiagnosticReport-DiagnosticReportExample.json ==
+ERROR: DiagnosticReport/DiagnosticReportExample: DiagnosticReport.status: The value provided ('active') is not in the value set 'DiagnosticReportStatus' (http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/diagnostic-report-status#active in http://hl7.org/fhir/diagnostic-report-status)
+== fsh-generated/resources/DomainResource-BodyStructureExample.json ==
+== fsh-generated/resources/FamilyMemberHistory-FamilyMemberHistoryExample.json ==
+ERROR: FamilyMemberHistory/FamilyMemberHistoryExample: FamilyMemberHistory.status: The value provided ('active') is not in the value set 'FamilyHistoryStatus' (http://hl7.org/fhir/ValueSet/history-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/history-status#active in http://hl7.org/fhir/history-status)
+ERROR: FamilyMemberHistory/FamilyMemberHistoryExample: FamilyMemberHistory.patient: Unable to resolve resource 'Patient/jane-doe'
+ERROR: FamilyMemberHistory/FamilyMemberHistoryExample: FamilyMemberHistory.relationship.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-RoleCode#child in http://terminology.hl7.org/CodeSystem/v3-RoleCode for 'http://terminology.hl7.org/CodeSystem/v3-RoleCode#child'
+== fsh-generated/resources/Goal-GoalExample.json ==
+ERROR: Goal/GoalExample: Goal.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/ImagingStudy-ImagingStudyExample.json ==
+ERROR: ImagingStudy/ImagingStudyExample: ImagingStudy.status: The value provided ('active') is not in the value set 'ImagingStudyStatus' (http://hl7.org/fhir/ValueSet/imagingstudy-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/imagingstudy-status#active in http://hl7.org/fhir/imagingstudy-status)
+ERROR: ImagingStudy/ImagingStudyExample: ImagingStudy.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/Immunization-ImmunizationExample.json ==
+ERROR: Immunization/ImmunizationExample: Immunization.status: The value provided ('active') is not in the value set 'Immunization Status Codes' (http://hl7.org/fhir/ValueSet/immunization-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#active in http://hl7.org/fhir/event-status)
+ERROR: Immunization/ImmunizationExample: Immunization.vaccineCode.coding[0]: The code "MMR" is not valid in the system http://hl7.org/fhir/sid/cvx; The code provided (http://hl7.org/fhir/sid/cvx#MMR) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/cvx#MMR'
+ERROR: Immunization/ImmunizationExample: Immunization.patient: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/Medication-MedicationExample.json ==
+== fsh-generated/resources/MedicationStatement-MedicationStatementExample.json ==
+ERROR: MedicationStatement/MedicationStatementExample: MedicationStatement.medication.ofType(Reference): Unable to resolve resource 'Medication/acetaminophen'
+ERROR: MedicationStatement/MedicationStatementExample: MedicationStatement.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/Observation-ObservationExample.json ==
+ERROR: Observation/ObservationExample: Observation.status: The value provided ('active') is not in the value set 'ObservationStatus' (http://hl7.org/fhir/ValueSet/observation-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/observation-status#active in http://hl7.org/fhir/observation-status)
+ERROR: Observation/ObservationExample: Observation.code.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#10200-4 in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#10200-4'
+ERROR: Observation/ObservationExample: Observation.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/Practitioner-PractitionerExample.json ==
+== fsh-generated/resources/Procedure-ProcedureExample.json ==
+ERROR: Procedure/ProcedureExample: Procedure.status: The value provided ('active') is not in the value set 'EventStatus' (http://hl7.org/fhir/ValueSet/event-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/event-status#active in http://hl7.org/fhir/event-status)
+ERROR: Procedure/ProcedureExample: Procedure.subject: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/RelatedPerson-RelatedPersonExample.json ==
+ERROR: RelatedPerson/RelatedPersonExample: RelatedPerson.patient: Unable to resolve resource 'Patient/jane-doe'
+== fsh-generated/resources/Specimen-SpecimenExample.json ==
+== fsh-generated/resources/StructureDefinition-Environmental.json ==
+ERROR: StructureDefinition/Environmental: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-HealthReceipt.json ==
+ERROR: StructureDefinition/HealthReceipt: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-MyAllergyIntolerance.json ==
+== fsh-generated/resources/StructureDefinition-MyBodyStructure.json ==
+== fsh-generated/resources/StructureDefinition-MyCarePlan.json ==
+== fsh-generated/resources/StructureDefinition-MyCareTeam.json ==
+== fsh-generated/resources/StructureDefinition-MyCommunication.json ==
+== fsh-generated/resources/StructureDefinition-MyCondition.json ==
+== fsh-generated/resources/StructureDefinition-MyConsent.json ==
+ERROR: StructureDefinition/MyConsent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+== fsh-generated/resources/StructureDefinition-MyDevice.json ==
+== fsh-generated/resources/StructureDefinition-MyDiagnosticReport.json ==
+== fsh-generated/resources/StructureDefinition-MyFamilyMemberHistory.json ==
+== fsh-generated/resources/StructureDefinition-MyGoal.json ==
+== fsh-generated/resources/StructureDefinition-MyImagingStudy.json ==
+== fsh-generated/resources/StructureDefinition-MyImmunization.json ==
+== fsh-generated/resources/StructureDefinition-MyMedication.json ==
+== fsh-generated/resources/StructureDefinition-MyMedicationStatement.json ==
+== fsh-generated/resources/StructureDefinition-MyMolecularSequence.json ==
+WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MyObservation.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+== fsh-generated/resources/StructureDefinition-MyPractitioner.json ==
+== fsh-generated/resources/StructureDefinition-MyProcedure.json ==
+== fsh-generated/resources/StructureDefinition-MyRelatedPerson.json ==
+== fsh-generated/resources/StructureDefinition-MySpecimen.json ==
+== fsh-generated/resources/StructureDefinition-NutrientIntake.json ==
+ERROR: StructureDefinition/NutrientIntake: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-NutrientOuttake.json ==
+ERROR: StructureDefinition/NutrientOuttake: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-SocialMedia.json ==
+ERROR: StructureDefinition/SocialMedia: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
+== fsh-generated/resources/StructureDefinition-VitalSigns.json ==
+ERROR: StructureDefinition/VitalSigns: StructureDefinition: The structure definition constrains a kind of resource, but has a different kind (logical)
