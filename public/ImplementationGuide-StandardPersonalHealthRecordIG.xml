@@ -9,7 +9,7 @@
   <version value="0.2.1"/>
   <name value="StandardPersonalHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-01-17T14:13:39-06:00"/>
+  <date value="2022-01-17T15:55:59-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -720,6 +720,11 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Getting Started"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="Use Cases"/>
         <generation value="markdown"/>
       </page>
       <page>

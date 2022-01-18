@@ -1,0 +1,59 @@
+I"z<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>Integer auctor euismod orci eu condimentum. Phasellus placerat, ante at porta convallis, urna ex fermentum enim, id rhoncus erat ex non ipsum. Vivamus ultrices felis massa, vel ultricies sem hendrerit eget. Maecenas vel tempor tellus. Proin neque lacus, porttitor sed tempus sed, congue sit amet massa. Fusce massa mauris, euismod nec felis sit amet, tincidunt congue nulla. Curabitur sagittis ullamcorper ex.</p>
+
+<h3 id="synthetic-data-generator-installation">Synthetic Data Generator Installation</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># download synthea</span>
+git clone https://github.com/synthetichealth/synthea
+
+<span class="c"># go into the cloned directory</span>
+<span class="nb">cd </span>synthea
+
+<span class="c"># build the app</span>
+./gradlew build check <span class="nb">test</span>
+</code></pre></div></div>
+
+<h3 id="medical-domains">Medical Domains</h3>
+
+<ul>
+  <li>Genomics</li>
+  <li>Embryology</li>
+  <li><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/dermatitis">Dermatology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hypothyroidism.json">Endocrinology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/cdc_growth_charts.json">Pediatrics</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/biometrics.yml">Metabolism &amp; Biometrics</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/epilepsy.json">Neurology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/physiology/generators/circulation_hemodynamics.yml">Cardiology &amp; Hemodynamics</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/lung_cancer.json">Pulmonology</a></li>
+  <li>Kinesthesiology</li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/immunization_schedule.json">Immunology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/covid19">Virology (COVID19)</a></li>
+  <li>Gastroenterology
+    <ul>
+      <li>Nutrition Intake</li>
+      <li>Nutrition Outtake</li>
+    </ul>
+  </li>
+  <li>Reproductive Health
+    <ul>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/contraceptives.json">Contraceptives</a></li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/female_reproduction.json">Obstetrics</a></li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json">Pregnancy</a></li>
+      <li>Gynocology</li>
+      <li>Andrology</li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/urinary_tract_infections.json">Urology</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/wellness_encounters.json">Healthy Aging</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hospice_treatment.json">Hospice Care</a></li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://github.com/synthetichealth/synthea">SyntheaTM Patient Generator</a></p>
+
+:ET

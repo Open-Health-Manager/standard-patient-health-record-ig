@@ -74,20 +74,20 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Use Cases: usecases.html
   Data Storage: datastorage.html
-  Synthetic Data: syntheticdata.html
   Physiology Model: physiology.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
     title: Getting Started
+  usecases.md:
+    title: Use Cases
   datastorage.md:
     title: Data Storage
-  syntheticdata.md:
-    title: Synthea
   physiology.md:
-    title: Physiology
+    title: Physiology Model
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

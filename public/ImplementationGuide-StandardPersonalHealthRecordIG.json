@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-01-17T14:13:39-06:00",
+  "date": "2022-01-17T15:55:59-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -973,6 +973,11 @@
         {
           "nameUrl": "index.html",
           "title": "Getting Started",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecases.html",
+          "title": "Use Cases",
           "generation": "markdown"
         },
         {

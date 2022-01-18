@@ -3,7 +3,7 @@
 
 err = 32, warn = 2, info = 0
 IG Publisher Version: 1.1.93 Out of date - current version is ?pub-ver-1?
-Generated Mon Jan 17 14:14:29 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
+Generated Mon Jan 17 15:56:52 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
  Build Errors : 18 / 0 / 0
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample : 2 / 0 / 1
@@ -57,24 +57,24 @@ Generated Mon Jan 17 14:14:29 CST 2022. FHIR version 4.0.1 for StandardPersonalH
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-VitalSigns : 1 / 0 / 1
 </table>
 == n/a ==
-ERROR: /Users/awatson/Code/gitlab/sphr/output/AllergyIntolerance-AllergyIntoleranceExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 462: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/CarePlan-CarePlanExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 486: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/Condition-ConditionExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 435: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/FamilyMemberHistory-FamilyMemberHistoryExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 493: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/Goal-GoalExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 665: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/ImagingStudy-ImagingStudyExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 472: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/Immunization-ImmunizationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 703: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/MedicationStatement-MedicationStatementExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 496: The link 'Medication/acetaminophen' for "Medication/acetaminophen: Acetaminophen" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/MedicationStatement-MedicationStatementExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 597: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/Observation-ObservationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 714: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/Procedure-ProcedureExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 463: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/RelatedPerson-RelatedPersonExample.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 447: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link '' for "HealthReceipt" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 212, column 8: The link '' for "SocialMedia" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 213, column 8: The link '' for "Environmental" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 214, column 8: The link '' for "VitalSigns" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 215, column 8: The link '' for "NutrientIntake" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 216, column 8: The link '' for "NutrientOuttake" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/AllergyIntolerance-AllergyIntoleranceExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 462: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/CarePlan-CarePlanExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 486: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Condition-ConditionExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 435: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/FamilyMemberHistory-FamilyMemberHistoryExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 493: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Goal-GoalExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 665: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/ImagingStudy-ImagingStudyExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 472: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Immunization-ImmunizationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 703: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/MedicationStatement-MedicationStatementExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 496: The link 'Medication/acetaminophen' for "Medication/acetaminophen: Acetaminophen" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/MedicationStatement-MedicationStatementExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 597: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Observation-ObservationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 714: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/Procedure-ProcedureExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 463: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/RelatedPerson-RelatedPersonExample.html#/html/body/div/div/div/div/div/div/p/a at Line 169, column 447: The link 'Patient/jane-doe' for "Patient/jane-doe: Jane Doe" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 214, column 8: The link '' for "HealthReceipt" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 215, column 8: The link '' for "SocialMedia" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 216, column 8: The link '' for "Environmental" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 217, column 8: The link '' for "VitalSigns" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 218, column 8: The link '' for "NutrientIntake" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 219, column 8: The link '' for "NutrientOuttake" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG.json ==
 == fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceExample.json ==
 ERROR: AllergyIntolerance/AllergyIntoleranceExample: AllergyIntolerance: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Rule 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Failed

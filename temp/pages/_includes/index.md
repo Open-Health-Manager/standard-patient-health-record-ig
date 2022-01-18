@@ -1,12 +1,14 @@
 # Standard Personal Health Record  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie sem et ligula hendrerit, at ultricies arcu ullamcorper. Praesent ullamcorper, enim fringilla accumsan faucibus, eros dui rutrum arcu, quis tempus felis turpis eget quam. In ultricies aliquet lorem ac cursus. Nam pulvinar fringilla accumsan. Integer bibendum lobortis felis venenatis tempor. Curabitur mi nunc, tincidunt non vulputate non, laoreet eu nulla. Aliquam eget elementum elit. Fusce quis vulputate felis, vel aliquam lectus. Phasellus volutpat fermentum ultrices. Pellentesque a hendrerit lorem. Phasellus efficitur felis sed tellus faucibus lobortis.
+The purpose of this implementation guide is to help the reader implement a Personal Health Record (in a programming language of their choice).  The notion of a Personal Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient, and the EMR being owned by the hospital.
+
+The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).    
 
 ![./StarTrek-Sphr.png](./StarTrek-Sphr.png){:width="100%"}
 > Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.
 
 
-Phasellus felis sem, tempus a sapien non, iaculis consequat magna. Vivamus condimentum, risus eu dictum tempor, sem enim imperdiet libero, eu tempus eros ex finibus nunc. Ut vitae justo in massa accumsan facilisis. Aliquam at mauris at nisi dignissim sodales. Nulla pellentesque faucibus dolor, nec elementum lacus euismod ut. 
+
 
 ### Physiology Model  
 
@@ -28,12 +30,13 @@ Proin non diam eu est tincidunt accumsan ac vitae sem. Lorem ipsum dolor sit ame
 - [Procedure](https://www.hl7.org/fhir/procedure.html)
 - [Specimen](https://www.hl7.org/fhir/specimen.html)
 
-### Social
+### Social and Behavioral
 
 Phasellus vel nunc et tellus semper venenatis a eget turpis. Cras lacinia ante elementum imperdiet blandit. Praesent pharetra et neque sit amet laoreet. Praesent porta efficitur erat, quis egestas eros mollis nec. Phasellus lobortis tempus lectus, non tristique ex aliquam sit amet.
 
 - [CarePlan](https://www.hl7.org/fhir/careplan.html)
 - [CareTeam](https://www.hl7.org/fhir/careteam.html)
+- [Communication](https://www.hl7.org/fhir/communication.html)
 - [Goal](https://www.hl7.org/fhir/goal.html)
 - [Practitioner](https://www.hl7.org/fhir/practitioner.html)
 - [RelatedPerson](https://www.hl7.org/fhir/relatedperson.html)
@@ -43,7 +46,6 @@ Phasellus vel nunc et tellus semper venenatis a eget turpis. Cras lacinia ante e
 Nam efficitur, tortor nec tincidunt iaculis, tellus mauris feugiat est, ut congue dolor velit id sem. Nunc malesuada venenatis purus pharetra lacinia. Duis hendrerit lectus non interdum semper. 
 
 - [Binary](https://www.hl7.org/fhir/binary.html)
-- [Communication](https://www.hl7.org/fhir/communication.html)
 - [Contract](https://www.hl7.org/fhir/contract.html)
 - [Consent](https://www.hl7.org/fhir/consent.html)
 - [Device](https://www.hl7.org/fhir/device.html)
