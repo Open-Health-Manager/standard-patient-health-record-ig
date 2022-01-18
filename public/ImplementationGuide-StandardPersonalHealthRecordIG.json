@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-01-17T15:55:59-06:00",
+  "date": "2022-01-17T19:18:25-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -986,13 +986,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "syntheticdata.html",
-          "title": "Synthea",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "physiology.html",
-          "title": "Physiology",
+          "title": "Physiology Model",
           "generation": "markdown"
         }
       ]

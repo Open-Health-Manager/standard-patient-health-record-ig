@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>STANDARDPERSONALHEALTHRECORDIG\Physiology - FHIR v4.0.1</title>
+    <title>STANDARDPERSONALHEALTHRECORDIG\Physiology Model - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -80,9 +80,6 @@
     <a href="datastorage.html">Data Storage</a>
   </li>
   <li>
-    <a href="syntheticdata.html">Synthetic Data</a>
-  </li>
-  <li>
     <a href="physiology.html">Physiology Model</a>
   </li>
   <li>
@@ -100,7 +97,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Physiology</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Physiology Model</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -121,7 +118,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">StandardPersonalHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Physiology</h2>
+  <h2>Physiology Model</h2>
   
 
 
@@ -133,22 +130,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#synthetic-data-generator-installation" id="markdown-toc-synthetic-data-generator-installation">Synthetic Data Generator Installation</a></li>
+  <li><a href="#medical-domains" id="markdown-toc-medical-domains">Medical Domains</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
 </div>
 
 <p>Integer auctor euismod orci eu condimentum. Phasellus placerat, ante at porta convallis, urna ex fermentum enim, id rhoncus erat ex non ipsum. Vivamus ultrices felis massa, vel ultricies sem hendrerit eget. Maecenas vel tempor tellus. Proin neque lacus, porttitor sed tempus sed, congue sit amet massa. Fusce massa mauris, euismod nec felis sit amet, tincidunt congue nulla. Curabitur sagittis ullamcorper ex.</p>
 
-<h3 id="domains">Domains</h3>
+<h3 id="synthetic-data-generator-installation">Synthetic Data Generator Installation</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># download synthea</span>
+git clone https://github.com/synthetichealth/synthea
+
+<span class="c"># go into the cloned directory</span>
+<span class="nb">cd </span>synthea
+
+<span class="c"># build the app</span>
+./gradlew build check <span class="nb">test</span>
+</code></pre></div></div>
+
+<h3 id="medical-domains">Medical Domains</h3>
 
 <ul>
   <li>Genomics</li>
   <li>Embryology</li>
-  <li>Metabolism</li>
-  <li>Neurology</li>
-  <li>Cardiology</li>
-  <li>Respiration</li>
+  <li><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/dermatitis">Dermatology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hypothyroidism.json">Endocrinology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/cdc_growth_charts.json">Pediatrics</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/biometrics.yml">Metabolism &amp; Biometrics</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/epilepsy.json">Neurology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/physiology/generators/circulation_hemodynamics.yml">Cardiology &amp; Hemodynamics</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/lung_cancer.json">Pulmonology</a></li>
   <li>Kinesthesiology</li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/immunization_schedule.json">Immunology</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/covid19">Virology (COVID19)</a></li>
   <li>Gastroenterology
     <ul>
       <li>Nutrition Intake</li>
@@ -157,13 +176,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>Reproductive Health
     <ul>
-      <li>Obstetrics</li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/contraceptives.json">Contraceptives</a></li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/female_reproduction.json">Obstetrics</a></li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json">Pregnancy</a></li>
       <li>Gynocology</li>
       <li>Andrology</li>
+      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/urinary_tract_infections.json">Urology</a></li>
     </ul>
   </li>
-  <li>Healthy Aging</li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/wellness_encounters.json">Healthy Aging</a></li>
+  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hospice_treatment.json">Hospice Care</a></li>
 </ul>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://github.com/synthetichealth/synthea">SyntheaTM Patient Generator</a></p>
 
 
 
@@ -190,7 +217,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 15:55-0600">2022-01-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 19:18-0600">2022-01-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
