@@ -80,9 +80,6 @@
     <a href="datastorage.html">Data Storage</a>
   </li>
   <li>
-    <a href="syntheticdata.html">Synthetic Data</a>
-  </li>
-  <li>
     <a href="physiology.html">Physiology Model</a>
   </li>
   <li>
@@ -137,7 +134,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#standard-personal-health-record" id="markdown-toc-standard-personal-health-record">Standard Personal Health Record</a>    <ul>
       <li><a href="#physiology-model" id="markdown-toc-physiology-model">Physiology Model</a></li>
-      <li><a href="#social" id="markdown-toc-social">Social</a></li>
+      <li><a href="#social-and-behavioral" id="markdown-toc-social-and-behavioral">Social and Behavioral</a></li>
       <li><a href="#administrative" id="markdown-toc-administrative">Administrative</a></li>
       <li><a href="#logical-models" id="markdown-toc-logical-models">Logical Models</a></li>
     </ul>
@@ -147,14 +144,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h1 id="standard-personal-health-record">Standard Personal Health Record</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie sem et ligula hendrerit, at ultricies arcu ullamcorper. Praesent ullamcorper, enim fringilla accumsan faucibus, eros dui rutrum arcu, quis tempus felis turpis eget quam. In ultricies aliquet lorem ac cursus. Nam pulvinar fringilla accumsan. Integer bibendum lobortis felis venenatis tempor. Curabitur mi nunc, tincidunt non vulputate non, laoreet eu nulla. Aliquam eget elementum elit. Fusce quis vulputate felis, vel aliquam lectus. Phasellus volutpat fermentum ultrices. Pellentesque a hendrerit lorem. Phasellus efficitur felis sed tellus faucibus lobortis.</p>
+<p>The purpose of this implementation guide is to help the reader implement a Personal Health Record (in a programming language of their choice).  The notion of a Personal Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient, and the EMR being owned by the hospital.</p>
+
+<p>The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).</p>
 
 <p><img src="./StarTrek-Sphr.png" alt="./StarTrek-Sphr.png" width="100%"/></p>
 <blockquote>
   <p>Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.</p>
 </blockquote>
-
-<p>Phasellus felis sem, tempus a sapien non, iaculis consequat magna. Vivamus condimentum, risus eu dictum tempor, sem enim imperdiet libero, eu tempus eros ex finibus nunc. Ut vitae justo in massa accumsan facilisis. Aliquam at mauris at nisi dignissim sodales. Nulla pellentesque faucibus dolor, nec elementum lacus euismod ut.</p>
 
 <h3 id="physiology-model">Physiology Model</h3>
 
@@ -178,13 +175,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://www.hl7.org/fhir/specimen.html">Specimen</a></li>
 </ul>
 
-<h3 id="social">Social</h3>
+<h3 id="social-and-behavioral">Social and Behavioral</h3>
 
 <p>Phasellus vel nunc et tellus semper venenatis a eget turpis. Cras lacinia ante elementum imperdiet blandit. Praesent pharetra et neque sit amet laoreet. Praesent porta efficitur erat, quis egestas eros mollis nec. Phasellus lobortis tempus lectus, non tristique ex aliquam sit amet.</p>
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/careplan.html">CarePlan</a></li>
   <li><a href="https://www.hl7.org/fhir/careteam.html">CareTeam</a></li>
+  <li><a href="https://www.hl7.org/fhir/communication.html">Communication</a></li>
   <li><a href="https://www.hl7.org/fhir/goal.html">Goal</a></li>
   <li><a href="https://www.hl7.org/fhir/practitioner.html">Practitioner</a></li>
   <li><a href="https://www.hl7.org/fhir/relatedperson.html">RelatedPerson</a></li>
@@ -196,7 +194,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/binary.html">Binary</a></li>
-  <li><a href="https://www.hl7.org/fhir/communication.html">Communication</a></li>
   <li><a href="https://www.hl7.org/fhir/contract.html">Contract</a></li>
   <li><a href="https://www.hl7.org/fhir/consent.html">Consent</a></li>
   <li><a href="https://www.hl7.org/fhir/device.html">Device</a></li>
@@ -211,12 +208,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Suspendisse vel eleifend nunc. Integer nec dolor gravida, pharetra metus nec, tincidunt magna. Praesent sit amet risus luctus massa porttitor efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ac ultrices ante, vitae molestie elit.</p>
 
 <ul>
-  <li><a name="l439">​</a><a href="null">HealthReceipt</a></li>
-  <li><a name="l443">​</a><a href="null">SocialMedia</a></li>
-  <li><a name="l447">​</a><a href="null">Environmental</a></li>
-  <li><a name="l451">​</a><a href="null">VitalSigns</a></li>
-  <li><a name="l455">​</a><a href="null">NutrientIntake</a></li>
-  <li><a name="l459">​</a><a href="null">NutrientOuttake</a></li>
+  <li><a name="l433">​</a><a href="null">HealthReceipt</a></li>
+  <li><a name="l437">​</a><a href="null">SocialMedia</a></li>
+  <li><a name="l441">​</a><a href="null">Environmental</a></li>
+  <li><a name="l445">​</a><a href="null">VitalSigns</a></li>
+  <li><a name="l449">​</a><a href="null">NutrientIntake</a></li>
+  <li><a name="l453">​</a><a href="null">NutrientOuttake</a></li>
 </ul>
 
 
@@ -244,7 +241,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 15:55-0600">2022-01-17</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 19:18-0600">2022-01-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
