@@ -72,10 +72,13 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
 menu:
   Home: index.html
   Accessibility: usecases.html
   Data Model: datamodel.html
+  # Consolidated Careplan: careplan.html
   Storage: datastorage.html
   Physiology Simulations: physiology.html
   Artifacts: artifacts.html

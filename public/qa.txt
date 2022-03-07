@@ -3,8 +3,8 @@
 
 err = 32, warn = 2, info = 0
 IG Publisher Version: 1.1.93 Out of date - current version is ?pub-ver-1?
-Generated Mon Mar 07 02:14:05 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
- Build Errors : 18 / 0 / 0
+Generated Mon Mar 07 17:39:20 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
+ Build Errors : 17 / 0 / 0
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample : 2 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careplan-CarePlanExample : 1 / 0 / 1
@@ -72,9 +72,8 @@ ERROR: /Users/awatson/Code/gitlab/sphr/output/RelatedPerson-RelatedPersonExample
 ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link '' for "HealthReceipt" cannot be resolved
 ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link '' for "SocialMedia" cannot be resolved
 ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link '' for "Environmental" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 237, column 8: The link '' for "VitalSigns" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link '' for "NutrientIntake" cannot be resolved
-ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 8: The link '' for "NutrientOuttake" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 237, column 8: The link '' for "NutrientIntake" cannot be resolved
+ERROR: /Users/awatson/Code/gitlab/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link '' for "NutrientOuttake" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG.json ==
 == fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceExample.json ==
 ERROR: AllergyIntolerance/AllergyIntoleranceExample: AllergyIntolerance: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Rule 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.' Failed
