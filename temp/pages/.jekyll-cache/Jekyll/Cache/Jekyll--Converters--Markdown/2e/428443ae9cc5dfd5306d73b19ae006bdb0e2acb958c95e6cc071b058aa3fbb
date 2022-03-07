@@ -1,0 +1,61 @@
+I"þ<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="standard-patient-health-record">Standard Patient Health Record</h1>
+
+<p>The purpose of this implementation guide is to help the reader implement a Personal Health Record (in a programming language of their choice).  The notion of a Personal Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient; and the EMR being owned by the hospital.</p>
+
+<p>The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, in guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.</p>
+
+<p><img src="./StarTrek-Sphr.png" alt="./StarTrek-Sphr.png" width="100%" /></p>
+<blockquote>
+  <p>Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.</p>
+</blockquote>
+
+<h3 id="purpose--design-philosophy">Purpose / Design Philosophy</h3>
+
+<p>The core of the Personal Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Personal Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.</p>
+
+<h3 id="prior-art---implementation-guides">Prior Art - Implementation Guides</h3>
+
+<p>This implementation guide was developed through meta-analysis of dozens of other guides, journal liturature, and an environment surveys of the PHR market.  Implementators may find the following implementation guides of particular interest:</p>
+
+<ul>
+  <li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88">Personal Health Record - System Functional Model</a></li>
+  <li><a href="https://hl7.org/fhir/smart-app-launch/">Smart on FHIR - App Launch</a></li>
+  <li><a href="http://www.fhir.org/guides/argonaut/r2/">Argonaut Data Query</a></li>
+  <li><a href="http://fhir.org/guides/argonaut/scheduling/">Argonaut Scheduling</a></li>
+  <li><a href="http://fhir.org/guides/argonaut/clinicalnotes/">Argonaut Clinical Notes</a></li>
+  <li><a href="http://fhir.org/guides/argonaut/questionnaire/">Argonaut Questionnaire</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-patient-correction/">Patient Request for Corrections</a></li>
+  <li><a href="http://hl7.org/fhir/uv/ips/">International Patient Summary</a></li>
+  <li><a href="http://hl7.org/fhir/us/ccda/">C-CDA on FHIR</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-adi/">PACIO - Advanced Directives</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/">PACIO - Cognitive Status</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/">PACIO - Functional Status</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/">VCI - Vaccine Credential Initiative</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/">Gravity - Social Determinates of Health</a></li>
+  <li><a href="https://www.hl7.org/fhir/us/core/">US CORE</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/dental-data-exchange/">Dental Data Exchange</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html">Genomics Reporting</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/">Radiation Dose Summary</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig/">Breast Radiology Reporting</a></li>
+  <li><a href="https://build.fhir.org/ig/hl7ch/ch-allergyintolerance/document.html">Allergy Intolerance</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/cimi-vital-signs/">Vital Signs</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-udap-security-ig/">UDAP Security</a></li>
+  <li><a href="https://build.fhir.org/ig/IHTSDO/snomed-ig/">SNOMED Terminology Server</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/case-reporting/the_specification.html">Electronic Case Reporting (eCR)</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/index.html">SMART Healthcards - Vaccine &amp; Testing</a></li>
+  <li><a href="https://build.fhir.org/ig/aih-uth/mycovid/artifacts.html">COVID19</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/carin-digital-insurance-card/">CARIN Digital Insurance Card</a></li>
+  <li><a href="https://profiles.ihe.net/ITI/MHD/">Mobile Access to Health Documents</a></li>
+  <li><a href="http://hl7.org/fhir/us/patient-reported-outcomes/2019May/index.html">Patient Reported Outcomes</a></li>
+  <li><a href="http://hl7.org/fhir/uv/phd/2019May/">Personal Health Devices</a></li>
+  <li><a href="http://hl7.org/fhir/us/davinci-pas/">Da Vinci - Prior Authorization</a></li>
+  <li><a href="http://hl7.org/fhir/us/bfdr/artifacts.html">Vital Records -  Birth and Fetal Death Reporting</a></li>
+</ul>
+
+<h3 id="references">References</h3>
+
+:ET
