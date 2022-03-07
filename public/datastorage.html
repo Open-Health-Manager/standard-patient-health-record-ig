@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>STANDARDPERSONALHEALTHRECORDIG\Data Storage - FHIR v4.0.1</title>
+    <title>STANDARDPERSONALHEALTHRECORDIG\Storage - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,15 +39,21 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.1 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -74,13 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Use Cases</a>
+    <a href="usecases.html">Accessibility</a>
   </li>
   <li>
-    <a href="datastorage.html">Data Storage</a>
+    <a href="datamodel.html">Data Model</a>
   </li>
   <li>
-    <a href="physiology.html">Physiology Model</a>
+    <a href="datastorage.html">Storage</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Simulations</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -97,7 +106,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data Storage</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Storage</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -118,8 +127,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">StandardPersonalHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Data Storage</h2>
+  <h2>Storage</h2>
   
+
+
+
 
 
 
@@ -132,33 +144,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#desktop-filesystems-windows-linux-macos-etc" id="markdown-toc-desktop-filesystems-windows-linux-macos-etc">Desktop Filesystems (Windows, Linux, MacOS, etc)</a></li>
-  <li><a href="#apple-health-records-ios" id="markdown-toc-apple-health-records-ios">Apple Health Records (iOS)</a></li>
-  <li><a href="#commonhealth-android-os" id="markdown-toc-commonhealth-android-os">CommonHealth (Android OS)</a></li>
+  <li><a href="#fhir-storage" id="markdown-toc-fhir-storage">FHIR Storage</a></li>
+  <li><a href="#platform-storage" id="markdown-toc-platform-storage">Platform Storage</a></li>
 </ul>
 
 </div>
+<p>A complete longitudinal patient health record may feasibly span 100 years or more.  This presents numerous challenges, espcially considering that the earliest EMR systems were only first written in the early 1970s.  Statue of limitations require that healthcare practitioners keep pediatric records until an 18th birthday, but even an 18 year storage requirement by providers falls well short of a 76yr life expectancy.  Anybody over 30 years of age is therefore almost guaranteed to have some records on hardcopy paper, compact disk, USB drive, floppy drive, or other storage medium.</p>
 
-<p>Donec cursus turpis commodo, fringilla purus sit amet, bibendum dolor. Aenean efficitur urna pretium, feugiat erat at, iaculis augue. Integer suscipit mollis ligula, quis dapibus risus pharetra a. Nulla a congue mauris, nec congue ante. Aliquam vel nibh quis libero dignissim aliquet. Aliquam eget quam maximus, pharetra ligula in, condimentum nulla. Quisque quam urna, tincidunt ut dictum at, volutpat in mauris. Morbi quis elementum elit, laoreet efficitur lorem.</p>
+<h3 id="fhir-storage">FHIR Storage</h3>
 
-<h3 id="desktop-filesystems-windows-linux-macos-etc">Desktop Filesystems (Windows, Linux, MacOS, etc)</h3>
+<p>A useful way to think of data storage is in terms of slow-motion data transfer.  The earliest electronic data storage devices were actually cathode ray tubes, the same devices used in computer monitors for decades.  As such, there isn’t as much difference as one may think between the devices that store bits and the devices that transmit data to a person’s eyes or transmits data over the wire.  These things are actually quite similar, if one considers the storage device as similar to an actor on the wire that can send or receive data.  In this sense, storage is just like any other data transfer - but with the ability to press a <code class="language-plaintext highlighter-rouge">pause</code> button indefinately mid-transfer.</p>
 
-<p>Patients may find it convenient to save their personal health records on their own storage devices.  This is encouraged!</p>
+<p>As such, this implementation guide recommends that implementors treat storage in much the same way as over-the-wire data transfers.</p>
+
+<ul>
+  <li>Systems MUST use FHIR data schemas to claim to be compliant with this IG.</li>
+  <li>Systems SHOULD use the same MIME types when possible.</li>
+  <li>Systems MAY treat directories as a Bundle by default.</li>
+</ul>
 
 <h4 id="file-extensions">File Extensions</h4>
 
-<p>Files SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.</p>
+<ul>
+  <li>Files contain personal health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
+  <li>Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  <code class="language-plaintext highlighter-rouge">.Observation.fhir</code></li>
+</ul>
 
-<h4 id="compression--security">Compression &amp; Security</h4>
+<h4 id="compression">Compression</h4>
 
-<p>Files SHOULD be zipped and signed, with a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> extension.</p>
+<p>Files contianing personal health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
 
-<h3 id="apple-health-records-ios">Apple Health Records (iOS)</h3>
-<p>Vestibulum eget nunc in sapien fermentum interdum. Pellentesque eleifend semper arcu sit amet laoreet. Cras sit amet risus libero. Curabitur eleifend at urna in venenatis.</p>
+<h4 id="security">Security</h4>
 
-<h3 id="commonhealth-android-os">CommonHealth (Android OS)</h3>
+<p>Files contianing personal health information SHOULD be signed with a password.</p>
 
-<p>Proin dictum lectus non urna facilisis commodo. Curabitur pretium sagittis leo. Vestibulum vitae mauris ligula. Nam hendrerit leo dapibus ex egestas, a commodo nulla tincidunt.</p>
+<h3 id="platform-storage">Platform Storage</h3>
+
+<h4 id="apple-health-records-ios">Apple Health Records (iOS)</h4>
+<p>Apple provides a protected storage area for health records on iOS devices.  Implementors SHOULD use Apple Health when developing on iOS devices.</p>
+
+<h4 id="commonhealth-android-os">CommonHealth (Android OS)</h4>
+<p>CommonHealth provides a similar protected storage environment for Android devices.  Implementors SHOULD use CommonHealth when developing on Android devices.</p>
 
 
 
@@ -184,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 19:18-0600">2022-01-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 7, 2022 02:13-0600">2022-03-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -209,6 +235,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

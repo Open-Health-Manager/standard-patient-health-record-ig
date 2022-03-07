@@ -1,6 +1,5 @@
 
-
-Integer auctor euismod orci eu condimentum. Phasellus placerat, ante at porta convallis, urna ex fermentum enim, id rhoncus erat ex non ipsum. Vivamus ultrices felis massa, vel ultricies sem hendrerit eget. Maecenas vel tempor tellus. Proin neque lacus, porttitor sed tempus sed, congue sit amet massa. Fusce massa mauris, euismod nec felis sit amet, tincidunt congue nulla. Curabitur sagittis ullamcorper ex.
+Recurring challenges with designing PHR apps include figuring out which data to include (all of it?  just the hospital data?  fitness data?) and then finding suitable test data.  This implementation guide does not purport to provide algorithms or workflows for every medical category.  However, we can reference the Synthea synthetic data generator, and recommend that PHR developers use it's algorithms for generating sample data for various medical conditions.  
 
 ### Synthetic Data Generator Installation  
 

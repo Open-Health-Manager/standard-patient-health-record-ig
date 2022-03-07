@@ -74,20 +74,23 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Use Cases: usecases.html
-  Data Storage: datastorage.html
-  Physiology Model: physiology.html
+  Accessibility: usecases.html
+  Data Model: datamodel.html
+  Storage: datastorage.html
+  Physiology Simulations: physiology.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
     title: Getting Started
   usecases.md:
-    title: Use Cases
+    title: Accessibility Use Cases
+  datamodel.md:
+    title: Data Model
   datastorage.md:
-    title: Data Storage
+    title: Storage
   physiology.md:
-    title: Physiology Model
+    title: Physiology Simulations
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

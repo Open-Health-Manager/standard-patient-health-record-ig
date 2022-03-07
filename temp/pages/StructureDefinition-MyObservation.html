@@ -9,14 +9,29 @@
   {% include fragment-profile-navtabs.html type='StructureDefinition' id='MyObservation' active='content' %}
 
   <a name="root"> </a>
-  <h2 id="root">{{modelType}}: {{site.data.pages[page.path].title | escape_once}}</h2>
+  <h2 id="root">{{modelType}}:
+{% if site.data.structuredefinitions["MyObservation"].abstract == true %}
+    <i>{{site.data.pages[page.path].title | escape_once}}</i>
+{% else %}
+    {{site.data.pages[page.path].title}}
+{% endif %}
+{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["MyObservation"].abstract == true %}({% endif %}
+{% if site.data.structuredefinitions["MyObservation"].abstract == true %}Abstract{% endif %}
+{% if site.data.resources[resource_].experimental == true %}Experimental{% endif %}
+{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["MyObservation"].abstract == true %}){% endif %}
+  </h2>
 
-{% include StructureDefinition-MyObservation-summary-table.xhtml type='StructureDefinition' id='MyObservation' %}
+{% include fragment-resourceTable.html %}
+{%if site.data.resources[resource_].description %}
+<p>
+{{site.data.resources[resource_].description|markdownify}}
+</p>
+{% endif %}{%if site.data.resources[resource_].purpose %}
+<p>
+{{site.data.resources[resource_].purpose|markdownify}}
+</p>
+{% endif %}
 
-  <p>
-  The official URL for this profile is:
-  </p>
-  <pre>{{site.data.structuredefinitions['MyObservation'].url}}</pre>
 
 <!-- insert intro if present -->
 {% include fragment-intro.html type='StructureDefinition' id='MyObservation' %}
@@ -203,6 +218,11 @@
     <!--Constraints  heading in the fragment -->
     {% include StructureDefinition-MyObservation-inv.xhtml %}
   {% endunless%}
+
+  {% if site.data.resources[resource_].contained != nil %}
+  <h4>Contained resources</h4>
+  {% include StructureDefinition-MyObservation-contained-index.xhtml %}
+  {% endif %}
 
 <!-- insert notes if present -->
 {% include fragment-notes.html type='StructureDefinition' id='MyObservation' %}

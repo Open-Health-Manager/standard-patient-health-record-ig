@@ -20,6 +20,7 @@
 {% endif %}
 {% assign prefix = site.data.artifacts[page.path].type %}
 <h2 id="root">{{example}}{{prefix}}: {{site.data.pages[page.path].title | escape_once}}</h2>
+{% include fragment-simpletable.html %}
 
 <p><a href="Immunization-ImmunizationExample.xml" no-download="true">Raw xml</a> | <a href="Immunization-ImmunizationExample.xml" download>Download</a></p>
 

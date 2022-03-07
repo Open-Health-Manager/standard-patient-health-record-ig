@@ -14,13 +14,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Use Cases</a>
+    <a href="usecases.html">Accessibility</a>
   </li>
   <li>
-    <a href="datastorage.html">Data Storage</a>
+    <a href="datamodel.html">Data Model</a>
   </li>
   <li>
-    <a href="physiology.html">Physiology Model</a>
+    <a href="datastorage.html">Storage</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Simulations</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
