@@ -6,7 +6,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
     "name": "StandardPersonalHealthRecordIG",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colsd",
       "owner": "MITRE",
@@ -21,7 +21,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
     "name": "MyAllergyIntolerance",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -36,7 +36,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
     "name": "MyBodyStructure",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -51,7 +51,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan",
     "name": "MyCarePlan",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -66,7 +66,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam",
     "name": "MyCareTeam",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -81,7 +81,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication",
     "name": "MyCommunication",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -96,7 +96,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition",
     "name": "MyCondition",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -111,7 +111,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent",
     "name": "MyConsent",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -126,7 +126,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
     "name": "MyDevice",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -141,7 +141,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport",
     "name": "MyDiagnosticReport",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -156,7 +156,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory",
     "name": "MyFamilyMemberHistory",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -171,7 +171,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal",
     "name": "MyGoal",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -186,7 +186,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy",
     "name": "MyImagingStudy",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -201,7 +201,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization",
     "name": "MyImmunization",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -216,7 +216,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication",
     "name": "MyMedication",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -231,7 +231,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement",
     "name": "MyMedicationStatement",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -246,7 +246,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
     "name": "MyMolecularSequence",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -261,7 +261,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation",
     "name": "MyObservation",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -276,7 +276,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient",
     "name": "MyPatient",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -291,7 +291,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner",
     "name": "MyPractitioner",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -306,7 +306,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure",
     "name": "MyProcedure",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -321,7 +321,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson",
     "name": "MyRelatedPerson",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -336,7 +336,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen",
     "name": "MySpecimen",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -351,7 +351,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/Environmental",
     "name": "Environmental",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -366,7 +366,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/HealthReceipt",
     "name": "HealthReceipt",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -381,7 +381,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
     "name": "NutrientIntake",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -396,7 +396,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientOuttake",
     "name": "NutrientOuttake",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -411,7 +411,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia",
     "name": "SocialMedia",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
@@ -426,7 +426,7 @@
     "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/VitalSigns",
     "name": "VitalSigns",
     "version": "0.2.1",
-    "date": "2022-03-07T02:13:14-06:00",
+    "date": "2022-03-07T17:38:24-06:00",
     "status": {
       "class": "colstu",
       "owner": "MITRE",
