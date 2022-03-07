@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>STANDARDPERSONALHEALTHRECORDIG\Physiology Model - FHIR v4.0.1</title>
+    <title>STANDARDPERSONALHEALTHRECORDIG\Physiology Simulations - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,15 +39,21 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.1 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -74,13 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Use Cases</a>
+    <a href="usecases.html">Accessibility</a>
   </li>
   <li>
-    <a href="datastorage.html">Data Storage</a>
+    <a href="datamodel.html">Data Model</a>
   </li>
   <li>
-    <a href="physiology.html">Physiology Model</a>
+    <a href="datastorage.html">Storage</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Simulations</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -97,7 +106,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Physiology Model</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Physiology Simulations</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -118,8 +127,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">StandardPersonalHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Physiology Model</h2>
+  <h2>Physiology Simulations</h2>
   
+
+
+
 
 
 
@@ -139,7 +151,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 
-<p>Integer auctor euismod orci eu condimentum. Phasellus placerat, ante at porta convallis, urna ex fermentum enim, id rhoncus erat ex non ipsum. Vivamus ultrices felis massa, vel ultricies sem hendrerit eget. Maecenas vel tempor tellus. Proin neque lacus, porttitor sed tempus sed, congue sit amet massa. Fusce massa mauris, euismod nec felis sit amet, tincidunt congue nulla. Curabitur sagittis ullamcorper ex.</p>
+<p>Recurring challenges with designing PHR apps include figuring out which data to include (all of it?  just the hospital data?  fitness data?) and then finding suitable test data.  This implementation guide does not purport to provide algorithms or workflows for every medical category.  However, we can reference the Synthea synthetic data generator, and recommend that PHR developers use it’s algorithms for generating sample data for various medical conditions.</p>
 
 <h3 id="synthetic-data-generator-installation">Synthetic Data Generator Installation</h3>
 
@@ -217,7 +229,7 @@ git clone https://github.com/synthetichealth/synthea
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 19:18-0600">2022-01-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 7, 2022 02:13-0600">2022-03-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -242,6 +254,8 @@ git clone https://github.com/synthetichealth/synthea
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

@@ -13,7 +13,7 @@
    <version value="0.2.1"/>
    <name value="StandardPersonalHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-01-17T19:18:25-06:00"/>
+   <date value="2022-03-07T02:13:14-06:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -803,17 +803,22 @@
          </page>
          <page>
             <nameUrl value="usecases.html"/>
-            <title value="Use Cases"/>
+            <title value="Accessibility Use Cases"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="datamodel.html"/>
+            <title value="Data Model"/>
             <generation value="markdown"/>
          </page>
          <page>
             <nameUrl value="datastorage.html"/>
-            <title value="Data Storage"/>
+            <title value="Storage"/>
             <generation value="markdown"/>
          </page>
          <page>
             <nameUrl value="physiology.html"/>
-            <title value="Physiology Model"/>
+            <title value="Physiology Simulations"/>
             <generation value="markdown"/>
          </page>
          <page>
@@ -1201,6 +1206,14 @@
       </parameter>
       <parameter>
          <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="fmm-definition"/>
+         <value value="http://hl7.org/fhir/versions.html#maturity"/>
+      </parameter>
+      <parameter>
+         <code value="propagate-status"/>
          <value value="true"/>
       </parameter>
    </definition>

@@ -43,15 +43,21 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.28"}
-    h3,h4,h5,h6{--heading-prefix:"5.28"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.28"}
+    h3,h4,h5,h6{--heading-prefix:"6.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>0.2.1 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -78,13 +84,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Use Cases</a>
+    <a href="usecases.html">Accessibility</a>
   </li>
   <li>
-    <a href="datastorage.html">Data Storage</a>
+    <a href="datamodel.html">Data Model</a>
   </li>
   <li>
-    <a href="physiology.html">Physiology Model</a>
+    <a href="datastorage.html">Storage</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Simulations</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -116,6 +125,7 @@
 <div style="counter-reset: section 4" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">StandardPersonalHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
 
 
 
@@ -187,6 +197,21 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: MySpecimen - Detailed Descriptions</h2>
+  <table class="colstu">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-03-07
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p>Definitions for the MySpecimen resource profile.</p>
 
@@ -312,7 +337,7 @@ Codes providing the status/availability of a specimen.</p>
   <tr><td>Definition</td><td><p>The kind of material that forms the specimen.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.0.0/ValueSet-v2-0487.html">hl7VS-specimenType</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0487.html">hl7VS-specimenType</a>
 The type of the specimen.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -445,7 +470,7 @@ Codes describing anatomical locations. May include laterality.</p>
   <tr><td>Definition</td><td><p>Abstinence or reduction from some or all food, drink, or both, for a period of time prior to sample collection.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.0.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0916.html">hl7VS-relevantClincialInformation</a>; other codes may be used where these codes are not suitable
 Codes describing the fasting status of the patient.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td></tr>
@@ -603,7 +628,7 @@ Type of specimen container.</p>
   <tr><td>Definition</td><td><p>Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.0.0/ValueSet-v2-0371.html">hl7VS-additivePreservative</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0371.html">hl7VS-additivePreservative</a>
 Substance added to specimen container.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>)</td></tr>
@@ -614,7 +639,7 @@ Substance added to specimen container.</p>
   <tr><td>Definition</td><td><p>A mode or state of being that describes the nature of the specimen.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.0.0/ValueSet-v2-0493.html">hl7VS-specimenCondition</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0493.html">hl7VS-specimenCondition</a>; other codes may be used where these codes are not suitable
 Codes describing the state of the specimen.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -685,7 +710,7 @@ Codes describing the state of the specimen.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 17, 2022 19:18-0600">2022-01-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 7, 2022 02:13-0600">2022-03-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -710,6 +735,8 @@ Codes describing the state of the specimen.</p>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

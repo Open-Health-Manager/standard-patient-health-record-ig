@@ -428,17 +428,22 @@
         },
         {
           "nameUrl": "usecases.html",
-          "title": "Use Cases",
+          "title": "Accessibility Use Cases",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datamodel.html",
+          "title": "Data Model",
           "generation": "markdown"
         },
         {
           "nameUrl": "datastorage.html",
-          "title": "Data Storage",
+          "title": "Storage",
           "generation": "markdown"
         },
         {
           "nameUrl": "physiology.html",
-          "title": "Physiology Model",
+          "title": "Physiology Simulations",
           "generation": "markdown"
         }
       ]

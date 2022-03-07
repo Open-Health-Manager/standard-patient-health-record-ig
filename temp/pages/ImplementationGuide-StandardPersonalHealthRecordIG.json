@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-01-17T19:18:25-06:00",
+  "date": "2022-03-07T02:13:14-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -268,6 +268,32 @@
           {
             "url": "code",
             "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
           },
           {
             "url": "value",
@@ -977,17 +1003,22 @@
         },
         {
           "nameUrl": "usecases.html",
-          "title": "Use Cases",
+          "title": "Accessibility Use Cases",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datamodel.html",
+          "title": "Data Model",
           "generation": "markdown"
         },
         {
           "nameUrl": "datastorage.html",
-          "title": "Data Storage",
+          "title": "Storage",
           "generation": "markdown"
         },
         {
           "nameUrl": "physiology.html",
-          "title": "Physiology Model",
+          "title": "Physiology Simulations",
           "generation": "markdown"
         }
       ]
