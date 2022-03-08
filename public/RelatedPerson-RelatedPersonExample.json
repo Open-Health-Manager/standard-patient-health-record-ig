@@ -3,7 +3,7 @@
   "id": "RelatedPersonExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson"
     ]
   },
   "text": {

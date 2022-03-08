@@ -3,14 +3,14 @@
   "id": "DiagnosticReportExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport"
     ]
   },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://snomed.info/sct 184004}\">Withdrawal arrhythmia</span> </h2><table class=\"grid\"></table><p><b>Report Details</b></p></div>"
   },
-  "status": "active",
+  "status": "final",
   "code": {
     "coding": [
       {

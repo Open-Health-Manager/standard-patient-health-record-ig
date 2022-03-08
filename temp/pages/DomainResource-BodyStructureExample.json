@@ -1,9 +1,0 @@
-{
-  "resourceType": "DomainResource",
-  "id": "BodyStructureExample",
-  "meta": {
-    "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"
-    ]
-  }
-}

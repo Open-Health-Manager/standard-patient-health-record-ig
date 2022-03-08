@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/CareTeam/CareTeamExample> a fhir:CareTeam;
+<https://gitlab.mitre.org/awatson/sphr/CareTeam/CareTeamExample> a fhir:CareTeam;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CareTeamExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/CareTeam/CareTeamExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/CareTeam/CareTeamExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

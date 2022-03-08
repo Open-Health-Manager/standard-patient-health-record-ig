@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Specimen/SpecimenExample> a fhir:Specimen;
+<https://gitlab.mitre.org/awatson/sphr/Specimen/SpecimenExample> a fhir:Specimen;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "SpecimenExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Specimen/SpecimenExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Specimen/SpecimenExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

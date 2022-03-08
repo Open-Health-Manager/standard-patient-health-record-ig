@@ -9,6 +9,6 @@ Description: "An example profile of the Procedure resource."
 Instance: ProcedureExample
 InstanceOf: MyProcedure
 Description: "An example of a Procedure ."
-* status = #active
+* status = #completed
 * subject.display = "Jane Doe"
 * subject.reference = "Patient/jane-doe"

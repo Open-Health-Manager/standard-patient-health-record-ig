@@ -15,11 +15,11 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice",
   "version": "0.2.1",
   "name": "MyDevice",
   "status": "active",
-  "date": "2022-03-07T17:57:52-06:00",
+  "date": "2022-03-07T22:25:08-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -532,7 +532,7 @@
         "path": "Device.udiCarrier",
         "short": "Unique Device Identifier (UDI) Barcode string",
         "definition": "Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold.",
-        "comment": "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
+        "comment": "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](http://hl7.org/fhir/R4/device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
         "min": 0,
         "max": "*",
         "base": {

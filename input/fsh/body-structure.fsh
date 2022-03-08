@@ -3,7 +3,7 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 
 Profile: MyBodyStructure
-Parent: DomainResource
+Parent: BodyStructure
 Description: "An example profile of the BodyStructure resource."
 
 
@@ -11,6 +11,7 @@ Instance: BodyStructureExample
 InstanceOf: MyBodyStructure
 Description: "An example of a BodyStructure ."
 // * status = #active
-// * subject.display = "Jane Doe"
-// * subject.reference = "Patient/jane-doe"
+* patient.display = "Jane Doe"
+* patient.reference = "Patient/jane-doe"
+
 

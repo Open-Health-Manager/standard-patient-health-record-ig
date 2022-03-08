@@ -11,7 +11,7 @@ Description: "An example profile of the Observation resource."
 Instance: ObservationExample
 InstanceOf: MyObservation
 Description: "An example of a Observation ."
-* status = #active
+* status = #final
 * subject.display = "Jane Doe"
 * subject.reference = "Patient/jane-doe"
 * code = $v2-0203#10200-4 "Physical findings of Heart Narrative"

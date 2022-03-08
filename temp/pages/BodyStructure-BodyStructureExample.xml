@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="BodyStructureExample"/>
+  <meta>
+    <profile value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "BodyStructureExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MyBodyStructure.html">MyBodyStructure</a></p></div><p><b>patient</b>: <a href="Patient/jane-doe">Patient/jane-doe: Jane Doe</a></p></div>
+  </text>
+  <patient>
+    <reference value="Patient/jane-doe"/>
+    <display value="Jane Doe"/>
+  </patient>
+</BodyStructure>

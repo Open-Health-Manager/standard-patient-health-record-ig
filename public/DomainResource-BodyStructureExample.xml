@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<DomainResource xmlns="http://hl7.org/fhir">
-  <id value="BodyStructureExample"/>
-  <meta>
-    <profile value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"/>
-  </meta>
-</DomainResource>

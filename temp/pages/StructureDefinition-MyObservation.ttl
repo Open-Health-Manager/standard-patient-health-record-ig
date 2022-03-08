@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation> a fhir:StructureDefinition;
+<https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MyObservation"];
   fhir:DomainResource.text [
@@ -21,11 +21,11 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation"];
+  fhir:StructureDefinition.url [ fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation"];
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "MyObservation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-07T17:57:52-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-07T22:25:08-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2929,7 +2929,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

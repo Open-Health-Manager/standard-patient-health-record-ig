@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/MedicationStatement/MedicationStatementExample> a fhir:MedicationStatement;
+<https://gitlab.mitre.org/awatson/sphr/MedicationStatement/MedicationStatementExample> a fhir:MedicationStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MedicationStatementExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement>
      ]
   ];
   fhir:DomainResource.text [
@@ -21,19 +21,19 @@
   ];
   fhir:MedicationStatement.status [ fhir:value "active"];
   fhir:MedicationStatement.medicationReference [
-     fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Medication/acetaminophen>;
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Medication/acetaminophen>;
      fhir:Reference.reference [ fhir:value "Medication/acetaminophen" ];
      fhir:Reference.display [ fhir:value "Acetaminophen" ]
   ];
   fhir:MedicationStatement.subject [
-     fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/jane-doe>;
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/jane-doe>;
      fhir:Reference.reference [ fhir:value "Patient/jane-doe" ];
      fhir:Reference.display [ fhir:value "Jane Doe" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/MedicationStatement/MedicationStatementExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/MedicationStatement/MedicationStatementExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,30 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Procedure/ProcedureExample> a fhir:Procedure;
+<https://gitlab.mitre.org/awatson/sphr/Procedure/ProcedureExample> a fhir:Procedure;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ProcedureExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ProcedureExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyProcedure.html\">MyProcedure</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient/jane-doe\">Patient/jane-doe: Jane Doe</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ProcedureExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyProcedure.html\">MyProcedure</a></p></div><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient/jane-doe\">Patient/jane-doe: Jane Doe</a></p></div>"
   ];
-  fhir:Procedure.status [ fhir:value "active"];
+  fhir:Procedure.status [ fhir:value "completed"];
   fhir:Procedure.subject [
-     fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/jane-doe>;
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/jane-doe>;
      fhir:Reference.reference [ fhir:value "Patient/jane-doe" ];
      fhir:Reference.display [ fhir:value "Jane Doe" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Procedure/ProcedureExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Procedure/ProcedureExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
