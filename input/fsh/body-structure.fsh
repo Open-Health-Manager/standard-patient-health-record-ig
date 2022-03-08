@@ -10,7 +10,6 @@ Description: "An example profile of the BodyStructure resource."
 Instance: BodyStructureExample
 InstanceOf: MyBodyStructure
 Description: "An example of a BodyStructure ."
-// * status = #active
 * patient.display = "Jane Doe"
 * patient.reference = "Patient/jane-doe"
 
