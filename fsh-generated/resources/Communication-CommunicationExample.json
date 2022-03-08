@@ -3,8 +3,8 @@
   "id": "CommunicationExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication"
     ]
   },
-  "status": "active"
+  "status": "completed"
 }

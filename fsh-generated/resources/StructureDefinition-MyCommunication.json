@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication",
   "version": "0.2.1",
   "name": "MyCommunication",
   "status": "active",

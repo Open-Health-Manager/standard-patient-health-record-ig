@@ -12,11 +12,11 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal"/>
+  <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal"/>
   <version value="0.2.1"/>
   <name value="MyGoal"/>
   <status value="active"/>
-  <date value="2022-03-07T17:57:52-06:00"/>
+  <date value="2022-03-07T22:25:08-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

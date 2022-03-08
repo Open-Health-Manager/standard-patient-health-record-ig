@@ -15,11 +15,11 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication",
   "version": "0.2.1",
   "name": "MyMedication",
   "status": "active",
-  "date": "2022-03-07T17:57:52-06:00",
+  "date": "2022-03-07T22:25:08-06:00",
   "publisher": "MITRE",
   "contact": [
     {

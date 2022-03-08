@@ -3,7 +3,7 @@
   "id": "ConsentExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent"
     ]
   },
   "text": {

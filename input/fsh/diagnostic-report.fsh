@@ -10,7 +10,7 @@ Description: "An example profile of the DiagnosticReport resource."
 Instance: DiagnosticReportExample
 InstanceOf: MyDiagnosticReport
 Description: "An example of a DiagnosticReport ."
-* status = #active
+* status = #final
 * code = http://snomed.info/sct#184004 "Withdrawal arrhythmia"
 // * patient.display = "Jane Doe"
 // * patient.reference = "Patient/jane-doe"

@@ -11,7 +11,7 @@
       "valueCode": "individual"
     }
   ],
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner",
   "version": "0.2.1",
   "name": "MyPractitioner",
   "status": "active",

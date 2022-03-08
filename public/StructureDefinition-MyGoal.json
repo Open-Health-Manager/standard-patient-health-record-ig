@@ -15,11 +15,11 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal",
   "version": "0.2.1",
   "name": "MyGoal",
   "status": "active",
-  "date": "2022-03-07T17:57:52-06:00",
+  "date": "2022-03-07T22:25:08-06:00",
   "publisher": "MITRE",
   "contact": [
     {

@@ -8,4 +8,4 @@ Description: "An example profile of the Communication resource."
 Instance: CommunicationExample
 InstanceOf: MyCommunication
 Description: "An example of a Communication ."
-* status = #active
+* status = #completed

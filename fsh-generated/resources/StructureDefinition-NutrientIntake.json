@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "NutrientIntake",
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientIntake",
   "version": "0.2.1",
   "name": "NutrientIntake",
   "status": "active",
@@ -16,7 +16,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
+  "type": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientIntake",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
   "derivation": "specialization",
   "differential": {

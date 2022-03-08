@@ -3,10 +3,12 @@
     "history": false,
     "index": 0,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
-    "name": "StandardPersonalHealthRecordIG",
+    "path": "ImplementationGuide-StandardPersonalHealthRecordIG.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "StandardPersonalHealthRecordIG",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
     "status": {
       "class": "colsd",
       "owner": "MITRE",
@@ -18,12 +20,15 @@
     "history": false,
     "index": 1,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyAllergyIntolerance.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
-    "name": "MyAllergyIntolerance",
+    "path": "StructureDefinition-MyAllergyIntolerance.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyAllergyIntolerance",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyAllergyIntolerance",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the AllergyIntolerance resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -33,12 +38,15 @@
     "history": false,
     "index": 2,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyBodyStructure.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
-    "name": "MyBodyStructure",
+    "path": "StructureDefinition-MyBodyStructure.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyBodyStructure",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the BodyStructure resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -48,12 +56,15 @@
     "history": false,
     "index": 3,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCarePlan.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan",
-    "name": "MyCarePlan",
+    "path": "StructureDefinition-MyCarePlan.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyCarePlan",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the CarePlan resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -63,12 +74,15 @@
     "history": false,
     "index": 4,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCareTeam.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam",
-    "name": "MyCareTeam",
+    "path": "StructureDefinition-MyCareTeam.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyCareTeam",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the CareTeam resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -78,12 +92,15 @@
     "history": false,
     "index": 5,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCommunication.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication",
-    "name": "MyCommunication",
+    "path": "StructureDefinition-MyCommunication.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyCommunication",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Communication resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -93,12 +110,15 @@
     "history": false,
     "index": 6,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCondition.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition",
-    "name": "MyCondition",
+    "path": "StructureDefinition-MyCondition.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCondition",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyCondition",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Condition resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -108,12 +128,15 @@
     "history": false,
     "index": 7,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyConsent.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent",
-    "name": "MyConsent",
+    "path": "StructureDefinition-MyConsent.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyConsent",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Consent resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -123,12 +146,15 @@
     "history": false,
     "index": 8,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyDevice.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
-    "name": "MyDevice",
+    "path": "StructureDefinition-MyDevice.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyDevice",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Device resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -138,12 +164,15 @@
     "history": false,
     "index": 9,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyDiagnosticReport.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport",
-    "name": "MyDiagnosticReport",
+    "path": "StructureDefinition-MyDiagnosticReport.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyDiagnosticReport",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the DiagnosticReport resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -153,12 +182,15 @@
     "history": false,
     "index": 10,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyFamilyMemberHistory.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory",
-    "name": "MyFamilyMemberHistory",
+    "path": "StructureDefinition-MyFamilyMemberHistory.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyFamilyMemberHistory",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the FamilyMemberHistory resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -168,27 +200,15 @@
     "history": false,
     "index": 11,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyGoal.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal",
+    "path": "StructureDefinition-MyGoal.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal",
+    "version": "0.2.1",
     "name": "MyGoal",
-    "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Goal resource.",
     "status": {
-      "class": "colstu",
-      "owner": "MITRE",
-      "link": "https://gitlab.mitre.org/awatson/sphr",
-      "status": "Active"
-    }
-  },
-  "StructureDefinition/MyImagingStudy": {
-    "history": false,
-    "index": 12,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyImagingStudy.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy",
-    "name": "MyImagingStudy",
-    "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
-    "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -196,14 +216,17 @@
   },
   "StructureDefinition/MyImmunization": {
     "history": false,
-    "index": 13,
+    "index": 12,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyImmunization.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization",
-    "name": "MyImmunization",
+    "path": "StructureDefinition-MyImmunization.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyImmunization",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Immunization resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -211,14 +234,17 @@
   },
   "StructureDefinition/MyMedication": {
     "history": false,
-    "index": 14,
+    "index": 13,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedication.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication",
-    "name": "MyMedication",
+    "path": "StructureDefinition-MyMedication.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyMedication",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Medication resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -226,14 +252,17 @@
   },
   "StructureDefinition/MyMedicationStatement": {
     "history": false,
-    "index": 15,
+    "index": 14,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedicationStatement.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement",
-    "name": "MyMedicationStatement",
+    "path": "StructureDefinition-MyMedicationStatement.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyMedicationStatement",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the MedicationStatement resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -241,14 +270,17 @@
   },
   "StructureDefinition/MyMolecularSequence": {
     "history": false,
-    "index": 16,
+    "index": 15,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMolecularSequence.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
-    "name": "MyMolecularSequence",
+    "path": "StructureDefinition-MyMolecularSequence.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMolecularSequence",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyMolecularSequence",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the MolecularSequence resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -256,14 +288,17 @@
   },
   "StructureDefinition/MyObservation": {
     "history": false,
-    "index": 17,
+    "index": 16,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyObservation.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation",
-    "name": "MyObservation",
+    "path": "StructureDefinition-MyObservation.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyObservation",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Observation resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -271,14 +306,17 @@
   },
   "StructureDefinition/MyPatient": {
     "history": false,
-    "index": 18,
+    "index": 17,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPatient.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient",
-    "name": "MyPatient",
+    "path": "StructureDefinition-MyPatient.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyPatient",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Patient resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -286,14 +324,17 @@
   },
   "StructureDefinition/MyPractitioner": {
     "history": false,
-    "index": 19,
+    "index": 18,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPractitioner.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner",
-    "name": "MyPractitioner",
+    "path": "StructureDefinition-MyPractitioner.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyPractitioner",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Practitioner resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -301,14 +342,17 @@
   },
   "StructureDefinition/MyProcedure": {
     "history": false,
-    "index": 20,
+    "index": 19,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyProcedure.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure",
-    "name": "MyProcedure",
+    "path": "StructureDefinition-MyProcedure.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyProcedure",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Procedure resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -316,14 +360,17 @@
   },
   "StructureDefinition/MyRelatedPerson": {
     "history": false,
-    "index": 21,
+    "index": 20,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyRelatedPerson.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson",
-    "name": "MyRelatedPerson",
+    "path": "StructureDefinition-MyRelatedPerson.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MyRelatedPerson",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the RelatedPerson resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -331,14 +378,17 @@
   },
   "StructureDefinition/MySpecimen": {
     "history": false,
-    "index": 22,
+    "index": 21,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MySpecimen.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen",
-    "name": "MySpecimen",
+    "path": "StructureDefinition-MySpecimen.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "MySpecimen",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Specimen resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -346,14 +396,17 @@
   },
   "StructureDefinition/Environmental": {
     "history": false,
-    "index": 23,
+    "index": 22,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-Environmental.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/Environmental",
-    "name": "Environmental",
+    "path": "StructureDefinition-Environmental.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/Environmental",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "Environmental",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the Environmental resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -361,14 +414,17 @@
   },
   "StructureDefinition/HealthReceipt": {
     "history": false,
-    "index": 24,
+    "index": 23,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-HealthReceipt.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/HealthReceipt",
-    "name": "HealthReceipt",
+    "path": "StructureDefinition-HealthReceipt.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/HealthReceipt",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "HealthReceipt",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the HealthReceipt resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -376,14 +432,17 @@
   },
   "StructureDefinition/NutrientIntake": {
     "history": false,
-    "index": 25,
+    "index": 24,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientIntake.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientIntake",
-    "name": "NutrientIntake",
+    "path": "StructureDefinition-NutrientIntake.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientIntake",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "NutrientIntake",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the NutrientIntake resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -391,14 +450,17 @@
   },
   "StructureDefinition/NutrientOuttake": {
     "history": false,
-    "index": 26,
+    "index": 25,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientOuttake.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientOuttake",
-    "name": "NutrientOuttake",
+    "path": "StructureDefinition-NutrientOuttake.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "NutrientOuttake",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the NutrientOuttake resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -406,14 +468,17 @@
   },
   "StructureDefinition/SocialMedia": {
     "history": false,
-    "index": 27,
+    "index": 26,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-SocialMedia.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/SocialMedia",
-    "name": "SocialMedia",
+    "path": "StructureDefinition-SocialMedia.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/SocialMedia",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "SocialMedia",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the SocialMedia resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -421,14 +486,17 @@
   },
   "StructureDefinition/VitalSigns": {
     "history": false,
-    "index": 28,
+    "index": 27,
     "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-VitalSigns.json",
-    "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/VitalSigns",
-    "name": "VitalSigns",
+    "path": "StructureDefinition-VitalSigns.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/VitalSigns",
     "version": "0.2.1",
-    "date": "2022-03-07T17:57:52-06:00",
+    "name": "VitalSigns",
+    "experimental": false,
+    "date": "2022-03-07T22:25:08-06:00",
+    "description": "An example profile of the VitalSigns resource.",
     "status": {
-      "class": "colstu",
+      "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
@@ -436,107 +504,182 @@
   },
   "AllergyIntolerance/AllergyIntoleranceExample": {
     "history": false,
-    "index": 29,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample.json"
+    "index": 28,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample.json",
+    "path": "AllergyIntolerance-AllergyIntoleranceExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
-  "DomainResource/BodyStructureExample": {
+  "BodyStructure/BodyStructureExample": {
     "history": false,
-    "index": 30,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/domainresource-BodyStructureExample.json"
+    "index": 29,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/bodystructure-BodyStructureExample.json",
+    "path": "BodyStructure-BodyStructureExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "CarePlan/CarePlanExample": {
     "history": false,
-    "index": 31,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careplan-CarePlanExample.json"
+    "index": 30,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careplan-CarePlanExample.json",
+    "path": "CarePlan-CarePlanExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "CareTeam/CareTeamExample": {
     "history": false,
-    "index": 32,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careteam-CareTeamExample.json"
+    "index": 31,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careteam-CareTeamExample.json",
+    "path": "CareTeam-CareTeamExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Communication/CommunicationExample": {
     "history": false,
-    "index": 33,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/communication-CommunicationExample.json"
+    "index": 32,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/communication-CommunicationExample.json",
+    "path": "Communication-CommunicationExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Condition/ConditionExample": {
     "history": false,
-    "index": 34,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/condition-ConditionExample.json"
+    "index": 33,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/condition-ConditionExample.json",
+    "path": "Condition-ConditionExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Consent/ConsentExample": {
     "history": false,
-    "index": 35,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/consent-ConsentExample.json"
+    "index": 34,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/consent-ConsentExample.json",
+    "path": "Consent-ConsentExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Device/DeviceExample": {
     "history": false,
-    "index": 36,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/device-DeviceExample.json"
+    "index": 35,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/device-DeviceExample.json",
+    "path": "Device-DeviceExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "DiagnosticReport/DiagnosticReportExample": {
     "history": false,
-    "index": 37,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/diagnosticreport-DiagnosticReportExample.json"
+    "index": 36,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/diagnosticreport-DiagnosticReportExample.json",
+    "path": "DiagnosticReport-DiagnosticReportExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "FamilyMemberHistory/FamilyMemberHistoryExample": {
     "history": false,
-    "index": 38,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/familymemberhistory-FamilyMemberHistoryExample.json"
+    "index": 37,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/familymemberhistory-FamilyMemberHistoryExample.json",
+    "path": "FamilyMemberHistory-FamilyMemberHistoryExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Goal/GoalExample": {
     "history": false,
-    "index": 39,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/goal-GoalExample.json"
-  },
-  "ImagingStudy/ImagingStudyExample": {
-    "history": false,
-    "index": 40,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/imagingstudy-ImagingStudyExample.json"
+    "index": 38,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/goal-GoalExample.json",
+    "path": "Goal-GoalExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Immunization/ImmunizationExample": {
     "history": false,
-    "index": 41,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/immunization-ImmunizationExample.json"
+    "index": 39,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/immunization-ImmunizationExample.json",
+    "path": "Immunization-ImmunizationExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Medication/MedicationExample": {
     "history": false,
-    "index": 42,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medication-MedicationExample.json"
+    "index": 40,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medication-MedicationExample.json",
+    "path": "Medication-MedicationExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "MedicationStatement/MedicationStatementExample": {
     "history": false,
-    "index": 43,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medicationstatement-MedicationStatementExample.json"
+    "index": 41,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medicationstatement-MedicationStatementExample.json",
+    "path": "MedicationStatement-MedicationStatementExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Observation/ObservationExample": {
     "history": false,
-    "index": 44,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/observation-ObservationExample.json"
+    "index": 42,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/observation-ObservationExample.json",
+    "path": "Observation-ObservationExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Patient/PatientExample": {
     "history": false,
-    "index": 45,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/patient-PatientExample.json"
+    "index": 43,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/patient-PatientExample.json",
+    "path": "Patient-PatientExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Practitioner/PractitionerExample": {
     "history": false,
-    "index": 46,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/practitioner-PractitionerExample.json"
+    "index": 44,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/practitioner-PractitionerExample.json",
+    "path": "Practitioner-PractitionerExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Procedure/ProcedureExample": {
     "history": false,
-    "index": 47,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/procedure-ProcedureExample.json"
+    "index": 45,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/procedure-ProcedureExample.json",
+    "path": "Procedure-ProcedureExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "RelatedPerson/RelatedPersonExample": {
     "history": false,
-    "index": 48,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/relatedperson-RelatedPersonExample.json"
+    "index": 46,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/relatedperson-RelatedPersonExample.json",
+    "path": "RelatedPerson-RelatedPersonExample.html",
+    "status": {
+      "class": "colsi"
+    }
   },
   "Specimen/SpecimenExample": {
     "history": false,
-    "index": 49,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/specimen-SpecimenExample.json"
+    "index": 47,
+    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/specimen-SpecimenExample.json",
+    "path": "Specimen-SpecimenExample.html",
+    "status": {
+      "class": "colsi"
+    }
   }
 }

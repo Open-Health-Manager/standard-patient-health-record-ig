@@ -3,10 +3,10 @@
   "id": "ImmunizationExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization"
     ]
   },
-  "status": "active",
+  "status": "completed",
   "patient": {
     "display": "Jane Doe",
     "reference": "Patient/jane-doe"

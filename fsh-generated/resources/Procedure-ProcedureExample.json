@@ -3,10 +3,10 @@
   "id": "ProcedureExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure"
     ]
   },
-  "status": "active",
+  "status": "completed",
   "subject": {
     "display": "Jane Doe",
     "reference": "Patient/jane-doe"

@@ -10,7 +10,7 @@ Description: "An example profile of the FamilyMemberHistory resource."
 Instance: FamilyMemberHistoryExample
 InstanceOf: MyFamilyMemberHistory
 Description: "An example of a FamilyMemberHistory ."
-* status = #active
+* status = #completed
 * patient.display = "Jane Doe"
 * patient.reference = "Patient/jane-doe"
 * relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#child "Child"

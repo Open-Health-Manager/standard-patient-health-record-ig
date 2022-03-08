@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMolecularSequence",
   "version": "0.2.1",
   "name": "MyMolecularSequence",
   "status": "active",

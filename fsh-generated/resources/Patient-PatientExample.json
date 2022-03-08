@@ -3,7 +3,7 @@
   "id": "PatientExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient"
     ]
   }
 }

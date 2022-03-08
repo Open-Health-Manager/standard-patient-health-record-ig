@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "VitalSigns",
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/VitalSigns",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/VitalSigns",
   "version": "0.2.1",
   "name": "VitalSigns",
   "status": "active",
@@ -16,7 +16,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/VitalSigns",
+  "type": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/VitalSigns",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
   "derivation": "specialization",
   "differential": {

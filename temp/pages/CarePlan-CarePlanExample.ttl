@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/CarePlan/CarePlanExample> a fhir:CarePlan;
+<https://gitlab.mitre.org/awatson/sphr/CarePlan/CarePlanExample> a fhir:CarePlan;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CarePlanExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,14 +22,14 @@
   fhir:CarePlan.status [ fhir:value "active"];
   fhir:CarePlan.intent [ fhir:value "plan"];
   fhir:CarePlan.subject [
-     fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/jane-doe>;
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/jane-doe>;
      fhir:Reference.reference [ fhir:value "Patient/jane-doe" ];
      fhir:Reference.display [ fhir:value "Jane Doe" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/CarePlan/CarePlanExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/CarePlan/CarePlanExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -3,10 +3,10 @@
   "id": "FamilyMemberHistoryExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory"
     ]
   },
-  "status": "active",
+  "status": "completed",
   "patient": {
     "display": "Jane Doe",
     "reference": "Patient/jane-doe"

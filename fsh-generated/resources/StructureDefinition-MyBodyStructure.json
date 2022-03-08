@@ -1,7 +1,17 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MyBodyStructure",
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure",
   "version": "0.2.1",
   "name": "MyBodyStructure",
   "status": "active",
@@ -12,18 +22,33 @@
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "openehr",
+      "uri": "http://openehr.org",
+      "name": "Open EHR Archetype Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
     }
   ],
   "kind": "resource",
   "abstract": false,
-  "type": "DomainResource",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "type": "BodyStructure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "DomainResource",
-        "path": "DomainResource"
+        "id": "BodyStructure",
+        "path": "BodyStructure"
       }
     ]
   }

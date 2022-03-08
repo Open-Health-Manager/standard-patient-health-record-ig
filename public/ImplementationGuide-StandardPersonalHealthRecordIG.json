@@ -3,13 +3,13 @@
   "id": "StandardPersonalHealthRecordIG",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
   },
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG",
+  "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG",
   "version": "0.2.1",
   "name": "StandardPersonalHealthRecordIG",
   "status": "draft",
-  "date": "2022-03-07T17:57:52-06:00",
+  "date": "2022-03-07T22:25:08-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -141,7 +141,7 @@
           },
           {
             "url": "value",
-            "valueString": "https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html"
+            "valueString": "https://gitlab.mitre.org/awatson/sphr/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -466,20 +466,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyImagingStudy"
-        },
-        "name": "MyImagingStudy",
-        "description": "An example profile of the ImagingStudy resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/MyImmunization"
         },
         "name": "MyImmunization",
@@ -708,21 +694,21 @@
         },
         "name": "AllergyIntoleranceExample",
         "description": "An example of an AllergyIntolerance.",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyAllergyIntolerance"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "DomainResource"
+            "valueString": "BodyStructure"
           }
         ],
         "reference": {
-          "reference": "DomainResource/BodyStructureExample"
+          "reference": "BodyStructure/BodyStructureExample"
         },
         "name": "BodyStructureExample",
         "description": "An example of a BodyStructure .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure"
       },
       {
         "extension": [
@@ -736,7 +722,7 @@
         },
         "name": "CarePlanExample",
         "description": "An example of a CarePlan .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan"
       },
       {
         "extension": [
@@ -750,7 +736,7 @@
         },
         "name": "CareTeamExample",
         "description": "An example of a CareTeam .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam"
       },
       {
         "extension": [
@@ -764,7 +750,7 @@
         },
         "name": "CommunicationExample",
         "description": "An example of a Communication .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication"
       },
       {
         "extension": [
@@ -778,7 +764,7 @@
         },
         "name": "ConditionExample",
         "description": "An example of a Condition .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCondition"
       },
       {
         "extension": [
@@ -792,7 +778,7 @@
         },
         "name": "ConsentExample",
         "description": "An example of a Consent .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent"
       },
       {
         "extension": [
@@ -806,7 +792,7 @@
         },
         "name": "DeviceExample",
         "description": "An example of a Device .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice"
       },
       {
         "extension": [
@@ -820,7 +806,7 @@
         },
         "name": "DiagnosticReportExample",
         "description": "An example of a DiagnosticReport .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport"
       },
       {
         "extension": [
@@ -834,7 +820,7 @@
         },
         "name": "FamilyMemberHistoryExample",
         "description": "An example of a FamilyMemberHistory .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory"
       },
       {
         "extension": [
@@ -848,21 +834,7 @@
         },
         "name": "GoalExample",
         "description": "An example of a patient .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ImagingStudy"
-          }
-        ],
-        "reference": {
-          "reference": "ImagingStudy/ImagingStudyExample"
-        },
-        "name": "ImagingStudyExample",
-        "description": "An example of a ImagingStudy .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal"
       },
       {
         "extension": [
@@ -876,7 +848,7 @@
         },
         "name": "ImmunizationExample",
         "description": "An example of a Immunization .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization"
       },
       {
         "extension": [
@@ -890,7 +862,7 @@
         },
         "name": "MedicationExample",
         "description": "An example of a Medication .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication"
       },
       {
         "extension": [
@@ -904,7 +876,7 @@
         },
         "name": "MedicationStatementExample",
         "description": "An example of a MedicationStatement .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement"
       },
       {
         "extension": [
@@ -918,7 +890,7 @@
         },
         "name": "ObservationExample",
         "description": "An example of a Observation .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation"
       },
       {
         "extension": [
@@ -932,7 +904,7 @@
         },
         "name": "PatientExample",
         "description": "An example of a patient .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient"
       },
       {
         "extension": [
@@ -946,7 +918,7 @@
         },
         "name": "PractitionerExample",
         "description": "An example of a Practitioner .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner"
       },
       {
         "extension": [
@@ -960,7 +932,7 @@
         },
         "name": "ProcedureExample",
         "description": "An example of a Procedure .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure"
       },
       {
         "extension": [
@@ -974,7 +946,7 @@
         },
         "name": "RelatedPersonExample",
         "description": "An example of a RelatedPerson .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson"
       },
       {
         "extension": [
@@ -988,7 +960,7 @@
         },
         "name": "SpecimenExample",
         "description": "An example of a Specimen .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen"
       }
     ],
     "page": {

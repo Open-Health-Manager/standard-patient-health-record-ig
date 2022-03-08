@@ -3,7 +3,7 @@
   "id": "CarePlanExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan"
     ]
   },
   "text": {

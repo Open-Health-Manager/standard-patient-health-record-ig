@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Medication/MedicationExample> a fhir:Medication;
+<https://gitlab.mitre.org/awatson/sphr/Medication/MedicationExample> a fhir:Medication;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MedicationExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Medication/MedicationExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Medication/MedicationExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

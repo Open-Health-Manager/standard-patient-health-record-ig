@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "NutrientOuttake",
-  "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientOuttake",
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake",
   "version": "0.2.1",
   "name": "NutrientOuttake",
   "status": "active",
@@ -16,7 +16,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/NutrientOuttake",
+  "type": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
   "derivation": "specialization",
   "differential": {

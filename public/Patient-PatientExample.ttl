@@ -5,24 +5,24 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/PatientExample> a fhir:Patient;
+<https://gitlab.mitre.org/awatson/sphr/Patient/PatientExample> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PatientExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PatientExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Anonymous Patient</b> (no stated gender) DoB Unknown</p></div>"
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/PatientExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Patient/PatientExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

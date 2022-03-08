@@ -10,7 +10,7 @@ Description: "An example profile of the Immunization resource."
 Instance: ImmunizationExample
 InstanceOf: MyImmunization
 Description: "An example of a Immunization ."
-* status = #active
+* status = #completed
 * patient.display = "Jane Doe"
 * patient.reference = "Patient/jane-doe"
 * vaccineCode = http://hl7.org/fhir/sid/cvx#MMR "MMR"

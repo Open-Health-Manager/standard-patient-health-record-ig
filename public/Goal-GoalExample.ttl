@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Goal/GoalExample> a fhir:Goal;
+<https://gitlab.mitre.org/awatson/sphr/Goal/GoalExample> a fhir:Goal;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "GoalExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal>
      ]
   ];
   fhir:DomainResource.text [
@@ -31,14 +31,14 @@
      ]
   ];
   fhir:Goal.subject [
-     fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/Patient/jane-doe>;
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/jane-doe>;
      fhir:Reference.reference [ fhir:value "Patient/jane-doe" ];
      fhir:Reference.display [ fhir:value "Jane Doe" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Goal/GoalExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Goal/GoalExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

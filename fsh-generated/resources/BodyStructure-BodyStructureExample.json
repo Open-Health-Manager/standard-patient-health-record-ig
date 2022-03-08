@@ -1,0 +1,13 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "BodyStructureExample",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure"
+    ]
+  },
+  "patient": {
+    "display": "Jane Doe",
+    "reference": "Patient/jane-doe"
+  }
+}

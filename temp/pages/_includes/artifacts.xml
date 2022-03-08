@@ -176,14 +176,6 @@
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-MyImagingStudy.html"
-                     title="StructureDefinition/MyImagingStudy">MyImagingStudy</a>
-               </td>
-               <td>{% capture desc %}An example profile of the ImagingStudy resource.{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-MyImmunization.html"
                      title="StructureDefinition/MyImmunization">MyImmunization</a>
                </td>
@@ -283,8 +275,8 @@
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="DomainResource-BodyStructureExample.html"
-                     title="DomainResource/BodyStructureExample">BodyStructureExample</a>
+                  <a href="BodyStructure-BodyStructureExample.html"
+                     title="BodyStructure/BodyStructureExample">BodyStructureExample</a>
                </td>
                <td>{% capture desc %}An example of a BodyStructure .{% endcapture %}
 {{ desc | markdownify}}</td>
@@ -354,14 +346,6 @@
                   <a href="Goal-GoalExample.html" title="Goal/GoalExample">GoalExample</a>
                </td>
                <td>{% capture desc %}An example of a patient .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ImagingStudy-ImagingStudyExample.html"
-                     title="ImagingStudy/ImagingStudyExample">ImagingStudyExample</a>
-               </td>
-               <td>{% capture desc %}An example of a ImagingStudy .{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>

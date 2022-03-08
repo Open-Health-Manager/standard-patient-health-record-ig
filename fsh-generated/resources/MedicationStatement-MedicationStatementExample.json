@@ -3,7 +3,7 @@
   "id": "MedicationStatementExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement"
     ]
   },
   "status": "active",

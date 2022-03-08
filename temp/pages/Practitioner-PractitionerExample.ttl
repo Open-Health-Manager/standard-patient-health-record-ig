@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Practitioner/PractitionerExample> a fhir:Practitioner;
+<https://gitlab.mitre.org/awatson/sphr/Practitioner/PractitionerExample> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PractitionerExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Practitioner/PractitionerExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Practitioner/PractitionerExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

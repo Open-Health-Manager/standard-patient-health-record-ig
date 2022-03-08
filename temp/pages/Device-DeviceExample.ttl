@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Device/DeviceExample> a fhir:Device;
+<https://gitlab.mitre.org/awatson/sphr/Device/DeviceExample> a fhir:Device;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DeviceExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice>
      ]
   ];
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/hello-implementation-guide/Device/DeviceExample.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/Device/DeviceExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

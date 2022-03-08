@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="StandardPersonalHealthRecordIG"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>
   </text>
-  <url value="https://gitlab.mitre.org/awatson/hello-implementation-guide/ImplementationGuide/StandardPersonalHealthRecordIG"/>
+  <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG"/>
   <version value="0.2.1"/>
   <name value="StandardPersonalHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-03-07T17:57:52-06:00"/>
+  <date value="2022-03-07T22:25:08-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -91,7 +91,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://gitlab.mitre.org/awatson/hello-implementation-guide/history.html"/>
+        <valueString value="https://gitlab.mitre.org/awatson/sphr/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -316,17 +316,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MyImagingStudy"/>
-      </reference>
-      <name value="MyImagingStudy"/>
-      <description value="An example profile of the ImagingStudy resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/MyImmunization"/>
       </reference>
       <name value="MyImmunization"/>
@@ -507,18 +496,18 @@
       </reference>
       <name value="AllergyIntoleranceExample"/>
       <description value="An example of an AllergyIntolerance."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyAllergyIntolerance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DomainResource"/>
+        <valueString value="BodyStructure"/>
       </extension>
       <reference>
-        <reference value="DomainResource/BodyStructureExample"/>
+        <reference value="BodyStructure/BodyStructureExample"/>
       </reference>
       <name value="BodyStructureExample"/>
       <description value="An example of a BodyStructure ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -529,7 +518,7 @@
       </reference>
       <name value="CarePlanExample"/>
       <description value="An example of a CarePlan ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -540,7 +529,7 @@
       </reference>
       <name value="CareTeamExample"/>
       <description value="An example of a CareTeam ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -551,7 +540,7 @@
       </reference>
       <name value="CommunicationExample"/>
       <description value="An example of a Communication ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -562,7 +551,7 @@
       </reference>
       <name value="ConditionExample"/>
       <description value="An example of a Condition ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCondition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -573,7 +562,7 @@
       </reference>
       <name value="ConsentExample"/>
       <description value="An example of a Consent ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -584,7 +573,7 @@
       </reference>
       <name value="DeviceExample"/>
       <description value="An example of a Device ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -595,7 +584,7 @@
       </reference>
       <name value="DiagnosticReportExample"/>
       <description value="An example of a DiagnosticReport ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -606,7 +595,7 @@
       </reference>
       <name value="FamilyMemberHistoryExample"/>
       <description value="An example of a FamilyMemberHistory ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -617,18 +606,7 @@
       </reference>
       <name value="GoalExample"/>
       <description value="An example of a patient ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ImagingStudy"/>
-      </extension>
-      <reference>
-        <reference value="ImagingStudy/ImagingStudyExample"/>
-      </reference>
-      <name value="ImagingStudyExample"/>
-      <description value="An example of a ImagingStudy ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -639,7 +617,7 @@
       </reference>
       <name value="ImmunizationExample"/>
       <description value="An example of a Immunization ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -650,7 +628,7 @@
       </reference>
       <name value="MedicationExample"/>
       <description value="An example of a Medication ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -661,7 +639,7 @@
       </reference>
       <name value="MedicationStatementExample"/>
       <description value="An example of a MedicationStatement ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -672,7 +650,7 @@
       </reference>
       <name value="ObservationExample"/>
       <description value="An example of a Observation ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -683,7 +661,7 @@
       </reference>
       <name value="PatientExample"/>
       <description value="An example of a patient ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -694,7 +672,7 @@
       </reference>
       <name value="PractitionerExample"/>
       <description value="An example of a Practitioner ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -705,7 +683,7 @@
       </reference>
       <name value="ProcedureExample"/>
       <description value="An example of a Procedure ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -716,7 +694,7 @@
       </reference>
       <name value="RelatedPersonExample"/>
       <description value="An example of a RelatedPerson ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -727,7 +705,7 @@
       </reference>
       <name value="SpecimenExample"/>
       <description value="An example of a Specimen ."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen"/>
+      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

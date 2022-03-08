@@ -6,133 +6,127 @@
   "profiles": {
     "AllergyIntolerance": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyAllergyIntolerance",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyAllergyIntolerance",
         "title": "MyAllergyIntolerance"
       }
     ],
-    "DomainResource": [
+    "BodyStructure": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyBodyStructure",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure",
         "title": "MyBodyStructure"
       }
     ],
     "CarePlan": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCarePlan",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan",
         "title": "MyCarePlan"
       }
     ],
     "CareTeam": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCareTeam",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam",
         "title": "MyCareTeam"
       }
     ],
     "Communication": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCommunication",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication",
         "title": "MyCommunication"
       }
     ],
     "Condition": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyCondition",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCondition",
         "title": "MyCondition"
       }
     ],
     "Consent": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyConsent",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent",
         "title": "MyConsent"
       }
     ],
     "Device": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDevice",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice",
         "title": "MyDevice"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyDiagnosticReport",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport",
         "title": "MyDiagnosticReport"
       }
     ],
     "FamilyMemberHistory": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyFamilyMemberHistory",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory",
         "title": "MyFamilyMemberHistory"
       }
     ],
     "Goal": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyGoal",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal",
         "title": "MyGoal"
-      }
-    ],
-    "ImagingStudy": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImagingStudy",
-        "title": "MyImagingStudy"
       }
     ],
     "Immunization": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyImmunization",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization",
         "title": "MyImmunization"
       }
     ],
     "Medication": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedication",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication",
         "title": "MyMedication"
       }
     ],
     "MedicationStatement": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMedicationStatement",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement",
         "title": "MyMedicationStatement"
       }
     ],
     "MolecularSequence": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyMolecularSequence",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMolecularSequence",
         "title": "MyMolecularSequence"
       }
     ],
     "Observation": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyObservation",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation",
         "title": "MyObservation"
       }
     ],
     "Patient": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPatient",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient",
         "title": "MyPatient"
       }
     ],
     "Practitioner": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyPractitioner",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner",
         "title": "MyPractitioner"
       }
     ],
     "Procedure": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyProcedure",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure",
         "title": "MyProcedure"
       }
     ],
     "RelatedPerson": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MyRelatedPerson",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson",
         "title": "MyRelatedPerson"
       }
     ],
     "Specimen": [
       {
-        "url": "https://gitlab.mitre.org/awatson/hello-implementation-guide/StructureDefinition/MySpecimen",
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen",
         "title": "MySpecimen"
       }
     ]
