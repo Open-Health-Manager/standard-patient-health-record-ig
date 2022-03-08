@@ -3,7 +3,7 @@
 
 err = 32, warn = 2, info = 0
 IG Publisher Version: 1.1.93 Out of date - current version is ?pub-ver-1?
-Generated Mon Mar 07 17:39:20 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
+Generated Mon Mar 07 17:58:50 CST 2022. FHIR version 4.0.1 for StandardPersonalHealthRecordIG#0.2.1 (canonical = https://gitlab.mitre.org/awatson/hello-implementation-guide)
  Build Errors : 17 / 0 / 0
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPersonalHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample : 2 / 0 / 1
