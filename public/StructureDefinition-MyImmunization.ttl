@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "MyImmunization"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-07T17:38:24-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-07T17:57:52-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
