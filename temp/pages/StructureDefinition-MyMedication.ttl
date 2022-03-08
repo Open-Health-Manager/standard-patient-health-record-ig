@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "MyMedication"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-07T22:25:08-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-08T03:29:37-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

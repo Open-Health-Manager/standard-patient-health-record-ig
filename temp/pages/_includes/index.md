@@ -4,7 +4,7 @@ The purpose of this implementation guide is to help the reader implement a Perso
 
 The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, in guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.
 
-![./StarTrek-Sphr.png](./StarTrek-Sphr.png){:width="100%"}
+![./StarTrek-Sphr.png](./StarTrek-Sphr.jpg){:width="100%"}
 > Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.
 
 
