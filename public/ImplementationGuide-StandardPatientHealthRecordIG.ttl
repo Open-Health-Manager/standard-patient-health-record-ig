@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG> a fhir:ImplementationGuide;
+<https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "StandardPersonalHealthRecordIG"];
+  fhir:Resource.id [ fhir:value "StandardPatientHealthRecordIG"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPersonalHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG"];
+  fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"];
   fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
-  fhir:ImplementationGuide.name [ fhir:value "StandardPersonalHealthRecordIG"];
+  fhir:ImplementationGuide.name [ fhir:value "StandardPatientHealthRecordIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-09T08:58:18-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-09T09:27:10-06:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "https://gitlab.mitre.org/awatson/sphr" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "StandardPersonalHealthRecordIG"];
+  fhir:ImplementationGuide.packageId [ fhir:value "StandardPatientHealthRecordIG"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -1102,7 +1102,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG.ttl> a owl:Ontology;
+<https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

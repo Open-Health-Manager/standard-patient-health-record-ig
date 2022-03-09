@@ -1,5 +1,5 @@
 {
-  "package": "StandardPersonalHealthRecordIG",
+  "package": "StandardPatientHealthRecordIG",
   "version": "0.2.1",
   "fhirVersion": "4.0.1",
   "extensions": [],
