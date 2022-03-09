@@ -1,6 +1,6 @@
 # Standard Patient Health Record  
 
-The purpose of this implementation guide is to help the reader implement a Personal Health Record (in a programming language of their choice).  The notion of a Personal Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient; and the EMR being owned by the hospital.
+The purpose of this implementation guide is to help the reader implement a Patient Health Record (in a programming language of their choice).  The notion of a Patient Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient; and the EMR being owned by the hospital.
 
 The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, in guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.
 
@@ -10,13 +10,13 @@ The following document will offer design guidance and standardized APIs for help
 
 ### Purpose / Design Philosophy
 
-The core of the Personal Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Personal Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.  
+The core of the Patient Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Patient Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.  
 
 ### Prior Art - Implementation Guides   
 
 This implementation guide was developed through meta-analysis of dozens of other guides, journal liturature, and an environment surveys of the PHR market.  Implementators may find the following implementation guides of particular interest:  
 
-- [Personal Health Record - System Functional Model](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88)  
+- [Patient Health Record - System Functional Model](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88)  
 - [Smart on FHIR - App Launch](https://hl7.org/fhir/smart-app-launch/)      
 - [Argonaut Data Query](http://www.fhir.org/guides/argonaut/r2/)      
 - [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)  
@@ -45,7 +45,7 @@ This implementation guide was developed through meta-analysis of dozens of other
 - [CARIN Digital Insurance Card](https://build.fhir.org/ig/HL7/carin-digital-insurance-card/)  
 - [Mobile Access to Health Documents](https://profiles.ihe.net/ITI/MHD/)  
 - [Patient Reported Outcomes](http://hl7.org/fhir/us/patient-reported-outcomes/2019May/index.html)  
-- [Personal Health Devices](http://hl7.org/fhir/uv/phd/2019May/)    
+- [Patient Health Devices](http://hl7.org/fhir/uv/phd/2019May/)    
 - [Da Vinci - Prior Authorization](http://hl7.org/fhir/us/davinci-pas/)  
 - [Vital Records -  Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/artifacts.html)  
 

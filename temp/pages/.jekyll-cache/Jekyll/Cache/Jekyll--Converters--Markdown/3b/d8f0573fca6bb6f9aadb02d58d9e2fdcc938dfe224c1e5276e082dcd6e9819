@@ -1,4 +1,4 @@
-I"ö<p><!-- white space is critical inside of capture --></p>
+I"ó<p><!-- white space is critical inside of capture --></p>
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
@@ -19,17 +19,17 @@
 <h4 id="file-extensions">File Extensions</h4>
 
 <ul>
-  <li>Files contain personal health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
+  <li>Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
   <li>Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  <code class="language-plaintext highlighter-rouge">.Observation.fhir</code></li>
 </ul>
 
 <h4 id="compression">Compression</h4>
 
-<p>Files contianing personal health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
+<p>Files contianing patient health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
 
 <h4 id="security">Security</h4>
 
-<p>Files contianing personal health information SHOULD be signed with a password.</p>
+<p>Files contianing patient health information SHOULD be signed with a password.</p>
 
 <h3 id="platform-storage">Platform Storage</h3>
 

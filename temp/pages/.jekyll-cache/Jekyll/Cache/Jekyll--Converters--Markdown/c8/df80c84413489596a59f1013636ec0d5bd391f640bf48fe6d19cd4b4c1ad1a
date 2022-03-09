@@ -1,6 +1,10 @@
-I"Ž<p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+I"í<p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#data-model" id="markdown-toc-data-model">Data Model</a></li>
+  <li><a href="#logical-models" id="markdown-toc-logical-models">Logical Models</a></li>
+</ul>
+
 </div>
 <h3 id="data-model">Data Model</h3>
 
@@ -12,7 +16,7 @@
 
 <p>The physiology model is the portion of the SPHR that contains data about structures and processes that are actually occuring within the patientâ€™s physical body.  Such things may include vital signs, laboratory biomarkers, an allergic response, a broken arm, an immunization, a radiology report, a genetic sequence, or post-operative notes recorded after a surgery.  The data contained in these data schemas are not the actual metabolic or anatomic processes happening in a human body, but they are cognitive representations of those processes (and therefore loosely analogous with the Id).</p>
 
-<p>A standard personal healthrecord MUST implement the following resources (defined in the Argonaut IG) at a bare minimum.</p>
+<p>A standard patient healthrecord MUST implement the following resources (defined in the Argonaut IG) at a bare minimum.</p>
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/allergyintolerance.html">AllergyIntolerance</a></li>
@@ -27,7 +31,7 @@
   <li><a href="https://www.hl7.org/fhir/procedure.html">Procedure</a></li>
 </ul>
 
-<p>A standard personal healthrecord SHOULD implement the following resources to be considered comprehensive:</p>
+<p>A standard patient healthrecord SHOULD implement the following resources to be considered comprehensive:</p>
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/bodystructure.html">BodyStructure</a></li>
@@ -41,7 +45,7 @@
 
 <p>The patient also exists within a social context, wherein family members, clinicians, and other careteam members all play.  This social context includes social determinants of health, environmental factors, and many external factors that contribute to a patientâ€™s health.</p>
 
-<p>A complete standard personal healthrecord SHOULD implement the following resources that will be used by other systems to describe other actors participating in caregiving activities.</p>
+<p>A complete standard patient healthrecord SHOULD implement the following resources that will be used by other systems to describe other actors participating in caregiving activities.</p>
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/careplan.html">CarePlan</a></li>
@@ -56,7 +60,7 @@
 
 <p>Besides modeling the internal physiology (Id) and the social context (Super Ego) of the patient, the Standard Patient Health Record also tracks a number of administrative/legal resources (Ego).  These administrative resources require a certain amount of executive decision making and require the patient (or an authoried delagate) to fill out forms, answer questions, consent to services, manage devies, schedule appointments, and such.  These resources are not about what is happening within the patientâ€™s body, or the social context the patient exists in, but rather, reflect the choices that the patient makes and the administrative/legal context of the patient.</p>
 
-<p>A standard personal healthrecord MUST implement the following for it to accept records from other SPHR systems:</p>
+<p>A standard patient healthrecord MUST implement the following for it to accept records from other SPHR systems:</p>
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/bundle.html">Bundle</a></li>
@@ -67,7 +71,7 @@
   <li><a href="https://www.hl7.org/fhir/questionnaireresponse.html">QuestionnaireResponse</a></li>
 </ul>
 
-<p>A standard personal healthrecord SHOULD also implement the following resources so it can participate in common workflows that SPHRs are expected to be able to support:</p>
+<p>A standard patient healthrecord SHOULD also implement the following resources so it can participate in common workflows that SPHRs are expected to be able to support:</p>
 
 <ul>
   <li><a href="https://www.hl7.org/fhir/appointment.html">Appointment</a></li>
