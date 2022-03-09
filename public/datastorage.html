@@ -166,17 +166,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="file-extensions">File Extensions</h4>
 
 <ul>
-  <li>Files contain personal health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
+  <li>Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
   <li>Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  <code class="language-plaintext highlighter-rouge">.Observation.fhir</code></li>
 </ul>
 
 <h4 id="compression">Compression</h4>
 
-<p>Files contianing personal health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
+<p>Files contianing patient health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
 
 <h4 id="security">Security</h4>
 
-<p>Files contianing personal health information SHOULD be signed with a password.</p>
+<p>Files contianing patient health information SHOULD be signed with a password.</p>
 
 <h3 id="platform-storage">Platform Storage</h3>
 
@@ -210,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 8, 2022 03:29-0600">2022-03-08</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPersonalHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 9, 2022 08:58-0600">2022-03-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

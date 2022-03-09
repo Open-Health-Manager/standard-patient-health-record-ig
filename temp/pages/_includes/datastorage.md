@@ -12,16 +12,16 @@ As such, this implementation guide recommends that implementors treat storage in
 
 #### File Extensions
 
-- Files contain personal health information using Fast Healthcare Interoperability Resources SHOULD be saved with a `.fhir` extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.
+- Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a `.fhir` extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.
 - Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  `.Observation.fhir` 
 
 #### Compression  
 
-Files contianing personal health information MAY be zipped, with either a `.fhir.zip` or `.fhir.gz` extension. When using compression, systems SHOULD use the [DEFLATE](https://en.wikipedia.org/wiki/Deflate) algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.  
+Files contianing patient health information MAY be zipped, with either a `.fhir.zip` or `.fhir.gz` extension. When using compression, systems SHOULD use the [DEFLATE](https://en.wikipedia.org/wiki/Deflate) algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.  
 
 #### Security  
 
-Files contianing personal health information SHOULD be signed with a password.
+Files contianing patient health information SHOULD be signed with a password.
 
 ### Platform Storage
 

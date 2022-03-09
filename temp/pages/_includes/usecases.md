@@ -1,4 +1,4 @@
-When designing a personal health record, be careful about the assumptions made about how laptop computers and smartphones are used.  Think in terms of human behaviors and haptics and how patients will want to interact with their system.  These may not always align with what is available via consumer goods.  Classic examples are deaf and blind users, who may need screen readers or voice dictation systems.  Other examples might include patients confined to bed or wheelchairs, or with limited cognitive function.  
+When designing a patient health record, be careful about the assumptions made about how laptop computers and smartphones are used.  Think in terms of human behaviors and haptics and how patients will want to interact with their system.  These may not always align with what is available via consumer goods.  Classic examples are deaf and blind users, who may need screen readers or voice dictation systems.  Other examples might include patients confined to bed or wheelchairs, or with limited cognitive function.  
 
 
 ### Smart Materials & Haptics
@@ -13,14 +13,14 @@ With an understanding that there isn't necessarily a 'here' and 'there' as in th
 ![./Design-DayMadeOfGlass-BedsideComputing.jpg](./Design-DayMadeOfGlass-BedsideComputing.jpg){:width="100%"}
 > Architectural display glass in the bedroom, acting as alarm clock and digital software assistant.   Day Made of Glass.  Copyright Corning.
 
-Patients will often wish to access their personal health records from the comfort and security of their own bed or bedroom.  Assuming the presence of a mouse or VR headset or other input devices may not be realistic.  However, technologies like Bluetooth can allow software to connect to nearby speakers, microphones, home automation hubs, and voice activated home assistants.  
+Patients will often wish to access their patient health records from the comfort and security of their own bed or bedroom.  Assuming the presence of a mouse or VR headset or other input devices may not be realistic.  However, technologies like Bluetooth can allow software to connect to nearby speakers, microphones, home automation hubs, and voice activated home assistants.  
 
 
 ### Water Closet
 ![./Design-DayMadeOfGlass-WaterCloset.jpg](./Design-DayMadeOfGlass-WaterCloset.jpg){:width="100%"}
 > Medical home water closet using architectural glass.   Day Made of Glass.  Copyright Corning.
 
-Healthcare can be wet and messy with bodily fluids, and a significant amount of personal hygiene and healthcare may happen in a water closet or bathroom.  Think about how user interfaces may be integrated into wet rooms, such as bluetooth enabled weight scales or video screens integrated into medical cabinet mirrors.  
+Healthcare can be wet and messy with bodily fluids, and a significant amount of patient hygiene and healthcare may happen in a water closet or bathroom.  Think about how user interfaces may be integrated into wet rooms, such as bluetooth enabled weight scales or video screens integrated into medical cabinet mirrors.  
 
 
 ### Kitchen & Pantry
@@ -37,9 +37,9 @@ Since the Covid19 pandemic, concerns around quarantines and social mobility have
 
 ### Data Intake/Transfer
 ![./Design-DayMadeOfGlass-DataImportExport.jpg](./Design-DayMadeOfGlass-DataImportExport.jpg){:width="100%"}
-> Import/export of a personal smartphone using near field communications and architectural surface glass.  Day Made of Glass.  Copyright Corning.
+> Import/export of a patient smartphone using near field communications and architectural surface glass.  Day Made of Glass.  Copyright Corning.
 
- Many architects and developers consider making data available 'over the wire' via RESTful interfaces to be sufficient for all of their data transfer needs.  The thinking being that remote data fetch of personal health information (PHI) from an EHR solves the majority of use cases around missing or inaccessible data.  This thinking relies on a number of ableist assumptions, however, such as the patient being awake and cogent (i.e. not unconscious in the emergency room).  Or that the patient is old enough to have a smartphone (i.e. not an infant or toddler).  Or that the patient isn't senile or have other cognitive difficults (i.e. not having a stroke).  As such, it's critically important that PHR designers think about how data is transferred into/out of the PHR, especially in "Break the Glass" scenarios used by Emergency Responders and during Intake Procedures.  Technologies like Bluetooth, NFC tags, QR codes (SMART Cards), and related technologies offer many design opportunities for streamlining the transfer of data at the point of care, without having to go to a computer terminal and search for URLs and juggle usernames and passwords.  
+ Many architects and developers consider making data available 'over the wire' via RESTful interfaces to be sufficient for all of their data transfer needs.  The thinking being that remote data fetch of patient health information (PHI) from an EHR solves the majority of use cases around missing or inaccessible data.  This thinking relies on a number of ableist assumptions, however, such as the patient being awake and cogent (i.e. not unconscious in the emergency room).  Or that the patient is old enough to have a smartphone (i.e. not an infant or toddler).  Or that the patient isn't senile or have other cognitive difficults (i.e. not having a stroke).  As such, it's critically important that PHR designers think about how data is transferred into/out of the PHR, especially in "Break the Glass" scenarios used by Emergency Responders and during Intake Procedures.  Technologies like Bluetooth, NFC tags, QR codes (SMART Cards), and related technologies offer many design opportunities for streamlining the transfer of data at the point of care, without having to go to a computer terminal and search for URLs and juggle usernames and passwords.  
 
 ### Proximity Awareness & Near Field Communications
 ![./Design-DayMadeOfGlass-ProximityDataTransfer.jpg](./Design-DayMadeOfGlass-ProximityDataTransfer.jpg){:width="100%"}

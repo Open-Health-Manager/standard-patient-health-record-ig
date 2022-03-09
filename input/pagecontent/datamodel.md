@@ -8,7 +8,7 @@ At a very high level, we broadly organize the SPHR data model into three categor
 
 The physiology model is the portion of the SPHR that contains data about structures and processes that are actually occuring within the patient's physical body.  Such things may include vital signs, laboratory biomarkers, an allergic response, a broken arm, an immunization, a radiology report, a genetic sequence, or post-operative notes recorded after a surgery.  The data contained in these data schemas are not the actual metabolic or anatomic processes happening in a human body, but they are cognitive representations of those processes (and therefore loosely analogous with the Id).
 
-A standard personal healthrecord MUST implement the following resources (defined in the Argonaut IG) at a bare minimum.
+A standard patient healthrecord MUST implement the following resources (defined in the Argonaut IG) at a bare minimum.
 
 - [AllergyIntolerance](https://www.hl7.org/fhir/allergyintolerance.html)
 - [Condition](https://www.hl7.org/fhir/condition.html)
@@ -21,7 +21,7 @@ A standard personal healthrecord MUST implement the following resources (defined
 - [Observation](https://www.hl7.org/fhir/observation.html)
 - [Procedure](https://www.hl7.org/fhir/procedure.html)
 
-A standard personal healthrecord SHOULD implement the following resources to be considered comprehensive:
+A standard patient healthrecord SHOULD implement the following resources to be considered comprehensive:
 
 - [BodyStructure](https://www.hl7.org/fhir/bodystructure.html)
 - [ImagingStudy](https://www.hl7.org/fhir/imagingstudy.html)
@@ -33,7 +33,7 @@ A standard personal healthrecord SHOULD implement the following resources to be 
 
 The patient also exists within a social context, wherein family members, clinicians, and other careteam members all play.  This social context includes social determinants of health, environmental factors, and many external factors that contribute to a patient's health.  
 
-A complete standard personal healthrecord SHOULD implement the following resources that will be used by other systems to describe other actors participating in caregiving activities.  
+A complete standard patient healthrecord SHOULD implement the following resources that will be used by other systems to describe other actors participating in caregiving activities.  
 
 - [CarePlan](https://www.hl7.org/fhir/careplan.html)
 - [CareTeam](https://www.hl7.org/fhir/careteam.html)
@@ -47,7 +47,7 @@ A complete standard personal healthrecord SHOULD implement the following resourc
 
 Besides modeling the internal physiology (Id) and the social context (Super Ego) of the patient, the Standard Patient Health Record also tracks a number of administrative/legal resources (Ego).  These administrative resources require a certain amount of executive decision making and require the patient (or an authoried delagate) to fill out forms, answer questions, consent to services, manage devies, schedule appointments, and such.  These resources are not about what is happening within the patient's body, or the social context the patient exists in, but rather, reflect the choices that the patient makes and the administrative/legal context of the patient.  
 
-A standard personal healthrecord MUST implement the following for it to accept records from other SPHR systems:
+A standard patient healthrecord MUST implement the following for it to accept records from other SPHR systems:
 
 - [Bundle](https://www.hl7.org/fhir/bundle.html)
 - [Consent](https://www.hl7.org/fhir/consent.html)
@@ -56,7 +56,7 @@ A standard personal healthrecord MUST implement the following for it to accept r
 - [Questionnaire](https://www.hl7.org/fhir/questionnaire.html)
 - [QuestionnaireResponse](https://www.hl7.org/fhir/questionnaireresponse.html)
 
-A standard personal healthrecord SHOULD also implement the following resources so it can participate in common workflows that SPHRs are expected to be able to support:
+A standard patient healthrecord SHOULD also implement the following resources so it can participate in common workflows that SPHRs are expected to be able to support:
 
 - [Appointment](https://www.hl7.org/fhir/appointment.html)
 - [Binary](https://www.hl7.org/fhir/binary.html)
