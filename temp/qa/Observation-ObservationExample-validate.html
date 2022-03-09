@@ -7,7 +7,7 @@
 <p><b>Validation Links:</b></p><ul><li><a href="https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator">Validate using FHIR Validator</a> (Java): <code id="vl-Observation-ObservationExample">$cmd$</code></li></ul>
 <script type="text/javascript">
   var x = window.location.href;
-  document.getElementById("vl-Observation-ObservationExample").innerHTML = "java -jar [path]/org.hl7.fhir.validator.jar -ig StandardPersonalHealthRecordIG#dev "+x.substr(0, x.lastIndexOf(".")).replace("file:///", "") + ".json";
+  document.getElementById("vl-Observation-ObservationExample").innerHTML = "java -jar [path]/org.hl7.fhir.validator.jar -ig StandardPatientHealthRecordIG#dev "+x.substr(0, x.lastIndexOf(".")).replace("file:///", "") + ".json";
 </script>
 </body>
 </html>

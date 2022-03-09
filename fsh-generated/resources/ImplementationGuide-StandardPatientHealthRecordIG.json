@@ -1,9 +1,9 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "StandardPersonalHealthRecordIG",
-  "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG",
+  "id": "StandardPatientHealthRecordIG",
+  "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
   "version": "0.2.1",
-  "name": "StandardPersonalHealthRecordIG",
+  "name": "StandardPatientHealthRecordIG",
   "status": "draft",
   "publisher": "MITRE",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "packageId": "StandardPersonalHealthRecordIG",
+  "packageId": "StandardPatientHealthRecordIG",
   "fhirVersion": [
     "4.0.1"
   ],

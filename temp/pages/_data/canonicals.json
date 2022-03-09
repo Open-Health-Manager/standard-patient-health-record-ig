@@ -1,10 +1,10 @@
 [
   {
-    "id": "StandardPersonalHealthRecordIG",
+    "id": "StandardPatientHealthRecordIG",
     "type": "ImplementationGuide",
-    "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG",
+    "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
     "version": "0.2.1",
-    "name": "StandardPersonalHealthRecordIG"
+    "name": "StandardPatientHealthRecordIG"
   },
   {
     "id": "Environmental",

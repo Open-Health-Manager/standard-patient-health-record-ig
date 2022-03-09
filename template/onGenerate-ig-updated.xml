@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="StandardPersonalHealthRecordIG"/>
+   <id value="StandardPatientHealthRecordIG"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>StandardPersonalHealthRecordIG</h2>
+         <h2>StandardPatientHealthRecordIG</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG</pre>
+         <pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre>
       </div>
    </text>
-   <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG"/>
+   <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/>
    <version value="0.2.1"/>
-   <name value="StandardPersonalHealthRecordIG"/>
+   <name value="StandardPatientHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-03-09T08:58:18-06:00"/>
+   <date value="2022-03-09T09:27:10-06:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -22,7 +22,7 @@
          <value value="https://gitlab.mitre.org/awatson/sphr"/>
       </telecom>
    </contact>
-   <packageId value="StandardPersonalHealthRecordIG"/>
+   <packageId value="StandardPatientHealthRecordIG"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <definition>

@@ -1,9 +1,9 @@
 {
   "path": "http://hl7.org/fhir/R4/",
   "canonical": "https://gitlab.mitre.org/awatson/sphr",
-  "igId": "StandardPersonalHealthRecordIG",
-  "igName": "StandardPersonalHealthRecordIG",
-  "packageId": "StandardPersonalHealthRecordIG",
+  "igId": "StandardPatientHealthRecordIG",
+  "igName": "StandardPatientHealthRecordIG",
+  "packageId": "StandardPatientHealthRecordIG",
   "igVer": "0.2.1",
   "errorCount": 19,
   "version": "4.0.1",
@@ -14,12 +14,12 @@
   "toolingVersionFull": "5.0.0-snapshot1 (3)",
   "totalFiles": 48,
   "processedFiles": 69,
-  "genDate": "Wed, Mar 9, 2022 08:58-0600",
+  "genDate": "Wed, Mar 9, 2022 09:27-0600",
   "genDay": "09/03/2022",
   "ig": {
-    "id": "StandardPersonalHealthRecordIG",
-    "name": "StandardPersonalHealthRecordIG",
-    "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPersonalHealthRecordIG",
+    "id": "StandardPatientHealthRecordIG",
+    "name": "StandardPatientHealthRecordIG",
+    "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
     "version": "0.2.1",
     "status": "draft",
     "experimental": false,
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2022-03-09T08:58:18-06:00",
+    "date": "2022-03-09T09:27:10-06:00",
     "fhirVersion": "4.0.1"
   }
 }
