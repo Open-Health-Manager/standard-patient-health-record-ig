@@ -259,47 +259,10 @@
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="BodyStructure-BodyStructureExample.html"
-                     title="BodyStructure/BodyStructureExample">BodyStructureExample</a>
-               </td>
-               <td>{% capture desc %}An example of a BodyStructure .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Composition-Care-Plan-Example.html"
                      title="Composition/Care-Plan-Example">Care-Plan-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CarePlan-CarePlanExample.html" title="CarePlan/CarePlanExample">CarePlanExample</a>
-               </td>
-               <td>{% capture desc %}An example of a CarePlan .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CareTeam-CareTeamExample.html" title="CareTeam/CareTeamExample">CareTeamExample</a>
-               </td>
-               <td>{% capture desc %}An example of a CareTeam .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Communication-CommunicationExample.html"
-                     title="Communication/CommunicationExample">CommunicationExample</a>
-               </td>
-               <td>{% capture desc %}An example of a Communication .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Consent-ConsentExample.html" title="Consent/ConsentExample">ConsentExample</a>
-               </td>
-               <td>{% capture desc %}An example of a Consent .{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - CarePlan{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -307,38 +270,23 @@
                   <a href="Composition-Consultation-Note-Example.html"
                      title="Composition/Consultation-Note-Example">Consultation-Note-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Consultation Note{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-Continuity-of-Care-Document-Example.html"
-                     title="Composition/Continuity-of-Care-Document-Example">Continuity-of-Care-Document-Example</a>
+                  <a href="Composition-ContinuityCareDocument1.html"
+                     title="Composition/ContinuityCareDocument1">ContinuityCareDocument1</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Continuity of Care Document{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Device-DeviceExample.html" title="Device/DeviceExample">DeviceExample</a>
+                  <a href="Composition-DiagnosticImagingReport1.html"
+                     title="Composition/DiagnosticImagingReport1">DiagnosticImagingReport1</a>
                </td>
-               <td>{% capture desc %}An example of a Device .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Diagnostic-Imaging-Report-Example.html"
-                     title="Composition/Diagnostic-Imaging-Report-Example">Diagnostic-Imaging-Report-Example</a>
-               </td>
-               <td>{% capture desc %}{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-DiagnosticReportExample.html"
-                     title="DiagnosticReport/DiagnosticReportExample">DiagnosticReportExample</a>
-               </td>
-               <td>{% capture desc %}An example of a DiagnosticReport .{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Diagnostic Imaging Report{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -346,15 +294,82 @@
                   <a href="Composition-Discharge-Summary-Example.html"
                      title="Composition/Discharge-Summary-Example">Discharge-Summary-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Discharge Summary{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="FamilyMemberHistory-FamilyMemberHistoryExample.html"
-                     title="FamilyMemberHistory/FamilyMemberHistoryExample">FamilyMemberHistoryExample</a>
+                  <a href="BodyStructure-ExampleBodyStructure.html"
+                     title="BodyStructure/ExampleBodyStructure">ExampleBodyStructure</a>
                </td>
-               <td>{% capture desc %}An example of a FamilyMemberHistory .{% endcapture %}
+               <td>{% capture desc %}John Doe - BodyStructure - Left Foot{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ExampleCarePlan.html" title="CarePlan/ExampleCarePlan">ExampleCarePlan</a>
+               </td>
+               <td>{% capture desc %}John Doe - CarePlan - Consolidated{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CareTeam-ExampleCareTeam.html" title="CareTeam/ExampleCareTeam">ExampleCareTeam</a>
+               </td>
+               <td>{% capture desc %}John Doe - CareTeam{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Communication-ExampleCommunication.html"
+                     title="Communication/ExampleCommunication">ExampleCommunication</a>
+               </td>
+               <td>{% capture desc %}John Doe - Communication - New medication request.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ExampleConsent.html" title="Consent/ExampleConsent">ExampleConsent</a>
+               </td>
+               <td>{% capture desc %}John Doe - Consent - Advanced Directive{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-ExampleDevice.html" title="Device/ExampleDevice">ExampleDevice</a>
+               </td>
+               <td>{% capture desc %}John Doe - Device - Digital Blood Pressure Cuff{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-ExampleDiagnosticReport.html"
+                     title="DiagnosticReport/ExampleDiagnosticReport">ExampleDiagnosticReport</a>
+               </td>
+               <td>{% capture desc %}John Doe - DiagnosticReport{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ExampleFamilyMemberHistory.html"
+                     title="FamilyMemberHistory/ExampleFamilyMemberHistory">ExampleFamilyMemberHistory</a>
+               </td>
+               <td>{% capture desc %}John Doe - FamilyMemberHistory{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RelatedPerson-ExampleRelatedPerson.html"
+                     title="RelatedPerson/ExampleRelatedPerson">ExampleRelatedPerson</a>
+               </td>
+               <td>{% capture desc %}John Doe - RelatedPerson - Sister{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-ExampleSpecimen.html" title="Specimen/ExampleSpecimen">ExampleSpecimen</a>
+               </td>
+               <td>{% capture desc %}John Doe - Specimen - Urinalysis{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -362,7 +377,7 @@
                   <a href="Composition-History-and-Physical-Example.html"
                      title="Composition/History-and-Physical-Example">History-and-Physical-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - History &amp; Physical{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -386,7 +401,7 @@
                   <a href="Bundle-Medication-Metformin.html"
                      title="Bundle/Medication-Metformin">Medication-Metformin</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Bundle - Medication Reconciliation Bundle{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -394,7 +409,7 @@
                   <a href="Bundle-ObservationsBundle1.html"
                      title="Bundle/ObservationsBundle1">ObservationsBundle1</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Observation - Collection{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -402,7 +417,7 @@
                   <a href="Composition-Operative-Note-Example.html"
                      title="Composition/Operative-Note-Example">Operative-Note-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Operative Note{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -410,7 +425,7 @@
                   <a href="Bundle-PractitionersBundle1.html"
                      title="Bundle/PractitionersBundle1">PractitionersBundle1</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Practitioners - Collection{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -418,7 +433,7 @@
                   <a href="Composition-Procedure-Note-Example.html"
                      title="Composition/Procedure-Note-Example">Procedure-Note-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Procedure Note{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -426,7 +441,7 @@
                   <a href="Composition-Progress-Note-Example.html"
                      title="Composition/Progress-Note-Example">Progress-Note-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Progress Note{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -434,22 +449,7 @@
                   <a href="Composition-Referral-Note-Example.html"
                      title="Composition/Referral-Note-Example">Referral-Note-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="RelatedPerson-RelatedPersonExample.html"
-                     title="RelatedPerson/RelatedPersonExample">RelatedPersonExample</a>
-               </td>
-               <td>{% capture desc %}An example of a RelatedPerson .{% endcapture %}
-{{ desc | markdownify}}</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Specimen-SpecimenExample.html" title="Specimen/SpecimenExample">SpecimenExample</a>
-               </td>
-               <td>{% capture desc %}An example of a Specimen .{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Referral Note{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -457,7 +457,7 @@
                   <a href="Composition-Transfer-Summary-Example.html"
                      title="Composition/Transfer-Summary-Example">Transfer-Summary-Example</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Composition - Transfer Summary{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -465,21 +465,21 @@
                   <a href="AllergyIntolerance-allergy-intolerance.html"
                      title="AllergyIntolerance/allergy-intolerance">allergy-intolerance</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - AllergyIntolerance - Sulfonamide{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-immunization.html" title="Immunization/immunization">immunization</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Immunization - Fluzone{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-john-doe.html" title="Patient/john-doe">john-doe</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Patient Demographics{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -487,7 +487,7 @@
                   <a href="MedicationStatement-medication-statement.html"
                      title="MedicationStatement/medication-statement">medication-statement</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - MedicationStatement - Lisinopril{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -495,7 +495,7 @@
                   <a href="Observation-observation-lab-urine.html"
                      title="Observation/observation-lab-urine">observation-lab-urine</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Observation - Urinalysis{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -503,7 +503,7 @@
                   <a href="Observation-observation-smoker.html"
                      title="Observation/observation-smoker">observation-smoker</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Observation - Smoking status{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -511,7 +511,7 @@
                   <a href="Observation-observation-vitals-temp.html"
                      title="Observation/observation-vitals-temp">observation-vitals-temp</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Observation - Body temperature{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
@@ -519,14 +519,14 @@
                   <a href="Organization-organization-1.html"
                      title="Organization/organization-1">organization-1</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}Organization - Acme Labs{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Procedure-procedure-rehab.html" title="Procedure/procedure-rehab">procedure-rehab</a>
                </td>
-               <td>{% capture desc %}{% endcapture %}
+               <td>{% capture desc %}John Doe - Procedure - Alcohol rehabilitation{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
             <tr>

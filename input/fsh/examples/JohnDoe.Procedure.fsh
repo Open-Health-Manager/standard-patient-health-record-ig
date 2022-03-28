@@ -1,5 +1,6 @@
 Instance: procedure-rehab
 InstanceOf: Procedure
+Description: "John Doe - Procedure - Alcohol rehabilitation"
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

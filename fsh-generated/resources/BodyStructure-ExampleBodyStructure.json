@@ -1,0 +1,13 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "ExampleBodyStructure",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"
+    ]
+  },
+  "patient": {
+    "display": "John Doe",
+    "reference": "Patient/john-doe"
+  }
+}

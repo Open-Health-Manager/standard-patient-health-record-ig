@@ -1,0 +1,15 @@
+{
+  "resourceType": "CarePlan",
+  "id": "ExampleCarePlan",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
+    ]
+  },
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "display": "John Doe",
+    "reference": "Patient/john-doe"
+  }
+}

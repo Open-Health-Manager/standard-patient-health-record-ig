@@ -1,0 +1,9 @@
+{
+  "resourceType": "Device",
+  "id": "ExampleDevice",
+  "meta": {
+    "profile": [
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"
+    ]
+  }
+}

@@ -7,9 +7,9 @@ Parent: BodyStructure
 Description: "Standard PHR profile of the BodyStructure resource."
 
 
-Instance: BodyStructureExample
+Instance: ExampleBodyStructure
 InstanceOf: PhrBodyStructure
-Description: "An example of a BodyStructure ."
+Description: "John Doe - BodyStructure - Left Foot"
 * patient.display = "John Doe"
 * patient.reference = "Patient/john-doe"
 

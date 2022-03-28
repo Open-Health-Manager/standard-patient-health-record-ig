@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-03-27T18:16:54-05:00",
+  "date": "2022-03-28T04:09:55-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -672,20 +672,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "BodyStructure"
-          }
-        ],
-        "reference": {
-          "reference": "BodyStructure/BodyStructureExample"
-        },
-        "name": "BodyStructureExample",
-        "description": "An example of a BodyStructure .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Composition"
           }
         ],
@@ -693,63 +679,8 @@
           "reference": "Composition/Care-Plan-Example"
         },
         "name": "Care-Plan-Example",
+        "description": "John Doe - Composition - CarePlan",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/CarePlanExample"
-        },
-        "name": "CarePlanExample",
-        "description": "An example of a CarePlan .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CareTeam"
-          }
-        ],
-        "reference": {
-          "reference": "CareTeam/CareTeamExample"
-        },
-        "name": "CareTeamExample",
-        "description": "An example of a CareTeam .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Communication"
-          }
-        ],
-        "reference": {
-          "reference": "Communication/CommunicationExample"
-        },
-        "name": "CommunicationExample",
-        "description": "An example of a Communication .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Consent"
-          }
-        ],
-        "reference": {
-          "reference": "Consent/ConsentExample"
-        },
-        "name": "ConsentExample",
-        "description": "An example of a Consent .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"
       },
       {
         "extension": [
@@ -762,6 +693,7 @@
           "reference": "Composition/Consultation-Note-Example"
         },
         "name": "Consultation-Note-Example",
+        "description": "John Doe - Composition - Consultation Note",
         "exampleBoolean": true
       },
       {
@@ -772,24 +704,11 @@
           }
         ],
         "reference": {
-          "reference": "Composition/Continuity-of-Care-Document-Example"
+          "reference": "Composition/ContinuityCareDocument1"
         },
-        "name": "Continuity-of-Care-Document-Example",
+        "name": "ContinuityCareDocument1",
+        "description": "John Doe - Composition - Continuity of Care Document",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Device"
-          }
-        ],
-        "reference": {
-          "reference": "Device/DeviceExample"
-        },
-        "name": "DeviceExample",
-        "description": "An example of a Device .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"
       },
       {
         "extension": [
@@ -799,24 +718,11 @@
           }
         ],
         "reference": {
-          "reference": "Composition/Diagnostic-Imaging-Report-Example"
+          "reference": "Composition/DiagnosticImagingReport1"
         },
-        "name": "Diagnostic-Imaging-Report-Example",
+        "name": "DiagnosticImagingReport1",
+        "description": "John Doe - Composition - Diagnostic Imaging Report",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "DiagnosticReport"
-          }
-        ],
-        "reference": {
-          "reference": "DiagnosticReport/DiagnosticReportExample"
-        },
-        "name": "DiagnosticReportExample",
-        "description": "An example of a DiagnosticReport .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"
       },
       {
         "extension": [
@@ -829,7 +735,106 @@
           "reference": "Composition/Discharge-Summary-Example"
         },
         "name": "Discharge-Summary-Example",
+        "description": "John Doe - Composition - Discharge Summary",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "BodyStructure"
+          }
+        ],
+        "reference": {
+          "reference": "BodyStructure/ExampleBodyStructure"
+        },
+        "name": "ExampleBodyStructure",
+        "description": "John Doe - BodyStructure - Left Foot",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CarePlan"
+          }
+        ],
+        "reference": {
+          "reference": "CarePlan/ExampleCarePlan"
+        },
+        "name": "ExampleCarePlan",
+        "description": "John Doe - CarePlan - Consolidated",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CareTeam"
+          }
+        ],
+        "reference": {
+          "reference": "CareTeam/ExampleCareTeam"
+        },
+        "name": "ExampleCareTeam",
+        "description": "John Doe - CareTeam",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Communication"
+          }
+        ],
+        "reference": {
+          "reference": "Communication/ExampleCommunication"
+        },
+        "name": "ExampleCommunication",
+        "description": "John Doe - Communication - New medication request.",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Consent"
+          }
+        ],
+        "reference": {
+          "reference": "Consent/ExampleConsent"
+        },
+        "name": "ExampleConsent",
+        "description": "John Doe - Consent - Advanced Directive",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/ExampleDevice"
+        },
+        "name": "ExampleDevice",
+        "description": "John Doe - Device - Digital Blood Pressure Cuff",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/ExampleDiagnosticReport"
+        },
+        "name": "ExampleDiagnosticReport",
+        "description": "John Doe - DiagnosticReport",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"
       },
       {
         "extension": [
@@ -839,11 +844,39 @@
           }
         ],
         "reference": {
-          "reference": "FamilyMemberHistory/FamilyMemberHistoryExample"
+          "reference": "FamilyMemberHistory/ExampleFamilyMemberHistory"
         },
-        "name": "FamilyMemberHistoryExample",
-        "description": "An example of a FamilyMemberHistory .",
+        "name": "ExampleFamilyMemberHistory",
+        "description": "John Doe - FamilyMemberHistory",
         "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "RelatedPerson"
+          }
+        ],
+        "reference": {
+          "reference": "RelatedPerson/ExampleRelatedPerson"
+        },
+        "name": "ExampleRelatedPerson",
+        "description": "John Doe - RelatedPerson - Sister",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/ExampleSpecimen"
+        },
+        "name": "ExampleSpecimen",
+        "description": "John Doe - Specimen - Urinalysis",
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"
       },
       {
         "extension": [
@@ -856,6 +889,7 @@
           "reference": "Composition/History-and-Physical-Example"
         },
         "name": "History-and-Physical-Example",
+        "description": "John Doe - Composition - History & Physical",
         "exampleBoolean": true
       },
       {
@@ -897,6 +931,7 @@
           "reference": "Bundle/Medication-Metformin"
         },
         "name": "Medication-Metformin",
+        "description": "John Doe - Bundle - Medication Reconciliation Bundle",
         "exampleBoolean": true
       },
       {
@@ -910,6 +945,7 @@
           "reference": "Bundle/ObservationsBundle1"
         },
         "name": "ObservationsBundle1",
+        "description": "John Doe - Observation - Collection",
         "exampleBoolean": true
       },
       {
@@ -923,6 +959,7 @@
           "reference": "Composition/Operative-Note-Example"
         },
         "name": "Operative-Note-Example",
+        "description": "John Doe - Composition - Operative Note",
         "exampleBoolean": true
       },
       {
@@ -936,6 +973,7 @@
           "reference": "Bundle/PractitionersBundle1"
         },
         "name": "PractitionersBundle1",
+        "description": "John Doe - Practitioners - Collection",
         "exampleBoolean": true
       },
       {
@@ -949,6 +987,7 @@
           "reference": "Composition/Procedure-Note-Example"
         },
         "name": "Procedure-Note-Example",
+        "description": "John Doe - Composition - Procedure Note",
         "exampleBoolean": true
       },
       {
@@ -962,6 +1001,7 @@
           "reference": "Composition/Progress-Note-Example"
         },
         "name": "Progress-Note-Example",
+        "description": "John Doe - Composition - Progress Note",
         "exampleBoolean": true
       },
       {
@@ -975,35 +1015,8 @@
           "reference": "Composition/Referral-Note-Example"
         },
         "name": "Referral-Note-Example",
+        "description": "John Doe - Composition - Referral Note",
         "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "RelatedPerson"
-          }
-        ],
-        "reference": {
-          "reference": "RelatedPerson/RelatedPersonExample"
-        },
-        "name": "RelatedPersonExample",
-        "description": "An example of a RelatedPerson .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Specimen"
-          }
-        ],
-        "reference": {
-          "reference": "Specimen/SpecimenExample"
-        },
-        "name": "SpecimenExample",
-        "description": "An example of a Specimen .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"
       },
       {
         "extension": [
@@ -1016,6 +1029,7 @@
           "reference": "Composition/Transfer-Summary-Example"
         },
         "name": "Transfer-Summary-Example",
+        "description": "John Doe - Composition - Transfer Summary",
         "exampleBoolean": true
       },
       {
@@ -1029,6 +1043,7 @@
           "reference": "AllergyIntolerance/allergy-intolerance"
         },
         "name": "allergy-intolerance",
+        "description": "John Doe - AllergyIntolerance - Sulfonamide",
         "exampleBoolean": true
       },
       {
@@ -1042,6 +1057,7 @@
           "reference": "Immunization/immunization"
         },
         "name": "immunization",
+        "description": "John Doe - Immunization - Fluzone",
         "exampleBoolean": true
       },
       {
@@ -1055,6 +1071,7 @@
           "reference": "Patient/john-doe"
         },
         "name": "john-doe",
+        "description": "John Doe - Patient Demographics",
         "exampleBoolean": true
       },
       {
@@ -1068,6 +1085,7 @@
           "reference": "MedicationStatement/medication-statement"
         },
         "name": "medication-statement",
+        "description": "John Doe - MedicationStatement - Lisinopril",
         "exampleBoolean": true
       },
       {
@@ -1081,6 +1099,7 @@
           "reference": "Observation/observation-lab-urine"
         },
         "name": "observation-lab-urine",
+        "description": "John Doe - Observation - Urinalysis",
         "exampleBoolean": true
       },
       {
@@ -1094,6 +1113,7 @@
           "reference": "Observation/observation-smoker"
         },
         "name": "observation-smoker",
+        "description": "John Doe - Observation - Smoking status",
         "exampleBoolean": true
       },
       {
@@ -1107,6 +1127,7 @@
           "reference": "Observation/observation-vitals-temp"
         },
         "name": "observation-vitals-temp",
+        "description": "John Doe - Observation - Body temperature",
         "exampleBoolean": true
       },
       {
@@ -1120,6 +1141,7 @@
           "reference": "Organization/organization-1"
         },
         "name": "organization-1",
+        "description": "Organization - Acme Labs",
         "exampleBoolean": true
       },
       {
@@ -1133,6 +1155,7 @@
           "reference": "Procedure/procedure-rehab"
         },
         "name": "procedure-rehab",
+        "description": "John Doe - Procedure - Alcohol rehabilitation",
         "exampleBoolean": true
       },
       {
@@ -1160,8 +1183,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "usecases.html",
-          "title": "Accessibility Use Cases",
+          "nameUrl": "environments.html",
+          "title": "Environments",
           "generation": "markdown"
         },
         {

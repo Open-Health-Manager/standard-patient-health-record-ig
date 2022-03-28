@@ -1,5 +1,6 @@
 Instance: organization-1
 InstanceOf: Organization
+Description: "Organization - Acme Labs"
 Usage: #example
 * meta.versionId = "3"
 * meta.lastUpdated = "2019-01-25T16:39:57.489-05:00"

@@ -1,5 +1,6 @@
-Instance: Continuity-of-Care-Document-Example
+Instance: ContinuityCareDocument1
 InstanceOf: Composition
+Description: "John Doe - Composition - Continuity of Care Document"
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

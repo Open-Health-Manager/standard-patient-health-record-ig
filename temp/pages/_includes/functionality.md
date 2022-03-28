@@ -9,8 +9,6 @@ For instance... rather than specify that the PHR must include medication reconci
 
 In effect, this implementation guide does not specify what functionality should be included the PHR, but it does specify medical charting format that the record uses.  
 
-### Regional Profiles
-
 ### PHR Functional Model (FHIR-ized)
 
 
@@ -42,19 +40,19 @@ In effect, this implementation guide does not specify what functionality should 
 | PH.2.5.10 | Manage Social History | [Observation](https://www.hl7.org/fhir/observation.html) <br/> [Gravity - Social Determinates of Health](https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/)       | |
 | PH.2.5.11 | Nutrition and Diet Information | | |
 | PH.3 | Wellness, Preventive Medicine, and Self Care | | |
-| PH.3.1 | Manage Personal Clinical Measurements and Observations | | |
-| PH.3.1.1 | Manage Personal Observations and Care | | |
-| PH.3.1.2 | Communication with Home Monitoring Devices | | |
-| PH.3.2 | Manage Account Holder Implemented Care Plans | | |
-| PH.3.3 | Manage Provider-Initiated Care Plans | | |
-| PH.3.4 | Manage Medications | | |
-| PH.3.5 | Manage Tools and Functions to Assist Self Care | | |
+| PH.3.1 | Manage Personal Clinical Measurements and Observations | [Observation](https://www.hl7.org/fhir/observation.html) <br/> [Vital Signs](https://build.fhir.org/ig/HL7/cimi-vital-signs/)  | |
+| PH.3.1.1 | Manage Personal Observations and Care | [Composition](https://www.hl7.org/fhir/composition.html) <br/> [DocumentReference](https://www.hl7.org/fhir/documentreference.html) <br/>  [Media](https://www.hl7.org/fhir/media.html) <br/> [Communication](https://www.hl7.org/fhir/communication.html) <br/> [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)| |
+| PH.3.1.2 | Communication with Home Monitoring Devices | [Observation](https://www.hl7.org/fhir/observation.html) <br/> [Device](https://www.hl7.org/fhir/device.html) <br/> - [Mobile Access to Health Documents](https://profiles.ihe.net/ITI/MHD/)  | |
+| PH.3.2 | Manage Account Holder Implemented Care Plans |  [CarePlan](https://www.hl7.org/fhir/careplan.html) <br/>  | |
+| PH.3.3 | Manage Provider-Initiated Care Plans |  [CarePlan](https://www.hl7.org/fhir/careplan.html) <br/>   [Practitioner](https://www.hl7.org/fhir/practitioner.html) <br/> | |
+| PH.3.4 | Manage Medications |  [Medication](https://www.hl7.org/fhir/medication.html) <br/> [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html) <br/> | |
+| PH.3.5 | Manage Tools and Functions to Assist Self Care | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)<br/> [Task](https://www.hl7.org/fhir/task.html)| |
 | PH.3.5.1 | Manage Health Calendar | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)  | |
 | PH.3.5.2 | Manage Tasks | [Task](https://www.hl7.org/fhir/task.html) | |
 | PH.3.5.3 | Manage a Registry and Directory of Actors | [Practitioner](https://www.hl7.org/fhir/practitioner.html) <br>  [RelatedPerson](https://www.hl7.org/fhir/relatedperson.html) <br/>  [Person](https://www.hl7.org/fhir/person.html) <br/>  [CareTeam](https://www.hl7.org/fhir/careteam.html) | |
-| PH.3.5.4 | Manage Reminders | | |
+| PH.3.5.4 | Manage Reminders | [Communication](https://www.hl7.org/fhir/communication.html) | |
 | PH.3.5.5 | Manage Health Alerts | [Communication](https://www.hl7.org/fhir/communication.html) | |
-| PH.3.5.6 | Manage Recommendations | | |
+| PH.3.5.6 | Manage Recommendations | [Communication](https://www.hl7.org/fhir/communication.html) <br/> [Evidence](https://www.hl7.org/fhir/evidence.html) <br/> [DiagnosticReport](https://www.hl7.org/fhir/diagnosticreport.html)| |
 | PH.3.6 | Population Health and Wellness | [Measure](https://www.hl7.org/fhir/measure.html) <br/> [MeasureReport](https://www.hl7.org/fhir/measurereport.html) | |
 | PH.3.6.1 | Public Health Reporting | [Measure](https://www.hl7.org/fhir/measure.html) <br/> [MeasureReport](https://www.hl7.org/fhir/measurereport.html) | |
 | PH.3.6.2 | Public Health Risk Alerts | | |
@@ -259,3 +257,14 @@ In effect, this implementation guide does not specify what functionality should 
 | TI.10.1 | Standard or Preferred Clinical Models | | |
 | TI.10.2 | Maintenance and Versioning of Standard or Preferred Clinical Models | | |
 | TI.10.3 | Clinical Model Mapping | | |
+
+
+
+### Regional Profiles
+
+![./MedicalRecordOwnershipLaws.png](./MedicalRecordOwnershipLaws.png){:width="100%"}
+
+
+### References  
+
+[Personal Health Record System Functional Model](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88)

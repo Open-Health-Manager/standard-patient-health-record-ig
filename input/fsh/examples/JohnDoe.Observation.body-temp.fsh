@@ -2,6 +2,7 @@ Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 
 Instance: observation-vitals-temp
 InstanceOf: $vitalsigns
+Description: "John Doe - Observation - Body temperature"
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

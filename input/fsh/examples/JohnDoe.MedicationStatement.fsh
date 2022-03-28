@@ -1,5 +1,6 @@
 Instance: medication-statement
 InstanceOf: MedicationStatement
+Description: "John Doe - MedicationStatement - Lisinopril"
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

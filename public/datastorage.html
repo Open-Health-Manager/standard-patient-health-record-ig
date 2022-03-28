@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.3.0 - ci-build
 
 
             </span>
@@ -80,7 +80,7 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Accessibility</a>
+    <a href="environments.html">Environments</a>
   </li>
   <li>
     <a href="datamodel.html">Data Model</a>
@@ -132,7 +132,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.0). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Storage</h2>
   
 
@@ -153,7 +153,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#fhir-storage" id="markdown-toc-fhir-storage">FHIR Storage</a></li>
   <li><a href="#database-storage" id="markdown-toc-database-storage">Database Storage</a></li>
   <li><a href="#mobile-device-storage" id="markdown-toc-mobile-device-storage">Mobile Device Storage</a></li>
-  <li><a href="#database-storage-1" id="markdown-toc-database-storage-1">Database Storage</a></li>
+  <li><a href="#bulk-data-exports" id="markdown-toc-bulk-data-exports">Bulk Data Exports</a></li>
 </ul>
 
 </div>
@@ -180,11 +180,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="compression">Compression</h4>
 
-<p>Files contianing patient health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
+<p>Files containing patient health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
 
 <h4 id="security">Security</h4>
 
-<p>Files contianing patient health information SHOULD be signed with a password.</p>
+<p>Files containing patient health information should be signed with a password, and compressed with a utility such as Zip or gzip if preferred.</p>
+
+<p>If supported on your operating system, a preferred method of encrypting and decrypting files is with PGP/GPG utilities, which support asymmetric cryptography algorithms such as X.509.</p>
+
+<p>Therefore, when exporting data from the Personal Health Record:</p>
+
+<p>Write the contents of a collection into either a FHIR Bundle with a .json extension, or a NDJSON file with a .ndjson extension.  After writing the contents to the filesystem, compress the data if desired.  Then convert the relevant X509 certificate into GPG format.  Once done, encrypt the file.</p>
+
+<p>Using GPG-Zip to password protect a NDJSON file using an X509 certificate is the level of security people should be striving for when developing SPHR enabled apps.</p>
 
 <h3 id="database-storage">Database Storage</h3>
 
@@ -211,7 +219,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="commonhealth-android-os">CommonHealth (Android OS)</h4>
 <p>CommonHealth provides a similar protected storage environment for Android devices.  Implementors SHOULD use CommonHealth when developing on Android devices.</p>
 
-<h3 id="database-storage-1">Database Storage</h3>
+<h3 id="bulk-data-exports">Bulk Data Exports</h3>
+
+<p>Should use <a href="http://ndjson.org/">NDJSON format</a> and save to a password encrypted zip file.  Please see <a href="https://hl7.org/fhir/uv/bulkdata/">Bulk Data Access IG</a> more additional design guidance.</p>
+
+<h4 id="references">References</h4>
+
+<p><a href="https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/">Convert a X.509 (PKI) certificate to GPG</a>
+<a href="https://www.npmjs.com/package/gpg">GPG Encryption/Decryption in Node.js</a></p>
 
 
 
@@ -237,7 +252,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 27, 2022 18:16-0500">2022-03-27</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 28, 2022 04:09-0500">2022-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

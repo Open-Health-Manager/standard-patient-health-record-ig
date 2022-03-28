@@ -17,11 +17,20 @@ As such, this implementation guide recommends that implementors treat storage in
 
 #### Compression  
 
-Files contianing patient health information MAY be zipped, with either a `.fhir.zip` or `.fhir.gz` extension. When using compression, systems SHOULD use the [DEFLATE](https://en.wikipedia.org/wiki/Deflate) algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.  
+Files containing patient health information MAY be zipped, with either a `.fhir.zip` or `.fhir.gz` extension. When using compression, systems SHOULD use the [DEFLATE](https://en.wikipedia.org/wiki/Deflate) algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.  
 
 #### Security  
 
-Files contianing patient health information SHOULD be signed with a password.
+Files containing patient health information should be signed with a password, and compressed with a utility such as Zip or gzip if preferred.  
+
+If supported on your operating system, a preferred method of encrypting and decrypting files is with PGP/GPG utilities, which support asymmetric cryptography algorithms such as X.509.  
+
+Therefore, when exporting data from the Personal Health Record:
+
+Write the contents of a collection into either a FHIR Bundle with a .json extension, or a NDJSON file with a .ndjson extension.  After writing the contents to the filesystem, compress the data if desired.  Then convert the relevant X509 certificate into GPG format.  Once done, encrypt the file.
+
+Using GPG-Zip to password protect a NDJSON file using an X509 certificate is the level of security people should be striving for when developing SPHR enabled apps.  
+
 
 ### Database Storage
 
@@ -44,4 +53,12 @@ Apple provides a protected storage area for health records on iOS devices.  Impl
 #### CommonHealth (Android OS)
 CommonHealth provides a similar protected storage environment for Android devices.  Implementors SHOULD use CommonHealth when developing on Android devices.  
 
-### Database Storage
+### Bulk Data Exports
+
+Should use [NDJSON format](http://ndjson.org/) and save to a password encrypted zip file.  Please see [Bulk Data Access IG](https://hl7.org/fhir/uv/bulkdata/) more additional design guidance.
+
+
+#### References  
+
+[Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
+[GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
