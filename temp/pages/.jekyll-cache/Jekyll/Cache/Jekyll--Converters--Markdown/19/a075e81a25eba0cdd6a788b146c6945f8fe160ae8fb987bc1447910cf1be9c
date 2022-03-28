@@ -1,4 +1,4 @@
-I"s%<p><!-- white space is critical inside of capture --></p>
+I"�+<p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#medical-domains" id="markdown-toc-medical-domains">Medical Domains</a></li>
@@ -26,28 +26,32 @@
       <th style="text-align: left">File Types</th>
       <th style="text-align: left">Avg. File Size</th>
       <th style="text-align: left">Frequency</th>
+      <th style="text-align: left">Diagnostic Algorithm</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Genomics</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/R4/valueset-sequence-type.html">Sequence Type</a> <br /> <a href="https://www.hl7.org/fhir/R4/valueset-chromosome-human.html">Human Chromosome</a> <br /></td>
       <td style="text-align: left">FASTQ, BAM, VCFs</td>
       <td style="text-align: left">~1TB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left">Pharmacogenenomics <br /> Personalized Medicine <br /></td>
     </tr>
     <tr>
       <td>Radiology</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html">AcquisitionModality</a> <br /> <a href="https://www.hl7.org/fhir/valueset-bodysite-laterality.html">Laterality</a> <br />  <a href="https://www.hl7.org/fhir/valueset-body-site.html">SNOMED CT Body Structures</a> <br /></td>
       <td style="text-align: left">DICOM, JPG</td>
       <td style="text-align: left">~1GB</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left">per study</td>
+      <td style="text-align: left">Surgical Planning <br /> Autosegmentation <br /> Medication Dosage</td>
     </tr>
     <tr>
       <td>Embryology</td>
       <td style="text-align: left"> </td>
       <td style="text-align: left">PDF</td>
       <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
@@ -56,12 +60,14 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~2MB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hypothyroidism.json">Endocrinology</a></td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
@@ -70,12 +76,14 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100KB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/biometrics.yml">Metabolism &amp; Biometrics</a></td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
@@ -84,6 +92,7 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100KB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/physiology/generators/circulation_hemodynamics.yml"> Cardiology &amp; Hemodynamics</a></td>
@@ -91,9 +100,11 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~5GB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/lung_cancer.json">Pulmonology</a></td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
@@ -105,12 +116,14 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/immunization_schedule.json">Immunology</a></td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
@@ -119,12 +132,14 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~20KB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td>Gastroenterology</td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left">~4GB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
@@ -133,6 +148,7 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100MB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json">Pregnancy</a></td>
@@ -140,9 +156,11 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left">~100MB</td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td>Gynocology</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
@@ -154,9 +172,11 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/urinary_tract_infections.json">Urology</a></td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
@@ -168,9 +188,11 @@
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hospice_treatment.json">Hospice Care</a></td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
       <td style="text-align: left"> </td>
