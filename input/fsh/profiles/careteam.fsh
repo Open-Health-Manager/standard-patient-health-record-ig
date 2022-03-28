@@ -5,6 +5,6 @@ Profile: PhrCareTeam
 Parent: CareTeam
 Description: "Standard PHR profile of the CareTeam resource."
 
-Instance: CareTeamExample
+Instance: ExampleCareTeam
 InstanceOf: PhrCareTeam
-Description: "An example of a CareTeam ."
+Description: "John Doe - CareTeam"

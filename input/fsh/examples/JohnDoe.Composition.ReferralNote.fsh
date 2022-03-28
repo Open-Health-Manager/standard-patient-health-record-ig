@@ -1,5 +1,6 @@
 Instance: Referral-Note-Example
 InstanceOf: Composition
+Description: "John Doe - Composition - Referral Note"
 Usage: #example
 * meta.versionId = "2"
 * meta.lastUpdated = "2019-01-25T16:39:57.088-05:00"

@@ -1,5 +1,6 @@
 Instance: Medication-Metformin
 InstanceOf: Bundle
+Description: "John Doe - Bundle - Medication Reconciliation Bundle"
 Usage: #example
 * type = #collection
 * entry.fullUrl = "/Medication/68382-185"

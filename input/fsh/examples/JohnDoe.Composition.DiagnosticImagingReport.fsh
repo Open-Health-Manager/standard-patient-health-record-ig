@@ -1,5 +1,6 @@
-Instance: Diagnostic-Imaging-Report-Example
+Instance: DiagnosticImagingReport1
 InstanceOf: Composition
+Description: "John Doe - Composition - Diagnostic Imaging Report"
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

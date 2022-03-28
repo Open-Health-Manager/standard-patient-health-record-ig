@@ -9,7 +9,7 @@ name: StandardPatientHealthRecordIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 0.3.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -76,7 +76,7 @@ publisher:
 
 menu:
   Home: index.html
-  Accessibility: usecases.html
+  Environments: environments.html
   Data Model: datamodel.html
   Functionality: functionality.html
   Storage: datastorage.html
@@ -87,8 +87,8 @@ menu:
 pages:
   index.md:
     title: Getting Started
-  usecases.md:
-    title: Accessibility Use Cases
+  environments.md:
+    title: Environments
   datamodel.md:
     title: Data Model
   datastorage.md:

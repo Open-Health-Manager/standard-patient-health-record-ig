@@ -5,6 +5,8 @@ At the core of the Standard Patient Health Record is a standard data model descr
 At a very high level, we broadly organize the SPHR data model into three categories - Id, Ego, SuperEgo - according to basic psychoanalytic theory.  
 
 
+![./IdEgoSuperEgo.png](./IdEgoSuperEgo.png){:width="100%"}
+
 #### Physiology Resources (Id)
 
 The physiology model is the portion of the SPHR that contains data about structures and processes that are actually occuring within the patient's physical body.  Such things may include vital signs, laboratory biomarkers, an allergic response, a broken arm, an immunization, a radiology report, a genetic sequence, or post-operative notes recorded after a surgery.  The data contained in these data schemas are not the actual metabolic or anatomic processes happening in a human body, but they are cognitive representations of those processes (and therefore loosely analogous with the Id).

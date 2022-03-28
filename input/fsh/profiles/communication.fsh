@@ -5,7 +5,7 @@ Profile: PhrCommunication
 Parent: Communication
 Description: "Standard PHR profile of the Communication resource."
 
-Instance: CommunicationExample
+Instance: ExampleCommunication
 InstanceOf: PhrCommunication
-Description: "An example of a Communication ."
+Description: "John Doe - Communication - New medication request."
 * status = #completed
