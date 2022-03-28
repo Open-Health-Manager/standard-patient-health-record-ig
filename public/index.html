@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Getting Started - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecases.html">Accessibility</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functionality</a>
+  </li>
+  <li>
+    <a href="datastorage.html">Storage</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Simulations</a>
+  </li>
+  <li>
+    <a href="personas.html">Patient Personas</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Getting Started</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Getting Started</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG|0.2.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2022-03-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">StandardPatientHealthRecordIG</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#standard-patient-health-record" id="markdown-toc-standard-patient-health-record">Standard Patient Health Record</a>    <ul>
+      <li><a href="#history-of-electronic-health-records" id="markdown-toc-history-of-electronic-health-records">History of Electronic Health Records</a></li>
+      <li><a href="#purpose--design-philosophy" id="markdown-toc-purpose--design-philosophy">Purpose / Design Philosophy</a></li>
+      <li><a href="#prior-art---implementation-guides" id="markdown-toc-prior-art---implementation-guides">Prior Art - Implementation Guides</a></li>
+      <li><a href="#expectations-for-this-implementation-guide" id="markdown-toc-expectations-for-this-implementation-guide">Expectations for this Implementation Guide</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="standard-patient-health-record">Standard Patient Health Record</h1>
+
+<p>The purpose of this implementation guide is to help the reader implement a Patient Health Record (in a programming language of their choice).  The notion of a Patient Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient; and the EMR being owned by the hospital.</p>
+
+<p>The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, in guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.</p>
+
+<h3 id="history-of-electronic-health-records">History of Electronic Health Records</h3>
+
+<ul>
+  <li>Dewey Decimal System</li>
+  <li>Card Catalog System Patent</li>
+  <li>Enigma Project, WWII</li>
+  <li>MUMPS / VAX</li>
+  <li>Epic</li>
+  <li>Cerner</li>
+  <li>HL7 v2</li>
+  <li>FHIR</li>
+</ul>
+
+<p><img src="./StarTrek-Sphr.jpg" alt="./StarTrek-Sphr.png" width="100%" /></p>
+<blockquote>
+  <p>Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.</p>
+</blockquote>
+
+<h3 id="purpose--design-philosophy">Purpose / Design Philosophy</h3>
+
+<p>The core of the Patient Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Patient Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.</p>
+
+<h3 id="prior-art---implementation-guides">Prior Art - Implementation Guides</h3>
+
+<p>This implementation guide was developed through meta-analysis of dozens of other guides, journal liturature, and an environment surveys of the PHR market.  Implementators may find the following implementation guides of particular interest:</p>
+
+<ul>
+  <li><a href="https://hl7.org/fhir/smart-app-launch/">Smart on FHIR - App Launch</a></li>
+  <li><a href="http://www.fhir.org/guides/argonaut/r2/">Argonaut Data Query</a></li>
+  <li><a href="http://fhir.org/guides/argonaut/scheduling/">Argonaut Scheduling</a></li>
+  <li><a href="http://fhir.org/guides/argonaut/clinicalnotes/">Argonaut Clinical Notes</a></li>
+  <li><a href="http://fhir.org/guides/argonaut/questionnaire/">Argonaut Questionnaire</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-patient-correction/">Patient Request for Corrections</a></li>
+  <li><a href="http://hl7.org/fhir/uv/ips/">International Patient Summary</a></li>
+  <li><a href="http://hl7.org/fhir/us/ccda/">C-CDA on FHIR</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-adi/">PACIO - Advanced Directives</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/">PACIO - Cognitive Status</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/">PACIO - Functional Status</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/">VCI - Vaccine Credential Initiative</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/">Gravity - Social Determinates of Health</a></li>
+  <li><a href="https://www.hl7.org/fhir/us/core/">US CORE</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/dental-data-exchange/">Dental Data Exchange</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html">Genomics Reporting</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/">Radiation Dose Summary</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig/">Breast Radiology Reporting</a></li>
+  <li><a href="https://build.fhir.org/ig/hl7ch/ch-allergyintolerance/document.html">Allergy Intolerance</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/cimi-vital-signs/">Vital Signs</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-udap-security-ig/">UDAP Security</a></li>
+  <li><a href="https://build.fhir.org/ig/IHTSDO/snomed-ig/">SNOMED Terminology Server</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/case-reporting/the_specification.html">Electronic Case Reporting (eCR)</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/index.html">SMART Healthcards - Vaccine &amp; Testing</a></li>
+  <li><a href="https://build.fhir.org/ig/aih-uth/mycovid/artifacts.html">COVID19</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/carin-digital-insurance-card/">CARIN Digital Insurance Card</a></li>
+  <li><a href="https://profiles.ihe.net/ITI/MHD/">Mobile Access to Health Documents</a></li>
+  <li><a href="http://hl7.org/fhir/us/patient-reported-outcomes/2019May/index.html">Patient Reported Outcomes</a></li>
+  <li><a href="http://hl7.org/fhir/uv/phd/2019May/">Patient Health Devices</a></li>
+  <li><a href="http://hl7.org/fhir/us/davinci-pas/">Da Vinci - Prior Authorization</a></li>
+  <li><a href="http://hl7.org/fhir/us/bfdr/artifacts.html">Vital Records -  Birth and Fetal Death Reporting</a></li>
+</ul>
+
+<h3 id="expectations-for-this-implementation-guide">Expectations for this Implementation Guide</h3>
+<p>Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88">Patient Health Record - System Functional Model</a></li>
+  <li><a href="https://www.medicalrecords.com/personal-health-records">Personal Health Records Software for Consumers</a></li>
+  <li><a href="https://www.techradar.com/best/best-electronic-health-record-ehr-software">Best Electronic Health Records software of 2022</a></li>
+  <li><a href="http://www.healthinfolaw.org/comparative-analysis/who-owns-medical-records-50-state-comparison">Who Owns Medical Records: 50 State Comparison</a></li>
+  <li><a href="https://www.cms.gov/Medicare/E-Health/PerHealthRecords/PHR_Pilots">Centers for Medicare Services - PHR Pilots</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 27, 2022 18:16-0500">2022-03-27</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

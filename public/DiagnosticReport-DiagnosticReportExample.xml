@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="DiagnosticReportExample"/>
+  <meta>
+    <profile value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://snomed.info/sct 184004}">Withdrawal arrhythmia</span> </h2><table class="grid"></table><p><b>Report Details</b></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="184004"/>
+      <display value="Withdrawal arrhythmia"/>
+    </coding>
+  </code>
+</DiagnosticReport>

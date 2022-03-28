@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Medication-Metformin"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="/Medication/68382-185"/>
+    <resource>
+      <Medication>
+        <id value="Medication-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Medication-1" </p></div><p><b>code</b>: Glipizide and Metformin Hydrochloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ndc.html">National drug codes</a>#68382-185)</span></p><p><b>manufacturer</b>: <span>: Zydus Pharmaceuticals (USA) Inc.</span></p></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/ndc"/>
+            <code value="68382-185"/>
+            <display value="Glipizide and Metformin Hydrochloride"/>
+          </coding>
+        </code>
+        <manufacturer>
+          <display value="Zydus Pharmaceuticals (USA) Inc."/>
+        </manufacturer>
+      </Medication>
+    </resource>
+  </entry>
+</Bundle>
