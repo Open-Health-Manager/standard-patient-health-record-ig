@@ -5,7 +5,7 @@
   "version": "0.2.1",
   "name": "SocialMedia",
   "status": "active",
-  "description": "An example profile of the SocialMedia resource.",
+  "description": "Standard PHR profile of the SocialMedia resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -24,7 +24,7 @@
       {
         "id": "SocialMedia",
         "path": "SocialMedia",
-        "definition": "An example profile of the SocialMedia resource."
+        "definition": "Standard PHR profile of the SocialMedia resource."
       }
     ]
   }

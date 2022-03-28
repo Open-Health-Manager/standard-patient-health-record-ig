@@ -23,10 +23,25 @@ Files contianing patient health information MAY be zipped, with either a `.fhir.
 
 Files contianing patient health information SHOULD be signed with a password.
 
-### Platform Storage
+### Database Storage
+
+#### Document Oriented Databases
+
+- MongoDB
+- CouchDB
+- Azure Cosmos DB
+- Document DB
+
+#### Graph Databases
+
+- Neo4J
+
+### Mobile Device Storage
 
 #### Apple Health Records (iOS)
 Apple provides a protected storage area for health records on iOS devices.  Implementors SHOULD use Apple Health when developing on iOS devices.
 
 #### CommonHealth (Android OS)
 CommonHealth provides a similar protected storage environment for Android devices.  Implementors SHOULD use CommonHealth when developing on Android devices.  
+
+### Database Storage

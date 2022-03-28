@@ -1,1 +1,0 @@
-﻿{"resourceType":"Patient","id":"PatientExample","meta":{"profile":["https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient"]},"text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Anonymous Patient</b> (no stated gender) DoB Unknown</p></div>"}}

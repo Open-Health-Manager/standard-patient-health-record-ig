@@ -1,0 +1,44 @@
+{
+  "resourceType": "Encounter",
+  "id": "JohnDoe-diabetesOnset",
+  "identifier": [
+    {
+      "use": "temp",
+      "value": "Encounter/for/diabetes"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "code": "AMB",
+    "system": "http://hl7.org/fhir/v3/ActCode",
+    "display": "ambulatory"
+  },
+  "subject": {
+    "reference": "Patient/Anyman/Bob",
+    "display": "John Doe"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Provider/Primary/Patricia"
+      }
+    }
+  ],
+  "length": {
+    "value": 20,
+    "code": "min",
+    "system": "http://unitsofmeasure.org",
+    "unit": "minutes"
+  },
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "Snomed-CT/44054006",
+        "display": "Diabetes Type 2"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/f201"
+  }
+}

@@ -5,7 +5,7 @@
   "version": "0.2.1",
   "name": "NutrientOuttake",
   "status": "active",
-  "description": "An example profile of the NutrientOuttake resource.",
+  "description": "Standard PHR profile of the NutrientOuttake resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -24,7 +24,7 @@
       {
         "id": "NutrientOuttake",
         "path": "NutrientOuttake",
-        "definition": "An example profile of the NutrientOuttake resource."
+        "definition": "Standard PHR profile of the NutrientOuttake resource."
       }
     ]
   }

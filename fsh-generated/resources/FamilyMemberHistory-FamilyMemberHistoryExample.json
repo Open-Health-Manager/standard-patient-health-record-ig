@@ -3,13 +3,13 @@
   "id": "FamilyMemberHistoryExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"
     ]
   },
   "status": "completed",
   "patient": {
-    "display": "Jane Doe",
-    "reference": "Patient/jane-doe"
+    "display": "John Doe",
+    "reference": "Patient/john-doe"
   },
   "relationship": {
     "coding": [

@@ -5,7 +5,7 @@
   "version": "0.2.1",
   "name": "NutrientIntake",
   "status": "active",
-  "description": "An example profile of the NutrientIntake resource.",
+  "description": "Standard PHR profile of the NutrientIntake resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -24,7 +24,7 @@
       {
         "id": "NutrientIntake",
         "path": "NutrientIntake",
-        "definition": "An example profile of the NutrientIntake resource."
+        "definition": "Standard PHR profile of the NutrientIntake resource."
       }
     ]
   }

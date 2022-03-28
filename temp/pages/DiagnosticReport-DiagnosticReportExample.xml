@@ -3,7 +3,7 @@
 <DiagnosticReport xmlns="http://hl7.org/fhir">
   <id value="DiagnosticReportExample"/>
   <meta>
-    <profile value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport"/>
+    <profile value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://snomed.info/sct 184004}">Withdrawal arrhythmia</span> </h2><table class="grid"></table><p><b>Report Details</b></p></div>

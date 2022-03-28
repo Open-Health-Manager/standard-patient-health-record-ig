@@ -1,0 +1,65 @@
+{
+  "resourceType": "Condition",
+  "id": "JohnDoe-diabetes",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "differential"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "55607006",
+          "system": "http://snomed.info/sct",
+          "display": "Problem"
+        },
+        {
+          "code": "problem-list-item",
+          "system": "http://hl7.org/fhir/condition-category"
+        }
+      ]
+    }
+  ],
+  "severity": {
+    "coding": [
+      {
+        "code": "24484000",
+        "system": "http://snomed.info/sct",
+        "display": "Severe"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "44054006",
+        "system": "http://snomed.info/sct",
+        "display": "Diabetes Type 2"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Anyman/Bob",
+    "display": "John Doe"
+  },
+  "onsetDateTime": "2018-09-16",
+  "abatementDateTime": "2018-09-16",
+  "asserter": {
+    "reference": "Provider/Primary/Patricia"
+  },
+  "note": [
+    {
+      "text": "The patient is now diagnosed with type 2 diabetes."
+    }
+  ]
+}

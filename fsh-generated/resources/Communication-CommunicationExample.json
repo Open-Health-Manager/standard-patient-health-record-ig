@@ -3,7 +3,7 @@
   "id": "CommunicationExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"
     ]
   },
   "status": "completed"

@@ -5,17 +5,17 @@
   "igName": "StandardPatientHealthRecordIG",
   "packageId": "StandardPatientHealthRecordIG",
   "igVer": "0.2.1",
-  "errorCount": 19,
+  "errorCount": 189,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
   "toolingVersion": "5.0.0-snapshot1",
   "toolingRevision": "3",
   "toolingVersionFull": "5.0.0-snapshot1 (3)",
-  "totalFiles": 48,
-  "processedFiles": 69,
-  "genDate": "Wed, Mar 9, 2022 09:27-0600",
-  "genDay": "09/03/2022",
+  "totalFiles": 63,
+  "processedFiles": 86,
+  "genDate": "Sun, Mar 27, 2022 18:16-0500",
+  "genDay": "27/03/2022",
   "ig": {
     "id": "StandardPatientHealthRecordIG",
     "name": "StandardPatientHealthRecordIG",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2022-03-09T09:27:10-06:00",
+    "date": "2022-03-27T18:16:54-05:00",
     "fhirVersion": "4.0.1"
   }
 }

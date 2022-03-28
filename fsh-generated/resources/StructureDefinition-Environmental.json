@@ -5,7 +5,7 @@
   "version": "0.2.1",
   "name": "Environmental",
   "status": "active",
-  "description": "An example profile of the Environmental resource.",
+  "description": "Standard PHR profile of the Environmental resource.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -24,7 +24,7 @@
       {
         "id": "Environmental",
         "path": "Environmental",
-        "definition": "An example profile of the Environmental resource."
+        "definition": "Standard PHR profile of the Environmental resource."
       }
     ]
   }

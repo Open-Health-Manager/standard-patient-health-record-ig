@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="undefined"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="/Composition/qE2cKcaPMtqGata3p"/>
+    <resource>
+      <Composition>
+        <id value="Composition1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Composition1" </p></div><p><b>status</b>: preliminary</p><p><b>type</b>: Physician Discharge summary <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11490-0)</span></p><p><b>date</b>: 2022-01-01</p><p><b>author</b>: <a href="gkneWsGuDW5vE8Ryi">gkneWsGuDW5vE8Ryi: Allison Camron</a></p><p><b>title</b>: Continuity of Care Document</p><p><b>confidentiality</b>: 0</p></div>
+        </text>
+        <status value="preliminary"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11490-0"/>
+            <display value="Physician Discharge summary"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+        <date value="2022-01-01"/>
+        <author>
+          <reference value="gkneWsGuDW5vE8Ryi"/>
+          <display value="Allison Camron"/>
+        </author>
+        <title value="Continuity of Care Document"/>
+        <confidentiality value="0"/>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/7afmbB8HYhcNt2R4e"/>
+    <resource>
+      <Goal>
+        <id value="7afmbB8HYhcNt2R4e"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "7afmbB8HYhcNt2R4e" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Achieve blood glucose control – aiming at fasting blood glucose level below 108 mg/dl; HbA1c below 7% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Achieve blood glucose control – aiming at fasting blood glucose level below 108 mg/dl; HbA1c below 7%"/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/cFiofX3mEeq9sCDpq"/>
+    <resource>
+      <Goal>
+        <id value="cFiofX3mEeq9sCDpq"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "cFiofX3mEeq9sCDpq" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Fasting blood glucose level below 108 mg/dl <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Fasting blood glucose level below 108 mg/dl"/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/4LzDoMCNzPhw6xncJ"/>
+    <resource>
+      <Goal>
+        <id value="4LzDoMCNzPhw6xncJ"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "4LzDoMCNzPhw6xncJ" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Conformance to optimized diabetic diet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Conformance to optimized diabetic diet"/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/uLYQAaSNcyA353HtH"/>
+    <resource>
+      <Goal>
+        <id value="uLYQAaSNcyA353HtH"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "uLYQAaSNcyA353HtH" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Achieve 0.5% body weight reduction (on current weight of 204 lb) per week to 160-175lb (BMI 24-25)) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Achieve 0.5% body weight reduction (on current weight of 204 lb) per week to 160-175lb (BMI 24-25))"/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/QMp5ew6uTSbu5pQ4C"/>
+    <resource>
+      <Goal>
+        <id value="QMp5ew6uTSbu5pQ4C"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "QMp5ew6uTSbu5pQ4C" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Improve and maintenance of optimal foot health; Prevention of diabetic foot ulcer, gangrene <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Improve and maintenance of optimal foot health; Prevention of diabetic foot ulcer, gangrene"/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/Z8bznDhkG7g9dZ29Y"/>
+    <resource>
+      <Goal>
+        <id value="Z8bznDhkG7g9dZ29Y"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Z8bznDhkG7g9dZ29Y" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Maintain blood pressure control with blood pressure readings below 140/90 mm Hg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Maintain blood pressure control with blood pressure readings below 140/90 mm Hg"/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Goal/zHDYtrFC5drLRnMEm"/>
+    <resource>
+      <Goal>
+        <id value="zHDYtrFC5drLRnMEm"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "zHDYtrFC5drLRnMEm" </p></div><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: medium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>description</b>: Address patient knowledge deficit on diabetic self-care. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>subject</b>: <a href="Patient/JohnDoe">Patient/JohnDoe: John Doe</a></p></div>
+        </text>
+        <lifecycleStatus value="active"/>
+        <priority>
+          <text value="medium"/>
+        </priority>
+        <description>
+          <text value="Address patient knowledge deficit on diabetic self-care."/>
+        </description>
+        <subject>
+          <reference value="Patient/JohnDoe"/>
+          <display value="John Doe"/>
+        </subject>
+      </Goal>
+    </resource>
+  </entry>
+</Bundle>
