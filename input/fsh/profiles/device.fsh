@@ -7,7 +7,7 @@ Parent: Device
 Description: "Standard PHR profile of the Device resource."
 
 
-Instance: DeviceExample
+Instance: ExampleDevice
 InstanceOf: PhrDevice
-Description: "An example of a Device ."
+Description: "John Doe - Device - Digital Blood Pressure Cuff"
 

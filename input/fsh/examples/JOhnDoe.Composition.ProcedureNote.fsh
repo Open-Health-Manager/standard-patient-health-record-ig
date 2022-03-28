@@ -1,5 +1,6 @@
 Instance: Procedure-Note-Example
 InstanceOf: Composition
+Description: "John Doe - Composition - Procedure Note"
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2018-10-04T19:42:52.061-04:00"

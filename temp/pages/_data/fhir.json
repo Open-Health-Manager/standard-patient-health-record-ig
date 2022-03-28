@@ -4,7 +4,7 @@
   "igId": "StandardPatientHealthRecordIG",
   "igName": "StandardPatientHealthRecordIG",
   "packageId": "StandardPatientHealthRecordIG",
-  "igVer": "0.2.1",
+  "igVer": "0.3.0",
   "errorCount": 189,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
@@ -13,14 +13,14 @@
   "toolingRevision": "3",
   "toolingVersionFull": "5.0.0-snapshot1 (3)",
   "totalFiles": 63,
-  "processedFiles": 86,
-  "genDate": "Sun, Mar 27, 2022 18:16-0500",
-  "genDay": "27/03/2022",
+  "processedFiles": 94,
+  "genDate": "Mon, Mar 28, 2022 04:09-0500",
+  "genDay": "28/03/2022",
   "ig": {
     "id": "StandardPatientHealthRecordIG",
     "name": "StandardPatientHealthRecordIG",
     "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "status": "draft",
     "experimental": false,
     "publisher": "MITRE",
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2022-03-27T18:16:54-05:00",
+    "date": "2022-03-28T04:09:55-05:00",
     "fhirVersion": "4.0.1"
   }
 }

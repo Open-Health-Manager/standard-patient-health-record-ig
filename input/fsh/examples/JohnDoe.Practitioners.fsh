@@ -1,5 +1,6 @@
 Instance: PractitionersBundle1
 InstanceOf: Bundle
+Description: "John Doe - Practitioners - Collection"
 Usage: #example
 * type = #collection
 * entry[0].fullUrl = "/Practitioner/Feoc5kxiuXNrNThLy"

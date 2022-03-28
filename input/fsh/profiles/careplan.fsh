@@ -6,9 +6,9 @@ Parent: CarePlan
 Description: "Standard PHR profile of the CarePlan resource."
 
 
-Instance: CarePlanExample
+Instance: ExampleCarePlan
 InstanceOf: PhrCarePlan
-Description: "An example of a CarePlan ."
+Description: "John Doe - CarePlan - Consolidated"
 * status = #active
 * intent = #plan
 * subject.display = "John Doe"

@@ -1,5 +1,6 @@
 Instance: Transfer-Summary-Example
 InstanceOf: Composition
+Description: "John Doe - Composition - Transfer Summary"
 Usage: #example
 * meta.versionId = "2"
 * meta.lastUpdated = "2019-01-25T16:39:56.810-05:00"

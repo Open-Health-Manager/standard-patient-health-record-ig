@@ -7,9 +7,9 @@ Parent: DiagnosticReport
 Description: "Standard PHR profile of the DiagnosticReport resource."
 
 
-Instance: DiagnosticReportExample
+Instance: ExampleDiagnosticReport
 InstanceOf: PhrDiagnosticReport
-Description: "An example of a DiagnosticReport ."
+Description: "John Doe - DiagnosticReport"
 * status = #final
 * code = http://snomed.info/sct#184004 "Withdrawal arrhythmia"
 // * patient.display = "John Doe"

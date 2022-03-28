@@ -7,9 +7,9 @@ Parent: FamilyMemberHistory
 Description: "Standard PHR profile of the FamilyMemberHistory resource."
 
 
-Instance: FamilyMemberHistoryExample
+Instance: ExampleFamilyMemberHistory
 InstanceOf: PhrFamilyMemberHistory
-Description: "An example of a FamilyMemberHistory ."
+Description: "John Doe - FamilyMemberHistory"
 * status = #completed
 * patient.display = "John Doe"
 * patient.reference = "Patient/john-doe"

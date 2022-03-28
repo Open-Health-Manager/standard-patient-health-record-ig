@@ -1,0 +1,196 @@
+I"n$<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>Recurring challenges with designing PHR apps include figuring out which data to include (all of it?  just the hospital data?  fitness data?) and then finding suitable test data.  This implementation guide does not purport to provide algorithms or workflows for every medical category.  However, we can reference the Synthea synthetic data generator, and recommend that PHR developers use it’s algorithms for generating sample data for various medical conditions.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p><img src="./Tutorial-Dermatogram.png" alt="./Tutorial-Dermatogram.png" width="100%" /></p>
+
+<h3 id="medical-domains">Medical Domains</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th style="text-align: left">Value Sets</th>
+      <th style="text-align: left">File Types</th>
+      <th style="text-align: left">Avg. File Size</th>
+      <th style="text-align: left">Frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genomics</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">FASTQ, BAM, VCFs</td>
+      <td style="text-align: left">~1TB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Radiology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">DICOM, JPG</td>
+      <td style="text-align: left">~1GB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Embryology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">PDF</td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/dermatitis">Dermatology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~2MB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hypothyroidism.json">Endocrinology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/cdc_growth_charts.json">Pediatrics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/biometrics.yml">Metabolism &amp; Biometrics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/epilepsy.json">Neurology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/physiology/generators/circulation_hemodynamics.yml"> Cardiology &amp; Hemodynamics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~5GB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/lung_cancer.json">Pulmonology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Kinesthesiology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/immunization_schedule.json">Immunology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/covid19">Virology (COVID19)</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~20KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Gastroenterology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~4GB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/female_reproduction.json">Obstetrics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100MB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json">Pregnancy</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100MB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Gynocology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Andrology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/urinary_tract_infections.json">Urology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/wellness_encounters.json">Healthy Aging</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hospice_treatment.json">Hospice Care</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="synthetic-data-generator-installation">Synthetic Data Generator Installation</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># download synthea</span>
+git clone https://github.com/synthetichealth/synthea
+
+<span class="c"># go into the cloned directory</span>
+<span class="nb">cd </span>synthea
+
+<span class="c"># build the app</span>
+./gradlew build check <span class="nb">test</span>
+</code></pre></div></div>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://github.com/synthetichealth/synthea">SyntheaTM Patient Generator</a>  <br />
+<a href="https://doku.pub/download/simulacres-et-simulation-jean-baudrillard-1q7e2mp3ov0v">Simulacres Et Simulation - Jean Baudrillard</a></p>
+
+:ET

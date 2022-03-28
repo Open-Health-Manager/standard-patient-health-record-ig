@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Environmental",
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/Environmental",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "name": "Environmental",
   "status": "active",
   "description": "Standard PHR profile of the Environmental resource.",

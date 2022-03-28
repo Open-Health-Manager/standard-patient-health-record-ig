@@ -6,7 +6,7 @@ Profile: PhrSpecimen
 Parent: Specimen
 Description: "Standard PHR profile of the Specimen resource."
 
-Instance: SpecimenExample
+Instance: ExampleSpecimen
 InstanceOf: PhrSpecimen
-Description: "An example of a Specimen ."
+Description: "John Doe - Specimen - Urinalysis"
 

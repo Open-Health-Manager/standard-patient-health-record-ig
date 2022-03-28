@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.3.0 - ci-build
 
 
             </span>
@@ -80,7 +80,7 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Accessibility</a>
+    <a href="environments.html">Environments</a>
   </li>
   <li>
     <a href="datamodel.html">Data Model</a>
@@ -132,7 +132,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.0). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Functionality</h2>
   
 
@@ -151,8 +151,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#phr-functionaity" id="markdown-toc-phr-functionaity">PHR Functionaity</a></li>
-  <li><a href="#regional-profiles" id="markdown-toc-regional-profiles">Regional Profiles</a></li>
   <li><a href="#phr-functional-model-fhir-ized" id="markdown-toc-phr-functional-model-fhir-ized">PHR Functional Model (FHIR-ized)</a></li>
+  <li><a href="#regional-profiles" id="markdown-toc-regional-profiles">Regional Profiles</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
@@ -166,8 +167,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>For instance… rather than specify that the PHR must include medication reconciliation functionality, we recommend that a PHR must be able to consume a Continuity of Care Documents (CCD) received from a hospital, and to do so, it should support FHIR resources; resources which happen to include MedicationStatement and other resources produced by a medication reconciliation module.</p>
 
 <p>In effect, this implementation guide does not specify what functionality should be included the PHR, but it does specify medical charting format that the record uses.</p>
-
-<h3 id="regional-profiles">Regional Profiles</h3>
 
 <h3 id="phr-functional-model-fhir-ized">PHR Functional Model (FHIR-ized)</h3>
 
@@ -394,7 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.1</td>
       <td style="text-align: left">Manage Personal Clinical Measurements and Observations</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/observation.html">Observation</a> <br /> <a href="https://build.fhir.org/ig/HL7/cimi-vital-signs/">Vital Signs</a></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -402,7 +401,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.1.1</td>
       <td style="text-align: left">Manage Personal Observations and Care</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/composition.html">Composition</a> <br /> <a href="https://www.hl7.org/fhir/documentreference.html">DocumentReference</a> <br />  <a href="https://www.hl7.org/fhir/media.html">Media</a> <br /> <a href="https://www.hl7.org/fhir/communication.html">Communication</a> <br /> <a href="http://fhir.org/guides/argonaut/scheduling/">Argonaut Scheduling</a></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -410,7 +409,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.1.2</td>
       <td style="text-align: left">Communication with Home Monitoring Devices</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/observation.html">Observation</a> <br /> <a href="https://www.hl7.org/fhir/device.html">Device</a> <br /> - <a href="https://profiles.ihe.net/ITI/MHD/">Mobile Access to Health Documents</a></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -418,7 +417,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.2</td>
       <td style="text-align: left">Manage Account Holder Implemented Care Plans</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/careplan.html">CarePlan</a> <br /></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -426,7 +425,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.3</td>
       <td style="text-align: left">Manage Provider-Initiated Care Plans</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/careplan.html">CarePlan</a> <br />   <a href="https://www.hl7.org/fhir/practitioner.html">Practitioner</a> <br /></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -434,7 +433,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.4</td>
       <td style="text-align: left">Manage Medications</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/medication.html">Medication</a> <br /> <a href="https://www.hl7.org/fhir/medicationstatement.html">MedicationStatement</a> <br /></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -442,7 +441,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.5</td>
       <td style="text-align: left">Manage Tools and Functions to Assist Self Care</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="http://fhir.org/guides/argonaut/scheduling/">Argonaut Scheduling</a><br /> <a href="https://www.hl7.org/fhir/task.html">Task</a></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -474,7 +473,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.5.4</td>
       <td style="text-align: left">Manage Reminders</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/communication.html">Communication</a></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -490,7 +489,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>PH.3.5.6</td>
       <td style="text-align: left">Manage Recommendations</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://www.hl7.org/fhir/communication.html">Communication</a> <br /> <a href="https://www.hl7.org/fhir/evidence.html">Evidence</a> <br /> <a href="https://www.hl7.org/fhir/diagnosticreport.html">DiagnosticReport</a></td>
       <td style="text-align: left"> </td>
       <td> </td>
       <td> </td>
@@ -2130,6 +2129,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="regional-profiles">Regional Profiles</h3>
+
+<p><img src="./MedicalRecordOwnershipLaws.png" alt="./MedicalRecordOwnershipLaws.png" width="100%" /></p>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88">Personal Health Record System Functional Model</a></p>
+
 
 
 </div>
@@ -2154,7 +2161,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 27, 2022 18:16-0500">2022-03-27</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 28, 2022 04:09-0500">2022-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.3.0 - ci-build
 
 
             </span>
@@ -80,7 +80,7 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Accessibility</a>
+    <a href="environments.html">Environments</a>
   </li>
   <li>
     <a href="datamodel.html">Data Model</a>
@@ -132,7 +132,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.0). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Getting Started</h2>
   
 
@@ -147,7 +147,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG|0.2.1"/></span>
+      <span class="copy-text">0.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG|0.3.0"/></span>
       </td>
     </tr>
 
@@ -163,7 +163,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-03-27
+            as of 2022-03-28
           
         
       </td>
@@ -192,8 +192,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#standard-patient-health-record" id="markdown-toc-standard-patient-health-record">Standard Patient Health Record</a>    <ul>
       <li><a href="#history-of-electronic-health-records" id="markdown-toc-history-of-electronic-health-records">History of Electronic Health Records</a></li>
       <li><a href="#purpose--design-philosophy" id="markdown-toc-purpose--design-philosophy">Purpose / Design Philosophy</a></li>
-      <li><a href="#prior-art---implementation-guides" id="markdown-toc-prior-art---implementation-guides">Prior Art - Implementation Guides</a></li>
       <li><a href="#expectations-for-this-implementation-guide" id="markdown-toc-expectations-for-this-implementation-guide">Expectations for this Implementation Guide</a></li>
+      <li><a href="#prior-art---implementation-guides" id="markdown-toc-prior-art---implementation-guides">Prior Art - Implementation Guides</a></li>
       <li><a href="#references" id="markdown-toc-references">References</a></li>
     </ul>
   </li>
@@ -227,6 +227,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="purpose--design-philosophy">Purpose / Design Philosophy</h3>
 
 <p>The core of the Patient Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Patient Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.</p>
+
+<p><img src="./ImplementingPrimaryCare.png" alt="./ImplementingPrimaryCare.png" width="100%" /></p>
+
+<h3 id="expectations-for-this-implementation-guide">Expectations for this Implementation Guide</h3>
+<p>Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.</p>
 
 <h3 id="prior-art---implementation-guides">Prior Art - Implementation Guides</h3>
 
@@ -266,9 +271,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="http://hl7.org/fhir/us/bfdr/artifacts.html">Vital Records -  Birth and Fetal Death Reporting</a></li>
 </ul>
 
-<h3 id="expectations-for-this-implementation-guide">Expectations for this Implementation Guide</h3>
-<p>Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.</p>
-
 <h3 id="references">References</h3>
 
 <ul>
@@ -277,6 +279,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://www.techradar.com/best/best-electronic-health-record-ehr-software">Best Electronic Health Records software of 2022</a></li>
   <li><a href="http://www.healthinfolaw.org/comparative-analysis/who-owns-medical-records-50-state-comparison">Who Owns Medical Records: 50 State Comparison</a></li>
   <li><a href="https://www.cms.gov/Medicare/E-Health/PerHealthRecords/PHR_Pilots">Centers for Medicare Services - PHR Pilots</a></li>
+  <li><a href="https://www.nationalacademies.org/our-work/implementing-high-quality-primary-care">Implementing High Quality Primary Care</a></li>
 </ul>
 
 
@@ -304,7 +307,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 27, 2022 18:16-0500">2022-03-27</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 28, 2022 04:09-0500">2022-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

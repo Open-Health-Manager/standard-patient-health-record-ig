@@ -6,8 +6,8 @@ Profile: PhrRelatedPerson
 Parent: RelatedPerson
 Description: "Standard PHR profile of the RelatedPerson resource."
 
-Instance: RelatedPersonExample
+Instance: ExampleRelatedPerson
 InstanceOf: PhrRelatedPerson
-Description: "An example of a RelatedPerson ."
+Description: "John Doe - RelatedPerson - Sister"
 * patient.display = "John Doe"
 * patient.reference = "Patient/john-doe"

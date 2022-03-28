@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.3.0 - ci-build
 
 
             </span>
@@ -80,7 +80,7 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="usecases.html">Accessibility</a>
+    <a href="environments.html">Environments</a>
   </li>
   <li>
     <a href="datamodel.html">Data Model</a>
@@ -132,7 +132,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.0). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Physiology Simulations</h2>
   
 
@@ -150,8 +150,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#synthetic-data-generator-installation" id="markdown-toc-synthetic-data-generator-installation">Synthetic Data Generator Installation</a></li>
   <li><a href="#medical-domains" id="markdown-toc-medical-domains">Medical Domains</a></li>
+  <li><a href="#synthetic-data-generator-installation" id="markdown-toc-synthetic-data-generator-installation">Synthetic Data Generator Installation</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
@@ -159,7 +159,178 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Recurring challenges with designing PHR apps include figuring out which data to include (all of it?  just the hospital data?  fitness data?) and then finding suitable test data.  This implementation guide does not purport to provide algorithms or workflows for every medical category.  However, we can reference the Synthea synthetic data generator, and recommend that PHR developers use it’s algorithms for generating sample data for various medical conditions.</p>
 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p><img src="./Tutorial-Dermatogram.png" alt="./Tutorial-Dermatogram.png" width="100%" /></p>
+
+<h3 id="medical-domains">Medical Domains</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th style="text-align: left">Value Sets</th>
+      <th style="text-align: left">File Types</th>
+      <th style="text-align: left">Avg. File Size</th>
+      <th style="text-align: left">Frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genomics</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">FASTQ, BAM, VCFs</td>
+      <td style="text-align: left">~1TB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Radiology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">DICOM, JPG</td>
+      <td style="text-align: left">~1GB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Embryology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">PDF</td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/dermatitis">Dermatology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~2MB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hypothyroidism.json">Endocrinology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/cdc_growth_charts.json">Pediatrics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/biometrics.yml">Metabolism &amp; Biometrics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/epilepsy.json">Neurology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/physiology/generators/circulation_hemodynamics.yml"> Cardiology &amp; Hemodynamics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~5GB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/lung_cancer.json">Pulmonology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Kinesthesiology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/immunization_schedule.json">Immunology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/covid19">Virology (COVID19)</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~20KB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Gastroenterology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~4GB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/female_reproduction.json">Obstetrics</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100MB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json">Pregnancy</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">~100MB</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Gynocology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td>Andrology</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/urinary_tract_infections.json">Urology</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/wellness_encounters.json">Healthy Aging</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hospice_treatment.json">Hospice Care</a></td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="synthetic-data-generator-installation">Synthetic Data Generator Installation</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># download synthea</span>
 git clone https://github.com/synthetichealth/synthea
@@ -171,44 +342,10 @@ git clone https://github.com/synthetichealth/synthea
 ./gradlew build check <span class="nb">test</span>
 </code></pre></div></div>
 
-<h3 id="medical-domains">Medical Domains</h3>
-
-<ul>
-  <li>Genomics</li>
-  <li>Embryology</li>
-  <li><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/dermatitis">Dermatology</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hypothyroidism.json">Endocrinology</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/cdc_growth_charts.json">Pediatrics</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/biometrics.yml">Metabolism &amp; Biometrics</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/epilepsy.json">Neurology</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/physiology/generators/circulation_hemodynamics.yml">Cardiology &amp; Hemodynamics</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/lung_cancer.json">Pulmonology</a></li>
-  <li>Kinesthesiology</li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/immunization_schedule.json">Immunology</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/tree/master/src/main/resources/modules/covid19">Virology (COVID19)</a></li>
-  <li>Gastroenterology
-    <ul>
-      <li>Nutrition Intake</li>
-      <li>Nutrition Outtake</li>
-    </ul>
-  </li>
-  <li>Reproductive Health
-    <ul>
-      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/contraceptives.json">Contraceptives</a></li>
-      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/female_reproduction.json">Obstetrics</a></li>
-      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json">Pregnancy</a></li>
-      <li>Gynocology</li>
-      <li>Andrology</li>
-      <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/urinary_tract_infections.json">Urology</a></li>
-    </ul>
-  </li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/wellness_encounters.json">Healthy Aging</a></li>
-  <li><a href="https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/hospice_treatment.json">Hospice Care</a></li>
-</ul>
-
 <h3 id="references">References</h3>
 
-<p><a href="https://github.com/synthetichealth/synthea">SyntheaTM Patient Generator</a></p>
+<p><a href="https://github.com/synthetichealth/synthea">SyntheaTM Patient Generator</a>  <br />
+<a href="https://doku.pub/download/simulacres-et-simulation-jean-baudrillard-1q7e2mp3ov0v">Simulacres Et Simulation - Jean Baudrillard</a></p>
 
 
 
@@ -235,7 +372,7 @@ git clone https://github.com/synthetichealth/synthea
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 27, 2022 18:16-0500">2022-03-27</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 28, 2022 04:09-0500">2022-03-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,5 +1,6 @@
 Instance: john-doe
 InstanceOf: Patient
+Description: "John Doe - Patient Demographics"
 Usage: #example
 * active = true
 * name[0].use = #official

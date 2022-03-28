@@ -1,5 +1,6 @@
 Instance: ObservationsBundle1
 InstanceOf: Bundle
+Description: "John Doe - Observation - Collection"
 Usage: #example
 * type = #collection
 * entry[0].fullUrl = "/Observation/TvuX2kXom6hSvYhMs"

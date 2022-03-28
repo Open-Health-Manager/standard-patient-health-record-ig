@@ -5,9 +5,9 @@ Profile: PhrConsent
 Parent: Consent
 Description: "Standard PHR profile of the Consent resource."
 
-Instance: ConsentExample
+Instance: ExampleConsent
 InstanceOf: PhrConsent
-Description: "An example of a Consent ."
+Description: "John Doe - Consent - Advanced Directive"
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Patient Privacy"
 * category = https://www.hl7.org/fhir/valueset-consent-category.html#acd "Advanced Directive"
