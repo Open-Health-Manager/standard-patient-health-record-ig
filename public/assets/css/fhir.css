@@ -17,3 +17,7 @@
   float: right;
   margin-left: 6px;
 }
+
+table {
+  width: "100%";
+}
