@@ -3,13 +3,13 @@
   "id": "CarePlanExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
     ]
   },
   "status": "active",
   "intent": "plan",
   "subject": {
-    "display": "Jane Doe",
-    "reference": "Patient/jane-doe"
+    "display": "John Doe",
+    "reference": "Patient/john-doe"
   }
 }

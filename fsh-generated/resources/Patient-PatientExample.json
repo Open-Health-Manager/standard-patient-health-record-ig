@@ -1,9 +1,0 @@
-{
-  "resourceType": "Patient",
-  "id": "PatientExample",
-  "meta": {
-    "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient"
-    ]
-  }
-}

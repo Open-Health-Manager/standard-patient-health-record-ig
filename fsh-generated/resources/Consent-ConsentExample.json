@@ -3,7 +3,7 @@
   "id": "ConsentExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"
     ]
   },
   "status": "active",

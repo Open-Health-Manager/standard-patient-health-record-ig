@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "john-doe",
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Doe",
+      "given": [
+        "John"
+      ]
+    },
+    {
+      "use": "usual",
+      "given": [
+        "Johnny"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "(+1) 555 6473",
+      "use": "work",
+      "rank": 1
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1954-09-17",
+  "deceasedBoolean": false
+}

@@ -1,0 +1,66 @@
+I"�<p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#fhir-storage" id="markdown-toc-fhir-storage">FHIR Storage</a></li>
+  <li><a href="#database-storage" id="markdown-toc-database-storage">Database Storage</a></li>
+  <li><a href="#mobile-device-storage" id="markdown-toc-mobile-device-storage">Mobile Device Storage</a></li>
+  <li><a href="#database-storage-1" id="markdown-toc-database-storage-1">Database Storage</a></li>
+</ul>
+
+</div>
+<p>A complete longitudinal patient health record may feasibly span 100 years or more.  This presents numerous challenges, espcially considering that the earliest EMR systems were only first written in the early 1970s.  Statue of limitations require that healthcare practitioners keep pediatric records until an 18th birthday, but even an 18 year storage requirement by providers falls well short of a 76yr life expectancy.  Anybody over 30 years of age is therefore almost guaranteed to have some records on hardcopy paper, compact disk, USB drive, floppy drive, or other storage medium.</p>
+
+<h3 id="fhir-storage">FHIR Storage</h3>
+
+<p>A useful way to think of data storage is in terms of slow-motion data transfer.  The earliest electronic data storage devices were actually cathode ray tubes, the same devices used in computer monitors for decades.  As such, there isn’t as much difference as one may think between the devices that store bits and the devices that transmit data to a person’s eyes or transmits data over the wire.  These things are actually quite similar, if one considers the storage device as similar to an actor on the wire that can send or receive data.  In this sense, storage is just like any other data transfer - but with the ability to press a <code class="language-plaintext highlighter-rouge">pause</code> button indefinately mid-transfer.</p>
+
+<p>As such, this implementation guide recommends that implementors treat storage in much the same way as over-the-wire data transfers.</p>
+
+<ul>
+  <li>Systems MUST use FHIR data schemas to claim to be compliant with this IG.</li>
+  <li>Systems SHOULD use the same MIME types when possible.</li>
+  <li>Systems MAY treat directories as a Bundle by default.</li>
+</ul>
+
+<h4 id="file-extensions">File Extensions</h4>
+
+<ul>
+  <li>Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
+  <li>Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  <code class="language-plaintext highlighter-rouge">.Observation.fhir</code></li>
+</ul>
+
+<h4 id="compression">Compression</h4>
+
+<p>Files contianing patient health information MAY be zipped, with either a <code class="language-plaintext highlighter-rouge">.fhir.zip</code> or <code class="language-plaintext highlighter-rouge">.fhir.gz</code> extension. When using compression, systems SHOULD use the <a href="https://en.wikipedia.org/wiki/Deflate">DEFLATE</a> algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.</p>
+
+<h4 id="security">Security</h4>
+
+<p>Files contianing patient health information SHOULD be signed with a password.</p>
+
+<h3 id="database-storage">Database Storage</h3>
+
+<h4 id="document-oriented-databases">Document Oriented Databases</h4>
+
+<ul>
+  <li>MongoDB</li>
+  <li>CouchDB</li>
+  <li>Azure Cosmos DB</li>
+  <li>Document DB</li>
+</ul>
+
+<h4 id="graph-databases">Graph Databases</h4>
+
+<ul>
+  <li>Neo4J</li>
+</ul>
+
+<h3 id="mobile-device-storage">Mobile Device Storage</h3>
+
+<h4 id="apple-health-records-ios">Apple Health Records (iOS)</h4>
+<p>Apple provides a protected storage area for health records on iOS devices.  Implementors SHOULD use Apple Health when developing on iOS devices.</p>
+
+<h4 id="commonhealth-android-os">CommonHealth (Android OS)</h4>
+<p>CommonHealth provides a similar protected storage environment for Android devices.  Implementors SHOULD use CommonHealth when developing on Android devices.</p>
+
+<h3 id="database-storage-1">Database Storage</h3>
+:ET

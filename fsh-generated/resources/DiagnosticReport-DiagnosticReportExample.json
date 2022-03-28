@@ -3,7 +3,7 @@
   "id": "DiagnosticReportExample",
   "meta": {
     "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport"
+      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"
     ]
   },
   "status": "final",

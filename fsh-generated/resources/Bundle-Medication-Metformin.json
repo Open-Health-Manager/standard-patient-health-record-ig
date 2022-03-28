@@ -1,0 +1,26 @@
+{
+  "resourceType": "Bundle",
+  "id": "Medication-Metformin",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "/Medication/68382-185",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "Medication-1",
+        "code": {
+          "coding": [
+            {
+              "code": "68382-185",
+              "system": "http://hl7.org/fhir/sid/ndc",
+              "display": "Glipizide and Metformin Hydrochloride"
+            }
+          ]
+        },
+        "manufacturer": {
+          "display": "Zydus Pharmaceuticals (USA) Inc."
+        }
+      }
+    }
+  ]
+}
