@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "206765",
+  "display" : "Lisinopril 10 MG Oral Tablet [Prinivil]"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "lisinopril 10 MG Oral Tablet [Prinivil]",
+  "code" : "206765",
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm"
+}
+-------------------------------------------------------------------------------------

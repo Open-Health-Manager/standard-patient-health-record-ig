@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/sphr/Organization/organization-1> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "organization-1"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "3" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-01-25T16:39:57.489-05:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"organization-1\" Version \"3\" Updated \"2019-01-25 03:39:57-0600\" </p><p style=\"margin-bottom: 0px\">Profile: <code>http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</code></p></div><p><b>identifier</b>: id: 1144221847, id: 2523423456</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (organization-type#prov)</span></p><p><b>name</b>: Acme Labs</p><p><b>telecom</b>: ph: (+1) 734-677-7777, <a href=\"mailto:hq@acme.org\">hq@acme.org</a></p><p><b>address</b>: 3300 Washtenaw Avenue, Suite 227 Amherst MA 01002 USA </p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch" ];
+     fhir:Extension.valueString [ fhir:value "master" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path" ];
+     fhir:Extension.valueString [ fhir:value "HL7/ccda-on-fhir/source/resources/organization/organization-1.xml" ]
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://hl7.org.fhir/sid/us-npi" ];
+     fhir:Identifier.value [ fhir:value "1144221847" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://www.acme.org/organization" ];
+     fhir:Identifier.value [ fhir:value "2523423456" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/organization-type" ];
+       fhir:Coding.code [ fhir:value "prov" ];
+       fhir:Coding.display [ fhir:value "Healthcare Provider" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "Acme Labs"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(+1) 734-677-7777" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "hq@acme.org" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "3300 Washtenaw Avenue, Suite 227";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Amherst" ];
+     fhir:Address.state [ fhir:value "MA" ];
+     fhir:Address.postalCode [ fhir:value "01002" ];
+     fhir:Address.country [ fhir:value "USA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/sphr/Organization/organization-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

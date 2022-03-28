@@ -11,9 +11,9 @@
   fhir:Resource.id [ fhir:value "DiagnosticReportExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport>
      ]
   ];
   fhir:DomainResource.text [

@@ -4,30 +4,38 @@ At the core of the Standard Patient Health Record is a standard data model descr
 
 At a very high level, we broadly organize the SPHR data model into three categories - Id, Ego, SuperEgo - according to basic psychoanalytic theory.  
 
+
 #### Physiology Resources (Id)
 
 The physiology model is the portion of the SPHR that contains data about structures and processes that are actually occuring within the patient's physical body.  Such things may include vital signs, laboratory biomarkers, an allergic response, a broken arm, an immunization, a radiology report, a genetic sequence, or post-operative notes recorded after a surgery.  The data contained in these data schemas are not the actual metabolic or anatomic processes happening in a human body, but they are cognitive representations of those processes (and therefore loosely analogous with the Id).
 
 A standard patient healthrecord MUST implement the following resources (defined in the Argonaut IG) at a bare minimum.
 
-- [AllergyIntolerance](https://www.hl7.org/fhir/allergyintolerance.html)
-- [Condition](https://www.hl7.org/fhir/condition.html)
-- [DiagnosticReport](https://www.hl7.org/fhir/diagnosticreport.html)
-- [FamilyMemberHistory](https://www.hl7.org/fhir/familymemberhistory.html)
-- [Immunization](https://www.hl7.org/fhir/immunization.html)
-- [Medication](https://www.hl7.org/fhir/medication.html)
-- [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html)
-- [Patient](https://www.hl7.org/fhir/patient.html)
-- [Observation](https://www.hl7.org/fhir/observation.html)
-- [Procedure](https://www.hl7.org/fhir/procedure.html)
 
-A standard patient healthrecord SHOULD implement the following resources to be considered comprehensive:
+| FHIR resource | Elements | Standard  | Category  | Argonaut R4    |
+| ------------- | :------- | :-------- | :-------- | :------- |
+| [Patient](https://www.hl7.org/fhir/patient.html) | Given Name<br />Family Name<br />Previous Name<br />Middle Name<br />Suffix<br />Date of Birth<br />Gender<br />Preferred Language<br />Current Address<br />Previous Address<br />Phone Number<br />Email address<br /> | [US Core](http://www.hl7.org/fhir/us/core/)<br/> International Patient Summary<br/> |  Demographics | Yes |
+| [Patient](https://www.hl7.org/fhir/patient.html) | Sex (assigned at birth)<br />Race<br />Ethnicity<br /> | [US Core](http://www.hl7.org/fhir/us/core/) | Demographics <br/> Social Determinants of Health <br/> | No |
+| [Patient](https://www.hl7.org/fhir/patient.html) | Gender Identity<br /> | [Gender Harmony](https://tinyurl.com/4f8eee86 ) | Demographics | No  |
+| [Patient](https://www.hl7.org/fhir/patient.html) | Sexual Orientation<br /> | | Demographics | No |
+| [AllergyIntolerance](https://www.hl7.org/fhir/allergyintolerance.html) | Substance (Medication) <br/> Substance (Drug Class) <br/> Reaction <br/> | [US Core](http://www.hl7.org/fhir/us/core/) |  | Yes |
+| [BodyStructure](https://www.hl7.org/fhir/bodystructure.html) |  |  |  | No  |
+| [Condition](https://www.hl7.org/fhir/condition.html) | SDOH Problems <br/> Health Concerns <br/> Date of Diagnosis <br/> Date of Resolution | [US Core](http://www.hl7.org/fhir/us/core/)  | Active Problems <br/> Social Determinants of Health | Yes |
+| [DiagnosticReport](https://www.hl7.org/fhir/diagnosticreport.html) | Radiologist Report <br/> Pathologist Report <br/> Cardiologist Report <br/> Oncologist Report <br/> | [US Core](http://www.hl7.org/fhir/us/core/) <br/> [Radiation Dose Summary](https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/) <br/> [Breast Radiology Reporting](https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig/)  | Diagnostic Imaging | Yes |
+| [FamilyMemberHistory](https://www.hl7.org/fhir/familymemberhistory.html) |  |  |  | No |
+| [ImagingStudy](https://www.hl7.org/fhir/imagingstudy.html) | Diagnostic Radiology <br/> Interventional Radiology <br/> Mammography <br/> Ultrasound <br/> MRI/CT <br/> | [US Core](http://www.hl7.org/fhir/us/core/) <br> [Radiation Dose Summary](https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/) <br/> [Breast Radiology Reporting](https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig/) | Diagnostic Imaging | No |
+| [Immunization](https://www.hl7.org/fhir/immunization.html) | Immunizations <br/> Vaccinations <br/> | [US Core](http://www.hl7.org/fhir/us/core/) <br/> [SMART Health Cards](https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/) <br/> |  | Yes |
+| [Media](https://www.hl7.org/fhir/media.html) |  |  |  | Yes |
+| [Medication](https://www.hl7.org/fhir/medication.html) |  | [US Core](http://www.hl7.org/fhir/us/core/) | Active Medications | Yes |
+| [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html) |  |  |  | Yes |
+| [MolecularSequence](https://www.hl7.org/fhir/molecularsequence.html) | Whole Genome Sequence | [Genomics Reporting](https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html) | Genomics | No |
+| [Observation](https://www.hl7.org/fhir/observation.html) | Smoking status <br/> Glucose <br/> Steps Walked <br/> Diastolic Blood Pressure <br/> Systolic Blood Pressure <br/> Body Height <br/> Body Weight <br/> Heart Rate <br/> Respiratory Rate <br/> Body Temperature <br/> Pulse Oximetry <br/> Inhaled O2 Concentration <br/> BMI Percentile <br/> Weight for length percentile <br/> Head Circumference percentile | [Vital Signs](https://build.fhir.org/ig/HL7/cimi-vital-signs/)   | Symptoms <br/> Vital Signs <br/> Laboratory Results <br/> Remote Patient Monitoring <br/> Behavioral Observations <br/> Wearables <br/> Point of Care Testing <br/> | Yes |
+| [Procedure](https://www.hl7.org/fhir/procedure.html) |  |  |  | Yes |
+| [Specimen](https://www.hl7.org/fhir/specimen.html) |  |  |  | No |
 
-- [BodyStructure](https://www.hl7.org/fhir/bodystructure.html)
-- [ImagingStudy](https://www.hl7.org/fhir/imagingstudy.html)
-- [Media](https://www.hl7.org/fhir/media.html)
-- [MolecularSequence](https://www.hl7.org/fhir/molecularsequence.html)
-- [Specimen](https://www.hl7.org/fhir/specimen.html)
+
+
+
 
 #### Social and Behavioral Resources (SuperEgo)
 
@@ -35,12 +43,18 @@ The patient also exists within a social context, wherein family members, clinici
 
 A complete standard patient healthrecord SHOULD implement the following resources that will be used by other systems to describe other actors participating in caregiving activities.  
 
-- [CarePlan](https://www.hl7.org/fhir/careplan.html)
-- [CareTeam](https://www.hl7.org/fhir/careteam.html)
-- [Communication](https://www.hl7.org/fhir/communication.html)
-- [Goal](https://www.hl7.org/fhir/goal.html)
-- [Practitioner](https://www.hl7.org/fhir/practitioner.html)
-- [RelatedPerson](https://www.hl7.org/fhir/relatedperson.html)
+
+| FHIR resource | Elements | Standard  | Category  | Argonaut R4  |
+| ------------- | :------- | :-------- | :-------- | :------- |
+| [CarePlan](https://www.hl7.org/fhir/careplan.html) |  |  |  | Yes |
+| [CareTeam](https://www.hl7.org/fhir/careteam.html) |  |  |  | No |
+| [Claim](https://www.hl7.org/fhir/claim.html) | Insurance & Out-of-pocket Costs | [CMS Bluebutton 2.0](https://bluebutton.cms.gov/assets/ig/index.html) | Financial Health | No |
+| [Communication](https://www.hl7.org/fhir/communication.html) |  |  |  | No |
+| [Goal](https://www.hl7.org/fhir/goal.html) |  |  |  |  No |
+| [MeasureReport](https://www.hl7.org/fhir/measurereport.html) | Patient Reported Outcomes (PRO) |  | Patient Generated Data | No |
+| [Practitioner](https://www.hl7.org/fhir/practitioner.html) |  |  |  | Yes |
+| [RelatedPerson](https://www.hl7.org/fhir/relatedperson.html) |  |  |  | Yes |
+
 
 
 #### Administrative Resources (Ego)
@@ -49,22 +63,23 @@ Besides modeling the internal physiology (Id) and the social context (Super Ego)
 
 A standard patient healthrecord MUST implement the following for it to accept records from other SPHR systems:
 
-- [Bundle](https://www.hl7.org/fhir/bundle.html)
-- [Consent](https://www.hl7.org/fhir/consent.html)
-- [DocumentReference](https://www.hl7.org/fhir/diagnosticresource.html)
-- [Provenance](https://www.hl7.org/fhir/provenance.html)
-- [Questionnaire](https://www.hl7.org/fhir/questionnaire.html)
-- [QuestionnaireResponse](https://www.hl7.org/fhir/questionnaireresponse.html)
 
-A standard patient healthrecord SHOULD also implement the following resources so it can participate in common workflows that SPHRs are expected to be able to support:
-
-- [Appointment](https://www.hl7.org/fhir/appointment.html)
-- [Binary](https://www.hl7.org/fhir/binary.html)
-- [Contract](https://www.hl7.org/fhir/contract.html)
-- [Device](https://www.hl7.org/fhir/device.html)
-- [Schedule](https://www.hl7.org/fhir/schedule.html)
-- [Slot](https://www.hl7.org/fhir/slot.html)
-- [Task](https://www.hl7.org/fhir/task.html)
+| FHIR resource | Elements | Standard  | Category  | Argonaut R4  |
+| ------------- | :------- | :-------- | :-------- | :------- |
+| [Appointment](https://www.hl7.org/fhir/appointment.html) |  | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)   |  | Yes |
+| [Binary](https://www.hl7.org/fhir/binary.html) |  |  |  | Yes | 
+| [Bundle](https://www.hl7.org/fhir/bundle.html) |  |  |  | Yes | 
+| [Consent](https://www.hl7.org/fhir/consent.html) | Medical Power oof Attorneys<br /> |   | End of Life | No  |
+| [Contract](https://www.hl7.org/fhir/contract.html) | Medical Power oof Attorneys<br /> |   | End of Life | No |
+| [Device](https://www.hl7.org/fhir/device.html) |  |  |  | Yes | 
+| [DocumentReference](https://www.hl7.org/fhir/diagnosticresource.html) |  |  |  | Yes |
+| [Provenance](https://www.hl7.org/fhir/provenance.html) |  |  |  | No  | 
+| [Questionnaire](https://www.hl7.org/fhir/questionnaire.html) | Migrant farm worker status <br/> Armed forces discharge <br/> Phone usage data<br> | [Argonaut Questionnaire](http://fhir.org/guides/argonaut/questionnaire/)  | Structured Data Capture <br/> Social Determinants of Health <br/> PRAPARE Survey <br/> Technology Usage <br/> | Yes |
+| [QuestionnaireResponse](https://www.hl7.org/fhir/questionnaireresponse.html) |  | [Argonaut Questionnaire](http://fhir.org/guides/argonaut/questionnaire/)  |  | Yes | 
+| [Schedule](https://www.hl7.org/fhir/schedule.html) |  | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)   |  | Yes | 
+| [Slot](https://www.hl7.org/fhir/slot.html) |  | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)   |  | Yes | 
+| [Task](https://www.hl7.org/fhir/task.html) |  | [Patient Request for Corrections](https://build.fhir.org/ig/HL7/fhir-patient-correction/) |  | No  | 
+| [Composition](https://www.hl7.org/fhir/composition.html) | Progress Notes <br/> History and Physicals <br/> Discharge Summaries <br/> Operative Notes <br/> Procedure Notes <br/> Consultation notes <br/> | [US Core](http://www.hl7.org/fhir/us/core/) <br/> [C-CDA on FHIR](http://hl7.org/fhir/us/ccda/) | Clinical Documentation | Yes |
 
 
 ### Logical Models

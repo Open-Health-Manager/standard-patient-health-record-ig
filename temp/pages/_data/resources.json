@@ -2,13 +2,13 @@
   "ImplementationGuide/StandardPatientHealthRecordIG": {
     "history": false,
     "index": 0,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG.json",
     "path": "ImplementationGuide-StandardPatientHealthRecordIG.html",
     "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
     "version": "0.2.1",
     "name": "StandardPatientHealthRecordIG",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
+    "date": "2022-03-27T18:16:54-05:00",
     "status": {
       "class": "colsd",
       "owner": "MITRE",
@@ -16,17 +16,17 @@
       "status": "Draft"
     }
   },
-  "StructureDefinition/MyAllergyIntolerance": {
+  "StructureDefinition/PhrAllergyIntolerance": {
     "history": false,
     "index": 1,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyAllergyIntolerance.json",
-    "path": "StructureDefinition-MyAllergyIntolerance.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyAllergyIntolerance",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrAllergyIntolerance.json",
+    "path": "StructureDefinition-PhrAllergyIntolerance.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrAllergyIntolerance",
     "version": "0.2.1",
-    "name": "MyAllergyIntolerance",
+    "name": "PhrAllergyIntolerance",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the AllergyIntolerance resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the AllergyIntolerance resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -34,17 +34,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyBodyStructure": {
+  "StructureDefinition/PhrBodyStructure": {
     "history": false,
     "index": 2,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyBodyStructure.json",
-    "path": "StructureDefinition-MyBodyStructure.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrBodyStructure.json",
+    "path": "StructureDefinition-PhrBodyStructure.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure",
     "version": "0.2.1",
-    "name": "MyBodyStructure",
+    "name": "PhrBodyStructure",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the BodyStructure resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the BodyStructure resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -52,17 +52,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyCarePlan": {
+  "StructureDefinition/PhrCarePlan": {
     "history": false,
     "index": 3,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCarePlan.json",
-    "path": "StructureDefinition-MyCarePlan.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrCarePlan.json",
+    "path": "StructureDefinition-PhrCarePlan.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan",
     "version": "0.2.1",
-    "name": "MyCarePlan",
+    "name": "PhrCarePlan",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the CarePlan resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the CarePlan resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -70,17 +70,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyCareTeam": {
+  "StructureDefinition/PhrCareTeam": {
     "history": false,
     "index": 4,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCareTeam.json",
-    "path": "StructureDefinition-MyCareTeam.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrCareTeam.json",
+    "path": "StructureDefinition-PhrCareTeam.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam",
     "version": "0.2.1",
-    "name": "MyCareTeam",
+    "name": "PhrCareTeam",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the CareTeam resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the CareTeam resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -88,17 +88,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyCommunication": {
+  "StructureDefinition/PhrCommunication": {
     "history": false,
     "index": 5,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCommunication.json",
-    "path": "StructureDefinition-MyCommunication.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrCommunication.json",
+    "path": "StructureDefinition-PhrCommunication.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication",
     "version": "0.2.1",
-    "name": "MyCommunication",
+    "name": "PhrCommunication",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Communication resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Communication resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -106,17 +106,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyCondition": {
+  "StructureDefinition/PhrCondition": {
     "history": false,
     "index": 6,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyCondition.json",
-    "path": "StructureDefinition-MyCondition.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCondition",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrCondition.json",
+    "path": "StructureDefinition-PhrCondition.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCondition",
     "version": "0.2.1",
-    "name": "MyCondition",
+    "name": "PhrCondition",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Condition resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Condition resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -124,17 +124,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyConsent": {
+  "StructureDefinition/PhrConsent": {
     "history": false,
     "index": 7,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyConsent.json",
-    "path": "StructureDefinition-MyConsent.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrConsent.json",
+    "path": "StructureDefinition-PhrConsent.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent",
     "version": "0.2.1",
-    "name": "MyConsent",
+    "name": "PhrConsent",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Consent resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Consent resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -142,17 +142,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyDevice": {
+  "StructureDefinition/PhrDevice": {
     "history": false,
     "index": 8,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyDevice.json",
-    "path": "StructureDefinition-MyDevice.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrDevice.json",
+    "path": "StructureDefinition-PhrDevice.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice",
     "version": "0.2.1",
-    "name": "MyDevice",
+    "name": "PhrDevice",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Device resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Device resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -160,17 +160,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyDiagnosticReport": {
+  "StructureDefinition/PhrDiagnosticReport": {
     "history": false,
     "index": 9,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyDiagnosticReport.json",
-    "path": "StructureDefinition-MyDiagnosticReport.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrDiagnosticReport.json",
+    "path": "StructureDefinition-PhrDiagnosticReport.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport",
     "version": "0.2.1",
-    "name": "MyDiagnosticReport",
+    "name": "PhrDiagnosticReport",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the DiagnosticReport resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the DiagnosticReport resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -178,17 +178,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyFamilyMemberHistory": {
+  "StructureDefinition/PhrFamilyMemberHistory": {
     "history": false,
     "index": 10,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyFamilyMemberHistory.json",
-    "path": "StructureDefinition-MyFamilyMemberHistory.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrFamilyMemberHistory.json",
+    "path": "StructureDefinition-PhrFamilyMemberHistory.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory",
     "version": "0.2.1",
-    "name": "MyFamilyMemberHistory",
+    "name": "PhrFamilyMemberHistory",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the FamilyMemberHistory resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the FamilyMemberHistory resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -196,17 +196,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyGoal": {
+  "StructureDefinition/PhrGoal": {
     "history": false,
     "index": 11,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyGoal.json",
-    "path": "StructureDefinition-MyGoal.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrGoal.json",
+    "path": "StructureDefinition-PhrGoal.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrGoal",
     "version": "0.2.1",
-    "name": "MyGoal",
+    "name": "PhrGoal",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Goal resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Goal resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -214,17 +214,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyImmunization": {
+  "StructureDefinition/PhrImmunization": {
     "history": false,
     "index": 12,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyImmunization.json",
-    "path": "StructureDefinition-MyImmunization.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrImmunization.json",
+    "path": "StructureDefinition-PhrImmunization.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrImmunization",
     "version": "0.2.1",
-    "name": "MyImmunization",
+    "name": "PhrImmunization",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Immunization resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Immunization resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -232,17 +232,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyMedication": {
+  "StructureDefinition/PhrMedication": {
     "history": false,
     "index": 13,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedication.json",
-    "path": "StructureDefinition-MyMedication.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrMedication.json",
+    "path": "StructureDefinition-PhrMedication.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedication",
     "version": "0.2.1",
-    "name": "MyMedication",
+    "name": "PhrMedication",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Medication resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Medication resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -250,17 +250,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyMedicationStatement": {
+  "StructureDefinition/PhrMedicationStatement": {
     "history": false,
     "index": 14,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMedicationStatement.json",
-    "path": "StructureDefinition-MyMedicationStatement.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrMedicationStatement.json",
+    "path": "StructureDefinition-PhrMedicationStatement.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedicationStatement",
     "version": "0.2.1",
-    "name": "MyMedicationStatement",
+    "name": "PhrMedicationStatement",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the MedicationStatement resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the MedicationStatement resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -268,17 +268,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyMolecularSequence": {
+  "StructureDefinition/PhrMolecularSequence": {
     "history": false,
     "index": 15,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyMolecularSequence.json",
-    "path": "StructureDefinition-MyMolecularSequence.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMolecularSequence",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrMolecularSequence.json",
+    "path": "StructureDefinition-PhrMolecularSequence.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMolecularSequence",
     "version": "0.2.1",
-    "name": "MyMolecularSequence",
+    "name": "PhrMolecularSequence",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the MolecularSequence resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the MolecularSequence resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -286,17 +286,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyObservation": {
+  "StructureDefinition/PhrObservation": {
     "history": false,
     "index": 16,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyObservation.json",
-    "path": "StructureDefinition-MyObservation.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrObservation.json",
+    "path": "StructureDefinition-PhrObservation.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrObservation",
     "version": "0.2.1",
-    "name": "MyObservation",
+    "name": "PhrObservation",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Observation resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Observation resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -304,17 +304,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyPatient": {
+  "StructureDefinition/PhrPatient": {
     "history": false,
     "index": 17,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPatient.json",
-    "path": "StructureDefinition-MyPatient.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrPatient.json",
+    "path": "StructureDefinition-PhrPatient.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPatient",
     "version": "0.2.1",
-    "name": "MyPatient",
+    "name": "PhrPatient",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Patient resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Patient resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -322,17 +322,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyPractitioner": {
+  "StructureDefinition/PhrPractitioner": {
     "history": false,
     "index": 18,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyPractitioner.json",
-    "path": "StructureDefinition-MyPractitioner.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrPractitioner.json",
+    "path": "StructureDefinition-PhrPractitioner.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPractitioner",
     "version": "0.2.1",
-    "name": "MyPractitioner",
+    "name": "PhrPractitioner",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Practitioner resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Practitioner resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -340,17 +340,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyProcedure": {
+  "StructureDefinition/PhrProcedure": {
     "history": false,
     "index": 19,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyProcedure.json",
-    "path": "StructureDefinition-MyProcedure.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrProcedure.json",
+    "path": "StructureDefinition-PhrProcedure.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProcedure",
     "version": "0.2.1",
-    "name": "MyProcedure",
+    "name": "PhrProcedure",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Procedure resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Procedure resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -358,17 +358,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MyRelatedPerson": {
+  "StructureDefinition/PhrRelatedPerson": {
     "history": false,
     "index": 20,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MyRelatedPerson.json",
-    "path": "StructureDefinition-MyRelatedPerson.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrRelatedPerson.json",
+    "path": "StructureDefinition-PhrRelatedPerson.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson",
     "version": "0.2.1",
-    "name": "MyRelatedPerson",
+    "name": "PhrRelatedPerson",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the RelatedPerson resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the RelatedPerson resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -376,17 +376,17 @@
       "status": "Active"
     }
   },
-  "StructureDefinition/MySpecimen": {
+  "StructureDefinition/PhrSpecimen": {
     "history": false,
     "index": 21,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-MySpecimen.json",
-    "path": "StructureDefinition-MySpecimen.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-PhrSpecimen.json",
+    "path": "StructureDefinition-PhrSpecimen.html",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen",
     "version": "0.2.1",
-    "name": "MySpecimen",
+    "name": "PhrSpecimen",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Specimen resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Specimen resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -397,14 +397,14 @@
   "StructureDefinition/Environmental": {
     "history": false,
     "index": 22,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-Environmental.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-Environmental.json",
     "path": "StructureDefinition-Environmental.html",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/Environmental",
     "version": "0.2.1",
     "name": "Environmental",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the Environmental resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the Environmental resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -415,14 +415,14 @@
   "StructureDefinition/HealthReceipt": {
     "history": false,
     "index": 23,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-HealthReceipt.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-HealthReceipt.json",
     "path": "StructureDefinition-HealthReceipt.html",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/HealthReceipt",
     "version": "0.2.1",
     "name": "HealthReceipt",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the HealthReceipt resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the HealthReceipt resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -433,14 +433,14 @@
   "StructureDefinition/NutrientIntake": {
     "history": false,
     "index": 24,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientIntake.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-NutrientIntake.json",
     "path": "StructureDefinition-NutrientIntake.html",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientIntake",
     "version": "0.2.1",
     "name": "NutrientIntake",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the NutrientIntake resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the NutrientIntake resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -451,14 +451,14 @@
   "StructureDefinition/NutrientOuttake": {
     "history": false,
     "index": 25,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-NutrientOuttake.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-NutrientOuttake.json",
     "path": "StructureDefinition-NutrientOuttake.html",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake",
     "version": "0.2.1",
     "name": "NutrientOuttake",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the NutrientOuttake resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the NutrientOuttake resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
@@ -469,61 +469,43 @@
   "StructureDefinition/SocialMedia": {
     "history": false,
     "index": 26,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-SocialMedia.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/structuredefinition-SocialMedia.json",
     "path": "StructureDefinition-SocialMedia.html",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/SocialMedia",
     "version": "0.2.1",
     "name": "SocialMedia",
     "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the SocialMedia resource.",
+    "date": "2022-03-27T18:16:54-05:00",
+    "description": "Standard PHR profile of the SocialMedia resource.",
     "status": {
       "class": "colsi",
       "owner": "MITRE",
       "link": "https://gitlab.mitre.org/awatson/sphr",
       "status": "Active"
-    }
-  },
-  "StructureDefinition/VitalSigns": {
-    "history": false,
-    "index": 27,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/structuredefinition-VitalSigns.json",
-    "path": "StructureDefinition-VitalSigns.html",
-    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/VitalSigns",
-    "version": "0.2.1",
-    "name": "VitalSigns",
-    "experimental": false,
-    "date": "2022-03-09T09:27:10-06:00",
-    "description": "An example profile of the VitalSigns resource.",
-    "status": {
-      "class": "colsi",
-      "owner": "MITRE",
-      "link": "https://gitlab.mitre.org/awatson/sphr",
-      "status": "Active"
-    }
-  },
-  "AllergyIntolerance/AllergyIntoleranceExample": {
-    "history": false,
-    "index": 28,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/allergyintolerance-AllergyIntoleranceExample.json",
-    "path": "AllergyIntolerance-AllergyIntoleranceExample.html",
-    "status": {
-      "class": "colsi"
     }
   },
   "BodyStructure/BodyStructureExample": {
     "history": false,
-    "index": 29,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/bodystructure-BodyStructureExample.json",
+    "index": 27,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/bodystructure-BodyStructureExample.json",
     "path": "BodyStructure-BodyStructureExample.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Composition/Care-Plan-Example": {
+    "history": false,
+    "index": 28,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Care-Plan-Example.json",
+    "path": "Composition-Care-Plan-Example.html",
     "status": {
       "class": "colsi"
     }
   },
   "CarePlan/CarePlanExample": {
     "history": false,
-    "index": 30,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careplan-CarePlanExample.json",
+    "index": 29,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/careplan-CarePlanExample.json",
     "path": "CarePlan-CarePlanExample.html",
     "status": {
       "class": "colsi"
@@ -531,8 +513,8 @@
   },
   "CareTeam/CareTeamExample": {
     "history": false,
-    "index": 31,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/careteam-CareTeamExample.json",
+    "index": 30,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/careteam-CareTeamExample.json",
     "path": "CareTeam-CareTeamExample.html",
     "status": {
       "class": "colsi"
@@ -540,27 +522,36 @@
   },
   "Communication/CommunicationExample": {
     "history": false,
-    "index": 32,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/communication-CommunicationExample.json",
+    "index": 31,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/communication-CommunicationExample.json",
     "path": "Communication-CommunicationExample.html",
-    "status": {
-      "class": "colsi"
-    }
-  },
-  "Condition/ConditionExample": {
-    "history": false,
-    "index": 33,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/condition-ConditionExample.json",
-    "path": "Condition-ConditionExample.html",
     "status": {
       "class": "colsi"
     }
   },
   "Consent/ConsentExample": {
     "history": false,
-    "index": 34,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/consent-ConsentExample.json",
+    "index": 32,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/consent-ConsentExample.json",
     "path": "Consent-ConsentExample.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Composition/Consultation-Note-Example": {
+    "history": false,
+    "index": 33,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Consultation-Note-Example.json",
+    "path": "Composition-Consultation-Note-Example.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Composition/Continuity-of-Care-Document-Example": {
+    "history": false,
+    "index": 34,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Continuity-of-Care-Document-Example.json",
+    "path": "Composition-Continuity-of-Care-Document-Example.html",
     "status": {
       "class": "colsi"
     }
@@ -568,106 +559,130 @@
   "Device/DeviceExample": {
     "history": false,
     "index": 35,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/device-DeviceExample.json",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/device-DeviceExample.json",
     "path": "Device-DeviceExample.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Composition/Diagnostic-Imaging-Report-Example": {
+    "history": false,
+    "index": 36,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Diagnostic-Imaging-Report-Example.json",
+    "path": "Composition-Diagnostic-Imaging-Report-Example.html",
     "status": {
       "class": "colsi"
     }
   },
   "DiagnosticReport/DiagnosticReportExample": {
     "history": false,
-    "index": 36,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/diagnosticreport-DiagnosticReportExample.json",
+    "index": 37,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/diagnosticreport-DiagnosticReportExample.json",
     "path": "DiagnosticReport-DiagnosticReportExample.html",
     "status": {
       "class": "colsi"
     }
   },
+  "Composition/Discharge-Summary-Example": {
+    "history": false,
+    "index": 38,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Discharge-Summary-Example.json",
+    "path": "Composition-Discharge-Summary-Example.html"
+  },
   "FamilyMemberHistory/FamilyMemberHistoryExample": {
     "history": false,
-    "index": 37,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/familymemberhistory-FamilyMemberHistoryExample.json",
+    "index": 39,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/familymemberhistory-FamilyMemberHistoryExample.json",
     "path": "FamilyMemberHistory-FamilyMemberHistoryExample.html",
     "status": {
       "class": "colsi"
     }
   },
-  "Goal/GoalExample": {
-    "history": false,
-    "index": 38,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/goal-GoalExample.json",
-    "path": "Goal-GoalExample.html",
-    "status": {
-      "class": "colsi"
-    }
-  },
-  "Immunization/ImmunizationExample": {
-    "history": false,
-    "index": 39,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/immunization-ImmunizationExample.json",
-    "path": "Immunization-ImmunizationExample.html",
-    "status": {
-      "class": "colsi"
-    }
-  },
-  "Medication/MedicationExample": {
+  "Composition/History-and-Physical-Example": {
     "history": false,
     "index": 40,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medication-MedicationExample.json",
-    "path": "Medication-MedicationExample.html",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-History-and-Physical-Example.json",
+    "path": "Composition-History-and-Physical-Example.html",
     "status": {
       "class": "colsi"
     }
   },
-  "MedicationStatement/MedicationStatementExample": {
+  "Condition/JohnDoe-diabetes": {
     "history": false,
     "index": 41,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/medicationstatement-MedicationStatementExample.json",
-    "path": "MedicationStatement-MedicationStatementExample.html",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/condition-JohnDoe-diabetes.json",
+    "path": "Condition-JohnDoe-diabetes.html",
     "status": {
       "class": "colsi"
     }
   },
-  "Observation/ObservationExample": {
+  "Encounter/JohnDoe-diabetesOnset": {
     "history": false,
     "index": 42,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/observation-ObservationExample.json",
-    "path": "Observation-ObservationExample.html",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/encounter-JohnDoe-diabetesOnset.json",
+    "path": "Encounter-JohnDoe-diabetesOnset.html",
     "status": {
       "class": "colsi"
     }
   },
-  "Patient/PatientExample": {
+  "Bundle/Medication-Metformin": {
     "history": false,
     "index": 43,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/patient-PatientExample.json",
-    "path": "Patient-PatientExample.html",
-    "status": {
-      "class": "colsi"
-    }
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/bundle-Medication-Metformin.json",
+    "path": "Bundle-Medication-Metformin.html"
   },
-  "Practitioner/PractitionerExample": {
+  "Bundle/ObservationsBundle1": {
     "history": false,
     "index": 44,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/practitioner-PractitionerExample.json",
-    "path": "Practitioner-PractitionerExample.html",
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/bundle-ObservationsBundle1.json",
+    "path": "Bundle-ObservationsBundle1.html"
+  },
+  "Composition/Operative-Note-Example": {
+    "history": false,
+    "index": 45,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Operative-Note-Example.json",
+    "path": "Composition-Operative-Note-Example.html",
     "status": {
       "class": "colsi"
     }
   },
-  "Procedure/ProcedureExample": {
+  "Bundle/PractitionersBundle1": {
     "history": false,
-    "index": 45,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/procedure-ProcedureExample.json",
-    "path": "Procedure-ProcedureExample.html",
+    "index": 46,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/bundle-PractitionersBundle1.json",
+    "path": "Bundle-PractitionersBundle1.html"
+  },
+  "Composition/Procedure-Note-Example": {
+    "history": false,
+    "index": 47,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Procedure-Note-Example.json",
+    "path": "Composition-Procedure-Note-Example.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Composition/Progress-Note-Example": {
+    "history": false,
+    "index": 48,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Progress-Note-Example.json",
+    "path": "Composition-Progress-Note-Example.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Composition/Referral-Note-Example": {
+    "history": false,
+    "index": 49,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Referral-Note-Example.json",
+    "path": "Composition-Referral-Note-Example.html",
     "status": {
       "class": "colsi"
     }
   },
   "RelatedPerson/RelatedPersonExample": {
     "history": false,
-    "index": 46,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/relatedperson-RelatedPersonExample.json",
+    "index": 50,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/relatedperson-RelatedPersonExample.json",
     "path": "RelatedPerson-RelatedPersonExample.html",
     "status": {
       "class": "colsi"
@@ -675,11 +690,107 @@
   },
   "Specimen/SpecimenExample": {
     "history": false,
-    "index": 47,
-    "source": "/Users/awatson/Code/gitlab/sphr/fsh-generated/resources/specimen-SpecimenExample.json",
+    "index": 51,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/specimen-SpecimenExample.json",
     "path": "Specimen-SpecimenExample.html",
     "status": {
       "class": "colsi"
     }
+  },
+  "Composition/Transfer-Summary-Example": {
+    "history": false,
+    "index": 52,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/composition-Transfer-Summary-Example.json",
+    "path": "Composition-Transfer-Summary-Example.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "AllergyIntolerance/allergy-intolerance": {
+    "history": false,
+    "index": 53,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/allergyintolerance-allergy-intolerance.json",
+    "path": "AllergyIntolerance-allergy-intolerance.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Immunization/immunization": {
+    "history": false,
+    "index": 54,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/immunization-immunization.json",
+    "path": "Immunization-immunization.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Patient/john-doe": {
+    "history": false,
+    "index": 55,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/patient-john-doe.json",
+    "path": "Patient-john-doe.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "MedicationStatement/medication-statement": {
+    "history": false,
+    "index": 56,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/medicationstatement-medication-statement.json",
+    "path": "MedicationStatement-medication-statement.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Observation/observation-lab-urine": {
+    "history": false,
+    "index": 57,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/observation-observation-lab-urine.json",
+    "path": "Observation-observation-lab-urine.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Observation/observation-smoker": {
+    "history": false,
+    "index": 58,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/observation-observation-smoker.json",
+    "path": "Observation-observation-smoker.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Observation/observation-vitals-temp": {
+    "history": false,
+    "index": 59,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/observation-observation-vitals-temp.json",
+    "path": "Observation-observation-vitals-temp.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Organization/organization-1": {
+    "history": false,
+    "index": 60,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/organization-organization-1.json",
+    "path": "Organization-organization-1.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Procedure/procedure-rehab": {
+    "history": false,
+    "index": 61,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/procedure-procedure-rehab.json",
+    "path": "Procedure-procedure-rehab.html",
+    "status": {
+      "class": "colsi"
+    }
+  },
+  "Bundle/undefined": {
+    "history": false,
+    "index": 62,
+    "source": "/Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/bundle-undefined.json",
+    "path": "Bundle-undefined.html"
   }
 }

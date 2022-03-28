@@ -9,3 +9,14 @@ v: {
   "error" : "The code \"MMR\" is not valid in the system http://hl7.org/fhir/sid/cvx; The code provided (http://hl7.org/fhir/sid/cvx#MMR) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/cvx",
+  "code" : "158",
+  "display" : "influenza, injectable, quadrivalent"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "influenza, injectable, quadrivalent, contains preservative",
+  "code" : "158",
+  "system" : "http://hl7.org/fhir/sid/cvx"
+}
+-------------------------------------------------------------------------------------

@@ -1,0 +1,320 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/sphr/Bundle/PractitionersBundle1> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PractitionersBundle1"];
+  fhir:Bundle.type [ fhir:value "collection"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "/Practitioner/Feoc5kxiuXNrNThLy" ];
+     fhir:Bundle.entry.resource </Practitioner/Feoc5kxiuXNrNThLy>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "/Practitioner/C29fChZwgftebDTN5" ];
+     fhir:Bundle.entry.resource </Practitioner/C29fChZwgftebDTN5>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "/Practitioner/xjLK8JBF2jDk9XtnS" ];
+     fhir:Bundle.entry.resource </Practitioner/xjLK8JBF2jDk9XtnS>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "/Practitioner/wiukuaKxikHdGsA9x" ];
+     fhir:Bundle.entry.resource </Practitioner/wiukuaKxikHdGsA9x>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "/Practitioner/Cxu5S5zkk7F8dyWMg" ];
+     fhir:Bundle.entry.resource </Practitioner/Cxu5S5zkk7F8dyWMg>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "/Practitioner/mxXTRt5prAvZ638Ra" ];
+     fhir:Bundle.entry.resource </Practitioner/mxXTRt5prAvZ638Ra>
+  ] .
+
+</Practitioner/Feoc5kxiuXNrNThLy> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner1\" </p></div><p><b>name</b>: Dr. Patricia Primary</p><p><b>telecom</b>: <a href=\"mailto:patricia@stjamesinfirmiry.com\">patricia@stjamesinfirmiry.com</a></p><p><b>address</b>: South Side</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>Illegal syntax: Unknown IdentifierUse code 'certficate'</td><td>ACP-129333 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ACP-129333)</span></td><td>2012-01-01 05:00:00+0000 --&gt; 2022-01-01 05:00:00+0000</td><td><span>: American College of Physicians</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Dr. Patricia Primary" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "patricia@stjamesinfirmiry.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "South Side" ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60637" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "certficate" ];
+       fhir:Identifier.value [ fhir:value "" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "ACP-129333" ]
+       ]
+     ];
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2012-01-01T05:00:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2022-01-01T05:00:00.000Z"^^xsd:dateTime ]
+     ];
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "American College of Physicians" ]
+     ]
+  ] .
+
+</Practitioner/C29fChZwgftebDTN5> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner2"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner2\" </p></div><p><b>name</b>: Ms. Leanne Wells</p><p><b>telecom</b>: <a href=\"mailto:leanne.wells@stjamesinfirmiry.com\">leanne.wells@stjamesinfirmiry.com</a></p><p><b>address</b>: South Side</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>Illegal syntax: Unknown IdentifierUse code 'certficate'</td><td>ANA-88402 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ANA-88402)</span></td><td>2015-01-01 05:00:00+0000 --&gt; 2020-01-01 05:00:00+0000</td><td><span>: American Nurses Association</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Ms. Leanne Wells" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "leanne.wells@stjamesinfirmiry.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "South Side" ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60637" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "certficate" ];
+       fhir:Identifier.value [ fhir:value "" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "ANA-88402" ]
+       ]
+     ];
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2015-01-01T05:00:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2020-01-01T05:00:00.000Z"^^xsd:dateTime ]
+     ];
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "American Nurses Association" ]
+     ]
+  ] .
+
+</Practitioner/xjLK8JBF2jDk9XtnS> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner3"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner3\" </p></div><p><b>name</b>: Ms. Nutrish Foods</p><p><b>telecom</b>: <a href=\"mailto:foods@stjamesinfirmary.com\">foods@stjamesinfirmary.com</a></p><p><b>address</b>: South Side</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>Illegal syntax: Unknown IdentifierUse code 'certficate'</td><td>AND-1910902 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AND-1910902)</span></td><td>2015-01-01 05:00:00+0000 --&gt; 2020-01-01 05:00:00+0000</td><td><span>: Academy of Nutrition and Dietetics</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Ms. Nutrish Foods" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "foods@stjamesinfirmary.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "South Side" ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60637" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "certficate" ];
+       fhir:Identifier.value [ fhir:value "" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "AND-1910902" ]
+       ]
+     ];
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2015-01-01T05:00:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2020-01-01T05:00:00.000Z"^^xsd:dateTime ]
+     ];
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "Academy of Nutrition and Dietetics" ]
+     ]
+  ] .
+
+</Practitioner/wiukuaKxikHdGsA9x> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner4"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner4\" </p></div><p><b>name</b>: Mr. Health Pills</p><p><b>telecom</b>: <a href=\"mailto:pills@stjamesinfirmary.com\">pills@stjamesinfirmary.com</a></p><p><b>address</b>: South Side</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>Illegal syntax: Unknown IdentifierUse code 'certficate'</td><td>CP-292921 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#CP-292921)</span></td><td>2014-01-01 05:00:00+0000 --&gt; 2024-01-01 05:00:00+0000</td><td><span>: College of Pharmacy</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Mr. Health Pills" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "pills@stjamesinfirmary.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "South Side" ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60637" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "certficate" ];
+       fhir:Identifier.value [ fhir:value "" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "CP-292921" ]
+       ]
+     ];
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2014-01-01T05:00:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2024-01-01T05:00:00.000Z"^^xsd:dateTime ]
+     ];
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "College of Pharmacy" ]
+     ]
+  ] .
+
+</Practitioner/Cxu5S5zkk7F8dyWMg> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner5"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner5\" </p></div><p><b>name</b>: Mr. Nat Foote</p><p><b>telecom</b>: <a href=\"mailto:foote@stjamesinfirmary.com\">foote@stjamesinfirmary.com</a></p><p><b>address</b>: South Side</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>Illegal syntax: Unknown IdentifierUse code 'certficate'</td><td>CPO-3448181 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#CPO-3448181)</span></td><td>2014-01-01 05:00:00+0000 --&gt; 2019-01-01 05:00:00+0000</td><td><span>: College of Podiatry</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Mr. Nat Foote" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "foote@stjamesinfirmary.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "South Side" ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60637" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "certficate" ];
+       fhir:Identifier.value [ fhir:value "" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "CPO-3448181" ]
+       ]
+     ];
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2014-01-01T05:00:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2019-01-01T05:00:00.000Z"^^xsd:dateTime ]
+     ];
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "College of Podiatry" ]
+     ]
+  ] .
+
+</Practitioner/mxXTRt5prAvZ638Ra> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner6"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner6\" </p></div><p><b>name</b>: Mr. Active Works</p><p><b>telecom</b>: <a href=\"mailto:works@stjamesinfirmary.com\">works@stjamesinfirmary.com</a></p><p><b>address</b>: South Side</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td>*</td><td>Illegal syntax: Unknown IdentifierUse code 'certficate'</td><td>APTA-1292392 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#APTA-1292392)</span></td><td>2014-01-01 05:00:00+0000 --&gt; 2017-01-01 05:00:00+0000</td><td><span>: American Physical Therapy Association</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Mr. Active Works" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "works@stjamesinfirmary.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "South Side" ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60637" ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.use [ fhir:value "certficate" ];
+       fhir:Identifier.value [ fhir:value "" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "APTA-1292392" ]
+       ]
+     ];
+     fhir:Practitioner.qualification.period [
+       fhir:Period.start [ fhir:value "2014-01-01T05:00:00.000Z"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2017-01-01T05:00:00.000Z"^^xsd:dateTime ]
+     ];
+     fhir:Practitioner.qualification.issuer [
+       fhir:Reference.display [ fhir:value "American Physical Therapy Association" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/sphr/Bundle/PractitionersBundle1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,216 @@
+﻿<html>
+<head>
+  <title>Bundle-undefined-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;undefined&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;collection&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Composition/qE2cKcaPMtqGata3p&quot; ];
+     <a href="http://hl7.org/fhir/R4/composition.html#Composition">fhir:Bundle.entry.resource</a> &lt;/Composition/qE2cKcaPMtqGata3p&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/7afmbB8HYhcNt2R4e&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/7afmbB8HYhcNt2R4e&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/cFiofX3mEeq9sCDpq&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/cFiofX3mEeq9sCDpq&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/4LzDoMCNzPhw6xncJ&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/4LzDoMCNzPhw6xncJ&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/uLYQAaSNcyA353HtH&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/uLYQAaSNcyA353HtH&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/QMp5ew6uTSbu5pQ4C&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/QMp5ew6uTSbu5pQ4C&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/Z8bznDhkG7g9dZ29Y&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/Z8bznDhkG7g9dZ29Y&gt;
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;/Goal/zHDYtrFC5drLRnMEm&quot; ];
+     <a href="http://hl7.org/fhir/R4/goal.html#Goal">fhir:Bundle.entry.resource</a> &lt;/Goal/zHDYtrFC5drLRnMEm&gt;
+  ].
+
+&lt;/Composition/qE2cKcaPMtqGata3p&gt; <a href="http://hl7.org/fhir/R4/composition.html">a</a> fhir:Composition;
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Composition1&quot;];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;Composition1\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Physician Discharge summary &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#11490-0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-01-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;gkneWsGuDW5vE8Ryi\&quot;&gt;gkneWsGuDW5vE8Ryi: Allison Camron&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Continuity of Care Document&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: 0&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;preliminary&quot;];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.type">fhir:Composition.type</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       a loinc:11490-0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;11490-0&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Physician Discharge summary&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">fhir:Composition.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-01-01&quot;^^xsd:date];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.author">fhir:Composition.author</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;gkneWsGuDW5vE8Ryi&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Allison Camron&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.title">fhir:Composition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Continuity of Care Document&quot;];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.confidentiality">fhir:Composition.confidentiality</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;0&quot;].
+
+&lt;/Goal/7afmbB8HYhcNt2R4e&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;7afmbB8HYhcNt2R4e&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;7afmbB8HYhcNt2R4e\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Achieve blood glucose control – aiming at fasting blood glucose level below 108 mg/dl; HbA1c below 7% &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Achieve blood glucose control – aiming at fasting blood glucose level below 108 mg/dl; HbA1c below 7%&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+&lt;/Goal/cFiofX3mEeq9sCDpq&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cFiofX3mEeq9sCDpq&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;cFiofX3mEeq9sCDpq\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Fasting blood glucose level below 108 mg/dl &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Fasting blood glucose level below 108 mg/dl&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+&lt;/Goal/4LzDoMCNzPhw6xncJ&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;4LzDoMCNzPhw6xncJ&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;4LzDoMCNzPhw6xncJ\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Conformance to optimized diabetic diet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Conformance to optimized diabetic diet&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+&lt;/Goal/uLYQAaSNcyA353HtH&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;uLYQAaSNcyA353HtH&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;uLYQAaSNcyA353HtH\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Achieve 0.5% body weight reduction (on current weight of 204 lb) per week to 160-175lb (BMI 24-25)) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Achieve 0.5% body weight reduction (on current weight of 204 lb) per week to 160-175lb (BMI 24-25))&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+&lt;/Goal/QMp5ew6uTSbu5pQ4C&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;QMp5ew6uTSbu5pQ4C&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;QMp5ew6uTSbu5pQ4C\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Improve and maintenance of optimal foot health; Prevention of diabetic foot ulcer, gangrene &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Improve and maintenance of optimal foot health; Prevention of diabetic foot ulcer, gangrene&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+&lt;/Goal/Z8bznDhkG7g9dZ29Y&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Z8bznDhkG7g9dZ29Y&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;Z8bznDhkG7g9dZ29Y\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Maintain blood pressure control with blood pressure readings below 140/90 mm Hg &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Maintain blood pressure control with blood pressure readings below 140/90 mm Hg&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+&lt;/Goal/zHDYtrFC5drLRnMEm&gt; <a href="http://hl7.org/fhir/R4/goal.html">a</a> fhir:Goal;
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;zHDYtrFC5drLRnMEm&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;zHDYtrFC5drLRnMEm\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: medium &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Address patient knowledge deficit on diabetic self-care. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/JohnDoe\&quot;&gt;Patient/JohnDoe: John Doe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.priority">fhir:Goal.priority</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;medium&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Address patient knowledge deficit on diabetic self-care.&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/JohnDoe&quot; ];
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;John Doe&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+</body>
+</html>

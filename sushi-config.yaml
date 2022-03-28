@@ -78,9 +78,10 @@ menu:
   Home: index.html
   Accessibility: usecases.html
   Data Model: datamodel.html
-  # Consolidated Careplan: careplan.html
+  Functionality: functionality.html
   Storage: datastorage.html
   Physiology Simulations: physiology.html
+  Patient Personas: personas.html
   Artifacts: artifacts.html
 
 pages:
@@ -92,8 +93,12 @@ pages:
     title: Data Model
   datastorage.md:
     title: Storage
+  functionality.md:
+    title: Functionality
   physiology.md:
     title: Physiology Simulations
+  personas.md:
+    title: Patient Personas
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

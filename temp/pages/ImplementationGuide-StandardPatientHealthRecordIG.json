@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-03-09T09:27:10-06:00",
+  "date": "2022-03-27T18:16:54-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -312,10 +312,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyAllergyIntolerance"
+          "reference": "StructureDefinition/PhrAllergyIntolerance"
         },
-        "name": "MyAllergyIntolerance",
-        "description": "An example profile of the AllergyIntolerance resource.",
+        "name": "PhrAllergyIntolerance",
+        "description": "Standard PHR profile of the AllergyIntolerance resource.",
         "exampleBoolean": false
       },
       {
@@ -326,10 +326,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyBodyStructure"
+          "reference": "StructureDefinition/PhrBodyStructure"
         },
-        "name": "MyBodyStructure",
-        "description": "An example profile of the BodyStructure resource.",
+        "name": "PhrBodyStructure",
+        "description": "Standard PHR profile of the BodyStructure resource.",
         "exampleBoolean": false
       },
       {
@@ -340,10 +340,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyCarePlan"
+          "reference": "StructureDefinition/PhrCarePlan"
         },
-        "name": "MyCarePlan",
-        "description": "An example profile of the CarePlan resource.",
+        "name": "PhrCarePlan",
+        "description": "Standard PHR profile of the CarePlan resource.",
         "exampleBoolean": false
       },
       {
@@ -354,10 +354,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyCareTeam"
+          "reference": "StructureDefinition/PhrCareTeam"
         },
-        "name": "MyCareTeam",
-        "description": "An example profile of the CareTeam resource.",
+        "name": "PhrCareTeam",
+        "description": "Standard PHR profile of the CareTeam resource.",
         "exampleBoolean": false
       },
       {
@@ -368,10 +368,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyCommunication"
+          "reference": "StructureDefinition/PhrCommunication"
         },
-        "name": "MyCommunication",
-        "description": "An example profile of the Communication resource.",
+        "name": "PhrCommunication",
+        "description": "Standard PHR profile of the Communication resource.",
         "exampleBoolean": false
       },
       {
@@ -382,10 +382,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyCondition"
+          "reference": "StructureDefinition/PhrCondition"
         },
-        "name": "MyCondition",
-        "description": "An example profile of the Condition resource.",
+        "name": "PhrCondition",
+        "description": "Standard PHR profile of the Condition resource.",
         "exampleBoolean": false
       },
       {
@@ -396,10 +396,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyConsent"
+          "reference": "StructureDefinition/PhrConsent"
         },
-        "name": "MyConsent",
-        "description": "An example profile of the Consent resource.",
+        "name": "PhrConsent",
+        "description": "Standard PHR profile of the Consent resource.",
         "exampleBoolean": false
       },
       {
@@ -410,10 +410,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyDevice"
+          "reference": "StructureDefinition/PhrDevice"
         },
-        "name": "MyDevice",
-        "description": "An example profile of the Device resource.",
+        "name": "PhrDevice",
+        "description": "Standard PHR profile of the Device resource.",
         "exampleBoolean": false
       },
       {
@@ -424,10 +424,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyDiagnosticReport"
+          "reference": "StructureDefinition/PhrDiagnosticReport"
         },
-        "name": "MyDiagnosticReport",
-        "description": "An example profile of the DiagnosticReport resource.",
+        "name": "PhrDiagnosticReport",
+        "description": "Standard PHR profile of the DiagnosticReport resource.",
         "exampleBoolean": false
       },
       {
@@ -438,10 +438,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyFamilyMemberHistory"
+          "reference": "StructureDefinition/PhrFamilyMemberHistory"
         },
-        "name": "MyFamilyMemberHistory",
-        "description": "An example profile of the FamilyMemberHistory resource.",
+        "name": "PhrFamilyMemberHistory",
+        "description": "Standard PHR profile of the FamilyMemberHistory resource.",
         "exampleBoolean": false
       },
       {
@@ -452,10 +452,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyGoal"
+          "reference": "StructureDefinition/PhrGoal"
         },
-        "name": "MyGoal",
-        "description": "An example profile of the Goal resource.",
+        "name": "PhrGoal",
+        "description": "Standard PHR profile of the Goal resource.",
         "exampleBoolean": false
       },
       {
@@ -466,10 +466,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyImmunization"
+          "reference": "StructureDefinition/PhrImmunization"
         },
-        "name": "MyImmunization",
-        "description": "An example profile of the Immunization resource.",
+        "name": "PhrImmunization",
+        "description": "Standard PHR profile of the Immunization resource.",
         "exampleBoolean": false
       },
       {
@@ -480,10 +480,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyMedication"
+          "reference": "StructureDefinition/PhrMedication"
         },
-        "name": "MyMedication",
-        "description": "An example profile of the Medication resource.",
+        "name": "PhrMedication",
+        "description": "Standard PHR profile of the Medication resource.",
         "exampleBoolean": false
       },
       {
@@ -494,10 +494,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyMedicationStatement"
+          "reference": "StructureDefinition/PhrMedicationStatement"
         },
-        "name": "MyMedicationStatement",
-        "description": "An example profile of the MedicationStatement resource.",
+        "name": "PhrMedicationStatement",
+        "description": "Standard PHR profile of the MedicationStatement resource.",
         "exampleBoolean": false
       },
       {
@@ -508,10 +508,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyMolecularSequence"
+          "reference": "StructureDefinition/PhrMolecularSequence"
         },
-        "name": "MyMolecularSequence",
-        "description": "An example profile of the MolecularSequence resource.",
+        "name": "PhrMolecularSequence",
+        "description": "Standard PHR profile of the MolecularSequence resource.",
         "exampleBoolean": false
       },
       {
@@ -522,10 +522,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyObservation"
+          "reference": "StructureDefinition/PhrObservation"
         },
-        "name": "MyObservation",
-        "description": "An example profile of the Observation resource.",
+        "name": "PhrObservation",
+        "description": "Standard PHR profile of the Observation resource.",
         "exampleBoolean": false
       },
       {
@@ -536,10 +536,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyPatient"
+          "reference": "StructureDefinition/PhrPatient"
         },
-        "name": "MyPatient",
-        "description": "An example profile of the Patient resource.",
+        "name": "PhrPatient",
+        "description": "Standard PHR profile of the Patient resource.",
         "exampleBoolean": false
       },
       {
@@ -550,10 +550,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyPractitioner"
+          "reference": "StructureDefinition/PhrPractitioner"
         },
-        "name": "MyPractitioner",
-        "description": "An example profile of the Practitioner resource.",
+        "name": "PhrPractitioner",
+        "description": "Standard PHR profile of the Practitioner resource.",
         "exampleBoolean": false
       },
       {
@@ -564,10 +564,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyProcedure"
+          "reference": "StructureDefinition/PhrProcedure"
         },
-        "name": "MyProcedure",
-        "description": "An example profile of the Procedure resource.",
+        "name": "PhrProcedure",
+        "description": "Standard PHR profile of the Procedure resource.",
         "exampleBoolean": false
       },
       {
@@ -578,10 +578,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyRelatedPerson"
+          "reference": "StructureDefinition/PhrRelatedPerson"
         },
-        "name": "MyRelatedPerson",
-        "description": "An example profile of the RelatedPerson resource.",
+        "name": "PhrRelatedPerson",
+        "description": "Standard PHR profile of the RelatedPerson resource.",
         "exampleBoolean": false
       },
       {
@@ -592,10 +592,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MySpecimen"
+          "reference": "StructureDefinition/PhrSpecimen"
         },
-        "name": "MySpecimen",
-        "description": "An example profile of the Specimen resource.",
+        "name": "PhrSpecimen",
+        "description": "Standard PHR profile of the Specimen resource.",
         "exampleBoolean": false
       },
       {
@@ -609,7 +609,7 @@
           "reference": "StructureDefinition/Environmental"
         },
         "name": "Environmental",
-        "description": "An example profile of the Environmental resource.",
+        "description": "Standard PHR profile of the Environmental resource.",
         "exampleBoolean": false
       },
       {
@@ -623,7 +623,7 @@
           "reference": "StructureDefinition/HealthReceipt"
         },
         "name": "HealthReceipt",
-        "description": "An example profile of the HealthReceipt resource.",
+        "description": "Standard PHR profile of the HealthReceipt resource.",
         "exampleBoolean": false
       },
       {
@@ -637,7 +637,7 @@
           "reference": "StructureDefinition/NutrientIntake"
         },
         "name": "NutrientIntake",
-        "description": "An example profile of the NutrientIntake resource.",
+        "description": "Standard PHR profile of the NutrientIntake resource.",
         "exampleBoolean": false
       },
       {
@@ -651,7 +651,7 @@
           "reference": "StructureDefinition/NutrientOuttake"
         },
         "name": "NutrientOuttake",
-        "description": "An example profile of the NutrientOuttake resource.",
+        "description": "Standard PHR profile of the NutrientOuttake resource.",
         "exampleBoolean": false
       },
       {
@@ -665,36 +665,8 @@
           "reference": "StructureDefinition/SocialMedia"
         },
         "name": "SocialMedia",
-        "description": "An example profile of the SocialMedia resource.",
+        "description": "Standard PHR profile of the SocialMedia resource.",
         "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/VitalSigns"
-        },
-        "name": "VitalSigns",
-        "description": "An example profile of the VitalSigns resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "AllergyIntolerance"
-          }
-        ],
-        "reference": {
-          "reference": "AllergyIntolerance/AllergyIntoleranceExample"
-        },
-        "name": "AllergyIntoleranceExample",
-        "description": "An example of an AllergyIntolerance.",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyAllergyIntolerance"
       },
       {
         "extension": [
@@ -708,7 +680,20 @@
         },
         "name": "BodyStructureExample",
         "description": "An example of a BodyStructure .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyBodyStructure"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Care-Plan-Example"
+        },
+        "name": "Care-Plan-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -722,7 +707,7 @@
         },
         "name": "CarePlanExample",
         "description": "An example of a CarePlan .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCarePlan"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
       },
       {
         "extension": [
@@ -736,7 +721,7 @@
         },
         "name": "CareTeamExample",
         "description": "An example of a CareTeam .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCareTeam"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"
       },
       {
         "extension": [
@@ -750,21 +735,7 @@
         },
         "name": "CommunicationExample",
         "description": "An example of a Communication .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCommunication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/ConditionExample"
-        },
-        "name": "ConditionExample",
-        "description": "An example of a Condition .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyCondition"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"
       },
       {
         "extension": [
@@ -778,7 +749,33 @@
         },
         "name": "ConsentExample",
         "description": "An example of a Consent .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyConsent"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Consultation-Note-Example"
+        },
+        "name": "Consultation-Note-Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Continuity-of-Care-Document-Example"
+        },
+        "name": "Continuity-of-Care-Document-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -792,7 +789,20 @@
         },
         "name": "DeviceExample",
         "description": "An example of a Device .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDevice"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Diagnostic-Imaging-Report-Example"
+        },
+        "name": "Diagnostic-Imaging-Report-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -806,7 +816,20 @@
         },
         "name": "DiagnosticReportExample",
         "description": "An example of a DiagnosticReport .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyDiagnosticReport"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Discharge-Summary-Example"
+        },
+        "name": "Discharge-Summary-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -820,119 +843,139 @@
         },
         "name": "FamilyMemberHistoryExample",
         "description": "An example of a FamilyMemberHistory .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyFamilyMemberHistory"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Goal"
+            "valueString": "Composition"
           }
         ],
         "reference": {
-          "reference": "Goal/GoalExample"
+          "reference": "Composition/History-and-Physical-Example"
         },
-        "name": "GoalExample",
-        "description": "An example of a patient .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyGoal"
+        "name": "History-and-Physical-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Immunization"
+            "valueString": "Condition"
           }
         ],
         "reference": {
-          "reference": "Immunization/ImmunizationExample"
+          "reference": "Condition/JohnDoe-diabetes"
         },
-        "name": "ImmunizationExample",
-        "description": "An example of a Immunization .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyImmunization"
+        "name": "JohnDoe-diabetes",
+        "description": "John Doe - Condition - Diabetes",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Medication"
+            "valueString": "Encounter"
           }
         ],
         "reference": {
-          "reference": "Medication/MedicationExample"
+          "reference": "Encounter/JohnDoe-diabetesOnset"
         },
-        "name": "MedicationExample",
-        "description": "An example of a Medication .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedication"
+        "name": "JohnDoe-diabetesOnset",
+        "description": "John Doe - Encounter - Diabetes diagnosis",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "MedicationStatement/MedicationStatementExample"
+          "reference": "Bundle/Medication-Metformin"
         },
-        "name": "MedicationStatementExample",
-        "description": "An example of a MedicationStatement .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyMedicationStatement"
+        "name": "Medication-Metformin",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "Observation/ObservationExample"
+          "reference": "Bundle/ObservationsBundle1"
         },
-        "name": "ObservationExample",
-        "description": "An example of a Observation .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyObservation"
+        "name": "ObservationsBundle1",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
+            "valueString": "Composition"
           }
         ],
         "reference": {
-          "reference": "Patient/PatientExample"
+          "reference": "Composition/Operative-Note-Example"
         },
-        "name": "PatientExample",
-        "description": "An example of a patient .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPatient"
+        "name": "Operative-Note-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Practitioner"
+            "valueString": "Bundle"
           }
         ],
         "reference": {
-          "reference": "Practitioner/PractitionerExample"
+          "reference": "Bundle/PractitionersBundle1"
         },
-        "name": "PractitionerExample",
-        "description": "An example of a Practitioner .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyPractitioner"
+        "name": "PractitionersBundle1",
+        "exampleBoolean": true
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Procedure"
+            "valueString": "Composition"
           }
         ],
         "reference": {
-          "reference": "Procedure/ProcedureExample"
+          "reference": "Composition/Procedure-Note-Example"
         },
-        "name": "ProcedureExample",
-        "description": "An example of a Procedure .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyProcedure"
+        "name": "Procedure-Note-Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Progress-Note-Example"
+        },
+        "name": "Progress-Note-Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Referral-Note-Example"
+        },
+        "name": "Referral-Note-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -946,7 +989,7 @@
         },
         "name": "RelatedPersonExample",
         "description": "An example of a RelatedPerson .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"
       },
       {
         "extension": [
@@ -960,7 +1003,150 @@
         },
         "name": "SpecimenExample",
         "description": "An example of a Specimen .",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MySpecimen"
+        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/Transfer-Summary-Example"
+        },
+        "name": "Transfer-Summary-Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/allergy-intolerance"
+        },
+        "name": "allergy-intolerance",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/immunization"
+        },
+        "name": "immunization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/john-doe"
+        },
+        "name": "john-doe",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/medication-statement"
+        },
+        "name": "medication-statement",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-lab-urine"
+        },
+        "name": "observation-lab-urine",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-smoker"
+        },
+        "name": "observation-smoker",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-vitals-temp"
+        },
+        "name": "observation-vitals-temp",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization-1"
+        },
+        "name": "organization-1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/procedure-rehab"
+        },
+        "name": "procedure-rehab",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/undefined"
+        },
+        "name": "undefined",
+        "exampleBoolean": true
       }
     ],
     "page": {
@@ -989,8 +1175,18 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "functionality.html",
+          "title": "Functionality",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "physiology.html",
           "title": "Physiology Simulations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "personas.html",
+          "title": "Patient Personas",
           "generation": "markdown"
         }
       ]

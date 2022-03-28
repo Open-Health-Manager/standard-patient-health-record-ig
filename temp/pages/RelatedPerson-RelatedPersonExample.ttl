@@ -10,19 +10,19 @@
   fhir:Resource.id [ fhir:value "RelatedPersonExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson";
+       fhir:value "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson";
        fhir:index 0;
-       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/MyRelatedPerson>
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"RelatedPersonExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyRelatedPerson.html\">MyRelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient/jane-doe\">Patient/jane-doe: Jane Doe</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"RelatedPersonExample\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PhrRelatedPerson.html\">PhrRelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-john-doe.html\">Patient/john-doe: John Doe</a> \" DOE\"</p></div>"
   ];
   fhir:RelatedPerson.patient [
-     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/jane-doe>;
-     fhir:Reference.reference [ fhir:value "Patient/jane-doe" ];
-     fhir:Reference.display [ fhir:value "Jane Doe" ]
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/john-doe>;
+     fhir:Reference.reference [ fhir:value "Patient/john-doe" ];
+     fhir:Reference.display [ fhir:value "John Doe" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
