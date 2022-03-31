@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/cvx",
+  "code" : "158",
+  "display" : "influenza, injectable, quadrivalent"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "influenza, injectable, quadrivalent, contains preservative",
+  "code" : "158",
+  "system" : "http://hl7.org/fhir/sid/cvx"
+}
+-------------------------------------------------------------------------------------
