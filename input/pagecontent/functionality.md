@@ -262,7 +262,7 @@ In effect, this implementation guide does not specify what functionality should 
 
 ### Regional Profiles
 
-![./MedicalRecordOwnershipLaws.png](./MedicalRecordOwnershipLaws.png){:width="100%"}
+![./MedicalRecordOwnershipLaws.jpg](./MedicalRecordOwnershipLaws.jpg){:width="100%"}
 
 
 ### References  

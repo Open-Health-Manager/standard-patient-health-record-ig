@@ -24,7 +24,7 @@ The following document will offer design guidance and standardized APIs for help
 
 The core of the Patient Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Patient Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.  
 
-![./ImplementingPrimaryCare.png](./ImplementingPrimaryCare.png){:width="100%"}
+![./ImplementingPrimaryCare.jpg](./ImplementingPrimaryCare.jpg){:width="100%"}
 
 ### Expectations for this Implementation Guide
 Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.
