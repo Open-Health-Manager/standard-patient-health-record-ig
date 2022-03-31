@@ -1,6 +1,10 @@
-I"{K<p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+I"ßK<p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#data-model" id="markdown-toc-data-model">Data Model</a></li>
+  <li><a href="#logical-models" id="markdown-toc-logical-models">Logical Models</a></li>
+</ul>
+
 </div>
 <h3 id="data-model">Data Model</h3>
 
@@ -8,7 +12,7 @@
 
 <p>At a very high level, we broadly organize the SPHR data model into three categories - Id, Ego, SuperEgo - according to basic psychoanalytic theory.</p>
 
-<p><img src="./IdEgoSuperEgo.png" alt="./IdEgoSuperEgo.png" width="100%" /></p>
+<p><img src="./IdEgoSuperEgo.jpg" alt="./IdEgoSuperEgo.jpg" width="100%" /></p>
 
 <h4 id="physiology-resources-id">Physiology Resources (Id)</h4>
 
