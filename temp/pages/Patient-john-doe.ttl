@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "john-doe"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Johnny </b> (no stated gender) 1954-09-17</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Johnny </b> male, DoB: 1954-09-17</p></div>"
   ];
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
   fhir:Patient.name [

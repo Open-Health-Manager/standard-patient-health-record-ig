@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrGoal",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -900,7 +900,8 @@
             "severity": "error",
             "human": "Goal.target.measure is required if Goal.target.detail is populated",
             "expression": "(detail.exists() and measure.exists()) or detail.exists().not()",
-            "xpath": "(exists(f:*[starts-with(local-name(.), 'detail')]) and exists(f:measure)) or not(exists(f:*[starts-with(local-name(.), 'detail')]))"
+            "xpath": "(exists(f:*[starts-with(local-name(.), 'detail')]) and exists(f:measure)) or not(exists(f:*[starts-with(local-name(.), 'detail')]))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Goal"
           }
         ],
         "isModifier": false,

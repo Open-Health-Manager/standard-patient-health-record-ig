@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrCarePlan",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1474,7 +1474,8 @@
             "severity": "error",
             "human": "Provide a reference or detail, not both",
             "expression": "detail.empty() or reference.empty()",
-            "xpath": "not(exists(f:detail)) or not(exists(f:reference))"
+            "xpath": "not(exists(f:detail)) or not(exists(f:reference))",
+            "source": "http://hl7.org/fhir/StructureDefinition/CarePlan"
           },
           {
             "key": "ele-1",

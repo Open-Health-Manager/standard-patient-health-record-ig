@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrCondition",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1342,7 +1342,8 @@
             "severity": "error",
             "human": "Stage SHALL have summary or assessment",
             "expression": "summary.exists() or assessment.exists()",
-            "xpath": "exists(f:summary) or exists(f:assessment)"
+            "xpath": "exists(f:summary) or exists(f:assessment)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Condition"
           },
           {
             "key": "ele-1",
@@ -1671,7 +1672,8 @@
             "severity": "error",
             "human": "evidence SHALL have code or details",
             "expression": "code.exists() or detail.exists()",
-            "xpath": "exists(f:code) or exists(f:detail)"
+            "xpath": "exists(f:code) or exists(f:detail)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Condition"
           },
           {
             "key": "ele-1",

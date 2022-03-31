@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrObservation",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1691,7 +1691,8 @@
             "severity": "error",
             "human": "Must have at least a low or a high or text",
             "expression": "low.exists() or high.exists() or text.exists()",
-            "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))"
+            "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
         "isModifier": false,

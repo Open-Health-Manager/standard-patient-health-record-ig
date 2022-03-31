@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.3.0"];
   fhir:StructureDefinition.name [ fhir:value "PhrMolecularSequence"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-28T09:52:25-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-31T09:31:19-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -817,14 +817,22 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "GenomeBuild and chromosome must be both contained if either one of them is contained" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "(chromosome.empty() and genomeBuild.empty()) or (chromosome.exists() and genomeBuild.exists())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:chromosome) and exists(f:genomeBuild)) or (not(exists(f:chromosome)) and not(exists(f:genomeBuild)))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:chromosome) and exists(f:genomeBuild)) or (not(exists(f:chromosome)) and not(exists(f:genomeBuild)))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/MolecularSequence";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+         ]
        ], [
          fhir:index 2;
          fhir:ElementDefinition.constraint.key [ fhir:value "msq-6" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Have and only have one of the following elements in referenceSeq : 1. genomeBuild ; 2 referenceSeqId; 3. referenceSeqPointer;  4. referenceSeqString;" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "(genomeBuild.count()+referenceSeqId.count()+ referenceSeqPointer.count()+ referenceSeqString.count()) = 1" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "count(f:genomeBuild)+count(f:referenceSeqId)+count(f:referenceSeqPointer)+count(f:referenceSeqString)=1" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "count(f:genomeBuild)+count(f:referenceSeqId)+count(f:referenceSeqPointer)+count(f:referenceSeqString)=1" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/MolecularSequence";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]

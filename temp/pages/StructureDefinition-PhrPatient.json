@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrPatient",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1056,7 +1056,8 @@
             "severity": "error",
             "human": "SHALL at least contain a contact's details or a reference to an organization",
             "expression": "name.exists() or telecom.exists() or address.exists() or organization.exists()",
-            "xpath": "exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)"
+            "xpath": "exists(f:name) or exists(f:telecom) or exists(f:address) or exists(f:organization)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Patient"
           }
         ],
         "isModifier": false,

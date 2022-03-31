@@ -3,7 +3,7 @@
   "id": "john-doe",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Johnny </b> (no stated gender) 1954-09-17</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Johnny </b> male, DoB: 1954-09-17</p></div>"
   },
   "active": true,
   "name": [
