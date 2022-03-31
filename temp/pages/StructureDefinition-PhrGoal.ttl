@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.3.0"];
   fhir:StructureDefinition.name [ fhir:value "PhrGoal"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-28T09:52:25-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-31T09:31:19-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -969,7 +969,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Goal.target.measure is required if Goal.target.detail is populated" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "(detail.exists() and measure.exists()) or detail.exists().not()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:*[starts-with(local-name(.), 'detail')]) and exists(f:measure)) or not(exists(f:*[starts-with(local-name(.), 'detail')]))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:*[starts-with(local-name(.), 'detail')]) and exists(f:measure)) or not(exists(f:*[starts-with(local-name(.), 'detail')]))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Goal";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Goal>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]

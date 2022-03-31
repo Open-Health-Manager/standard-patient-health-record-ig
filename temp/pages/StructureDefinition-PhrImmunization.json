@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrImmunization",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1867,7 +1867,8 @@
             "severity": "error",
             "human": "One of documentType or reference SHALL be present",
             "expression": "documentType.exists() or reference.exists()",
-            "xpath": "exists(f:documentType) or exists(f:reference)"
+            "xpath": "exists(f:documentType) or exists(f:reference)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Immunization"
           }
         ],
         "isModifier": false,

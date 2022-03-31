@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrCareTeam",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -763,7 +763,8 @@
             "severity": "error",
             "human": "CareTeam.participant.onBehalfOf can only be populated when CareTeam.participant.member is a Practitioner",
             "expression": "onBehalfOf.exists() implies (member.resolve().iif(empty(), true, ofType(Practitioner).exists()))",
-            "xpath": "starts-with(f:member/f:reference/@value, 'Practitioner/') or contains(f:member/f:reference/@value, '/Practitioner/') or exists(ancestor::*/f:contains/f:Practitioner/f:id[@value=substring-after(current()/f:member/f:reference/@value, '#')]) or not(exists(f:onBehalfOf))"
+            "xpath": "starts-with(f:member/f:reference/@value, 'Practitioner/') or contains(f:member/f:reference/@value, '/Practitioner/') or exists(ancestor::*/f:contains/f:Practitioner/f:id[@value=substring-after(current()/f:member/f:reference/@value, '#')]) or not(exists(f:onBehalfOf))",
+            "source": "http://hl7.org/fhir/StructureDefinition/CareTeam"
           },
           {
             "key": "ele-1",

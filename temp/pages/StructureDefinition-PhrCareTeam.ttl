@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.3.0"];
   fhir:StructureDefinition.name [ fhir:value "PhrCareTeam"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-28T09:52:25-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-31T09:31:19-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -822,7 +822,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "CareTeam.participant.onBehalfOf can only be populated when CareTeam.participant.member is a Practitioner" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "onBehalfOf.exists() implies (member.resolve().iif(empty(), true, ofType(Practitioner).exists()))" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "starts-with(f:member/f:reference/@value, 'Practitioner/') or contains(f:member/f:reference/@value, '/Practitioner/') or exists(ancestor::*/f:contains/f:Practitioner/f:id[@value=substring-after(current()/f:member/f:reference/@value, '#')]) or not(exists(f:onBehalfOf))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "starts-with(f:member/f:reference/@value, 'Practitioner/') or contains(f:member/f:reference/@value, '/Practitioner/') or exists(ancestor::*/f:contains/f:Practitioner/f:id[@value=substring-after(current()/f:member/f:reference/@value, '#')]) or not(exists(f:onBehalfOf))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CareTeam";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];

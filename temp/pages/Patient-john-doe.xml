@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="john-doe"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Johnny </b> (no stated gender) 1954-09-17</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Johnny </b> male, DoB: 1954-09-17</p></div>
   </text>
   <active value="true"/>
   <name>

@@ -19,7 +19,7 @@
   "version": "0.3.0",
   "name": "PhrMolecularSequence",
   "status": "active",
-  "date": "2022-03-28T09:52:25-05:00",
+  "date": "2022-03-31T09:31:19-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -749,14 +749,16 @@
             "severity": "error",
             "human": "GenomeBuild and chromosome must be both contained if either one of them is contained",
             "expression": "(chromosome.empty() and genomeBuild.empty()) or (chromosome.exists() and genomeBuild.exists())",
-            "xpath": "(exists(f:chromosome) and exists(f:genomeBuild)) or (not(exists(f:chromosome)) and not(exists(f:genomeBuild)))"
+            "xpath": "(exists(f:chromosome) and exists(f:genomeBuild)) or (not(exists(f:chromosome)) and not(exists(f:genomeBuild)))",
+            "source": "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
           },
           {
             "key": "msq-6",
             "severity": "error",
             "human": "Have and only have one of the following elements in referenceSeq : 1. genomeBuild ; 2 referenceSeqId; 3. referenceSeqPointer;  4. referenceSeqString;",
             "expression": "(genomeBuild.count()+referenceSeqId.count()+ referenceSeqPointer.count()+ referenceSeqString.count()) = 1",
-            "xpath": "count(f:genomeBuild)+count(f:referenceSeqId)+count(f:referenceSeqPointer)+count(f:referenceSeqString)=1"
+            "xpath": "count(f:genomeBuild)+count(f:referenceSeqId)+count(f:referenceSeqPointer)+count(f:referenceSeqString)=1",
+            "source": "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
           }
         ],
         "isModifier": false,
