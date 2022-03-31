@@ -5,7 +5,7 @@ At the core of the Standard Patient Health Record is a standard data model descr
 At a very high level, we broadly organize the SPHR data model into three categories - Id, Ego, SuperEgo - according to basic psychoanalytic theory.  
 
 
-![./IdEgoSuperEgo.png](./IdEgoSuperEgo.png){:width="100%"}
+![./IdEgoSuperEgo.jpg](./IdEgoSuperEgo.jpg){:width="100%"}
 
 #### Physiology Resources (Id)
 

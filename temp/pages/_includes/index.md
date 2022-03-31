@@ -6,6 +6,8 @@ The following document will offer design guidance and standardized APIs for help
 
 ### History of Electronic Health Records
 
+
+
 - Dewey Decimal System
 - Card Catalog System Patent
 - Enigma Project, WWII
