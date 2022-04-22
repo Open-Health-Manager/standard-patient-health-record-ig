@@ -8,6 +8,9 @@ pages:
   script:
     - pwd
     - cp -R output public
+    - echo ".table { width: 100%; }" >> public/assets/css/project.css
+    - echo ".markdown-toc { width: 300px; }" >> public/assets/css/project.css
+    
   artifacts:
     paths:
       - public
