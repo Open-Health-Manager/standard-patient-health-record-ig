@@ -1,0 +1,11 @@
+.table {
+    width: 100%;
+}
+.markdown-toc { 
+    width: 300px; 
+}
+
+:root {
+    --navbar-bg-color: #23238E; /* 2. Header container color */
+    --footer-container-bg-color: #23238E; /* 4. Footer container color */
+}
