@@ -5,7 +5,7 @@
 Profile: PhrDevice
 Parent: Device
 Description: "Standard PHR profile of the Device resource."
-
+// Usage: #definition
 
 Instance: ExampleDevice
 InstanceOf: PhrDevice

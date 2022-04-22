@@ -5,5 +5,5 @@
 Logical: NutrientIntake
 Parent: DomainResource
 Description: "Standard PHR profile of the NutrientIntake resource."
-
+// Usage: #definition
 

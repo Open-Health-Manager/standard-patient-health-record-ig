@@ -4,7 +4,7 @@
 Profile: PhrCarePlan
 Parent: CarePlan
 Description: "Standard PHR profile of the CarePlan resource."
-
+// Usage: #definition
 
 Instance: ExampleCarePlan
 InstanceOf: PhrCarePlan

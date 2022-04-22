@@ -7,4 +7,4 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Profile: PhrObservation
 Parent: Observation
 Description: "Standard PHR profile of the Observation resource."
-
+// Usage: #definition

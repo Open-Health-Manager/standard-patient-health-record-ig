@@ -393,7 +393,7 @@
       },
       "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Take all of your prescription medication as directed.</p><p>Make an appointment with your doctor to be seen two weeks from the date of your procedure.</p><p>You may feel slightly bloated after the procedure because of air that was introduced during the examination.</p><p>Call your physician if you notice:<br>Bleeding or black stools.<br>Abdominal pain.<br>Fever or chills.<br>Nausea or vomiting.<br>Any unusual pain or problem.<br>Pain or redness at the site where the intravenous needle was placed.<br></p><p>Do not drink alcohol for 24 hours. Alcohol amplifies the effect of the sedatives given.</p><p>Do not drive or operate machinery for 24 hours.</p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Take all of your prescription medication as directed.</p><p>Make an appointment with your doctor to be seen two weeks from the date of your procedure.</p><p>You may feel slightly bloated after the procedure because of air that was introduced during the examination.</p><p>Call your physician if you notice:<br/>Bleeding or black stools.<br/>Abdominal pain.<br/>Fever or chills.<br/>Nausea or vomiting.<br/>Any unusual pain or problem.<br/>Pain or redness at the site where the intravenous needle was placed.<br/></p><p>Do not drink alcohol for 24 hours. Alcohol amplifies the effect of the sedatives given.</p><p>Do not drive or operate machinery for 24 hours.</p></div>"
       }
     },
     {
@@ -425,7 +425,7 @@
       },
       "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Laboratory Information</th><th>Chemistries and drug levels</th></tr></thead><tbody><tr><td>Potasium</td><td>4.0</td></tr><tr><td>NA (135-145meq/l)</td><td>140</td></tr></tbody></table><br><table border=\"1\" width=\"100%\"><thead><tr><th>Other Tests</th><th>Results</th></tr></thead><tbody><tr><td>EKG</td><td>Sinus rhythm without acute changes.</td></tr></tbody></table></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Laboratory Information</th><th>Chemistries and drug levels</th></tr></thead><tbody><tr><td>Potasium</td><td>4.0</td></tr><tr><td>NA (135-145meq/l)</td><td>140</td></tr></tbody></table><br/><table border=\"1\" width=\"100%\"><thead><tr><th>Other Tests</th><th>Results</th></tr></thead><tbody><tr><td>EKG</td><td>Sinus rhythm without acute changes.</td></tr></tbody></table></div>"
       }
     },
     {

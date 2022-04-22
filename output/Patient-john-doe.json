@@ -1,0 +1,38 @@
+{
+  "resourceType": "Patient",
+  "id": "john-doe",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Johnny </b> male, DoB: 1954-09-17</p></div>"
+  },
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Doe",
+      "given": [
+        "John"
+      ]
+    },
+    {
+      "use": "usual",
+      "given": [
+        "Johnny"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "(+1) 555 6473",
+      "use": "work",
+      "rank": 1
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1954-09-17",
+  "deceasedBoolean": false
+}

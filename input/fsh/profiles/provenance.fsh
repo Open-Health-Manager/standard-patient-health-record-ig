@@ -5,6 +5,7 @@
 // Profile: PhrProvenance
 // Parent: Provenance
 // Description: "Standard PHR profile of the Provenance resource."
+// Usage: #definition
 
 // Instance: ProvenanceExample
 // InstanceOf: MyProvenance

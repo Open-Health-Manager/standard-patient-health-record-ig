@@ -5,5 +5,5 @@
 Logical: NutrientOuttake
 Parent: DomainResource
 Description: "Standard PHR profile of the NutrientOuttake resource."
-
+// Usage: #definition
 

@@ -5,7 +5,7 @@
 Profile: PhrFamilyMemberHistory
 Parent: FamilyMemberHistory
 Description: "Standard PHR profile of the FamilyMemberHistory resource."
-
+// Usage: #definition
 
 Instance: ExampleFamilyMemberHistory
 InstanceOf: PhrFamilyMemberHistory
