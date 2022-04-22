@@ -2,7 +2,7 @@
     width: 100%;
 }
 .markdown-toc { 
-    width: 300px; 
+    width: 350px !important;  
 }
 
 :root {
