@@ -4,7 +4,11 @@
 .markdown-toc { 
     width: 350px !important;  
 }
-
+#ig-status {
+    color: white;
+    background-color: #23238E;
+    margin-top: 0px;
+}
 :root {
     --navbar-bg-color: #23238E; /* 2. Header container color */
     --footer-container-bg-color: #23238E; /* 4. Footer container color */
