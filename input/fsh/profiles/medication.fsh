@@ -5,4 +5,4 @@
 Profile: PhrMedication
 Parent: Medication
 Description: "Standard PHR profile of the Medication resource."
-
+// Usage: #definition

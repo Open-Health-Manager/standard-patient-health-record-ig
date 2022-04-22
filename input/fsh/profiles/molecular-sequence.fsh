@@ -5,6 +5,7 @@
 Profile: PhrMolecularSequence
 Parent: MolecularSequence
 Description: "Standard PHR profile of the MolecularSequence resource."
+// Usage: #definition
 
 // Instance: MolecularSequenceExample
 // InstanceOf: MyMolecularSequence

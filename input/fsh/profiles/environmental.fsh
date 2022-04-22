@@ -5,5 +5,5 @@
 Logical: Environmental
 Parent: DomainResource
 Description: "Standard PHR profile of the Environmental resource."
-
+// Usage: #definition
 

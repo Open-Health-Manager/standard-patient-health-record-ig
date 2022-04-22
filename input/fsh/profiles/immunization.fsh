@@ -5,5 +5,4 @@
 Profile: PhrImmunization
 Parent: Immunization
 Description: "Standard PHR profile of the Immunization resource."
-
-
+// Usage: #definition

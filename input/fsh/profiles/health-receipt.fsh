@@ -5,5 +5,5 @@
 Logical: HealthReceipt
 Parent: DomainResource
 Description: "Standard PHR profile of the HealthReceipt resource."
-
+// Usage: #definition
 

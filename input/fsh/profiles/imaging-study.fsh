@@ -5,7 +5,7 @@
 // Profile: PhrImagingStudy
 // Parent: ImagingStudy
 // Description: "Standard PHR profile of the ImagingStudy resource."
-
+// Usage: #definition
 
 // Instance: ImagingStudyExample
 // InstanceOf: MyImagingStudy

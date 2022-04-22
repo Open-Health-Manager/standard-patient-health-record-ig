@@ -5,6 +5,7 @@
 Profile: PhrSpecimen
 Parent: Specimen
 Description: "Standard PHR profile of the Specimen resource."
+// Usage: #definition
 
 Instance: ExampleSpecimen
 InstanceOf: PhrSpecimen

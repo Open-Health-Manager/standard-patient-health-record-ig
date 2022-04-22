@@ -5,7 +5,7 @@
 Profile: PhrBodyStructure
 Parent: BodyStructure
 Description: "Standard PHR profile of the BodyStructure resource."
-
+// Usage: #definition
 
 Instance: ExampleBodyStructure
 InstanceOf: PhrBodyStructure

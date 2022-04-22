@@ -4,6 +4,7 @@
 Profile: PhrConsent
 Parent: Consent
 Description: "Standard PHR profile of the Consent resource."
+// Usage: #definition
 
 Instance: ExampleConsent
 InstanceOf: PhrConsent

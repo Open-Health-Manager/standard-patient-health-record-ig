@@ -5,6 +5,7 @@
 Profile: PhrRelatedPerson
 Parent: RelatedPerson
 Description: "Standard PHR profile of the RelatedPerson resource."
+// Usage: #definition
 
 Instance: ExampleRelatedPerson
 InstanceOf: PhrRelatedPerson
