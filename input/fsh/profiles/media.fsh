@@ -5,7 +5,7 @@
 // Profile: PhrMedia
 // Parent: Media
 // Description: "Standard PHR profile of the Media resource."
-
+// Usage: #definition
 
 // Instance: MediaExample
 // InstanceOf: MyMedia

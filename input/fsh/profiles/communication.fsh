@@ -4,6 +4,7 @@
 Profile: PhrCommunication
 Parent: Communication
 Description: "Standard PHR profile of the Communication resource."
+// Usage: #definition
 
 Instance: ExampleCommunication
 InstanceOf: PhrCommunication

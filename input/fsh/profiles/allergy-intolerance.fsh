@@ -4,4 +4,4 @@
 Profile: PhrAllergyIntolerance
 Parent: AllergyIntolerance
 Description: "Standard PHR profile of the AllergyIntolerance resource."
-
+// Usage: #definition

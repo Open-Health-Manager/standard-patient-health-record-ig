@@ -5,7 +5,7 @@
 Profile: PhrDiagnosticReport
 Parent: DiagnosticReport
 Description: "Standard PHR profile of the DiagnosticReport resource."
-
+// Usage: #definition
 
 Instance: ExampleDiagnosticReport
 InstanceOf: PhrDiagnosticReport

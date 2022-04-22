@@ -4,4 +4,4 @@
 Profile: PhrCondition
 Parent: Condition
 Description: "Standard PHR profile of the Condition resource."
-
+// Usage: #definition

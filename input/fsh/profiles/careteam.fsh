@@ -4,6 +4,7 @@
 Profile: PhrCareTeam
 Parent: CareTeam
 Description: "Standard PHR profile of the CareTeam resource."
+// Usage: #definition
 
 Instance: ExampleCareTeam
 InstanceOf: PhrCareTeam

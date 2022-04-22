@@ -4,16 +4,11 @@ The purpose of this implementation guide is to help the reader implement a Patie
 
 The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, in guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.
 
-### History of Electronic Health Records
+### History
+
+Medical records have been around since as long as there have been practicing physicials.  Modern medical record systems began in 1665, however, with the Bills of Mortality of London, England, which eventually became the Internal Clasification of Diseases, and defined a standard Code System for recording diseases.  Later, advances in library science led to the adoption of record keeping conventions, such as the Dewey Decimal System and the Card Catalog patent.  In 1945, the Enigma Project invented the first digital computer, to which library science information management principles were soon added.  By 1970, digital computers became accessible enough that hospitals could use them to track patient visits for accounting purposes, which led to the assachusetts General Hospital Utility Multi-Programming System (MUMPS/VAX), which is commonly regarded as the first electronic medical record system.  Soon after, the personal computing revolution saw the general population become able to purchase a home computer, and with it a flury of patients using these PCs to manage their personal health using spreadsheets and small self-written offline medical record management utilities.    Many of these utilities were eventually abandoned; but others found themselves in a process of consolidation and gravitating towards what would eventually become the major electronic medical record vendors (i.e. Epic, Cerner, Allscripts, Meditech, etc).  
 
 
-
-- Dewey Decimal System
-- Card Catalog System Patent
-- Enigma Project, WWII
-- MUMPS / VAX
-- Epic
-- Cerner
 - HL7 v2
 - FHIR 
 
@@ -75,4 +70,5 @@ This implementation guide was developed through meta-analysis of dozens of other
 - [Who Owns Medical Records: 50 State Comparison](http://www.healthinfolaw.org/comparative-analysis/who-owns-medical-records-50-state-comparison)  
 - [Centers for Medicare Services - PHR Pilots](https://www.cms.gov/Medicare/E-Health/PerHealthRecords/PHR_Pilots)  
 - [Implementing High Quality Primary Care](https://www.nationalacademies.org/our-work/implementing-high-quality-primary-care)  
-
+- [How to Export Facebook Data](https://blog.coupler.io/how-to-export-facebook-data/)
+- [Human API - Getting Started](https://reference.humanapi.co/reference/getting-started)
