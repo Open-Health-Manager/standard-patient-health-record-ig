@@ -7,19 +7,28 @@
 #ig-status {
     color: white;
     background-color: #23238E;
-    margin-top: 0px;
+    margin-top: 15px;
     text-align: right;
     padding-right: 10px;
 }
+
+#title {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10000;
+    color: white;
+    font-size: 200%;
+    padding-left: 10px;
+}
 #mitre {
     position: absolute;
-    left: 0px;
+    right: 10px;
     top: 0px;
     z-index: 10000;
     color: white;
     font-size: 200%;
     padding-left: 10px;
-    padding-top: 10px;
 }
 :root {
     --navbar-bg-color: #23238E; /* 2. Header container color */
