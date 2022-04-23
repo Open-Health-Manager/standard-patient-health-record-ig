@@ -8,7 +8,7 @@
     color: white;
     background-color: #23238E;
     text-align: right;
-    margin-top: 0px;
+    margin-top: 0px !important;
     padding-right: 10px;
     padding-top: 15px;
 }
