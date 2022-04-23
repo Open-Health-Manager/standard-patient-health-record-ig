@@ -9,7 +9,8 @@ pages:
     - pwd
     - cp -R output public
     - more input/assets/css/mitre.css >> public/assets/css/project.css
-    
+    - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="mitre">MITRE<\/div>/" output/index.html > public/index.html
+        
   artifacts:
     paths:
       - public
