@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrObservation",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "name": "PhrObservation",
   "status": "active",
   "description": "Standard PHR profile of the Observation resource.",

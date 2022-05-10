@@ -3,189 +3,189 @@
     "id": "StandardPatientHealthRecordIG",
     "type": "ImplementationGuide",
     "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "StandardPatientHealthRecordIG"
   },
   {
     "id": "Environmental",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/Environmental",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "Environmental"
   },
   {
     "id": "HealthReceipt",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/HealthReceipt",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "HealthReceipt"
   },
   {
     "id": "NutrientIntake",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientIntake",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "NutrientIntake"
   },
   {
     "id": "NutrientOuttake",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "NutrientOuttake"
   },
   {
     "id": "PhrAllergyIntolerance",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrAllergyIntolerance",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrAllergyIntolerance"
   },
   {
     "id": "PhrBodyStructure",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrBodyStructure"
   },
   {
     "id": "PhrCarePlan",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrCarePlan"
   },
   {
     "id": "PhrCareTeam",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrCareTeam"
   },
   {
     "id": "PhrCommunication",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrCommunication"
   },
   {
     "id": "PhrCondition",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCondition",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrCondition"
   },
   {
     "id": "PhrConsent",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrConsent"
   },
   {
     "id": "PhrDevice",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrDevice"
   },
   {
     "id": "PhrDiagnosticReport",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrDiagnosticReport"
   },
   {
     "id": "PhrFamilyMemberHistory",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrFamilyMemberHistory"
   },
   {
     "id": "PhrGoal",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrGoal",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrGoal"
   },
   {
     "id": "PhrImmunization",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrImmunization",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrImmunization"
   },
   {
     "id": "PhrMedication",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedication",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrMedication"
   },
   {
     "id": "PhrMedicationStatement",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedicationStatement",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrMedicationStatement"
   },
   {
     "id": "PhrMolecularSequence",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMolecularSequence",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrMolecularSequence"
   },
   {
     "id": "PhrObservation",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrObservation",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrObservation"
   },
   {
     "id": "PhrPatient",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPatient",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrPatient"
   },
   {
     "id": "PhrPractitioner",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPractitioner",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrPractitioner"
   },
   {
     "id": "PhrProcedure",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProcedure",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrProcedure"
   },
   {
     "id": "PhrRelatedPerson",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrRelatedPerson"
   },
   {
     "id": "PhrSpecimen",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "PhrSpecimen"
   },
   {
     "id": "SocialMedia",
     "type": "StructureDefinition",
     "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/SocialMedia",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "name": "SocialMedia"
   }
 ]

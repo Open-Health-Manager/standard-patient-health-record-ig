@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPractitioner",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "name": "PhrPractitioner",
   "status": "active",
   "description": "Standard PHR profile of the Practitioner resource.",

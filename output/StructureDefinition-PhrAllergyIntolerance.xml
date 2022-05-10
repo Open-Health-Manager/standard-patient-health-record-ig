@@ -13,10 +13,10 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrAllergyIntolerance"/>
-  <version value="0.3.0"/>
+  <version value="0.3.2"/>
   <name value="PhrAllergyIntolerance"/>
   <status value="active"/>
-  <date value="2022-05-10T00:26:50-05:00"/>
+  <date value="2022-05-10T00:36:03-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
