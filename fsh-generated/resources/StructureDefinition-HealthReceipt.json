@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "HealthReceipt",
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/HealthReceipt",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "name": "HealthReceipt",
   "status": "active",
   "description": "Standard PHR profile of the HealthReceipt resource.",

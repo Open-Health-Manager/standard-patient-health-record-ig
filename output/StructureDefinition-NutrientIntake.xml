@@ -7,10 +7,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientIntake"/>
-  <version value="0.3.0"/>
+  <version value="0.3.2"/>
   <name value="NutrientIntake"/>
   <status value="active"/>
-  <date value="2022-05-10T00:26:50-05:00"/>
+  <date value="2022-05-10T00:36:03-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
