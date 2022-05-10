@@ -530,8 +530,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "environments.html",
-          "title": "Environments",
+          "nameUrl": "functionality.html",
+          "title": "Functionality",
           "generation": "markdown"
         },
         {
@@ -545,11 +545,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "functionality.html",
-          "title": "Functionality",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "physiology.html",
           "title": "Physiology Simulations",
           "generation": "markdown"
@@ -557,6 +552,11 @@
         {
           "nameUrl": "personas.html",
           "title": "Patient Personas",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "environments.html",
+          "title": "Environments",
           "generation": "markdown"
         }
       ]

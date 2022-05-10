@@ -1,5 +1,7 @@
 A complete longitudinal patient health record may feasibly span 100 years or more.  This presents numerous challenges, espcially considering that the earliest EMR systems were only first written in the early 1970s.  Statue of limitations require that healthcare practitioners keep pediatric records until an 18th birthday, but even an 18 year storage requirement by providers falls well short of a 76yr life expectancy.  Anybody over 30 years of age is therefore almost guaranteed to have some records on hardcopy paper, compact disk, USB drive, floppy drive, or other storage medium.  
 
+
+
 ### FHIR Storage 
 
 A useful way to think of data storage is in terms of slow-motion data transfer.  The earliest electronic data storage devices were actually cathode ray tubes, the same devices used in computer monitors for decades.  As such, there isn't as much difference as one may think between the devices that store bits and the devices that transmit data to a person's eyes or transmits data over the wire.  These things are actually quite similar, if one considers the storage device as similar to an actor on the wire that can send or receive data.  In this sense, storage is just like any other data transfer - but with the ability to press a `pause` button indefinately mid-transfer.  
@@ -10,10 +12,17 @@ As such, this implementation guide recommends that implementors treat storage in
 - Systems SHOULD use the same MIME types when possible.
 - Systems MAY treat directories as a Bundle by default.
 
+![./SphrFileType.jpg](./SphrFileType.jpg){:width="40%"}  
+
 #### File Extensions
 
-- Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a `.fhir` extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.
+- Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a `.sphr` extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.
 - Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  `.Observation.fhir` 
+
+#### Meta Data
+
+The `.sphr ` container should contain two meta data files.  One of these files is a Composition record, which acts like the 'cover page' of the bundle.  This record records ownership, versioning, and various other data elements necessary for parsing the record.  The second file is a DocumentManifest file, which acts as a manifest and table of contents of the container.
+
 
 #### Compression  
 
@@ -30,6 +39,10 @@ Therefore, when exporting data from the Personal Health Record:
 Write the contents of a collection into either a FHIR Bundle with a .json extension, or a NDJSON file with a .ndjson extension.  After writing the contents to the filesystem, compress the data if desired.  Then convert the relevant X509 certificate into GPG format.  Once done, encrypt the file.
 
 Using GPG-Zip to password protect a NDJSON file using an X509 certificate is the level of security people should be striving for when developing SPHR enabled apps.  
+
+#### Media Files & Raw Documents
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 ### Database Storage

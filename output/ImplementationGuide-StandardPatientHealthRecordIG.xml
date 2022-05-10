@@ -9,7 +9,7 @@
   <version value="0.3.0"/>
   <name value="StandardPatientHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-04-22T20:13:41-05:00"/>
+  <date value="2022-05-10T00:26:50-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -889,8 +889,8 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="environments.html"/>
-        <title value="Environments"/>
+        <nameUrl value="functionality.html"/>
+        <title value="Functionality"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -904,11 +904,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="functionality.html"/>
-        <title value="Functionality"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="physiology.html"/>
         <title value="Physiology Simulations"/>
         <generation value="markdown"/>
@@ -916,6 +911,11 @@
       <page>
         <nameUrl value="personas.html"/>
         <title value="Patient Personas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="environments.html"/>
+        <title value="Environments"/>
         <generation value="markdown"/>
       </page>
     </page>

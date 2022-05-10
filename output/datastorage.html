@@ -80,13 +80,10 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="environments.html">Environments</a>
+    <a href="functionality.html">Functionality</a>
   </li>
   <li>
     <a href="datamodel.html">Data Model</a>
-  </li>
-  <li>
-    <a href="functionality.html">Functionality</a>
   </li>
   <li>
     <a href="datastorage.html">Storage</a>
@@ -96,6 +93,9 @@
   </li>
   <li>
     <a href="personas.html">Patient Personas</a>
+  </li>
+  <li>
+    <a href="environments.html">Environments</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -171,12 +171,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Systems MAY treat directories as a Bundle by default.</li>
 </ul>
 
+<p><img src="./SphrFileType.jpg" alt="./SphrFileType.jpg" width="40%" /></p>
+
 <h4 id="file-extensions">File Extensions</h4>
 
 <ul>
-  <li>Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.fhir</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
+  <li>Files contain patient health information using Fast Healthcare Interoperability Resources SHOULD be saved with a <code class="language-plaintext highlighter-rouge">.sphr</code> extension.  Such files may include multiple FHIR resources, as is typical in a Bundle resource.</li>
   <li>Files that contain only a single record (or single type of record) MAY be saved with a file extension of the resource type.  For example:  <code class="language-plaintext highlighter-rouge">.Observation.fhir</code></li>
 </ul>
+
+<h4 id="meta-data">Meta Data</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">.sphr </code> container should contain two meta data files.  One of these files is a Composition record, which acts like the ‘cover page’ of the bundle.  This record records ownership, versioning, and various other data elements necessary for parsing the record.  The second file is a DocumentManifest file, which acts as a manifest and table of contents of the container.</p>
 
 <h4 id="compression">Compression</h4>
 
@@ -193,6 +199,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Write the contents of a collection into either a FHIR Bundle with a .json extension, or a NDJSON file with a .ndjson extension.  After writing the contents to the filesystem, compress the data if desired.  Then convert the relevant X509 certificate into GPG format.  Once done, encrypt the file.</p>
 
 <p>Using GPG-Zip to password protect a NDJSON file using an X509 certificate is the level of security people should be striving for when developing SPHR enabled apps.</p>
+
+<h4 id="media-files--raw-documents">Media Files &amp; Raw Documents</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <h3 id="database-storage">Database Storage</h3>
 
@@ -252,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 22, 2022 20:13-0500">2022-04-22</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 10, 2022 00:26-0500">2022-05-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

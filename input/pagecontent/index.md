@@ -1,30 +1,52 @@
 The purpose of this implementation guide is to help the reader implement a Patient Health Record (in a programming language of their choice).  The notion of a Patient Health Record (PHR) grows out of the concept of an Electronic Medical Record (EMR).  The major difference being in ownership.  The PHR being owned by the patient; and the EMR being owned by the hospital.
 
-The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, in guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.
+The following document will offer design guidance and standardized APIs for helping you develop your application; based on the healthcare industry standard of Fast Healthcare Interoperability Resources (FHIR).  The scope of this document does not attempt to prescribe how you, the implementor, ought to go about programming your software.  What it does provide, is guidance on how to successfully exchange data with other PHR and EHR apps.  In effect, it documents widely supported (and government recognized) data standards and file formats for importing/exporting data into your software.
+
+![./PhrHistory.jpg](./PhrHistory.jpg){:width="33%"}
 
 ### History
 
 Medical records have been around since as long as there have been practicing physicials.  Modern medical record systems began in 1665, however, with the Bills of Mortality of London, England, which eventually became the Internal Clasification of Diseases, and defined a standard Code System for recording diseases.  Later, advances in library science led to the adoption of record keeping conventions, such as the Dewey Decimal System and the Card Catalog patent.   
 
-![./iStock-1290312834.jpg](./iStock-1290312834.jpg){:width="45%"}
-
- In 1945, the Enigma Project invented the first digital computer, to which library science information management principles were soon added.  By 1970, digital computers became accessible enough that hospitals could use them to track patient visits for accounting purposes, which led to the assachusetts General Hospital Utility Multi-Programming System (MUMPS/VAX), which is commonly regarded as the first electronic medical record system.  Soon after, the personal computing revolution saw the general population become able to purchase a home computer, and with it a flury of patients using these PCs to manage their personal health using spreadsheets and small self-written offline medical record management utilities.    Many of these utilities were eventually abandoned; but others found themselves in a process of consolidation and gravitating towards what would eventually become the major electronic medical record vendors (i.e. Epic, Cerner, Allscripts, Meditech, etc).
+ In 1945, the Enigma Project invented the first digital computer, to which library science information management principles were soon added.  By 1970, digital computers became accessible enough that hospitals could use them to track patient visits for accounting purposes, which led to the assachusetts General Hospital Utility Multi-Programming System (MUMPS/VAX), which is commonly regarded as the first electronic medical record system.  
+ 
+ Soon after, the personal computing revolution saw the general population become able to purchase a home computer, and with it a flury of patients using these PCs to manage their personal health using spreadsheets and small self-written offline medical record management utilities.    
+ 
+ Many of these utilities were eventually abandoned; but others found themselves in a process of consolidation and gravitating towards what would eventually become the major electronic medical record vendors (i.e. Epic, Cerner, Allscripts, Meditech, etc).
  
 - HL7 v2
 - FHIR 
 
-![./StarTrek-Sphr.png](./StarTrek-Sphr.jpg){:width="100%"}
+
+
+
+### Expectations for this Implementation Guide
+
+
+Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.
+
+
 > Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.
+
+
+### Relevant Law
+
+- 21st Century Cures
+- Medicare 
+- CARES Act
+
 
 ### Purpose / Design Philosophy
 
 The core of the Patient Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Patient Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.  
 
-![./ImplementingPrimaryCare.jpg](./ImplementingPrimaryCare.jpg){:width="100%"}
+#### Lorem Ipsum
 
-### Expectations for this Implementation Guide
-Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
+Sit amet consectetur adipiscing elit ut aliquam. Purus in mollis nunc sed id semper risus in. Erat imperdiet sed euismod nisi porta lorem mollis. Nibh tortor id aliquet lectus. Viverra adipiscing at in tellus integer. Sit amet aliquam id diam maecenas. Sollicitudin aliquam ultrices sagittis orci a. At ultrices mi tempus imperdiet nulla. Etiam erat velit scelerisque in dictum non consectetur. Ut ornare lectus sit amet.
+
+Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris. Ac felis donec et odio pellentesque diam volutpat commodo. Ut diam quam nulla porttitor. Urna duis convallis convallis tellus id interdum velit. Ut consequat semper viverra nam libero justo. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. 
 
 ### Prior Art - Implementation Guides   
 
@@ -61,6 +83,7 @@ This implementation guide was developed through meta-analysis of dozens of other
 - [Patient Health Devices](http://hl7.org/fhir/uv/phd/2019May/)    
 - [Da Vinci - Prior Authorization](http://hl7.org/fhir/us/davinci-pas/)  
 - [Vital Records -  Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/artifacts.html)  
+
 
 
 ### References  
