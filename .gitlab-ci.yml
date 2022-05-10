@@ -17,7 +17,6 @@ pages:
     - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" output/functionality.html > public/functionality.html
     - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" output/personas.html > public/personas.html
     - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" output/physiology.html > public/physiology.html
-    - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" output/syntheticdata.html > public/syntheticdata.html
 
     - more input/assets/css/mitre.css >> public/assets/css/project.css
         
