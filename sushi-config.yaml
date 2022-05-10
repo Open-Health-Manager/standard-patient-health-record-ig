@@ -76,29 +76,29 @@ publisher:
 
 menu:
   Home: index.html
-  Environments: environments.html
-  Data Model: datamodel.html
   Functionality: functionality.html
+  Data Model: datamodel.html
   Storage: datastorage.html
   Physiology Simulations: physiology.html
   Patient Personas: personas.html
+  Environments: environments.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
     title: Getting Started
-  environments.md:
-    title: Environments
+  functionality.md:
+    title: Functionality
   datamodel.md:
     title: Data Model
   datastorage.md:
     title: Storage
-  functionality.md:
-    title: Functionality
   physiology.md:
     title: Physiology Simulations
   personas.md:
     title: Patient Personas
+  environments.md:
+    title: Environments
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

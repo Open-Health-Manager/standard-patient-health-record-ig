@@ -9,7 +9,7 @@
   "version": "0.3.0",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-04-22T20:13:41-05:00",
+  "date": "2022-05-10T00:26:50-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1196,8 +1196,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "environments.html",
-          "title": "Environments",
+          "nameUrl": "functionality.html",
+          "title": "Functionality",
           "generation": "markdown"
         },
         {
@@ -1211,11 +1211,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "functionality.html",
-          "title": "Functionality",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "physiology.html",
           "title": "Physiology Simulations",
           "generation": "markdown"
@@ -1223,6 +1218,11 @@
         {
           "nameUrl": "personas.html",
           "title": "Patient Personas",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "environments.html",
+          "title": "Environments",
           "generation": "markdown"
         }
       ]
