@@ -1,6 +1,6 @@
 A complete longitudinal patient health record may feasibly span 100 years or more.  This presents numerous challenges, espcially considering that the earliest EMR systems were only first written in the early 1970s.  Statue of limitations require that healthcare practitioners keep pediatric records until an 18th birthday, but even an 18 year storage requirement by providers falls well short of a 76yr life expectancy.  Anybody over 30 years of age is therefore almost guaranteed to have some records on hardcopy paper, compact disk, USB drive, floppy drive, or other storage medium.  
 
-
+> Note: The only portion of this Implementation Guide that is required for conformance testing is the ability to import/export the .sphr filetype.  All other parts of this implementation guide are optional, and are provided to assist the implementor in modeling patient histories in FHIR format. 
 
 ### FHIR Storage 
 
@@ -10,7 +10,7 @@ As such, this implementation guide recommends that implementors treat storage in
 
 - Systems MUST use FHIR data schemas to claim to be compliant with this IG.  
 - Systems SHOULD use the same MIME types when possible.
-- Systems MAY treat directories as a Bundle by default.
+- Systems MAY treat directories as Bundle entries or NDJSON lines by default.
 
 ![./SphrFileType.jpg](./SphrFileType.jpg){:width="40%"}  
 
@@ -44,31 +44,13 @@ Using GPG-Zip to password protect a NDJSON file using an X509 certificate is the
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-### Database Storage
-
-#### Document Oriented Databases
-
-- MongoDB
-- CouchDB
-- Azure Cosmos DB
-- Document DB
-
-#### Graph Databases
-
-- Neo4J
-
-### Mobile Device Storage
-
-#### Apple Health Records (iOS)
-Apple provides a protected storage area for health records on iOS devices.  Implementors SHOULD use Apple Health when developing on iOS devices.
-
-#### CommonHealth (Android OS)
-CommonHealth provides a similar protected storage environment for Android devices.  Implementors SHOULD use CommonHealth when developing on Android devices.  
-
-### Bulk Data Exports
+#### Bulk Data Exports
 
 Should use [NDJSON format](http://ndjson.org/) and save to a password encrypted zip file.  Please see [Bulk Data Access IG](https://hl7.org/fhir/uv/bulkdata/) more additional design guidance.
 
+#### Conformance Testing
+
+For conformance testing with this IG, the primary success critieria is the ability to import/export the .sphr filetype. This entails storing FHIR records in a new-line delimited file (including a cover composition resource, a document manifest, and provenance records as needed), compressing the file with DEFLATE algorithm (as needed), and then signing with an X.509 security certificate (i.e. DNS certificate). 
 
 #### References  
 

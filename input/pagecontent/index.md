@@ -12,21 +12,19 @@ Medical records have been around since as long as there have been practicing phy
  
  Soon after, the personal computing revolution saw the general population become able to purchase a home computer, and with it a flury of patients using these PCs to manage their personal health using spreadsheets and small self-written offline medical record management utilities.    
  
- Many of these utilities were eventually abandoned; but others found themselves in a process of consolidation and gravitating towards what would eventually become the major electronic medical record vendors (i.e. Epic, Cerner, Allscripts, Meditech, etc).
+ Many of these utilities were eventually abandoned; but others found themselves in a process of consolidation and gravitating towards what would eventually become the major electronic medical record vendors (i.e. Meditech, Epic, Cerner, Allscripts, etc).
  
-- HL7 v2
-- FHIR 
+ Eventually these systems had need to exchange information with each other, and an era of point-to-point communication was begun using HL7 v2.  After nearly 3 decades of this approach, the need to renegotiate interfaces between every business partner eventually lead to the development of reusable data endpoints, as described by Fast Healthcare Interoperability Resources (FHIR).  
+ 
+ This web-standards based protocol has been widely adopted by clinicians and industry technology vendors.   And in the mid 2010s, laws in the United States and elsewhere began being passed requiring the use of interoperability standards; with one notable example being the U.S. 21st Century Cures Act, which formalized patient rights to access their own data using standardized interoperability protocols.  
 
-
+ This changed legal environment has created an opportunity for a new ecosystem of applications, products, and services that incorporate patient health records; with early adopter organizations such as MyLinks, MaxMD, Symptomatic, and 1Up Health advocating on behalf of patients and their rights under the 21st Century Cures law.  
 
 
 ### Expectations for this Implementation Guide
 
 
 Readers are encouraged to think of this implementation guide as a marathon, not a sprint.  To further the analogy, the authors of this guide hope to help software implementor plan on whether they are competing in a 26 mile standard marathon, a 50 mile ultramarathon, or an Iron Man triathalon.  Similarly, implementing a complete PHR is no simple task, and in many situations may take upwards of a year of time or more to complete.  We hope to provide guidance that will help implementors strategically plan their implementations and avoid common stumbling blocks.
-
-
-> Medical software and health record from Star Trek: Into Darkness.  Copyright VIACOM-CBS.
 
 
 ### Relevant Law
@@ -44,9 +42,6 @@ The core of the Patient Health Record should be medical grade, and the sort of r
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
-Sit amet consectetur adipiscing elit ut aliquam. Purus in mollis nunc sed id semper risus in. Erat imperdiet sed euismod nisi porta lorem mollis. Nibh tortor id aliquet lectus. Viverra adipiscing at in tellus integer. Sit amet aliquam id diam maecenas. Sollicitudin aliquam ultrices sagittis orci a. At ultrices mi tempus imperdiet nulla. Etiam erat velit scelerisque in dictum non consectetur. Ut ornare lectus sit amet.
-
-Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris. Ac felis donec et odio pellentesque diam volutpat commodo. Ut diam quam nulla porttitor. Urna duis convallis convallis tellus id interdum velit. Ut consequat semper viverra nam libero justo. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. 
 
 ### Prior Art - Implementation Guides   
 

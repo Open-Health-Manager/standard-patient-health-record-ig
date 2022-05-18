@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -80,13 +80,13 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="datastorage.html">Record Keeping</a>
+  </li>
+  <li>
     <a href="functionality.html">Functionality</a>
   </li>
   <li>
     <a href="datamodel.html">Data Model</a>
-  </li>
-  <li>
-    <a href="datastorage.html">Storage</a>
   </li>
   <li>
     <a href="physiology.html">Physiology Simulations</a>
@@ -95,7 +95,7 @@
     <a href="personas.html">Patient Personas</a>
   </li>
   <li>
-    <a href="environments.html">Environments</a>
+    <a href="environments.html">Design Considerations</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -164,9 +164,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>However, for the purposes of this implementation guide, we are going to defer on the question of functionality, and take a more data-centric approach and consider the question in terms of importing/exporting records and data storage buckets. The general idea behind this document is that data will be added or removed from the PHR, either through granular API interfaces or bulk data import/export functions, we don’t care which.  However, in either case, we will be using standard data schemas for how the data will be transmitted and stored.</p>
 
-<p>For instance… rather than specify that the PHR must include medication reconciliation functionality, we recommend that a PHR must be able to consume a Continuity of Care Documents (CCD) received from a hospital, and to do so, it should support FHIR resources; resources which happen to include MedicationStatement and other resources produced by a medication reconciliation module.</p>
+<p>For instance… rather than specify that the PHR must include medication reconciliation functionality, we recommend that a PHR must be able to consume a Continuity of Care Documents (CCD) received from a hospital in .sphr format, and to do so, the data should be specified with FHIR resources, which may happen to include MedicationStatement and other resources produced by a medication reconciliation module.  But whether or not the .sphr health record contains a medication reconcilitation or not is left completely up to the implementor.  The only requirement for conformance is that if the data is included in the .sphr file, it use FHIR data schemas.</p>
 
-<p>In effect, this implementation guide does not specify what functionality should be included the PHR, but it does specify medical charting format that the record uses.</p>
+<p>In effect, this implementation guide does not specify what functionality should be included the PHR, but it does specify medical charting format that the record uses.  It’s about the folder and record keeping, not the specific contents of the records themselves.</p>
 
 <h3 id="phr-functional-model-fhir-ized">PHR Functional Model (FHIR-ized)</h3>
 
@@ -2161,7 +2161,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 10, 2022 00:36-0500">2022-05-10</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 18, 2022 10:08-0500">2022-05-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

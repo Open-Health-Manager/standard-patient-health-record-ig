@@ -9,7 +9,7 @@
   "version": "0.3.2",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-05-10T00:36:03-05:00",
+  "date": "2022-05-18T10:08:48-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1196,6 +1196,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "datastorage.html",
+          "title": "Storage",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "functionality.html",
           "title": "Functionality",
           "generation": "markdown"
@@ -1203,11 +1208,6 @@
         {
           "nameUrl": "datamodel.html",
           "title": "Data Model",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "datastorage.html",
-          "title": "Storage",
           "generation": "markdown"
         },
         {
@@ -1222,7 +1222,7 @@
         },
         {
           "nameUrl": "environments.html",
-          "title": "Environments",
+          "title": "Design Considerations",
           "generation": "markdown"
         }
       ]
