@@ -1,5 +1,4 @@
-When designing a patient health record, be careful about the assumptions made about how laptop computers and smartphones are used.  Think in terms of human behaviors and haptics and how patients will want to interact with their system.  These may not always align with what is available via consumer goods.  Classic examples are deaf and blind users, who may need screen readers or voice dictation systems.  Other examples might include patients confined to bed or wheelchairs, or with limited cognitive function.  
-
+When designing products, services, and software that incorporates a patient health record, be careful about the assumptions made about how laptop computers and smartphones are used.  This guide encourages you to think in terms of human behaviors and haptics, and how patients will want to interact with these system.  Patient practices and preferences may not always align with what is generally available on the consumer market.  Classic examples are deaf and blind users, who may need screen readers or voice dictation systems.  Other examples might include patients confined to bed or wheelchairs, or with limited cognitive function.  
 
 ### Smart Materials & Haptics
 

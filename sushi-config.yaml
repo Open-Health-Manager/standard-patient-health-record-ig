@@ -9,7 +9,7 @@ name: StandardPatientHealthRecordIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.3.2
+version: 0.3.4
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -76,29 +76,29 @@ publisher:
 
 menu:
   Home: index.html
+  Record Keeping: datastorage.html
   Functionality: functionality.html
   Data Model: datamodel.html
-  Storage: datastorage.html
   Physiology Simulations: physiology.html
   Patient Personas: personas.html
-  Environments: environments.html
+  Design Considerations: environments.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
     title: Getting Started
+  datastorage.md:
+    title: Storage
   functionality.md:
     title: Functionality
   datamodel.md:
     title: Data Model
-  datastorage.md:
-    title: Storage
   physiology.md:
     title: Physiology Simulations
   personas.md:
     title: Patient Personas
   environments.md:
-    title: Environments
+    title: Design Considerations
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
