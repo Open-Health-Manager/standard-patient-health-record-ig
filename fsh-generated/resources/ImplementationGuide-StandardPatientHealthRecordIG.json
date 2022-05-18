@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "StandardPatientHealthRecordIG",
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
   "publisher": "MITRE",

@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "name": "PhrRelatedPerson",
   "status": "active",
   "description": "Standard PHR profile of the RelatedPerson resource.",

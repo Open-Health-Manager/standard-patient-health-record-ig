@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "name": "PhrFamilyMemberHistory",
   "status": "active",
   "description": "Standard PHR profile of the FamilyMemberHistory resource.",
