@@ -3,8 +3,8 @@
 
 err = 183, warn = 208, info = 14
 IG Publisher Version: 1.1.115 Out of date - current version is 1.1.120
-Generated Wed May 18 10:09:42 CDT 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.3.2 (canonical = https://gitlab.mitre.org/awatson/sphr)
- Build Errors : 43 / 1 / 0
+Generated Wed May 18 10:37:34 CDT 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.3.4 (canonical = https://gitlab.mitre.org/awatson/sphr)
+ Build Errors : 42 / 1 / 0
  /Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/allergyintolerance-allergy-intolerance : 5 / 1 / 1
  /Users/awatson/Code/implementation-guides/sphr/fsh-generated/resources/bodystructure-ExampleBodyStructure : 0 / 0 / 1
@@ -109,11 +109,10 @@ ERROR: /Users/awatson/Code/implementation-guides/sphr/output/Encounter-JohnDoe-d
 ERROR: /Users/awatson/Code/implementation-guides/sphr/output/Encounter-JohnDoe-diabetesOnset.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 196, column 707: The link 'Provider/Primary/Patricia' for "Provider/Primary/Patricia" cannot be resolved
 ERROR: /Users/awatson/Code/implementation-guides/sphr/output/Encounter-JohnDoe-diabetesOnset.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 196, column 890: The link 'Snomed-CT/44054006' for "Snomed-CT/44054006: Diabetes Type 2" cannot be resolved
 ERROR: /Users/awatson/Code/implementation-guides/sphr/output/Encounter-JohnDoe-diabetesOnset.html#/html/body/div/div/div/div/div/div/p/a at Line 196, column 1003: The link 'Organization/f201' for "Organization/f201" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 511, column 8: The link '' for "HealthReceipt" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 512, column 8: The link '' for "SocialMedia" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 513, column 8: The link '' for "Environmental" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 514, column 8: The link '' for "NutrientIntake" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 515, column 8: The link '' for "NutrientOuttake" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 513, column 8: The link '' for "HealthReceipt" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 514, column 8: The link '' for "SocialMedia" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 515, column 8: The link '' for "Environmental" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 516, column 8: The link '' for "NutrientOuttake" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG.json ==
 == fsh-generated/resources/AllergyIntolerance-allergy-intolerance.json ==
 ERROR: AllergyIntolerance/allergy-intolerance: AllergyIntolerance.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance' does not resolve

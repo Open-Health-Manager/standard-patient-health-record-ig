@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "name": "PhrSpecimen",
   "status": "active",
   "description": "Standard PHR profile of the Specimen resource.",
