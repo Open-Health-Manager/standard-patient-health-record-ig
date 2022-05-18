@@ -13,7 +13,7 @@
    <version value="0.3.2"/>
    <name value="StandardPatientHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-05-10T00:36:03-05:00"/>
+   <date value="2022-05-18T10:08:48-05:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -996,6 +996,11 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="datastorage.html"/>
+            <title value="Storage"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="functionality.html"/>
             <title value="Functionality"/>
             <generation value="markdown"/>
@@ -1003,11 +1008,6 @@
          <page>
             <nameUrl value="datamodel.html"/>
             <title value="Data Model"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
-            <nameUrl value="datastorage.html"/>
-            <title value="Storage"/>
             <generation value="markdown"/>
          </page>
          <page>
@@ -1022,7 +1022,7 @@
          </page>
          <page>
             <nameUrl value="environments.html"/>
-            <title value="Environments"/>
+            <title value="Design Considerations"/>
             <generation value="markdown"/>
          </page>
          <page>
