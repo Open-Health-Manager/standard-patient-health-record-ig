@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="JohnDoe-diabetes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JohnDoe-diabetes" </p></div><p><b>clinicalStatus</b>: active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#active)</span></p><p><b>verificationStatus</b>: differential <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#differential)</span></p><p><b>category</b>: Problem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#55607006; condition-category#problem-list-item)</span></p><p><b>severity</b>: Severe <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#24484000)</span></p><p><b>code</b>: Diabetes Type 2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#44054006)</span></p><p><b>subject</b>: <a href="Patient/Anyman/Bob">Patient/Anyman/Bob: John Doe</a></p><p><b>onset</b>: 2018-09-16</p><p><b>abatement</b>: 2018-09-16</p><p><b>asserter</b>: <a href="Provider/Primary/Patricia">Provider/Primary/Patricia</a></p><p><b>note</b>: The patient is now diagnosed with type 2 diabetes.</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <code value="differential"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="55607006"/>
+      <display value="Problem"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="24484000"/>
+      <display value="Severe"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="44054006"/>
+      <display value="Diabetes Type 2"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Anyman/Bob"/>
+    <display value="John Doe"/>
+  </subject>
+  <onsetDateTime value="2018-09-16"/>
+  <abatementDateTime value="2018-09-16"/>
+  <asserter>
+    <reference value="Provider/Primary/Patricia"/>
+  </asserter>
+  <note>
+    <text value="The patient is now diagnosed with type 2 diabetes."/>
+  </note>
+</Condition>
