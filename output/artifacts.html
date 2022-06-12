@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.3.4 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="datastorage.html">Record Keeping</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functionality</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="physiology.html">Physiology Simulations</a>
+  </li>
+  <li>
+    <a href="personas.html">Patient Personas</a>
+  </li>
+  <li>
+    <a href="environments.html">Design Considerations</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.4). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+   <p>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Environmental.html"
+                     title="StructureDefinition/Environmental">Environmental</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Environmental resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-HealthReceipt.html"
+                     title="StructureDefinition/HealthReceipt">HealthReceipt</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the HealthReceipt resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NutrientIntake.html"
+                     title="StructureDefinition/NutrientIntake">NutrientIntake</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the NutrientIntake resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NutrientOuttake.html"
+                     title="StructureDefinition/NutrientOuttake">NutrientOuttake</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the NutrientOuttake resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SocialMedia.html"
+                     title="StructureDefinition/SocialMedia">SocialMedia</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the SocialMedia resource.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrAllergyIntolerance.html"
+                     title="StructureDefinition/PhrAllergyIntolerance">PhrAllergyIntolerance</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the AllergyIntolerance resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrBodyStructure.html"
+                     title="StructureDefinition/PhrBodyStructure">PhrBodyStructure</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the BodyStructure resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrCarePlan.html"
+                     title="StructureDefinition/PhrCarePlan">PhrCarePlan</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the CarePlan resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrCareTeam.html"
+                     title="StructureDefinition/PhrCareTeam">PhrCareTeam</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the CareTeam resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrCommunication.html"
+                     title="StructureDefinition/PhrCommunication">PhrCommunication</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Communication resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrCondition.html"
+                     title="StructureDefinition/PhrCondition">PhrCondition</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Condition resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrConsent.html"
+                     title="StructureDefinition/PhrConsent">PhrConsent</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Consent resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrDevice.html"
+                     title="StructureDefinition/PhrDevice">PhrDevice</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Device resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrDiagnosticReport.html"
+                     title="StructureDefinition/PhrDiagnosticReport">PhrDiagnosticReport</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the DiagnosticReport resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrFamilyMemberHistory.html"
+                     title="StructureDefinition/PhrFamilyMemberHistory">PhrFamilyMemberHistory</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the FamilyMemberHistory resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrGoal.html"
+                     title="StructureDefinition/PhrGoal">PhrGoal</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Goal resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrImmunization.html"
+                     title="StructureDefinition/PhrImmunization">PhrImmunization</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Immunization resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrMedication.html"
+                     title="StructureDefinition/PhrMedication">PhrMedication</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Medication resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrMedicationStatement.html"
+                     title="StructureDefinition/PhrMedicationStatement">PhrMedicationStatement</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the MedicationStatement resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrMolecularSequence.html"
+                     title="StructureDefinition/PhrMolecularSequence">PhrMolecularSequence</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the MolecularSequence resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrObservation.html"
+                     title="StructureDefinition/PhrObservation">PhrObservation</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Observation resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrPatient.html"
+                     title="StructureDefinition/PhrPatient">PhrPatient</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Patient resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrPractitioner.html"
+                     title="StructureDefinition/PhrPractitioner">PhrPractitioner</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Practitioner resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrProcedure.html"
+                     title="StructureDefinition/PhrProcedure">PhrProcedure</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Procedure resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrRelatedPerson.html"
+                     title="StructureDefinition/PhrRelatedPerson">PhrRelatedPerson</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the RelatedPerson resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PhrSpecimen.html"
+                     title="StructureDefinition/PhrSpecimen">PhrSpecimen</a>
+               </td>
+               <td>
+<p>Standard PHR profile of the Specimen resource.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Care-Plan-Example.html"
+                     title="Composition/Care-Plan-Example">Care-Plan-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - CarePlan</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Consultation-Note-Example.html"
+                     title="Composition/Consultation-Note-Example">Consultation-Note-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Consultation Note</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-ContinuityCareDocument1.html"
+                     title="Composition/ContinuityCareDocument1">ContinuityCareDocument1</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Continuity of Care Document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-DiagnosticImagingReport1.html"
+                     title="Composition/DiagnosticImagingReport1">DiagnosticImagingReport1</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Diagnostic Imaging Report</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Discharge-Summary-Example.html"
+                     title="Composition/Discharge-Summary-Example">Discharge-Summary-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Discharge Summary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="BodyStructure-ExampleBodyStructure.html"
+                     title="BodyStructure/ExampleBodyStructure">ExampleBodyStructure</a>
+               </td>
+               <td>
+<p>John Doe - BodyStructure - Left Foot</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ExampleCarePlan.html" title="CarePlan/ExampleCarePlan">ExampleCarePlan</a>
+               </td>
+               <td>
+<p>John Doe - CarePlan - Consolidated</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CareTeam-ExampleCareTeam.html" title="CareTeam/ExampleCareTeam">ExampleCareTeam</a>
+               </td>
+               <td>
+<p>John Doe - CareTeam</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Communication-ExampleCommunication.html"
+                     title="Communication/ExampleCommunication">ExampleCommunication</a>
+               </td>
+               <td>
+<p>John Doe - Communication - New medication request.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ExampleConsent.html" title="Consent/ExampleConsent">ExampleConsent</a>
+               </td>
+               <td>
+<p>John Doe - Consent - Advanced Directive</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-ExampleDevice.html" title="Device/ExampleDevice">ExampleDevice</a>
+               </td>
+               <td>
+<p>John Doe - Device - Digital Blood Pressure Cuff</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-ExampleDiagnosticReport.html"
+                     title="DiagnosticReport/ExampleDiagnosticReport">ExampleDiagnosticReport</a>
+               </td>
+               <td>
+<p>John Doe - DiagnosticReport</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="FamilyMemberHistory-ExampleFamilyMemberHistory.html"
+                     title="FamilyMemberHistory/ExampleFamilyMemberHistory">ExampleFamilyMemberHistory</a>
+               </td>
+               <td>
+<p>John Doe - FamilyMemberHistory</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="RelatedPerson-ExampleRelatedPerson.html"
+                     title="RelatedPerson/ExampleRelatedPerson">ExampleRelatedPerson</a>
+               </td>
+               <td>
+<p>John Doe - RelatedPerson - Sister</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-ExampleSpecimen.html" title="Specimen/ExampleSpecimen">ExampleSpecimen</a>
+               </td>
+               <td>
+<p>John Doe - Specimen - Urinalysis</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-History-and-Physical-Example.html"
+                     title="Composition/History-and-Physical-Example">History-and-Physical-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - History &amp; Physical</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-JohnDoe-diabetes.html"
+                     title="Condition/JohnDoe-diabetes">JohnDoe-diabetes</a>
+               </td>
+               <td>
+<p>John Doe - Condition - Diabetes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-JohnDoe-diabetesOnset.html"
+                     title="Encounter/JohnDoe-diabetesOnset">JohnDoe-diabetesOnset</a>
+               </td>
+               <td>
+<p>John Doe - Encounter - Diabetes diagnosis</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-Medication-Metformin.html"
+                     title="Bundle/Medication-Metformin">Medication-Metformin</a>
+               </td>
+               <td>
+<p>John Doe - Bundle - Medication Reconciliation Bundle</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-ObservationsBundle1.html"
+                     title="Bundle/ObservationsBundle1">ObservationsBundle1</a>
+               </td>
+               <td>
+<p>John Doe - Observation - Collection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Operative-Note-Example.html"
+                     title="Composition/Operative-Note-Example">Operative-Note-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Operative Note</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-PractitionersBundle1.html"
+                     title="Bundle/PractitionersBundle1">PractitionersBundle1</a>
+               </td>
+               <td>
+<p>John Doe - Practitioners - Collection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Procedure-Note-Example.html"
+                     title="Composition/Procedure-Note-Example">Procedure-Note-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Procedure Note</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Progress-Note-Example.html"
+                     title="Composition/Progress-Note-Example">Progress-Note-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Progress Note</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Referral-Note-Example.html"
+                     title="Composition/Referral-Note-Example">Referral-Note-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Referral Note</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Composition-Transfer-Summary-Example.html"
+                     title="Composition/Transfer-Summary-Example">Transfer-Summary-Example</a>
+               </td>
+               <td>
+<p>John Doe - Composition - Transfer Summary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-allergy-intolerance.html"
+                     title="AllergyIntolerance/allergy-intolerance">allergy-intolerance</a>
+               </td>
+               <td>
+<p>John Doe - AllergyIntolerance - Sulfonamide</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-immunization.html" title="Immunization/immunization">immunization</a>
+               </td>
+               <td>
+<p>John Doe - Immunization - Fluzone</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-john-doe.html" title="Patient/john-doe">john-doe</a>
+               </td>
+               <td>
+<p>John Doe - Patient Demographics</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-medication-statement.html"
+                     title="MedicationStatement/medication-statement">medication-statement</a>
+               </td>
+               <td>
+<p>John Doe - MedicationStatement - Lisinopril</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-lab-urine.html"
+                     title="Observation/observation-lab-urine">observation-lab-urine</a>
+               </td>
+               <td>
+<p>John Doe - Observation - Urinalysis</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-smoker.html"
+                     title="Observation/observation-smoker">observation-smoker</a>
+               </td>
+               <td>
+<p>John Doe - Observation - Smoking status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation-vitals-temp.html"
+                     title="Observation/observation-vitals-temp">observation-vitals-temp</a>
+               </td>
+               <td>
+<p>John Doe - Observation - Body temperature</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-organization-1.html"
+                     title="Organization/organization-1">organization-1</a>
+               </td>
+               <td>
+<p>Organization - Acme Labs</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-procedure-rehab.html" title="Procedure/procedure-rehab">procedure-rehab</a>
+               </td>
+               <td>
+<p>John Doe - Procedure - Alcohol rehabilitation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-undefined.html" title="Bundle/undefined">undefined</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 12, 2022 13:44-0500">2022-06-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

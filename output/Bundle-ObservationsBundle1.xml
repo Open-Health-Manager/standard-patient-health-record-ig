@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ObservationsBundle1"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="/Observation/TvuX2kXom6hSvYhMs"/>
+    <resource>
+      <Observation>
+        <id value="TvuX2kXom6hSvYhMs"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "TvuX2kXom6hSvYhMs" </p></div><p><b>status</b>: preliminary</p><p><b>category</b>: Complaint <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Symptom <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75325-1)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:03:02+0000</p><p><b>value</b>: 0</p></div>
+        </text>
+        <status value="preliminary"/>
+        <category>
+          <text value="Complaint"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75325-1"/>
+            <display value="Symptom"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:03:02.351Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/x7JRtwiGcxpFA7Psb"/>
+    <resource>
+      <Observation>
+        <id value="x7JRtwiGcxpFA7Psb"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "x7JRtwiGcxpFA7Psb" </p></div><p><b>status</b>: preliminary</p><p><b>category</b>: Complaint <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Symptom <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75325-1)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:03:35+0000</p><p><b>value</b>: 0</p></div>
+        </text>
+        <status value="preliminary"/>
+        <category>
+          <text value="Complaint"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75325-1"/>
+            <display value="Symptom"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:03:35.687Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/8y7MPgGCmx5CeZHqS"/>
+    <resource>
+      <Observation>
+        <id value="8y7MPgGCmx5CeZHqS"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "8y7MPgGCmx5CeZHqS" </p></div><p><b>status</b>: preliminary</p><p><b>category</b>: Complaint <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Symptom <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75325-1)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:04:17+0000</p><p><b>value</b>: 0</p></div>
+        </text>
+        <status value="preliminary"/>
+        <category>
+          <text value="Complaint"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75325-1"/>
+            <display value="Symptom"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:04:17.589Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/Z3WQTCWsnRMHwzygK"/>
+    <resource>
+      <Observation>
+        <id value="Z3WQTCWsnRMHwzygK"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Z3WQTCWsnRMHwzygK" </p></div><p><b>status</b>: preliminary</p><p><b>category</b>: Complaint <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Symptom <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75325-1)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:05:02+0000</p><p><b>value</b>: 0</p></div>
+        </text>
+        <status value="preliminary"/>
+        <category>
+          <text value="Complaint"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="75325-1"/>
+            <display value="Symptom"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:05:02.753Z"/>
+        <valueQuantity>
+          <value value="0"/>
+          <unit value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/ym9B2bdDJbHAKpyhF"/>
+    <resource>
+      <Observation>
+        <id value="ym9B2bdDJbHAKpyhF"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "ym9B2bdDJbHAKpyhF" </p></div><p><b>status</b>: final</p><p><b>category</b>: Fasting Blood Glucose <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Fasting glucose [Mass/volume] in Capillary blood by Glucometer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#41604-0)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:08:07+0000</p><p><b>value</b>: 163 mg/dl</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="Fasting Blood Glucose"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="41604-0"/>
+            <display value="Fasting glucose [Mass/volume] in Capillary blood by Glucometer"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:08:07.465Z"/>
+        <valueQuantity>
+          <value value="163"/>
+          <unit value="mg/dl"/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/WZoW2sj73yy7D7pnd"/>
+    <resource>
+      <Observation>
+        <id value="WZoW2sj73yy7D7pnd"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "WZoW2sj73yy7D7pnd" </p></div><p><b>status</b>: final</p><p><b>category</b>: HbA1c <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Hemoglobin A1c/Hemoglobin.total in Blood <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#4548-4)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:09:33+0000</p><p><b>value</b>: 7.8 %</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="HbA1c"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="4548-4"/>
+            <display value="Hemoglobin A1c/Hemoglobin.total in Blood"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:09:33.924Z"/>
+        <valueQuantity>
+          <value value="7.8"/>
+          <unit value="%"/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/n6SyqiHGT8xwvYJLZ"/>
+    <resource>
+      <Observation>
+        <id value="n6SyqiHGT8xwvYJLZ"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "n6SyqiHGT8xwvYJLZ" </p></div><p><b>status</b>: final</p><p><b>category</b>: Height <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Body height <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8302-2)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:10:14+0000</p><p><b>value</b>: 67 inches</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="Height"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8302-2"/>
+            <display value="Body height"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:10:14.868Z"/>
+        <valueQuantity>
+          <value value="67"/>
+          <unit value="inches"/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/hXcf7dFjizx8MxMqD"/>
+    <resource>
+      <Observation>
+        <id value="hXcf7dFjizx8MxMqD"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "hXcf7dFjizx8MxMqD" </p></div><p><b>status</b>: final</p><p><b>category</b>: Weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Body weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:11:03+0000</p><p><b>value</b>: 216 lbs</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="Weight"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:11:03.223Z"/>
+        <valueQuantity>
+          <value value="216"/>
+          <unit value="lbs"/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/Gz6nXg5JFY33hQEX8"/>
+    <resource>
+      <Observation>
+        <id value="Gz6nXg5JFY33hQEX8"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Gz6nXg5JFY33hQEX8" </p></div><p><b>status</b>: final</p><p><b>category</b>: Blood Pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Systolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8480-6)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:11:48+0000</p><p><b>value</b>: 164 mm Hg</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="Blood Pressure"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8480-6"/>
+            <display value="Systolic blood pressure"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:11:48.290Z"/>
+        <valueQuantity>
+          <value value="164"/>
+          <unit value="mm Hg"/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/Gz6nXg5JFY33hQEX9"/>
+    <resource>
+      <Observation>
+        <id value="Gz6nXg5JFY33hQEX9"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Gz6nXg5JFY33hQEX9" </p></div><p><b>status</b>: final</p><p><b>category</b>: Blood Pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: Diastolic blood pressure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8462-4)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:11:48+0000</p><p><b>value</b>: 108 mm Hg</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="Blood Pressure"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="8462-4"/>
+            <display value="Diastolic blood pressure"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:11:48.290Z"/>
+        <valueQuantity>
+          <value value="108"/>
+          <unit value="mm Hg"/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="/Observation/AEsJJuTPw657P6LEj"/>
+    <resource>
+      <Observation>
+        <id value="AEsJJuTPw657P6LEj"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "AEsJJuTPw657P6LEj" </p></div><p><b>status</b>: final</p><p><b>category</b>: BMI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>code</b>: BMI score for risk calculation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#97057-4)</span></p><p><b>subject</b>: <a href="/Patient/Anyman/Bob">/Patient/Anyman/Bob: John Doe</a></p><p><b>effective</b>: 2018-10-05 04:12:26+0000</p><p><b>value</b>: 33</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <text value="BMI"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="97057-4"/>
+            <display value="BMI score for risk calculation"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="/Patient/Anyman/Bob"/>
+          <display value="John Doe"/>
+        </subject>
+        <effectiveDateTime value="2018-10-05T16:12:26.875Z"/>
+        <valueQuantity>
+          <value value="33"/>
+          <unit value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>
