@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.3.4"];
   fhir:ImplementationGuide.name [ fhir:value "StandardPatientHealthRecordIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-12T13:44:16-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-12T13:47:57-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
