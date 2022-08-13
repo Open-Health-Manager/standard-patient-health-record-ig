@@ -1,0 +1,781 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Referral-Note-Example - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.51"}
+    h3,h4,h5,h6{--heading-prefix:"9.51"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.3.4 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="recordkeeping.html">Record Keeping</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="datamodel.html">Data Model</a>
+      </li>
+      <li>
+        <a href="functionality.html">Functionality</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Simulations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="personas.html">Patient Personas</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Referral-Note-Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.4). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Composition-Referral-Note-Example.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Composition-Referral-Note-Example.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Composition-Referral-Note-Example.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Referral-Note-Example - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Composition-Referral-Note-Example.json" no-download="true">Raw json</a> | <a href="Composition-Referral-Note-Example.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition">resourceType</a>" : "Composition",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a>" : "Referral-Note-Example",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "2",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2019-01-25T16:39:57.088-05:00",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.language">language</a>" : "en-US",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en-US\&quot; lang=\&quot;en-US\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;Referral-Note-Example\&quot; Version \&quot;2\&quot; Updated \&quot;2019-01-25 04:39:57-0500\&quot;  (Language \&quot;en-US\&quot;) &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;code&gt;http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Referral Note &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#57133-1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2016-06-15 09:10:14+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Practitioner/practitioner-1\&quot;&gt;Practitioner/practitioner-1: Ronald Boone, MD&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Referral Note&lt;/p&gt;&lt;p&gt;&lt;b&gt;confidentiality&lt;/b&gt;: N&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Party&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;legal&lt;/td&gt;&lt;td&gt;2016-06-15 09:10:14+0000&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner/practitioner-1\&quot;&gt;Practitioner/practitioner-1: Ronald Boone, MD&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;custodian&lt;/b&gt;: &lt;a href=\&quot;Organization-organization-1.html\&quot;&gt;Organization/organization-1: Community Health and Hospitals&lt;/a&gt; \&quot;Acme Labs\&quot;&lt;/p&gt;&lt;h3&gt;Events&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Care Provision &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (ActClass#PCPR)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2016-06-15 --&amp;gt; 2016-06-15&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "master"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HL7/ccda-on-fhir/source/resources/composition/CCDA-on-FHIR-Referral-Note-Example.xml"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.identifier">identifier</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1"
+  },
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a>" : "preliminary",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "57133-1",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Referral Note"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/jane-doe",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Jane Doe"
+  },
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a>" : "2016-06-15T09:10:14Z",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner-1",
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Ronald Boone, MD"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.title">title</a>" : "Referral Note",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.confidentiality">confidentiality</a>" : "N",
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester">attester</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.mode">mode</a>" : "legal",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.time">time</a>" : "2016-06-15T09:10:14Z",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.party">party</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner-1",
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Ronald Boone, MD"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.custodian">custodian</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/organization-1",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Community Health and Hospitals"
+  },
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.event">event</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.event.code">code</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ActClass",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PCPR",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Care Provision"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.event.period">period</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2016-06-15",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2016-06-15"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section">section</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Allergies and Intolerances Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "48765-2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Allergies and adverse reactions"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Substance&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Overall Severity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reaction&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reaction Severity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cashew Nut&lt;/td&gt;&lt;td&gt;Severe&lt;/td&gt;&lt;td&gt;Anaphylactic reaction&lt;/td&gt;&lt;td&gt;Mild&lt;/td&gt;&lt;td&gt;Active&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.mode">mode</a>" : "snapshot",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.orderedBy">orderedBy</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/list-order",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "event-date",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Sorted by Event Date"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "AllergyIntolerance/allergy-intolerance"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Advance Directives Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "42348-3",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Advance directives"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Applies Period&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Resuscitation&lt;/td&gt;&lt;td&gt;2015/01/01 - 2016/12/31&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Assessment Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "51848-0",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Assessment (evaluation)"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Obesity.&lt;/p&gt;&lt;p&gt;Uncontrolled brittle Type II diabetic.&lt;/p&gt;&lt;p&gt;Shortness of breath, mild wheezing.&lt;/p&gt;&lt;p&gt;Pressure ulder on left knee.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Assessment and Plan Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "51847-2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Assessment (evaluation) and plan"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Recurrent GI bleed of unknown etiology; hypotension perhaps secondary to this but as likely secondary to polypharmacy&lt;/p&gt;&lt;p&gt;Acute on chronic anemia secondary to #1.&lt;/p&gt;&lt;p&gt;Azotemia, acute renal failure with volume loss secondary tom#1.&lt;/p&gt;&lt;p&gt;Hyperkalemia secondary to #3 and on ACE and K+ supplement.&lt;/p&gt;&lt;p&gt;Other chronic diagnoses as noted above, currently stable.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Family History Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10157-6",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of family member diseases"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Diagnosis&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Age at Onset&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Father&lt;/td&gt;&lt;td&gt;Myocardial Infarction(cause of Death)&lt;/td&gt;&lt;td&gt;57&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Father&lt;/td&gt;&lt;td&gt;Diabetes&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "History of Past Illness Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11348-0",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of past illness"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;See History of Present Illness&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "History of Present Illness Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10164-2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of present illness"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This patient was only recently discharged for a recurrent GI bleed as described below.&lt;/p&gt;&lt;p&gt;He presented to the ER today c/o a dark stool yesterday but a normal brown stool today. On exam he was hypotensive in the 80?s resolved after .... .... ....&lt;/p&gt;&lt;p&gt;Lab at discharge: Glucose 112, BUN 16, creatinine 1.1, electrolytes normal. H. pylori antibody pending. Admission hematocrit 16%, discharge hematocrit 29%. WBC 7300, platelet count 256,000. Urinalysis normal. Urine culture: No growth. INR 1.1, PTT 40.&lt;/p&gt;&lt;p&gt;He was transfused with 6 units of packed red blood cells with .... .... ....&lt;/p&gt;&lt;p&gt;GI evaluation 12 September: Colonoscopy showed single red clot in .... ........&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Social History Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "29762-2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Social history"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Social History Element&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Effective Dates&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Smoking&lt;/td&gt;&lt;td&gt;1 pack tobacco per day&lt;/td&gt;&lt;td&gt;2005/05/01 - 2010/02/28&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/observation-smoker"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "General Status Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10210-3",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Physical findings of General status"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Alert and in good spirits, no acute distress.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Functional Status Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "47420-5",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Functional status"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Functional or Cognitive Finding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Observation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Observation Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Ambulation (Dependent to Independent&lt;/td&gt;&lt;td&gt;Independently able&lt;/td&gt;&lt;td&gt;2010/03/11&lt;/td&gt;&lt;td&gt;Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Finding of Functional Performance and Activity&lt;/td&gt;&lt;td&gt;Dyspnea&lt;/td&gt;&lt;td&gt;2008/02/16&lt;/td&gt;&lt;td&gt;Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cognitive Function Finding&lt;/td&gt;&lt;td&gt;Memory Impairment&lt;/td&gt;&lt;td&gt;2014/04/29&lt;/td&gt;&lt;td&gt;Active&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Mental Status Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10190-7",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mental status"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table border=\&quot;1\&quot; width=\&quot;100%\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Mental Status Findings&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Effective Dates&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tr&gt;&lt;td&gt;Mental Function&lt;/td&gt;&lt;td&gt;July 31, 2013&lt;/td&gt;&lt;td&gt;Impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cognitive Abilities&lt;/td&gt;&lt;td&gt;July 31, 2013&lt;/td&gt;&lt;td&gt;Judgement, Intact&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cognitive Function&lt;/td&gt;&lt;td&gt;July 31, 2013&lt;/td&gt;&lt;td&gt;Aggressive Behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cognitive Function&lt;/td&gt;&lt;td&gt;July 31, 2013&lt;/td&gt;&lt;td&gt;Difficulty understanding own emotions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Cognitive Function&lt;/td&gt;&lt;td&gt;July 31, 2013&lt;/td&gt;&lt;td&gt;Difficulty communicating Thoughts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Immunizations Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11369-6",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of immunization"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Vaccine&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Fluvax (Influenza)&lt;/td&gt;&lt;td&gt;2016-04-05&lt;/td&gt;&lt;td&gt;Completed&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Immunization/immunization"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Nutrition Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "61144-2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Diet and nutrition"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nutritional Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Diet&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2005/12/29&lt;/td&gt;&lt;td&gt;Well nourished&lt;/td&gt;&lt;td&gt;Low sodium diet, excessive carbohydrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2010/05/26&lt;/td&gt;&lt;td&gt;Slight dehydration&lt;/td&gt;&lt;td&gt;High protein, low fibre&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Reason for Referral Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "42349-1",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Reason for Referral"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Colonoscopy&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Physical Exam Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "29545-1",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Physical findings"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;HEENT: All normal to examination.&lt;/p&gt;&lt;p&gt;&amp;gt;HEART: RRR, no murmur.&lt;/p&gt;&lt;p&gt;THORAX &amp;amp; LUNGS: Clear without rhonchi or wheeze.&lt;/p&gt;&lt;p&gt;ABDOMEN: Marked distension and tenderness, slightly obese, pos bowelsounds.&lt;/p&gt;&lt;p&gt;BACK: Normal to inspection and palpation, without tenderness; no presacral edema.&lt;/p&gt;&lt;p&gt;EXTREMITIES: Doughy edema bilaterally, chronic stasis changes, no asymmetrical swelling.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Review of Systems Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10187-3",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Review of systems"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Patient denies recent history of fever or malaise. Positive for weakness and shortness of breath. Several episodes of abdominal tenderness. No recent headaches. Positive for osteoarthritis in hips, knees and hands.&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Medication Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10160-0",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of Medication Use"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Medication&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Directions&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Start Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Indications&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Fill Instructions&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amoxicillin&lt;/td&gt;&lt;td&gt;Amoxicillin Powder, for Suspension 250mg/5ml&lt;/td&gt;&lt;td&gt;20160401&lt;/td&gt;&lt;td&gt;Active&lt;/td&gt;&lt;td&gt;Pneumonia&lt;/td&gt;&lt;td&gt;Generic substitution allowed&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "MedicationStatement/medication-statement"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Medical Equipment Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "46264-8",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Medical equipment"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Supply/Device&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date Supplied&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Automatic Implantable cardioverter/defbrillator&lt;/td&gt;&lt;td&gt;2008/11/16&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Wheelchair&lt;/td&gt;&lt;td&gt;1999/12/01&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Plan of Treatment Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "18776-5",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Plan of treatment"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Planned Activity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Colonoscopy&lt;/td&gt;&lt;td&gt;2016/08/16 - 2010/08/16&lt;/td&gt;&lt;td&gt;Completed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Recommendation to Exercise&lt;/td&gt;&lt;td&gt;2016/10/29&lt;/td&gt;&lt;td&gt;Ongoing&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Problem Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11450-4",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Problem list"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Problem Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Onset Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Abatement Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Fever&lt;/td&gt;&lt;td&gt;Condition&lt;/td&gt;&lt;td&gt;2016-04-01&lt;/td&gt;&lt;td&gt;2016-04-14&lt;/td&gt;&lt;td&gt;Complete&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/condition-problem"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Procedures Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "47519-4",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "History of procedures"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Procedure Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Body Site&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Performer&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date Performed&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reason&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Appendectomy (Procedure)&lt;/td&gt;&lt;td&gt;Abdomen&lt;/td&gt;&lt;td&gt;Dr. Adam Everyman&lt;/td&gt;&lt;td&gt;20160405&lt;/td&gt;&lt;td&gt;Generalized abdominal pain 24 hours. Localized in RIF with rebound and guarding&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Procedure/procedure-rehab"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Results Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "30954-2",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Relevant diagnostic tests and laboratory data"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Result Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Quantity Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Glucose [Moles/volume] in Blood&lt;/td&gt;&lt;td&gt;6.3 mmol/l&lt;/td&gt;&lt;td&gt;2016/04/01&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/observation-lab-urine"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">title</a>" : "Vital Signs Section",
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8716-3",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Vital signs"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Vital Sign&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Temperature&lt;/td&gt;&lt;td&gt;2016/06/15&lt;/td&gt;&lt;td&gt;39 Degrees Celcius&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      },
+      "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/observation-vitals-temp"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 13, 2022 16:02-0600">2022-08-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -260,11 +260,6 @@ In effect, this implementation guide does not specify what functionality should 
 
 
 
-### Regional Profiles
-
-![./MedicalRecordOwnershipLaws.jpg](./MedicalRecordOwnershipLaws.jpg){:width="100%"}
-
-
 ### References  
 
 [Personal Health Record System Functional Model](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88)

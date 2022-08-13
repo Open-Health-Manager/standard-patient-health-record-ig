@@ -54,7 +54,17 @@ Should use [NDJSON format](http://ndjson.org/) and save to a password encrypted 
 
 For conformance testing with this IG, the primary success critieria is the ability to import/export the .sphr filetype. This entails storing FHIR records in a new-line delimited file (including a cover composition resource, a document manifest, and provenance records as needed), compressing the file with DEFLATE algorithm (as needed), and then signing with an X.509 security certificate (i.e. DNS certificate). 
 
+#### Implementation Guidance  
+
+![./SPHR-ImplementationGuidance.png](./SPHR-ImplementationGuidance.png){:width="100%"}  
+
 #### References  
 
 [Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
 [GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
+
+
+
+
+
+

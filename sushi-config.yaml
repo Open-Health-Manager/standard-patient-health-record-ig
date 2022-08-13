@@ -76,19 +76,22 @@ publisher:
 
 menu:
   Home: index.html
-  Record Keeping: datastorage.html
-  Functionality: functionality.html
-  Data Model: datamodel.html
-  Physiology Simulations: physiology.html
+  Record Keeping: recordkeeping.html
+  Optional:
+    History: history.html
+    Data Model: datamodel.html
+    Functionality: functionality.html
+    Physiology Simulations: physiology.html
   Patient Personas: personas.html
-  Design Considerations: environments.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
     title: Getting Started
-  datastorage.md:
-    title: Storage
+  history.md:
+    title: History
+  recordkeeping.md:
+    title: Record Keeping
   functionality.md:
     title: Functionality
   datamodel.md:

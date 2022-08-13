@@ -530,8 +530,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "datastorage.html",
-          "title": "Storage",
+          "nameUrl": "history.html",
+          "title": "History",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "recordkeeping.html",
+          "title": "Record Keeping",
           "generation": "markdown"
         },
         {

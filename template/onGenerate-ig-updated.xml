@@ -13,7 +13,7 @@
    <version value="0.3.4"/>
    <name value="StandardPatientHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-06-12T13:47:57-05:00"/>
+   <date value="2022-08-13T16:02:43-06:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -996,8 +996,13 @@
             <generation value="markdown"/>
          </page>
          <page>
-            <nameUrl value="datastorage.html"/>
-            <title value="Storage"/>
+            <nameUrl value="history.html"/>
+            <title value="History"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="recordkeeping.html"/>
+            <title value="Record Keeping"/>
             <generation value="markdown"/>
          </page>
          <page>
