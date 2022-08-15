@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "SocialMedia",
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/SocialMedia",
-  "version": "0.3.4",
+  "version": "0.3.6",
   "name": "SocialMedia",
   "status": "active",
   "description": "Standard PHR profile of the SocialMedia resource.",

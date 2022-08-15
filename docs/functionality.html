@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.4 - ci-build
+            <span style="display:inline-block;">0.3.6 - ci-build
 
 
             </span>
@@ -80,22 +80,29 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="datastorage.html">Record Keeping</a>
+    <a href="recordkeeping.html">Record Keeping</a>
   </li>
-  <li>
-    <a href="functionality.html">Functionality</a>
-  </li>
-  <li>
-    <a href="datamodel.html">Data Model</a>
-  </li>
-  <li>
-    <a href="physiology.html">Physiology Simulations</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="datamodel.html">Data Model</a>
+      </li>
+      <li>
+        <a href="functionality.html">Functionality</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Simulations</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="personas.html">Patient Personas</a>
-  </li>
-  <li>
-    <a href="environments.html">Design Considerations</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -132,7 +139,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.4). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.6). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Functionality</h2>
   
 
@@ -152,7 +159,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#phr-functionaity" id="markdown-toc-phr-functionaity">PHR Functionaity</a></li>
   <li><a href="#phr-functional-model-fhir-ized" id="markdown-toc-phr-functional-model-fhir-ized">PHR Functional Model (FHIR-ized)</a></li>
-  <li><a href="#regional-profiles" id="markdown-toc-regional-profiles">Regional Profiles</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
@@ -2129,10 +2135,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="regional-profiles">Regional Profiles</h3>
-
-<p><img src="./MedicalRecordOwnershipLaws.jpg" alt="./MedicalRecordOwnershipLaws.jpg" width="100%" /></p>
-
 <h3 id="references">References</h3>
 
 <p><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88">Personal Health Record System Functional Model</a></p>
@@ -2161,7 +2163,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 18, 2022 10:36-0500">2022-05-18</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 15, 2022 13:55-0600">2022-08-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

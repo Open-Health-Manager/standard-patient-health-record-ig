@@ -52,7 +52,40 @@ Should use [NDJSON format](http://ndjson.org/) and save to a password encrypted 
 
 #### Conformance Testing
 
-For conformance testing with this IG, the primary success critieria is the ability to import/export the .sphr filetype. This entails storing FHIR records in a new-line delimited file (including a cover composition resource, a document manifest, and provenance records as needed), compressing the file with DEFLATE algorithm (as needed), and then signing with an X.509 security certificate (i.e. DNS certificate). 
+For conformance testing with this IG, the primary success critieria is that systems MUST have the ability to import/export the `.sphr` filetype. This entails storing FHIR records in a new-line delimited file (including a cover composition resource, a document manifest, and provenance records as needed), compressing the file with DEFLATE algorithm (as needed), and then signing with an X.509 security certificate (i.e. DNS certificate). 
+
+#### API Endpoints
+
+Systems MAY wish to implement standard APIs for generating a `.phr` or `.sphr` file.  Standard API queries that have been used in other systems are listed below.
+
+```bash
+# export everything from a single-user system as a FHIR Bundle
+GET /Bundle/$export
+
+# export everything from a single-user system as an NDJSON Bulkd Data file
+GET /Bundle/$export?outputFormat=ndjson
+
+# export everything from a single-user system as a PHR file
+GET /Bundle/$export?outputFormat=phr
+
+# export everything from a single-user system as a SPHR file with security
+GET /Bundle/$export?outputFormat=sphr
+
+# export everything from a specific date to current from a single-user system
+GET /Bundle/$export?start=2010
+
+# export everything in a specific date range from a single-user system
+GET /Bundle/$export?start=2010&end=2020-06
+
+# export everything for a specific patient in a multi-user system
+GET /Bundle/$export?patient=Patient/12345
+
+# post a record to another system to be imported (NDJSON format)
+POST /Bundle/$import
+```
+
+Systems MUST post the API endpoints they use in the system's CapabilityStatement.  
+
 
 #### Implementation Guidance  
 

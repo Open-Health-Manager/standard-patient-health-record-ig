@@ -13,10 +13,10 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrImmunization"/>
-  <version value="0.3.4"/>
+  <version value="0.3.6"/>
   <name value="PhrImmunization"/>
   <status value="active"/>
-  <date value="2022-05-18T10:36:35-05:00"/>
+  <date value="2022-08-15T13:55:23-06:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

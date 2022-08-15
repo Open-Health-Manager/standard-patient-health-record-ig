@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.3.4",
+  "version": "0.3.6",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-05-18T10:36:35-05:00",
+  "date": "2022-08-15T13:55:23-06:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -1196,8 +1196,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "datastorage.html",
-          "title": "Storage",
+          "nameUrl": "history.html",
+          "title": "History",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "recordkeeping.html",
+          "title": "Record Keeping",
           "generation": "markdown"
         },
         {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "NutrientOuttake",
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake",
-  "version": "0.3.4",
+  "version": "0.3.6",
   "name": "NutrientOuttake",
   "status": "active",
   "description": "Standard PHR profile of the NutrientOuttake resource.",
