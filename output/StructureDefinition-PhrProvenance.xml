@@ -13,10 +13,10 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProvenance"/>
-  <version value="0.3.6"/>
+  <version value="0.3.8"/>
   <name value="PhrProvenance"/>
   <status value="active"/>
-  <date value="2022-09-21T01:41:51-04:00"/>
+  <date value="2022-09-21T01:58:34-04:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

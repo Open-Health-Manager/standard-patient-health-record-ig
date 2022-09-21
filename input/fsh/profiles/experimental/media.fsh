@@ -7,8 +7,8 @@
 // Description: "Standard PHR profile of the Media resource."
 // Usage: #definition
 
-// Instance: MediaExample
-// InstanceOf: MyMedia
-// Description: "An example of a Media ."
-// * status = #active
-// * content.contentType = Attachment
+// // Instance: MediaExample
+// // InstanceOf: MyMedia
+// // Description: "An example of a Media ."
+// // * status = #active
+// // * content.contentType = Attachment

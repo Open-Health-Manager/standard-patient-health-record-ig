@@ -16,10 +16,10 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedia",
-  "version": "0.3.6",
+  "version": "0.3.8",
   "name": "PhrMedia",
   "status": "active",
-  "date": "2022-09-21T01:41:51-04:00",
+  "date": "2022-09-21T01:58:34-04:00",
   "publisher": "MITRE",
   "contact": [
     {

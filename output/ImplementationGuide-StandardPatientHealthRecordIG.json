@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.3.6",
+  "version": "0.3.8",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-09-21T01:41:51-04:00",
+  "date": "2022-09-21T01:58:34-04:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -385,6 +385,48 @@
         },
         "name": "PhrProvenance",
         "description": "Standard PHR profile of the Provenance resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Environmental"
+        },
+        "name": "Environmental",
+        "description": "Standard PHR profile of the Environmental resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/NutrientOuttake"
+        },
+        "name": "NutrientOuttake",
+        "description": "Standard PHR profile of the NutrientOuttake resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/SocialMedia"
+        },
+        "name": "SocialMedia",
+        "description": "Standard PHR profile of the SocialMedia resource.",
         "exampleBoolean": false
       },
       {

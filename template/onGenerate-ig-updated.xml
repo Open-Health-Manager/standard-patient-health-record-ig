@@ -10,10 +10,10 @@
       </div>
    </text>
    <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/>
-   <version value="0.3.6"/>
+   <version value="0.3.8"/>
    <name value="StandardPatientHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-09-21T01:41:51-04:00"/>
+   <date value="2022-09-21T01:58:34-04:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -30,7 +30,10 @@
 
 
 
-
+      <grouping id="-str-logicalmodel">
+         <name value="Structures: Logical Models"/>
+         <description value="These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources."/>
+      </grouping>
 
 
       <grouping id="-str-profile">
@@ -128,6 +131,51 @@
          <description value="Standard PHR profile of the Provenance resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-Environmental.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/Environmental"/>
+         </reference>
+         <name value="Environmental"/>
+         <description value="Standard PHR profile of the Environmental resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-NutrientOuttake.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/NutrientOuttake"/>
+         </reference>
+         <name value="NutrientOuttake"/>
+         <description value="Standard PHR profile of the NutrientOuttake resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-SocialMedia.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/SocialMedia"/>
+         </reference>
+         <name value="SocialMedia"/>
+         <description value="Standard PHR profile of the SocialMedia resource."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -571,6 +619,21 @@
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-Environmental.html"/>
+               <title value="Environmental"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-NutrientOuttake.html"/>
+               <title value="NutrientOuttake"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-SocialMedia.html"/>
+               <title value="SocialMedia"/>
+               <generation value="generated"/>
+            </page>
             <page>
                <nameUrl value="StructureDefinition-PhrComposition.html"/>
                <title value="PhrComposition"/>

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "StandardPatientHealthRecordIG",
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.3.6",
+  "version": "0.3.8",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
   "publisher": "MITRE",
@@ -61,6 +61,30 @@
         },
         "name": "PhrProvenance",
         "description": "Standard PHR profile of the Provenance resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Environmental"
+        },
+        "name": "Environmental",
+        "description": "Standard PHR profile of the Environmental resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NutrientOuttake"
+        },
+        "name": "NutrientOuttake",
+        "description": "Standard PHR profile of the NutrientOuttake resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SocialMedia"
+        },
+        "name": "SocialMedia",
+        "description": "Standard PHR profile of the SocialMedia resource.",
         "exampleBoolean": false
       },
       {

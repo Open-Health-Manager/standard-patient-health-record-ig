@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"];
-  fhir:ImplementationGuide.version [ fhir:value "0.3.6"];
+  fhir:ImplementationGuide.version [ fhir:value "0.3.8"];
   fhir:ImplementationGuide.name [ fhir:value "StandardPatientHealthRecordIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-09-21T01:41:51-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-21T01:58:34-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -374,6 +374,48 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/Environmental>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Environmental" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Environmental" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Standard PHR profile of the Environmental resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NutrientOuttake" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NutrientOuttake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Standard PHR profile of the NutrientOuttake resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/sphr/StructureDefinition/SocialMedia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SocialMedia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SocialMedia" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Standard PHR profile of the SocialMedia resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -384,7 +426,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - CarePlan" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -398,7 +440,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Consultation Note" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -412,7 +454,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Continuity of Care Document" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -426,7 +468,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Diagnostic Imaging Report" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -440,7 +482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Discharge Summary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -454,7 +496,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - History & Physical" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -468,7 +510,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Condition - Diabetes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +524,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Encounter - Diabetes diagnosis" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -496,7 +538,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Bundle - Medication Reconciliation Bundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -510,7 +552,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Observation - Collection" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -524,7 +566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Operative Note" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -538,7 +580,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Practitioners - Collection" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -552,7 +594,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Procedure Note" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -566,7 +608,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Progress Note" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -580,7 +622,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Referral Note" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -594,7 +636,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Composition - Transfer Summary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -608,7 +650,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - AllergyIntolerance - Sulfonamide" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -622,7 +664,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Immunization - Fluzone" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -636,7 +678,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Patient Demographics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -650,7 +692,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - MedicationStatement - Lisinopril" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -664,7 +706,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Observation - Urinalysis" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -678,7 +720,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Observation - Smoking status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -692,7 +734,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Observation - Body temperature" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -706,7 +748,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization - Acme Labs" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -720,7 +762,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Doe - Procedure - Alcohol rehabilitation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

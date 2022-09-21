@@ -3,7 +3,7 @@
 
 err = 183, warn = 202, info = 14
 IG Publisher Version: 1.1.115 Out of date - current version is 1.2.3
-Generated Wed Sep 21 01:42:26 EDT 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.3.6 (canonical = https://gitlab.mitre.org/awatson/sphr)
+Generated Wed Sep 21 01:59:08 EDT 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.3.8 (canonical = https://gitlab.mitre.org/awatson/sphr)
  Build Errors : 48 / 1 / 0
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/allergyintolerance-allergy-intolerance : 3 / 2 / 1
@@ -32,11 +32,14 @@ Generated Wed Sep 21 01:42:26 EDT 2022. FHIR version 4.0.1 for StandardPatientHe
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/organization-organization-1 : 5 / 1 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/patient-john-doe : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/procedure-procedure-rehab : 1 / 2 / 1
+ /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-Environmental : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-NutrientOuttake : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-PhrComposition : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-PhrDocumentManifest : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-PhrDocumentReference : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-PhrMedia : 0 / 1 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-PhrProvenance : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-SocialMedia : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/undefined.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -502,6 +505,8 @@ WARNING: Organization/organization-1: Organization.meta.profile[0]: Profile refe
 ERROR: Procedure/procedure-rehab: Procedure.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' does not resolve
 WARNING: Procedure/procedure-rehab: Procedure.code.coding[0]: The display "Patient referral for alcoholism rehabilitation (procedure)" is not a valid display for the code {http://snomed.info/sct}38670004 - should be one of ['Referral to alcoholism rehabilitation service', 'Referral for alcoholism rehabilitation', 'Referral to alcoholism rehabilitation service (procedure)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#38670004'
 WARNING: Procedure/procedure-rehab: Procedure.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/StructureDefinition-Environmental.json ==
+== fsh-generated/resources/StructureDefinition-NutrientOuttake.json ==
 == fsh-generated/resources/StructureDefinition-PhrComposition.json ==
 WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PhrDocumentManifest.json ==
@@ -512,3 +517,4 @@ WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/sphr/
 WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedia'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PhrProvenance.json ==
 WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProvenance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-SocialMedia.json ==

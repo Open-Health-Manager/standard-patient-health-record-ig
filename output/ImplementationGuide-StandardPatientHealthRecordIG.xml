@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/>
-  <version value="0.3.6"/>
+  <version value="0.3.8"/>
   <name value="StandardPatientHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-09-21T01:41:51-04:00"/>
+  <date value="2022-09-21T01:58:34-04:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -251,6 +251,39 @@
       </reference>
       <name value="PhrProvenance"/>
       <description value="Standard PHR profile of the Provenance resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Environmental"/>
+      </reference>
+      <name value="Environmental"/>
+      <description value="Standard PHR profile of the Environmental resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NutrientOuttake"/>
+      </reference>
+      <name value="NutrientOuttake"/>
+      <description value="Standard PHR profile of the NutrientOuttake resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SocialMedia"/>
+      </reference>
+      <name value="SocialMedia"/>
+      <description value="Standard PHR profile of the SocialMedia resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
