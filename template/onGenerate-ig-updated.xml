@@ -13,7 +13,7 @@
    <version value="0.3.6"/>
    <name value="StandardPatientHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-08-15T13:55:23-06:00"/>
+   <date value="2022-09-21T01:41:51-04:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>
@@ -30,10 +30,7 @@
 
 
 
-      <grouping id="-str-logicalmodel">
-         <name value="Structures: Logical Models"/>
-         <description value="These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources."/>
-      </grouping>
+
 
 
       <grouping id="-str-profile">
@@ -62,13 +59,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrAllergyIntolerance.html"/>
+            <valueUri value="StructureDefinition-PhrComposition.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/PhrAllergyIntolerance"/>
+            <reference value="StructureDefinition/PhrComposition"/>
          </reference>
-         <name value="PhrAllergyIntolerance"/>
-         <description value="Standard PHR profile of the AllergyIntolerance resource."/>
+         <name value="PhrComposition"/>
+         <description value="Standard PHR profile of the Composition resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -77,13 +74,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrBodyStructure.html"/>
+            <valueUri value="StructureDefinition-PhrDocumentManifest.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/PhrBodyStructure"/>
+            <reference value="StructureDefinition/PhrDocumentManifest"/>
          </reference>
-         <name value="PhrBodyStructure"/>
-         <description value="Standard PHR profile of the BodyStructure resource."/>
+         <name value="PhrDocumentManifest"/>
+         <description value="Standard PHR profile of the DocumentManifest resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -92,13 +89,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrCarePlan.html"/>
+            <valueUri value="StructureDefinition-PhrDocumentReference.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/PhrCarePlan"/>
+            <reference value="StructureDefinition/PhrDocumentReference"/>
          </reference>
-         <name value="PhrCarePlan"/>
-         <description value="Standard PHR profile of the CarePlan resource."/>
+         <name value="PhrDocumentReference"/>
+         <description value="Standard PHR profile of the DocumentReference resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -107,13 +104,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrCareTeam.html"/>
+            <valueUri value="StructureDefinition-PhrMedia.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/PhrCareTeam"/>
+            <reference value="StructureDefinition/PhrMedia"/>
          </reference>
-         <name value="PhrCareTeam"/>
-         <description value="Standard PHR profile of the CareTeam resource."/>
+         <name value="PhrMedia"/>
+         <description value="Standard PHR profile of the Media resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -122,330 +119,15 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrCommunication.html"/>
+            <valueUri value="StructureDefinition-PhrProvenance.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/PhrCommunication"/>
+            <reference value="StructureDefinition/PhrProvenance"/>
          </reference>
-         <name value="PhrCommunication"/>
-         <description value="Standard PHR profile of the Communication resource."/>
+         <name value="PhrProvenance"/>
+         <description value="Standard PHR profile of the Provenance resource."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrCondition.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrCondition"/>
-         </reference>
-         <name value="PhrCondition"/>
-         <description value="Standard PHR profile of the Condition resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrConsent.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrConsent"/>
-         </reference>
-         <name value="PhrConsent"/>
-         <description value="Standard PHR profile of the Consent resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrDevice.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrDevice"/>
-         </reference>
-         <name value="PhrDevice"/>
-         <description value="Standard PHR profile of the Device resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrDiagnosticReport.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrDiagnosticReport"/>
-         </reference>
-         <name value="PhrDiagnosticReport"/>
-         <description value="Standard PHR profile of the DiagnosticReport resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrFamilyMemberHistory.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrFamilyMemberHistory"/>
-         </reference>
-         <name value="PhrFamilyMemberHistory"/>
-         <description value="Standard PHR profile of the FamilyMemberHistory resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrGoal.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrGoal"/>
-         </reference>
-         <name value="PhrGoal"/>
-         <description value="Standard PHR profile of the Goal resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrImmunization.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrImmunization"/>
-         </reference>
-         <name value="PhrImmunization"/>
-         <description value="Standard PHR profile of the Immunization resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrMedication.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrMedication"/>
-         </reference>
-         <name value="PhrMedication"/>
-         <description value="Standard PHR profile of the Medication resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrMedicationStatement.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrMedicationStatement"/>
-         </reference>
-         <name value="PhrMedicationStatement"/>
-         <description value="Standard PHR profile of the MedicationStatement resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrMolecularSequence.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrMolecularSequence"/>
-         </reference>
-         <name value="PhrMolecularSequence"/>
-         <description value="Standard PHR profile of the MolecularSequence resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrObservation.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrObservation"/>
-         </reference>
-         <name value="PhrObservation"/>
-         <description value="Standard PHR profile of the Observation resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrPatient.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrPatient"/>
-         </reference>
-         <name value="PhrPatient"/>
-         <description value="Standard PHR profile of the Patient resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrPractitioner.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrPractitioner"/>
-         </reference>
-         <name value="PhrPractitioner"/>
-         <description value="Standard PHR profile of the Practitioner resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrProcedure.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrProcedure"/>
-         </reference>
-         <name value="PhrProcedure"/>
-         <description value="Standard PHR profile of the Procedure resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrRelatedPerson.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrRelatedPerson"/>
-         </reference>
-         <name value="PhrRelatedPerson"/>
-         <description value="Standard PHR profile of the RelatedPerson resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:resource"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-PhrSpecimen.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/PhrSpecimen"/>
-         </reference>
-         <name value="PhrSpecimen"/>
-         <description value="Standard PHR profile of the Specimen resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-profile"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-Environmental.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/Environmental"/>
-         </reference>
-         <name value="Environmental"/>
-         <description value="Standard PHR profile of the Environmental resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-HealthReceipt.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/HealthReceipt"/>
-         </reference>
-         <name value="HealthReceipt"/>
-         <description value="Standard PHR profile of the HealthReceipt resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-NutrientIntake.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/NutrientIntake"/>
-         </reference>
-         <name value="NutrientIntake"/>
-         <description value="Standard PHR profile of the NutrientIntake resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-NutrientOuttake.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/NutrientOuttake"/>
-         </reference>
-         <name value="NutrientOuttake"/>
-         <description value="Standard PHR profile of the NutrientOuttake resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-SocialMedia.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/SocialMedia"/>
-         </reference>
-         <name value="SocialMedia"/>
-         <description value="Standard PHR profile of the SocialMedia resource."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,156 +202,6 @@
          <name value="Discharge-Summary-Example"/>
          <description value="John Doe - Composition - Discharge Summary"/>
          <exampleBoolean value="true"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="BodyStructure"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="BodyStructure-ExampleBodyStructure.html"/>
-         </extension>
-         <reference>
-            <reference value="BodyStructure/ExampleBodyStructure"/>
-         </reference>
-         <name value="ExampleBodyStructure"/>
-         <description value="John Doe - BodyStructure - Left Foot"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CarePlan"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CarePlan-ExampleCarePlan.html"/>
-         </extension>
-         <reference>
-            <reference value="CarePlan/ExampleCarePlan"/>
-         </reference>
-         <name value="ExampleCarePlan"/>
-         <description value="John Doe - CarePlan - Consolidated"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CareTeam"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CareTeam-ExampleCareTeam.html"/>
-         </extension>
-         <reference>
-            <reference value="CareTeam/ExampleCareTeam"/>
-         </reference>
-         <name value="ExampleCareTeam"/>
-         <description value="John Doe - CareTeam"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Communication"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Communication-ExampleCommunication.html"/>
-         </extension>
-         <reference>
-            <reference value="Communication/ExampleCommunication"/>
-         </reference>
-         <name value="ExampleCommunication"/>
-         <description value="John Doe - Communication - New medication request."/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Consent"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Consent-ExampleConsent.html"/>
-         </extension>
-         <reference>
-            <reference value="Consent/ExampleConsent"/>
-         </reference>
-         <name value="ExampleConsent"/>
-         <description value="John Doe - Consent - Advanced Directive"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Device"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Device-ExampleDevice.html"/>
-         </extension>
-         <reference>
-            <reference value="Device/ExampleDevice"/>
-         </reference>
-         <name value="ExampleDevice"/>
-         <description value="John Doe - Device - Digital Blood Pressure Cuff"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="DiagnosticReport"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="DiagnosticReport-ExampleDiagnosticReport.html"/>
-         </extension>
-         <reference>
-            <reference value="DiagnosticReport/ExampleDiagnosticReport"/>
-         </reference>
-         <name value="ExampleDiagnosticReport"/>
-         <description value="John Doe - DiagnosticReport"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="FamilyMemberHistory"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="FamilyMemberHistory-ExampleFamilyMemberHistory.html"/>
-         </extension>
-         <reference>
-            <reference value="FamilyMemberHistory/ExampleFamilyMemberHistory"/>
-         </reference>
-         <name value="ExampleFamilyMemberHistory"/>
-         <description value="John Doe - FamilyMemberHistory"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="RelatedPerson"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="RelatedPerson-ExampleRelatedPerson.html"/>
-         </extension>
-         <reference>
-            <reference value="RelatedPerson/ExampleRelatedPerson"/>
-         </reference>
-         <name value="ExampleRelatedPerson"/>
-         <description value="John Doe - RelatedPerson - Sister"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Specimen"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Specimen-ExampleSpecimen.html"/>
-         </extension>
-         <reference>
-            <reference value="Specimen/ExampleSpecimen"/>
-         </reference>
-         <name value="ExampleSpecimen"/>
-         <description value="John Doe - Specimen - Urinalysis"/>
-         <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -1026,6 +558,11 @@
             <generation value="markdown"/>
          </page>
          <page>
+            <nameUrl value="downloads.html"/>
+            <title value="Downloads"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="environments.html"/>
             <title value="Design Considerations"/>
             <generation value="markdown"/>
@@ -1035,133 +572,28 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
-               <nameUrl value="StructureDefinition-Environmental.html"/>
-               <title value="Environmental"/>
+               <nameUrl value="StructureDefinition-PhrComposition.html"/>
+               <title value="PhrComposition"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-HealthReceipt.html"/>
-               <title value="HealthReceipt"/>
+               <nameUrl value="StructureDefinition-PhrDocumentManifest.html"/>
+               <title value="PhrDocumentManifest"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-NutrientIntake.html"/>
-               <title value="NutrientIntake"/>
+               <nameUrl value="StructureDefinition-PhrDocumentReference.html"/>
+               <title value="PhrDocumentReference"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-NutrientOuttake.html"/>
-               <title value="NutrientOuttake"/>
+               <nameUrl value="StructureDefinition-PhrMedia.html"/>
+               <title value="PhrMedia"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-SocialMedia.html"/>
-               <title value="SocialMedia"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrAllergyIntolerance.html"/>
-               <title value="PhrAllergyIntolerance"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrBodyStructure.html"/>
-               <title value="PhrBodyStructure"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrCarePlan.html"/>
-               <title value="PhrCarePlan"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrCareTeam.html"/>
-               <title value="PhrCareTeam"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrCommunication.html"/>
-               <title value="PhrCommunication"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrCondition.html"/>
-               <title value="PhrCondition"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrConsent.html"/>
-               <title value="PhrConsent"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrDevice.html"/>
-               <title value="PhrDevice"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrDiagnosticReport.html"/>
-               <title value="PhrDiagnosticReport"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrFamilyMemberHistory.html"/>
-               <title value="PhrFamilyMemberHistory"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrGoal.html"/>
-               <title value="PhrGoal"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrImmunization.html"/>
-               <title value="PhrImmunization"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrMedication.html"/>
-               <title value="PhrMedication"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrMedicationStatement.html"/>
-               <title value="PhrMedicationStatement"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrMolecularSequence.html"/>
-               <title value="PhrMolecularSequence"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrObservation.html"/>
-               <title value="PhrObservation"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrPatient.html"/>
-               <title value="PhrPatient"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrPractitioner.html"/>
-               <title value="PhrPractitioner"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrProcedure.html"/>
-               <title value="PhrProcedure"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrRelatedPerson.html"/>
-               <title value="PhrRelatedPerson"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-PhrSpecimen.html"/>
-               <title value="PhrSpecimen"/>
+               <nameUrl value="StructureDefinition-PhrProvenance.html"/>
+               <title value="PhrProvenance"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1187,56 +619,6 @@
             <page>
                <nameUrl value="Composition-Discharge-Summary-Example.html"/>
                <title value="Discharge-Summary-Example"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="BodyStructure-ExampleBodyStructure.html"/>
-               <title value="ExampleBodyStructure"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CarePlan-ExampleCarePlan.html"/>
-               <title value="ExampleCarePlan"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CareTeam-ExampleCareTeam.html"/>
-               <title value="ExampleCareTeam"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Communication-ExampleCommunication.html"/>
-               <title value="ExampleCommunication"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Consent-ExampleConsent.html"/>
-               <title value="ExampleConsent"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Device-ExampleDevice.html"/>
-               <title value="ExampleDevice"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="DiagnosticReport-ExampleDiagnosticReport.html"/>
-               <title value="ExampleDiagnosticReport"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="FamilyMemberHistory-ExampleFamilyMemberHistory.html"/>
-               <title value="ExampleFamilyMemberHistory"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="RelatedPerson-ExampleRelatedPerson.html"/>
-               <title value="ExampleRelatedPerson"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Specimen-ExampleSpecimen.html"/>
-               <title value="ExampleSpecimen"/>
                <generation value="generated"/>
             </page>
             <page>

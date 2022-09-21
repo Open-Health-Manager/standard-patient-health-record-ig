@@ -1,0 +1,44 @@
+[
+  {
+    "id": "StandardPatientHealthRecordIG",
+    "type": "ImplementationGuide",
+    "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
+    "version": "0.3.6",
+    "name": "StandardPatientHealthRecordIG"
+  },
+  {
+    "id": "PhrComposition",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition",
+    "version": "0.3.6",
+    "name": "PhrComposition"
+  },
+  {
+    "id": "PhrDocumentManifest",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDocumentManifest",
+    "version": "0.3.6",
+    "name": "PhrDocumentManifest"
+  },
+  {
+    "id": "PhrDocumentReference",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDocumentReference",
+    "version": "0.3.6",
+    "name": "PhrDocumentReference"
+  },
+  {
+    "id": "PhrMedia",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedia",
+    "version": "0.3.6",
+    "name": "PhrMedia"
+  },
+  {
+    "id": "PhrProvenance",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProvenance",
+    "version": "0.3.6",
+    "name": "PhrProvenance"
+  }
+]

@@ -1,9 +1,0 @@
-{
-  "resourceType": "CareTeam",
-  "id": "ExampleCareTeam",
-  "meta": {
-    "profile": [
-      "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"
-    ]
-  }
-}

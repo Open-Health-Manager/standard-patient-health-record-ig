@@ -1,0 +1,580 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/sphr/Composition/Procedure-Note-Example> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Procedure-Note-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2018-10-04T19:42:52.061-04:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Procedure-Note";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Procedure-Note>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Procedure-Note-Example\" Version \"1\" Updated \"2018-10-04 07:42:52-0400\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profile: <code>http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Procedure-Note</code></p></div><p><b>identifier</b>: id: 1</p><p><b>status</b>: preliminary</p><p><b>type</b>: Provider-unspecified Procedure note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#28570-0)</span></p><p><b>date</b>: 2016-02-28 09:10:14+0000</p><p><b>author</b>: <a href=\"Practitioner/practitioner-1\">Practitioner/practitioner-1: Ronald Boone, MD</a></p><p><b>title</b>: Procedure Note</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>legal</td><td>2012-01-04 09:10:14+0000</td><td><a href=\"Practitioner/practitioner-1\">Practitioner/practitioner-1: Ronald Boone, MD</a></td></tr></table><p><b>custodian</b>: <a href=\"Organization-organization-1.html\">Organization/organization-1: Community Health and Hospitals</a> \"Acme Labs\"</p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>Colonoscopy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#73761001)</span></td><td>2016-06-15 --&gt; 2016-06-15</td></tr></table></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ];
+  fhir:Composition.status [ fhir:value "preliminary"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:28570-0;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "28570-0" ];
+       fhir:Coding.display [ fhir:value "Provider-unspecified Procedure note" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Patient/john-doe>;
+     fhir:Reference.reference [ fhir:value "Patient/john-doe" ];
+     fhir:Reference.display [ fhir:value "John Doe" ]
+  ];
+  fhir:Composition.date [ fhir:value "2016-02-28T09:10:14Z"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Practitioner/practitioner-1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+     fhir:Reference.display [ fhir:value "Ronald Boone, MD" ]
+  ];
+  fhir:Composition.title [ fhir:value "Procedure Note"];
+  fhir:Composition.confidentiality [ fhir:value "N"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [ fhir:value "legal" ];
+     fhir:Composition.attester.time [ fhir:value "2012-01-04T09:10:14Z"^^xsd:dateTime ];
+     fhir:Composition.attester.party [
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Practitioner/practitioner-1>;
+       fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+       fhir:Reference.display [ fhir:value "Ronald Boone, MD" ]
+     ]
+  ];
+  fhir:Composition.custodian [
+     fhir:link <https://gitlab.mitre.org/awatson/sphr/Organization/organization-1>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-1" ];
+     fhir:Reference.display [ fhir:value "Community Health and Hospitals" ]
+  ];
+  fhir:Composition.event [
+     fhir:index 0;
+     fhir:Composition.event.code [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:73761001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "73761001" ];
+         fhir:Coding.display [ fhir:value "Colonoscopy" ]
+       ]
+     ];
+     fhir:Composition.event.period [
+       fhir:Period.start [ fhir:value "2016-06-15"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2016-06-15"^^xsd:date ]
+     ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Allergies and Intolerances Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:48765-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "48765-2" ];
+         fhir:Coding.display [ fhir:value "Allergies and adverse reactions" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Substance</b></td><td><b>Overall Severity</b></td><td><b>Reaction</b></td><td><b>Reaction Severity</b></td><td><b>Status</b></td></tr><tr><td>Cashew Nut</td><td>Severe</td><td>Anaphylactic reaction</td><td>Mild</td><td>Active</td></tr></table></div>"
+     ];
+     fhir:Composition.section.mode [ fhir:value "snapshot" ];
+     fhir:Composition.section.orderedBy [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/list-order" ];
+         fhir:Coding.code [ fhir:value "event-date" ];
+         fhir:Coding.display [ fhir:value "Sorted by Event Date" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/AllergyIntolerance/allergy-intolerance>;
+       fhir:Reference.reference [ fhir:value "AllergyIntolerance/allergy-intolerance" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Anesthesia Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59774-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59774-0" ];
+         fhir:Coding.display [ fhir:value "Anesthesia" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Conscious sedation with propofol 200 mg IV</p></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Procedure/procedure-rehab>;
+       fhir:Reference.reference [ fhir:value "Procedure/procedure-rehab" ]
+     ], [
+       fhir:index 1;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/MedicationStatement/medication-statement>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/medication-statement" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "Assessment Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:51848-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "51848-0" ];
+         fhir:Coding.display [ fhir:value "Assessment (evaluation)" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Obesity.</p><p>Uncontrolled brittle Type II diabetic.</p><p>Shortness of breath, mild wheezing.</p><p>Pressure ulder on left knee.</p></div>"
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "Assessment and Plan Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:51847-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "51847-2" ];
+         fhir:Coding.display [ fhir:value "Assessment (evaluation) and plan" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Recurrent GI bleed of unknown etiology; hypotension perhaps secondary to this but as likely secondary to polypharmacy</p><p>Acute on chronic anemia secondary to #1.</p><p>Azotemia, acute renal failure with volume loss secondary tom#1.</p><p>Hyperkalemia secondary to #3 and on ACE and K+ supplement.</p><p>Other chronic diagnoses as noted above, currently stable.</p></div>"
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "Procedure Description Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:29554-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "29554-3" ];
+         fhir:Coding.display [ fhir:value "Procedure description" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The patient was brought to the operating room, placed in the supine position, and general anesthesia was induced. A detailed technical narrative of a laparoscopic appendectomy from initial incision to placement of any dressings follows.</p></div>"
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "Procedure Indications Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59768-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59768-2" ];
+         fhir:Coding.display [ fhir:value "Procedure indications" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The procedure is performed for screening in a low risk individual.</p></div>"
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Composition.section.title [ fhir:value "Planned Procedure Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59772-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59772-4" ];
+         fhir:Coding.display [ fhir:value "Planned procedure" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Colonoscopy</p></div>"
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Composition.section.title [ fhir:value "Procedure Disposition Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59775-7;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59775-7" ];
+         fhir:Coding.display [ fhir:value "Procedure disposition" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The patient was taken to the Endoscopy Recovery Unit in stable condition.</p></div>"
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Composition.section.title [ fhir:value "Procedure Estimated Blood Loss Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59770-8;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59770-8" ];
+         fhir:Coding.display [ fhir:value "Procedure estimated blood loss" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Minimal</p></div>"
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Composition.section.title [ fhir:value "Procedure Findings Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59776-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59776-5" ];
+         fhir:Coding.display [ fhir:value "Procedure findings" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>A 6 mm sessile polyp was found in the ascending colon and removed by snare, no cautery. Bleeding was controlled. Moderate diverticulosis and hemorrhoids were incidentally noted.</p></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Condition/condition-problem>;
+       fhir:Reference.reference [ fhir:value "Condition/condition-problem" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Composition.section.title [ fhir:value "Procedure Implants Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59771-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59771-6" ];
+         fhir:Coding.display [ fhir:value "Procedure implants" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>No implants were placed.</p></div>"
+     ]
+  ], [
+     fhir:index 11;
+     fhir:Composition.section.title [ fhir:value "Procedure Specimens Taken Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59773-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59773-2" ];
+         fhir:Coding.display [ fhir:value "Procedure specimens taken" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ascending colon polyp</p></div>"
+     ]
+  ], [
+     fhir:index 12;
+     fhir:Composition.section.title [ fhir:value "Postprocedure Diagnosis Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59769-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59769-0" ];
+         fhir:Coding.display [ fhir:value "Postprocedure diagnosis" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sigmoid diverticulosis, moderate</p><p>Internal hemorrhoids</p><p>Colon polyp, 6mm, ascending colon</p></div>"
+     ]
+  ], [
+     fhir:index 13;
+     fhir:Composition.section.title [ fhir:value "Chief Complaint and Reason for Visit Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:46239-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "46239-0" ];
+         fhir:Coding.display [ fhir:value "Chief complaint and reason for visit" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Cramping, bloating, and constipation.</p></div>"
+     ]
+  ], [
+     fhir:index 14;
+     fhir:Composition.section.title [ fhir:value "Chief Complaint Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10154-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10154-3" ];
+         fhir:Coding.display [ fhir:value "Chief complaint" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Dark Stools</p></div>"
+     ]
+  ], [
+     fhir:index 15;
+     fhir:Composition.section.title [ fhir:value "Complications Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:55109-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "55109-3" ];
+         fhir:Coding.display [ fhir:value "Complications" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Asthmatic symptoms while under general anesthesia.</p></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Observation/observation-smoker>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-smoker" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:Composition.section.title [ fhir:value "Family History Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10157-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10157-6" ];
+         fhir:Coding.display [ fhir:value "History of family member diseases" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Relationship</b></td><td><b>Diagnosis</b></td><td><b>Age at Onset</b></td></tr><tr><td>Father</td><td>Myocardial Infarction(cause of Death)</td><td>57</td></tr><tr><td>Father</td><td>Diabetes</td><td>40</td></tr></table></div>"
+     ]
+  ], [
+     fhir:index 17;
+     fhir:Composition.section.title [ fhir:value "History of Past Illness Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11348-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11348-0" ];
+         fhir:Coding.display [ fhir:value "History of past illness" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Problem Name</b></td><td><b>Type</b></td><td><b>Onset Date</b></td><td><b>Abatement Date</b></td><td><b>Status</b></td></tr><tr><td>Fever</td><td>Condition</td><td>2016-04-01</td><td>2016-04-14</td><td>Complete</td></tr></table></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Condition/condition-problem>;
+       fhir:Reference.reference [ fhir:value "Condition/condition-problem" ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:Composition.section.title [ fhir:value "History of Present Illness Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10164-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10164-2" ];
+         fhir:Coding.display [ fhir:value "History of present illness" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This patient was only recently discharged for a recurrent GI bleed as described below.</p><p>He presented to the ER today c/o a dark stool yesterday but a normal brown stool today. On exam he was hypotensive in the 80?s resolved after .... .... ....</p><p>Lab at discharge: Glucose 112, BUN 16, creatinine 1.1, electrolytes normal. H. pylori antibody pending. Admission hematocrit 16%, discharge hematocrit 29%. WBC 7300, platelet count 256,000. Urinalysis normal. Urine culture: No growth. INR 1.1, PTT 40.</p><p>He was transfused with 6 units of packed red blood cells with .... .... ....</p><p>GI evaluation 12 September: Colonoscopy showed single red clot in .... ........</p></div>"
+     ]
+  ], [
+     fhir:index 19;
+     fhir:Composition.section.title [ fhir:value "Medical (General) History Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11329-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11329-0" ];
+         fhir:Coding.display [ fhir:value "Medical (general) history" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Stomach cramps</p></div>"
+     ]
+  ], [
+     fhir:index 20;
+     fhir:Composition.section.title [ fhir:value "Medication Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10160-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10160-0" ];
+         fhir:Coding.display [ fhir:value "History of Medication Use" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Medication</b></td><td><b>Directions</b></td><td><b>Start Date</b></td><td><b>Status</b></td><td><b>Indications</b></td><td><b>Fill Instructions</b></td></tr><tr><td>Amoxicillin</td><td>Amoxicillin Powder, for Suspension 250mg/5ml</td><td>20160401</td><td>Active</td><td>Pneumonia</td><td>Generic substitution allowed</td></tr></table></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/MedicationStatement/medication-statement>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/medication-statement" ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:Composition.section.title [ fhir:value "Physical Exam Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:29545-1;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "29545-1" ];
+         fhir:Coding.display [ fhir:value "Physical findings" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>HEENT: All normal to examination.</p><p>&gt;HEART: RRR, no murmur.</p><p>THORAX &amp; LUNGS: Clear without rhonchi or wheeze.</p><p>ABDOMEN: Marked distension and tenderness, slightly obese, pos bowelsounds.</p><p>BACK: Normal to inspection and palpation, without tenderness; no presacral edema.</p><p>EXTREMITIES: Doughy edema bilaterally, chronic stasis changes, no asymmetrical swelling.</p></div>"
+     ]
+  ], [
+     fhir:index 22;
+     fhir:Composition.section.title [ fhir:value "Plan of Treatment Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:18776-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "18776-5" ];
+         fhir:Coding.display [ fhir:value "Plan of treatment" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Planned Activity</b></td><td><b>Period</b></td><td><b>Status</b></td></tr><tr><td>Colonoscopy</td><td>2010/08/16 - 2010/08/16</td><td>Completed</td></tr><tr><td>Recommendation to Exercise</td><td>2015/10/29</td><td>Ongoing</td></tr></table></div>"
+     ]
+  ], [
+     fhir:index 23;
+     fhir:Composition.section.title [ fhir:value "Procedures Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:47519-4;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "47519-4" ];
+         fhir:Coding.display [ fhir:value "History of procedures" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Procedure Name</b></td><td><b>Body Site</b></td><td><b>Performer</b></td><td><b>Date Performed</b></td><td><b>Reason</b></td></tr><tr><td>Appendectomy (Procedure)</td><td>Abdomen</td><td>Dr. Adam Everyman</td><td>20160615</td><td>Generalized abdominal pain 24 hours. Localized in RIF with rebound and guarding</td></tr></table></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Procedure/procedure-rehab>;
+       fhir:Reference.reference [ fhir:value "Procedure/procedure-rehab" ]
+     ]
+  ], [
+     fhir:index 24;
+     fhir:Composition.section.title [ fhir:value "Reason for Visit Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:29299-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "29299-5" ];
+         fhir:Coding.display [ fhir:value "Reason for visit" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Tenderness of lower abdomen</p></div>"
+     ]
+  ], [
+     fhir:index 25;
+     fhir:Composition.section.title [ fhir:value "Review of Systems Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10187-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10187-3" ];
+         fhir:Coding.display [ fhir:value "Review of systems" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Patient denies recent history of fever or malaise. Positive for weakness and shortness of breath. Several episodes of abdominal tenderness. No recent headaches. Positive for osteoarthritis in hips, knees and hands.</p></div>"
+     ]
+  ], [
+     fhir:index 26;
+     fhir:Composition.section.title [ fhir:value "Social History Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:29762-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "29762-2" ];
+         fhir:Coding.display [ fhir:value "Social history" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td><b>Social History Element</b></td><td><b>Description</b></td><td><b>Effective Dates</b></td></tr><tr><td>Smoking</td><td>1 pack tobacco per day</td><td>2005/05/01 - 2010/02/28</td></tr></table></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://gitlab.mitre.org/awatson/sphr/Observation/observation-smoker>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-smoker" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/sphr/Composition/Procedure-Note-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,81 @@
+{
+  "package": "StandardPatientHealthRecordIG",
+  "version": "0.3.6",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {
+    "Composition": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition",
+        "title": "PhrComposition"
+      }
+    ],
+    "DocumentManifest": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDocumentManifest",
+        "title": "PhrDocumentManifest"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDocumentReference",
+        "title": "PhrDocumentReference"
+      }
+    ],
+    "Media": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedia",
+        "title": "PhrMedia"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProvenance",
+        "title": "PhrProvenance"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch": [
+      "Composition",
+      "Organization"
+    ],
+    "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path": [
+      "Composition",
+      "Organization"
+    ]
+  }
+}

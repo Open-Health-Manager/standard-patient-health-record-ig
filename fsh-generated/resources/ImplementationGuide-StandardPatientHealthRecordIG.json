@@ -25,210 +25,42 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/PhrAllergyIntolerance"
+          "reference": "StructureDefinition/PhrComposition"
         },
-        "name": "PhrAllergyIntolerance",
-        "description": "Standard PHR profile of the AllergyIntolerance resource.",
+        "name": "PhrComposition",
+        "description": "Standard PHR profile of the Composition resource.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PhrBodyStructure"
+          "reference": "StructureDefinition/PhrDocumentManifest"
         },
-        "name": "PhrBodyStructure",
-        "description": "Standard PHR profile of the BodyStructure resource.",
+        "name": "PhrDocumentManifest",
+        "description": "Standard PHR profile of the DocumentManifest resource.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PhrCarePlan"
+          "reference": "StructureDefinition/PhrDocumentReference"
         },
-        "name": "PhrCarePlan",
-        "description": "Standard PHR profile of the CarePlan resource.",
+        "name": "PhrDocumentReference",
+        "description": "Standard PHR profile of the DocumentReference resource.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PhrCareTeam"
+          "reference": "StructureDefinition/PhrMedia"
         },
-        "name": "PhrCareTeam",
-        "description": "Standard PHR profile of the CareTeam resource.",
+        "name": "PhrMedia",
+        "description": "Standard PHR profile of the Media resource.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/PhrCommunication"
+          "reference": "StructureDefinition/PhrProvenance"
         },
-        "name": "PhrCommunication",
-        "description": "Standard PHR profile of the Communication resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrCondition"
-        },
-        "name": "PhrCondition",
-        "description": "Standard PHR profile of the Condition resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrConsent"
-        },
-        "name": "PhrConsent",
-        "description": "Standard PHR profile of the Consent resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrDevice"
-        },
-        "name": "PhrDevice",
-        "description": "Standard PHR profile of the Device resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrDiagnosticReport"
-        },
-        "name": "PhrDiagnosticReport",
-        "description": "Standard PHR profile of the DiagnosticReport resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrFamilyMemberHistory"
-        },
-        "name": "PhrFamilyMemberHistory",
-        "description": "Standard PHR profile of the FamilyMemberHistory resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrGoal"
-        },
-        "name": "PhrGoal",
-        "description": "Standard PHR profile of the Goal resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrImmunization"
-        },
-        "name": "PhrImmunization",
-        "description": "Standard PHR profile of the Immunization resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrMedication"
-        },
-        "name": "PhrMedication",
-        "description": "Standard PHR profile of the Medication resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrMedicationStatement"
-        },
-        "name": "PhrMedicationStatement",
-        "description": "Standard PHR profile of the MedicationStatement resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrMolecularSequence"
-        },
-        "name": "PhrMolecularSequence",
-        "description": "Standard PHR profile of the MolecularSequence resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrObservation"
-        },
-        "name": "PhrObservation",
-        "description": "Standard PHR profile of the Observation resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrPatient"
-        },
-        "name": "PhrPatient",
-        "description": "Standard PHR profile of the Patient resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrPractitioner"
-        },
-        "name": "PhrPractitioner",
-        "description": "Standard PHR profile of the Practitioner resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrProcedure"
-        },
-        "name": "PhrProcedure",
-        "description": "Standard PHR profile of the Procedure resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrRelatedPerson"
-        },
-        "name": "PhrRelatedPerson",
-        "description": "Standard PHR profile of the RelatedPerson resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/PhrSpecimen"
-        },
-        "name": "PhrSpecimen",
-        "description": "Standard PHR profile of the Specimen resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/Environmental"
-        },
-        "name": "Environmental",
-        "description": "Standard PHR profile of the Environmental resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HealthReceipt"
-        },
-        "name": "HealthReceipt",
-        "description": "Standard PHR profile of the HealthReceipt resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NutrientIntake"
-        },
-        "name": "NutrientIntake",
-        "description": "Standard PHR profile of the NutrientIntake resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NutrientOuttake"
-        },
-        "name": "NutrientOuttake",
-        "description": "Standard PHR profile of the NutrientOuttake resource.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/SocialMedia"
-        },
-        "name": "SocialMedia",
-        "description": "Standard PHR profile of the SocialMedia resource.",
+        "name": "PhrProvenance",
+        "description": "Standard PHR profile of the Provenance resource.",
         "exampleBoolean": false
       },
       {
@@ -270,86 +102,6 @@
         "name": "Discharge-Summary-Example",
         "description": "John Doe - Composition - Discharge Summary",
         "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "BodyStructure/ExampleBodyStructure"
-        },
-        "name": "ExampleBodyStructure",
-        "description": "John Doe - BodyStructure - Left Foot",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"
-      },
-      {
-        "reference": {
-          "reference": "CarePlan/ExampleCarePlan"
-        },
-        "name": "ExampleCarePlan",
-        "description": "John Doe - CarePlan - Consolidated",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
-      },
-      {
-        "reference": {
-          "reference": "CareTeam/ExampleCareTeam"
-        },
-        "name": "ExampleCareTeam",
-        "description": "John Doe - CareTeam",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"
-      },
-      {
-        "reference": {
-          "reference": "Communication/ExampleCommunication"
-        },
-        "name": "ExampleCommunication",
-        "description": "John Doe - Communication - New medication request.",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"
-      },
-      {
-        "reference": {
-          "reference": "Consent/ExampleConsent"
-        },
-        "name": "ExampleConsent",
-        "description": "John Doe - Consent - Advanced Directive",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"
-      },
-      {
-        "reference": {
-          "reference": "Device/ExampleDevice"
-        },
-        "name": "ExampleDevice",
-        "description": "John Doe - Device - Digital Blood Pressure Cuff",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/ExampleDiagnosticReport"
-        },
-        "name": "ExampleDiagnosticReport",
-        "description": "John Doe - DiagnosticReport",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"
-      },
-      {
-        "reference": {
-          "reference": "FamilyMemberHistory/ExampleFamilyMemberHistory"
-        },
-        "name": "ExampleFamilyMemberHistory",
-        "description": "John Doe - FamilyMemberHistory",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"
-      },
-      {
-        "reference": {
-          "reference": "RelatedPerson/ExampleRelatedPerson"
-        },
-        "name": "ExampleRelatedPerson",
-        "description": "John Doe - RelatedPerson - Sister",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"
-      },
-      {
-        "reference": {
-          "reference": "Specimen/ExampleSpecimen"
-        },
-        "name": "ExampleSpecimen",
-        "description": "John Doe - Specimen - Urinalysis",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"
       },
       {
         "reference": {
@@ -557,6 +309,11 @@
         {
           "nameUrl": "personas.html",
           "title": "Patient Personas",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         },
         {

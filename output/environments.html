@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Design Considerations - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.3.6 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="recordkeeping.html">Record Keeping</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="datamodel.html">Data Model</a>
+      </li>
+      <li>
+        <a href="functionality.html">Functionality</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Simulations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="personas.html">Patient Personas</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Design Considerations</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.6). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Design Considerations</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#smart-materials--haptics" id="markdown-toc-smart-materials--haptics">Smart Materials &amp; Haptics</a></li>
+  <li><a href="#bedside-computing" id="markdown-toc-bedside-computing">Bedside Computing</a></li>
+  <li><a href="#water-closet" id="markdown-toc-water-closet">Water Closet</a></li>
+  <li><a href="#kitchen--pantry" id="markdown-toc-kitchen--pantry">Kitchen &amp; Pantry</a></li>
+  <li><a href="#travel" id="markdown-toc-travel">Travel</a></li>
+  <li><a href="#data-intaketransfer" id="markdown-toc-data-intaketransfer">Data Intake/Transfer</a></li>
+  <li><a href="#proximity-awareness--near-field-communications" id="markdown-toc-proximity-awareness--near-field-communications">Proximity Awareness &amp; Near Field Communications</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+</div>
+<p>When designing products, services, and software that incorporates a patient health record, be careful about the assumptions made about how laptop computers and smartphones are used.  This guide encourages you to think in terms of human behaviors and haptics, and how patients will want to interact with these system.  Patient practices and preferences may not always align with what is generally available on the consumer market.  Classic examples are deaf and blind users, who may need screen readers or voice dictation systems.  Other examples might include patients confined to bed or wheelchairs, or with limited cognitive function.</p>
+
+<h3 id="smart-materials--haptics">Smart Materials &amp; Haptics</h3>
+
+<p>If you’ve not seen the Day of Glass videos, take a moment to look through the vision road map for Corning Inc, published in 2011.  The field of material science and smart glass has long been telling us that they have the capability to embed smart interfaces in any number of architectural structures and appliances.  Take this vision seriously, and let it inform how a health record may be designed.</p>
+
+<p><a href="https://www.youtube.com/watch?v=6Cf7IL_eZ38">Corning Day Made of Glass</a></p>
+
+<p>With an understanding that there isn’t necessarily a ‘here’ and ‘there’ as in the traditional server/client EMR model.  Rather, there is ‘here’, where the patient is with their smart phone.  And the surrounding environment comes to life with the help of digital health assistants and software agents.</p>
+
+<h3 id="bedside-computing">Bedside Computing</h3>
+<p><a name="l324">​</a><img src="./Design-DayMadeOfGlass-BedsideComputing.jpg" alt="./Design-DayMadeOfGlass-BedsideComputing.jpg" width="100%"/></p>
+<blockquote>
+  <p>Architectural display glass in the bedroom, acting as alarm clock and digital software assistant.   Day Made of Glass.  Copyright Corning.</p>
+</blockquote>
+
+<p>Patients will often wish to access their patient health records from the comfort and security of their own bed or bedroom.  Assuming the presence of a mouse or VR headset or other input devices may not be realistic.  However, technologies like Bluetooth can allow software to connect to nearby speakers, microphones, home automation hubs, and voice activated home assistants.</p>
+
+<h3 id="water-closet">Water Closet</h3>
+<p><a name="l339">​</a><img src="./Design-DayMadeOfGlass-WaterCloset.jpg" alt="./Design-DayMadeOfGlass-WaterCloset.jpg" width="100%"/></p>
+<blockquote>
+  <p>Medical home water closet using architectural glass.   Day Made of Glass.  Copyright Corning.</p>
+</blockquote>
+
+<p>Healthcare can be wet and messy with bodily fluids, and a significant amount of patient hygiene and healthcare may happen in a water closet or bathroom.  Think about how user interfaces may be integrated into wet rooms, such as bluetooth enabled weight scales or video screens integrated into medical cabinet mirrors.</p>
+
+<h3 id="kitchen--pantry">Kitchen &amp; Pantry</h3>
+<p><a name="l354">​</a><img src="./Design-DayMadeOfGlass-Kitchen.jpg" alt="./Design-DayMadeOfGlass-Kitchen.jpg" width="100%"/></p>
+<blockquote>
+  <p>Nutrition intake tracking in a smart kitchen.  Day Made of Glass.  Copyright Corning.</p>
+</blockquote>
+
+<p>Modern medicine (and pharmacies) trace their pedigree back to the Worshipful Company of Grocers in England, and patients to this day spend a disproportianate amount of their healthcare efforts in managing dietary needs and restrictions.  Whether it be foods to avoid due to allergies, or diet regimines to manage obesity or autoimmune conditions, or meeting caloric intake needs for sports competitions, much of healthcare is centered around the kitchen and people’s eating (and voiding) habits.  Design of PHRs should anticipate continued development of smart refridgerators, food delivery services, and a calorie economy.</p>
+
+<h3 id="travel">Travel</h3>
+<p><a name="l369">​</a><img src="./Design-DayMadeOfGlass-PathRouting.jpg" alt="./Design-DayMadeOfGlass-PathRouting.jpg" width="100%"/></p>
+<blockquote>
+  <p>AI assisted path planning.   Day Made of Glass.  Copyright Corning.</p>
+</blockquote>
+
+<p>Since the Covid19 pandemic, concerns around quarantines and social mobility have been brought to the public conscious through vaccine passports.  While vaccine passports have been around for nearly 100 years, and are commonly used as a baseline criteria for international travel and registration in public schools, many citizens have expressed anxiety over this technology being misused to restrict travel of otherwise healthy individuals.  Design of PHRs should anticipate their use in non-healthcare settings, and how they might be used while traveling or when encountering security and border services.</p>
+
+<h3 id="data-intaketransfer">Data Intake/Transfer</h3>
+<p><a name="l384">​</a><img src="./Design-DayMadeOfGlass-DataImportExport.jpg" alt="./Design-DayMadeOfGlass-DataImportExport.jpg" width="100%"/></p>
+<blockquote>
+  <p>Import/export of a patient smartphone using near field communications and architectural surface glass.  Day Made of Glass.  Copyright Corning.</p>
+</blockquote>
+
+<p>Many architects and developers consider making data available ‘over the wire’ via RESTful interfaces to be sufficient for all of their data transfer needs.  The thinking being that remote data fetch of patient health information (PHI) from an EHR solves the majority of use cases around missing or inaccessible data.  This thinking relies on a number of ableist assumptions, however, such as the patient being awake and cogent (i.e. not unconscious in the emergency room).  Or that the patient is old enough to have a smartphone (i.e. not an infant or toddler).  Or that the patient isn’t senile or have other cognitive difficults (i.e. not having a stroke).  As such, it’s critically important that PHR designers think about how data is transferred into/out of the PHR, especially in “Break the Glass” scenarios used by Emergency Responders and during Intake Procedures.  Technologies like Bluetooth, NFC tags, QR codes (SMART Cards), and related technologies offer many design opportunities for streamlining the transfer of data at the point of care, without having to go to a computer terminal and search for URLs and juggle usernames and passwords.</p>
+
+<h3 id="proximity-awareness--near-field-communications">Proximity Awareness &amp; Near Field Communications</h3>
+<p><a name="l399">​</a><img src="./Design-DayMadeOfGlass-ProximityDataTransfer.jpg" alt="./Design-DayMadeOfGlass-ProximityDataTransfer.jpg" width="100%"/></p>
+<blockquote>
+  <p>Proximity data transfer using near field communications.   Day Made of Glass.  Copyright Corning.</p>
+</blockquote>
+
+<p>The holy grail of clinical informatics is ‘getting the right patient data to the right people at the right time’.  While not a perfect heuristic, there’s a case to be made that healthcare is local, that healthcare data fundamentally exists in a geospatial context, and therefore is subject to the cartography Rule of Proximity that geospatially proximal objects are more related than distant objects.  To this end, there is an argument that modern PHRs should be geospatially aware and have some awareness of proximity detection to other PHRs and clinical systems so that data can be fluidly transferred to other devices.  The rational being that clinicians who are in physical proximity to patients are  likely to be caregivers, and therefore likely to need access to patient data.</p>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://www.youtube.com/watch?v=6Cf7IL_eZ38">Corning Day Made of Glass</a></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 01:41-0400">2022-09-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
