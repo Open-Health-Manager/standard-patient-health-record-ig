@@ -4,8 +4,8 @@ One of the most challenging aspects of programming a Personal Health Record is d
 
 ### Sandbox Patients  
 
-- [JohnDoe.phr](JohnDoe.phr)
-
+- [JohnDoe.phr](JohnDoe.phr)  
+- [TimmySmart.phr](TimmySmart-FosterCareTimeline.phr)   
 
 ### Patient Journeys  
 
