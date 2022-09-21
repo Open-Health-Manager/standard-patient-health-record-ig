@@ -2,7 +2,10 @@
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
 
-Profile: PhrMedication
-Parent: Medication
-Description: "Standard PHR profile of the Medication resource."
+Profile: PhrComposition
+Parent: Composition
+Description: "Standard PHR profile of the Composition resource."
 // Usage: #definition
+
+
+

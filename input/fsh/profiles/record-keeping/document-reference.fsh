@@ -2,8 +2,7 @@
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
 
-Logical: Environmental
-Parent: DomainResource
-Description: "Standard PHR profile of the Environmental resource."
+Profile: PhrDocumentReference
+Parent: DocumentReference
+Description: "Standard PHR profile of the DocumentReference resource."
 // Usage: #definition
-

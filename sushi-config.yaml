@@ -100,6 +100,8 @@ pages:
     title: Physiology Simulations
   personas.md:
     title: Patient Personas
+  downloads.md:
+    title: Downloads
   environments.md:
     title: Design Considerations
 
