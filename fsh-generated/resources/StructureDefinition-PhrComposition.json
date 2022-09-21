@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "name": "PhrComposition",
   "status": "active",
   "description": "Standard PHR profile of the Composition resource.",
