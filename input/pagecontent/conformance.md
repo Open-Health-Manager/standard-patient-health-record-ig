@@ -1,5 +1,3 @@
-### Conformance Expectations
-
 This implementation guide was developed through meta-analysis of dozens of other guides, journal liturature, and an environment surveys of the PHR market.  Implementators may find the following implementation guides of particular interest.
 
 In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” are to be interpreted as described in RFC2119.

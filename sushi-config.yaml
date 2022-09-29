@@ -9,7 +9,7 @@ name: StandardPatientHealthRecordIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.4.0
+version: 0.4.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -77,11 +77,13 @@ publisher:
 menu:
   Home: index.html
   Record Keeping: recordkeeping.html
+  Record Lifecycle: recordlifecycle.html
   Conformance: conformance.html
+  Data Model: datamodel.html
+  Functional Model: functionality.html
   Supplemental:
     History: history.html
-    Data Model: datamodel.html
-    Functional Model: functionality.html
+    Security: security.html
     Physiology Simulations: physiology.html
   Patient Personas: personas.html
   Artifacts: artifacts.html
@@ -95,12 +97,16 @@ pages:
     title: Conformance Recommendations
   recordkeeping.md:
     title: Record Keeping
+  recordlifecycle.md:
+    title: Record Lifecycle
   functionality.md:
     title: Functional Model
   datamodel.md:
     title: Data Model
   physiology.md:
     title: Physiology Simulations
+  security.md:
+    title: Security
   personas.md:
     title: Patient Personas
   downloads.md:
