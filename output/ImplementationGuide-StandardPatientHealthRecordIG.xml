@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/>
-  <version value="0.3.10"/>
+  <version value="0.4.1"/>
   <name value="StandardPatientHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-09-28T23:23:22-07:00"/>
+  <date value="2022-09-29T00:03:59-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -355,6 +355,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="recordlifecycle.html"/>
+        <title value="Record Lifecycle"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="functionality.html"/>
         <title value="Functional Model"/>
         <generation value="markdown"/>
@@ -367,6 +372,11 @@
       <page>
         <nameUrl value="physiology.html"/>
         <title value="Physiology Simulations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
         <generation value="markdown"/>
       </page>
       <page>

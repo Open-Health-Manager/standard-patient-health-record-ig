@@ -19,10 +19,10 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition"/>
-  <version value="0.3.10"/>
+  <version value="0.4.1"/>
   <name value="PhrComposition"/>
   <status value="active"/>
-  <date value="2022-09-28T23:23:22-07:00"/>
+  <date value="2022-09-29T00:03:59-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

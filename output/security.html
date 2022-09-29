@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Security - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.4.1 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="recordkeeping.html">Record Keeping</a>
+  </li>
+  <li>
+    <a href="recordlifecycle.html">Record Lifecycle</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functional Model</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="security.html">Security</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Simulations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="personas.html">Patient Personas</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Security</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.4.1). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Security</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<blockquote>
+  <p>Work in progress.  Content to be determined.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th style="text-align: left">Header Name</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TI.1</td>
+      <td style="text-align: left">Security</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.1</td>
+      <td style="text-align: left">Entity Authentication</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.2</td>
+      <td style="text-align: left">Entity Authorization</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.3</td>
+      <td style="text-align: left">Entity Access Control</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.3.1</td>
+      <td style="text-align: left">Emergency Access Control</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.4</td>
+      <td style="text-align: left">Patient Access Management</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.5</td>
+      <td style="text-align: left">Non-Repudiation</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.6</td>
+      <td style="text-align: left">Secure Data Exchange</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.7</td>
+      <td style="text-align: left">Secure Data Routing</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.8</td>
+      <td style="text-align: left">Patient Privacy and Confidentiality</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.8.1</td>
+      <td style="text-align: left">Redact Patient Identifying Information</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.8.2</td>
+      <td style="text-align: left">Protect Individual Patient Identity</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.9</td>
+      <td style="text-align: left">System Operation Measurements</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.10</td>
+      <td style="text-align: left">Service Availability</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.1.11</td>
+      <td style="text-align: left">Trusted Information Exchange Environment</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2</td>
+      <td style="text-align: left">Audit</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1</td>
+      <td style="text-align: left">Audit Triggers</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.1</td>
+      <td style="text-align: left">Record Entry Audit Triggers</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2</td>
+      <td style="text-align: left">Security Audit Triggers</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.1</td>
+      <td style="text-align: left">Security Event Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.2</td>
+      <td style="text-align: left">User Authentication to the System (Start user session) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.3</td>
+      <td style="text-align: left">User Authentication (System Prompt for Password Change) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.4</td>
+      <td style="text-align: left">User Request to Change Password Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.5</td>
+      <td style="text-align: left">User Log Out (End user session) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.6</td>
+      <td style="text-align: left">User Access (Successful) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.7</td>
+      <td style="text-align: left">User Attempts to Access Data (Unsuccessful – Access Denied) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.8</td>
+      <td style="text-align: left">Extraordinary User Access (Break the Glass) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.2.9</td>
+      <td style="text-align: left">User Permissions (Authorization) Security Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3</td>
+      <td style="text-align: left">System Audit Triggers</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.1</td>
+      <td style="text-align: left">System Event System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.2</td>
+      <td style="text-align: left">System Started System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.3</td>
+      <td style="text-align: left">Back Up Started System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.4</td>
+      <td style="text-align: left">Back Up Completed System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.5</td>
+      <td style="text-align: left">Back Up Recovery Started System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.6</td>
+      <td style="text-align: left">Back Up Recovery Completed System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.7</td>
+      <td style="text-align: left">Batch Job Started System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.8</td>
+      <td style="text-align: left">Batch Job Completed System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.9</td>
+      <td style="text-align: left">Maintenance Started System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.10</td>
+      <td style="text-align: left">Maintenance Completed System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.11</td>
+      <td style="text-align: left">Resource Usage System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.12</td>
+      <td style="text-align: left">System Maintenance Events -Local Access System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.13</td>
+      <td style="text-align: left">System Maintenance Events - Remote Access System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.14</td>
+      <td style="text-align: left">System Maintenance - PHR or Clinical Software System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.15</td>
+      <td style="text-align: left">System Maintenance - Codes, Vocabulary, Knowledge, Rules System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.3.16</td>
+      <td style="text-align: left">Data Corruption System Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.4</td>
+      <td style="text-align: left">Clinical Audit Triggers</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.4.1</td>
+      <td style="text-align: left">Clinical Alerts Clinical Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.4.2</td>
+      <td style="text-align: left">Acknowledgements of Clinically Significant Report Changes Clinical Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.1.4.3</td>
+      <td style="text-align: left">Disable Decision Support Alerts Clinical Audit Trigger</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.2</td>
+      <td style="text-align: left">Audit Log Management</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.2.1</td>
+      <td style="text-align: left">Audit Log Indelibility</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.2.3</td>
+      <td style="text-align: left">Audit Notification and Review</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.3</td>
+      <td style="text-align: left">Registry and Directory Services</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.4</td>
+      <td style="text-align: left">Standard Terminology and Terminology Services</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.4.1</td>
+      <td style="text-align: left">Standard Terminology and Terminology Models</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.4.2</td>
+      <td style="text-align: left">Maintenance and Versioning of Standard Terminologies</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.4.3</td>
+      <td style="text-align: left">Terminology Mapping</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5</td>
+      <td style="text-align: left">Standards-Based Interoperability</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.1</td>
+      <td style="text-align: left">Application, Structured-Message, and Structured-Document Interchange Standards</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.1.1</td>
+      <td style="text-align: left">Application Interchange Standards</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.1.2</td>
+      <td style="text-align: left">Structured-Document Interchange Standards</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.1.3</td>
+      <td style="text-align: left">Structured-Message Interchange Standards</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.2</td>
+      <td style="text-align: left">Interchange Standards Versioning and Maintenance</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.3</td>
+      <td style="text-align: left">Standards-Based Application Integration</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.4</td>
+      <td style="text-align: left">Interchange Agreements</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.5.5</td>
+      <td style="text-align: left">System Integration</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.6</td>
+      <td style="text-align: left">Business Rules Management</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.7</td>
+      <td style="text-align: left">Workflow Management</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.8</td>
+      <td style="text-align: left">Database Backup and Recovery</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.9</td>
+      <td style="text-align: left">System Management Operations and Performance</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.10</td>
+      <td style="text-align: left">Standard or Preferred Clinical Models and Clinical Model Services</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.10.1</td>
+      <td style="text-align: left">Standard or Preferred Clinical Models</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.10.2</td>
+      <td style="text-align: left">Maintenance and Versioning of Standard or Preferred Clinical Models</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TI.10.3</td>
+      <td style="text-align: left">Clinical Model Mapping</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="references">References</h3>
+
+<p><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88">Personal Health Record System Functional Model</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 29, 2022 00:03-0700">2022-09-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"];
-  fhir:ImplementationGuide.version [ fhir:value "0.3.10"];
+  fhir:ImplementationGuide.version [ fhir:value "0.4.1"];
   fhir:ImplementationGuide.name [ fhir:value "StandardPatientHealthRecordIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-09-28T23:23:22-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-29T00:03:59-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -494,31 +494,41 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "recordlifecycle.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Record Lifecycle" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functionality.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Model" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5;
+         fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "datamodel.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Model" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 6;
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "physiology.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Physiology Simulations" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 7;
+         fhir:index 8;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "personas.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Patient Personas" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8;
+         fhir:index 10;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9;
+         fhir:index 11;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "environments.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Design Considerations" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

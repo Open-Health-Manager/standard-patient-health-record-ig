@@ -3,7 +3,7 @@
 
 err = 6, warn = 9, info = 0
 IG Publisher Version: 1.1.115 Out of date - current version is 1.2.4
-Generated Wed Sep 28 23:23:54 MST 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.3.10 (canonical = https://gitlab.mitre.org/awatson/sphr)
+Generated Thu Sep 29 00:04:34 MST 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.4.1 (canonical = https://gitlab.mitre.org/awatson/sphr)
  Build Errors : 10 / 0 / 0
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/conceptmap-FirstToGiven : 0 / 1 / 1
@@ -20,16 +20,16 @@ Generated Wed Sep 28 23:23:54 MST 2022. FHIR version 4.0.1 for StandardPatientHe
  /Users/awatson/Code/implementation-guides/sphr-ig/fsh-generated/resources/structuredefinition-SocialMedia : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 490, column 8: The link '' for "HealthReceipt" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 491, column 8: The link '' for "SocialMedia" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 492, column 8: The link '' for "Environmental" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 493, column 8: The link '' for "NutrientOuttake" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 185, column 5: The image source 'Design-DayMadeOfGlass-BedsideComputing.jpg' cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 193, column 5: The image source 'Design-DayMadeOfGlass-WaterCloset.jpg' cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 201, column 5: The image source 'Design-DayMadeOfGlass-Kitchen.jpg' cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 209, column 5: The image source 'Design-DayMadeOfGlass-PathRouting.jpg' cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 217, column 5: The image source 'Design-DayMadeOfGlass-DataImportExport.jpg' cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 225, column 5: The image source 'Design-DayMadeOfGlass-ProximityDataTransfer.jpg' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 484, column 8: The link '' for "HealthReceipt" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 485, column 8: The link '' for "SocialMedia" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 486, column 8: The link '' for "Environmental" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/datamodel.html#/html/body/div/div/div/div/div/ul/li/a at Line 487, column 8: The link '' for "NutrientOuttake" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 191, column 5: The image source 'Design-DayMadeOfGlass-BedsideComputing.jpg' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 199, column 5: The image source 'Design-DayMadeOfGlass-WaterCloset.jpg' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 207, column 5: The image source 'Design-DayMadeOfGlass-Kitchen.jpg' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 215, column 5: The image source 'Design-DayMadeOfGlass-PathRouting.jpg' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 223, column 5: The image source 'Design-DayMadeOfGlass-DataImportExport.jpg' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/sphr-ig/output/environments.html#/html/body/div/div/div/div/div/p/img at Line 231, column 5: The image source 'Design-DayMadeOfGlass-ProximityDataTransfer.jpg' cannot be resolved
 == fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG.json ==
 == fsh-generated/resources/ConceptMap-FirstToGiven.json ==
 WARNING: ConceptMap/FirstToGiven: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed

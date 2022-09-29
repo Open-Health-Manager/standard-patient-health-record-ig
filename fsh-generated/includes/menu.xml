@@ -17,7 +17,16 @@
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
   <li>
+    <a href="recordlifecycle.html">Record Lifecycle</a>
+  </li>
+  <li>
     <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functional Model</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
@@ -28,10 +37,7 @@
         <a href="history.html">History</a>
       </li>
       <li>
-        <a href="datamodel.html">Data Model</a>
-      </li>
-      <li>
-        <a href="functionality.html">Functional Model</a>
+        <a href="security.html">Security</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>

@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.3.10",
+  "version": "0.4.1",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-09-28T23:23:22-07:00",
+  "date": "2022-09-29T00:03:59-07:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -512,6 +512,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "recordlifecycle.html",
+          "title": "Record Lifecycle",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "functionality.html",
           "title": "Functional Model",
           "generation": "markdown"
@@ -524,6 +529,11 @@
         {
           "nameUrl": "physiology.html",
           "title": "Physiology Simulations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "security.html",
+          "title": "Security",
           "generation": "markdown"
         },
         {

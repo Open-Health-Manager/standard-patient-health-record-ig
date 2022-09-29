@@ -7,10 +7,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/NutrientOuttake"/>
-  <version value="0.3.10"/>
+  <version value="0.4.1"/>
   <name value="NutrientOuttake"/>
   <status value="active"/>
-  <date value="2022-09-28T23:23:22-07:00"/>
+  <date value="2022-09-29T00:03:59-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
