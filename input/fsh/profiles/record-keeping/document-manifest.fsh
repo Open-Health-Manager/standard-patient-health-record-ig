@@ -5,4 +5,4 @@
 Profile: PhrDocumentManifest
 Parent: DocumentManifest
 Description: "Standard PHR profile of the DocumentManifest resource."
-// Usage: #definition
+* subject 1..1 MS 

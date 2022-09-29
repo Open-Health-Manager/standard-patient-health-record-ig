@@ -89,7 +89,23 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 
 #### Implementation Guidance  
 
+- Gather the data you want to include.
+- Convert or encode the data as FHIR resources.
+- Ensure there is at least 1 Patient resource.
+- Add US realm extensions to resources to comply with US Core (if needed).
+- If less than 16MB, add resources to a Bundle and save as .json
+- If over 16MB, use Bulk Data format and save as nd-json.
+- Add international patient summary (if needed).
+- Add problem oriented health record components (if needed).
+- Add provenance resources.
+- Add media and supporting documents.
+- Rename the .ndjson file with .phr extension.
+- Compress the file (or directory) with zip and DEFLATE algorithms.
+- Sign the file with an X.509 certificate or public key.
+- Rename the .phr file with .sphr extension.
+
 ![./SPHR-ImplementationGuidance.png](./SPHR-ImplementationGuidance.png){:width="100%"}  
+
 
 #### References  
 

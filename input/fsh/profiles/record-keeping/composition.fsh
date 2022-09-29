@@ -5,7 +5,15 @@
 Profile: PhrComposition
 Parent: Composition
 Description: "Standard PHR profile of the Composition resource."
-// Usage: #definition
+* type = http://loinc.org#11503-0 "Medical records"
+* subject 1..1 MS 
+
+
+
+
+
+
+
 
 
 

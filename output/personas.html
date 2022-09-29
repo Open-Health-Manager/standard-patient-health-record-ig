@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.9 - ci-build
+            <span style="display:inline-block;">0.3.10 - ci-build
 
 
             </span>
@@ -82,8 +82,11 @@
   <li>
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -94,7 +97,7 @@
         <a href="datamodel.html">Data Model</a>
       </li>
       <li>
-        <a href="functionality.html">Functionality</a>
+        <a href="functionality.html">Functional Model</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>
@@ -139,7 +142,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.9). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.10). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Patient Personas</h2>
   
 
@@ -155,55 +158,129 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#sandbox-patients" id="markdown-toc-sandbox-patients">Sandbox Patients</a></li>
-  <li><a href="#patient-journeys" id="markdown-toc-patient-journeys">Patient Journeys</a></li>
-  <li><a href="#patient-personas" id="markdown-toc-patient-personas">Patient Personas</a></li>
-  <li><a href="#references" id="markdown-toc-references">References</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <p>One of the most challenging aspects of programming a Personal Health Record is developing a longitudinal record to use as a baseline.  Rather than specify what functionality should be included the PHR, this implementation guide endeavors to define <em>patient persona benchmarks</em> that PHRs should be able to either consume or generate.</p>
 
-<blockquote>
-  <p>TODO:  Develop out additional patient persona narratives and examples of longitudinal records. (PSS-2088)</p>
-</blockquote>
-
-<h3 id="sandbox-patients">Sandbox Patients</h3>
-
-<ul>
-  <li><a href="JohnDoe.phr">JohnDoe.phr</a></li>
-  <li><a href="TimmySmart-FosterCareTimeline.phr">TimmySmart.phr</a></li>
-</ul>
-
-<h3 id="patient-journeys">Patient Journeys</h3>
-
-<h5 id="patient-journey-a-ann-patient-relocation">Patient Journey A: Ann, Patient relocation</h5>
-
-<h5 id="patient-journey-b-earl-cancer-diagnosis">Patient Journey B: Earl, Cancer diagnosis</h5>
-
-<h5 id="patient-journey-c-markus-cardiac-rehabilitation">Patient Journey C: Markus, Cardiac Rehabilitation</h5>
-
-<h5 id="patient-journey-d-wilma--long-covid">Patient Journey D: Wilma,  Long COVID</h5>
-
-<h5 id="patient-journey-e-marcella-complex-chronic-illness">Patient Journey E: Marcella, complex chronic illness</h5>
-
-<h3 id="patient-personas">Patient Personas</h3>
-
-<h5 id="jamie-x12-diabetes">Jamie X12, Diabetes</h5>
-
-<h5 id="alyssa-y48-pregnancy">Alyssa Y48, Pregnancy</h5>
-
-<h5 id="choko-h32-asthma-and-back-pain">Choko H32, Asthma and back pain</h5>
-
-<h5 id="tommy-j02-obese-and-prediabetic">Tommy J02, Obese and prediabetic</h5>
-
-<h5 id="naja-n76-rare-familial-development-disorders">Naja N76, Rare familial development disorders</h5>
-
-<h5 id="sammy-g43-copd-and-alzheimers">Sammy G43, COPD and Alzheimers</h5>
-
-<h5 id="allison-j97-single-mother">Allison J97, Single mother</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <th style="text-align: left">PatientName</th>
+      <th style="text-align: left">Primary Diagnosis</th>
+      <th style="text-align: left">Source</th>
+      <th>Record</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>john-doe</td>
+      <td style="text-align: left">John Doe</td>
+      <td style="text-align: left">Diabetic</td>
+      <td style="text-align: left"><a href="JohnDoe.phr"> JohnDoe.phr </a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>12724069</td>
+      <td style="text-align: left">Timmy Smart</td>
+      <td style="text-align: left">Foster Child</td>
+      <td style="text-align: left"><a href="TimmySmart-FosterCareTimeline.phr"> TimmySmart.phr </a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>?????</td>
+      <td style="text-align: left">Candace Salinas</td>
+      <td style="text-align: left">?????</td>
+      <td style="text-align: left">CandaceSalinas.phr</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td style="text-align: left">Ann</td>
+      <td style="text-align: left">Patient relocation</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td style="text-align: left">Earl</td>
+      <td style="text-align: left">Cancer diagnosis</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td style="text-align: left">Markus</td>
+      <td style="text-align: left">Cardiac Rehabilitation</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td style="text-align: left">Wilma</td>
+      <td style="text-align: left">Long COVID</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td style="text-align: left">Marcella</td>
+      <td style="text-align: left">Complex chronic illness</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>X12</td>
+      <td style="text-align: left">Jamie</td>
+      <td style="text-align: left">Diabetes</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Y48</td>
+      <td style="text-align: left">Alyssa</td>
+      <td style="text-align: left">Pregnancy</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>H32</td>
+      <td style="text-align: left">Choko</td>
+      <td style="text-align: left">Asthma and back pain</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>J02</td>
+      <td style="text-align: left">Tommy</td>
+      <td style="text-align: left">Obese and prediabetic</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>N76</td>
+      <td style="text-align: left">Naja</td>
+      <td style="text-align: left">Rare familial development disorders</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>G43</td>
+      <td style="text-align: left">Sammy</td>
+      <td style="text-align: left">COPD and Alzheimers</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>J97</td>
+      <td style="text-align: left">Allison</td>
+      <td style="text-align: left">Single mother</td>
+      <td style="text-align: left"> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="references">References</h3>
 
@@ -238,7 +315,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 12:25-0400">2022-09-21</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.10 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 28, 2022 23:23-0700">2022-09-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -16,8 +16,11 @@
   <li>
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -28,7 +31,7 @@
         <a href="datamodel.html">Data Model</a>
       </li>
       <li>
-        <a href="functionality.html">Functionality</a>
+        <a href="functionality.html">Functional Model</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>

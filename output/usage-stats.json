@@ -1,9 +1,15 @@
 {
   "package": "StandardPatientHealthRecordIG",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Bundle": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBundle",
+        "title": "PhrBundle"
+      }
+    ],
     "Composition": [
       {
         "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition",
@@ -26,6 +32,12 @@
       {
         "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedia",
         "title": "PhrMedia"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPatient",
+        "title": "PhrPatient"
       }
     ],
     "Provenance": [
@@ -60,22 +72,20 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch": [
-      "Composition",
-      "Organization"
-    ],
-    "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path": [
-      "Composition",
-      "Organization"
     ]
   }
 }

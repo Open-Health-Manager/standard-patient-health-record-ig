@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="LastToFamily"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>null (https://gitlab.mitre.org/awatson/sphr/ConceptMap/LastToFamily)</h2><p>Mapping from lastName to name.family</p><p>DRAFT. Published on 2022-09-28 11:23:22-0700 by MITRE (MITRE: <a href="https://gitlab.mitre.org/awatson/sphr">https://gitlab.mitre.org/awats...</a>). </p><br/></div>
+  </text>
+  <url value="https://gitlab.mitre.org/awatson/sphr/ConceptMap/LastToFamily"/>
+  <version value="0.3.10"/>
+  <status value="draft"/>
+  <date value="2022-09-28T23:23:22-07:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gitlab.mitre.org/awatson/sphr"/>
+    </telecom>
+  </contact>
+  <sourceUri value="lastName"/>
+  <targetUri value="name.family"/>
+</ConceptMap>

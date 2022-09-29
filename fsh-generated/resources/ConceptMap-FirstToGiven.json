@@ -1,0 +1,8 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "FirstToGiven",
+  "url": "https://gitlab.mitre.org/awatson/sphr/ConceptMap/FirstToGiven",
+  "status": "draft",
+  "sourceUri": "firstName",
+  "targetUri": "name.given"
+}

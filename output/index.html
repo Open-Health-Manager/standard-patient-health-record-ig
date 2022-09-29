@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.9 - ci-build
+            <span style="display:inline-block;">0.3.10 - ci-build
 
 
             </span>
@@ -82,8 +82,11 @@
   <li>
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -94,7 +97,7 @@
         <a href="datamodel.html">Data Model</a>
       </li>
       <li>
-        <a href="functionality.html">Functionality</a>
+        <a href="functionality.html">Functional Model</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>
@@ -139,7 +142,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.9). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.10). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Getting Started</h2>
   
 
@@ -154,7 +157,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.3.9<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG|0.3.9"/></span>
+      <span class="copy-text">0.3.10<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG|0.3.10"/></span>
       </td>
     </tr>
 
@@ -170,7 +173,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-09-21
+            as of 2022-09-28
           
         
       </td>
@@ -199,7 +202,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#expectations-for-this-implementation-guide" id="markdown-toc-expectations-for-this-implementation-guide">Expectations for this Implementation Guide</a></li>
   <li><a href="#relevant-law" id="markdown-toc-relevant-law">Relevant Law</a></li>
   <li><a href="#purpose--design-philosophy" id="markdown-toc-purpose--design-philosophy">Purpose / Design Philosophy</a></li>
-  <li><a href="#prior-art---implementation-guides" id="markdown-toc-prior-art---implementation-guides">Prior Art - Implementation Guides</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
@@ -223,44 +225,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="purpose--design-philosophy">Purpose / Design Philosophy</h3>
 
 <p>The core of the Patient Health Record should be medical grade, and the sort of record that you receive after a visit to the hospital; and which the Patient can carry to from one healthcare provider to the next.  As such, a modern Patient Health Record needs to essentially be able to receive captured data from throughout the hospital.  Emergency room, operating room, intensive care unit, laboratory, pharmacy, nursery, psychaitry.  All of it is relavent.</p>
-
-<h3 id="prior-art---implementation-guides">Prior Art - Implementation Guides</h3>
-
-<p>This implementation guide was developed through meta-analysis of dozens of other guides, journal liturature, and an environment surveys of the PHR market.  Implementators may find the following implementation guides of particular interest:</p>
-
-<ul>
-  <li><a href="https://hl7.org/fhir/smart-app-launch/">Smart on FHIR - App Launch</a></li>
-  <li><a href="http://www.fhir.org/guides/argonaut/r2/">Argonaut Data Query</a></li>
-  <li><a href="http://fhir.org/guides/argonaut/scheduling/">Argonaut Scheduling</a></li>
-  <li><a href="http://fhir.org/guides/argonaut/clinicalnotes/">Argonaut Clinical Notes</a></li>
-  <li><a href="http://fhir.org/guides/argonaut/questionnaire/">Argonaut Questionnaire</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-patient-correction/">Patient Request for Corrections</a></li>
-  <li><a href="http://hl7.org/fhir/uv/ips/">International Patient Summary</a></li>
-  <li><a href="http://hl7.org/fhir/us/ccda/">C-CDA on FHIR</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-adi/">PACIO - Advanced Directives</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/">PACIO - Cognitive Status</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/">PACIO - Functional Status</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/">VCI - Vaccine Credential Initiative</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/">Gravity - Social Determinates of Health</a></li>
-  <li><a href="https://www.hl7.org/fhir/us/core/">US CORE</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/dental-data-exchange/">Dental Data Exchange</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html">Genomics Reporting</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/">Radiation Dose Summary</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig/">Breast Radiology Reporting</a></li>
-  <li><a href="https://build.fhir.org/ig/hl7ch/ch-allergyintolerance/document.html">Allergy Intolerance</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/cimi-vital-signs/">Vital Signs</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-udap-security-ig/">UDAP Security</a></li>
-  <li><a href="https://build.fhir.org/ig/IHTSDO/snomed-ig/">SNOMED Terminology Server</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/case-reporting/the_specification.html">Electronic Case Reporting (eCR)</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/index.html">SMART Healthcards - Vaccine &amp; Testing</a></li>
-  <li><a href="https://build.fhir.org/ig/aih-uth/mycovid/artifacts.html">COVID19</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/carin-digital-insurance-card/">CARIN Digital Insurance Card</a></li>
-  <li><a href="https://profiles.ihe.net/ITI/MHD/">Mobile Access to Health Documents</a></li>
-  <li><a href="http://hl7.org/fhir/us/patient-reported-outcomes/2019May/index.html">Patient Reported Outcomes</a></li>
-  <li><a href="http://hl7.org/fhir/uv/phd/2019May/">Patient Health Devices</a></li>
-  <li><a href="http://hl7.org/fhir/us/davinci-pas/">Da Vinci - Prior Authorization</a></li>
-  <li><a href="http://hl7.org/fhir/us/bfdr/artifacts.html">Vital Records -  Birth and Fetal Death Reporting</a></li>
-</ul>
 
 <h3 id="references">References</h3>
 
@@ -299,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 12:25-0400">2022-09-21</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.10 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 28, 2022 23:23-0700">2022-09-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
