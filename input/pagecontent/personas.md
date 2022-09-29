@@ -1,39 +1,22 @@
 One of the most challenging aspects of programming a Personal Health Record is developing a longitudinal record to use as a baseline.  Rather than specify what functionality should be included the PHR, this implementation guide endeavors to define _patient persona benchmarks_ that PHRs should be able to either consume or generate.  
 
-> TODO:  Develop out additional patient persona narratives and examples of longitudinal records. (PSS-2088)
-
-### Sandbox Patients  
-
-- [JohnDoe.phr](JohnDoe.phr)  
-- [TimmySmart.phr](TimmySmart-FosterCareTimeline.phr)   
-
-### Patient Journeys  
-
-##### Patient Journey A: Ann, Patient relocation
-
-##### Patient Journey B: Earl, Cancer diagnosis 
-
-##### Patient Journey C: Markus, Cardiac Rehabilitation 
-
-##### Patient Journey D: Wilma,  Long COVID
-
-##### Patient Journey E: Marcella, complex chronic illness
-
-### Patient Personas
-
-##### Jamie X12, Diabetes
-
-##### Alyssa Y48, Pregnancy
-
-##### Choko H32, Asthma and back pain
-
-##### Tommy J02, Obese and prediabetic
-
-##### Naja N76, Rare familial development disorders
-
-##### Sammy G43, COPD and Alzheimers
-
-##### Allison J97, Single mother
+| Patient ID | PatientName   | Primary Diagnosis  | Source | Record |
+| ------------- | :-------- | :-------- | :-------- | 
+| john-doe | John Doe | Diabetic | [ JohnDoe.phr ](JohnDoe.phr) |
+| 12724069 | Timmy Smart | Foster Child | [ TimmySmart.phr ](TimmySmart-FosterCareTimeline.phr) | 
+| ????? | Candace Salinas | ????? | CandaceSalinas.phr | 
+| A | Ann | Patient relocation  |  |
+| B | Earl | Cancer diagnosis |  |
+| C | Markus | Cardiac Rehabilitation |  |
+| D | Wilma | Long COVID |  |
+| E | Marcella | Complex chronic illness |  |
+| X12 | Jamie | Diabetes |  |
+| Y48 | Alyssa | Pregnancy |  |
+| H32 | Choko | Asthma and back pain |  |
+| J02 | Tommy | Obese and prediabetic |  |
+| N76 | Naja | Rare familial development disorders |  |
+| G43 | Sammy | COPD and Alzheimers |  |
+| J97 | Allison | Single mother |  |
 
 
 
