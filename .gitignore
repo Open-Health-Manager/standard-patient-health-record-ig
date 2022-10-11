@@ -4,5 +4,6 @@ Thumbs.db
 /input-cache
 /output
 /temp
+/template
 .vscode
 .env
