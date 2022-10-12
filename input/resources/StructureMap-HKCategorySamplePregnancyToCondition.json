@@ -1,0 +1,34 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "HKCategorySamplePregnancyToCondition",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToCondition&quot; = &quot;HKCategorySamplePregnancyToCondition&quot;\n\nuses &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample&quot; alias HKCategorySamplePregnancy as source\n\nuses &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition&quot; alias Condition as target\n\ngroup HKCategorySamplePregnancyToCondition ( \n  source sample : HKCategorySamplePregnancy\n  target condition : Condition\n) {\n\n}</pre></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToCondition",
+  "name" : "HKCategorySamplePregnancyToCondition",
+  "structure" : [{
+    "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample",
+    "mode" : "source",
+    "alias" : "HKCategorySamplePregnancy"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
+    "mode" : "target",
+    "alias" : "Condition"
+  }],
+  "group" : [{
+    "name" : "HKCategorySamplePregnancyToCondition",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "sample",
+      "type" : "HKCategorySamplePregnancy",
+      "mode" : "source"
+    },
+    {
+      "name" : "condition",
+      "type" : "Condition",
+      "mode" : "target"
+    }]
+  }]
+}
