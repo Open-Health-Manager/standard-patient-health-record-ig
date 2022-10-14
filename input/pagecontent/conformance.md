@@ -37,3 +37,4 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [Da Vinci - Prior Authorization](http://hl7.org/fhir/us/davinci-pas/) |   | MAY | MAY |
 | [Vital Records -  Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/artifacts.html) |   | MAY | MAY |
 
+
