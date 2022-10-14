@@ -1,8 +1,0 @@
-{
-  "version": "0.4.2",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221014110739",
-  "name": "StandardPatientHealthRecordIG"
-}
