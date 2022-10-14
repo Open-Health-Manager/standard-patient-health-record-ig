@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
   },
   "url": "https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG",
-  "version": "0.3.6",
+  "version": "0.4.2",
   "name": "StandardPatientHealthRecordIG",
   "status": "draft",
-  "date": "2022-08-15T13:55:23-06:00",
+  "date": "2022-10-14T11:08:00-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -325,10 +325,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PhrAllergyIntolerance"
+          "reference": "StructureDefinition/PhrBundle"
         },
-        "name": "PhrAllergyIntolerance",
-        "description": "Standard PHR profile of the AllergyIntolerance resource.",
+        "name": "PhrBundle",
+        "description": "Standard PHR profile of the Bundle resource.",
         "exampleBoolean": false
       },
       {
@@ -339,10 +339,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PhrBodyStructure"
+          "reference": "StructureDefinition/PhrComposition"
         },
-        "name": "PhrBodyStructure",
-        "description": "Standard PHR profile of the BodyStructure resource.",
+        "name": "PhrComposition",
+        "description": "Standard PHR profile of the Composition resource.",
         "exampleBoolean": false
       },
       {
@@ -353,10 +353,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PhrCarePlan"
+          "reference": "StructureDefinition/PhrDocumentManifest"
         },
-        "name": "PhrCarePlan",
-        "description": "Standard PHR profile of the CarePlan resource.",
+        "name": "PhrDocumentManifest",
+        "description": "Standard PHR profile of the DocumentManifest resource.",
         "exampleBoolean": false
       },
       {
@@ -367,10 +367,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PhrCareTeam"
+          "reference": "StructureDefinition/PhrDocumentReference"
         },
-        "name": "PhrCareTeam",
-        "description": "Standard PHR profile of the CareTeam resource.",
+        "name": "PhrDocumentReference",
+        "description": "Standard PHR profile of the DocumentReference resource.",
         "exampleBoolean": false
       },
       {
@@ -381,164 +381,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PhrCommunication"
+          "reference": "StructureDefinition/PhrMedia"
         },
-        "name": "PhrCommunication",
-        "description": "Standard PHR profile of the Communication resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrCondition"
-        },
-        "name": "PhrCondition",
-        "description": "Standard PHR profile of the Condition resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrConsent"
-        },
-        "name": "PhrConsent",
-        "description": "Standard PHR profile of the Consent resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrDevice"
-        },
-        "name": "PhrDevice",
-        "description": "Standard PHR profile of the Device resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrDiagnosticReport"
-        },
-        "name": "PhrDiagnosticReport",
-        "description": "Standard PHR profile of the DiagnosticReport resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrFamilyMemberHistory"
-        },
-        "name": "PhrFamilyMemberHistory",
-        "description": "Standard PHR profile of the FamilyMemberHistory resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrGoal"
-        },
-        "name": "PhrGoal",
-        "description": "Standard PHR profile of the Goal resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrImmunization"
-        },
-        "name": "PhrImmunization",
-        "description": "Standard PHR profile of the Immunization resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrMedication"
-        },
-        "name": "PhrMedication",
-        "description": "Standard PHR profile of the Medication resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrMedicationStatement"
-        },
-        "name": "PhrMedicationStatement",
-        "description": "Standard PHR profile of the MedicationStatement resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrMolecularSequence"
-        },
-        "name": "PhrMolecularSequence",
-        "description": "Standard PHR profile of the MolecularSequence resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrObservation"
-        },
-        "name": "PhrObservation",
-        "description": "Standard PHR profile of the Observation resource.",
+        "name": "PhrMedia",
+        "description": "Standard PHR profile of the Media resource.",
         "exampleBoolean": false
       },
       {
@@ -563,52 +409,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PhrPractitioner"
+          "reference": "StructureDefinition/PhrProvenance"
         },
-        "name": "PhrPractitioner",
-        "description": "Standard PHR profile of the Practitioner resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrProcedure"
-        },
-        "name": "PhrProcedure",
-        "description": "Standard PHR profile of the Procedure resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrRelatedPerson"
-        },
-        "name": "PhrRelatedPerson",
-        "description": "Standard PHR profile of the RelatedPerson resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PhrSpecimen"
-        },
-        "name": "PhrSpecimen",
-        "description": "Standard PHR profile of the Specimen resource.",
+        "name": "PhrProvenance",
+        "description": "Standard PHR profile of the Provenance resource.",
         "exampleBoolean": false
       },
       {
@@ -623,34 +427,6 @@
         },
         "name": "Environmental",
         "description": "Standard PHR profile of the Environmental resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/HealthReceipt"
-        },
-        "name": "HealthReceipt",
-        "description": "Standard PHR profile of the HealthReceipt resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/NutrientIntake"
-        },
-        "name": "NutrientIntake",
-        "description": "Standard PHR profile of the NutrientIntake resource.",
         "exampleBoolean": false
       },
       {
@@ -685,504 +461,29 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
+            "valueString": "ConceptMap"
           }
         ],
         "reference": {
-          "reference": "Composition/Care-Plan-Example"
+          "reference": "ConceptMap/FirstToGiven"
         },
-        "name": "Care-Plan-Example",
-        "description": "John Doe - Composition - CarePlan",
-        "exampleBoolean": true
+        "name": "FirstToGiven",
+        "description": "First name is mapped to Given name",
+        "exampleBoolean": false
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
+            "valueString": "ConceptMap"
           }
         ],
         "reference": {
-          "reference": "Composition/Consultation-Note-Example"
+          "reference": "ConceptMap/LastToFamily"
         },
-        "name": "Consultation-Note-Example",
-        "description": "John Doe - Composition - Consultation Note",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/ContinuityCareDocument1"
-        },
-        "name": "ContinuityCareDocument1",
-        "description": "John Doe - Composition - Continuity of Care Document",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/DiagnosticImagingReport1"
-        },
-        "name": "DiagnosticImagingReport1",
-        "description": "John Doe - Composition - Diagnostic Imaging Report",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Discharge-Summary-Example"
-        },
-        "name": "Discharge-Summary-Example",
-        "description": "John Doe - Composition - Discharge Summary",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "BodyStructure"
-          }
-        ],
-        "reference": {
-          "reference": "BodyStructure/ExampleBodyStructure"
-        },
-        "name": "ExampleBodyStructure",
-        "description": "John Doe - BodyStructure - Left Foot",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CarePlan"
-          }
-        ],
-        "reference": {
-          "reference": "CarePlan/ExampleCarePlan"
-        },
-        "name": "ExampleCarePlan",
-        "description": "John Doe - CarePlan - Consolidated",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CareTeam"
-          }
-        ],
-        "reference": {
-          "reference": "CareTeam/ExampleCareTeam"
-        },
-        "name": "ExampleCareTeam",
-        "description": "John Doe - CareTeam",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Communication"
-          }
-        ],
-        "reference": {
-          "reference": "Communication/ExampleCommunication"
-        },
-        "name": "ExampleCommunication",
-        "description": "John Doe - Communication - New medication request.",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Consent"
-          }
-        ],
-        "reference": {
-          "reference": "Consent/ExampleConsent"
-        },
-        "name": "ExampleConsent",
-        "description": "John Doe - Consent - Advanced Directive",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Device"
-          }
-        ],
-        "reference": {
-          "reference": "Device/ExampleDevice"
-        },
-        "name": "ExampleDevice",
-        "description": "John Doe - Device - Digital Blood Pressure Cuff",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "DiagnosticReport"
-          }
-        ],
-        "reference": {
-          "reference": "DiagnosticReport/ExampleDiagnosticReport"
-        },
-        "name": "ExampleDiagnosticReport",
-        "description": "John Doe - DiagnosticReport",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "FamilyMemberHistory"
-          }
-        ],
-        "reference": {
-          "reference": "FamilyMemberHistory/ExampleFamilyMemberHistory"
-        },
-        "name": "ExampleFamilyMemberHistory",
-        "description": "John Doe - FamilyMemberHistory",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "RelatedPerson"
-          }
-        ],
-        "reference": {
-          "reference": "RelatedPerson/ExampleRelatedPerson"
-        },
-        "name": "ExampleRelatedPerson",
-        "description": "John Doe - RelatedPerson - Sister",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Specimen"
-          }
-        ],
-        "reference": {
-          "reference": "Specimen/ExampleSpecimen"
-        },
-        "name": "ExampleSpecimen",
-        "description": "John Doe - Specimen - Urinalysis",
-        "exampleCanonical": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/History-and-Physical-Example"
-        },
-        "name": "History-and-Physical-Example",
-        "description": "John Doe - Composition - History & Physical",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/JohnDoe-diabetes"
-        },
-        "name": "JohnDoe-diabetes",
-        "description": "John Doe - Condition - Diabetes",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Encounter"
-          }
-        ],
-        "reference": {
-          "reference": "Encounter/JohnDoe-diabetesOnset"
-        },
-        "name": "JohnDoe-diabetesOnset",
-        "description": "John Doe - Encounter - Diabetes diagnosis",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/Medication-Metformin"
-        },
-        "name": "Medication-Metformin",
-        "description": "John Doe - Bundle - Medication Reconciliation Bundle",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/ObservationsBundle1"
-        },
-        "name": "ObservationsBundle1",
-        "description": "John Doe - Observation - Collection",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Operative-Note-Example"
-        },
-        "name": "Operative-Note-Example",
-        "description": "John Doe - Composition - Operative Note",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/PractitionersBundle1"
-        },
-        "name": "PractitionersBundle1",
-        "description": "John Doe - Practitioners - Collection",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Procedure-Note-Example"
-        },
-        "name": "Procedure-Note-Example",
-        "description": "John Doe - Composition - Procedure Note",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Progress-Note-Example"
-        },
-        "name": "Progress-Note-Example",
-        "description": "John Doe - Composition - Progress Note",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Referral-Note-Example"
-        },
-        "name": "Referral-Note-Example",
-        "description": "John Doe - Composition - Referral Note",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Composition"
-          }
-        ],
-        "reference": {
-          "reference": "Composition/Transfer-Summary-Example"
-        },
-        "name": "Transfer-Summary-Example",
-        "description": "John Doe - Composition - Transfer Summary",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "AllergyIntolerance"
-          }
-        ],
-        "reference": {
-          "reference": "AllergyIntolerance/allergy-intolerance"
-        },
-        "name": "allergy-intolerance",
-        "description": "John Doe - AllergyIntolerance - Sulfonamide",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Immunization"
-          }
-        ],
-        "reference": {
-          "reference": "Immunization/immunization"
-        },
-        "name": "immunization",
-        "description": "John Doe - Immunization - Fluzone",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/john-doe"
-        },
-        "name": "john-doe",
-        "description": "John Doe - Patient Demographics",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MedicationStatement"
-          }
-        ],
-        "reference": {
-          "reference": "MedicationStatement/medication-statement"
-        },
-        "name": "medication-statement",
-        "description": "John Doe - MedicationStatement - Lisinopril",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/observation-lab-urine"
-        },
-        "name": "observation-lab-urine",
-        "description": "John Doe - Observation - Urinalysis",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/observation-smoker"
-        },
-        "name": "observation-smoker",
-        "description": "John Doe - Observation - Smoking status",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Observation"
-          }
-        ],
-        "reference": {
-          "reference": "Observation/observation-vitals-temp"
-        },
-        "name": "observation-vitals-temp",
-        "description": "John Doe - Observation - Body temperature",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Organization"
-          }
-        ],
-        "reference": {
-          "reference": "Organization/organization-1"
-        },
-        "name": "organization-1",
-        "description": "Organization - Acme Labs",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Procedure"
-          }
-        ],
-        "reference": {
-          "reference": "Procedure/procedure-rehab"
-        },
-        "name": "procedure-rehab",
-        "description": "John Doe - Procedure - Alcohol rehabilitation",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/undefined"
-        },
-        "name": "undefined",
-        "exampleBoolean": true
+        "name": "LastToFamily",
+        "description": "Last name is mapped to Family name",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -1201,13 +502,23 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "conformance.html",
+          "title": "Conformance Recommendations",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "recordkeeping.html",
           "title": "Record Keeping",
           "generation": "markdown"
         },
         {
+          "nameUrl": "recordlifecycle.html",
+          "title": "Record Lifecycle",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "functionality.html",
-          "title": "Functionality",
+          "title": "Functional Model",
           "generation": "markdown"
         },
         {
@@ -1221,8 +532,18 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "security.html",
+          "title": "Security",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "personas.html",
           "title": "Patient Personas",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         },
         {

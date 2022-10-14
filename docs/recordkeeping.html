@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.6 - ci-build
+            <span style="display:inline-block;">0.4.2 - ci-build
 
 
             </span>
@@ -82,8 +82,20 @@
   <li>
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
+  <li>
+    <a href="recordlifecycle.html">Record Lifecycle</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functional Model</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -91,10 +103,7 @@
         <a href="history.html">History</a>
       </li>
       <li>
-        <a href="datamodel.html">Data Model</a>
-      </li>
-      <li>
-        <a href="functionality.html">Functionality</a>
+        <a href="security.html">Security</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>
@@ -139,7 +148,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.6). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.4.2). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Record Keeping</h2>
   
 
@@ -221,7 +230,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="api-endpoints">API Endpoints</h4>
 
-<p>Systems MAY wish to implement standard APIs for generating a <code class="language-plaintext highlighter-rouge">.phr</code> or <code class="language-plaintext highlighter-rouge">.sphr</code> file.  Common API queries are listed below.</p>
+<p>Systems MAY wish to implement standard APIs for generating a <code class="language-plaintext highlighter-rouge">.phr</code> or <code class="language-plaintext highlighter-rouge">.sphr</code> file.  Standard API queries that have been used in other systems are listed below.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># export everything from a single-user system as a FHIR Bundle</span>
 GET /Bundle/<span class="nv">$export</span>
@@ -251,6 +260,23 @@ POST /Bundle/<span class="nv">$import</span>
 <p>Systems MUST post the API endpoints they use in the system’s CapabilityStatement.</p>
 
 <h4 id="implementation-guidance">Implementation Guidance</h4>
+
+<ul>
+  <li>Gather the data you want to include.</li>
+  <li>Convert or encode the data as FHIR resources.</li>
+  <li>Ensure there is at least 1 Patient resource.</li>
+  <li>Add US realm extensions to resources to comply with US Core (if needed).</li>
+  <li>If less than 16MB, add resources to a Bundle and save as .json</li>
+  <li>If over 16MB, use Bulk Data format and save as nd-json.</li>
+  <li>Add international patient summary (if needed).</li>
+  <li>Add problem oriented health record components (if needed).</li>
+  <li>Add provenance resources.</li>
+  <li>Add media and supporting documents.</li>
+  <li>Rename the .ndjson file with .phr extension.</li>
+  <li>Compress the file (or directory) with zip and DEFLATE algorithms.</li>
+  <li>Sign the file with an X.509 certificate or public key.</li>
+  <li>Rename the .phr file with .sphr extension.</li>
+</ul>
 
 <p><img src="./SPHR-ImplementationGuidance.png" alt="./SPHR-ImplementationGuidance.png" width="100%" /></p>
 
@@ -284,7 +310,7 @@ POST /Bundle/<span class="nv">$import</span>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 15, 2022 13:55-0600">2022-08-15</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 14, 2022 11:08-0500">2022-10-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>STANDARDPATIENTHEALTHRECORDIG\Functionality - FHIR v4.0.1</title>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Functional Model - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.6 - ci-build
+            <span style="display:inline-block;">0.4.2 - ci-build
 
 
             </span>
@@ -82,8 +82,20 @@
   <li>
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
+  <li>
+    <a href="recordlifecycle.html">Record Lifecycle</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functional Model</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -91,10 +103,7 @@
         <a href="history.html">History</a>
       </li>
       <li>
-        <a href="datamodel.html">Data Model</a>
-      </li>
-      <li>
-        <a href="functionality.html">Functionality</a>
+        <a href="security.html">Security</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>
@@ -119,7 +128,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Functionality</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Functional Model</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -139,8 +148,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.6). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Functionality</h2>
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.4.2). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Functional Model</h2>
   
 
 
@@ -157,15 +166,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#phr-functionaity" id="markdown-toc-phr-functionaity">PHR Functionaity</a></li>
   <li><a href="#phr-functional-model-fhir-ized" id="markdown-toc-phr-functional-model-fhir-ized">PHR Functional Model (FHIR-ized)</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-
-<h3 id="phr-functionaity">PHR Functionaity</h3>
-
 <p>A common question that comes up in designing a Personal Health Record is ‘what features should it support?’.  This question has been discussed in great detail by past workgroup efforts, and we encourage implementors interested in guidance around which functionality to include to refer to <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88">Personal Health Record System Functional Model</a> with provides 93 pages and nearly 1800+ recommendations of functionalities that PHR vendors in the past have agreed ought to be inlcluded in a standard model.</p>
 
 <p>However, for the purposes of this implementation guide, we are going to defer on the question of functionality, and take a more data-centric approach and consider the question in terms of importing/exporting records and data storage buckets. The general idea behind this document is that data will be added or removed from the PHR, either through granular API interfaces or bulk data import/export functions, we don’t care which.  However, in either case, we will be using standard data schemas for how the data will be transmitted and stored.</p>
@@ -1005,542 +1010,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td> </td>
     </tr>
     <tr>
-      <td>RI.1</td>
-      <td style="text-align: left">Record Lifecycle and Lifespan</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1</td>
-      <td style="text-align: left">Record Lifecycle</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.1</td>
-      <td style="text-align: left">Originate/Retain Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.1.1</td>
-      <td style="text-align: left">Evidence of Record Entry Originate/Retain Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.2</td>
-      <td style="text-align: left">Amend (Update) Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.2.1</td>
-      <td style="text-align: left">Evidence of Record Entry Amendment Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.3</td>
-      <td style="text-align: left">Transform/Translate Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.3.1</td>
-      <td style="text-align: left">Evidence of Record Entry Translate Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.4</td>
-      <td style="text-align: left">Attest Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.4.1</td>
-      <td style="text-align: left">Evidence of Record Entry Attestation Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.5</td>
-      <td style="text-align: left">Access/View Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.5.1</td>
-      <td style="text-align: left">Evidence of Record Entry View/Access Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.6</td>
-      <td style="text-align: left">Report (Output) Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.6.1</td>
-      <td style="text-align: left">Evidence of Record Entry Output/Report Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.7</td>
-      <td style="text-align: left">Disclose Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.7.1</td>
-      <td style="text-align: left">Evidence of Record Entry Disclosure Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.8</td>
-      <td style="text-align: left">Transmit Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.8.1</td>
-      <td style="text-align: left">Evidence of Record Entry Transmit Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.9</td>
-      <td style="text-align: left">Receive/Retain Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.9.1</td>
-      <td style="text-align: left">Evidence of Record Entry Receive/Retain Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.10</td>
-      <td style="text-align: left">De-Identify (Anononymize) Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.10.1</td>
-      <td style="text-align: left">Evidence of Record Entry De-Identification Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.11</td>
-      <td style="text-align: left">Pseudonymize Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.11.1</td>
-      <td style="text-align: left">Evidence of Record Entry Pseudomynization Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.12</td>
-      <td style="text-align: left">Re-identify Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.12.1</td>
-      <td style="text-align: left">Evidence of Record Entry Re-Identification Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.13</td>
-      <td style="text-align: left">Extract Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.13.1</td>
-      <td style="text-align: left">Evidence of Record Entry Extraction Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.14</td>
-      <td style="text-align: left">Archive Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.14.1</td>
-      <td style="text-align: left">Evidence of Record Entry Archive Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.15</td>
-      <td style="text-align: left">Restore Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.15.1</td>
-      <td style="text-align: left">Evidence of Record Entry Restore Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.16</td>
-      <td style="text-align: left">Destroy/Delete Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.16.1</td>
-      <td style="text-align: left">Evidence of Record Entry Destruction Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.17</td>
-      <td style="text-align: left">Deprecate Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.17.1</td>
-      <td style="text-align: left">Evidence of Record Entry Deprecation/Retraction Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.18</td>
-      <td style="text-align: left">Re-activate Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.18.1</td>
-      <td style="text-align: left">Evidence of Record Entry Re-Activation Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.19</td>
-      <td style="text-align: left">Merge Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.19.1</td>
-      <td style="text-align: left">Evidence of Record Entry Merge Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.20</td>
-      <td style="text-align: left">Unmerge Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.20.1</td>
-      <td style="text-align: left">Evidence of Record Entry Unmerge Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.21</td>
-      <td style="text-align: left">Link Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.21.1</td>
-      <td style="text-align: left">Evidence of Record Entry Link Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.22</td>
-      <td style="text-align: left">Unlink Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.22.1</td>
-      <td style="text-align: left">Evidence of Record Entry Unlink Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.23</td>
-      <td style="text-align: left">Add Legal Hold Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.23.1</td>
-      <td style="text-align: left">Evidence of Record Entry Legal Hold Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.24</td>
-      <td style="text-align: left">Remove Legal Hold Record Lifecycle Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.24.1</td>
-      <td style="text-align: left">Evidence of Record Entry Legal Hold Removal Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.25</td>
-      <td style="text-align: left">Verify Record Entries</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.25.1</td>
-      <td style="text-align: left">Evidence of Record Entry Verification Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.26</td>
-      <td style="text-align: left">Encrypt Record Entries</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.26.1</td>
-      <td style="text-align: left">Evidence of Record Entry Encryption Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.27</td>
-      <td style="text-align: left">Decrypt Record Entries</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.1.27.1</td>
-      <td style="text-align: left">Evidence of Record Entry Decryption Event</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.2</td>
-      <td style="text-align: left">Record Lifespan</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.2.1</td>
-      <td style="text-align: left">Manage Record Entries</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.2.2</td>
-      <td style="text-align: left">Manage Record Entries for Legal Hold</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.3</td>
-      <td style="text-align: left">Record States</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.3.1</td>
-      <td style="text-align: left">Manage Record Pending State</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.3.2</td>
-      <td style="text-align: left">Manage Record Entry Amended, Corrected and Augmented State</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.3.3</td>
-      <td style="text-align: left">Manage Record Entry Succession and Version Control</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.3.4</td>
-      <td style="text-align: left">Manage Record Entry Retraction</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.1.4</td>
-      <td style="text-align: left">Record Completeness</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.2</td>
-      <td style="text-align: left">Record Synchronization</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>RI.3</td>
-      <td style="text-align: left">Record Archive and Restore</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left"> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
       <td>TI.1</td>
       <td style="text-align: left">Security</td>
       <td style="text-align: left"> </td>
@@ -2163,7 +1632,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 15, 2022 13:55-0600">2022-08-15</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 14, 2022 11:08-0500">2022-10-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

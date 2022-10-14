@@ -1,103 +1,37 @@
 {
   "package": "StandardPatientHealthRecordIG",
-  "version": "0.3.6",
+  "version": "0.4.2",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
-    "AllergyIntolerance": [
+    "Bundle": [
       {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrAllergyIntolerance",
-        "title": "PhrAllergyIntolerance"
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBundle",
+        "title": "PhrBundle"
       }
     ],
-    "BodyStructure": [
+    "Composition": [
       {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure",
-        "title": "PhrBodyStructure"
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrComposition",
+        "title": "PhrComposition"
       }
     ],
-    "CarePlan": [
+    "DocumentManifest": [
       {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan",
-        "title": "PhrCarePlan"
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDocumentManifest",
+        "title": "PhrDocumentManifest"
       }
     ],
-    "CareTeam": [
+    "DocumentReference": [
       {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam",
-        "title": "PhrCareTeam"
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDocumentReference",
+        "title": "PhrDocumentReference"
       }
     ],
-    "Communication": [
+    "Media": [
       {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication",
-        "title": "PhrCommunication"
-      }
-    ],
-    "Condition": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCondition",
-        "title": "PhrCondition"
-      }
-    ],
-    "Consent": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent",
-        "title": "PhrConsent"
-      }
-    ],
-    "Device": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice",
-        "title": "PhrDevice"
-      }
-    ],
-    "DiagnosticReport": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport",
-        "title": "PhrDiagnosticReport"
-      }
-    ],
-    "FamilyMemberHistory": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory",
-        "title": "PhrFamilyMemberHistory"
-      }
-    ],
-    "Goal": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrGoal",
-        "title": "PhrGoal"
-      }
-    ],
-    "Immunization": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrImmunization",
-        "title": "PhrImmunization"
-      }
-    ],
-    "Medication": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedication",
-        "title": "PhrMedication"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedicationStatement",
-        "title": "PhrMedicationStatement"
-      }
-    ],
-    "MolecularSequence": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMolecularSequence",
-        "title": "PhrMolecularSequence"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrObservation",
-        "title": "PhrObservation"
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrMedia",
+        "title": "PhrMedia"
       }
     ],
     "Patient": [
@@ -106,28 +40,10 @@
         "title": "PhrPatient"
       }
     ],
-    "Practitioner": [
+    "Provenance": [
       {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrPractitioner",
-        "title": "PhrPractitioner"
-      }
-    ],
-    "Procedure": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProcedure",
-        "title": "PhrProcedure"
-      }
-    ],
-    "RelatedPerson": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson",
-        "title": "PhrRelatedPerson"
-      }
-    ],
-    "Specimen": [
-      {
-        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen",
-        "title": "PhrSpecimen"
+        "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrProvenance",
+        "title": "PhrProvenance"
       }
     ]
   },
@@ -150,9 +66,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -173,14 +86,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch": [
-      "Composition",
-      "Organization"
-    ],
-    "https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path": [
-      "Composition",
-      "Organization"
     ]
   }
 }

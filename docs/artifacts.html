@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.6 - ci-build
+            <span style="display:inline-block;">0.4.2 - ci-build
 
 
             </span>
@@ -82,8 +82,20 @@
   <li>
     <a href="recordkeeping.html">Record Keeping</a>
   </li>
+  <li>
+    <a href="recordlifecycle.html">Record Lifecycle</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li>
+    <a href="functionality.html">Functional Model</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Optional
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -91,10 +103,7 @@
         <a href="history.html">History</a>
       </li>
       <li>
-        <a href="datamodel.html">Data Model</a>
-      </li>
-      <li>
-        <a href="functionality.html">Functionality</a>
+        <a href="security.html">Security</a>
       </li>
       <li>
         <a href="physiology.html">Physiology Simulations</a>
@@ -139,7 +148,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.3.6). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.4.2). See the <a href="https://gitlab.mitre.org/awatson/sphr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -157,7 +166,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Concept Maps</a>
       </li>
    </ul>
 </div>
@@ -181,24 +190,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Standard PHR profile of the Environmental resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-HealthReceipt.html"
-                     title="StructureDefinition/HealthReceipt">HealthReceipt</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the HealthReceipt resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-NutrientIntake.html"
-                     title="StructureDefinition/NutrientIntake">NutrientIntake</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the NutrientIntake resource.</p>
 </td>
             </tr>
             <tr>
@@ -233,146 +224,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrAllergyIntolerance.html"
-                     title="StructureDefinition/PhrAllergyIntolerance">PhrAllergyIntolerance</a>
+                  <a href="StructureDefinition-PhrBundle.html"
+                     title="StructureDefinition/PhrBundle">PhrBundle</a>
                </td>
                <td>
-<p>Standard PHR profile of the AllergyIntolerance resource.</p>
+<p>Standard PHR profile of the Bundle resource.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrBodyStructure.html"
-                     title="StructureDefinition/PhrBodyStructure">PhrBodyStructure</a>
+                  <a href="StructureDefinition-PhrComposition.html"
+                     title="StructureDefinition/PhrComposition">PhrComposition</a>
                </td>
                <td>
-<p>Standard PHR profile of the BodyStructure resource.</p>
+<p>Standard PHR profile of the Composition resource.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrCarePlan.html"
-                     title="StructureDefinition/PhrCarePlan">PhrCarePlan</a>
+                  <a href="StructureDefinition-PhrDocumentManifest.html"
+                     title="StructureDefinition/PhrDocumentManifest">PhrDocumentManifest</a>
                </td>
                <td>
-<p>Standard PHR profile of the CarePlan resource.</p>
+<p>Standard PHR profile of the DocumentManifest resource.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrCareTeam.html"
-                     title="StructureDefinition/PhrCareTeam">PhrCareTeam</a>
+                  <a href="StructureDefinition-PhrDocumentReference.html"
+                     title="StructureDefinition/PhrDocumentReference">PhrDocumentReference</a>
                </td>
                <td>
-<p>Standard PHR profile of the CareTeam resource.</p>
+<p>Standard PHR profile of the DocumentReference resource.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrCommunication.html"
-                     title="StructureDefinition/PhrCommunication">PhrCommunication</a>
+                  <a href="StructureDefinition-PhrMedia.html"
+                     title="StructureDefinition/PhrMedia">PhrMedia</a>
                </td>
                <td>
-<p>Standard PHR profile of the Communication resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrCondition.html"
-                     title="StructureDefinition/PhrCondition">PhrCondition</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Condition resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrConsent.html"
-                     title="StructureDefinition/PhrConsent">PhrConsent</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Consent resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrDevice.html"
-                     title="StructureDefinition/PhrDevice">PhrDevice</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Device resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrDiagnosticReport.html"
-                     title="StructureDefinition/PhrDiagnosticReport">PhrDiagnosticReport</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the DiagnosticReport resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrFamilyMemberHistory.html"
-                     title="StructureDefinition/PhrFamilyMemberHistory">PhrFamilyMemberHistory</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the FamilyMemberHistory resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrGoal.html"
-                     title="StructureDefinition/PhrGoal">PhrGoal</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Goal resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrImmunization.html"
-                     title="StructureDefinition/PhrImmunization">PhrImmunization</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Immunization resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrMedication.html"
-                     title="StructureDefinition/PhrMedication">PhrMedication</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Medication resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrMedicationStatement.html"
-                     title="StructureDefinition/PhrMedicationStatement">PhrMedicationStatement</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the MedicationStatement resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrMolecularSequence.html"
-                     title="StructureDefinition/PhrMolecularSequence">PhrMolecularSequence</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the MolecularSequence resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrObservation.html"
-                     title="StructureDefinition/PhrObservation">PhrObservation</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Observation resource.</p>
+<p>Standard PHR profile of the Media resource.</p>
 </td>
             </tr>
             <tr>
@@ -386,47 +278,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrPractitioner.html"
-                     title="StructureDefinition/PhrPractitioner">PhrPractitioner</a>
+                  <a href="StructureDefinition-PhrProvenance.html"
+                     title="StructureDefinition/PhrProvenance">PhrProvenance</a>
                </td>
                <td>
-<p>Standard PHR profile of the Practitioner resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrProcedure.html"
-                     title="StructureDefinition/PhrProcedure">PhrProcedure</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Procedure resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrRelatedPerson.html"
-                     title="StructureDefinition/PhrRelatedPerson">PhrRelatedPerson</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the RelatedPerson resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-PhrSpecimen.html"
-                     title="StructureDefinition/PhrSpecimen">PhrSpecimen</a>
-               </td>
-               <td>
-<p>Standard PHR profile of the Specimen resource.</p>
+<p>Standard PHR profile of the Provenance resource.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="3"> </a>
-   <h3>Example: Example Instances </h3>
+   <h3>Terminology: Concept Maps </h3>
    <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide</p>
 </p>
    <p>
       <table class="grid">
@@ -434,317 +299,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-Care-Plan-Example.html"
-                     title="Composition/Care-Plan-Example">Care-Plan-Example</a>
+                  <a href="ConceptMap-FirstToGiven.html" title="ConceptMap/FirstToGiven">FirstToGiven</a>
                </td>
                <td>
-<p>John Doe - Composition - CarePlan</p>
+<p>First name is mapped to Given name</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-Consultation-Note-Example.html"
-                     title="Composition/Consultation-Note-Example">Consultation-Note-Example</a>
+                  <a href="ConceptMap-LastToFamily.html" title="ConceptMap/LastToFamily">LastToFamily</a>
                </td>
                <td>
-<p>John Doe - Composition - Consultation Note</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-ContinuityCareDocument1.html"
-                     title="Composition/ContinuityCareDocument1">ContinuityCareDocument1</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Continuity of Care Document</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-DiagnosticImagingReport1.html"
-                     title="Composition/DiagnosticImagingReport1">DiagnosticImagingReport1</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Diagnostic Imaging Report</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Discharge-Summary-Example.html"
-                     title="Composition/Discharge-Summary-Example">Discharge-Summary-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Discharge Summary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="BodyStructure-ExampleBodyStructure.html"
-                     title="BodyStructure/ExampleBodyStructure">ExampleBodyStructure</a>
-               </td>
-               <td>
-<p>John Doe - BodyStructure - Left Foot</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CarePlan-ExampleCarePlan.html" title="CarePlan/ExampleCarePlan">ExampleCarePlan</a>
-               </td>
-               <td>
-<p>John Doe - CarePlan - Consolidated</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CareTeam-ExampleCareTeam.html" title="CareTeam/ExampleCareTeam">ExampleCareTeam</a>
-               </td>
-               <td>
-<p>John Doe - CareTeam</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Communication-ExampleCommunication.html"
-                     title="Communication/ExampleCommunication">ExampleCommunication</a>
-               </td>
-               <td>
-<p>John Doe - Communication - New medication request.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Consent-ExampleConsent.html" title="Consent/ExampleConsent">ExampleConsent</a>
-               </td>
-               <td>
-<p>John Doe - Consent - Advanced Directive</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Device-ExampleDevice.html" title="Device/ExampleDevice">ExampleDevice</a>
-               </td>
-               <td>
-<p>John Doe - Device - Digital Blood Pressure Cuff</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-ExampleDiagnosticReport.html"
-                     title="DiagnosticReport/ExampleDiagnosticReport">ExampleDiagnosticReport</a>
-               </td>
-               <td>
-<p>John Doe - DiagnosticReport</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="FamilyMemberHistory-ExampleFamilyMemberHistory.html"
-                     title="FamilyMemberHistory/ExampleFamilyMemberHistory">ExampleFamilyMemberHistory</a>
-               </td>
-               <td>
-<p>John Doe - FamilyMemberHistory</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="RelatedPerson-ExampleRelatedPerson.html"
-                     title="RelatedPerson/ExampleRelatedPerson">ExampleRelatedPerson</a>
-               </td>
-               <td>
-<p>John Doe - RelatedPerson - Sister</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Specimen-ExampleSpecimen.html" title="Specimen/ExampleSpecimen">ExampleSpecimen</a>
-               </td>
-               <td>
-<p>John Doe - Specimen - Urinalysis</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-History-and-Physical-Example.html"
-                     title="Composition/History-and-Physical-Example">History-and-Physical-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - History &amp; Physical</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Condition-JohnDoe-diabetes.html"
-                     title="Condition/JohnDoe-diabetes">JohnDoe-diabetes</a>
-               </td>
-               <td>
-<p>John Doe - Condition - Diabetes</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-JohnDoe-diabetesOnset.html"
-                     title="Encounter/JohnDoe-diabetesOnset">JohnDoe-diabetesOnset</a>
-               </td>
-               <td>
-<p>John Doe - Encounter - Diabetes diagnosis</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-Medication-Metformin.html"
-                     title="Bundle/Medication-Metformin">Medication-Metformin</a>
-               </td>
-               <td>
-<p>John Doe - Bundle - Medication Reconciliation Bundle</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-ObservationsBundle1.html"
-                     title="Bundle/ObservationsBundle1">ObservationsBundle1</a>
-               </td>
-               <td>
-<p>John Doe - Observation - Collection</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Operative-Note-Example.html"
-                     title="Composition/Operative-Note-Example">Operative-Note-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Operative Note</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-PractitionersBundle1.html"
-                     title="Bundle/PractitionersBundle1">PractitionersBundle1</a>
-               </td>
-               <td>
-<p>John Doe - Practitioners - Collection</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Procedure-Note-Example.html"
-                     title="Composition/Procedure-Note-Example">Procedure-Note-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Procedure Note</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Progress-Note-Example.html"
-                     title="Composition/Progress-Note-Example">Progress-Note-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Progress Note</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Referral-Note-Example.html"
-                     title="Composition/Referral-Note-Example">Referral-Note-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Referral Note</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Composition-Transfer-Summary-Example.html"
-                     title="Composition/Transfer-Summary-Example">Transfer-Summary-Example</a>
-               </td>
-               <td>
-<p>John Doe - Composition - Transfer Summary</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="AllergyIntolerance-allergy-intolerance.html"
-                     title="AllergyIntolerance/allergy-intolerance">allergy-intolerance</a>
-               </td>
-               <td>
-<p>John Doe - AllergyIntolerance - Sulfonamide</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-immunization.html" title="Immunization/immunization">immunization</a>
-               </td>
-               <td>
-<p>John Doe - Immunization - Fluzone</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-john-doe.html" title="Patient/john-doe">john-doe</a>
-               </td>
-               <td>
-<p>John Doe - Patient Demographics</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="MedicationStatement-medication-statement.html"
-                     title="MedicationStatement/medication-statement">medication-statement</a>
-               </td>
-               <td>
-<p>John Doe - MedicationStatement - Lisinopril</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-observation-lab-urine.html"
-                     title="Observation/observation-lab-urine">observation-lab-urine</a>
-               </td>
-               <td>
-<p>John Doe - Observation - Urinalysis</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-observation-smoker.html"
-                     title="Observation/observation-smoker">observation-smoker</a>
-               </td>
-               <td>
-<p>John Doe - Observation - Smoking status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-observation-vitals-temp.html"
-                     title="Observation/observation-vitals-temp">observation-vitals-temp</a>
-               </td>
-               <td>
-<p>John Doe - Observation - Body temperature</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-organization-1.html"
-                     title="Organization/organization-1">organization-1</a>
-               </td>
-               <td>
-<p>Organization - Acme Labs</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Procedure-procedure-rehab.html" title="Procedure/procedure-rehab">procedure-rehab</a>
-               </td>
-               <td>
-<p>John Doe - Procedure - Alcohol rehabilitation</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-undefined.html" title="Bundle/undefined">undefined</a>
-               </td>
-               <td>
-
+<p>Last name is mapped to Family name</p>
 </td>
             </tr>
          </tbody>
@@ -774,7 +340,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.3.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 15, 2022 13:55-0600">2022-08-15</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gitlab.mitre.org/awatson/sphr">MITRE</a>.  Package StandardPatientHealthRecordIG#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 14, 2022 11:08-0500">2022-10-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

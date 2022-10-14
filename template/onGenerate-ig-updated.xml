@@ -10,10 +10,10 @@
       </div>
    </text>
    <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/>
-   <version value="0.4.1"/>
+   <version value="0.4.2"/>
    <name value="StandardPatientHealthRecordIG"/>
    <status value="draft"/>
-   <date value="2022-09-29T00:03:59-07:00"/>
+   <date value="2022-10-14T11:08:00-05:00"/>
    <publisher value="MITRE"/>
    <contact>
       <name value="MITRE"/>

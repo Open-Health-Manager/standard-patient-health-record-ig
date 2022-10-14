@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/sphr/ImplementationGuide/StandardPatientHealthRecordIG"/>
-  <version value="0.3.6"/>
+  <version value="0.4.2"/>
   <name value="StandardPatientHealthRecordIG"/>
   <status value="draft"/>
-  <date value="2022-08-15T13:55:23-06:00"/>
+  <date value="2022-10-14T11:08:00-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -203,10 +203,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PhrAllergyIntolerance"/>
+        <reference value="StructureDefinition/PhrBundle"/>
       </reference>
-      <name value="PhrAllergyIntolerance"/>
-      <description value="Standard PHR profile of the AllergyIntolerance resource."/>
+      <name value="PhrBundle"/>
+      <description value="Standard PHR profile of the Bundle resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -214,10 +214,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PhrBodyStructure"/>
+        <reference value="StructureDefinition/PhrComposition"/>
       </reference>
-      <name value="PhrBodyStructure"/>
-      <description value="Standard PHR profile of the BodyStructure resource."/>
+      <name value="PhrComposition"/>
+      <description value="Standard PHR profile of the Composition resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -225,10 +225,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PhrCarePlan"/>
+        <reference value="StructureDefinition/PhrDocumentManifest"/>
       </reference>
-      <name value="PhrCarePlan"/>
-      <description value="Standard PHR profile of the CarePlan resource."/>
+      <name value="PhrDocumentManifest"/>
+      <description value="Standard PHR profile of the DocumentManifest resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -236,10 +236,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PhrCareTeam"/>
+        <reference value="StructureDefinition/PhrDocumentReference"/>
       </reference>
-      <name value="PhrCareTeam"/>
-      <description value="Standard PHR profile of the CareTeam resource."/>
+      <name value="PhrDocumentReference"/>
+      <description value="Standard PHR profile of the DocumentReference resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -247,131 +247,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PhrCommunication"/>
+        <reference value="StructureDefinition/PhrMedia"/>
       </reference>
-      <name value="PhrCommunication"/>
-      <description value="Standard PHR profile of the Communication resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrCondition"/>
-      </reference>
-      <name value="PhrCondition"/>
-      <description value="Standard PHR profile of the Condition resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrConsent"/>
-      </reference>
-      <name value="PhrConsent"/>
-      <description value="Standard PHR profile of the Consent resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrDevice"/>
-      </reference>
-      <name value="PhrDevice"/>
-      <description value="Standard PHR profile of the Device resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrDiagnosticReport"/>
-      </reference>
-      <name value="PhrDiagnosticReport"/>
-      <description value="Standard PHR profile of the DiagnosticReport resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrFamilyMemberHistory"/>
-      </reference>
-      <name value="PhrFamilyMemberHistory"/>
-      <description value="Standard PHR profile of the FamilyMemberHistory resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrGoal"/>
-      </reference>
-      <name value="PhrGoal"/>
-      <description value="Standard PHR profile of the Goal resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrImmunization"/>
-      </reference>
-      <name value="PhrImmunization"/>
-      <description value="Standard PHR profile of the Immunization resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrMedication"/>
-      </reference>
-      <name value="PhrMedication"/>
-      <description value="Standard PHR profile of the Medication resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrMedicationStatement"/>
-      </reference>
-      <name value="PhrMedicationStatement"/>
-      <description value="Standard PHR profile of the MedicationStatement resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrMolecularSequence"/>
-      </reference>
-      <name value="PhrMolecularSequence"/>
-      <description value="Standard PHR profile of the MolecularSequence resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrObservation"/>
-      </reference>
-      <name value="PhrObservation"/>
-      <description value="Standard PHR profile of the Observation resource."/>
+      <name value="PhrMedia"/>
+      <description value="Standard PHR profile of the Media resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -390,43 +269,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PhrPractitioner"/>
+        <reference value="StructureDefinition/PhrProvenance"/>
       </reference>
-      <name value="PhrPractitioner"/>
-      <description value="Standard PHR profile of the Practitioner resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrProcedure"/>
-      </reference>
-      <name value="PhrProcedure"/>
-      <description value="Standard PHR profile of the Procedure resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrRelatedPerson"/>
-      </reference>
-      <name value="PhrRelatedPerson"/>
-      <description value="Standard PHR profile of the RelatedPerson resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PhrSpecimen"/>
-      </reference>
-      <name value="PhrSpecimen"/>
-      <description value="Standard PHR profile of the Specimen resource."/>
+      <name value="PhrProvenance"/>
+      <description value="Standard PHR profile of the Provenance resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -438,28 +284,6 @@
       </reference>
       <name value="Environmental"/>
       <description value="Standard PHR profile of the Environmental resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/HealthReceipt"/>
-      </reference>
-      <name value="HealthReceipt"/>
-      <description value="Standard PHR profile of the HealthReceipt resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NutrientIntake"/>
-      </reference>
-      <name value="NutrientIntake"/>
-      <description value="Standard PHR profile of the NutrientIntake resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -486,398 +310,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
+        <valueString value="ConceptMap"/>
       </extension>
       <reference>
-        <reference value="Composition/Care-Plan-Example"/>
+        <reference value="ConceptMap/FirstToGiven"/>
       </reference>
-      <name value="Care-Plan-Example"/>
-      <description value="John Doe - Composition - CarePlan"/>
-      <exampleBoolean value="true"/>
+      <name value="FirstToGiven"/>
+      <description value="First name is mapped to Given name"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
+        <valueString value="ConceptMap"/>
       </extension>
       <reference>
-        <reference value="Composition/Consultation-Note-Example"/>
+        <reference value="ConceptMap/LastToFamily"/>
       </reference>
-      <name value="Consultation-Note-Example"/>
-      <description value="John Doe - Composition - Consultation Note"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/ContinuityCareDocument1"/>
-      </reference>
-      <name value="ContinuityCareDocument1"/>
-      <description value="John Doe - Composition - Continuity of Care Document"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/DiagnosticImagingReport1"/>
-      </reference>
-      <name value="DiagnosticImagingReport1"/>
-      <description value="John Doe - Composition - Diagnostic Imaging Report"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/Discharge-Summary-Example"/>
-      </reference>
-      <name value="Discharge-Summary-Example"/>
-      <description value="John Doe - Composition - Discharge Summary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="BodyStructure"/>
-      </extension>
-      <reference>
-        <reference value="BodyStructure/ExampleBodyStructure"/>
-      </reference>
-      <name value="ExampleBodyStructure"/>
-      <description value="John Doe - BodyStructure - Left Foot"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBodyStructure"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/ExampleCarePlan"/>
-      </reference>
-      <name value="ExampleCarePlan"/>
-      <description value="John Doe - CarePlan - Consolidated"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCarePlan"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CareTeam"/>
-      </extension>
-      <reference>
-        <reference value="CareTeam/ExampleCareTeam"/>
-      </reference>
-      <name value="ExampleCareTeam"/>
-      <description value="John Doe - CareTeam"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCareTeam"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Communication"/>
-      </extension>
-      <reference>
-        <reference value="Communication/ExampleCommunication"/>
-      </reference>
-      <name value="ExampleCommunication"/>
-      <description value="John Doe - Communication - New medication request."/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrCommunication"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/ExampleConsent"/>
-      </reference>
-      <name value="ExampleConsent"/>
-      <description value="John Doe - Consent - Advanced Directive"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrConsent"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/ExampleDevice"/>
-      </reference>
-      <name value="ExampleDevice"/>
-      <description value="John Doe - Device - Digital Blood Pressure Cuff"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDevice"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DiagnosticReport"/>
-      </extension>
-      <reference>
-        <reference value="DiagnosticReport/ExampleDiagnosticReport"/>
-      </reference>
-      <name value="ExampleDiagnosticReport"/>
-      <description value="John Doe - DiagnosticReport"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrDiagnosticReport"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="FamilyMemberHistory"/>
-      </extension>
-      <reference>
-        <reference value="FamilyMemberHistory/ExampleFamilyMemberHistory"/>
-      </reference>
-      <name value="ExampleFamilyMemberHistory"/>
-      <description value="John Doe - FamilyMemberHistory"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrFamilyMemberHistory"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/ExampleRelatedPerson"/>
-      </reference>
-      <name value="ExampleRelatedPerson"/>
-      <description value="John Doe - RelatedPerson - Sister"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrRelatedPerson"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Specimen"/>
-      </extension>
-      <reference>
-        <reference value="Specimen/ExampleSpecimen"/>
-      </reference>
-      <name value="ExampleSpecimen"/>
-      <description value="John Doe - Specimen - Urinalysis"/>
-      <exampleCanonical value="https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrSpecimen"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/History-and-Physical-Example"/>
-      </reference>
-      <name value="History-and-Physical-Example"/>
-      <description value="John Doe - Composition - History &amp; Physical"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/JohnDoe-diabetes"/>
-      </reference>
-      <name value="JohnDoe-diabetes"/>
-      <description value="John Doe - Condition - Diabetes"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/JohnDoe-diabetesOnset"/>
-      </reference>
-      <name value="JohnDoe-diabetesOnset"/>
-      <description value="John Doe - Encounter - Diabetes diagnosis"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/Medication-Metformin"/>
-      </reference>
-      <name value="Medication-Metformin"/>
-      <description value="John Doe - Bundle - Medication Reconciliation Bundle"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/ObservationsBundle1"/>
-      </reference>
-      <name value="ObservationsBundle1"/>
-      <description value="John Doe - Observation - Collection"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/Operative-Note-Example"/>
-      </reference>
-      <name value="Operative-Note-Example"/>
-      <description value="John Doe - Composition - Operative Note"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/PractitionersBundle1"/>
-      </reference>
-      <name value="PractitionersBundle1"/>
-      <description value="John Doe - Practitioners - Collection"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/Procedure-Note-Example"/>
-      </reference>
-      <name value="Procedure-Note-Example"/>
-      <description value="John Doe - Composition - Procedure Note"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/Progress-Note-Example"/>
-      </reference>
-      <name value="Progress-Note-Example"/>
-      <description value="John Doe - Composition - Progress Note"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/Referral-Note-Example"/>
-      </reference>
-      <name value="Referral-Note-Example"/>
-      <description value="John Doe - Composition - Referral Note"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/Transfer-Summary-Example"/>
-      </reference>
-      <name value="Transfer-Summary-Example"/>
-      <description value="John Doe - Composition - Transfer Summary"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/allergy-intolerance"/>
-      </reference>
-      <name value="allergy-intolerance"/>
-      <description value="John Doe - AllergyIntolerance - Sulfonamide"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/immunization"/>
-      </reference>
-      <name value="immunization"/>
-      <description value="John Doe - Immunization - Fluzone"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/john-doe"/>
-      </reference>
-      <name value="john-doe"/>
-      <description value="John Doe - Patient Demographics"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
-      </extension>
-      <reference>
-        <reference value="MedicationStatement/medication-statement"/>
-      </reference>
-      <name value="medication-statement"/>
-      <description value="John Doe - MedicationStatement - Lisinopril"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/observation-lab-urine"/>
-      </reference>
-      <name value="observation-lab-urine"/>
-      <description value="John Doe - Observation - Urinalysis"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/observation-smoker"/>
-      </reference>
-      <name value="observation-smoker"/>
-      <description value="John Doe - Observation - Smoking status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/observation-vitals-temp"/>
-      </reference>
-      <name value="observation-vitals-temp"/>
-      <description value="John Doe - Observation - Body temperature"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/organization-1"/>
-      </reference>
-      <name value="organization-1"/>
-      <description value="Organization - Acme Labs"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/procedure-rehab"/>
-      </reference>
-      <name value="procedure-rehab"/>
-      <description value="John Doe - Procedure - Alcohol rehabilitation"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/undefined"/>
-      </reference>
-      <name value="undefined"/>
-      <exampleBoolean value="true"/>
+      <name value="LastToFamily"/>
+      <description value="Last name is mapped to Family name"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -894,13 +345,23 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance Recommendations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="recordkeeping.html"/>
         <title value="Record Keeping"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="recordlifecycle.html"/>
+        <title value="Record Lifecycle"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="functionality.html"/>
-        <title value="Functionality"/>
+        <title value="Functional Model"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -914,8 +375,18 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="personas.html"/>
         <title value="Patient Personas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>

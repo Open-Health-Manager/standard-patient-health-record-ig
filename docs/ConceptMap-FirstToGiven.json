@@ -1,0 +1,26 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "FirstToGiven",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>null (https://gitlab.mitre.org/awatson/sphr/ConceptMap/FirstToGiven)</h2><p>Mapping from firstName to name.given</p><p>DRAFT. Published on 2022-10-14 11:08:00-0500 by MITRE (MITRE: <a href=\"https://gitlab.mitre.org/awatson/sphr\">https://gitlab.mitre.org/awats...</a>). </p><br/></div>"
+  },
+  "url": "https://gitlab.mitre.org/awatson/sphr/ConceptMap/FirstToGiven",
+  "version": "0.4.2",
+  "status": "draft",
+  "date": "2022-10-14T11:08:00-05:00",
+  "publisher": "MITRE",
+  "contact": [
+    {
+      "name": "MITRE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://gitlab.mitre.org/awatson/sphr"
+        }
+      ]
+    }
+  ],
+  "sourceUri": "firstName",
+  "targetUri": "name.given"
+}
