@@ -23,9 +23,12 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
+
 * value[x] 1..* /*TODO syntax*/ "The sample's value." "The sample's value."
+
 * workoutActivity 0..1 CodeableConcept "The workout activity type." "The workout activity type." 
 * workoutDuration 0..1 period "The workout duration." "The workout duration."
+
 /* above intends to map to Observation.value[x], which includes
     - Observation.valueQuantity
     - Observation.CodeableConcept
