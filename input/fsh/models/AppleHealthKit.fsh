@@ -7,7 +7,7 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 
 * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
 * device 0..1 link(Device) "Device" "The device that generated the data for this HealthKit object."
-* sourceRevision 1..1 "Source Version" "The version of the app or device that generated the data for this HealthKit object."
+* sourceRevision 1..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
 /* ^ above could map to Observation.device or Provenance.agent
  */
 
@@ -23,10 +23,9 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
-
-* value[x] 1..* /*TODO syntax*/ "The sample's value." "The sample's value."
-
+* value[x] 1..* "The sample's value." "The sample's value."
 * workoutActivity 0..1 CodeableConcept "The workout activity type." "The workout activity type." 
+// define new ValueSet for workoutActivity?
 * workoutDuration 0..1 period "The workout duration." "The workout duration."
 
 /* above intends to map to Observation.value[x], which includes
