@@ -1,7 +1,9 @@
+
 **/.DS_Store
 Thumbs.db
 /fsh-generated
 /input-cache
+/input-cache/publisher.jar
 /output
 /temp
 /template

@@ -1,0 +1,174 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PhrBundle",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://gitlab.mitre.org/awatson/sphr/StructureDefinition/PhrBundle",
+  "version": "0.4.2",
+  "name": "PhrBundle",
+  "status": "active",
+  "description": "Standard PHR profile of the Bundle resource.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "patternCode": "document"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resource.resolve()"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the entry.resource pattern"
+        },
+        "min": 6
+      },
+      {
+        "id": "Bundle.entry:primaryPatientResource",
+        "path": "Bundle.entry",
+        "sliceName": "primaryPatientResource",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:primaryPatientResource.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:coverPage",
+        "path": "Bundle.entry",
+        "sliceName": "coverPage",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:coverPage.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Composition"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tableOfContents",
+        "path": "Bundle.entry",
+        "sliceName": "tableOfContents",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tableOfContents.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "DocumentManifest"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:documentReferences",
+        "path": "Bundle.entry",
+        "sliceName": "documentReferences",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:documentReferences.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "DocumentReference"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:mediaReferences",
+        "path": "Bundle.entry",
+        "sliceName": "mediaReferences",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:mediaReferences.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Media"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:provenanceRecords",
+        "path": "Bundle.entry",
+        "sliceName": "provenanceRecords",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:provenanceRecords.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Provenance"
+          }
+        ]
+      }
+    ]
+  }
+}
