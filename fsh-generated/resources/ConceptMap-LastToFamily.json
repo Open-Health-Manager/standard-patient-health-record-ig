@@ -1,8 +1,0 @@
-{
-  "resourceType": "ConceptMap",
-  "id": "LastToFamily",
-  "url": "https://gitlab.mitre.org/awatson/sphr/ConceptMap/LastToFamily",
-  "status": "draft",
-  "sourceUri": "lastName",
-  "targetUri": "name.family"
-}
