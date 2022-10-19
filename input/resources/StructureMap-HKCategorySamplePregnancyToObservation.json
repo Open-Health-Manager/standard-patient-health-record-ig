@@ -1,0 +1,51 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "HKCategorySamplePregnancyToObservation",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation&quot; = &quot;HKCategorySamplePregnancyToObservation&quot;\n\nuses &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample&quot; alias HKCategorySamplePregnancy as source\n\nuses &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus&quot; alias Observation as target\n\ngroup HKCategorySamplePregnancyToObservation ( \n  source sample : HKCategorySamplePregnancy\n  target condition : Observation\n) {\n  sample.startDate as startDate -&gt; condition.effectiveDateTime = startDate &quot;startDate to effectiveDateTime&quot;;\n}</pre></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation",
+  "name" : "HKCategorySamplePregnancyToObservation",
+  "structure" : [{
+    "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample",
+    "mode" : "source",
+    "alias" : "HKCategorySamplePregnancy"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus",
+    "mode" : "target",
+    "alias" : "Observation"
+  }],
+  "group" : [{
+    "name" : "HKCategorySamplePregnancyToObservation",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "sample",
+      "type" : "HKCategorySamplePregnancy",
+      "mode" : "source"
+    },
+    {
+      "name" : "condition",
+      "type" : "Observation",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "startDate to effectiveDateTime",
+      "source" : [{
+        "context" : "sample",
+        "element" : "startDate",
+        "variable" : "startDate"
+      }],
+      "target" : [{
+        "context" : "condition",
+        "contextType" : "variable",
+        "element" : "effectiveDateTime",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "startDate"
+        }]
+      }]
+    }]
+  }]
+}

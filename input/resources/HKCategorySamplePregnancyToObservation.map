@@ -1,0 +1,12 @@
+map "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation" = "HKCategorySamplePregnancyToObservation"
+
+uses "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample" alias HKCategorySamplePregnancy as source
+
+uses "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus" alias Observation as target
+
+group HKCategorySamplePregnancyToObservation ( 
+  source sample : HKCategorySamplePregnancy
+  target condition : Observation
+) {
+  sample.startDate as startDate -> condition.effectiveDateTime = startDate "startDate to effectiveDateTime";
+}
