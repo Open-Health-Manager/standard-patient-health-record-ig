@@ -19,7 +19,7 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [PACIO - Advanced Directives](https://build.fhir.org/ig/HL7/fhir-pacio-adi/) | SHOULD | MAY |
 | [PACIO - Cognitive Status](https://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status/) | MAY | MAY |
 | [PACIO - Functional Status](https://build.fhir.org/ig/HL7/fhir-pacio-functional-status/) | MAY | MAY |
-| [VCI - Vaccine Credential Initiative](https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/) | SHOULD | MAY |
+| [SMART Health Cards - Vaccination and Testing](https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/) | SHOULD | MAY |
 | [Gravity - Social Determinates of Health](https://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare/) | SHOULD | MAY |
 | [Dental Data Exchange](https://build.fhir.org/ig/HL7/dental-data-exchange/) | MAY | MAY |
 | [Genomics Reporting](https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html) | MAY | MAY |
@@ -29,7 +29,6 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [Vital Signs](https://build.fhir.org/ig/HL7/cimi-vital-signs/) | SHOULD | MAY |
 | [UDAP Security](https://build.fhir.org/ig/HL7/fhir-udap-security-ig/) | NOT APPLICABLE | SHOULD |
 | [SNOMED Terminology Server](https://build.fhir.org/ig/IHTSDO/snomed-ig/) | SHOULD | MAY |
-| [COVID19](https://build.fhir.org/ig/aih-uth/mycovid/artifacts.html) | MAY | MAY |
 | [CARIN Digital Insurance Card](https://build.fhir.org/ig/HL7/carin-digital-insurance-card/) | SHOULD | MAY |
 | [Mobile Access to Health Documents](https://profiles.ihe.net/ITI/MHD/) | MAY | MAY |
 | [Patient Reported Outcomes](http://hl7.org/fhir/us/patient-reported-outcomes/2019May/index.html) | MAY | MAY |

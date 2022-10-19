@@ -48,13 +48,3 @@ Loosely speaking, this data model contains all data that relevant to a patient's
 | [Slot](https://www.hl7.org/fhir/slot.html) |  | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)   |  | Yes | 
 | [Task](https://www.hl7.org/fhir/task.html) |  | [Patient Request for Corrections](https://build.fhir.org/ig/HL7/fhir-patient-correction/) |  | No  | 
 
-
-
-### Novel Logical Models
-
-This implementation guide describes a number of novel logical models which address gaps in the FHIR API.  The following models should be considered as potential candidates for moving into the core FHIR spec in R5 or R6.  
-
-- [HealthReceipt]()
-- [SocialMedia]()
-- [Environmental]()
-- [NutrientOuttake]()
