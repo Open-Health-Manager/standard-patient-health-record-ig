@@ -79,11 +79,12 @@ menu:
   Record Keeping: recordkeeping.html
   Conformance: conformance.html
   Data Model: datamodel.html
-  Functional Model: functionality.html
-  Supplemental:
-    History: history.html
+  Functional Model:
+    Functional Model: functionality.html
     Record Lifecycle: recordlifecycle.html
     Security: security.html
+  Supplemental:
+    History: history.html
     Physiology Simulations: physiology.html
   Patient Personas: personas.html
   Artifacts: artifacts.html
@@ -91,29 +92,24 @@ menu:
 pages:
   index.md:
     title: Getting Started
-  history.md:
-    title: History
+  recordkeeping.md:
+    title: Record Keeping    
   conformance.md:
     title: Conformance Recommendations
-  recordkeeping.md:
-    title: Record Keeping
-  recordlifecycle.md:
-    title: Record Lifecycle
+  datamodel.md:
+    title: Data Model    
   functionality.md:
     title: Functional Model
-  datamodel.md:
-    title: Data Model
-  physiology.md:
-    title: Physiology Simulations
+  recordlifecycle.md:
+    title: Record Lifecycle    
   security.md:
     title: Security
+  history.md:
+    title: History    
+  physiology.md:
+    title: Physiology Simulations
   personas.md:
     title: Patient Personas
-  downloads.md:
-    title: Downloads
-  environments.md:
-    title: Design Considerations
-
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
