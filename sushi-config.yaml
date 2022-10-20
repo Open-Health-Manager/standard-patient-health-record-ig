@@ -77,12 +77,12 @@ publisher:
 menu:
   Home: index.html
   Record Keeping: recordkeeping.html
-  Record Lifecycle: recordlifecycle.html
   Conformance: conformance.html
   Data Model: datamodel.html
   Functional Model: functionality.html
   Supplemental:
     History: history.html
+    Record Lifecycle: recordlifecycle.html
     Security: security.html
     Physiology Simulations: physiology.html
   Patient Personas: personas.html

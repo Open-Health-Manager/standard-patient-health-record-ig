@@ -2,11 +2,24 @@ map "https://open-health-manager.github.io/standard-patient-health-record-ig/Str
 
 uses "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample" alias HKCategorySamplePregnancy as source
 
-uses "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus" alias Observation as target
+uses "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus" alias UsCoreObservationPregnancyStatus as target
 
 group HKCategorySamplePregnancyToObservation ( 
   source sample : HKCategorySamplePregnancy
-  target condition : Observation
+  target observation : UsCoreObservationPregnancyStatus
 ) {
-  sample.startDate as startDate -> condition.effectiveDateTime = startDate "startDate to effectiveDateTime";
+  sample -> observation.status = "final" "set status";
+  sample -> observation.category as category, category.coding as coding then {
+    sample -> coding.system =  "http://terminology.hl7.org/CodeSystem/observation-category" "set category code system";
+    sample -> coding.code = "social-history" "set category code";
+  } "set category";
+  sample -> observation.code as code, code.coding as coding then {
+    sample -> coding.system =  "http://loinc.org" "set code system";
+    sample -> coding.code = "82810-3" "set code";
+  } "set code";
+  sample.startDate as startDate -> observation.effectiveDateTime = startDate "startDate to effectiveDateTime";
+  sample -> observation.valueCodeableConcept as value, value.coding as coding then {
+    sample -> coding.system =  "http://snomed.info/sct" "set value system";
+    sample -> coding.code = "77386006" "set value";
+  } "set valueCodeableConcept";
 }

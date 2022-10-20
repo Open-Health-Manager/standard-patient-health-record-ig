@@ -25,11 +25,13 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [Genomics Reporting](https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html) | Genetics | MAY | MAY |
 | [Radiation Dose Summary](https://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig/) | Radiology  | MAY | MAY |
 | [Breast Radiology Reporting](https://build.fhir.org/ig/HL7/fhir-breast-radiology-ig/) |  Radiology | MAY | MAY |
+| [mCODE](http://hl7.org/fhir/us/mcode/) | | MAY | MAY |
 | [Allergy Intolerance](https://build.fhir.org/ig/hl7ch/ch-allergyintolerance/document.html) | Immunology  | SHOULD | MAY |
 | [Vital Signs](https://build.fhir.org/ig/HL7/cimi-vital-signs/) | Intensive Care  | SHOULD | MAY |
 | [UDAP Security](https://build.fhir.org/ig/HL7/fhir-udap-security-ig/) |   | NOT APPLICABLE | SHOULD |
 | [SNOMED Terminology Server](https://build.fhir.org/ig/IHTSDO/snomed-ig/) |   | SHOULD | MAY |
 | [CARIN Digital Insurance Card](https://build.fhir.org/ig/HL7/carin-digital-insurance-card/) |   | SHOULD | MAY |
+| [Physical Activity](https://build.fhir.org/ig/HL7/physical-activity) | | SHOULD | MAY |
 | [Mobile Access to Health Documents](https://profiles.ihe.net/ITI/MHD/) |   | MAY | MAY |
 | [Patient Reported Outcomes](http://hl7.org/fhir/us/patient-reported-outcomes/2019May/index.html) |   | MAY | MAY |
 | [Patient Health Devices](http://hl7.org/fhir/uv/phd/2019May/) |   | MAY | MAY |
