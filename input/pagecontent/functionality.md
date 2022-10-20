@@ -78,7 +78,7 @@ In effect, this implementation guide does not specify what functionality should 
 | S.1.5 | Manage Healthcare Facility Information | | |
 | S.1.6 | Manage Healthcare Facility Transparency Information | | |
 | S.1.7 | Manage Surveys on the Healthcare Experience | | |
-| S.2 | Financial Management | [Claim](https://www.hl7.org/fhir/claim.html)] | |
+| S.2 | Financial Management | [Claim](https://www.hl7.org/fhir/claim.html) | |
 | S.2.1 | Capture and Read Health Insurance Account and Benefit Information | | |
 | S.2.2 | Manage Health Insurance Plan Benefit Information | [InsurancePlan](https://www.hl7.org/fhir/insuranceplan.html) <br/> [ExplanationOfBenefit](https://www.hl7.org/fhir/explanationofbenefit.html) <br/>  | |
 | S.2.3 | Manage Standard Reporting |  [Measure](https://www.hl7.org/fhir/measure.html) <br/> [MeasureReport](https://www.hl7.org/fhir/measurereport.html)  | |
