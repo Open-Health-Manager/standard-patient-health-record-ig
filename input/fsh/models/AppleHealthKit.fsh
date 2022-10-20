@@ -23,10 +23,32 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
-* value[x] 1..* "The sample's value." "The sample's value."
-* workoutActivity 0..1 CodeableConcept "The workout activity type." "The workout activity type." 
-// define new ValueSet for workoutActivity?
+* hasUndeterminedDuration 0..1 boolean "Indicates an unknown sample duration." "This is true when the endDate of the sample is unknown or distant future."
+
+* categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType."
+
+* quantity 0..1
+* quantity.unit 0..1 code "The sample's unit." "When the HKSample is an HKQuantitySample, the corresponding HKQuantityUnit."
+// quantity.value at top-level
+//* quantityUnit 0..1 code "The sample's unit." "When the HKSample is an HKQuantitySample, the corresponding HKQuantityUnit."
+* quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType."
+
+* correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType."
+* objects 0..* Reference(AppleHealthKitSample) "The correlation sample's." "TODO"
+
+* value[x] 1..1
+* value[x] MS
+* value[x] only CodeableConcept or Quantity or string
+* value[x] ^comment = "value (TODO)"
+* valueCodeableConcept 0..1
+* valueString ^short = "String representation of results; used ONLY when a computable representation is not possible"
+
+
+* workoutActivity 0..1 code "The workout activity type." "The workout activity type." 
+// todo: workoutActivity possible codes
+
 * workoutDuration 0..1 period "The workout duration." "The workout duration."
+
 
 /* above intends to map to Observation.value[x], which includes
     - Observation.valueQuantity
@@ -55,8 +77,8 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 // var CategoryType: HKCategoryType
 // var value: Int
 
-//! HK Quantity
-// var quantity: HKQuantity
+//! HK Quantity Sample
+// var quantity: HKQuantity {HKUnit {string}, double}
 // var count: Int
 // var quantityType: HKQuantityType
 
