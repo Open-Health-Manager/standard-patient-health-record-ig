@@ -2,4 +2,52 @@
 
 [Current Build (Public)](https://open-health-manager.github.io/standard-patient-health-record-ig/)  
 
-[Current Build](https://awatson.pages.mitre.org/sphr/)  
+
+### Prerequisites 
+
+```bash 
+# install the sushi tool
+git clone https://github.com/FHIR/sushi
+npm install -g fsh-sushi
+sushi --help
+```
+
+
+#### Getting the Documentation    
+
+```shell
+# get a copy of the source code
+git clone https://github.com/Open-Health-Manager/standard-patient-health-record-ig
+cd fhir-directory-attestation
+```
+
+
+
+### Compiling Documentation  
+
+```bash 
+# update the publisher
+./_updatePublisher.sh
+
+# then compile the document
+./_genonce.sh
+
+# open the documentation (assuming Mac + Chrome)
+cd output
+open -a "Google Chrome" index.html
+```
+
+
+#### Contributing  
+
+```shell
+# check which branch you are on
+git branch
+
+# create a new branch
+git checkout -b new-branch
+
+# commit changes
+git commit -a -m 'descriptive message'
+git push origin new-branch
+```
