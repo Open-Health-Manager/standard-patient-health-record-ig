@@ -36,7 +36,7 @@ Loosely speaking, this data model contains all data that relevant to a patient's
 | [MedicationStatement](https://www.hl7.org/fhir/medicationstatement.html) |  |  |  | Yes |
 | [MolecularSequence](https://www.hl7.org/fhir/molecularsequence.html) | Whole Genome Sequence | [Genomics Reporting](https://build.fhir.org/ig/HL7/genomics-reporting/artifacts.html) | Genomics | No |
 
-| [Observation](https://www.hl7.org/fhir/observation.html) | Smoking status <br/> Glucose <br/> Steps Walked <br/> Diastolic Blood Pressure <br/> Systolic Blood Pressure <br/> Body Height <br/> Body Weight <br/> Heart Rate <br/> Respiratory Rate <br/> Body Temperature <br/> Pulse Oximetry <br/> Inhaled O2 Concentration <br/> BMI Percentile <br/> Weight for length percentile <br/> Head Circumference percentile | [Vital Signs](https://build.fhir.org/ig/HL7/cimi-vital-signs/)   | Symptoms <br/> Vital Signs <br/> Laboratory Results <br/> Remote Patient Monitoring <br/> Behavioral Observations <br/> Wearables <br/> Point of Care Testing <br/> | Yes |
+| [Observation](https://www.hl7.org/fhir/observation.html) | Smoking status <br/> Glucose <br/> Steps Walked <br/> Diastolic Blood Pressure <br/> Systolic Blood Pressure <br/> Body Height <br/> Body Weight <br/> Heart Rate <br/> Respiratory Rate <br/> Body Temperature <br/> Pulse Oximetry <br/> Inhaled O2 Concentration <br/> BMI Percentile <br/> Weight for length percentile <br/> Head Circumference percentile | [Vital Signs](https://build.fhir.org/ig/HL7/cimi-vital-signs/)<br/> [Physical Activity](https://build.fhir.org/ig/HL7/physical-activity)<br/> | Symptoms <br/> Vital Signs <br/> Laboratory Results <br/> Remote Patient Monitoring <br/> Behavioral Observations <br/> Wearables <br/> Point of Care Testing <br/> | Yes |
 | [Practitioner](https://www.hl7.org/fhir/practitioner.html) |  |  |  | Yes |
 | [Provenance](https://www.hl7.org/fhir/provenance.html) |  |  |  | No  | 
 | [Procedure](https://www.hl7.org/fhir/procedure.html) |  |  |  | Yes |
@@ -48,13 +48,3 @@ Loosely speaking, this data model contains all data that relevant to a patient's
 | [Slot](https://www.hl7.org/fhir/slot.html) |  | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/)   |  | Yes | 
 | [Task](https://www.hl7.org/fhir/task.html) |  | [Patient Request for Corrections](https://build.fhir.org/ig/HL7/fhir-patient-correction/) |  | No  | 
 
-
-
-### Novel Logical Models
-
-This implementation guide describes a number of novel logical models which address gaps in the FHIR API.  The following models should be considered as potential candidates for moving into the core FHIR spec in R5 or R6.  
-
-- [HealthReceipt]()
-- [SocialMedia]()
-- [Environmental]()
-- [NutrientOuttake]()

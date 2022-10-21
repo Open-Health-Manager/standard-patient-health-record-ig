@@ -9,7 +9,7 @@ name: StandardPatientHealthRecordIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.4.1
+version: 0.4.4
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -77,13 +77,14 @@ publisher:
 menu:
   Home: index.html
   Record Keeping: recordkeeping.html
-  Record Lifecycle: recordlifecycle.html
   Conformance: conformance.html
   Data Model: datamodel.html
-  Functional Model: functionality.html
+  Functional Model:
+    Functional Model: functionality.html
+    Record Lifecycle: recordlifecycle.html
+    Security: security.html
   Supplemental:
     History: history.html
-    Security: security.html
     Physiology Simulations: physiology.html
   Patient Personas: personas.html
   Artifacts: artifacts.html
@@ -91,29 +92,24 @@ menu:
 pages:
   index.md:
     title: Getting Started
-  history.md:
-    title: History
+  recordkeeping.md:
+    title: Record Keeping    
   conformance.md:
     title: Conformance Recommendations
-  recordkeeping.md:
-    title: Record Keeping
-  recordlifecycle.md:
-    title: Record Lifecycle
+  datamodel.md:
+    title: Data Model    
   functionality.md:
     title: Functional Model
-  datamodel.md:
-    title: Data Model
-  physiology.md:
-    title: Physiology Simulations
+  recordlifecycle.md:
+    title: Record Lifecycle    
   security.md:
     title: Security
+  history.md:
+    title: History    
+  physiology.md:
+    title: Physiology Simulations
   personas.md:
     title: Patient Personas
-  downloads.md:
-    title: Downloads
-  environments.md:
-    title: Design Considerations
-
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

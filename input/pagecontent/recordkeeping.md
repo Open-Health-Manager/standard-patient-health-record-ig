@@ -87,7 +87,7 @@ POST /Bundle/$import
 Systems MUST post the API endpoints they use in the system's CapabilityStatement.  
 
 
-#### Implementation Guidance  
+#### Creating a Standard Personal Health Record    
 
 - Gather the data you want to include.
 - Convert or encode the data as FHIR resources.
@@ -104,7 +104,24 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 - Sign the file with an X.509 certificate or public key.
 - Rename the .phr file with .sphr extension.
 
-![./SPHR-ImplementationGuidance.png](./SPHR-ImplementationGuidance.png){:width="100%"}  
+#### Importing a Standard Personal Health Record
+
+- Configure operating sytem to open the .sphr with the application of your choice.
+- If .sphr not registered, rename to .zip
+- Check for an X.509 signature or certificate.
+- Decompress the file (or directory) with zip and DEFLATE algorithms.
+- Decrypt as necessary.
+- If a directory, scan for media and supporting documents such as PDF.
+- Scan the contents of the directory for a .phr or .ndjson file.
+- Scan the .phr file for the Composition resource.
+- Scan the .phr file for the Document Manifest resource.
+- Scan the .phr file for the primary Patient resource.
+- Scan the .phr file for provenance resources.
+- If found, decode each provenance signature and extract payload contents.
+- Scan for an international patient summary, and supporting resources.
+- Scan for a problems list, and supporting resources.
+- Scan the remaining resources, and operate on them as if a PUT or POST message.
+
 
 
 #### References  
