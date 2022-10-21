@@ -27,19 +27,25 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 
 * categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType."
 
-* quantity 0..1
-* quantity.unit 0..1 code "The sample's unit." "When the HKSample is an HKQuantitySample, the corresponding HKQuantityUnit."
+* myquantity 0..1
+* myquantity ^short = "The HKQuantitySample, except value is its own element."
+* myquantity ^definition = "The HKQuantitySample counterpart, containing HKUnit and HKQuantityType, but value is moved to its own element."
+* myquantity.unit 0..1 
+* myquantity.unit only code 
+* myquantity.unit ^short = "The sample's unit." 
+* myquantity.unit ^definition = "When the HKSample is an HKQuantitySample, the corresponding HKQuantityUnit."
+
 // quantity.value at top-level
 //* quantityUnit 0..1 code "The sample's unit." "When the HKSample is an HKQuantitySample, the corresponding HKQuantityUnit."
 * quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType."
 
 * correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType."
-* objects 0..* Reference(AppleHealthKitSample) "The correlation sample's." "TODO"
+* objects 0..* Reference(AppleHealthKitSample) "The correlation sample's components." "The other HKSamples that comprise the HKCorrelation."
 
 * value[x] 1..1
 * value[x] MS
 * value[x] only CodeableConcept or Quantity or string
-* value[x] ^comment = "value (TODO)"
+* value[x] ^short = "value (TODO)"
 * valueCodeableConcept 0..1
 * valueString ^short = "String representation of results; used ONLY when a computable representation is not possible"
 
