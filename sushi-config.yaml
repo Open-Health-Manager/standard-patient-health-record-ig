@@ -86,7 +86,10 @@ menu:
   Supplemental:
     History: history.html
     Physiology Simulations: physiology.html
-  Patient Personas: personas.html
+  # Patient Personas: personas.html
+  Patient Personas:
+    Index: personas-index.html
+    Pediatric Cancer: persona-william.html
   Artifacts: artifacts.html
 
 pages:
@@ -109,6 +112,10 @@ pages:
   physiology.md:
     title: Physiology Simulations
   personas.md:
+    title: Patient Personas
+  persona-william.md:
+    title: William Sim
+  personas-index.md:
     title: Patient Personas
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
