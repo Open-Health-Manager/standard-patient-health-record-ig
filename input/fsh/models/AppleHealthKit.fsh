@@ -27,37 +27,22 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
-* sampleType 0..1 string "The sample type." "The sample type." //TODO: use sampleType, or various *Type elements?
+* sampleType 0..1 string "The sample type." "The sample type." //TODO: convert to code and bind with SampleTypeValueSet
 
-* categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType."
+* categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType." // TODO: bind to valueset
+* quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType." // TODO: bind to valueset
+* correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType." // TODO: valueset
+* workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType." // TODO: valueset
 
-* quantity 0..1
-* quantity only BackboneElement
-* quantity ^short = "The HKQuantitySample, except value is its own element."
-* quantity ^definition = "The HKQuantitySample counterpart, containing HKUnit and HKQuantityType, but value is moved to its own element."
-* quantity.unit 0..1 
-* quantity.unit only code // todo: constrain code? see https://build.fhir.org/datatypes.html#Quantity for reference
-* quantity.unit ^short = "The sample's unit." 
-* quantity.unit ^definition = "When the HKSample is an HKQuantitySample, the corresponding HKQuantityUnit."
-// quantity.value replaced by top-level element value
-* quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType."
+* value[x] 0..*
+* value[x] only integer or Quantity or CodeableConcept or Reference(AppleHealthKitObject)
+* value[x] ^short = "The HKSample value"
+* value[x] ^definition = "The HKSample value"
+* valueInteger ^short = "Value for HKCategory"
+* valueQuantity ^short = "Value for HKQuantity or HKWorkout"
+// TODO: short descriptions for quantity vs workout
+* valueReference ^short = "References for HKCorrelation set"
 
-* correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType."
-* objects 0..* Reference(AppleHealthKitSample) "The correlation sample's components." "The other HKSamples that comprise the HKCorrelation."
-
-* value[x] 1..1
-//* value[x] MS
-* value[x] only CodeableConcept or Quantity or string
-* value[x] ^short = "value (TODO)"
-* valueCodeableConcept 0..1
-* valueString ^short = "String representation of results; used ONLY when a computable representation is not possible"
-
-
-* workoutActivity 0..1 code "The workout activity type." "The workout activity type." 
-// todo: workoutActivity possible codes
-
-* workoutDuration 0..1 period "The workout duration." "The workout duration."
-// consider: A FHIR resource besides Observation to contain HKWorkout data
 
 /* meaningful elements derivied from Apple HealthKit SDK
  * here for reference, will remove before merge
