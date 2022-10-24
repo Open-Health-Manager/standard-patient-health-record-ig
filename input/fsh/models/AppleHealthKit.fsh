@@ -35,12 +35,18 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType." // TODO: valueset
 
 * value[x] 0..*
-* value[x] only integer or Quantity or CodeableConcept or Reference(AppleHealthKitObject)
+// * value[x] only integer or Quantity or CodeableConcept or Reference(AppleHealthKitObject)
 * value[x] ^short = "The HKSample value"
 * value[x] ^definition = "The HKSample value"
+
+* valueInteger 0..1
 * valueInteger ^short = "Value for HKCategory"
+
+* valueQuantity 0..1
 * valueQuantity ^short = "Value for HKQuantity or HKWorkout"
 // TODO: short descriptions for quantity vs workout
+
+* valueReference 0..*
 * valueReference ^short = "References for HKCorrelation set"
 
 
