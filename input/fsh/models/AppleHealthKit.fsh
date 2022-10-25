@@ -16,10 +16,7 @@ Logical:        AppleHealthKitSample
 Id:             apple-healthkit-sample
 Title:          "Apple HealthKit Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKSample."
-
 * ^status = #draft
-
-
 // * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object." //inherit from parent
 // * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
 // * device 0..1 BackboneElement "device" "The device that generated the data for this object."
@@ -27,18 +24,20 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
-* sampleType 0..1 string "The sample type." "The sample type." //TODO: convert to code and bind with SampleTypeValueSet
 
-* categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType." // TODO: bind to valueset
+* sampleType 0..1 string "The sample type." "The sample type." //TODO: convert to code and bind with SampleTypeValueSet
+* sampleType from AppleHealthKitSampleTypeValueSet (extensible)
+
+* categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType."
 * quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType." // TODO: bind to valueset
 * correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType." // TODO: valueset
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType." // TODO: valueset
 
-* value[x] 0..*
-// * value[x] only integer or Quantity or CodeableConcept or Reference(AppleHealthKitObject)
+* value[x] 0..* 
+* value[x] only integer or Quantity or CodeableConcept or Reference(AppleHealthKitObject)
 * value[x] ^short = "The HKSample value"
-* value[x] ^definition = "The HKSample value"
 
+/*
 * valueInteger 0..1
 * valueInteger ^short = "Value for HKCategory"
 
@@ -48,7 +47,23 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 
 * valueReference 0..*
 * valueReference ^short = "References for HKCorrelation set"
+*/
+ValueSet: AppleHealthKitSampleTypeValueSet
+Title: "Apple Health Kit Sample Type Value Set"
+Id: apple-health-kit-sample-type-value-set
+Description: "Possible values for AppleHealthKitSample.sampleType"
+ * `category`: "Apple HK CategorySample"
+ * `quantity`: "Apple HK QuantitySample"
+ * `correlation`: "Apple HK CorrelationSample"
+ * `workout`: "Apple HK WorkoutSample"
 
+/*
+  CategoryTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier
+  QuantityTypeValueSet: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
+  CorrelationTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcorrelationtypeidentifier (also allows any string)
+  WorkoutTypeValueSet: string (see: https://developer.apple.com/documentation/healthkit/hkworkouttypeidentifier)
+  WorkoutActivityTypeValueSet: uint (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
+ */
 
 /* meaningful elements derivied from Apple HealthKit SDK
  * here for reference, will remove before merge
