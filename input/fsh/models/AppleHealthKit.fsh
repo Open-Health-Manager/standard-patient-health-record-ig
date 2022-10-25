@@ -56,12 +56,227 @@ Description: "Possible values for AppleHealthKitSample.sampleType"
  * correlation "Apple HK CorrelationSample"
  * workout "Apple HK WorkoutSample"
 
+
+
 /*
   CategoryTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier
   QuantityTypeValueSet: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
   CorrelationTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcorrelationtypeidentifier (also allows any string)
   WorkoutTypeValueSet: string (see: https://developer.apple.com/documentation/healthkit/hkworkouttypeidentifier)
   WorkoutActivityTypeValueSet: uint (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
+*/
+
+ValueSet: AppleHealthKitQuantityTypeValueSet
+Title: "Apple Health Kit Quantity Type Value Set"
+Id: apple-health-kit-quantity-type-value-set
+Description: "Possible values for AppleHealthKitSample.quantityType"
+  * bodyMassIndex
+  * bodyFatPercentage "Scalar(Percent, 0.0 - 1.0), Discrete"
+  * height "Length, Discrete"
+  * bodyMass "Mass, Discrete"
+  * leanBodyMass "Mass, Discrete"
+  * waistCircumference "Length, Discrete"
+
+  // Fitness
+  * stepCount "Scalar(Count), Cumulative"
+  * distanceWalkingRunning "Length, Cumulative"
+  * distanceCycling "Length, Cumulative"
+  * distanceWheelchair "Length, Cumulative"
+  * basalEnergyBurned "Energy, Cumulative"
+  * activeEnergyBurned "Energy, Cumulative"
+  * flightsClimbed "Scalar(Count), Cumulative"
+  * nikeFuel "Scalar(Count), Cumulative"
+  * appleExerciseTime "Time Cumulative"
+  * pushCount "Scalar(Count), Cumulative"
+  * distanceSwimming "Length, Cumulative"
+  * swimmingStrokeCount "Scalar(Count), Cumulative"
+  * vo2Max "ml/(kg*min) Discrete"
+  * distanceDownhillSnowSports "Length, Cumulative"
+
+  // Vitals
+  * heartRate "Scalar(Count)/Time, Discrete"
+  * bodyTemperature "Temperature, Discrete"
+  * basalBodyTemperature "Basal Body Temperature, Discrete"
+  * bloodPressureSystolic "Pressure, Discrete"
+  * bloodPressureDiastolic "Pressure, Discrete"
+  * respiratoryRate "Scalar(Count)/Time, Discrete"
+
+  // Beats per minute estimate of a user's lowest heart rate while at rest
+  * restingHeartRate "Scalar(Count)/Time, Discrete"
+
+  // Average heartbeats per minute captured by an Apple Watch while a user is walking    
+  * walkingHeartRateAverage "Scalar(Count)/Time, Discrete"
+
+  // The standard deviation of heart beat-to-beat intevals (Standard Deviation of Normal to Normal)
+  * heartRateVariabilitySDNN "Time (ms), Discrete"
+
+  // Results
+  * oxygenSaturation "Scalar (Percent, 0.0 - 1.0), Discrete"
+  * peripheralPerfusionIndex "Scalar(Percent, 0.0 - 1.0), Discrete"
+  * bloodGlucose "Mass/Volume, Discrete"
+  * numberOfTimesFallen "Scalar(Count), Cumulative"
+  * electrodermalActivity "Conductance, Discrete"
+  * inhalerUsage "Scalar(Count), Cumulative"
+  * insulinDelivery "Pharmacology (IU) Cumulative"
+  * bloodAlcoholContent "Scalar(Percent, 0.0 - 1.0), Discrete"
+  * forcedVitalCapacity "Volume, Discrete"
+  * forcedExpiratoryVolume1 "Volume, Discrete"
+  * peakExpiratoryFlowRate "Volume/Time, Discrete"
+
+  // Nutrition    
+  * dietaryFatTotal "Mass, Cumulative"
+  * dietaryFatPolyunsaturated "Mass, Cumulative"
+  * dietaryFatMonounsaturated "Mass, Cumulative"
+  * dietaryFatSaturated "Mass, Cumulative"
+  * dietaryCholesterol "Mass, Cumulative"
+  * dietarySodium "Mass, Cumulative"
+  * dietaryCarbohydrates "Mass, Cumulative"
+  * dietaryFiber "Mass, Cumulative"
+  * dietarySugar "Mass, Cumulative"
+  * dietaryEnergyConsumed "Energy, Cumulative"
+  * dietaryProtein "Mass, Cumulative"
+  * dietaryVitaminA "Mass, Cumulative"
+  * dietaryVitaminB6 "Mass, Cumulative"
+  * dietaryVitaminB12 "Mass, Cumulative"
+  * dietaryVitaminC "Mass, Cumulative"
+  * dietaryVitaminD "Mass, Cumulative"
+  * dietaryVitaminE "Mass, Cumulative"
+  * dietaryVitaminK "Mass, Cumulative"
+  * dietaryCalcium "Mass, Cumulative"
+  * dietaryIron "Mass, Cumulative"
+  * dietaryThiamin "Mass, Cumulative"
+  * dietaryRiboflavin "Mass, Cumulative"
+  * dietaryNiacin "Mass, Cumulative"
+  * dietaryFolate "Mass, Cumulative"
+  * dietaryBiotin "Mass, Cumulative"
+  * dietaryPantothenicAcid "Mass, Cumulative"
+  * dietaryPhosphorus "Mass, Cumulative"
+  * dietaryIodine "Mass, Cumulative"
+  * dietaryMagnesium "Mass, Cumulative"
+  * dietaryZinc "Mass, Cumulative"
+  * dietarySelenium "Mass, Cumulative"
+  * dietaryCopper "Mass, Cumulative"
+  * dietaryManganese "Mass, Cumulative"
+  * dietaryChromium "Mass, Cumulative"
+  * dietaryMolybdenum "Mass, Cumulative"
+  * dietaryChloride "Mass, Cumulative"
+  * dietaryPotassium "Mass, Cumulative"
+  * dietaryCaffeine "Mass, Cumulative"
+  * dietaryWater "Volume, Cumulative"
+  * uvExposure "Scalar (Count), Discrete"
+
+/*--------------------------------*
+/*   HKCategoryType Identifiers   *
+/*--------------------------------*
+
+public struct HKCategoryTypeIdentifier : Hashable, Equatable, RawRepresentable {
+
+    public init(rawValue: String)
+}
+extension HKCategoryTypeIdentifier {
+
+    
+    
+    * sleepAnalysis: HKCategoryTypeIdentifier
+
+    
+    * appleStandHour: HKCategoryTypeIdentifier // HKCategoryValueAppleStandHour
+
+    
+    * cervicalMucusQuality: HKCategoryTypeIdentifier // HKCategoryValueCervicalMucusQuality
+
+    
+    * ovulationTestResult: HKCategoryTypeIdentifier // HKCategoryValueOvulationTestResult
+
+    
+    * menstrualFlow: HKCategoryTypeIdentifier // HKCategoryValueMenstrualFlow
+
+    
+    * intermenstrualBleeding: HKCategoryTypeIdentifier // (Spotting) HKCategoryValue
+
+    
+    * sexualActivity: HKCategoryTypeIdentifier // HKCategoryValue
+
+    
+    * mindfulSession: HKCategoryTypeIdentifier // HKCategoryValue
+}
+
+/*--------------------------------------*
+/*   HKCharacteristicType Identifiers   *
+/*--------------------------------------*
+
+public struct HKCharacteristicTypeIdentifier : Hashable, Equatable, RawRepresentable {
+
+    public init(rawValue: String)
+}
+extension HKCharacteristicTypeIdentifier {
+
+    
+    
+    * biologicalSex: HKCharacteristicTypeIdentifier
+
+    
+    * bloodType: HKCharacteristicTypeIdentifier // HKBloodTypeObject
+
+    
+    * dateOfBirth: HKCharacteristicTypeIdentifier // NSDateComponents
+
+    
+    * fitzpatrickSkinType: HKCharacteristicTypeIdentifier // HKFitzpatrickSkinTypeObject
+
+    
+    * wheelchairUse: HKCharacteristicTypeIdentifier // HKWheelchairUseObject
+}
+
+/*-----------------------------------*
+/*   HKCorrelationType Identifiers   *
+/*-----------------------------------*
+
+public struct HKCorrelationTypeIdentifier : Hashable, Equatable, RawRepresentable {
+
+    public init(rawValue: String)
+}
+extension HKCorrelationTypeIdentifier {
+
+    
+    
+    * bloodPressure: HKCorrelationTypeIdentifier
+
+    
+    * food: HKCorrelationTypeIdentifier
+}
+
+/*--------------------------------*
+/*   HKDocumentType Identifiers   *
+/*--------------------------------*
+
+public struct HKDocumentTypeIdentifier : Hashable, Equatable, RawRepresentable {
+
+    public init(rawValue: String)
+}
+extension HKDocumentTypeIdentifier {
+
+    
+    
+    * CDA: HKDocumentTypeIdentifier
+}
+
+/*------------------------------*
+/*   HKWorkoutType Identifier   *
+/*------------------------------*
+
+
+public let HKWorkoutTypeIdentifier: String
+
+/*--------------------------------*
+/*   HKSeriesSample Identifiers   *
+/*--------------------------------*
+
+
+public let HKWorkoutRouteTypeIdentifier: String
+
+
+
  */
 
 /* meaningful elements derivied from Apple HealthKit SDK
