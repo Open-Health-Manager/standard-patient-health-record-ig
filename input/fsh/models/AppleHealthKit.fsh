@@ -34,10 +34,9 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType." // TODO: valueset
 
 * value[x] 0..* 
-* value[x] only integer or Quantity or CodeableConcept or Reference(AppleHealthKitObject)
+* value[x] only integer or Quantity or Reference(AppleHealthKitObject)
 * value[x] ^short = "The HKSample value"
 
-/*
 * valueInteger 0..1
 * valueInteger ^short = "Value for HKCategory"
 
@@ -47,15 +46,15 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 
 * valueReference 0..*
 * valueReference ^short = "References for HKCorrelation set"
-*/
+
 ValueSet: AppleHealthKitSampleTypeValueSet
 Title: "Apple Health Kit Sample Type Value Set"
 Id: apple-health-kit-sample-type-value-set
 Description: "Possible values for AppleHealthKitSample.sampleType"
- * `category`: "Apple HK CategorySample"
- * `quantity`: "Apple HK QuantitySample"
- * `correlation`: "Apple HK CorrelationSample"
- * `workout`: "Apple HK WorkoutSample"
+ * category "Apple HK CategorySample"
+ * quantity "Apple HK QuantitySample"
+ * correlation "Apple HK CorrelationSample"
+ * workout "Apple HK WorkoutSample"
 
 /*
   CategoryTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier
