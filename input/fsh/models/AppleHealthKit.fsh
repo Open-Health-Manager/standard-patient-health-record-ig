@@ -21,7 +21,7 @@ Logical:        AppleHealthKitSample
 Id:             apple-healthkit-sample
 Title:          "Apple HealthKit Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKSample."
-Parent: AppleHealthKitObject
+Parent:         AppleHealthKitObject
 
 * ^status = #draft
 
@@ -48,12 +48,14 @@ Parent: AppleHealthKitObject
 * correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
 
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
+//* workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
 
-* value[x] 0..1 integer or Quantity or Period or Reference(AppleHealthKitSample) "The HKSample value" "Use valueInteger for HKCategory, valueQuantity "
+* value[x] 0..1 integer or Quantity or Period "The HKSample value" "Use valueInteger for HKCategory and Quantity for HKQuantity or components"
 * valueInteger ^short = "Value for HKCategory"
 * valueQuantity ^short = "Value for HKQuantity"
 * valuePeriod ^short = "Value for HKWorkoutActivity"
-* valueReference ^short = "References for HKWorkout and HKCorrelation"
+
+* components 0..* Reference(AppleHealthKitSample) "Components for HKSamples that are sets." "HKWorkoutActivty components for HKWorkout and HKQuantity components for HKCorrelation"
 
 
 /*--------------------------------------------------------------*
@@ -247,10 +249,12 @@ extension HKDocumentTypeIdentifier {
 
 /*--------------------------------------------------------------*
 /*                        Instances                             * 
-/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*
 
-/* meaningful elements derivied from Apple HealthKit SDK
- * here for reference, will remove before merge
+Below are example instances of how I would create an Apple HK Object instance
+using the logical models defined, HOWEVER FHIR Logical's are not meant to be
+instantiated, so these are not true FHIR Instances. The examples are accompanied by
+Apple HK SDK Docs.
 
 HK Sample
   var startDate: Date
@@ -258,21 +262,12 @@ HK Sample
   var hasUndeterminedDuration: Bool  remove?
   var sampleType: HKSampleType
 
-HK SampleType
-  var isMinimumDurationRestricted: Bool
-  var minimumAllowedDuration: TimeInterval
-  var isMaximumDurationRestricted: Bool
-  var maximumAllowedDuration: TimeInterval
-  var allowsRecalibrationForEstimates: Bool
 
-The subclasses inheriting from HK Sample have different attributes of interest
-* //
-
-/*
+-------- Apple SDK ----------
 HK Category:
   var CategoryType: HKCategoryType
   var value: Int
-*
+----------- FHIR ------------
 Instance: AppleHealthKitCategoryExample
 InstanceOf: AppleHealthKitSample
 Title: "Apple Health Kit Category Sample Example"
@@ -284,12 +279,12 @@ Usage: #example
 * valueInteger = 2
 // TODO: check with real example
 
-/*
+-------- Apple SDK ----------
 HK Quantity Sample
   var quantity: HKQuantity {HKUnit {string}, double}
   var count: Int
   var quantityType: HKQuantityType
-*
+----------- FHIR ------------
 Instance: AppleHealthKitQuantityExample
 InstanceOf: AppleHealthKitSample
 Title: "Apple Health Kit Quantity Sample Example"
@@ -300,11 +295,11 @@ Usage: #example
 * quantityType = "respiratoryRate"
 * valueQuantity // TODO
 
-/*
+-------- Apple SDK ----------
 HK Correlation
   var CorrelationType: HKCorrelationType
   var objects: Set<HKSample>
-*
+----------- FHIR ------------
 Instance: AppleHealthKitCorrelationExample
 InstanceOf: AppleHealthKitSample
 Title: "Apple Health Kit Correlation Sample"
@@ -315,16 +310,23 @@ Usage: #example
 * correlationType = "bloodPressure"
 * valueReference[0] // TODO
 
-
-/*
+-------- Apple SDK ----------
 HK Workout
   var duration: TimeInterval
   var workoutActivityType: HKWorkoutActivityType
   var workoutActivities: [HKWorkoutActivity]
   var workoutEvents: [HKWorkoutEvent]
   var allStatistics: [HKQuantityType : HKStatistics]  A dictionary that contains all the statistics for the workout.
-*
-
+HKWorkoutActivity
+  var uuid: UUID
+  var startDate: Date
+  var endDate: Date?
+  var duration: TimeInterval
+  var allStatistics: [HKQuantityType : HKStatistics]
+  var metadata: [String : Any]?
+  var workoutConfiguration: HKWorkoutConfiguration
+  var workoutEvents: [HKWorkoutEvent]
+----------- FHIR ------------
 Instance: AppleHealthKitWorkoutExample
 InstanceOf: AppleHealthKitSample
 Title: "Apple Health Kit Workout Sample"
@@ -332,10 +334,10 @@ Usage: #example
 * uuid = "b6d77c2c-1b33-432a-b459-2a9698f4900b"
 * sourceRevision = "Apple iPhone 15 MyHealthManager v1.2.3"
 * sampleType = "workout"
-* valueReference[0].uuid = 
-* valueReference[0].sourceRevision = 
-* valueReference[0].sampleType = "workoutActivity"
-* valueReference[0].workoutActivityType = "pushups" // TODO
-* valueReference[0].valuePeriod.startDate =  // TODO
-* valueReference[0].valuePeriod.endDate = // TODO
+* component[0].uuid = 
+* component[0].sourceRevision = "Apple iPhone 15 MyHealthManager v1.2.3"
+* component[0].sampleType = "workoutActivity"
+* component[0].workoutActivityType = "pushups" // TODO
+* component[0].valuePeriod.startDate =  // TODO
+* component[0].valuePeriod.endDate = // TODO
 */
