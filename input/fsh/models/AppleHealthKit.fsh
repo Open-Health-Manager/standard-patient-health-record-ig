@@ -1,3 +1,8 @@
+
+/*--------------------------------------------------------------*
+/*                        Logical Models                        * 
+/*--------------------------------------------------------------*/
+
 Logical:        AppleHealthKitObject
 Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
@@ -25,13 +30,20 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
 
-* sampleType 0..1 string "The sample type." "The sample type." //TODO: convert to code and bind with SampleTypeValueSet
+* sampleType 0..1 code "The sample type." "The sample type."
 * sampleType from AppleHealthKitSampleTypeValueSet (extensible)
 
 * categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType."
-* quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType." // TODO: bind to valueset
-* correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType." // TODO: valueset
-* workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType." // TODO: valueset
+* categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
+
+* quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType."
+* quantityType from AppleHealthKitQuantityTypeValueSet (extensible)
+
+* correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType."
+* correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
+
+* workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
+// TODO: valueset
 
 * value[x] 0..* 
 * value[x] only integer or Quantity or Reference(AppleHealthKitObject)
@@ -47,16 +59,11 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * valueReference 0..*
 * valueReference ^short = "References for HKCorrelation set"
 
-ValueSet: AppleHealthKitSampleTypeValueSet
-Title: "Apple Health Kit Sample Type Value Set"
-Id: apple-health-kit-sample-type-value-set
-Description: "Possible values for AppleHealthKitSample.sampleType"
- * category "Apple HK CategorySample"
- * quantity "Apple HK QuantitySample"
- * correlation "Apple HK CorrelationSample"
- * workout "Apple HK WorkoutSample"
 
 
+/*--------------------------------------------------------------*
+/*                        Value Sets                            * 
+/*--------------------------------------------------------------*/
 
 /*
   CategoryTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier
@@ -65,6 +72,16 @@ Description: "Possible values for AppleHealthKitSample.sampleType"
   WorkoutTypeValueSet: string (see: https://developer.apple.com/documentation/healthkit/hkworkouttypeidentifier)
   WorkoutActivityTypeValueSet: uint (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
 */
+
+
+ValueSet: AppleHealthKitSampleTypeValueSet
+Title: "Apple Health Kit Sample Type Value Set"
+Id: apple-health-kit-sample-type-value-set
+Description: "Possible values for AppleHealthKitSample.sampleType"
+ * category "Apple HK CategorySample"
+ * quantity "Apple HK QuantitySample"
+ * correlation "Apple HK CorrelationSample"
+ * workout "Apple HK WorkoutSample"
 
 ValueSet: AppleHealthKitQuantityTypeValueSet
 Title: "Apple Health Kit Quantity Type Value Set"
@@ -165,119 +182,54 @@ Description: "Possible values for AppleHealthKitSample.quantityType"
   * dietaryWater "Volume, Cumulative"
   * uvExposure "Scalar (Count), Discrete"
 
-/*--------------------------------*
-/*   HKCategoryType Identifiers   *
-/*--------------------------------*
+ValueSet: AppleHealthKitCategoryTypeValueSet
+Title: "Apple Health Kit Category Type Value Set"
+Id: apple-health-kit-category-type-value-set
+Description: "Possible values for AppleHealthKitSample.categoryType"
+* sleepAnalysis
+* appleStandHour "HKCategoryValueAppleStandHour"
+* cervicalMucusQuality "HKCategoryValueCervicalMucusQuality"
+* ovulationTestResult "HKCategoryValueOvulationTestResult"
+* menstrualFlow "HKCategoryValueMenstrualFlow"
+* intermenstrualBleeding "(Spotting) HKCategoryValue"
+* sexualActivity "HKCategoryValue"
+* mindfulSession "HKCategoryValue"
 
-public struct HKCategoryTypeIdentifier : Hashable, Equatable, RawRepresentable {
 
-    public init(rawValue: String)
-}
-extension HKCategoryTypeIdentifier {
-
-    
-    
-    * sleepAnalysis: HKCategoryTypeIdentifier
-
-    
-    * appleStandHour: HKCategoryTypeIdentifier // HKCategoryValueAppleStandHour
-
-    
-    * cervicalMucusQuality: HKCategoryTypeIdentifier // HKCategoryValueCervicalMucusQuality
-
-    
-    * ovulationTestResult: HKCategoryTypeIdentifier // HKCategoryValueOvulationTestResult
-
-    
-    * menstrualFlow: HKCategoryTypeIdentifier // HKCategoryValueMenstrualFlow
-
-    
-    * intermenstrualBleeding: HKCategoryTypeIdentifier // (Spotting) HKCategoryValue
-
-    
-    * sexualActivity: HKCategoryTypeIdentifier // HKCategoryValue
-
-    
-    * mindfulSession: HKCategoryTypeIdentifier // HKCategoryValue
-}
-
-/*--------------------------------------*
-/*   HKCharacteristicType Identifiers   *
-/*--------------------------------------*
-
+/*   HKCharacteristicType Identifiers   *  TODO: RELEVANT? SAMPLE TYPE? */
 public struct HKCharacteristicTypeIdentifier : Hashable, Equatable, RawRepresentable {
-
     public init(rawValue: String)
 }
 extension HKCharacteristicTypeIdentifier {
-
-    
-    
     * biologicalSex: HKCharacteristicTypeIdentifier
-
-    
     * bloodType: HKCharacteristicTypeIdentifier // HKBloodTypeObject
-
-    
     * dateOfBirth: HKCharacteristicTypeIdentifier // NSDateComponents
-
-    
     * fitzpatrickSkinType: HKCharacteristicTypeIdentifier // HKFitzpatrickSkinTypeObject
-
-    
     * wheelchairUse: HKCharacteristicTypeIdentifier // HKWheelchairUseObject
 }
 
-/*-----------------------------------*
-/*   HKCorrelationType Identifiers   *
-/*-----------------------------------*
 
-public struct HKCorrelationTypeIdentifier : Hashable, Equatable, RawRepresentable {
+/*   HKCorrelationType Identifiers   */
+ValueSet: AppleHealthKitCorrelationTypeValueSet
+Title: "Apple Health Kit Correlation Type Value Set"
+Id: apple-health-kit-correlation-type-value-set
+Description: "Possible values for AppleHealthKitSample.correlationType"
+* bloodPressure
+* food
 
-    public init(rawValue: String)
-}
-extension HKCorrelationTypeIdentifier {
 
-    
-    
-    * bloodPressure: HKCorrelationTypeIdentifier
-
-    
-    * food: HKCorrelationTypeIdentifier
-}
-
-/*--------------------------------*
-/*   HKDocumentType Identifiers   *
-/*--------------------------------*
-
-public struct HKDocumentTypeIdentifier : Hashable, Equatable, RawRepresentable {
-
-    public init(rawValue: String)
-}
+/*   HKDocumentType Identifiers   * THEY HAVE HL7v3 SUPPORT? */
 extension HKDocumentTypeIdentifier {
-
-    
-    
     * CDA: HKDocumentTypeIdentifier
 }
+*/
 
-/*------------------------------*
-/*   HKWorkoutType Identifier   *
-/*------------------------------*
-
-
-public let HKWorkoutTypeIdentifier: String
-
-/*--------------------------------*
-/*   HKSeriesSample Identifiers   *
-/*--------------------------------*
+/*   HKWorkoutType Identifier   *  JUST A STRING (NOTE: NOT WorkoutActivityType) */
 
 
-public let HKWorkoutRouteTypeIdentifier: String
-
-
-
- */
+/*--------------------------------------------------------------*
+/*                        Instances                             * 
+/*--------------------------------------------------------------*/
 
 /* meaningful elements derivied from Apple HealthKit SDK
  * here for reference, will remove before merge
@@ -316,5 +268,4 @@ HK Workout
   var workoutActivities: [HKWorkoutActivity]
   var workoutEvents: [HKWorkoutEvent]
   var allStatistics: [HKQuantityType : HKStatistics]  A dictionary that contains all the statistics for the workout.
-
  */
