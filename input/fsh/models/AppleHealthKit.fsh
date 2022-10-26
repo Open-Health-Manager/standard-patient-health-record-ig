@@ -14,18 +14,23 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
 * device 0..1 BackboneElement "device" "The device that generated the data for this object."
 * sourceRevision 1..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object." // TODO: string or BackBone?
-/* TODO: remove parent?
- */
+/* TODO: remove parent? */
+
 
 Logical:        AppleHealthKitSample
 Id:             apple-healthkit-sample
 Title:          "Apple HealthKit Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKSample."
+Parent: AppleHealthKitObject
+
 * ^status = #draft
-// * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object." //inherit from parent
-// * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
-// * device 0..1 BackboneElement "device" "The device that generated the data for this object."
-// * sourceRevision 0..1 BackboneElement "sourceRevision" "A HealthKit source, representing the app or device that created this object."
+
+/* Inherited from parent, uncomment to remove parent */
+//* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
+//* metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
+//* device 0..1 BackboneElement "device" "The device that generated the data for this object."
+//* sourceRevision 0..1 BackboneElement "sourceRevision" "A HealthKit source, representing the app or device that created this object."
+
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
@@ -48,13 +53,14 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * value[x] 0..* 
 * value[x] only integer or Quantity or Reference(AppleHealthKitObject)
 * value[x] ^short = "The HKSample value"
+* value[x] ^defintion = "Use valueInteger for HKCategory, valueQuantity "
 
 * valueInteger 0..1
 * valueInteger ^short = "Value for HKCategory"
 
 * valueQuantity 0..1
 * valueQuantity ^short = "Value for HKQuantity or HKWorkout"
-// TODO: short descriptions for quantity vs workout
+// TODO: descriptions for quantity vs workout
 
 * valueReference 0..*
 * valueReference ^short = "References for HKCorrelation set"
@@ -73,7 +79,6 @@ Description:    "Data elements for the Apple HealthKit HKSample."
   WorkoutActivityTypeValueSet: uint (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
 */
 
-
 ValueSet: AppleHealthKitSampleTypeValueSet
 Title: "Apple Health Kit Sample Type Value Set"
 Id: apple-health-kit-sample-type-value-set
@@ -82,6 +87,7 @@ Description: "Possible values for AppleHealthKitSample.sampleType"
  * quantity "Apple HK QuantitySample"
  * correlation "Apple HK CorrelationSample"
  * workout "Apple HK WorkoutSample"
+
 
 ValueSet: AppleHealthKitQuantityTypeValueSet
 Title: "Apple Health Kit Quantity Type Value Set"
@@ -182,6 +188,7 @@ Description: "Possible values for AppleHealthKitSample.quantityType"
   * dietaryWater "Volume, Cumulative"
   * uvExposure "Scalar (Count), Discrete"
 
+
 ValueSet: AppleHealthKitCategoryTypeValueSet
 Title: "Apple Health Kit Category Type Value Set"
 Id: apple-health-kit-category-type-value-set
@@ -196,7 +203,7 @@ Description: "Possible values for AppleHealthKitSample.categoryType"
 * mindfulSession "HKCategoryValue"
 
 
-/*   HKCharacteristicType Identifiers   *  TODO: RELEVANT? SAMPLE TYPE? */
+/*   HKCharacteristicType Identifiers   *  TODO: RELEVANT? SAMPLE TYPE? *
 public struct HKCharacteristicTypeIdentifier : Hashable, Equatable, RawRepresentable {
     public init(rawValue: String)
 }
@@ -207,9 +214,9 @@ extension HKCharacteristicTypeIdentifier {
     * fitzpatrickSkinType: HKCharacteristicTypeIdentifier // HKFitzpatrickSkinTypeObject
     * wheelchairUse: HKCharacteristicTypeIdentifier // HKWheelchairUseObject
 }
+*/
 
 
-/*   HKCorrelationType Identifiers   */
 ValueSet: AppleHealthKitCorrelationTypeValueSet
 Title: "Apple Health Kit Correlation Type Value Set"
 Id: apple-health-kit-correlation-type-value-set
@@ -218,7 +225,7 @@ Description: "Possible values for AppleHealthKitSample.correlationType"
 * food
 
 
-/*   HKDocumentType Identifiers   * THEY HAVE HL7v3 SUPPORT? */
+/*   HKDocumentType Identifiers   * THEY HAVE HL7v3 SUPPORT? *
 extension HKDocumentTypeIdentifier {
     * CDA: HKDocumentTypeIdentifier
 }
@@ -248,24 +255,70 @@ HK SampleType
   var allowsRecalibrationForEstimates: Bool
 
 The subclasses inheriting from HK Sample have different attributes of interest
+*/
 
+/*
 HK Category:
   var CategoryType: HKCategoryType
   var value: Int
+*/
+Instance: AppleHealthKitCategoryExample
+InstanceOf: AppleHealthKitSample
+Title: "Apple Health Kit Category Sample Example"
+Usage: #example
+* uuid = "f1fe0b07-2d1f-45ef-a144-b516e9386ffb"
+* sourceRevision = "Apple iPhone 15 MyHealthManager v1.2.3"
+* sampleType = "category"
+* categoryType = "sleepAnalysis"
+* valueInteger = 2
+// TODO: check with real example
 
+/*
 HK Quantity Sample
   var quantity: HKQuantity {HKUnit {string}, double}
   var count: Int
   var quantityType: HKQuantityType
+*/
+Instance: AppleHealthKitQuantityExample
+InstanceOf: AppleHealthKitSample
+Title: "Apple Health Kit Quantity Sample Example"
+Usage: #example
+* uuid = "5b2bf6b2-1fb1-47b0-b901-c8f19ff596c5"
+* sourceRevision = "Apple iPhone 15 MyHealthManager v1.2.3"
+* sampleType = "quantity"
+* quantityType = "respiratoryRate"
+* valueQuantity // TODO
 
+/*
 HK Correlation
   var CorrelationType: HKCorrelationType
   var objects: Set<HKSample>
+*/
+Instance: AppleHealthKitCorrelationExample
+InstanceOf: AppleHealthKitSample
+Title: "Apple Health Kit Correlation Sample"
+Usage: #example
+* uuid = "90b1ebe6-de09-4ace-9140-183846886061"
+* sourceRevision = "Apple iPhone 15 MyHealthManager v1.2.3"
+* sampleType = "correlation"
+* correlationType = "bloodPressure"
+* valueReference[0] // TODO
 
+
+/*
 HK Workout
   var duration: TimeInterval
   var workoutActivityType: HKWorkoutActivityType
   var workoutActivities: [HKWorkoutActivity]
   var workoutEvents: [HKWorkoutEvent]
   var allStatistics: [HKQuantityType : HKStatistics]  A dictionary that contains all the statistics for the workout.
- */
+*/
+Instance: AppleHealthKitWorkoutExample
+InstanceOf: AppleHealthKitSample
+Title: "Apple Health Kit Workout Sample"
+Usage: #example
+* uuid = "b6d77c2c-1b33-432a-b459-2a9698f4900b"
+* sourceRevision = "Apple iPhone 15 MyHealthManager v1.2.3"
+* sampleType = "workout"
+* workoutType = "pushups" // TODO
+* valueQuantity // TODO Duration
