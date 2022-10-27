@@ -48,7 +48,7 @@ Parent:         AppleHealthKitObject
 * correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
 
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
-//* workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
+* workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
 
 * value[x] 0..1 integer or Quantity or Period "The HKSample value" "Use valueInteger for HKCategory and Quantity for HKQuantity or components"
 * valueInteger ^short = "Value for HKCategory"
@@ -56,6 +56,19 @@ Parent:         AppleHealthKitObject
 * valuePeriod ^short = "Value for HKWorkoutActivity"
 
 * components 0..* Reference(AppleHealthKitSample) "Components for HKSamples that are sets." "HKWorkoutActivty components for HKWorkout and HKQuantity components for HKCorrelation"
+
+* obeys AppleHealthKitValueOrComponentConstraint
+
+/*--------------------------------------------------------------*
+/*                       Constraints                            * 
+/*--------------------------------------------------------------*/
+
+Invariant:   AppleHealthKitValueOrComponentConstraint
+Description: "Either value[x] or at least 1 component or both SHALL be present"
+Expression:  "value[x].exists() or components.hasValue()"
+Severity:    #error
+
+
 
 
 /*--------------------------------------------------------------*
@@ -246,6 +259,100 @@ extension HKDocumentTypeIdentifier {
 */
 
 /*   HKWorkoutType Identifier   *  JUST A STRING (NOTE: NOT WorkoutActivityType) */
+
+ValueSet: AppleHealthKitWorkoutActivityTypeValueSet
+Title: "Apple Health Kit Workout Activity Type Value Set"
+Id: apple-health-kit-workout-activity-type-value-set
+Description: "Possible values for AppleHealthLitSample.workoutActivityType"
+* include codes from system AppleHEalthKitWorkoutActivityTypeCodeSystem
+
+CodeSystem: AppleHEalthKitWorkoutActivityTypeCodeSystem
+Title: "Apple Health Kit Workout Activity Type Code System"
+Id: apple-health-kit-workout-activity-type-code-system
+Description: "Code System required for defining workoutActivityType ValueSet"
+* #archery
+* #bowling
+* #fencing
+* #gymnastics
+* #trackAndField
+* #americanFootball
+* #australianFootball
+* #baseball
+* #basketball
+* #cricket
+* #discSports
+* #handball
+* #hockey
+* #lacrosse
+* #rugby
+* #soccer
+* #softball
+* #volleyball
+* #preparationAndRecovery
+* #flexibility
+* #cooldown
+* #walking
+* #running
+* #wheelchairWalkPace
+* #wheelchairRunPace
+* #cycling
+* #handCycling
+* #coreTraining
+* #elliptical
+* #functionalStrengthTraining
+* #traditionalStrengthTraining
+* #crossTraining
+* #mixedCardio
+* #highIntensityIntervalTraining
+* #jumpRope
+* #stairClimbing
+* #stairs
+* #stepTraining
+* #fitnessGaming
+* #barre
+* #cardioDance
+* #socialDance
+* #yoga
+* #mindAndBody
+* #pilates
+* #badminton
+* #pickleball
+* #racquetball
+* #squash
+* #tableTennis
+* #tennis
+* #climbing
+* #equestrianSports
+* #fishing
+* #golf
+* #hiking
+* #hunting
+* #play
+* #crossCountrySkiing
+* #curling
+* #downhillSkiing
+* #snowSports
+* #snowboarding
+* #skatingSports
+* #paddleSports
+* #rowing
+* #sailing
+* #surfingSports
+* #swimming
+* #waterFitness
+* #waterPolo
+* #waterSports
+* #boxing
+* #kickboxing
+* #martialArts
+* #taiChi
+* #wrestling
+* #other
+* #dance "depreciated"
+* #danceInspiredTraining "depreciated"
+* #mixedMetabolicCardioTraining "depreciated"
+* #swimBikeRun
+* #transition
 
 /*--------------------------------------------------------------*
 /*                        Instances                             * 
