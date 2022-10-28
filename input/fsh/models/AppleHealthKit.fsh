@@ -11,7 +11,7 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
 * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
 * device 0..1 BackboneElement "device" "The device that generated the data for this object."
-* sourceRevision 1..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object." // TODO: string or BackBone?
+* sourceRevision 0..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
 
 
 Logical:        AppleHealthKitSample
@@ -80,17 +80,16 @@ Parent:         AppleHealthKitSample
 * workoutActivities 0..* Reference(AppleHealthKitWorkoutActivity) "The sample's workout activities." "The sample's workout activities."
 * workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "The sample's workout events." "The sample's workout events, in agreement with workoutActivities."
 
+
 Logical:        AppleHealthKitWorkoutActivity
 Id:             apple-healthkit-workout-activity
 Title:          "Apple HealthKit Workout Activity Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutActivity."
 Parent:         AppleHealthKitObject
-* device 0..0
-* sourceRevision 0..0
 * startDate 0..1 dateTime "The Workout Activity start datetime." "The Workout Activity start datetime."
 * endDate 0..1 dateTime "Workout Activity end datetime." "The Workout Activity end datetime."
 * duration 0..1 period "Workout Activity duration" "Workout Avtivity duration may be derived from endDate - startDate."
-// skip statistics
+// map allStatistics [ HKQuantity:HKStatistics ]
 * workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "Associated Workout Events." "Associated Workout Events."
 
 
@@ -99,14 +98,14 @@ Id:             apple-healthkit-workout-event
 Title:          "Apple HealthKit Workout Event Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 Parent:         AppleHealthKitSample
-* device 0..0
-* sourceRevision 0..0
 * dateInterval 0..1 BackboneElement "The event's time and duration." "The event's time and duration."
 * dateInterval.start 1..1 dateTime "The dateInterval's start date." "The dateInterval's start date."
 * dateInterval.end 0..1 dateTime "The dateInterval's end date." "The dateInterval's end date."
 * dateInterval.duration 0..1 period "The dateInterval's duration." "The dateInterval's duration."
 * type 1..1 code "The workout event type." "The workout event type."
 * type from AppleHealthKitWorkoutEventTypeValueSet (extensible)
+
+
 
 
 /*--------------------------------------------------------------*
@@ -265,18 +264,6 @@ Description: "Code System required for defining categoryType ValueSet"
 * #sexualActivity "HKCategoryValue"
 * #mindfulSession "HKCategoryValue"
 
-/*   HKCharacteristicType Identifiers   *  TODO: RELEVANT? SAMPLE TYPE? *
-public struct HKCharacteristicTypeIdentifier : Hashable, Equatable, RawRepresentable {
-    public init(rawValue: String)
-}
-extension HKCharacteristicTypeIdentifier {
-    * biologicalSex: HKCharacteristicTypeIdentifier //THIS
-    * bloodType: HKCharacteristicTypeIdentifier // HKBloodTypeObject
-    * dateOfBirth: HKCharacteristicTypeIdentifier // NSDateComponents THIS
-    * fitzpatrickSkinType: HKCharacteristicTypeIdentifier // HKFitzpatrickSkinTypeObject
-    * wheelchairUse: HKCharacteristicTypeIdentifier // HKWheelchairUseObject
-}
-*/
 
 ValueSet: AppleHealthKitCorrelationTypeValueSet
 Title: "Apple Health Kit Correlation Type Value Set"
@@ -291,13 +278,6 @@ Description: "Code System required for defining correlationType ValueSet"
 * #bloodPressure
 * #food
 
-/*   HKDocumentType Identifiers   * THEY HAVE HL7v3 SUPPORT? *
-extension HKDocumentTypeIdentifier {
-    * CDA: HKDocumentTypeIdentifier
-}
-*/
-
-/*   HKWorkoutType Identifier   *  JUST A STRING (NOTE: NOT WorkoutActivityType) */
 
 ValueSet: AppleHealthKitWorkoutActivityTypeValueSet
 Title: "Apple Health Kit Workout Activity Type Value Set"
@@ -414,6 +394,29 @@ Description: "Code System required for defining workout event type ValueSet"
 * #segment "A constant indicating a period of time of interest during a workout."
 * #marker "A constant indicating a point of interest during a workout session."
 
+
+
+ValueSet: AppleHealthKitCharacteristicTypeValueSet
+Title: "Apple Health Kit Charactersitic Type Value Set"
+Id: apple-health-kit-characteristic-type-value-set
+Description: "Possible values for AppleHealthKitCharacteristic.characteristicType"
+* include codes from system AppleHealthKitCharacteristicTypeCodeSystem
+
+CodeSystem: AppleHealthKitCharacteristicTypeCodeSystem
+Title: "Apple Health Kit Characteristic Type Code System"
+Id: apple-health-kit-characteristic-type-code-system
+Description: "Code System required for defining characteristic type ValueSet"
+* #biologicalSex
+//* #bloodType
+* #dateOfBirth
+//* #fitzpatrickSkinType:
+//* #wheelchairUse
+
+
+ValueSet: AppleHealthKitBiologicalSexValueSet
+Title: "Apple Health Kit Biological Sex Value Set"
+Id: apple-health-kit-biological-sex-value-set
+Description: "Possible values for AppleHealthKitCharacteristic.biologicalSex"
 
 
 /*--------------------------------------------------------------*
