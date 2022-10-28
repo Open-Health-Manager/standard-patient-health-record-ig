@@ -3,10 +3,12 @@
 /*                        Logical Models                        * 
 /*--------------------------------------------------------------*/
 
+// TODO add workoutActivity model < Sample model
+// TODO split up models
+
 Logical:        AppleHealthKitObject
 Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
-
 * ^abstract = true
 * ^status = #draft
 
@@ -14,7 +16,6 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
 * device 0..1 BackboneElement "device" "The device that generated the data for this object."
 * sourceRevision 1..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object." // TODO: string or BackBone?
-/* TODO: remove parent? */
 
 
 Logical:        AppleHealthKitSample
@@ -22,31 +23,62 @@ Id:             apple-healthkit-sample
 Title:          "Apple HealthKit Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKSample."
 Parent:         AppleHealthKitObject
-
+* ^abstract = true
 * ^status = #draft
-
-/* Inherited from parent, uncomment to remove parent */
-//* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
-//* metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
-//* device 0..1 BackboneElement "device" "The device that generated the data for this object."
-//* sourceRevision 0..1 BackboneElement "sourceRevision" "A HealthKit source, representing the app or device that created this object."
 
 * startDate 0..1 date "The sample's start date." "The sample's start date."
 * endDate 0..1 date "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
-
 * sampleType 1..1 code "The sample type." "The sample type."
 * sampleType from AppleHealthKitSampleTypeValueSet (extensible)
 
-* categoryType 0..1 code "The sample's category type." "When the HKSample is an HKCategorySample, the corresponding categoryType."
-* categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
 
-* quantityType 0..1 code "The sample's quantity type." "When the HKSample is an HKQuantitySample, the corresponding quantityType."
+Logical:        AppleHealthKitCategorySample
+Id:             apple-healthkit-category-sample
+Title:          "Apple HealthKit Category Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKCategorySample."
+Parent:         AppleHealthKitSample
+* ^status = #draft
+//* sampleType = #category // TODO: constraint?
+* categoryType 1..1 code "The sample's category type." "The HKCategorySampleType."
+* categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
+* value 1..1 integer "The sample's category value." "The HKCategorySample.value value."
+
+
+Logical:        AppleHealthKitQuantitySample
+Id:             apple-healthkit-quantity-sample
+Title:          "Apple HealthKit Quantity Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKQuantitySample."
+Parent:         AppleHealthKitSample
+* ^status = #draft
+
+* quantity 1..1 BackboneElement "The sample's quantity." "The HKQuantity for this sample."
+* quantity.unit 0..1 BackboneElement "The quantity's unit." "The HKUnit in HKQuantity in this HKQuantitySample."
+* quantity.unit.unitString 0..1 string "The unit string." "The HKUnit.unitString value."
+* quantity.doubleValue 0..1 decimal "The quantity's value." "The HKQuantity.doubleValue."
+* count 0..1 integer "The sample's quantity count." "The sample's quantity count."
+* quantityType 1..1 code "The sample's quantity type." "HKQuantitySample.quantityType from corresponding ValueSet"
 * quantityType from AppleHealthKitQuantityTypeValueSet (extensible)
 
-* correlationType 0..1 code "The sample's correlation type." "When the HKSample is an HKCorrelation, the corresponding correlationType."
-* correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
 
+Logical:        AppleHealthKitCorrelationSample
+Id:             apple-healthkit-correlation-sample
+Title:          "Apple HealthKit Correlation Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKCorrelation."
+Parent:         AppleHealthKitSample
+* ^status = #draft
+
+* correlationType 1..1 code "The sample's correlation type." "HKCorrelation.correlationType from corresponding ValueSet"
+* correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
+* objects 1..* Reference(AppleHealthKitSample) "The set of sample objects that make up the correlation." "HKCorrelation.objects (Set<HKSample>)"
+
+
+Logical:        AppleHealthKitWorkoutSample
+Id:             apple-healthkit-workout-sample
+Title:          "Apple HealthKit Correlation Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKCorrelation."
+Parent:         AppleHealthKitSample
+* duration 0..1 period "The workout duration." "The workout duration, may be derived from endDate - startDate."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
 * workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
 
@@ -231,9 +263,9 @@ public struct HKCharacteristicTypeIdentifier : Hashable, Equatable, RawRepresent
     public init(rawValue: String)
 }
 extension HKCharacteristicTypeIdentifier {
-    * biologicalSex: HKCharacteristicTypeIdentifier
+    * biologicalSex: HKCharacteristicTypeIdentifier //THIS
     * bloodType: HKCharacteristicTypeIdentifier // HKBloodTypeObject
-    * dateOfBirth: HKCharacteristicTypeIdentifier // NSDateComponents
+    * dateOfBirth: HKCharacteristicTypeIdentifier // NSDateComponents THIS
     * fitzpatrickSkinType: HKCharacteristicTypeIdentifier // HKFitzpatrickSkinTypeObject
     * wheelchairUse: HKCharacteristicTypeIdentifier // HKWheelchairUseObject
 }
