@@ -104,7 +104,7 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 - Sign the file with an X.509 certificate or public key.
 - Rename the .phr file with .sphr extension.
 
-#### Importing a Standard Personal Health Record
+#### Importing a Standard Personal Health Record 
 
 - Configure operating sytem to open the .sphr with the application of your choice.
 - If .sphr not registered, rename to .zip
@@ -122,12 +122,20 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 - Scan for a problems list, and supporting resources.
 - Scan the remaining resources, and operate on them as if a PUT or POST message.
 
+#### Configuring Operating Systems to Recognize .phr and .sphr Filetypes
+
+- [How to set default apps on Mac](https://www.imore.com/how-set-mac-app-default-when-opening-file)
+- [How to properly register a file extension on mac so it will also work by running open from the command line? ](https://apple.stackexchange.com/questions/94954/how-to-properly-register-a-file-extension-on-mac-so-it-will-also-work-by-running)
+- [Adding or registering a file type so it can be associated with an application](https://superuser.com/questions/1080453/adding-or-registering-a-file-type-so-it-can-be-associated-with-an-application)
+- [Set default app for .file type file](https://answers.microsoft.com/en-us/windows/forum/all/set-default-app-for-file-type-file/c449afd5-2eff-4f3b-8faf-8ce7ced50f30)
+- [File extension associations and default apps in Windows 10, how to handle this using commandline](https://social.technet.microsoft.com/Forums/en-US/9f4e8e66-b1f4-47a4-931f-862fb8ac3ab3/file-extension-associations-and-default-apps-in-windows-10-how-to-handle-this-using-commandline)
+
 
 
 #### References  
 
-[Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
-[GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
+- [Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
+- [GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
 
 
 
