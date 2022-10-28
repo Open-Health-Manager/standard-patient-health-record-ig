@@ -2,10 +2,6 @@
 /*--------------------------------------------------------------*
 /*                        Logical Models                        * 
 /*--------------------------------------------------------------*/
-
-// TODO add workoutActivity model < Sample model
-// TODO split up models
-
 Logical:        AppleHealthKitObject
 Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
@@ -26,8 +22,8 @@ Parent:         AppleHealthKitObject
 * ^abstract = true
 * ^status = #draft
 
-* startDate 0..1 date "The sample's start date." "The sample's start date."
-* endDate 0..1 date "The sample's end date." "The sample's end date."
+* startDate 0..1 dateTime "The sample's start date." "The sample's start date."
+* endDate 0..1 dateTime "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
 * sampleType 1..1 code "The sample type." "The sample type."
 * sampleType from AppleHealthKitSampleTypeValueSet (extensible)
@@ -75,32 +71,42 @@ Parent:         AppleHealthKitSample
 
 Logical:        AppleHealthKitWorkoutSample
 Id:             apple-healthkit-workout-sample
-Title:          "Apple HealthKit Correlation Sample Logical Model"
-Description:    "Data elements for the Apple HealthKit HKCorrelation."
+Title:          "Apple HealthKit Workout Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKWorkout."
 Parent:         AppleHealthKitSample
 * duration 0..1 period "The workout duration." "The workout duration, may be derived from endDate - startDate."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
 * workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
+* workoutActivities 0..* Reference(AppleHealthKitWorkoutActivity) "The sample's workout activities." "The sample's workout activities."
+* workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "The sample's workout events." "The sample's workout events, in agreement with workoutActivities."
 
-* value[x] 0..1 integer or Quantity or Period "The HKSample value" "Use valueInteger for HKCategory and Quantity for HKQuantity or components"
-* valueInteger ^short = "Value for HKCategory"
-* valueQuantity ^short = "Value for HKQuantity"
-* valuePeriod ^short = "Value for HKWorkoutActivity"
-
-* components 0..* Reference(AppleHealthKitSample) "Components for HKSamples that are sets." "HKWorkoutActivty components for HKWorkout and HKQuantity components for HKCorrelation"
-
-* obeys AppleHealthKitValueOrComponentConstraint
-
-/*--------------------------------------------------------------*
-/*                       Constraints                            * 
-/*--------------------------------------------------------------*/
-
-Invariant:   AppleHealthKitValueOrComponentConstraint
-Description: "Either value[x] or at least 1 component or both SHALL be present"
-Expression:  "value[x].exists() or components.hasValue()"
-Severity:    #error
+Logical:        AppleHealthKitWorkoutActivity
+Id:             apple-healthkit-workout-activity
+Title:          "Apple HealthKit Workout Activity Logical Model"
+Description:    "Data elements for the Apple HealthKit HKWorkoutActivity."
+Parent:         AppleHealthKitObject
+* device 0..0
+* sourceRevision 0..0
+* startDate 0..1 dateTime "The Workout Activity start datetime." "The Workout Activity start datetime."
+* endDate 0..1 dateTime "Workout Activity end datetime." "The Workout Activity end datetime."
+* duration 0..1 period "Workout Activity duration" "Workout Avtivity duration may be derived from endDate - startDate."
+// skip statistics
+* workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "Associated Workout Events." "Associated Workout Events."
 
 
+Logical:        AppleHealthKitWorkoutEvent
+Id:             apple-healthkit-workout-event
+Title:          "Apple HealthKit Workout Event Logical Model"
+Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
+Parent:         AppleHealthKitSample
+* device 0..0
+* sourceRevision 0..0
+* dateInterval 0..1 BackboneElement "The event's time and duration." "The event's time and duration."
+* dateInterval.start 1..1 dateTime "The dateInterval's start date." "The dateInterval's start date."
+* dateInterval.end 0..1 dateTime "The dateInterval's end date." "The dateInterval's end date."
+* dateInterval.duration 0..1 period "The dateInterval's duration." "The dateInterval's duration."
+* type 1..1 code "The workout event type." "The workout event type."
+* type from AppleHealthKitWorkoutEventTypeValueSet (extensible)
 
 
 /*--------------------------------------------------------------*
@@ -113,6 +119,7 @@ Severity:    #error
   CorrelationTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcorrelationtypeidentifier (also allows any string)
   WorkoutTypeValueSet: string (see: https://developer.apple.com/documentation/healthkit/hkworkouttypeidentifier)
   WorkoutActivityTypeValueSet: uint (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
+  WorkoutEventTypeValueSet: int (https://developer.apple.com/documentation/healthkit/hkworkouteventtype)
 */
 
 ValueSet: AppleHealthKitSampleTypeValueSet
@@ -385,6 +392,29 @@ Description: "Code System required for defining workoutActivityType ValueSet"
 * #mixedMetabolicCardioTraining "depreciated"
 * #swimBikeRun
 * #transition
+
+
+
+ValueSet: AppleHealthKitWorkoutEventTypeValueSet
+Title: "Apple Health Kit Workout Event Type Value Set"
+Id: apple-health-kit-workout-event-type-value-set
+Description: "Possible values for AppleHealthKitWorkoutEvent.type"
+* include codes from system AppleHealthKitWorkoutEventTypeCodeSystem
+
+CodeSystem: AppleHealthKitWorkoutEventTypeCodeSystem
+Title: "Apple Health Kit Workout Event Type Code System"
+Id: apple-health-kit-workout-event-type-code-system
+Description: "Code System required for defining workout event type ValueSet"
+* #pause "A constant indicating that the workout has paused."
+* #resume "A constant indicating that the workout has resumed."
+* #motionPaused "A constant indicating that the system has automatically paused a workout session."
+* #motionResumed "A constant indicating that the system has automatically resumed a workout session."
+* #pauseOrResumeRequest "A constant indicating that the user has requested a pause or resume."
+* #lap "A constant indicating a lap."
+* #segment "A constant indicating a period of time of interest during a workout."
+* #marker "A constant indicating a point of interest during a workout session."
+
+
 
 /*--------------------------------------------------------------*
 /*                        Instances                             * 
