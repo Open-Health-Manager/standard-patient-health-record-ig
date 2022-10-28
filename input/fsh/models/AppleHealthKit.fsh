@@ -7,7 +7,6 @@ Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
 * ^abstract = true
 * ^status = #draft
-
 * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
 * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
 * device 0..1 BackboneElement "device" "The device that generated the data for this object."
@@ -21,7 +20,6 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 Parent:         AppleHealthKitObject
 * ^abstract = true
 * ^status = #draft
-
 * startDate 0..1 dateTime "The sample's start date." "The sample's start date."
 * endDate 0..1 dateTime "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
@@ -35,7 +33,6 @@ Title:          "Apple HealthKit Category Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCategorySample."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-//* sampleType = #category // TODO: constraint?
 * categoryType 1..1 code "The sample's category type." "The HKCategorySampleType."
 * categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
 * value 1..1 integer "The sample's category value." "The HKCategorySample.value value."
@@ -47,7 +44,6 @@ Title:          "Apple HealthKit Quantity Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKQuantitySample."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-
 * quantity 1..1 BackboneElement "The sample's quantity." "The HKQuantity for this sample."
 * quantity.unit 0..1 BackboneElement "The quantity's unit." "The HKUnit in HKQuantity in this HKQuantitySample."
 * quantity.unit.unitString 0..1 string "The unit string." "The HKUnit.unitString value."
@@ -63,7 +59,6 @@ Title:          "Apple HealthKit Correlation Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCorrelation."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-
 * correlationType 1..1 code "The sample's correlation type." "HKCorrelation.correlationType from corresponding ValueSet"
 * correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
 * objects 1..* Reference(AppleHealthKitSample) "The set of sample objects that make up the correlation." "HKCorrelation.objects (Set<HKSample>)"
@@ -74,6 +69,7 @@ Id:             apple-healthkit-workout-sample
 Title:          "Apple HealthKit Workout Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkout."
 Parent:         AppleHealthKitSample
+* ^status = #draft
 * duration 0..1 period "The workout duration." "The workout duration, may be derived from endDate - startDate."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
 * workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
@@ -86,6 +82,7 @@ Id:             apple-healthkit-workout-activity
 Title:          "Apple HealthKit Workout Activity Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutActivity."
 Parent:         AppleHealthKitObject
+* ^status = #draft
 * startDate 0..1 dateTime "The Workout Activity start datetime." "The Workout Activity start datetime."
 * endDate 0..1 dateTime "Workout Activity end datetime." "The Workout Activity end datetime."
 * duration 0..1 period "Workout Activity duration" "Workout Avtivity duration may be derived from endDate - startDate."
@@ -98,6 +95,7 @@ Id:             apple-healthkit-workout-event
 Title:          "Apple HealthKit Workout Event Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 Parent:         AppleHealthKitSample
+* ^status = #draft
 * dateInterval 0..1 BackboneElement "The event's time and duration." "The event's time and duration."
 * dateInterval.start 1..1 dateTime "The dateInterval's start date." "The dateInterval's start date."
 * dateInterval.end 0..1 dateTime "The dateInterval's end date." "The dateInterval's end date."
@@ -105,6 +103,17 @@ Parent:         AppleHealthKitSample
 * type 1..1 code "The workout event type." "The workout event type."
 * type from AppleHealthKitWorkoutEventTypeValueSet (extensible)
 
+
+Logical:        AppleHealthKitCharacteristic
+Id:             apple-healthkit-characteristic
+Title:          "Apple HealthKit Characteristic Logical Model"
+Description:    "Relevant Data elements that correspond to the CharacteristicType stored in Apple HealthStore."
+* ^status = #draft
+* characteristicType 1..1 code "The characteristic type." "The characteristic type."
+* characteristicType from AppleHealthKitCharacteristicTypeValueSet (extensible)
+* biologicalSex 0..1 code "The biological sex." "The biological sex."
+* biologicalSex from AppleHealthKitBiologicalSexValueSet (extensible)
+* dateOfBirth 0..1 date "The date of birth." "The date of birth."
 
 
 
@@ -115,10 +124,12 @@ Parent:         AppleHealthKitSample
 /*
   CategoryTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier
   QuantityTypeValueSet: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier
-  CorrelationTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcorrelationtypeidentifier (also allows any string)
-  WorkoutTypeValueSet: string (see: https://developer.apple.com/documentation/healthkit/hkworkouttypeidentifier)
-  WorkoutActivityTypeValueSet: uint (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
-  WorkoutEventTypeValueSet: int (https://developer.apple.com/documentation/healthkit/hkworkouteventtype)
+  CorrelationTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcorrelationtypeidentifier
+  WorkoutTypeValueSet: arbitrary string (see: https://developer.apple.com/documentation/healthkit/hkworkouttypeidentifier)
+  WorkoutActivityTypeValueSet: uint enum (https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype)
+  WorkoutEventTypeValueSet: int enum (https://developer.apple.com/documentation/healthkit/hkworkouteventtype)
+  CharacteristicTypeValueSet: https://developer.apple.com/documentation/healthkit/hkcharacteristictypeidentifier
+  BiologicalSexValueSet: int enum https://developer.apple.com/documentation/healthkit/hkbiologicalsex
 */
 
 ValueSet: AppleHealthKitSampleTypeValueSet
@@ -417,7 +428,16 @@ ValueSet: AppleHealthKitBiologicalSexValueSet
 Title: "Apple Health Kit Biological Sex Value Set"
 Id: apple-health-kit-biological-sex-value-set
 Description: "Possible values for AppleHealthKitCharacteristic.biologicalSex"
+* include codes from system AppleHealthKitBiologicalSexCodeSystem
 
+CodeSystem: AppleHealthKitBiologicalSexCodeSystem
+Title: "Apple Health Kit Biological Sex Code System"
+Id: apple-health-kit-biological-sex-code-system
+Description: "Code System required for defining biologicalSex"
+* #notSet "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type."
+* #female "A constant indicating that the user is female."
+* #male "A constant indicating that the user is male."
+* #other "A constant indicating that the user is otherwise not categorized as either male or female.""
 
 /*--------------------------------------------------------------*
 /*                        Instances                             * 
