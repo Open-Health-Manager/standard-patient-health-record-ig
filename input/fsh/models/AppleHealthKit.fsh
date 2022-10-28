@@ -94,8 +94,9 @@ Logical:        AppleHealthKitWorkoutEvent
 Id:             apple-healthkit-workout-event
 Title:          "Apple HealthKit Workout Event Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
-Parent:         AppleHealthKitSample
+//Parent:         AppleHealthKitObject
 * ^status = #draft
+* metadata 0..1 BackboneElement "The metadata." "The metadata."
 * dateInterval 0..1 BackboneElement "The event's time and duration." "The event's time and duration."
 * dateInterval.start 1..1 dateTime "The dateInterval's start date." "The dateInterval's start date."
 * dateInterval.end 0..1 dateTime "The dateInterval's end date." "The dateInterval's end date."
