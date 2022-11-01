@@ -89,7 +89,6 @@ Parent:         AppleHealthKitObject
 // map allStatistics [ HKQuantity:HKStatistics ]
 * workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "Associated Workout Events." "Associated Workout Events."
 
-
 Logical:        AppleHealthKitWorkoutEvent
 Id:             apple-healthkit-workout-event
 Title:          "Apple HealthKit Workout Event Logical Model"
