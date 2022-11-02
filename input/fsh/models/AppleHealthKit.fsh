@@ -85,7 +85,7 @@ Parent:         AppleHealthKitObject
 * ^status = #draft
 * startDate 0..1 dateTime "The Workout Activity start datetime." "The Workout Activity start datetime."
 * endDate 0..1 dateTime "Workout Activity end datetime." "The Workout Activity end datetime."
-* duration 0..1 period "Workout Activity duration" "Workout Avtivity duration may be derived from endDate - startDate."
+* duration 0..1 period "Workout Activity duration" "Workout Activity duration may be derived from endDate - startDate."
 // map allStatistics [ HKQuantity:HKStatistics ]
 * workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "Associated Workout Events." "Associated Workout Events."
 
