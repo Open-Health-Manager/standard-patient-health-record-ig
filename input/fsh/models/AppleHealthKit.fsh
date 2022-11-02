@@ -2,25 +2,17 @@
 /*--------------------------------------------------------------*
 /*                        Logical Models                        * 
 /*--------------------------------------------------------------*/
-Logical:        AppleHealthKitObject
-Id:             apple-health-kit-object
-Title:          "Apple HealthKit Object Logical Model"
-Description:    "Data elements for the Apple HealthKit HKObject."
+
+Logical:        AppleHealthKitSample
+Id:             apple-health-kit-sample
+Title:          "Apple HealthKit Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKSample."
 * ^abstract = true
 * ^status = #draft
 * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
 * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
 * device 0..1 BackboneElement "device" "The device that generated the data for this object."
 * sourceRevision 0..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
-
-
-Logical:        AppleHealthKitSample
-Id:             apple-health-kit-sample
-Title:          "Apple HealthKit Sample Logical Model"
-Description:    "Data elements for the Apple HealthKit HKSample."
-Parent:         AppleHealthKitObject
-* ^abstract = true
-* ^status = #draft
 * startDate 0..1 dateTime "The sample's start date." "The sample's start date."
 * endDate 0..1 dateTime "The sample's end date." "The sample's end date."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
@@ -82,8 +74,9 @@ Logical:        AppleHealthKitWorkoutActivity
 Id:             apple-health-kit-workout-activity
 Title:          "Apple HealthKit Workout Activity Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutActivity."
-Parent:         AppleHealthKitObject
 * ^status = #draft
+* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit Workout Activity."
+* metadata 0..1 BackboneElement "The Workout Activity metadata." "The Workout Activity metadata."
 * startDate 0..1 dateTime "The Workout Activity start datetime." "The Workout Activity start datetime."
 * endDate 0..1 dateTime "Workout Activity end datetime." "The Workout Activity end datetime."
 * duration 0..1 period "Workout Activity duration" "Workout Activity duration may be derived from endDate - startDate."
@@ -94,7 +87,6 @@ Logical:        AppleHealthKitWorkoutEvent
 Id:             apple-health-kit-workout-event
 Title:          "Apple HealthKit Workout Event Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
-//Parent:         AppleHealthKitObject
 * ^status = #draft
 * metadata 0..1 BackboneElement "The metadata." "The metadata."
 * dateInterval 0..1 BackboneElement "The event's time and duration." "The event's time and duration."
