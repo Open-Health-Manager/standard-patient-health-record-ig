@@ -2,12 +2,10 @@
 /*--------------------------------------------------------------*
 /*                        Logical Models                        * 
 /*--------------------------------------------------------------*/
-
-Logical:        AppleHealthKitSample
-Id:             apple-health-kit-sample
-Title:          "Apple HealthKit Sample Logical Model"
-Description:    "Data elements for the Apple HealthKit HKSample."
-* ^abstract = true
+Logical:        AppleHealthKitCategorySample
+Id:             apple-health-kit-category-sample
+Title:          "Apple HealthKit Category Sample Logical Model"
+Description:    "Data elements for the Apple HealthKit HKCategorySample."
 * ^status = #draft
 * uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
 * metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
@@ -18,14 +16,6 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 * hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
 * sampleType 1..1 code "The sample type." "The sample type."
 * sampleType from AppleHealthKitSampleTypeValueSet (extensible)
-
-
-Logical:        AppleHealthKitCategorySample
-Id:             apple-health-kit-category-sample
-Title:          "Apple HealthKit Category Sample Logical Model"
-Description:    "Data elements for the Apple HealthKit HKCategorySample."
-Parent:         AppleHealthKitSample
-* ^status = #draft
 * categoryType 1..1 code "The sample's category type." "The HKCategorySampleType."
 * categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
 * value 1..1 integer "The sample's category value." "The HKCategorySample.value value."
@@ -35,8 +25,16 @@ Logical:        AppleHealthKitQuantitySample
 Id:             apple-health-kit-quantity-sample
 Title:          "Apple HealthKit Quantity Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKQuantitySample."
-Parent:         AppleHealthKitSample
 * ^status = #draft
+* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
+* metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
+* device 0..1 BackboneElement "device" "The device that generated the data for this object."
+* sourceRevision 0..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
+* startDate 0..1 dateTime "The sample's start date." "The sample's start date."
+* endDate 0..1 dateTime "The sample's end date." "The sample's end date."
+* hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
+* sampleType 1..1 code "The sample type." "The sample type."
+* sampleType from AppleHealthKitSampleTypeValueSet (extensible)
 * quantity 1..1 BackboneElement "The sample's quantity." "The HKQuantity for this sample."
 * quantity.unit 0..1 BackboneElement "The quantity's unit." "The HKUnit in HKQuantity in this HKQuantitySample."
 * quantity.unit.unitString 0..1 string "The unit string." "The HKUnit.unitString value."
@@ -50,19 +48,35 @@ Logical:        AppleHealthKitCorrelationSample
 Id:             apple-health-kit-correlation-sample
 Title:          "Apple HealthKit Correlation Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCorrelation."
-Parent:         AppleHealthKitSample
 * ^status = #draft
+* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
+* metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
+* device 0..1 BackboneElement "device" "The device that generated the data for this object."
+* sourceRevision 0..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
+* startDate 0..1 dateTime "The sample's start date." "The sample's start date."
+* endDate 0..1 dateTime "The sample's end date." "The sample's end date."
+* hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
+* sampleType 1..1 code "The sample type." "The sample type."
+* sampleType from AppleHealthKitSampleTypeValueSet (extensible)
 * correlationType 1..1 code "The sample's correlation type." "HKCorrelation.correlationType from corresponding ValueSet"
 * correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
-* objects 1..* Reference(AppleHealthKitSample) "The set of sample objects that make up the correlation." "HKCorrelation.objects (Set<HKSample>)"
+* objects 1..* Reference(AppleHealthKitQuantitySample or AppleHealthKitCorrelationSample or AppleHealthKitWorkoutSample or AppleHealthKitCategorySample) "The set of sample objects that make up the correlation." "HKCorrelation.objects (Set<HKSample>)"
 
 
 Logical:        AppleHealthKitWorkoutSample
 Id:             apple-health-kit-workout-sample
 Title:          "Apple HealthKit Workout Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkout."
-Parent:         AppleHealthKitSample
 * ^status = #draft
+* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
+* metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
+* device 0..1 BackboneElement "device" "The device that generated the data for this object."
+* sourceRevision 0..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
+* startDate 0..1 dateTime "The sample's start date." "The sample's start date."
+* endDate 0..1 dateTime "The sample's end date." "The sample's end date."
+* hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
+* sampleType 1..1 code "The sample type." "The sample type."
+* sampleType from AppleHealthKitSampleTypeValueSet (extensible)
 * duration 0..1 period "The workout duration." "The workout duration, may be derived from endDate - startDate."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
 * workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
