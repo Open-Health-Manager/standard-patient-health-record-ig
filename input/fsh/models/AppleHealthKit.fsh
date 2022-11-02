@@ -3,6 +3,7 @@
 /*                        Logical Models                        * 
 /*--------------------------------------------------------------*/
 Logical:        AppleHealthKitObject
+Id:             apple-health-kit-object
 Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
 * ^abstract = true
@@ -14,7 +15,7 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 
 
 Logical:        AppleHealthKitSample
-Id:             apple-healthkit-sample
+Id:             apple-health-kit-sample
 Title:          "Apple HealthKit Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKSample."
 Parent:         AppleHealthKitObject
@@ -28,7 +29,7 @@ Parent:         AppleHealthKitObject
 
 
 Logical:        AppleHealthKitCategorySample
-Id:             apple-healthkit-category-sample
+Id:             apple-health-kit-category-sample
 Title:          "Apple HealthKit Category Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCategorySample."
 Parent:         AppleHealthKitSample
@@ -39,7 +40,7 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitQuantitySample
-Id:             apple-healthkit-quantity-sample
+Id:             apple-health-kit-quantity-sample
 Title:          "Apple HealthKit Quantity Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKQuantitySample."
 Parent:         AppleHealthKitSample
@@ -54,7 +55,7 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitCorrelationSample
-Id:             apple-healthkit-correlation-sample
+Id:             apple-health-kit-correlation-sample
 Title:          "Apple HealthKit Correlation Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCorrelation."
 Parent:         AppleHealthKitSample
@@ -65,7 +66,7 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitWorkoutSample
-Id:             apple-healthkit-workout-sample
+Id:             apple-health-kit-workout-sample
 Title:          "Apple HealthKit Workout Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkout."
 Parent:         AppleHealthKitSample
@@ -78,7 +79,7 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitWorkoutActivity
-Id:             apple-healthkit-workout-activity
+Id:             apple-health-kit-workout-activity
 Title:          "Apple HealthKit Workout Activity Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutActivity."
 Parent:         AppleHealthKitObject
@@ -90,7 +91,7 @@ Parent:         AppleHealthKitObject
 * workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "Associated Workout Events." "Associated Workout Events."
 
 Logical:        AppleHealthKitWorkoutEvent
-Id:             apple-healthkit-workout-event
+Id:             apple-health-kit-workout-event
 Title:          "Apple HealthKit Workout Event Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 //Parent:         AppleHealthKitObject
@@ -105,7 +106,7 @@ Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 
 
 Logical:        AppleHealthKitCharacteristic
-Id:             apple-healthkit-characteristic
+Id:             apple-health-kit-characteristic
 Title:          "Apple HealthKit Characteristic Logical Model"
 Description:    "Relevant Data elements that correspond to the CharacteristicType stored in Apple HealthStore."
 * ^status = #draft
@@ -115,7 +116,7 @@ Description:    "Relevant Data elements that correspond to the CharacteristicTyp
 * biologicalSex from AppleHealthKitBiologicalSexValueSet (extensible)
 * dateOfBirth 0..1 date "The date of birth." "The date of birth."
 
-
+ 
 
 /*--------------------------------------------------------------*
 /*                        Value Sets                            * 
