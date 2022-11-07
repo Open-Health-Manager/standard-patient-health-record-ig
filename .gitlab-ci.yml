@@ -7,7 +7,7 @@ workflow:
 pages:
   script:
     - pwd
-    - cp -R output public
+    # - cp -R output public
     - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" output/index.html > public/index.html
 
     - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" output/index.html > public/index.html
