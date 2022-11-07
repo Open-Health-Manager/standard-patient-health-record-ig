@@ -1,0 +1,470 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = errors = 14, warn = 32, info = 1, 4 -->
+<head>
+  <title>StandardPatientHealthRecordIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for StandardPatientHealthRecordIG</h1>
+ <p>Generated Mon Nov 07 03:32:32 CST 2022, FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.4.4 (canonical = <a href="https://open-health-manager.github.io/standard-patient-health-record-ig">https://open-health-manager.github.io/standard-patient-health-record-ig</a> (<a href="https://open-health-manager.github.io/standard-patient-health-record-ig/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.2.7, which is out of date. The current version is v1.2.13 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = StandardPatientHealthRecordIG, Canonical = https://open-health-manager.github.io/standard-patient-health-record-ig</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.4.4: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> StandardPatientHealthRecordIG</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.4.4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://open-health-manager.github.io/standard-patient-health-record-ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/4.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.0.0</td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://open-health-manager.github.io/standard-patient-health-record-ig (Problem #1 with package-list.json at https://open-health-manager.github.io/standard-patient-health-record-ig: Invalid HTTP response 404 from https://open-health-manager.github.io/standard-patient-health-record-ig/package-list.json?nocache=1667813478229 (Not Found) (content in /var/folders/84/bh6qdyp14xgdbsrf8dfdstd80000gn/T/fhir-http-2.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 14, warn = 32, info = 1, broken links = 4</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>4</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_Observation-PCDSleepObservation-duration-example"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/Observation-PCDSleepObservation-duration-example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_Observation-PCDSleepObservation-stage-example"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/Observation-PCDSleepObservation-stage-example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrBundle"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrBundle</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrComposition"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrComposition</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrDocumentManifest"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrDocumentManifest</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrDocumentReference"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrDocumentReference</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrMedia"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrMedia</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrPatient"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrPatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrProvenance"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrProvenance</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-apple-healthkit-sample"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-apple-healthkit-sample</b></a></td><td><b>0</b></td><td><b>18</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_ValueSet-pcd-sleep-observation-code"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/ValueSet-pcd-sleep-observation-code</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_ValueSet-pcd-sleep-observation-value"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/ValueSet-pcd-sleep-observation-value</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_input_resources_StructureMap-HKCategorySamplePregnancyToObservation"><b>/Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/input/resources/StructureMap-HKCategorySamplePregnancyToObservation</b></a></td><td><b>12</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/HKCategorySamplePregnancyToObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-PCDSleepObservation-duration-example.html#l378">output/Observation-PCDSleepObservation-duration-example.html#/html/body/div/div/div/div/div/div/p/a at Line 229, column 777</a></b></td><td><b>error</b></td><td><b>The link 'Patient/janesmith' for &quot;Patient/janesmith: Jane Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-PCDSleepObservation-stage-example.html#l378">output/Observation-PCDSleepObservation-stage-example.html#/html/body/div/div/div/div/div/div/p/a at Line 229, column 812</a></b></td><td><b>error</b></td><td><b>The link 'Patient/janesmith' for &quot;Patient/janesmith: Jane Smith&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="personas-index.html#l883">output/personas-index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 405, column 37</a></b></td><td><b>error</b></td><td><b>The link 'Jarvis643_Kunde533_beee2c9a-931e-a2b2-4ae0-ff658b57f439.json' for &quot;json&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="personas-index.html#l1467">output/personas-index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 613, column 37</a></b></td><td><b>error</b></td><td><b>The link 'Stanley702_Ritchie586_f966ba2e-50d2-df7f-a5b1-bbb59685eda5.json' for &quot;json&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_Observation-PCDSleepObservation-duration-example"> </a>
+<h2><a href="Observation-PCDSleepObservation-duration-example.html">fsh-generated/resources/Observation-PCDSleepObservation-duration-example.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-pcd-sleep-observation.html">Patient contributed data: sleep observation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Observation.value.ofType(Quantity) (l25/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation</b> <span id="sl9" class="flip" onclick="flip('l9')">Show Reasoning</span><div id="l9" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation<ul><li>Observation.value.ofType(Quantity): discriminator = true and ($this is CodeableConcept)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l10/c29)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/janesmith'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_Observation-PCDSleepObservation-stage-example"> </a>
+<h2><a href="Observation-PCDSleepObservation-stage-example.html">fsh-generated/resources/Observation-PCDSleepObservation-stage-example.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-pcd-sleep-observation.html">Patient contributed data: sleep observation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l10/c29)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/janesmith'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrBundle"> </a>
+<h2><a href="StructureDefinition-PhrBundle.html">fsh-generated/resources/StructureDefinition-PhrBundle.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrBundle')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrComposition"> </a>
+<h2><a href="StructureDefinition-PhrComposition.html">fsh-generated/resources/StructureDefinition-PhrComposition.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrComposition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrDocumentManifest"> </a>
+<h2><a href="StructureDefinition-PhrDocumentManifest.html">fsh-generated/resources/StructureDefinition-PhrDocumentManifest.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrDocumentManifest')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrDocumentReference"> </a>
+<h2><a href="StructureDefinition-PhrDocumentReference.html">fsh-generated/resources/StructureDefinition-PhrDocumentReference.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrDocumentReference')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrMedia"> </a>
+<h2><a href="StructureDefinition-PhrMedia.html">fsh-generated/resources/StructureDefinition-PhrMedia.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrMedia')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrPatient"> </a>
+<h2><a href="StructureDefinition-PhrPatient.html">fsh-generated/resources/StructureDefinition-PhrPatient.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrPatient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-PhrProvenance"> </a>
+<h2><a href="StructureDefinition-PhrProvenance.html">fsh-generated/resources/StructureDefinition-PhrProvenance.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrProvenance')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_StructureDefinition-apple-healthkit-sample"> </a>
+<h2><a href="StructureDefinition-apple-healthkit-sample.html">fsh-generated/resources/StructureDefinition-apple-healthkit-sample.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[0]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[1]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[2]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[3]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[4]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[5]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[6]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[7]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[8]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[0]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_ValueSet-pcd-sleep-observation-code"> </a>
+<h2><a href="ValueSet-pcd-sleep-observation-code.html">fsh-generated/resources/ValueSet-pcd-sleep-observation-code.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_fsh-generated_resources_ValueSet-pcd-sleep-observation-value"> </a>
+<h2><a href="ValueSet-pcd-sleep-observation-value.html">fsh-generated/resources/ValueSet-pcd-sleep-observation-value.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_awatson_Code_implementation-guides_standard-patient-health-record-ig_input_resources_StructureMap-HKCategorySamplePregnancyToObservation"> </a>
+<h2><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.structure[1].url</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set status' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set category' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[1].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set category code system' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[1].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set category code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[2].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set code system' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[2].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[3].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'startDate to effectiveDateTime' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[4].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set valueCodeableConcept' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[4].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set value system' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[4].rule[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'set value' is not valid</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-PCDSleepObservation-duration-example.html">fsh-generated/resources/Observation-PCDSleepObservation-duration-example.json</a></td><td><b>Unable to resolve resource with reference 'Patient/janesmith'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-PCDSleepObservation-stage-example.html">fsh-generated/resources/Observation-PCDSleepObservation-stage-example.json</a></td><td><b>Unable to resolve resource with reference 'Patient/janesmith'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_ID_Valid"> </a>
+<h2>Type_Specific_Checks_DT_ID_Valid</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set status' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set category' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set category code system' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set category code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set code system' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'startDate to effectiveDateTime' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set valueCodeableConcept' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set value system' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-HKCategorySamplePregnancyToObservation.html">input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json</a></td><td><b>id value 'set value' is not valid</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_SHAREABLE_MISSING"> </a>
+<h2>VALUESET_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-pcd-sleep-observation-code.html">fsh-generated/resources/ValueSet-pcd-sleep-observation-code.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-pcd-sleep-observation-value.html">fsh-generated/resources/ValueSet-pcd-sleep-observation-value.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+</body>
+</html>

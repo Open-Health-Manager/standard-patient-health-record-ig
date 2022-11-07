@@ -1,0 +1,299 @@
+{
+  "resourceType": "StructureMap",
+  "id": "HKCategorySamplePregnancyToObservation",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation&quot; = &quot;HKCategorySamplePregnancyToObservation&quot;\n\nuses &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample&quot; alias HKCategorySamplePregnancy as source\n\nuses &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus&quot; alias UsCoreObservationPregnancyStatus as target\n\ngroup HKCategorySamplePregnancyToObservation ( \n  source sample : HKCategorySamplePregnancy\n  target observation : UsCoreObservationPregnancyStatus\n) {\n  sample -&gt; observation.status = &quot;final&quot; &quot;set status&quot;;\n  sample -&gt; observation.category as category, category.coding as coding then {\n    sample -&gt; coding.system =  &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot; &quot;set category code system&quot;;\n    sample -&gt; coding.code = &quot;social-history&quot; &quot;set category code&quot;;\n  } &quot;set category&quot;;\n  sample -&gt; observation.code as code, code.coding as coding then {\n    sample -&gt; coding.system =  &quot;http://loinc.org&quot; &quot;set code system&quot;;\n    sample -&gt; coding.code = &quot;82810-3&quot; &quot;set code&quot;;\n  } &quot;set code&quot;;\n  sample.startDate as startDate -&gt; observation.effectiveDateTime = startDate &quot;startDate to effectiveDateTime&quot;;\n  sample -&gt; observation.valueCodeableConcept as value, value.coding as coding then {\n    sample -&gt; coding.system =  &quot;http://snomed.info/sct&quot; &quot;set value system&quot;;\n    sample -&gt; coding.code = &quot;77386006&quot; &quot;set value&quot;;\n  } &quot;set valueCodeableConcept&quot;;\n}</pre></div>"
+  },
+  "url": "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation",
+  "version": "0.4.4",
+  "name": "HKCategorySamplePregnancyToObservation",
+  "status": "draft",
+  "date": "2022-11-07T03:31:20-06:00",
+  "publisher": "MITRE",
+  "contact": [
+    {
+      "name": "MITRE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://open-health-manager.github.io/standard-patient-health-record-ig"
+        }
+      ]
+    }
+  ],
+  "structure": [
+    {
+      "url": "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample",
+      "mode": "source",
+      "alias": "HKCategorySamplePregnancy"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus",
+      "mode": "target",
+      "alias": "UsCoreObservationPregnancyStatus"
+    }
+  ],
+  "group": [
+    {
+      "name": "HKCategorySamplePregnancyToObservation",
+      "typeMode": "none",
+      "input": [
+        {
+          "name": "sample",
+          "type": "HKCategorySamplePregnancy",
+          "mode": "source"
+        },
+        {
+          "name": "observation",
+          "type": "UsCoreObservationPregnancyStatus",
+          "mode": "target"
+        }
+      ],
+      "rule": [
+        {
+          "name": "set status",
+          "source": [
+            {
+              "context": "sample"
+            }
+          ],
+          "target": [
+            {
+              "context": "observation",
+              "contextType": "variable",
+              "element": "status",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueString": "final"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "set category",
+          "source": [
+            {
+              "context": "sample"
+            }
+          ],
+          "target": [
+            {
+              "context": "observation",
+              "contextType": "variable",
+              "element": "category",
+              "variable": "category"
+            },
+            {
+              "context": "category",
+              "contextType": "variable",
+              "element": "coding",
+              "variable": "coding"
+            }
+          ],
+          "rule": [
+            {
+              "name": "set category code system",
+              "source": [
+                {
+                  "context": "sample"
+                }
+              ],
+              "target": [
+                {
+                  "context": "coding",
+                  "contextType": "variable",
+                  "element": "system",
+                  "transform": "copy",
+                  "parameter": [
+                    {
+                      "valueString": "http://terminology.hl7.org/CodeSystem/observation-category"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "set category code",
+              "source": [
+                {
+                  "context": "sample"
+                }
+              ],
+              "target": [
+                {
+                  "context": "coding",
+                  "contextType": "variable",
+                  "element": "code",
+                  "transform": "copy",
+                  "parameter": [
+                    {
+                      "valueString": "social-history"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "set code",
+          "source": [
+            {
+              "context": "sample"
+            }
+          ],
+          "target": [
+            {
+              "context": "observation",
+              "contextType": "variable",
+              "element": "code",
+              "variable": "code"
+            },
+            {
+              "context": "code",
+              "contextType": "variable",
+              "element": "coding",
+              "variable": "coding"
+            }
+          ],
+          "rule": [
+            {
+              "name": "set code system",
+              "source": [
+                {
+                  "context": "sample"
+                }
+              ],
+              "target": [
+                {
+                  "context": "coding",
+                  "contextType": "variable",
+                  "element": "system",
+                  "transform": "copy",
+                  "parameter": [
+                    {
+                      "valueString": "http://loinc.org"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "set code",
+              "source": [
+                {
+                  "context": "sample"
+                }
+              ],
+              "target": [
+                {
+                  "context": "coding",
+                  "contextType": "variable",
+                  "element": "code",
+                  "transform": "copy",
+                  "parameter": [
+                    {
+                      "valueString": "82810-3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "startDate to effectiveDateTime",
+          "source": [
+            {
+              "context": "sample",
+              "element": "startDate",
+              "variable": "startDate"
+            }
+          ],
+          "target": [
+            {
+              "context": "observation",
+              "contextType": "variable",
+              "element": "effectiveDateTime",
+              "transform": "copy",
+              "parameter": [
+                {
+                  "valueId": "startDate"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "set valueCodeableConcept",
+          "source": [
+            {
+              "context": "sample"
+            }
+          ],
+          "target": [
+            {
+              "context": "observation",
+              "contextType": "variable",
+              "element": "valueCodeableConcept",
+              "variable": "value"
+            },
+            {
+              "context": "value",
+              "contextType": "variable",
+              "element": "coding",
+              "variable": "coding"
+            }
+          ],
+          "rule": [
+            {
+              "name": "set value system",
+              "source": [
+                {
+                  "context": "sample"
+                }
+              ],
+              "target": [
+                {
+                  "context": "coding",
+                  "contextType": "variable",
+                  "element": "system",
+                  "transform": "copy",
+                  "parameter": [
+                    {
+                      "valueString": "http://snomed.info/sct"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "set value",
+              "source": [
+                {
+                  "context": "sample"
+                }
+              ],
+              "target": [
+                {
+                  "context": "coding",
+                  "contextType": "variable",
+                  "element": "code",
+                  "transform": "copy",
+                  "parameter": [
+                    {
+                      "valueString": "77386006"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

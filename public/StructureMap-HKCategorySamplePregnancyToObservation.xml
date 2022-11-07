@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="HKCategorySamplePregnancyToObservation"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation&quot; = &quot;HKCategorySamplePregnancyToObservation&quot;
+
+uses &quot;https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample&quot; alias HKCategorySamplePregnancy as source
+
+uses &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus&quot; alias UsCoreObservationPregnancyStatus as target
+
+group HKCategorySamplePregnancyToObservation ( 
+  source sample : HKCategorySamplePregnancy
+  target observation : UsCoreObservationPregnancyStatus
+) {
+  sample -&gt; observation.status = &quot;final&quot; &quot;set status&quot;;
+  sample -&gt; observation.category as category, category.coding as coding then {
+    sample -&gt; coding.system =  &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot; &quot;set category code system&quot;;
+    sample -&gt; coding.code = &quot;social-history&quot; &quot;set category code&quot;;
+  } &quot;set category&quot;;
+  sample -&gt; observation.code as code, code.coding as coding then {
+    sample -&gt; coding.system =  &quot;http://loinc.org&quot; &quot;set code system&quot;;
+    sample -&gt; coding.code = &quot;82810-3&quot; &quot;set code&quot;;
+  } &quot;set code&quot;;
+  sample.startDate as startDate -&gt; observation.effectiveDateTime = startDate &quot;startDate to effectiveDateTime&quot;;
+  sample -&gt; observation.valueCodeableConcept as value, value.coding as coding then {
+    sample -&gt; coding.system =  &quot;http://snomed.info/sct&quot; &quot;set value system&quot;;
+    sample -&gt; coding.code = &quot;77386006&quot; &quot;set value&quot;;
+  } &quot;set valueCodeableConcept&quot;;
+}</pre></div>
+  </text>
+  <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation"/>
+  <version value="0.4.4"/>
+  <name value="HKCategorySamplePregnancyToObservation"/>
+  <status value="draft"/>
+  <date value="2022-11-07T03:31:20-06:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://open-health-manager.github.io/standard-patient-health-record-ig"/>
+    </telecom>
+  </contact>
+  <structure>
+    <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-healthkit-sample"/>
+    <mode value="source"/>
+    <alias value="HKCategorySamplePregnancy"/>
+  </structure>
+  <structure>
+    <url value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus"/>
+    <mode value="target"/>
+    <alias value="UsCoreObservationPregnancyStatus"/>
+  </structure>
+  <group>
+    <name value="HKCategorySamplePregnancyToObservation"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="sample"/>
+      <type value="HKCategorySamplePregnancy"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="observation"/>
+      <type value="UsCoreObservationPregnancyStatus"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="set status"/>
+      <source>
+        <context value="sample"/>
+      </source>
+      <target>
+        <context value="observation"/>
+        <contextType value="variable"/>
+        <element value="status"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="final"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="set category"/>
+      <source>
+        <context value="sample"/>
+      </source>
+      <target>
+        <context value="observation"/>
+        <contextType value="variable"/>
+        <element value="category"/>
+        <variable value="category"/>
+      </target>
+      <target>
+        <context value="category"/>
+        <contextType value="variable"/>
+        <element value="coding"/>
+        <variable value="coding"/>
+      </target>
+      <rule>
+        <name value="set category code system"/>
+        <source>
+          <context value="sample"/>
+        </source>
+        <target>
+          <context value="coding"/>
+          <contextType value="variable"/>
+          <element value="system"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueString value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          </parameter>
+        </target>
+      </rule>
+      <rule>
+        <name value="set category code"/>
+        <source>
+          <context value="sample"/>
+        </source>
+        <target>
+          <context value="coding"/>
+          <contextType value="variable"/>
+          <element value="code"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueString value="social-history"/>
+          </parameter>
+        </target>
+      </rule>
+    </rule>
+    <rule>
+      <name value="set code"/>
+      <source>
+        <context value="sample"/>
+      </source>
+      <target>
+        <context value="observation"/>
+        <contextType value="variable"/>
+        <element value="code"/>
+        <variable value="code"/>
+      </target>
+      <target>
+        <context value="code"/>
+        <contextType value="variable"/>
+        <element value="coding"/>
+        <variable value="coding"/>
+      </target>
+      <rule>
+        <name value="set code system"/>
+        <source>
+          <context value="sample"/>
+        </source>
+        <target>
+          <context value="coding"/>
+          <contextType value="variable"/>
+          <element value="system"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueString value="http://loinc.org"/>
+          </parameter>
+        </target>
+      </rule>
+      <rule>
+        <name value="set code"/>
+        <source>
+          <context value="sample"/>
+        </source>
+        <target>
+          <context value="coding"/>
+          <contextType value="variable"/>
+          <element value="code"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueString value="82810-3"/>
+          </parameter>
+        </target>
+      </rule>
+    </rule>
+    <rule>
+      <name value="startDate to effectiveDateTime"/>
+      <source>
+        <context value="sample"/>
+        <element value="startDate"/>
+        <variable value="startDate"/>
+      </source>
+      <target>
+        <context value="observation"/>
+        <contextType value="variable"/>
+        <element value="effectiveDateTime"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueId value="startDate"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="set valueCodeableConcept"/>
+      <source>
+        <context value="sample"/>
+      </source>
+      <target>
+        <context value="observation"/>
+        <contextType value="variable"/>
+        <element value="valueCodeableConcept"/>
+        <variable value="value"/>
+      </target>
+      <target>
+        <context value="value"/>
+        <contextType value="variable"/>
+        <element value="coding"/>
+        <variable value="coding"/>
+      </target>
+      <rule>
+        <name value="set value system"/>
+        <source>
+          <context value="sample"/>
+        </source>
+        <target>
+          <context value="coding"/>
+          <contextType value="variable"/>
+          <element value="system"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueString value="http://snomed.info/sct"/>
+          </parameter>
+        </target>
+      </rule>
+      <rule>
+        <name value="set value"/>
+        <source>
+          <context value="sample"/>
+        </source>
+        <target>
+          <context value="coding"/>
+          <contextType value="variable"/>
+          <element value="code"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueString value="77386006"/>
+          </parameter>
+        </target>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

@@ -1,0 +1,96 @@
+﻿StandardPatientHealthRecordIG : Validation Results
+=========================================
+
+err = 14, warn = 32, info = 1
+IG Publisher Version: 1.2.7 Out of date - current version is 1.2.13
+Generated Mon Nov 07 03:32:32 CST 2022. FHIR version 4.0.1 for StandardPatientHealthRecordIG#0.4.4 (canonical = https://open-health-manager.github.io/standard-patient-health-record-ig)
+ Build Errors : 4 / 5 / 0
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/Observation-PCDSleepObservation-duration-example : 1 / 0 / 2
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/Observation-PCDSleepObservation-stage-example : 1 / 0 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-Environmental : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-NutrientOuttake : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrBundle : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrComposition : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrDocumentManifest : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrDocumentReference : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrMedia : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrPatient : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-PhrProvenance : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-SocialMedia : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-apple-healthkit-sample : 0 / 18 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/StructureDefinition-pcd-sleep-observation : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/ValueSet-pcd-sleep-observation-code : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/fsh-generated/resources/ValueSet-pcd-sleep-observation-value : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/input/resources/StructureMap-HKCategorySamplePregnancyToObservation : 12 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/HKCategorySamplePregnancyToObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/output/Observation-PCDSleepObservation-duration-example.html#/html/body/div/div/div/div/div/div/p/a at Line 229, column 777: The link 'Patient/janesmith' for "Patient/janesmith: Jane Smith" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/output/Observation-PCDSleepObservation-stage-example.html#/html/body/div/div/div/div/div/div/p/a at Line 229, column 812: The link 'Patient/janesmith' for "Patient/janesmith: Jane Smith" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/output/personas-index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 405, column 37: The link 'Jarvis643_Kunde533_beee2c9a-931e-a2b2-4ae0-ff658b57f439.json' for "json" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/standard-patient-health-record-ig/output/personas-index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 613, column 37: The link 'Stanley702_Ritchie586_f966ba2e-50d2-df7f-a5b1-bbb59685eda5.json' for "json" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-StandardPatientHealthRecordIG.json ==
+== fsh-generated/resources/Observation-PCDSleepObservation-duration-example.json ==
+INFORMATION: Observation/PCDSleepObservation-duration-example: Observation.value.ofType(Quantity): This element does not match any known slice defined in the profile https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation
+ERROR: Observation/PCDSleepObservation-duration-example: Observation.subject: Unable to resolve resource with reference 'Patient/janesmith'
+== fsh-generated/resources/Observation-PCDSleepObservation-stage-example.json ==
+ERROR: Observation/PCDSleepObservation-stage-example: Observation.subject: Unable to resolve resource with reference 'Patient/janesmith'
+== fsh-generated/resources/StructureDefinition-Environmental.json ==
+== fsh-generated/resources/StructureDefinition-NutrientOuttake.json ==
+== fsh-generated/resources/StructureDefinition-PhrBundle.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrBundle'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PhrComposition.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrComposition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PhrDocumentManifest.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrDocumentManifest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PhrDocumentReference.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrDocumentReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PhrMedia.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrMedia'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PhrPatient.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrPatient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PhrProvenance.json ==
+WARNING: StructureDefinition.where(url = 'https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrProvenance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-SocialMedia.json ==
+== fsh-generated/resources/StructureDefinition-apple-healthkit-sample.json ==
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/apple-healthkit-sample: StructureDefinition.differential.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-pcd-sleep-observation.json ==
+== fsh-generated/resources/ValueSet-pcd-sleep-observation-code.json ==
+WARNING: ValueSet/pcd-sleep-observation-code: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-pcd-sleep-observation-value.json ==
+WARNING: ValueSet/pcd-sleep-observation-value: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== input/resources/StructureMap-HKCategorySamplePregnancyToObservation.json ==
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.structure[1].url: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus' does not resolve
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[0].name: id value 'set status' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[1].name: id value 'set category' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[1].rule[0].name: id value 'set category code system' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[1].rule[1].name: id value 'set category code' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[2].name: id value 'set code' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[2].rule[0].name: id value 'set code system' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[2].rule[1].name: id value 'set code' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[3].name: id value 'startDate to effectiveDateTime' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[4].name: id value 'set valueCodeableConcept' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[4].rule[0].name: id value 'set value system' is not valid
+ERROR: StructureMap/HKCategorySamplePregnancyToObservation: StructureMap.group[0].rule[4].rule[1].name: id value 'set value' is not valid

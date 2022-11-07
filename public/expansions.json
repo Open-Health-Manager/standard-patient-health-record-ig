@@ -1,0 +1,152 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "f3389366-8d2c-41b9-84bd-59b542ca46da",
+  "meta" : {
+    "lastUpdated" : "2022-11-07T03:31:20.171-06:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "pcd-sleep-observation-code",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.73</li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-93831-6\"> </a>  <a href=\"http://details.loinc.org/LOINC/93831-6.html\">93831-6</a></td><td>http://loinc.org</td><td>Deep sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-93830-8\"> </a>  <a href=\"http://details.loinc.org/LOINC/93830-8.html\">93830-8</a></td><td>http://loinc.org</td><td>Light sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-93829-0\"> </a>  <a href=\"http://details.loinc.org/LOINC/93829-0.html\">93829-0</a></td><td>http://loinc.org</td><td>REM sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-93832-4\"> </a>  <a href=\"http://details.loinc.org/LOINC/93832-4.html\">93832-4</a></td><td>http://loinc.org</td><td>Sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258158006\"> </a>  <a href=\"http://snomed.info/id/258158006\">258158006</a></td><td>http://snomed.info/sct</td><td>Sleep, function (observable entity)</td></tr></table></div>"
+      },
+      "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-code",
+      "version" : "0.4.4",
+      "name" : "PCDSleepObservationCode",
+      "title" : "Patient contributed data: sleep observation code",
+      "status" : "active",
+      "date" : "2022-11-07T03:31:20-06:00",
+      "publisher" : "MITRE",
+      "contact" : [{
+        "name" : "MITRE",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+        }]
+      }],
+      "description" : "This value set includes codes to track patient sleep recorded by device or app",
+      "expansion" : {
+        "identifier" : "urn:uuid:66bd9ae1-224d-46f7-ab88-9d2b53c4f717",
+        "timestamp" : "2022-11-07T03:31:36-06:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "93831-6",
+          "display" : "Deep sleep duration"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "93830-8",
+          "display" : "Light sleep duration"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "93829-0",
+          "display" : "REM sleep duration"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "93832-4",
+          "display" : "Sleep duration"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "258158006",
+          "display" : "Sleep, function (observable entity)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-value",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "pcd-sleep-observation-value",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-248220008\"> </a>  <a href=\"http://snomed.info/id/248220008\">248220008</a></td><td>http://snomed.info/sct</td><td>Asleep (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-248218005\"> </a>  <a href=\"http://snomed.info/id/248218005\">248218005</a></td><td>http://snomed.info/sct</td><td>Awake (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-60984000\"> </a>  <a href=\"http://snomed.info/id/60984000\">60984000</a></td><td>http://snomed.info/sct</td><td>Non-rapid eye movement sleep, function (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89129007\"> </a>  <a href=\"http://snomed.info/id/89129007\">89129007</a></td><td>http://snomed.info/sct</td><td>Rapid eye movement sleep, function (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown (qualifier value)</td></tr></table></div>"
+      },
+      "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-value",
+      "version" : "0.4.4",
+      "name" : "PCDSleepStageValueCode",
+      "title" : "Patient contributed data: sleep stage value",
+      "status" : "active",
+      "date" : "2022-11-07T03:31:20-06:00",
+      "publisher" : "MITRE",
+      "contact" : [{
+        "name" : "MITRE",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+        }]
+      }],
+      "description" : "This value set includes codes to track patient sleep values recorded by device or app",
+      "expansion" : {
+        "identifier" : "urn:uuid:0f661c04-cbb7-44f0-a6dc-b2321e4e3add",
+        "timestamp" : "2022-11-07T03:31:46-06:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248220008",
+          "display" : "Asleep (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "248218005",
+          "display" : "Awake (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "60984000",
+          "display" : "Non-rapid eye movement sleep, function (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "89129007",
+          "display" : "Rapid eye movement sleep, function (observable entity)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown (qualifier value)"
+        }]
+      }
+    }
+  }]
+}

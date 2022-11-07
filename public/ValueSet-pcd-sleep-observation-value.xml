@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pcd-sleep-observation-value"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/248220008">248220008</a></td><td>Asleep (finding)</td></tr><tr><td><a href="http://snomed.info/id/248218005">248218005</a></td><td>Awake (finding)</td></tr><tr><td><a href="http://snomed.info/id/60984000">60984000</a></td><td>Non-rapid eye movement sleep, function (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/89129007">89129007</a></td><td>Rapid eye movement sleep, function (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/261665006">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-value"/>
+  <version value="0.4.4"/>
+  <name value="PCDSleepStageValueCode"/>
+  <title value="Patient contributed data: sleep stage value"/>
+  <status value="active"/>
+  <date value="2022-11-07T03:31:20-06:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://open-health-manager.github.io/standard-patient-health-record-ig"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes codes to track patient sleep values recorded by device or app"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="248220008"/>
+        <display value="Asleep (finding)"/>
+      </concept>
+      <concept>
+        <code value="248218005"/>
+        <display value="Awake (finding)"/>
+      </concept>
+      <concept>
+        <code value="60984000"/>
+        <display value="Non-rapid eye movement sleep, function (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="89129007"/>
+        <display value="Rapid eye movement sleep, function (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unknown (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
