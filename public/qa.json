@@ -1,0 +1,12 @@
+{
+  "url": "https://open-health-manager.github.io/standard-patient-health-record-ig/ImplementationGuide/StandardPatientHealthRecordIG",
+  "name": "StandardPatientHealthRecordIG",
+  "package-id": "StandardPatientHealthRecordIG",
+  "ig-ver": "0.4.4",
+  "date": "Mon, 07 Nov, 2022 08:48:31 -0600",
+  "errs": 14,
+  "warnings": 32,
+  "hints": 1,
+  "version": "4.0.1",
+  "tool": "5.0.0-ballot (3)"
+}

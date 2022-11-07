@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Patient Personas - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.4.4 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="recordkeeping.html">Record Keeping</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Model
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="functionality.html">Functional Model</a>
+      </li>
+      <li>
+        <a href="recordlifecycle.html">Record Lifecycle</a>
+      </li>
+      <li>
+        <a href="security.html">Security</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Simulations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Patient Personas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="personas-index.html">Index</a>
+      </li>
+      <li>
+        <a href="persona-william.html">Pediatric Cancer</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Patient Personas</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.4.4). See the <a href="https://open-health-manager.github.io/standard-patient-health-record-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Patient Personas</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#patient-journeys" id="markdown-toc-patient-journeys">Patient Journeys</a></li>
+  <li><a href="#synthetic-patients-synthea" id="markdown-toc-synthetic-patients-synthea">Synthetic Patients (Synthea)</a></li>
+  <li><a href="#general-references" id="markdown-toc-general-references">General References</a></li>
+</ul>
+
+</div>
+<p>One of the most challenging aspects of programming a Personal Health Record is developing a longitudinal record to use as a baseline.  Rather than specify what functionality should be included the PHR, this implementation guide endeavors to define <em>patient persona benchmarks</em> that PHRs should be able to either consume or generate.</p>
+
+<h3 id="patient-journeys">Patient Journeys</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <th style="text-align: left">PatientName</th>
+      <th style="text-align: left">Primary Diagnosis</th>
+      <th style="text-align: left">.phr</th>
+      <th style="text-align: left">.sphr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>john-doe</td>
+      <td style="text-align: left">John Doe</td>
+      <td style="text-align: left">Diabetic</td>
+      <td style="text-align: left"><a href="JohnDoe.phr"> JohnDoe.phr </a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>12724069</td>
+      <td style="text-align: left">Timmy Smart</td>
+      <td style="text-align: left">Foster Child</td>
+      <td style="text-align: left"><a href="TimmySmart-FosterCareTimeline.phr"> TimmySmart.phr </a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>wsim001</td>
+      <td style="text-align: left">William Sim</td>
+      <td style="text-align: left">wsim001</td>
+      <td style="text-align: left"><a href="WilliamSim.phr">WilliamSim.phr</a></td>
+      <td style="text-align: left"><a href="WilliamSim.sphr">WilliamSim.sphr</a></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td style="text-align: left">Candace Salinas</td>
+      <td style="text-align: left">Asthma</td>
+      <td style="text-align: left">CandaceSalinas.phr</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td style="text-align: left">Ann</td>
+      <td style="text-align: left">Patient relocation</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td style="text-align: left">Earl</td>
+      <td style="text-align: left">Cancer diagnosis</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td style="text-align: left">Markus</td>
+      <td style="text-align: left">Cardiac Rehabilitation</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td style="text-align: left">Wilma</td>
+      <td style="text-align: left">Long COVID</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td style="text-align: left">Marcella</td>
+      <td style="text-align: left">Complex chronic illness</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>X12</td>
+      <td style="text-align: left">Jamie</td>
+      <td style="text-align: left">Diabetes</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Y48</td>
+      <td style="text-align: left">Alyssa</td>
+      <td style="text-align: left">Pregnancy</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>H32</td>
+      <td style="text-align: left">Choko</td>
+      <td style="text-align: left">Asthma and back pain</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>J02</td>
+      <td style="text-align: left">Tommy</td>
+      <td style="text-align: left">Obese and prediabetic</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>N76</td>
+      <td style="text-align: left">Naja</td>
+      <td style="text-align: left">Rare familial development disorders</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>G43</td>
+      <td style="text-align: left">Sammy</td>
+      <td style="text-align: left">COPD and Alzheimers</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>J97</td>
+      <td style="text-align: left">Allison</td>
+      <td style="text-align: left">Single mother</td>
+      <td style="text-align: left">&nbsp;</td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="synthetic-patients-synthea">Synthetic Patients (Synthea)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <th style="text-align: left">PatientName</th>
+      <th style="text-align: left">Primary Diagnosis</th>
+      <th style="text-align: left">SNOMED</th>
+      <th style="text-align: left">.json</th>
+      <th style="text-align: left">.phr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>b031fa19-1e03-42e0-19de-f60c9dc2a579</td>
+      <td style="text-align: left">Adelina682 Walker122</td>
+      <td style="text-align: left">allergies</td>
+      <td style="text-align: left">170837001</td>
+      <td style="text-align: left"><a href="Adelina682_Walker122_b031fa19-1e03-42e0-19de-f60c9dc2a579.json">json</a></td>
+      <td style="text-align: left"><a href="Ms.Adelina682Walker122-b031fa19-1e03-42e0-19de-f60c9dc2a579.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>ae26bfd6-d45b-c819-0de6-a2299511e6f4</td>
+      <td style="text-align: left">Spencer878 Stehr398</td>
+      <td style="text-align: left">acute myeloid leukemia</td>
+      <td style="text-align: left">91861009</td>
+      <td style="text-align: left"><a href="Spencer878_Stehr398_ae26bfd6-d45b-c819-0de6-a2299511e6f4.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>521a2b92-7926-4348-0c8d-3bd3af6da538</td>
+      <td style="text-align: left">Maegan141 Cole117</td>
+      <td style="text-align: left">seasonal allergic rhinitis</td>
+      <td style="text-align: left">367498001</td>
+      <td style="text-align: left"><a href="Maegan141_Cole117_521a2b92-7926-4348-0c8d-3bd3af6da538.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>81810e78-8279-b01b-f0c8-62f7ebf85613</td>
+      <td style="text-align: left">Loriann967 Torp761</td>
+      <td style="text-align: left">appendicitis</td>
+      <td style="text-align: left">74400008</td>
+      <td style="text-align: left"><a href="Loriann967_Torp761_81810e78-8279-b01b-f0c8-62f7ebf85613.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>6a9e8e6f-d4d8-f062-79cf-cbeda88dc2bf</td>
+      <td style="text-align: left">Dominga527 Goodwin327</td>
+      <td style="text-align: left">childhood asthma</td>
+      <td style="text-align: left">233678006</td>
+      <td style="text-align: left"><a href="Dominga527_Goodwin327_6a9e8e6f-d4d8-f062-79cf-cbeda88dc2bf.json">json</a></td>
+      <td style="text-align: left"><a href="Dominga527Goodwin327-6a9e8e6f-d4d8-f062-79cf-cbeda88dc2bf.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>38ce6e87-ca56-e80c-f18b-d6056df7f0a9</td>
+      <td style="text-align: left">Randolph418 Eichmann909</td>
+      <td style="text-align: left">anemia</td>
+      <td style="text-align: left">271737000</td>
+      <td style="text-align: left"><a href="Randolph418_Eichmann909_38ce6e87-ca56-e80c-f18b-d6056df7f0a9.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>d4beb77a-1183-7593-23e8-fb2a2694d55b</td>
+      <td style="text-align: left">Gerald181 Murazik203</td>
+      <td style="text-align: left">child attention deficit disorder</td>
+      <td style="text-align: left">192127007</td>
+      <td style="text-align: left"><a href="Gerald181_Murazik203_d4beb77a-1183-7593-23e8-fb2a2694d55b.json">json</a></td>
+      <td style="text-align: left"><a href="Gerald181Murazik203-d4beb77a-1183-7593-23e8-fb2a2694d55b.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>9dad61c1-ab0e-fef2-260f-dec36788558d</td>
+      <td style="text-align: left">Tomoko463 Anja508 Kunze215</td>
+      <td style="text-align: left">breast cancer - T2 category</td>
+      <td style="text-align: left">67673008</td>
+      <td style="text-align: left"><a href="Tomoko463_Anja508_Kunze215_9dad61c1-ab0e-fef2-260f-dec36788558d.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>beee2c9a-931e-a2b2-4ae0-ff658b57f439</td>
+      <td style="text-align: left">Jarvis643 Kunde533</td>
+      <td style="text-align: left">bronchitis</td>
+      <td style="text-align: left">10509002</td>
+      <td style="text-align: left"><a name="l883">​</a><a href="Jarvis643_Kunde533_beee2c9a-931e-a2b2-4ae0-ff658b57f439.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>044934bc-569a-051a-7814-2dac8ad467db</td>
+      <td style="text-align: left">Shantae970 Jennine355 Runte676</td>
+      <td style="text-align: left">cerebral palsy</td>
+      <td style="text-align: left">128188000</td>
+      <td style="text-align: left"><a href="Shantae970_Jennine355_Runte676_044934bc-569a-051a-7814-2dac8ad467db.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Jarvis643O'Hara248-91f9ab65-1933-2a48-94b1-b6fef00f7335.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>088144ea-ce4b-fbb7-0167-2bb035387d7b</td>
+      <td style="text-align: left">Georgie506 Daugherty69</td>
+      <td style="text-align: left">chronic kidney disease</td>
+      <td style="text-align: left">431856006</td>
+      <td style="text-align: left"><a href="Georgie506_Daugherty69_088144ea-ce4b-fbb7-0167-2bb035387d7b.json">json</a></td>
+      <td style="text-align: left"><a href="Georgie506_Daugherty69_088144ea-ce4b-fbb7-0167-2bb035387d7b.json">phr</a></td>
+    </tr>
+    <tr>
+      <td>69437c6f-772f-6aaf-34b9-b4d3f12d9eaf</td>
+      <td style="text-align: left">Michael441 Ward668</td>
+      <td style="text-align: left">congestive heart failure</td>
+      <td style="text-align: left">88805009</td>
+      <td style="text-align: left"><a href="Michael441_Ward668_69437c6f-772f-6aaf-34b9-b4d3f12d9eaf.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Michael441Ward668-69437c6f-772f-6aaf-34b9-b4d3f12d9eaf.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>832_d83b3432-e309-a5e1-8b6d-eb7da0c050d6</td>
+      <td style="text-align: left">Christoper325 Jakubowski</td>
+      <td style="text-align: left">chronic obstructive pulmonary disease</td>
+      <td style="text-align: left">412776001</td>
+      <td style="text-align: left"><a href="Christoper325_Jakubowski832_d83b3432-e309-a5e1-8b6d-eb7da0c050d6.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Adrian111Smith67-d5b0f2de-08c8-8259-68b0-af1fb66be392.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>24f4d2f1-b4ef-0654-25a3-bdce21e7ceef</td>
+      <td style="text-align: left">Eryn994 Nader710</td>
+      <td style="text-align: left">COVID-19</td>
+      <td style="text-align: left">840539006</td>
+      <td style="text-align: left"><a href="Eryn994_Nader710_24f4d2f1-b4ef-0654-25a3-bdce21e7ceef.json">json</a></td>
+      <td style="text-align: left"><a href="Eryn994Nader710-24f4d2f1-b4ef-0654-25a3-bdce21e7ceef.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>a79c76c3-bd2f-3200-2912-20bfe99f7d4d</td>
+      <td style="text-align: left">Rosario163 Delao225</td>
+      <td style="text-align: left">dementia</td>
+      <td style="text-align: left">386257007</td>
+      <td style="text-align: left"><a href="Rosario163_Delao225_a79c76c3-bd2f-3200-2912-20bfe99f7d4d.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>90fd51e4-3442-e231-1aa7-9e0c336319a0</td>
+      <td style="text-align: left">Nia310 Kihn564</td>
+      <td style="text-align: left">atopic dermatitis</td>
+      <td style="text-align: left">24079001</td>
+      <td style="text-align: left"><a href="Nia310_Kihn564_90fd51e4-3442-e231-1aa7-9e0c336319a0.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>7acef32e-71aa-5737-c892-16420d944e6e</td>
+      <td style="text-align: left">Sal878 Langworth352</td>
+      <td style="text-align: left">renal dialysis</td>
+      <td style="text-align: left">265764009</td>
+      <td style="text-align: left"><a href="Sal878_Langworth352_7acef32e-71aa-5737-c892-16420d944e6e.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>9532101f-6dc4-e18b-53ae-79a3230fdf70</td>
+      <td style="text-align: left">Ricky354 Boyle917</td>
+      <td style="text-align: left">epilepsy</td>
+      <td style="text-align: left">84757009</td>
+      <td style="text-align: left"><a href="Ricky354_Boyle917_9532101f-6dc4-e18b-53ae-79a3230fdf70.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>7f7d92cb-d968-56f9-8ee9-108dfb3dd7ee</td>
+      <td style="text-align: left">Vicente970 Botsford977</td>
+      <td style="text-align: left">gout</td>
+      <td style="text-align: left">90560007</td>
+      <td style="text-align: left"><a href="Vicente970_Botsford977_7f7d92cb-d968-56f9-8ee9-108dfb3dd7ee.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>558aac8d-bd8a-e7fd-ca6e-824c192e9544</td>
+      <td style="text-align: left">Cyril535 Koepp521</td>
+      <td style="text-align: left">HIV</td>
+      <td style="text-align: left">165816005</td>
+      <td style="text-align: left"><a href="Cyril535_Koepp521_558aac8d-bd8a-e7fd-ca6e-824c192e9544.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Christoper325Jakubowski832-d83b3432-e309-a5e1-8b6d-eb7da0c050d6.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>963c7c3a-80ba-5c14-30e9-d3dcf83d6cd4</td>
+      <td style="text-align: left">Sina65 Ullrich385</td>
+      <td style="text-align: left">hospice</td>
+      <td style="text-align: left">385763009</td>
+      <td style="text-align: left"><a href="Sina65_Ullrich385_963c7c3a-80ba-5c14-30e9-d3dcf83d6cd4.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>97aa6ae5-d71e-f9df-c6dc-be3ae713690a</td>
+      <td style="text-align: left">Kitty323 Farrah946 Lemke654</td>
+      <td style="text-align: left">hypertension</td>
+      <td style="text-align: left">59621000</td>
+      <td style="text-align: left"><a href="Kitty323_Farrah946_Lemke654_97aa6ae5-d71e-f9df-c6dc-be3ae713690a.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>95b19a58-09ae-d6dc-1cb5-532a78b0d3c7</td>
+      <td style="text-align: left">Shaunta614 Gala823 Sanford861</td>
+      <td style="text-align: left">idiopathic hypothyroidism</td>
+      <td style="text-align: left">83664006</td>
+      <td style="text-align: left"><a href="Shaunta614_Gala823_Sanford861_95b19a58-09ae-d6dc-1cb5-532a78b0d3c7.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fecad5a2-6d95-36ed-7e4c-d47e9199e8cc</td>
+      <td style="text-align: left">Charlotte28 Mireille557 Parisian75</td>
+      <td style="text-align: left">concussion</td>
+      <td style="text-align: left">62106007</td>
+      <td style="text-align: left"><a href="Charlotte28_Mireille557_Parisian75_fecad5a2-6d95-36ed-7e4c-d47e9199e8cc.json">json</a></td>
+      <td style="text-align: left"><a href="Mrs.Charlotte28Parisian75-fecad5a2-6d95-36ed-7e4c-d47e9199e8cc.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>13803def-e365-e248-e7ec-632533574c3c</td>
+      <td style="text-align: left">Diego848 Carrillo204</td>
+      <td style="text-align: left">non-small cell lung cancer</td>
+      <td style="text-align: left">254637007</td>
+      <td style="text-align: left"><a href="Diego848_Carrillo204_13803def-e365-e248-e7ec-632533574c3c.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Diego848Carrillo204-13803def-e365-e248-e7ec-632533574c3c.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>54e40745-9772-e4a4-b501-47ae63c99704</td>
+      <td style="text-align: left">Graig740 Tremblay80</td>
+      <td style="text-align: left">metabolic syndrome</td>
+      <td style="text-align: left">237602007</td>
+      <td style="text-align: left"><a href="Graig740_Tremblay80_54e40745-9772-e4a4-b501-47ae63c99704.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Graig740Tremblay80-54e40745-9772-e4a4-b501-47ae63c99704.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>91ed826b-b2d7-99fe-0be3-0439d18ecb2a</td>
+      <td style="text-align: left">Natalia964 Fisher429</td>
+      <td style="text-align: left">opioid abuse</td>
+      <td style="text-align: left">5602001</td>
+      <td style="text-align: left"><a href="Natalia964_Fisher429_91ed826b-b2d7-99fe-0be3-0439d18ecb2a.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>846_6fd8fee9-7fba-4446-5a2a-dfe9257e1631</td>
+      <td style="text-align: left">Vanessa263 Page791 Lang</td>
+      <td style="text-align: left">osteoporosis</td>
+      <td style="text-align: left">64859006</td>
+      <td style="text-align: left"><a href="Vanessa263_Page791_Lang846_6fd8fee9-7fba-4446-5a2a-dfe9257e1631.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>a6e749b3-eff6-94d5-5ee2-fb4a6566deef</td>
+      <td style="text-align: left">Gail741 Elaine830 Schumm995</td>
+      <td style="text-align: left">normal pregnancy</td>
+      <td style="text-align: left">72892002</td>
+      <td style="text-align: left"><a href="Gail741_Elaine830_Schumm995_a6e749b3-eff6-94d5-5ee2-fb4a6566deef.json">json</a></td>
+      <td style="text-align: left"><a href="Gail741_Elaine830_Schumm995_a6e749b3-eff6-94d5-5ee2-fb4a6566deef.json">phr</a></td>
+    </tr>
+    <tr>
+      <td>b722aff7-7d41-fea2-ca71-7770fc0a9eb7</td>
+      <td style="text-align: left">Scarlett814 Waneta858 Stamm704</td>
+      <td style="text-align: left">rheumatoid arthritis</td>
+      <td style="text-align: left">69896004</td>
+      <td style="text-align: left"><a href="Scarlett814_Waneta858_Stamm704_b722aff7-7d41-fea2-ca71-7770fc0a9eb7.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>c5328d38-7a8c-e245-dabe-2042022047eb</td>
+      <td style="text-align: left">Yu876 Botsford977</td>
+      <td style="text-align: left">sepsis</td>
+      <td style="text-align: left">91302008</td>
+      <td style="text-align: left"><a href="Yu876_Botsford977_c5328d38-7a8c-e245-dabe-2042022047eb.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>2656be07-d463-10d2-bc57-a3fff6058858</td>
+      <td style="text-align: left">Gonzalo160 Gibson10</td>
+      <td style="text-align: left">obstructive sleep apnea syndrome</td>
+      <td style="text-align: left">78275009</td>
+      <td style="text-align: left"><a href="Gonzalo160_Gibson10_2656be07-d463-10d2-bc57-a3fff6058858.json">json</a></td>
+      <td style="text-align: left"><a href="Mr.Gonzalo160Gibson10-2656be07-d463-10d2-bc57-a3fff6058858.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>4fcce493-43ba-aa15-23e8-653d7648ab08</td>
+      <td style="text-align: left">Dee580 Boehm581</td>
+      <td style="text-align: left">sore throat</td>
+      <td style="text-align: left">43878008</td>
+      <td style="text-align: left"><a href="Dee580_Boehm581_4fcce493-43ba-aa15-23e8-653d7648ab08.json">json</a></td>
+      <td style="text-align: left"><a href="Dee580Boehm581-4fcce493-43ba-aa15-23e8-653d7648ab08.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>d949d7bb-3bd7-b925-e72f-a314b6feb197</td>
+      <td style="text-align: left">Ariel183 Schmitt836</td>
+      <td style="text-align: left">urinary tract infection</td>
+      <td style="text-align: left">301011002</td>
+      <td style="text-align: left"><a href="Ariel183_Schmitt836_d949d7bb-3bd7-b925-e72f-a314b6feb197.json">json</a></td>
+      <td style="text-align: left"><a href="Ms.Ariel183Schmitt836-d949d7bb-3bd7-b925-e72f-a314b6feb197.phr">phr</a></td>
+    </tr>
+    <tr>
+      <td>f966ba2e-50d2-df7f-a5b1-bbb59685eda5</td>
+      <td style="text-align: left">Stanley702 Ritchie586</td>
+      <td style="text-align: left">neoplasm of prostate</td>
+      <td style="text-align: left">126906006</td>
+      <td style="text-align: left"><a name="l1468">​</a><a href="Stanley702_Ritchie586_f966ba2e-50d2-df7f-a5b1-bbb59685eda5.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>8dc4ac2f-691f-d83b-1bf0-ca4080ab0b4a</td>
+      <td style="text-align: left">Wes853 DuBuque211</td>
+      <td style="text-align: left">posttraumatic stress disorder</td>
+      <td style="text-align: left">47505003</td>
+      <td style="text-align: left"><a href="Wes853_DuBuque211_8dc4ac2f-691f-d83b-1bf0-ca4080ab0b4a.json">json</a></td>
+      <td style="text-align: left">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="general-references">General References</h3>
+<ul>
+  <li><a href="https://github.com/clinical-meteor/clinical-scenarios">Node on FHIR - Clinical Scenarios</a></li>
+  <li><a href="https://docs.google.com/document/d/10RnVyF1etl_17pyCyK96tyhUWRbrTyEcqpwzW-Z-Ybs/edit">SMART on FHIR Test Patient Data (Cerner)</a></li>
+  <li><a href="https://www.figma.com/proto/MzUwuSOpldbZXQk4aYobgk/V2-Library?page-id=644%3A4036&amp;node-id=1209%3A3275">Figma - Patient Personas (GoInvo)</a></li>
+  <li><a href="https://pediatricimaging.org/diseases/leukemia/">Pediatric Leukemia</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://open-health-manager.github.io/standard-patient-health-record-ig">MITRE</a>.  Package StandardPatientHealthRecordIG#0.4.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 7, 2022 08:48-0600">2022-11-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

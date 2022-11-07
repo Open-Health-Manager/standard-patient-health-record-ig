@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-code> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pcd-sleep-observation-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93831-6.html\">93831-6</a></td><td>Deep sleep duration</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93830-8.html\">93830-8</a></td><td>Light sleep duration</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93829-0.html\">93829-0</a></td><td>REM sleep duration</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/93832-4.html\">93832-4</a></td><td>Sleep duration</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/258158006\">258158006</a></td><td>Sleep, function (observable entity)</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-code"];
+  fhir:ValueSet.version [ fhir:value "0.4.4"];
+  fhir:ValueSet.name [ fhir:value "PCDSleepObservationCode"];
+  fhir:ValueSet.title [ fhir:value "Patient contributed data: sleep observation code"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-11-07T08:48:31-06:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "MITRE"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MITRE" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://open-health-manager.github.io/standard-patient-health-record-ig" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This value set includes codes to track patient sleep recorded by device or app"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93831-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deep sleep duration" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93830-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Light sleep duration" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93829-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "REM sleep duration" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "93832-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sleep duration" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "258158006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sleep, function (observable entity)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
