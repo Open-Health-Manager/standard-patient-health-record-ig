@@ -16,7 +16,7 @@
   fhir:StructureMap.version [ fhir:value "0.4.4"];
   fhir:StructureMap.name [ fhir:value "HKCategorySamplePregnancyToObservation"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-11-07T08:48:31-06:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2022-11-07T10:20:19-06:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "MITRE"];
   fhir:StructureMap.contact [
      fhir:index 0;

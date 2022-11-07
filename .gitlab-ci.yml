@@ -5,8 +5,7 @@ workflow:
     - if: '$CI_COMMIT_BRANCH'
 
 pages:
-  script:
-    # - pwd
+#    # - pwd
     # - cp -R output public
     # - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" public/index.html > public/index.html
     # - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" public/index.html > public/index.html
@@ -16,9 +15,7 @@ pages:
     # - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" public/functionality.html > public/functionality.html
     # - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" public/personas.html > public/personas.html
     # - sed "s/<\!-- Placeholder for child template header declarations -->/<div id="title">Standard Patient Health Record<\/div><div id="mitre">MITRE<\/div>/" public/physiology.html > public/physiology.html
-
-    # - more input/assets/css/mitre.css >> public/assets/css/project.css
-        
+    # - more input/assets/css/mitre.css >> public/assets/css/project.css        
   artifacts:
     paths:
       - public

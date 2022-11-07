@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "AppleHealthKitSample"];
   fhir:StructureDefinition.title [ fhir:value "Apple HealthKit Sample Logical Model"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-07T08:48:31-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-07T10:20:19-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "MITRE"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

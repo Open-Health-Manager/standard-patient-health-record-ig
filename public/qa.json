@@ -3,7 +3,7 @@
   "name": "StandardPatientHealthRecordIG",
   "package-id": "StandardPatientHealthRecordIG",
   "ig-ver": "0.4.4",
-  "date": "Mon, 07 Nov, 2022 08:48:31 -0600",
+  "date": "Mon, 07 Nov, 2022 10:20:19 -0600",
   "errs": 14,
   "warnings": 32,
   "hints": 1,
