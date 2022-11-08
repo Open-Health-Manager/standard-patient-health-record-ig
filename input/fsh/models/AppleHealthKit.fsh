@@ -267,15 +267,105 @@ CodeSystem: AppleHealthKitCategoryTypeCodeSystem
 Title: "Apple Health Kit Category Type Code System"
 Id: apple-health-kit-category-type-code-system
 Description: "Code System required for defining categoryType ValueSet"
-* #sleepAnalysis
+
+// activity
 * #appleStandHour "HKCategoryValueAppleStandHour"
-* #cervicalMucusQuality "HKCategoryValueCervicalMucusQuality"
-* #ovulationTestResult "HKCategoryValueOvulationTestResult"
+* #lowCardioFitnessEvent "Event indicating user's VO2 max values consistently fall below a particular aerobic fitness threshold"
+
+// reproductive health
 * #menstrualFlow "HKCategoryValueMenstrualFlow"
 * #intermenstrualBleeding "(Spotting) HKCategoryValue"
+* #infrequentMenstrualCycles
+* #irregularMenstrualCycles
+* #persistentIntermenstrualBleeding
+* #prolongedMenstrualPeriods
+* #cervicalMucusQuality "HKCategoryValueCervicalMucusQuality"
+* #ovulationTestResult "HKCategoryValueOvulationTestResult"
 * #sexualActivity "HKCategoryValue"
+* #contraceptive
+* #pregnancy
+* #pregnancyTestResult
+* #lactation
+
+// hearing
+* #environmentalAudioExposureEvent "A category sample type that records exposure to potentially amaging sounds from the environment."
+* #headphoneAudioExposureEvent "A category sample type that records exposure to potentially amaging sounds from headphones."
+* #audioExposureEvent "A category sample type for audio exposure events."
+
+// vital signs
+* #lowHeartRateEvent
+* #highHeartRateEvent
+* #irregularHeartRhythmevent
+
+// mobility
+* #appleWalkingSteadinessEvent
+
+// symptoms - Abdominal and Gastrointestinal
+* #abdominalCramps "A category type that records abdominal cramps as a symptom."
+* #bloating "A category type that records bloating as a symptom."
+* #constipation "A category type that records constipation as a symptom."
+* #diarrhea "A category type that records diarrhea as a symptom."
+* #heartburn "A category type that records heartburn as a symptom."
+* #nausea "A category type that records nausea as a symptom."
+* #vomiting "A category type that records vomiting as a symptom."
+
+// symptoms - Constitutional
+* #appetiteChanges "A category type that records changes in appetite as a symptom."
+* #chills "A category type that records chills as a symptom."
+* #dizziness "A category type that records dizziness as a symptom."
+* #fainting "A category type that records fainting as a symptom."
+* #fatigue "A category type that records fatigue as a symptom."
+* #fever "A category type that records fever as a symptom."
+* #generalizedBodyAche "A category type that records body ache as a symptom."
+* #hotFlashes "A category type that records hot flashes as a symptom."
+
+// symptoms - Heart and Lung
+* #chestTightnessOrPain "A category type that records chest tightness or pain as a symptom."
+* #coughing "A category type that records coughing as a symptom."
+* #rapidPoundingOrFlutteringHeartbeat "A category type that records a rapid, pounding, or fluttering heartbeat as a symptom."
+* #shortnessOfBreath "A category type that records shortness of breath as a symptom."
+* #skippedHeartbeat "A category type that records skipped heartbeat as a symptom."
+* #wheezing "A category type that records wheezing as a symptom."
+
+// symptoms - Musculoskeletal
+* #lowerBackPain "A category type that records lower back pain as a symptom."
+
+// symptoms - Neurological
+* #headache "A category type that records headache as a symptom."
+* #memoryLapse "A category type that records memory lapse as a symptom."
+* #moodChanges "A category type that records mood changes as a symptom."
+
+// symptoms - Nose and Throat
+* #lossOfSmell "A category type that records loss of smell as a symptom."
+* #lossOfTaste "A category type that records loss of taste as a symptom."
+* #runnyNose "A category type that records runny nose as a symptom."
+* #soreThroat "A category type that records sore throat as a symptom."
+* #sinusCongestion "A category type that records sinus congestion as a symptom."
+
+// symptoms - Reproduction
+* #breastPain "A category type that records breast pain as a symptom."
+* #pelvicPain "A category type that records pelvic pain as a symptom."
+* #vaginalDryness "A category type that records vaginal dryness as a symptom."
+
+// symptoms - Skin and Hair
+* #acne "A category type that records acne as a symptom."
+* #drySkin "A category type that records dry skin as a symptom."
+* #hairLoss "A category type that records hair loss as a symptom."
+
+// symptoms - Sleep
+* #nightSweats "A category type that records night sweats as a symptom. "
+* #sleepChanges "A category type that records sleep changes as a symptom."
+
+// symptoms - Urinary
+* #bladderIncontinence "A category type that records bladder incontinence as a symptom."
+
+// mindfulness and sleep
+* #sleepAnalysis
 * #mindfulSession "HKCategoryValue"
 
+// self care
+* #toothbrushingEvent
+* #handwashingEvent
 
 ValueSet: AppleHealthKitCorrelationTypeValueSet
 Title: "Apple Health Kit Correlation Type Value Set"
