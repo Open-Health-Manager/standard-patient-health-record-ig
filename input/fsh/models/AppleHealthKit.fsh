@@ -295,7 +295,7 @@ Description: "Code System required for defining categoryType ValueSet"
 // vital signs
 * #lowHeartRateEvent
 * #highHeartRateEvent
-* #irregularHeartRhythmevent
+* #irregularHeartRhythmEvent
 
 // mobility
 * #appleWalkingSteadinessEvent
