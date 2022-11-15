@@ -8,10 +8,19 @@ Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
 * ^abstract = true
 * ^status = #draft
-* uuid 1..1 string "UUID" "The universally unique identifier (UUID) for this HealthKit object."
-* metadata 0..1 BackboneElement "metadata" "The metadata for this HealthKit object."
-* device 0..1 BackboneElement "device" "The device that generated the data for this object."
-* sourceRevision 0..1 string "Source Version" "The version of the app or device that generated the data for this HealthKit object."
+* uuid 1..1 string "The universally unique identifier (UUID) for this HealthKit object."
+* metadata 0..1 BackboneElement "The metadata for this HealthKit object."
+* device 0..1 BackboneElement "The device that generated the data for this object."
+* sourceRevision 1..1 BackboneElement "The app or device that created this object."
+* sourceRevision.source 1..1 BackboneElement "The source for a sample."
+* sourceRevision.source.bundleIdentifier 1..1 string "The source’s bundle identifier."
+* sourceRevision.source.name 1..1 string "The source’s name."
+* sourceRevision.version 0..1 string "A string that identifies a particular version of the source."
+* sourceRevision.operatingSystemVersion 1..1 BackboneElement "A string that identifies the operating system used to save a sample."
+* sourceRevision.operatingSystemVersion.majorVersion 1..1 integer "The major release number, such as 10 in version 10.9.3."
+* sourceRevision.operatingSystemVersion.minorVersion 1..1 integer "The minor release number, such as 9 in version 10.9.3."
+* sourceRevision.operatingSystemVersion.patchVersion 1..1 integer "The update release number, such as 3 in version 10.9.3."
+* sourceRevision.productType 0..1 string "A string that identifies the device used to save a sample."
 
 
 Logical:        AppleHealthKitSample
