@@ -9,8 +9,18 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 * ^abstract = true
 * ^status = #draft
 * uuid 1..1 string "The universally unique identifier (UUID) for this HealthKit object."
-* metadata 0..1 BackboneElement "The metadata for this HealthKit object."
+* metadata 0..* BackboneElement "The metadata for this HealthKit object."
+* metadata.key 1..1 string "Constants used to add metadata to objects stored in HealthKit."
+* metadata.value[x] 1..1 string or dateTime or integer or decimal or boolean or positiveInt or unsignedInt "The metadata dictionary value."
 * device 0..1 BackboneElement "The device that generated the data for this object."
+* device.udiDeviceIdentifier 0..1 string "The device identifier portion of the US Food and Drug Administration’s Unique Device Identifier (UDI)."
+* device.firmwareVersion 0..1 string "An arbitrary string representing the current version of the firmware running on the device."
+* device.hardwareVersion 0..1 string "An arbitrary string representing the hardware version of the device."
+* device.localIdentifier 0..1 string "An identifier that uniquely identifies the device object on the hardware running this code."
+* device.manufacturer 0..1 string "A string representing the device’s manufacturer."
+* device.model 0..1 string "A string representing the device’s model."
+* device.name 0..1 string "The user-facing name for the device."
+* device.softwareVersion 0..1 string "An arbitrary string representing the version of the software running on the device."
 * sourceRevision 1..1 BackboneElement "The app or device that created this object."
 * sourceRevision.source 1..1 BackboneElement "The source for a sample."
 * sourceRevision.source.bundleIdentifier 1..1 string "The source’s bundle identifier."
@@ -30,9 +40,9 @@ Description:    "Data elements for the Apple HealthKit HKSample."
 Parent:         AppleHealthKitObject
 * ^abstract = true
 * ^status = #draft
-* startDate 0..1 dateTime "The sample's start date." "The sample's start date."
-* endDate 0..1 dateTime "The sample's end date." "The sample's end date."
-* hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration." "Indicates whether the sample has an unknown duration."
+* startDate 0..1 dateTime "The sample's start date."
+* endDate 0..1 dateTime "The sample's end date."
+* hasUndeterminedDuration 0..1 boolean "Indicates whether the sample has an unknown duration."
 * sampleType 1..1 code "The sample type." "The sample type."
 * sampleType from AppleHealthKitSampleTypeValueSet (extensible)
 
@@ -43,9 +53,9 @@ Title:          "Apple HealthKit Category Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCategorySample."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-* categoryType 1..1 code "The sample's category type." "The HKCategorySampleType."
+* categoryType 1..1 code "The category type for this sample."
 * categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
-* value 1..1 integer "The sample's category value." "The HKCategorySample.value value."
+* value 1..1 integer "The category value for this sample."
 
 
 Logical:        AppleHealthKitQuantitySample
@@ -54,12 +64,11 @@ Title:          "Apple HealthKit Quantity Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKQuantitySample."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-* quantity 1..1 BackboneElement "The sample's quantity." "The HKQuantity for this sample."
-* quantity.unit 0..1 BackboneElement "The quantity's unit." "The HKUnit in HKQuantity in this HKQuantitySample."
-* quantity.unit.unitString 0..1 string "The unit string." "The HKUnit.unitString value."
-* quantity.doubleValue 0..1 decimal "The quantity's value." "The HKQuantity.doubleValue."
-* count 0..1 integer "The sample's quantity count." "The sample's quantity count."
-* quantityType 1..1 code "The sample's quantity type." "HKQuantitySample.quantityType from corresponding ValueSet"
+* quantity 1..1 BackboneElement "The quantity for this sample."
+* quantity.unit 0..1 string "The unit string."
+* quantity.doubleValue 0..1 decimal "Returns the quantity’s value in the provided unit."
+* count 0..1 integer "The number of quantities contained in this sample."
+* quantityType 1..1 code "The quantity type for this sample."
 * quantityType from AppleHealthKitQuantityTypeValueSet (extensible)
 
 
@@ -69,9 +78,9 @@ Title:          "Apple HealthKit Correlation Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCorrelation."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-* correlationType 1..1 code "The sample's correlation type." "HKCorrelation.correlationType from corresponding ValueSet"
+* correlationType 1..1 code "The type for this correlation."
 * correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
-* objects 1..* Reference(AppleHealthKitSample) "The set of sample objects that make up the correlation." "HKCorrelation.objects (Set<HKSample>)"
+* objects 1..* Resource "The set of sample objects that make up the correlation."
 
 
 Logical:        AppleHealthKitWorkoutSample
@@ -80,7 +89,7 @@ Title:          "Apple HealthKit Workout Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkout."
 Parent:         AppleHealthKitSample
 * ^status = #draft
-* duration 0..1 period "The workout duration." "The workout duration, may be derived from endDate - startDate."
+* duration 0..1 decimal "The workout duration in number of seconds."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
 * workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
 * workoutActivities 0..* Reference(AppleHealthKitWorkoutActivity) "The sample's workout activities." "The sample's workout activities."
@@ -114,16 +123,16 @@ Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 * type from AppleHealthKitWorkoutEventTypeValueSet (extensible)
 
 
-Logical:        AppleHealthKitCharacteristic
-Id:             apple-health-kit-characteristic
-Title:          "Apple HealthKit Characteristic Logical Model"
+Logical:        AppleHealthKitHealthStoreCharacteristic
+Id:             apple-health-kit-healthstore-characteristic
+Title:          "Apple HealthKit HealthStore Characteristic Logical Model"
 Description:    "Relevant Data elements that correspond to the CharacteristicType stored in Apple HealthStore."
 * ^status = #draft
-* characteristicType 1..1 code "The characteristic type." "The characteristic type."
+* characteristicType 1..1 code "The characteristic type."
 * characteristicType from AppleHealthKitCharacteristicTypeValueSet (extensible)
-* biologicalSex 0..1 code "The biological sex." "The biological sex."
+* biologicalSex 0..1 code "The biological sex."
 * biologicalSex from AppleHealthKitBiologicalSexValueSet (extensible)
-* dateOfBirth 0..1 date "The date of birth." "The date of birth."
+* dateOfBirth 0..1 date "The date of birth."
 
  
 
@@ -143,13 +152,13 @@ Description:    "Relevant Data elements that correspond to the CharacteristicTyp
 */
 
 ValueSet: AppleHealthKitSampleTypeValueSet
-Title: "Apple Health Kit Sample Type Value Set"
+Title: "Apple HealthKit Sample Type Value Set"
 Id: apple-health-kit-sample-type-value-set
 Description: "Possible values for AppleHealthKitSample.sampleType"
 * include codes from system AppleHealthKitSampleTypeCodeSystem
 
 CodeSystem: AppleHealthKitSampleTypeCodeSystem
-Title: "Apple Health Kit Sample Type Code System"
+Title: "Apple HealthKit Sample Type Code System"
 Id: apple-health-kit-sample-type-code-system
 Description: "Code System required for defining sampleType ValueSet"
 * #category "Apple HK CategorySample"
@@ -161,13 +170,13 @@ Description: "Code System required for defining sampleType ValueSet"
 
 
 ValueSet: AppleHealthKitQuantityTypeValueSet
-Title: "Apple Health Kit Quantity Type Value Set"
+Title: "Apple HealthKit Quantity Type Value Set"
 Id: apple-health-kit-quantity-type-value-set
 Description: "Possible values for AppleHealthKitSample.quantityType"
 * include codes from system AppleHealthKitQuantityTypeCodeSystem
 
 CodeSystem: AppleHealthKitQuantityTypeCodeSystem
-Title: "Apple Health Kit Quantity Type Code System"
+Title: "Apple HealthKit Quantity Type Code System"
 Id: apple-health-kit-quantity-type-code-system
 Description: "Code System required for defining quantityType ValueSet"
 * #bodyMassIndex
@@ -267,39 +276,39 @@ Description: "Code System required for defining quantityType ValueSet"
 
 
 ValueSet: AppleHealthKitCategoryTypeValueSet
-Title: "Apple Health Kit Category Type Value Set"
+Title: "Apple HealthKit Category Type Value Set"
 Id: apple-health-kit-category-type-value-set
-Description: "Possible values for AppleHealthKitSample.categoryType"
+Description: "A type that identifies samples that contain a value from a small set of possible values."
 * include codes from system AppleHealthKitCategoryTypeCodeSystem
 
 CodeSystem: AppleHealthKitCategoryTypeCodeSystem
-Title: "Apple Health Kit Category Type Code System"
+Title: "Apple HealthKit Category Type Code System"
 Id: apple-health-kit-category-type-code-system
-Description: "Code System required for defining categoryType ValueSet"
+Description: "HKCategoryTypeIdentifier - Identifiers for creating category types."
 
 // activity
-* #appleStandHour "HKCategoryValueAppleStandHour"
-* #lowCardioFitnessEvent "Event indicating user's VO2 max values consistently fall below a particular aerobic fitness threshold"
+* #appleStandHour
+* #lowCardioFitnessEvent
 
 // reproductive health
-* #menstrualFlow "HKCategoryValueMenstrualFlow"
-* #intermenstrualBleeding "(Spotting) HKCategoryValue"
+* #menstrualFlow
+* #intermenstrualBleeding
 * #infrequentMenstrualCycles
 * #irregularMenstrualCycles
 * #persistentIntermenstrualBleeding
 * #prolongedMenstrualPeriods
-* #cervicalMucusQuality "HKCategoryValueCervicalMucusQuality"
-* #ovulationTestResult "HKCategoryValueOvulationTestResult"
-* #sexualActivity "HKCategoryValue"
+* #cervicalMucusQuality
+* #ovulationTestResult
+* #sexualActivity
 * #contraceptive
 * #pregnancy
 * #pregnancyTestResult
 * #lactation
 
 // hearing
-* #environmentalAudioExposureEvent "A category sample type that records exposure to potentially amaging sounds from the environment."
-* #headphoneAudioExposureEvent "A category sample type that records exposure to potentially amaging sounds from headphones."
-* #audioExposureEvent "A category sample type for audio exposure events."
+* #environmentalAudioExposureEvent
+* #headphoneAudioExposureEvent
+* #audioExposureEvent
 
 // vital signs
 * #lowHeartRateEvent
@@ -310,80 +319,80 @@ Description: "Code System required for defining categoryType ValueSet"
 * #appleWalkingSteadinessEvent
 
 // symptoms - Abdominal and Gastrointestinal
-* #abdominalCramps "A category type that records abdominal cramps as a symptom."
-* #bloating "A category type that records bloating as a symptom."
-* #constipation "A category type that records constipation as a symptom."
-* #diarrhea "A category type that records diarrhea as a symptom."
-* #heartburn "A category type that records heartburn as a symptom."
-* #nausea "A category type that records nausea as a symptom."
-* #vomiting "A category type that records vomiting as a symptom."
+* #abdominalCramps
+* #bloating
+* #constipation
+* #diarrhea
+* #heartburn
+* #nausea
+* #vomiting
 
 // symptoms - Constitutional
-* #appetiteChanges "A category type that records changes in appetite as a symptom."
-* #chills "A category type that records chills as a symptom."
-* #dizziness "A category type that records dizziness as a symptom."
-* #fainting "A category type that records fainting as a symptom."
-* #fatigue "A category type that records fatigue as a symptom."
-* #fever "A category type that records fever as a symptom."
-* #generalizedBodyAche "A category type that records body ache as a symptom."
-* #hotFlashes "A category type that records hot flashes as a symptom."
+* #appetiteChanges
+* #chills
+* #dizziness
+* #fainting
+* #fatigue
+* #fever
+* #generalizedBodyAche
+* #hotFlashes
 
 // symptoms - Heart and Lung
-* #chestTightnessOrPain "A category type that records chest tightness or pain as a symptom."
-* #coughing "A category type that records coughing as a symptom."
-* #rapidPoundingOrFlutteringHeartbeat "A category type that records a rapid, pounding, or fluttering heartbeat as a symptom."
-* #shortnessOfBreath "A category type that records shortness of breath as a symptom."
-* #skippedHeartbeat "A category type that records skipped heartbeat as a symptom."
-* #wheezing "A category type that records wheezing as a symptom."
+* #chestTightnessOrPain
+* #coughing
+* #rapidPoundingOrFlutteringHeartbeat
+* #shortnessOfBreath
+* #skippedHeartbeat
+* #wheezing
 
 // symptoms - Musculoskeletal
-* #lowerBackPain "A category type that records lower back pain as a symptom."
+* #lowerBackPain
 
 // symptoms - Neurological
-* #headache "A category type that records headache as a symptom."
-* #memoryLapse "A category type that records memory lapse as a symptom."
-* #moodChanges "A category type that records mood changes as a symptom."
+* #headache
+* #memoryLapse
+* #moodChanges
 
 // symptoms - Nose and Throat
-* #lossOfSmell "A category type that records loss of smell as a symptom."
-* #lossOfTaste "A category type that records loss of taste as a symptom."
-* #runnyNose "A category type that records runny nose as a symptom."
-* #soreThroat "A category type that records sore throat as a symptom."
-* #sinusCongestion "A category type that records sinus congestion as a symptom."
+* #lossOfSmell
+* #lossOfTaste
+* #runnyNose
+* #soreThroat
+* #sinusCongestion
 
 // symptoms - Reproduction
-* #breastPain "A category type that records breast pain as a symptom."
-* #pelvicPain "A category type that records pelvic pain as a symptom."
-* #vaginalDryness "A category type that records vaginal dryness as a symptom."
+* #breastPain
+* #pelvicPain
+* #vaginalDryness
 
 // symptoms - Skin and Hair
-* #acne "A category type that records acne as a symptom."
-* #drySkin "A category type that records dry skin as a symptom."
-* #hairLoss "A category type that records hair loss as a symptom."
+* #acne
+* #drySkin
+* #hairLoss
 
 // symptoms - Sleep
-* #nightSweats "A category type that records night sweats as a symptom. "
-* #sleepChanges "A category type that records sleep changes as a symptom."
+* #nightSweats
+* #sleepChanges
 
 // symptoms - Urinary
-* #bladderIncontinence "A category type that records bladder incontinence as a symptom."
+* #bladderIncontinence
 
 // mindfulness and sleep
 * #sleepAnalysis
-* #mindfulSession "HKCategoryValue"
+* #mindfulSession
 
 // self care
 * #toothbrushingEvent
 * #handwashingEvent
 
 ValueSet: AppleHealthKitCorrelationTypeValueSet
-Title: "Apple Health Kit Correlation Type Value Set"
+Title: "Apple HealthKit Correlation Type Value Set"
 Id: apple-health-kit-correlation-type-value-set
 Description: "Possible values for AppleHealthKitSample.correlationType"
 * include codes from system AppleHealthKitCorrelationTypeCodeSystem
 
 CodeSystem: AppleHealthKitCorrelationTypeCodeSystem
-Title: "Apple Health Kit Correlation Type Code System"
+Title: "Apple HealthKit Correlation Type Code System"
 Id: apple-health-kit-correlation-type-code-system
 Description: "Code System required for defining correlationType ValueSet"
 * #bloodPressure
@@ -391,13 +400,13 @@ Description: "Code System required for defining correlationType ValueSet"
 
 
 ValueSet: AppleHealthKitWorkoutActivityTypeValueSet
-Title: "Apple Health Kit Workout Activity Type Value Set"
+Title: "Apple HealthKit Workout Activity Type Value Set"
 Id: apple-health-kit-workout-activity-type-value-set
 Description: "Possible values for AppleHealthLitSample.workoutActivityType"
 * include codes from system AppleHEalthKitWorkoutActivityTypeCodeSystem
 
 CodeSystem: AppleHEalthKitWorkoutActivityTypeCodeSystem
-Title: "Apple Health Kit Workout Activity Type Code System"
+Title: "Apple HealthKit Workout Activity Type Code System"
 Id: apple-health-kit-workout-activity-type-code-system
 Description: "Code System required for defining workoutActivityType ValueSet"
 * #archery
@@ -487,13 +496,13 @@ Description: "Code System required for defining workoutActivityType ValueSet"
 
 
 ValueSet: AppleHealthKitWorkoutEventTypeValueSet
-Title: "Apple Health Kit Workout Event Type Value Set"
+Title: "Apple HealthKit Workout Event Type Value Set"
 Id: apple-health-kit-workout-event-type-value-set
 Description: "Possible values for AppleHealthKitWorkoutEvent.type"
 * include codes from system AppleHealthKitWorkoutEventTypeCodeSystem
 
 CodeSystem: AppleHealthKitWorkoutEventTypeCodeSystem
-Title: "Apple Health Kit Workout Event Type Code System"
+Title: "Apple HealthKit Workout Event Type Code System"
 Id: apple-health-kit-workout-event-type-code-system
 Description: "Code System required for defining workout event type ValueSet"
 * #pause "A constant indicating that the workout has paused."
@@ -508,15 +517,15 @@ Description: "Code System required for defining workout event type ValueSet"
 
 
 ValueSet: AppleHealthKitCharacteristicTypeValueSet
-Title: "Apple Health Kit Charactersitic Type Value Set"
+Title: "Apple HealthKit Charactersitic Type Value Set"
 Id: apple-health-kit-characteristic-type-value-set
-Description: "Possible values for AppleHealthKitCharacteristic.characteristicType"
+Description: "Apple HealthKit Charactersitic Type Value Set"
 * include codes from system AppleHealthKitCharacteristicTypeCodeSystem
 
 CodeSystem: AppleHealthKitCharacteristicTypeCodeSystem
-Title: "Apple Health Kit Characteristic Type Code System"
+Title: "Apple HealthKit Characteristic Type Code System"
 Id: apple-health-kit-characteristic-type-code-system
-Description: "Code System required for defining characteristic type ValueSet"
+Description: "The identifiers that create characteristic type objects."
 * #biologicalSex
 //* #bloodType
 * #dateOfBirth
@@ -525,15 +534,15 @@ Description: "Code System required for defining characteristic type ValueSet"
 
 
 ValueSet: AppleHealthKitBiologicalSexValueSet
-Title: "Apple Health Kit Biological Sex Value Set"
+Title: "Apple HealthKit Biological Sex Value Set"
 Id: apple-health-kit-biological-sex-value-set
-Description: "Possible values for AppleHealthKitCharacteristic.biologicalSex"
+Description: "Apple HealthKit Biological Sex Value Set"
 * include codes from system AppleHealthKitBiologicalSexCodeSystem
 
 CodeSystem: AppleHealthKitBiologicalSexCodeSystem
-Title: "Apple Health Kit Biological Sex Code System"
+Title: "Apple HealthKit Biological Sex Code System"
 Id: apple-health-kit-biological-sex-code-system
-Description: "Code System required for defining biologicalSex"
+Description: "Constants indicating the user’s sex."
 * #notSet "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type."
 * #female "A constant indicating that the user is female."
 * #male "A constant indicating that the user is male."
