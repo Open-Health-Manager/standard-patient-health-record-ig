@@ -30,31 +30,50 @@ The `.sphr ` container should contain two meta data files.  One of these files i
 
 Files containing patient health information MAY be zipped, with either a `.fhir.zip` or `.fhir.gz` extension. When using compression, systems SHOULD use the [DEFLATE](https://en.wikipedia.org/wiki/Deflate) algorithm.  DEFLATE is supported by both ZIP and GZIP compression utilities.  
 
-#### Security  
-
-Files containing patient health information should be signed with a password, and compressed with a utility such as Zip or gzip if preferred.  
-
-If supported on your operating system, a preferred method of encrypting and decrypting files is with PGP/GPG utilities, which support asymmetric cryptography algorithms such as X.509.  
-
-Therefore, when exporting data from the Personal Health Record:
-
-Write the contents of a collection into either a FHIR Bundle with a .json extension, or a NDJSON file with a .ndjson extension.  After writing the contents to the filesystem, compress the data if desired.  Then convert the relevant X509 certificate into GPG format.  Once done, encrypt the file.
-
-Using GPG-Zip to password protect a NDJSON file using an X509 certificate is the level of security people should be striving for when developing SPHR enabled apps.  
-
 #### Media Files & Raw Documents
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+TBD
 
 #### Bulk Data Exports
 
 Should use [NDJSON format](http://ndjson.org/) and save to a password encrypted zip file.  Please see [Bulk Data Access IG](https://hl7.org/fhir/uv/bulkdata/) more additional design guidance.
 
-#### Conformance Testing
+### Data provenance and security
 
-For conformance testing with this IG, the primary success critieria is that systems MUST have the ability to import/export the `.sphr` filetype. This entails storing FHIR records in a new-line delimited file (including a cover composition resource, a document manifest, and provenance records as needed), compressing the file with DEFLATE algorithm (as needed), and then signing with an X.509 security certificate (i.e. DNS certificate). 
+Here we describe the asymmetric cryptography algorithms to support both signing and encryption of PHR files.
 
-#### API Endpoints
+#### Signing
+Signing allows the source system of the PHR file to attest to the contents of that file and the recipient to verify authenticity and identity of the data source. If the full file is used as the message digest of a digital signature, it can allow the recipient to also verify data integrity and provides mechanism for non-repudiation.
+
+##### Attestation
+The source system MAY provide a FHIR Signature on the PhrBundle resource or individual PhrProvenance resources. The signature SHALL be a detached signature on the canonical form of the resource in compliance with the [FHIR Signature](http://hl7.org/fhir/R4/datatypes.html#Signature) guidance.
+
+##### Data integrity
+The source system MAY sign a hash of the full and optionally compressed or encrypted PHR file and provide a JWS as a separate file to the recipient to allow the recipient to both identify the source of data and verify data integrity. The source system should use the SHA-256 hash algorithm to create a message digest of the SPHR file for signing. As with FHIR Signatures, the JWS should be a detached signature without a payload. 
+
+The recipient MAY verify the integrity of the SPHR file by verifying the signature of the provided JWS against the SHA-256 hash of the SPHR file. Note that there may be significant performance limitations in creating the hash based on size of the file.
+
+##### Trust and key distribution
+While a verifiable signature may provide some context as to the identity of the data source, it does not ensure that that data source is a reliable actor. The recipient who wishes to verify a digital signature MAY also verify that the signer is a trusted entity as defined by participation in a mutual trust network. The recipient SHOULD assure that any trust network in which they choose to participate enforces policies and provides adequate governance to prevent unreliable data sources from entering the network.
+
+Retrieving the source system's public keys may depend on the key formats and distribution methods inherent to the trust networks in which a recipient chooses to participate.
+
+In an X.509 based PKI, the recipient MAY receive the source system's public key from a trusted certificate authority. If the certificate is distributed out of band, the recipient MAY verify that the root of the chain of trust is a trusted certificate authority and that the certificate is not revoked. 
+
+#### Encryption
+Files containing patient health information should be encrypted to protect the data in case of unauthorized interception.
+
+##### Public key encryption
+If the PHR file is being generated for a known intended recipient, then the file MAY be encrypted using the discoverable public key of that recipient. Key distribution for the recipients public key would follow the same guidance as in "Trust and key distribution". Encryption SHOULD use the ES256 algorithm. The intended recipient would use their equivalent private key and the same algorithm to decrypt the file.
+
+##### Passphrase-based encryption
+If the intended recipient is not known at time of file generation, the source system SHOULD use a unique secret key or passphrase to encrypt the file. This passphrase can be shared out of band by the patient with any recipient of their choosing.
+
+Public key encryption and secret key may be combined in a PGP solution.
+
+A SMART Health Links based solution will distribute the encryption key within a shareable QR which the patient can display to recipients of an SPHR file for scanning. The recipient would decrypt the linked file using the A256GCM algorithm.
+
+### API Endpoints
 
 Systems MAY wish to implement standard APIs for generating a `.phr` or `.sphr` file.  Standard API queries that have been used in other systems are listed below.
 
@@ -86,8 +105,13 @@ POST /Bundle/$import
 
 Systems MUST post the API endpoints they use in the system's CapabilityStatement.  
 
+### Conformance Testing
+
+For conformance testing with this IG, the primary success critieria is that systems MUST have the ability to import/export the `.sphr` filetype. This entails storing FHIR records in a new-line delimited file (including a cover composition resource, a document manifest, and provenance records as needed), compressing the file with DEFLATE algorithm (as needed), and then signing with an X.509 security certificate. 
 
 #### Creating a Standard Personal Health Record    
+
+The process flows below is based on encrypting files with PGP/GPG utilities, which support asymmetric cryptography algorithms and X.509 certificates.
 
 - Gather the data you want to include.
 - Convert or encode the data as FHIR resources.
@@ -97,20 +121,22 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 - If over 16MB, use Bulk Data format and save as nd-json.
 - Add international patient summary (if needed).
 - Add problem oriented health record components (if needed).
-- Add provenance resources.
+- Add provenance resources and optionally sign then with a FHIR Signature.
 - Add media and supporting documents.
+- Optionally add a FHIR Signature to a PhrBundle instance.
 - Rename the .ndjson file with .phr extension.
 - Compress the file (or directory) with zip and DEFLATE algorithms.
-- Sign the file with an X.509 certificate or public key.
+- Encrypt the file with a passphrase or the public key in the intended recipient's X.509 certificate.
 - Rename the .phr file with .sphr extension.
+- Optionally hash the file and produce a JWS signature using your discoverable X.509 certificate.
 
 #### Importing a Standard Personal Health Record 
 
 - Configure operating sytem to open the .sphr with the application of your choice.
 - If .sphr not registered, rename to .zip
-- Check for an X.509 signature or certificate.
+- Optionally validate the associated JWS signature using the source system's X.509 certificate.
 - Decompress the file (or directory) with zip and DEFLATE algorithms.
-- Decrypt as necessary.
+- Decrypt using a provided passphrase or the private key associated with your discoverable X.509 certificate.
 - If a directory, scan for media and supporting documents such as PDF.
 - Scan the contents of the directory for a .phr or .ndjson file.
 - Scan the .phr file for the Composition resource.
@@ -122,6 +148,11 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 - Scan for a problems list, and supporting resources.
 - Scan the remaining resources, and operate on them as if a PUT or POST message.
 
+### References  
+
+- [Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
+- [GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
+
 #### Configuring Operating Systems to Recognize .phr and .sphr Filetypes
 
 - [How to set default apps on Mac](https://www.imore.com/how-set-mac-app-default-when-opening-file)
@@ -130,12 +161,6 @@ Systems MUST post the API endpoints they use in the system's CapabilityStatement
 - [Set default app for .file type file](https://answers.microsoft.com/en-us/windows/forum/all/set-default-app-for-file-type-file/c449afd5-2eff-4f3b-8faf-8ce7ced50f30)
 - [File extension associations and default apps in Windows 10, how to handle this using commandline](https://social.technet.microsoft.com/Forums/en-US/9f4e8e66-b1f4-47a4-931f-862fb8ac3ab3/file-extension-associations-and-default-apps-in-windows-10-how-to-handle-this-using-commandline)
 
-
-
-#### References  
-
-- [Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
-- [GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
 
 
 
