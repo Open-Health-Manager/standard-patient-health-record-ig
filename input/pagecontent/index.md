@@ -27,3 +27,6 @@ The core of the Patient Health Record should be medical grade, and the sort of r
 - [Implementing High Quality Primary Care](https://www.nationalacademies.org/our-work/implementing-high-quality-primary-care)  
 - [How to Export Facebook Data](https://blog.coupler.io/how-to-export-facebook-data/)
 - [Human API - Getting Started](https://reference.humanapi.co/reference/getting-started)
+- [Summary of Responses to an Industry RFI Regarding a Role for CMS with Personal Health Records](https://www.cms.gov/Medicare/E-Health/PerHealthRecords/Downloads/SummaryofPersonalHealthRecord.pdf)     
+
+
