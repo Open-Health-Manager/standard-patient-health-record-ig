@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PCDSleepObservation-duration-example"/>
+  <meta>
+    <profile value="https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="PCDSleepObservation-duration-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;PCDSleepObservation-duration-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pcd-sleep-observation.html">Patient contributed data: sleep observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Sleep duration <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#93832-4)</span></p><p><b>subject</b>: <a href="Patient/janesmith">Patient/janesmith: Jane Smith</a></p><p><b>effective</b>: 2022-10-08 09:57:34+0000</p><p><b>value</b>: 9 h<span style="background: LightGoldenRodYellow"> (Details: UCUM code h = 'h')</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="93832-4"/>
+      <display value="Sleep duration"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/janesmith"/>
+    <display value="Jane Smith"/>
+  </subject>
+  <effectiveDateTime value="2022-10-08T09:57:34.2112Z"/>
+  <valueQuantity>
+    <value value="9"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="h"/>
+  </valueQuantity>
+</Observation>

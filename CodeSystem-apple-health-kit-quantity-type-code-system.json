@@ -1,0 +1,344 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-quantity-type-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-quantity-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">bodyMassIndex<a name=\"apple-health-kit-quantity-type-code-system-bodyMassIndex\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">bodyFatPercentage<a name=\"apple-health-kit-quantity-type-code-system-bodyFatPercentage\"> </a></td><td>Scalar(Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\">height<a name=\"apple-health-kit-quantity-type-code-system-height\"> </a></td><td>Length, Discrete</td></tr><tr><td style=\"white-space:nowrap\">bodyMass<a name=\"apple-health-kit-quantity-type-code-system-bodyMass\"> </a></td><td>Mass, Discrete</td></tr><tr><td style=\"white-space:nowrap\">leanBodyMass<a name=\"apple-health-kit-quantity-type-code-system-leanBodyMass\"> </a></td><td>Mass, Discrete</td></tr><tr><td style=\"white-space:nowrap\">waistCircumference<a name=\"apple-health-kit-quantity-type-code-system-waistCircumference\"> </a></td><td>Length, Discrete</td></tr><tr><td style=\"white-space:nowrap\">stepCount<a name=\"apple-health-kit-quantity-type-code-system-stepCount\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">distanceWalkingRunning<a name=\"apple-health-kit-quantity-type-code-system-distanceWalkingRunning\"> </a></td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">distanceCycling<a name=\"apple-health-kit-quantity-type-code-system-distanceCycling\"> </a></td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">distanceWheelchair<a name=\"apple-health-kit-quantity-type-code-system-distanceWheelchair\"> </a></td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">basalEnergyBurned<a name=\"apple-health-kit-quantity-type-code-system-basalEnergyBurned\"> </a></td><td>Energy, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">activeEnergyBurned<a name=\"apple-health-kit-quantity-type-code-system-activeEnergyBurned\"> </a></td><td>Energy, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">flightsClimbed<a name=\"apple-health-kit-quantity-type-code-system-flightsClimbed\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">nikeFuel<a name=\"apple-health-kit-quantity-type-code-system-nikeFuel\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">appleExerciseTime<a name=\"apple-health-kit-quantity-type-code-system-appleExerciseTime\"> </a></td><td>Time Cumulative</td></tr><tr><td style=\"white-space:nowrap\">pushCount<a name=\"apple-health-kit-quantity-type-code-system-pushCount\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">distanceSwimming<a name=\"apple-health-kit-quantity-type-code-system-distanceSwimming\"> </a></td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">swimmingStrokeCount<a name=\"apple-health-kit-quantity-type-code-system-swimmingStrokeCount\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">vo2Max<a name=\"apple-health-kit-quantity-type-code-system-vo2Max\"> </a></td><td>ml/(kg*min) Discrete</td></tr><tr><td style=\"white-space:nowrap\">distanceDownhillSnowSports<a name=\"apple-health-kit-quantity-type-code-system-distanceDownhillSnowSports\"> </a></td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">heartRate<a name=\"apple-health-kit-quantity-type-code-system-heartRate\"> </a></td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\">bodyTemperature<a name=\"apple-health-kit-quantity-type-code-system-bodyTemperature\"> </a></td><td>Temperature, Discrete</td></tr><tr><td style=\"white-space:nowrap\">basalBodyTemperature<a name=\"apple-health-kit-quantity-type-code-system-basalBodyTemperature\"> </a></td><td>Basal Body Temperature, Discrete</td></tr><tr><td style=\"white-space:nowrap\">bloodPressureSystolic<a name=\"apple-health-kit-quantity-type-code-system-bloodPressureSystolic\"> </a></td><td>Pressure, Discrete</td></tr><tr><td style=\"white-space:nowrap\">bloodPressureDiastolic<a name=\"apple-health-kit-quantity-type-code-system-bloodPressureDiastolic\"> </a></td><td>Pressure, Discrete</td></tr><tr><td style=\"white-space:nowrap\">respiratoryRate<a name=\"apple-health-kit-quantity-type-code-system-respiratoryRate\"> </a></td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\">restingHeartRate<a name=\"apple-health-kit-quantity-type-code-system-restingHeartRate\"> </a></td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\">walkingHeartRateAverage<a name=\"apple-health-kit-quantity-type-code-system-walkingHeartRateAverage\"> </a></td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\">heartRateVariabilitySDNN<a name=\"apple-health-kit-quantity-type-code-system-heartRateVariabilitySDNN\"> </a></td><td>Time (ms), Discrete</td></tr><tr><td style=\"white-space:nowrap\">oxygenSaturation<a name=\"apple-health-kit-quantity-type-code-system-oxygenSaturation\"> </a></td><td>Scalar (Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\">peripheralPerfusionIndex<a name=\"apple-health-kit-quantity-type-code-system-peripheralPerfusionIndex\"> </a></td><td>Scalar(Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\">bloodGlucose<a name=\"apple-health-kit-quantity-type-code-system-bloodGlucose\"> </a></td><td>Mass/Volume, Discrete</td></tr><tr><td style=\"white-space:nowrap\">numberOfTimesFallen<a name=\"apple-health-kit-quantity-type-code-system-numberOfTimesFallen\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">electrodermalActivity<a name=\"apple-health-kit-quantity-type-code-system-electrodermalActivity\"> </a></td><td>Conductance, Discrete</td></tr><tr><td style=\"white-space:nowrap\">inhalerUsage<a name=\"apple-health-kit-quantity-type-code-system-inhalerUsage\"> </a></td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\">insulinDelivery<a name=\"apple-health-kit-quantity-type-code-system-insulinDelivery\"> </a></td><td>Pharmacology (IU) Cumulative</td></tr><tr><td style=\"white-space:nowrap\">bloodAlcoholContent<a name=\"apple-health-kit-quantity-type-code-system-bloodAlcoholContent\"> </a></td><td>Scalar(Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\">forcedVitalCapacity<a name=\"apple-health-kit-quantity-type-code-system-forcedVitalCapacity\"> </a></td><td>Volume, Discrete</td></tr><tr><td style=\"white-space:nowrap\">forcedExpiratoryVolume1<a name=\"apple-health-kit-quantity-type-code-system-forcedExpiratoryVolume1\"> </a></td><td>Volume, Discrete</td></tr><tr><td style=\"white-space:nowrap\">peakExpiratoryFlowRate<a name=\"apple-health-kit-quantity-type-code-system-peakExpiratoryFlowRate\"> </a></td><td>Volume/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\">dietaryFatTotal<a name=\"apple-health-kit-quantity-type-code-system-dietaryFatTotal\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryFatPolyunsaturated<a name=\"apple-health-kit-quantity-type-code-system-dietaryFatPolyunsaturated\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryFatMonounsaturated<a name=\"apple-health-kit-quantity-type-code-system-dietaryFatMonounsaturated\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryFatSaturated<a name=\"apple-health-kit-quantity-type-code-system-dietaryFatSaturated\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryCholesterol<a name=\"apple-health-kit-quantity-type-code-system-dietaryCholesterol\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietarySodium<a name=\"apple-health-kit-quantity-type-code-system-dietarySodium\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryCarbohydrates<a name=\"apple-health-kit-quantity-type-code-system-dietaryCarbohydrates\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryFiber<a name=\"apple-health-kit-quantity-type-code-system-dietaryFiber\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietarySugar<a name=\"apple-health-kit-quantity-type-code-system-dietarySugar\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryEnergyConsumed<a name=\"apple-health-kit-quantity-type-code-system-dietaryEnergyConsumed\"> </a></td><td>Energy, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryProtein<a name=\"apple-health-kit-quantity-type-code-system-dietaryProtein\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminA<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminA\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminB6<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminB6\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminB12<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminB12\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminC<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminC\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminD<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminD\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminE<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminE\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryVitaminK<a name=\"apple-health-kit-quantity-type-code-system-dietaryVitaminK\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryCalcium<a name=\"apple-health-kit-quantity-type-code-system-dietaryCalcium\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryIron<a name=\"apple-health-kit-quantity-type-code-system-dietaryIron\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryThiamin<a name=\"apple-health-kit-quantity-type-code-system-dietaryThiamin\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryRiboflavin<a name=\"apple-health-kit-quantity-type-code-system-dietaryRiboflavin\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryNiacin<a name=\"apple-health-kit-quantity-type-code-system-dietaryNiacin\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryFolate<a name=\"apple-health-kit-quantity-type-code-system-dietaryFolate\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryBiotin<a name=\"apple-health-kit-quantity-type-code-system-dietaryBiotin\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryPantothenicAcid<a name=\"apple-health-kit-quantity-type-code-system-dietaryPantothenicAcid\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryPhosphorus<a name=\"apple-health-kit-quantity-type-code-system-dietaryPhosphorus\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryIodine<a name=\"apple-health-kit-quantity-type-code-system-dietaryIodine\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryMagnesium<a name=\"apple-health-kit-quantity-type-code-system-dietaryMagnesium\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryZinc<a name=\"apple-health-kit-quantity-type-code-system-dietaryZinc\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietarySelenium<a name=\"apple-health-kit-quantity-type-code-system-dietarySelenium\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryCopper<a name=\"apple-health-kit-quantity-type-code-system-dietaryCopper\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryManganese<a name=\"apple-health-kit-quantity-type-code-system-dietaryManganese\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryChromium<a name=\"apple-health-kit-quantity-type-code-system-dietaryChromium\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryMolybdenum<a name=\"apple-health-kit-quantity-type-code-system-dietaryMolybdenum\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryChloride<a name=\"apple-health-kit-quantity-type-code-system-dietaryChloride\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryPotassium<a name=\"apple-health-kit-quantity-type-code-system-dietaryPotassium\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryCaffeine<a name=\"apple-health-kit-quantity-type-code-system-dietaryCaffeine\"> </a></td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">dietaryWater<a name=\"apple-health-kit-quantity-type-code-system-dietaryWater\"> </a></td><td>Volume, Cumulative</td></tr><tr><td style=\"white-space:nowrap\">uvExposure<a name=\"apple-health-kit-quantity-type-code-system-uvExposure\"> </a></td><td>Scalar (Count), Discrete</td></tr></table></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-quantity-type-code-system",
+  "version" : "0.4.4",
+  "name" : "AppleHealthKitQuantityTypeCodeSystem",
+  "title" : "Apple HealthKit Quantity Type Code System",
+  "status" : "active",
+  "date" : "2023-03-03T21:03:08+00:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+    }]
+  }],
+  "description" : "Code System required for defining quantityType ValueSet",
+  "content" : "complete",
+  "count" : 80,
+  "concept" : [{
+    "code" : "bodyMassIndex"
+  },
+  {
+    "code" : "bodyFatPercentage",
+    "display" : "Scalar(Percent, 0.0 - 1.0), Discrete"
+  },
+  {
+    "code" : "height",
+    "display" : "Length, Discrete"
+  },
+  {
+    "code" : "bodyMass",
+    "display" : "Mass, Discrete"
+  },
+  {
+    "code" : "leanBodyMass",
+    "display" : "Mass, Discrete"
+  },
+  {
+    "code" : "waistCircumference",
+    "display" : "Length, Discrete"
+  },
+  {
+    "code" : "stepCount",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "distanceWalkingRunning",
+    "display" : "Length, Cumulative"
+  },
+  {
+    "code" : "distanceCycling",
+    "display" : "Length, Cumulative"
+  },
+  {
+    "code" : "distanceWheelchair",
+    "display" : "Length, Cumulative"
+  },
+  {
+    "code" : "basalEnergyBurned",
+    "display" : "Energy, Cumulative"
+  },
+  {
+    "code" : "activeEnergyBurned",
+    "display" : "Energy, Cumulative"
+  },
+  {
+    "code" : "flightsClimbed",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "nikeFuel",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "appleExerciseTime",
+    "display" : "Time Cumulative"
+  },
+  {
+    "code" : "pushCount",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "distanceSwimming",
+    "display" : "Length, Cumulative"
+  },
+  {
+    "code" : "swimmingStrokeCount",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "vo2Max",
+    "display" : "ml/(kg*min) Discrete"
+  },
+  {
+    "code" : "distanceDownhillSnowSports",
+    "display" : "Length, Cumulative"
+  },
+  {
+    "code" : "heartRate",
+    "display" : "Scalar(Count)/Time, Discrete"
+  },
+  {
+    "code" : "bodyTemperature",
+    "display" : "Temperature, Discrete"
+  },
+  {
+    "code" : "basalBodyTemperature",
+    "display" : "Basal Body Temperature, Discrete"
+  },
+  {
+    "code" : "bloodPressureSystolic",
+    "display" : "Pressure, Discrete"
+  },
+  {
+    "code" : "bloodPressureDiastolic",
+    "display" : "Pressure, Discrete"
+  },
+  {
+    "code" : "respiratoryRate",
+    "display" : "Scalar(Count)/Time, Discrete"
+  },
+  {
+    "code" : "restingHeartRate",
+    "display" : "Scalar(Count)/Time, Discrete"
+  },
+  {
+    "code" : "walkingHeartRateAverage",
+    "display" : "Scalar(Count)/Time, Discrete"
+  },
+  {
+    "code" : "heartRateVariabilitySDNN",
+    "display" : "Time (ms), Discrete"
+  },
+  {
+    "code" : "oxygenSaturation",
+    "display" : "Scalar (Percent, 0.0 - 1.0), Discrete"
+  },
+  {
+    "code" : "peripheralPerfusionIndex",
+    "display" : "Scalar(Percent, 0.0 - 1.0), Discrete"
+  },
+  {
+    "code" : "bloodGlucose",
+    "display" : "Mass/Volume, Discrete"
+  },
+  {
+    "code" : "numberOfTimesFallen",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "electrodermalActivity",
+    "display" : "Conductance, Discrete"
+  },
+  {
+    "code" : "inhalerUsage",
+    "display" : "Scalar(Count), Cumulative"
+  },
+  {
+    "code" : "insulinDelivery",
+    "display" : "Pharmacology (IU) Cumulative"
+  },
+  {
+    "code" : "bloodAlcoholContent",
+    "display" : "Scalar(Percent, 0.0 - 1.0), Discrete"
+  },
+  {
+    "code" : "forcedVitalCapacity",
+    "display" : "Volume, Discrete"
+  },
+  {
+    "code" : "forcedExpiratoryVolume1",
+    "display" : "Volume, Discrete"
+  },
+  {
+    "code" : "peakExpiratoryFlowRate",
+    "display" : "Volume/Time, Discrete"
+  },
+  {
+    "code" : "dietaryFatTotal",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryFatPolyunsaturated",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryFatMonounsaturated",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryFatSaturated",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryCholesterol",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietarySodium",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryCarbohydrates",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryFiber",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietarySugar",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryEnergyConsumed",
+    "display" : "Energy, Cumulative"
+  },
+  {
+    "code" : "dietaryProtein",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminA",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminB6",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminB12",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminC",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminD",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminE",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryVitaminK",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryCalcium",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryIron",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryThiamin",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryRiboflavin",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryNiacin",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryFolate",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryBiotin",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryPantothenicAcid",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryPhosphorus",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryIodine",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryMagnesium",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryZinc",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietarySelenium",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryCopper",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryManganese",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryChromium",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryMolybdenum",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryChloride",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryPotassium",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryCaffeine",
+    "display" : "Mass, Cumulative"
+  },
+  {
+    "code" : "dietaryWater",
+    "display" : "Volume, Cumulative"
+  },
+  {
+    "code" : "uvExposure",
+    "display" : "Scalar (Count), Discrete"
+  }]
+}

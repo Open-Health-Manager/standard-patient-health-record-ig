@@ -1,0 +1,204 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-activity-type-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apple-health-kit-workout-activity-type-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-activity-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">archery<a name=\"apple-health-kit-workout-activity-type-code-system-archery\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">bowling<a name=\"apple-health-kit-workout-activity-type-code-system-bowling\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">fencing<a name=\"apple-health-kit-workout-activity-type-code-system-fencing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">gymnastics<a name=\"apple-health-kit-workout-activity-type-code-system-gymnastics\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">trackAndField<a name=\"apple-health-kit-workout-activity-type-code-system-trackAndField\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">americanFootball<a name=\"apple-health-kit-workout-activity-type-code-system-americanFootball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">australianFootball<a name=\"apple-health-kit-workout-activity-type-code-system-australianFootball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">baseball<a name=\"apple-health-kit-workout-activity-type-code-system-baseball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">basketball<a name=\"apple-health-kit-workout-activity-type-code-system-basketball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">cricket<a name=\"apple-health-kit-workout-activity-type-code-system-cricket\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">discSports<a name=\"apple-health-kit-workout-activity-type-code-system-discSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">handball<a name=\"apple-health-kit-workout-activity-type-code-system-handball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">hockey<a name=\"apple-health-kit-workout-activity-type-code-system-hockey\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">lacrosse<a name=\"apple-health-kit-workout-activity-type-code-system-lacrosse\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">rugby<a name=\"apple-health-kit-workout-activity-type-code-system-rugby\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">soccer<a name=\"apple-health-kit-workout-activity-type-code-system-soccer\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">softball<a name=\"apple-health-kit-workout-activity-type-code-system-softball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">volleyball<a name=\"apple-health-kit-workout-activity-type-code-system-volleyball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">preparationAndRecovery<a name=\"apple-health-kit-workout-activity-type-code-system-preparationAndRecovery\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">flexibility<a name=\"apple-health-kit-workout-activity-type-code-system-flexibility\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">cooldown<a name=\"apple-health-kit-workout-activity-type-code-system-cooldown\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">walking<a name=\"apple-health-kit-workout-activity-type-code-system-walking\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">running<a name=\"apple-health-kit-workout-activity-type-code-system-running\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">wheelchairWalkPace<a name=\"apple-health-kit-workout-activity-type-code-system-wheelchairWalkPace\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">wheelchairRunPace<a name=\"apple-health-kit-workout-activity-type-code-system-wheelchairRunPace\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">cycling<a name=\"apple-health-kit-workout-activity-type-code-system-cycling\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">handCycling<a name=\"apple-health-kit-workout-activity-type-code-system-handCycling\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">coreTraining<a name=\"apple-health-kit-workout-activity-type-code-system-coreTraining\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">elliptical<a name=\"apple-health-kit-workout-activity-type-code-system-elliptical\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">functionalStrengthTraining<a name=\"apple-health-kit-workout-activity-type-code-system-functionalStrengthTraining\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">traditionalStrengthTraining<a name=\"apple-health-kit-workout-activity-type-code-system-traditionalStrengthTraining\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">crossTraining<a name=\"apple-health-kit-workout-activity-type-code-system-crossTraining\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">mixedCardio<a name=\"apple-health-kit-workout-activity-type-code-system-mixedCardio\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">highIntensityIntervalTraining<a name=\"apple-health-kit-workout-activity-type-code-system-highIntensityIntervalTraining\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">jumpRope<a name=\"apple-health-kit-workout-activity-type-code-system-jumpRope\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stairClimbing<a name=\"apple-health-kit-workout-activity-type-code-system-stairClimbing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stairs<a name=\"apple-health-kit-workout-activity-type-code-system-stairs\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">stepTraining<a name=\"apple-health-kit-workout-activity-type-code-system-stepTraining\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">fitnessGaming<a name=\"apple-health-kit-workout-activity-type-code-system-fitnessGaming\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">barre<a name=\"apple-health-kit-workout-activity-type-code-system-barre\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">cardioDance<a name=\"apple-health-kit-workout-activity-type-code-system-cardioDance\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">socialDance<a name=\"apple-health-kit-workout-activity-type-code-system-socialDance\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">yoga<a name=\"apple-health-kit-workout-activity-type-code-system-yoga\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">mindAndBody<a name=\"apple-health-kit-workout-activity-type-code-system-mindAndBody\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">pilates<a name=\"apple-health-kit-workout-activity-type-code-system-pilates\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">badminton<a name=\"apple-health-kit-workout-activity-type-code-system-badminton\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">pickleball<a name=\"apple-health-kit-workout-activity-type-code-system-pickleball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">racquetball<a name=\"apple-health-kit-workout-activity-type-code-system-racquetball\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">squash<a name=\"apple-health-kit-workout-activity-type-code-system-squash\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">tableTennis<a name=\"apple-health-kit-workout-activity-type-code-system-tableTennis\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">tennis<a name=\"apple-health-kit-workout-activity-type-code-system-tennis\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">climbing<a name=\"apple-health-kit-workout-activity-type-code-system-climbing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">equestrianSports<a name=\"apple-health-kit-workout-activity-type-code-system-equestrianSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">fishing<a name=\"apple-health-kit-workout-activity-type-code-system-fishing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">golf<a name=\"apple-health-kit-workout-activity-type-code-system-golf\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">hiking<a name=\"apple-health-kit-workout-activity-type-code-system-hiking\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">hunting<a name=\"apple-health-kit-workout-activity-type-code-system-hunting\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">play<a name=\"apple-health-kit-workout-activity-type-code-system-play\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">crossCountrySkiing<a name=\"apple-health-kit-workout-activity-type-code-system-crossCountrySkiing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">curling<a name=\"apple-health-kit-workout-activity-type-code-system-curling\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">downhillSkiing<a name=\"apple-health-kit-workout-activity-type-code-system-downhillSkiing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">snowSports<a name=\"apple-health-kit-workout-activity-type-code-system-snowSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">snowboarding<a name=\"apple-health-kit-workout-activity-type-code-system-snowboarding\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">skatingSports<a name=\"apple-health-kit-workout-activity-type-code-system-skatingSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">paddleSports<a name=\"apple-health-kit-workout-activity-type-code-system-paddleSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">rowing<a name=\"apple-health-kit-workout-activity-type-code-system-rowing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">sailing<a name=\"apple-health-kit-workout-activity-type-code-system-sailing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">surfingSports<a name=\"apple-health-kit-workout-activity-type-code-system-surfingSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">swimming<a name=\"apple-health-kit-workout-activity-type-code-system-swimming\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">waterFitness<a name=\"apple-health-kit-workout-activity-type-code-system-waterFitness\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">waterPolo<a name=\"apple-health-kit-workout-activity-type-code-system-waterPolo\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">waterSports<a name=\"apple-health-kit-workout-activity-type-code-system-waterSports\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">boxing<a name=\"apple-health-kit-workout-activity-type-code-system-boxing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">kickboxing<a name=\"apple-health-kit-workout-activity-type-code-system-kickboxing\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">martialArts<a name=\"apple-health-kit-workout-activity-type-code-system-martialArts\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">taiChi<a name=\"apple-health-kit-workout-activity-type-code-system-taiChi\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">wrestling<a name=\"apple-health-kit-workout-activity-type-code-system-wrestling\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">other<a name=\"apple-health-kit-workout-activity-type-code-system-other\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">dance<a name=\"apple-health-kit-workout-activity-type-code-system-dance\"> </a></td><td>depreciated</td></tr><tr><td style=\"white-space:nowrap\">danceInspiredTraining<a name=\"apple-health-kit-workout-activity-type-code-system-danceInspiredTraining\"> </a></td><td>depreciated</td></tr><tr><td style=\"white-space:nowrap\">mixedMetabolicCardioTraining<a name=\"apple-health-kit-workout-activity-type-code-system-mixedMetabolicCardioTraining\"> </a></td><td>depreciated</td></tr><tr><td style=\"white-space:nowrap\">swimBikeRun<a name=\"apple-health-kit-workout-activity-type-code-system-swimBikeRun\"> </a></td><td/></tr><tr><td style=\"white-space:nowrap\">transition<a name=\"apple-health-kit-workout-activity-type-code-system-transition\"> </a></td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-activity-type-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.4"] ; # 
+  fhir:name [ fhir:v "AppleHEalthKitWorkoutActivityTypeCodeSystem"] ; # 
+  fhir:title [ fhir:v "Apple HealthKit Workout Activity Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-03T21:03:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System required for defining workoutActivityType ValueSet"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "83"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "archery" ]
+  ] [
+     fhir:code [ fhir:v "bowling" ]
+  ] [
+     fhir:code [ fhir:v "fencing" ]
+  ] [
+     fhir:code [ fhir:v "gymnastics" ]
+  ] [
+     fhir:code [ fhir:v "trackAndField" ]
+  ] [
+     fhir:code [ fhir:v "americanFootball" ]
+  ] [
+     fhir:code [ fhir:v "australianFootball" ]
+  ] [
+     fhir:code [ fhir:v "baseball" ]
+  ] [
+     fhir:code [ fhir:v "basketball" ]
+  ] [
+     fhir:code [ fhir:v "cricket" ]
+  ] [
+     fhir:code [ fhir:v "discSports" ]
+  ] [
+     fhir:code [ fhir:v "handball" ]
+  ] [
+     fhir:code [ fhir:v "hockey" ]
+  ] [
+     fhir:code [ fhir:v "lacrosse" ]
+  ] [
+     fhir:code [ fhir:v "rugby" ]
+  ] [
+     fhir:code [ fhir:v "soccer" ]
+  ] [
+     fhir:code [ fhir:v "softball" ]
+  ] [
+     fhir:code [ fhir:v "volleyball" ]
+  ] [
+     fhir:code [ fhir:v "preparationAndRecovery" ]
+  ] [
+     fhir:code [ fhir:v "flexibility" ]
+  ] [
+     fhir:code [ fhir:v "cooldown" ]
+  ] [
+     fhir:code [ fhir:v "walking" ]
+  ] [
+     fhir:code [ fhir:v "running" ]
+  ] [
+     fhir:code [ fhir:v "wheelchairWalkPace" ]
+  ] [
+     fhir:code [ fhir:v "wheelchairRunPace" ]
+  ] [
+     fhir:code [ fhir:v "cycling" ]
+  ] [
+     fhir:code [ fhir:v "handCycling" ]
+  ] [
+     fhir:code [ fhir:v "coreTraining" ]
+  ] [
+     fhir:code [ fhir:v "elliptical" ]
+  ] [
+     fhir:code [ fhir:v "functionalStrengthTraining" ]
+  ] [
+     fhir:code [ fhir:v "traditionalStrengthTraining" ]
+  ] [
+     fhir:code [ fhir:v "crossTraining" ]
+  ] [
+     fhir:code [ fhir:v "mixedCardio" ]
+  ] [
+     fhir:code [ fhir:v "highIntensityIntervalTraining" ]
+  ] [
+     fhir:code [ fhir:v "jumpRope" ]
+  ] [
+     fhir:code [ fhir:v "stairClimbing" ]
+  ] [
+     fhir:code [ fhir:v "stairs" ]
+  ] [
+     fhir:code [ fhir:v "stepTraining" ]
+  ] [
+     fhir:code [ fhir:v "fitnessGaming" ]
+  ] [
+     fhir:code [ fhir:v "barre" ]
+  ] [
+     fhir:code [ fhir:v "cardioDance" ]
+  ] [
+     fhir:code [ fhir:v "socialDance" ]
+  ] [
+     fhir:code [ fhir:v "yoga" ]
+  ] [
+     fhir:code [ fhir:v "mindAndBody" ]
+  ] [
+     fhir:code [ fhir:v "pilates" ]
+  ] [
+     fhir:code [ fhir:v "badminton" ]
+  ] [
+     fhir:code [ fhir:v "pickleball" ]
+  ] [
+     fhir:code [ fhir:v "racquetball" ]
+  ] [
+     fhir:code [ fhir:v "squash" ]
+  ] [
+     fhir:code [ fhir:v "tableTennis" ]
+  ] [
+     fhir:code [ fhir:v "tennis" ]
+  ] [
+     fhir:code [ fhir:v "climbing" ]
+  ] [
+     fhir:code [ fhir:v "equestrianSports" ]
+  ] [
+     fhir:code [ fhir:v "fishing" ]
+  ] [
+     fhir:code [ fhir:v "golf" ]
+  ] [
+     fhir:code [ fhir:v "hiking" ]
+  ] [
+     fhir:code [ fhir:v "hunting" ]
+  ] [
+     fhir:code [ fhir:v "play" ]
+  ] [
+     fhir:code [ fhir:v "crossCountrySkiing" ]
+  ] [
+     fhir:code [ fhir:v "curling" ]
+  ] [
+     fhir:code [ fhir:v "downhillSkiing" ]
+  ] [
+     fhir:code [ fhir:v "snowSports" ]
+  ] [
+     fhir:code [ fhir:v "snowboarding" ]
+  ] [
+     fhir:code [ fhir:v "skatingSports" ]
+  ] [
+     fhir:code [ fhir:v "paddleSports" ]
+  ] [
+     fhir:code [ fhir:v "rowing" ]
+  ] [
+     fhir:code [ fhir:v "sailing" ]
+  ] [
+     fhir:code [ fhir:v "surfingSports" ]
+  ] [
+     fhir:code [ fhir:v "swimming" ]
+  ] [
+     fhir:code [ fhir:v "waterFitness" ]
+  ] [
+     fhir:code [ fhir:v "waterPolo" ]
+  ] [
+     fhir:code [ fhir:v "waterSports" ]
+  ] [
+     fhir:code [ fhir:v "boxing" ]
+  ] [
+     fhir:code [ fhir:v "kickboxing" ]
+  ] [
+     fhir:code [ fhir:v "martialArts" ]
+  ] [
+     fhir:code [ fhir:v "taiChi" ]
+  ] [
+     fhir:code [ fhir:v "wrestling" ]
+  ] [
+     fhir:code [ fhir:v "other" ]
+  ] [
+     fhir:code [ fhir:v "dance" ] ;
+     fhir:display [ fhir:v "depreciated" ]
+  ] [
+     fhir:code [ fhir:v "danceInspiredTraining" ] ;
+     fhir:display [ fhir:v "depreciated" ]
+  ] [
+     fhir:code [ fhir:v "mixedMetabolicCardioTraining" ] ;
+     fhir:display [ fhir:v "depreciated" ]
+  ] [
+     fhir:code [ fhir:v "swimBikeRun" ]
+  ] [
+     fhir:code [ fhir:v "transition" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

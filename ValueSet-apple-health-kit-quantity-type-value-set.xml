@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="apple-health-kit-quantity-type-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-apple-health-kit-quantity-type-code-system.html"><code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-quantity-type-code-system</code></a></li></ul></div>
+  </text>
+  <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-quantity-type-value-set"/>
+  <version value="0.4.4"/>
+  <name value="AppleHealthKitQuantityTypeValueSet"/>
+  <title value="Apple HealthKit Quantity Type Value Set"/>
+  <status value="active"/>
+  <date value="2023-03-03T21:03:08+00:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://open-health-manager.github.io/standard-patient-health-record-ig"/>
+    </telecom>
+  </contact>
+  <description value="Possible values for AppleHealthKitSample.quantityType"/>
+  <compose>
+    <include>
+      <system value="https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-quantity-type-code-system"/>
+    </include>
+  </compose>
+</ValueSet>

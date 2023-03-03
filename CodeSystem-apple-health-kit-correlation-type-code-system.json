@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-correlation-type-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-correlation-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">bloodPressure<a name=\"apple-health-kit-correlation-type-code-system-bloodPressure\"> </a></td></tr><tr><td style=\"white-space:nowrap\">food<a name=\"apple-health-kit-correlation-type-code-system-food\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-correlation-type-code-system",
+  "version" : "0.4.4",
+  "name" : "AppleHealthKitCorrelationTypeCodeSystem",
+  "title" : "Apple HealthKit Correlation Type Code System",
+  "status" : "active",
+  "date" : "2023-03-03T21:03:08+00:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+    }]
+  }],
+  "description" : "Code System required for defining correlationType ValueSet",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "bloodPressure"
+  },
+  {
+    "code" : "food"
+  }]
+}

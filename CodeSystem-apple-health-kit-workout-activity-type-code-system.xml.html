@@ -1,0 +1,584 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>STANDARDPATIENTHEALTHRECORDIG\Apple HealthKit Workout Activity Type Code System - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"13.31"}
+    h3,h4,h5,h6{--heading-prefix:"13.31"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.4.4 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="recordkeeping.html">Record Keeping</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="datamodel.html">Data Model</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Model
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="functionality.html">Functional Model</a>
+      </li>
+      <li>
+        <a href="recordlifecycle.html">Record Lifecycle</a>
+      </li>
+      <li>
+        <a href="security.html">Security</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Simulations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Patient Personas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="personas-index.html">Index</a>
+      </li>
+      <li>
+        <a href="persona-william.html">Pediatric Cancer</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Apple HealthKit Workout Activity Type Code System</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">StandardPatientHealthRecordIG - Local Development build (v0.4.4). See the <a href="https://open-health-manager.github.io/standard-patient-health-record-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-apple-health-kit-workout-activity-type-code-system.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-apple-health-kit-workout-activity-type-code-system.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-apple-health-kit-workout-activity-type-code-system.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Apple HealthKit Workout Activity Type Code System - XML Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-03-03
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-apple-health-kit-workout-activity-type-code-system.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-apple-health-kit-workout-activity-type-code-system.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+
+&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;apple-health-kit-workout-activity-type-code-system&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system &lt;code&gt;https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-activity-type-code-system&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;archery&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-archery&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;bowling&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-bowling&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;fencing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-fencing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;gymnastics&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-gymnastics&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;trackAndField&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-trackAndField&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;americanFootball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-americanFootball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;australianFootball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-australianFootball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;baseball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-baseball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;basketball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-basketball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;cricket&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-cricket&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;discSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-discSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;handball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-handball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;hockey&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-hockey&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;lacrosse&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-lacrosse&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;rugby&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-rugby&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;soccer&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-soccer&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;softball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-softball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;volleyball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-volleyball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;preparationAndRecovery&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-preparationAndRecovery&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;flexibility&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-flexibility&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;cooldown&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-cooldown&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;walking&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-walking&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;running&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-running&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;wheelchairWalkPace&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-wheelchairWalkPace&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;wheelchairRunPace&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-wheelchairRunPace&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;cycling&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-cycling&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;handCycling&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-handCycling&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;coreTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-coreTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;elliptical&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-elliptical&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;functionalStrengthTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-functionalStrengthTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;traditionalStrengthTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-traditionalStrengthTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;crossTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-crossTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;mixedCardio&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-mixedCardio&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;highIntensityIntervalTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-highIntensityIntervalTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;jumpRope&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-jumpRope&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;stairClimbing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-stairClimbing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;stairs&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-stairs&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;stepTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-stepTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;fitnessGaming&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-fitnessGaming&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;barre&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-barre&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;cardioDance&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-cardioDance&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;socialDance&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-socialDance&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;yoga&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-yoga&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;mindAndBody&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-mindAndBody&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pilates&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-pilates&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;badminton&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-badminton&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;pickleball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-pickleball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;racquetball&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-racquetball&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;squash&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-squash&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;tableTennis&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-tableTennis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;tennis&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-tennis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;climbing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-climbing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;equestrianSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-equestrianSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;fishing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-fishing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;golf&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-golf&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;hiking&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-hiking&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;hunting&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-hunting&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;play&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-play&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;crossCountrySkiing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-crossCountrySkiing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;curling&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-curling&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;downhillSkiing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-downhillSkiing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;snowSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-snowSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;snowboarding&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-snowboarding&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;skatingSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-skatingSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;paddleSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-paddleSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;rowing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-rowing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;sailing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-sailing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;surfingSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-surfingSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;swimming&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-swimming&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;waterFitness&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-waterFitness&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;waterPolo&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-waterPolo&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;waterSports&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-waterSports&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;boxing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-boxing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;kickboxing&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-kickboxing&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;martialArts&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-martialArts&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;taiChi&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-taiChi&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;wrestling&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-wrestling&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;other&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-other&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;dance&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-dance&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;depreciated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;danceInspiredTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-danceInspiredTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;depreciated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;mixedMetabolicCardioTraining&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-mixedMetabolicCardioTraining&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;depreciated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;swimBikeRun&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-swimBikeRun&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;transition&lt;a name=&quot;apple-health-kit-workout-activity-type-code-system-transition&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-activity-type-code-system&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.4.4&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;AppleHEalthKitWorkoutActivityTypeCodeSystem&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Apple HealthKit Workout Activity Type Code System&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-03-03T21:03:08+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MITRE&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MITRE&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://open-health-manager.github.io/standard-patient-health-record-ig&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Code System required for defining workoutActivityType ValueSet&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;83&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;archery&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bowling&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fencing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;gymnastics&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;trackAndField&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;americanFootball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;australianFootball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;baseball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;basketball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cricket&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;discSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;handball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;hockey&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;lacrosse&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rugby&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;soccer&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;softball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;volleyball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;preparationAndRecovery&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;flexibility&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cooldown&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;walking&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;running&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wheelchairWalkPace&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wheelchairRunPace&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cycling&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;handCycling&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;coreTraining&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;elliptical&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;functionalStrengthTraining&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;traditionalStrengthTraining&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;crossTraining&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mixedCardio&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;highIntensityIntervalTraining&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;jumpRope&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;stairClimbing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;stairs&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;stepTraining&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fitnessGaming&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;barre&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cardioDance&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;socialDance&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;yoga&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mindAndBody&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pilates&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;badminton&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pickleball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;racquetball&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;squash&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;tableTennis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;tennis&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;climbing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;equestrianSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fishing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;golf&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;hiking&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;hunting&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;play&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;crossCountrySkiing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;curling&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;downhillSkiing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;snowSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;snowboarding&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;skatingSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;paddleSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rowing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;sailing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;surfingSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;swimming&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;waterFitness&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;waterPolo&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;waterSports&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;boxing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;kickboxing&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;martialArts&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;taiChi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wrestling&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;dance&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;depreciated&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;danceInspiredTraining&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;depreciated&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mixedMetabolicCardioTraining&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;depreciated&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;swimBikeRun&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;transition&quot;/&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://open-health-manager.github.io/standard-patient-health-record-ig">MITRE</a>.  Package StandardPatientHealthRecordIG#0.4.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 3, 2023 21:03+0000">2023-03-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

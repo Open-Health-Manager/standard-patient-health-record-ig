@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="apple-health-kit-sample-type-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-sample-type-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">category<a name="apple-health-kit-sample-type-code-system-category"> </a></td><td>Apple HK CategorySample</td></tr><tr><td style="white-space:nowrap">quantity<a name="apple-health-kit-sample-type-code-system-quantity"> </a></td><td>Apple HK QuantitySample</td></tr><tr><td style="white-space:nowrap">correlation<a name="apple-health-kit-sample-type-code-system-correlation"> </a></td><td>Apple HK CorrelationSample</td></tr><tr><td style="white-space:nowrap">workout<a name="apple-health-kit-sample-type-code-system-workout"> </a></td><td>Apple HK Workout</td></tr><tr><td style="white-space:nowrap">workoutActivity<a name="apple-health-kit-sample-type-code-system-workoutActivity"> </a></td><td>Apple HK WorkoutActivity</td></tr><tr><td style="white-space:nowrap">other<a name="apple-health-kit-sample-type-code-system-other"> </a></td><td/></tr></table></div>
+  </text>
+  <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-sample-type-code-system"/>
+  <version value="0.4.4"/>
+  <name value="AppleHealthKitSampleTypeCodeSystem"/>
+  <title value="Apple HealthKit Sample Type Code System"/>
+  <status value="active"/>
+  <date value="2023-03-03T21:03:08+00:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://open-health-manager.github.io/standard-patient-health-record-ig"/>
+    </telecom>
+  </contact>
+  <description value="Code System required for defining sampleType ValueSet"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="category"/>
+    <display value="Apple HK CategorySample"/>
+  </concept>
+  <concept>
+    <code value="quantity"/>
+    <display value="Apple HK QuantitySample"/>
+  </concept>
+  <concept>
+    <code value="correlation"/>
+    <display value="Apple HK CorrelationSample"/>
+  </concept>
+  <concept>
+    <code value="workout"/>
+    <display value="Apple HK Workout"/>
+  </concept>
+  <concept>
+    <code value="workoutActivity"/>
+    <display value="Apple HK WorkoutActivity"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+  </concept>
+</CodeSystem>

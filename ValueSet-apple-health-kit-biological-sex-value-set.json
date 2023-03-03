@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "apple-health-kit-biological-sex-value-set",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-apple-health-kit-biological-sex-code-system.html\"><code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system</code></a></li></ul></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-biological-sex-value-set",
+  "version" : "0.4.4",
+  "name" : "AppleHealthKitBiologicalSexValueSet",
+  "title" : "Apple HealthKit Biological Sex Value Set",
+  "status" : "active",
+  "date" : "2023-03-03T21:03:08+00:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+    }]
+  }],
+  "description" : "Apple HealthKit Biological Sex Value Set",
+  "compose" : {
+    "include" : [{
+      "system" : "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system"
+    }]
+  }
+}

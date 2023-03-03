@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-event-type-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apple-health-kit-workout-event-type-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-event-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pause<a name=\"apple-health-kit-workout-event-type-code-system-pause\"> </a></td><td>A constant indicating that the workout has paused.</td></tr><tr><td style=\"white-space:nowrap\">resume<a name=\"apple-health-kit-workout-event-type-code-system-resume\"> </a></td><td>A constant indicating that the workout has resumed.</td></tr><tr><td style=\"white-space:nowrap\">motionPaused<a name=\"apple-health-kit-workout-event-type-code-system-motionPaused\"> </a></td><td>A constant indicating that the system has automatically paused a workout session.</td></tr><tr><td style=\"white-space:nowrap\">motionResumed<a name=\"apple-health-kit-workout-event-type-code-system-motionResumed\"> </a></td><td>A constant indicating that the system has automatically resumed a workout session.</td></tr><tr><td style=\"white-space:nowrap\">pauseOrResumeRequest<a name=\"apple-health-kit-workout-event-type-code-system-pauseOrResumeRequest\"> </a></td><td>A constant indicating that the user has requested a pause or resume.</td></tr><tr><td style=\"white-space:nowrap\">lap<a name=\"apple-health-kit-workout-event-type-code-system-lap\"> </a></td><td>A constant indicating a lap.</td></tr><tr><td style=\"white-space:nowrap\">segment<a name=\"apple-health-kit-workout-event-type-code-system-segment\"> </a></td><td>A constant indicating a period of time of interest during a workout.</td></tr><tr><td style=\"white-space:nowrap\">marker<a name=\"apple-health-kit-workout-event-type-code-system-marker\"> </a></td><td>A constant indicating a point of interest during a workout session.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-event-type-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.4"] ; # 
+  fhir:name [ fhir:v "AppleHealthKitWorkoutEventTypeCodeSystem"] ; # 
+  fhir:title [ fhir:v "Apple HealthKit Workout Event Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-03T21:03:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System required for defining workout event type ValueSet"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pause" ] ;
+     fhir:display [ fhir:v "A constant indicating that the workout has paused." ]
+  ] [
+     fhir:code [ fhir:v "resume" ] ;
+     fhir:display [ fhir:v "A constant indicating that the workout has resumed." ]
+  ] [
+     fhir:code [ fhir:v "motionPaused" ] ;
+     fhir:display [ fhir:v "A constant indicating that the system has automatically paused a workout session." ]
+  ] [
+     fhir:code [ fhir:v "motionResumed" ] ;
+     fhir:display [ fhir:v "A constant indicating that the system has automatically resumed a workout session." ]
+  ] [
+     fhir:code [ fhir:v "pauseOrResumeRequest" ] ;
+     fhir:display [ fhir:v "A constant indicating that the user has requested a pause or resume." ]
+  ] [
+     fhir:code [ fhir:v "lap" ] ;
+     fhir:display [ fhir:v "A constant indicating a lap." ]
+  ] [
+     fhir:code [ fhir:v "segment" ] ;
+     fhir:display [ fhir:v "A constant indicating a period of time of interest during a workout." ]
+  ] [
+     fhir:code [ fhir:v "marker" ] ;
+     fhir:display [ fhir:v "A constant indicating a point of interest during a workout session." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

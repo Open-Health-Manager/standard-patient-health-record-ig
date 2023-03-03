@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="apple-health-kit-workout-event-type-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-event-type-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">pause<a name="apple-health-kit-workout-event-type-code-system-pause"> </a></td><td>A constant indicating that the workout has paused.</td></tr><tr><td style="white-space:nowrap">resume<a name="apple-health-kit-workout-event-type-code-system-resume"> </a></td><td>A constant indicating that the workout has resumed.</td></tr><tr><td style="white-space:nowrap">motionPaused<a name="apple-health-kit-workout-event-type-code-system-motionPaused"> </a></td><td>A constant indicating that the system has automatically paused a workout session.</td></tr><tr><td style="white-space:nowrap">motionResumed<a name="apple-health-kit-workout-event-type-code-system-motionResumed"> </a></td><td>A constant indicating that the system has automatically resumed a workout session.</td></tr><tr><td style="white-space:nowrap">pauseOrResumeRequest<a name="apple-health-kit-workout-event-type-code-system-pauseOrResumeRequest"> </a></td><td>A constant indicating that the user has requested a pause or resume.</td></tr><tr><td style="white-space:nowrap">lap<a name="apple-health-kit-workout-event-type-code-system-lap"> </a></td><td>A constant indicating a lap.</td></tr><tr><td style="white-space:nowrap">segment<a name="apple-health-kit-workout-event-type-code-system-segment"> </a></td><td>A constant indicating a period of time of interest during a workout.</td></tr><tr><td style="white-space:nowrap">marker<a name="apple-health-kit-workout-event-type-code-system-marker"> </a></td><td>A constant indicating a point of interest during a workout session.</td></tr></table></div>
+  </text>
+  <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-event-type-code-system"/>
+  <version value="0.4.4"/>
+  <name value="AppleHealthKitWorkoutEventTypeCodeSystem"/>
+  <title value="Apple HealthKit Workout Event Type Code System"/>
+  <status value="active"/>
+  <date value="2023-03-03T21:03:08+00:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://open-health-manager.github.io/standard-patient-health-record-ig"/>
+    </telecom>
+  </contact>
+  <description value="Code System required for defining workout event type ValueSet"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="pause"/>
+    <display value="A constant indicating that the workout has paused."/>
+  </concept>
+  <concept>
+    <code value="resume"/>
+    <display value="A constant indicating that the workout has resumed."/>
+  </concept>
+  <concept>
+    <code value="motionPaused"/>
+    <display value="A constant indicating that the system has automatically paused a workout session."/>
+  </concept>
+  <concept>
+    <code value="motionResumed"/>
+    <display value="A constant indicating that the system has automatically resumed a workout session."/>
+  </concept>
+  <concept>
+    <code value="pauseOrResumeRequest"/>
+    <display value="A constant indicating that the user has requested a pause or resume."/>
+  </concept>
+  <concept>
+    <code value="lap"/>
+    <display value="A constant indicating a lap."/>
+  </concept>
+  <concept>
+    <code value="segment"/>
+    <display value="A constant indicating a period of time of interest during a workout."/>
+  </concept>
+  <concept>
+    <code value="marker"/>
+    <display value="A constant indicating a point of interest during a workout session."/>
+  </concept>
+</CodeSystem>

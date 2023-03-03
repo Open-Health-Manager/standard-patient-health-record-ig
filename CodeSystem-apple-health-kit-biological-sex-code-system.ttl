@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apple-health-kit-biological-sex-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">notSet<a name=\"apple-health-kit-biological-sex-code-system-notSet\"> </a></td><td>A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type.</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"apple-health-kit-biological-sex-code-system-female\"> </a></td><td>A constant indicating that the user is female.</td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"apple-health-kit-biological-sex-code-system-male\"> </a></td><td>A constant indicating that the user is male.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"apple-health-kit-biological-sex-code-system-other\"> </a></td><td>A constant indicating that the user is otherwise not categorized as either male or female.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.4"] ; # 
+  fhir:name [ fhir:v "AppleHealthKitBiologicalSexCodeSystem"] ; # 
+  fhir:title [ fhir:v "Apple HealthKit Biological Sex Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-03T21:03:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Constants indicating the user’s sex."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "notSet" ] ;
+     fhir:display [ fhir:v "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type." ]
+  ] [
+     fhir:code [ fhir:v "female" ] ;
+     fhir:display [ fhir:v "A constant indicating that the user is female." ]
+  ] [
+     fhir:code [ fhir:v "male" ] ;
+     fhir:display [ fhir:v "A constant indicating that the user is male." ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "A constant indicating that the user is otherwise not categorized as either male or female." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
