@@ -6,6 +6,7 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | --------------------- | --------  | :-------- | :-------- | 
 | [Bulk Data Export](https://build.fhir.org/ig/HL7/bulk-data/export.html) | Medical Records | NOT APPLICABLE | MUST |
 | [Record Lifecycle](https://build.fhir.org/ig/HL7/ehrs-rle-ig/) | Medical Records | NOT APPLICABLE | MUST |
+| [Patient Data Receipt](https://open-health-manager.github.io/patient-data-receipt-ig/) | Medical Records | NOT APPLICABLE | SHOULD |
 | [PHR-S Functional Model](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88)  |  | SHOULD | MAY |
 | [Argonaut Data Query](http://www.fhir.org/guides/argonaut/r2/) | Internal Medicine  | SHOULD | SHOULD |
 | [Argonaut Data Write](https://hackmd.io/@erichaas/rJVqJGmeY/%2FwTGb4Gk6R6O4NVut5yaJig) | Internal Medicine  | SHOULD | SHOULD |
@@ -39,5 +40,7 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [Patient Health Devices](http://hl7.org/fhir/uv/phd/2019May/) |   | MAY | MAY |
 | [Da Vinci - Prior Authorization](http://hl7.org/fhir/us/davinci-pas/) |   | MAY | MAY |
 | [Vital Records -  Birth and Fetal Death Reporting](http://hl7.org/fhir/us/bfdr/artifacts.html) |   | MAY | MAY |
+
+
 
 

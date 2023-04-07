@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-biological-sex-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">notSet<a name=\"apple-health-kit-biological-sex-code-system-notSet\"> </a></td><td>A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type.</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"apple-health-kit-biological-sex-code-system-female\"> </a></td><td>A constant indicating that the user is female.</td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"apple-health-kit-biological-sex-code-system-male\"> </a></td><td>A constant indicating that the user is male.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"apple-health-kit-biological-sex-code-system-other\"> </a></td><td>A constant indicating that the user is otherwise not categorized as either male or female.</td></tr></table></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system",
+  "version" : "0.4.4",
+  "name" : "AppleHealthKitBiologicalSexCodeSystem",
+  "title" : "Apple HealthKit Biological Sex Code System",
+  "status" : "active",
+  "date" : "2023-04-07T13:44:22-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+    }]
+  }],
+  "description" : "Constants indicating the user’s sex.",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "notSet",
+    "display" : "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type."
+  },
+  {
+    "code" : "female",
+    "display" : "A constant indicating that the user is female."
+  },
+  {
+    "code" : "male",
+    "display" : "A constant indicating that the user is male."
+  },
+  {
+    "code" : "other",
+    "display" : "A constant indicating that the user is otherwise not categorized as either male or female."
+  }]
+}
