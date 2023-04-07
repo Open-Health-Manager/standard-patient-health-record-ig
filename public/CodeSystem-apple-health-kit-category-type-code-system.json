@@ -1,0 +1,220 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-category-type-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-category-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">appleStandHour<a name=\"apple-health-kit-category-type-code-system-appleStandHour\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lowCardioFitnessEvent<a name=\"apple-health-kit-category-type-code-system-lowCardioFitnessEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">menstrualFlow<a name=\"apple-health-kit-category-type-code-system-menstrualFlow\"> </a></td></tr><tr><td style=\"white-space:nowrap\">intermenstrualBleeding<a name=\"apple-health-kit-category-type-code-system-intermenstrualBleeding\"> </a></td></tr><tr><td style=\"white-space:nowrap\">infrequentMenstrualCycles<a name=\"apple-health-kit-category-type-code-system-infrequentMenstrualCycles\"> </a></td></tr><tr><td style=\"white-space:nowrap\">irregularMenstrualCycles<a name=\"apple-health-kit-category-type-code-system-irregularMenstrualCycles\"> </a></td></tr><tr><td style=\"white-space:nowrap\">persistentIntermenstrualBleeding<a name=\"apple-health-kit-category-type-code-system-persistentIntermenstrualBleeding\"> </a></td></tr><tr><td style=\"white-space:nowrap\">prolongedMenstrualPeriods<a name=\"apple-health-kit-category-type-code-system-prolongedMenstrualPeriods\"> </a></td></tr><tr><td style=\"white-space:nowrap\">cervicalMucusQuality<a name=\"apple-health-kit-category-type-code-system-cervicalMucusQuality\"> </a></td></tr><tr><td style=\"white-space:nowrap\">ovulationTestResult<a name=\"apple-health-kit-category-type-code-system-ovulationTestResult\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sexualActivity<a name=\"apple-health-kit-category-type-code-system-sexualActivity\"> </a></td></tr><tr><td style=\"white-space:nowrap\">contraceptive<a name=\"apple-health-kit-category-type-code-system-contraceptive\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pregnancy<a name=\"apple-health-kit-category-type-code-system-pregnancy\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pregnancyTestResult<a name=\"apple-health-kit-category-type-code-system-pregnancyTestResult\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lactation<a name=\"apple-health-kit-category-type-code-system-lactation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">environmentalAudioExposureEvent<a name=\"apple-health-kit-category-type-code-system-environmentalAudioExposureEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">headphoneAudioExposureEvent<a name=\"apple-health-kit-category-type-code-system-headphoneAudioExposureEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">audioExposureEvent<a name=\"apple-health-kit-category-type-code-system-audioExposureEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lowHeartRateEvent<a name=\"apple-health-kit-category-type-code-system-lowHeartRateEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">highHeartRateEvent<a name=\"apple-health-kit-category-type-code-system-highHeartRateEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">irregularHeartRhythmEvent<a name=\"apple-health-kit-category-type-code-system-irregularHeartRhythmEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">appleWalkingSteadinessEvent<a name=\"apple-health-kit-category-type-code-system-appleWalkingSteadinessEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">abdominalCramps<a name=\"apple-health-kit-category-type-code-system-abdominalCramps\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bloating<a name=\"apple-health-kit-category-type-code-system-bloating\"> </a></td></tr><tr><td style=\"white-space:nowrap\">constipation<a name=\"apple-health-kit-category-type-code-system-constipation\"> </a></td></tr><tr><td style=\"white-space:nowrap\">diarrhea<a name=\"apple-health-kit-category-type-code-system-diarrhea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">heartburn<a name=\"apple-health-kit-category-type-code-system-heartburn\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nausea<a name=\"apple-health-kit-category-type-code-system-nausea\"> </a></td></tr><tr><td style=\"white-space:nowrap\">vomiting<a name=\"apple-health-kit-category-type-code-system-vomiting\"> </a></td></tr><tr><td style=\"white-space:nowrap\">appetiteChanges<a name=\"apple-health-kit-category-type-code-system-appetiteChanges\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chills<a name=\"apple-health-kit-category-type-code-system-chills\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dizziness<a name=\"apple-health-kit-category-type-code-system-dizziness\"> </a></td></tr><tr><td style=\"white-space:nowrap\">fainting<a name=\"apple-health-kit-category-type-code-system-fainting\"> </a></td></tr><tr><td style=\"white-space:nowrap\">fatigue<a name=\"apple-health-kit-category-type-code-system-fatigue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">fever<a name=\"apple-health-kit-category-type-code-system-fever\"> </a></td></tr><tr><td style=\"white-space:nowrap\">generalizedBodyAche<a name=\"apple-health-kit-category-type-code-system-generalizedBodyAche\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hotFlashes<a name=\"apple-health-kit-category-type-code-system-hotFlashes\"> </a></td></tr><tr><td style=\"white-space:nowrap\">chestTightnessOrPain<a name=\"apple-health-kit-category-type-code-system-chestTightnessOrPain\"> </a></td></tr><tr><td style=\"white-space:nowrap\">coughing<a name=\"apple-health-kit-category-type-code-system-coughing\"> </a></td></tr><tr><td style=\"white-space:nowrap\">rapidPoundingOrFlutteringHeartbeat<a name=\"apple-health-kit-category-type-code-system-rapidPoundingOrFlutteringHeartbeat\"> </a></td></tr><tr><td style=\"white-space:nowrap\">shortnessOfBreath<a name=\"apple-health-kit-category-type-code-system-shortnessOfBreath\"> </a></td></tr><tr><td style=\"white-space:nowrap\">skippedHeartbeat<a name=\"apple-health-kit-category-type-code-system-skippedHeartbeat\"> </a></td></tr><tr><td style=\"white-space:nowrap\">wheezing<a name=\"apple-health-kit-category-type-code-system-wheezing\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lowerBackPain<a name=\"apple-health-kit-category-type-code-system-lowerBackPain\"> </a></td></tr><tr><td style=\"white-space:nowrap\">headache<a name=\"apple-health-kit-category-type-code-system-headache\"> </a></td></tr><tr><td style=\"white-space:nowrap\">memoryLapse<a name=\"apple-health-kit-category-type-code-system-memoryLapse\"> </a></td></tr><tr><td style=\"white-space:nowrap\">moodChanges<a name=\"apple-health-kit-category-type-code-system-moodChanges\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lossOfSmell<a name=\"apple-health-kit-category-type-code-system-lossOfSmell\"> </a></td></tr><tr><td style=\"white-space:nowrap\">lossOfTaste<a name=\"apple-health-kit-category-type-code-system-lossOfTaste\"> </a></td></tr><tr><td style=\"white-space:nowrap\">runnyNose<a name=\"apple-health-kit-category-type-code-system-runnyNose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">soreThroat<a name=\"apple-health-kit-category-type-code-system-soreThroat\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sinusCongestion<a name=\"apple-health-kit-category-type-code-system-sinusCongestion\"> </a></td></tr><tr><td style=\"white-space:nowrap\">breastPain<a name=\"apple-health-kit-category-type-code-system-breastPain\"> </a></td></tr><tr><td style=\"white-space:nowrap\">pelvicPain<a name=\"apple-health-kit-category-type-code-system-pelvicPain\"> </a></td></tr><tr><td style=\"white-space:nowrap\">vaginalDryness<a name=\"apple-health-kit-category-type-code-system-vaginalDryness\"> </a></td></tr><tr><td style=\"white-space:nowrap\">acne<a name=\"apple-health-kit-category-type-code-system-acne\"> </a></td></tr><tr><td style=\"white-space:nowrap\">drySkin<a name=\"apple-health-kit-category-type-code-system-drySkin\"> </a></td></tr><tr><td style=\"white-space:nowrap\">hairLoss<a name=\"apple-health-kit-category-type-code-system-hairLoss\"> </a></td></tr><tr><td style=\"white-space:nowrap\">nightSweats<a name=\"apple-health-kit-category-type-code-system-nightSweats\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sleepChanges<a name=\"apple-health-kit-category-type-code-system-sleepChanges\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bladderIncontinence<a name=\"apple-health-kit-category-type-code-system-bladderIncontinence\"> </a></td></tr><tr><td style=\"white-space:nowrap\">sleepAnalysis<a name=\"apple-health-kit-category-type-code-system-sleepAnalysis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">mindfulSession<a name=\"apple-health-kit-category-type-code-system-mindfulSession\"> </a></td></tr><tr><td style=\"white-space:nowrap\">toothbrushingEvent<a name=\"apple-health-kit-category-type-code-system-toothbrushingEvent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">handwashingEvent<a name=\"apple-health-kit-category-type-code-system-handwashingEvent\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-category-type-code-system",
+  "version" : "0.4.4",
+  "name" : "AppleHealthKitCategoryTypeCodeSystem",
+  "title" : "Apple HealthKit Category Type Code System",
+  "status" : "active",
+  "date" : "2023-04-07T13:44:22-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+    }]
+  }],
+  "description" : "HKCategoryTypeIdentifier - Identifiers for creating category types.",
+  "content" : "complete",
+  "count" : 65,
+  "concept" : [{
+    "code" : "appleStandHour"
+  },
+  {
+    "code" : "lowCardioFitnessEvent"
+  },
+  {
+    "code" : "menstrualFlow"
+  },
+  {
+    "code" : "intermenstrualBleeding"
+  },
+  {
+    "code" : "infrequentMenstrualCycles"
+  },
+  {
+    "code" : "irregularMenstrualCycles"
+  },
+  {
+    "code" : "persistentIntermenstrualBleeding"
+  },
+  {
+    "code" : "prolongedMenstrualPeriods"
+  },
+  {
+    "code" : "cervicalMucusQuality"
+  },
+  {
+    "code" : "ovulationTestResult"
+  },
+  {
+    "code" : "sexualActivity"
+  },
+  {
+    "code" : "contraceptive"
+  },
+  {
+    "code" : "pregnancy"
+  },
+  {
+    "code" : "pregnancyTestResult"
+  },
+  {
+    "code" : "lactation"
+  },
+  {
+    "code" : "environmentalAudioExposureEvent"
+  },
+  {
+    "code" : "headphoneAudioExposureEvent"
+  },
+  {
+    "code" : "audioExposureEvent"
+  },
+  {
+    "code" : "lowHeartRateEvent"
+  },
+  {
+    "code" : "highHeartRateEvent"
+  },
+  {
+    "code" : "irregularHeartRhythmEvent"
+  },
+  {
+    "code" : "appleWalkingSteadinessEvent"
+  },
+  {
+    "code" : "abdominalCramps"
+  },
+  {
+    "code" : "bloating"
+  },
+  {
+    "code" : "constipation"
+  },
+  {
+    "code" : "diarrhea"
+  },
+  {
+    "code" : "heartburn"
+  },
+  {
+    "code" : "nausea"
+  },
+  {
+    "code" : "vomiting"
+  },
+  {
+    "code" : "appetiteChanges"
+  },
+  {
+    "code" : "chills"
+  },
+  {
+    "code" : "dizziness"
+  },
+  {
+    "code" : "fainting"
+  },
+  {
+    "code" : "fatigue"
+  },
+  {
+    "code" : "fever"
+  },
+  {
+    "code" : "generalizedBodyAche"
+  },
+  {
+    "code" : "hotFlashes"
+  },
+  {
+    "code" : "chestTightnessOrPain"
+  },
+  {
+    "code" : "coughing"
+  },
+  {
+    "code" : "rapidPoundingOrFlutteringHeartbeat"
+  },
+  {
+    "code" : "shortnessOfBreath"
+  },
+  {
+    "code" : "skippedHeartbeat"
+  },
+  {
+    "code" : "wheezing"
+  },
+  {
+    "code" : "lowerBackPain"
+  },
+  {
+    "code" : "headache"
+  },
+  {
+    "code" : "memoryLapse"
+  },
+  {
+    "code" : "moodChanges"
+  },
+  {
+    "code" : "lossOfSmell"
+  },
+  {
+    "code" : "lossOfTaste"
+  },
+  {
+    "code" : "runnyNose"
+  },
+  {
+    "code" : "soreThroat"
+  },
+  {
+    "code" : "sinusCongestion"
+  },
+  {
+    "code" : "breastPain"
+  },
+  {
+    "code" : "pelvicPain"
+  },
+  {
+    "code" : "vaginalDryness"
+  },
+  {
+    "code" : "acne"
+  },
+  {
+    "code" : "drySkin"
+  },
+  {
+    "code" : "hairLoss"
+  },
+  {
+    "code" : "nightSweats"
+  },
+  {
+    "code" : "sleepChanges"
+  },
+  {
+    "code" : "bladderIncontinence"
+  },
+  {
+    "code" : "sleepAnalysis"
+  },
+  {
+    "code" : "mindfulSession"
+  },
+  {
+    "code" : "toothbrushingEvent"
+  },
+  {
+    "code" : "handwashingEvent"
+  }]
+}

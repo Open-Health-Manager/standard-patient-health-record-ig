@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="apple-health-kit-characteristic-type-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-characteristic-type-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">biologicalSex<a name="apple-health-kit-characteristic-type-code-system-biologicalSex"> </a></td></tr><tr><td style="white-space:nowrap">dateOfBirth<a name="apple-health-kit-characteristic-type-code-system-dateOfBirth"> </a></td></tr></table></div>
+  </text>
+  <url value="https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-characteristic-type-code-system"/>
+  <version value="0.4.4"/>
+  <name value="AppleHealthKitCharacteristicTypeCodeSystem"/>
+  <title value="Apple HealthKit Characteristic Type Code System"/>
+  <status value="active"/>
+  <date value="2023-04-07T13:44:22-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://open-health-manager.github.io/standard-patient-health-record-ig"/>
+    </telecom>
+  </contact>
+  <description value="The identifiers that create characteristic type objects."/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="biologicalSex"/>
+  </concept>
+  <concept>
+    <code value="dateOfBirth"/>
+  </concept>
+</CodeSystem>

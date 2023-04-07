@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "apple-health-kit-sample-type-value-set",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html\"><code>https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-sample-type-code-system</code></a></li></ul></div>"
+  },
+  "url" : "https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-sample-type-value-set",
+  "version" : "0.4.4",
+  "name" : "AppleHealthKitSampleTypeValueSet",
+  "title" : "Apple HealthKit Sample Type Value Set",
+  "status" : "active",
+  "date" : "2023-04-07T13:44:22-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://open-health-manager.github.io/standard-patient-health-record-ig"
+    }]
+  }],
+  "description" : "Possible values for AppleHealthKitSample.sampleType",
+  "compose" : {
+    "include" : [{
+      "system" : "https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-sample-type-code-system"
+    }]
+  }
+}

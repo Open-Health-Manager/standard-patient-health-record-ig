@@ -1,0 +1,1131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://open-health-manager.github.io/standard-patient-health-record-ig/ImplementationGuide/StandardPatientHealthRecordIG> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StandardPatientHealthRecordIG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>StandardPatientHealthRecordIG</h2><p>The official URL for this implementation guide is: </p><pre>https://open-health-manager.github.io/standard-patient-health-record-ig/ImplementationGuide/StandardPatientHealthRecordIG</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/ImplementationGuide/StandardPatientHealthRecordIG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.4"] ; # 
+  fhir:name [ fhir:v "StandardPatientHealthRecordIG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-04-07T13:44:22-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "StandardPatientHealthRecordIG"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2022+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2022+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/pcd-sleep-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Patient contributed data: sleep observation" ] ;
+       fhir:description [ fhir:v "patient sleep logs recorded by device or app." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrBundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrBundle" ]
+       ] ;
+       fhir:name [ fhir:v "PhrBundle" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the Bundle resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrComposition> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrComposition" ]
+       ] ;
+       fhir:name [ fhir:v "PhrComposition" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the Composition resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrDocumentManifest> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrDocumentManifest" ]
+       ] ;
+       fhir:name [ fhir:v "PhrDocumentManifest" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the DocumentManifest resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrDocumentReference> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrDocumentReference" ]
+       ] ;
+       fhir:name [ fhir:v "PhrDocumentReference" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the DocumentReference resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrMedia> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrMedia" ]
+       ] ;
+       fhir:name [ fhir:v "PhrMedia" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the Media resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrPatient" ]
+       ] ;
+       fhir:name [ fhir:v "PhrPatient" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the Patient resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/PhrProvenance> ;
+         fhir:reference [ fhir:v "StructureDefinition/PhrProvenance" ]
+       ] ;
+       fhir:name [ fhir:v "PhrProvenance" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the Provenance resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-category-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-category-sample" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Category Sample Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKCategorySample." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-correlation-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-correlation-sample" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Correlation Sample Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKCorrelation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-healthstore-characteristic> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-healthstore-characteristic" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit HealthStore Characteristic Logical Model" ] ;
+       fhir:description [ fhir:v "Relevant Data elements that correspond to the CharacteristicType stored in Apple HealthStore." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-object> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-object" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Object Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKObject." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-quantity-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-quantity-sample" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Quantity Sample Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKQuantitySample." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-sample" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Sample Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKSample." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-workout-activity> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-workout-activity" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Activity Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKWorkoutActivity." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-workout-event> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-workout-event" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Event Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKWorkoutEvent." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/apple-health-kit-workout-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/apple-health-kit-workout-sample" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Sample Logical Model" ] ;
+       fhir:description [ fhir:v "Data elements for the Apple HealthKit HKWorkout." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/Environmental> ;
+         fhir:reference [ fhir:v "StructureDefinition/Environmental" ]
+       ] ;
+       fhir:name [ fhir:v "Environmental" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the Environmental resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/NutrientOuttake> ;
+         fhir:reference [ fhir:v "StructureDefinition/NutrientOuttake" ]
+       ] ;
+       fhir:name [ fhir:v "NutrientOuttake" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the NutrientOuttake resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/SocialMedia> ;
+         fhir:reference [ fhir:v "StructureDefinition/SocialMedia" ]
+       ] ;
+       fhir:name [ fhir:v "SocialMedia" ] ;
+       fhir:description [ fhir:v "Standard PHR profile of the SocialMedia resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-biological-sex-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-biological-sex-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Biological Sex Value Set" ] ;
+       fhir:description [ fhir:v "Apple HealthKit Biological Sex Value Set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-category-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-category-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Category Type Value Set" ] ;
+       fhir:description [ fhir:v "A type that identifies samples that contain a value from a small set of possible values." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-characteristic-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-characteristic-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Charactersitic Type Value Set" ] ;
+       fhir:description [ fhir:v "Apple HealthKit Charactersitic Type Value Set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-correlation-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-correlation-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Correlation Type Value Set" ] ;
+       fhir:description [ fhir:v "Possible values for AppleHealthKitSample.correlationType" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-quantity-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-quantity-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Quantity Type Value Set" ] ;
+       fhir:description [ fhir:v "Possible values for AppleHealthKitSample.quantityType" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-sample-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-sample-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Sample Type Value Set" ] ;
+       fhir:description [ fhir:v "Possible values for AppleHealthKitSample.sampleType" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-workout-activity-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-workout-activity-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Activity Type Value Set" ] ;
+       fhir:description [ fhir:v "Possible values for AppleHealthLitSample.workoutActivityType" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/apple-health-kit-workout-event-type-value-set> ;
+         fhir:reference [ fhir:v "ValueSet/apple-health-kit-workout-event-type-value-set" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Event Type Value Set" ] ;
+       fhir:description [ fhir:v "Possible values for AppleHealthKitWorkoutEvent.type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-code> ;
+         fhir:reference [ fhir:v "ValueSet/pcd-sleep-observation-code" ]
+       ] ;
+       fhir:name [ fhir:v "Patient contributed data: sleep observation code" ] ;
+       fhir:description [ fhir:v "This value set includes codes to track patient sleep recorded by device or app" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/ValueSet/pcd-sleep-observation-value> ;
+         fhir:reference [ fhir:v "ValueSet/pcd-sleep-observation-value" ]
+       ] ;
+       fhir:name [ fhir:v "Patient contributed data: sleep stage value" ] ;
+       fhir:description [ fhir:v "This value set includes codes to track patient sleep values recorded by device or app" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-activity-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-workout-activity-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Activity Type Code System" ] ;
+       fhir:description [ fhir:v "Code System required for defining workoutActivityType ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-biological-sex-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-biological-sex-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Biological Sex Code System" ] ;
+       fhir:description [ fhir:v "Constants indicating the user’s sex." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-category-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-category-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Category Type Code System" ] ;
+       fhir:description [ fhir:v "HKCategoryTypeIdentifier - Identifiers for creating category types." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-characteristic-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-characteristic-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Characteristic Type Code System" ] ;
+       fhir:description [ fhir:v "The identifiers that create characteristic type objects." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-correlation-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-correlation-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Correlation Type Code System" ] ;
+       fhir:description [ fhir:v "Code System required for defining correlationType ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-quantity-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-quantity-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Quantity Type Code System" ] ;
+       fhir:description [ fhir:v "Code System required for defining quantityType ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-sample-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-sample-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Sample Type Code System" ] ;
+       fhir:description [ fhir:v "Code System required for defining sampleType ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/CodeSystem/apple-health-kit-workout-event-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/apple-health-kit-workout-event-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Apple HealthKit Workout Event Type Code System" ] ;
+       fhir:description [ fhir:v "Code System required for defining workout event type ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/Observation/PCDSleepObservation-duration-example> ;
+         fhir:reference [ fhir:v "Observation/PCDSleepObservation-duration-example" ]
+       ] ;
+       fhir:name [ fhir:v "PCDSleepObservation-duration-example" ] ;
+       fhir:description [ fhir:v "Example - pcd-sleep-observation duration" ] ;
+       fhir:example [
+         fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation"^^xsd:anyURI ;
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/Observation/PCDSleepObservation-stage-example> ;
+         fhir:reference [ fhir:v "Observation/PCDSleepObservation-stage-example" ]
+       ] ;
+       fhir:name [ fhir:v "PCDSleepObservation-stage-example" ] ;
+       fhir:description [ fhir:v "Example - pcd-sleep-observation stage" ] ;
+       fhir:example [
+         fhir:v "https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation"^^xsd:anyURI ;
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureDefinition/pcd-sleep-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://open-health-manager.github.io/standard-patient-health-record-ig/StructureMap/HKCategorySamplePregnancyToObservation> ;
+         fhir:reference [ fhir:v "StructureMap/HKCategorySamplePregnancyToObservation" ]
+       ] ;
+       fhir:name [ fhir:v "HKCategorySamplePregnancyToObservation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Getting Started" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "recordkeeping.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "recordkeeping.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Record Keeping" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "conformance.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "conformance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Conformance Recommendations" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "datamodel.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "datamodel.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Data Model" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "functionality.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "functionality.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Functional Model" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "recordlifecycle.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "recordlifecycle.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Record Lifecycle" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "security.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "security.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Security" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "history.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "history.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "History" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "physiology.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "physiology.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Physiology Simulations" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "personas.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "personas.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Personas" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "persona-william.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "persona-william.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "William Sim" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "personas-index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "personas-index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Personas" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
