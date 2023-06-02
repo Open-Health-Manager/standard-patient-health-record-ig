@@ -12,10 +12,6 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/) | Primary Care | SHOULD | MAY |
 | [Argonaut Clinical Notes](http://fhir.org/guides/argonaut/clinicalnotes/) | Primary Care  | SHOULD | MAY |
 | [Argonaut Questionnaire](http://fhir.org/guides/argonaut/questionnaire/) |   | SHOULD | MAY |
-
-
-
-
 | [Patient Request for Corrections](https://build.fhir.org/ig/HL7/fhir-patient-correction/) |   | SHOULD | MAY |
 | [International Patient Summary](http://hl7.org/fhir/uv/ips/) |   | SHOULD | MAY |
 | [US CORE](https://www.hl7.org/fhir/us/core/) |   | SHOULD | MAY |
