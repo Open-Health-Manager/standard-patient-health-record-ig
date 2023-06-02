@@ -4,7 +4,7 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 
 | Implementation Guide  | Specialty | Resources | APIs |
 | --------------------- | --------  | :-------- | :-------- | 
-| [Bulk Data Export](https://build.fhir.org/ig/HL7/bulk-data/export.html) | Medical Records | NOT APPLICABLE | MUST |
+| [Electronic Health Information Export API](https://build.fhir.org/ig/argonautproject/ehi-api/) |   | SHOULD | MUST |
 | [Record Lifecycle](https://build.fhir.org/ig/HL7/ehrs-rle-ig/) | Medical Records | NOT APPLICABLE | MUST |
 | [PHR-S Functional Model](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=88)  |  | SHOULD | MAY |
 | [Argonaut Data Query](http://www.fhir.org/guides/argonaut/r2/) | Internal Medicine  | SHOULD | SHOULD |
@@ -12,6 +12,10 @@ In this specification, the key words “MUST”, “MUST NOT”, “REQUIRED”,
 | [Argonaut Scheduling](http://fhir.org/guides/argonaut/scheduling/) | Primary Care | SHOULD | MAY |
 | [Argonaut Clinical Notes](http://fhir.org/guides/argonaut/clinicalnotes/) | Primary Care  | SHOULD | MAY |
 | [Argonaut Questionnaire](http://fhir.org/guides/argonaut/questionnaire/) |   | SHOULD | MAY |
+
+
+
+
 | [Patient Request for Corrections](https://build.fhir.org/ig/HL7/fhir-patient-correction/) |   | SHOULD | MAY |
 | [International Patient Summary](http://hl7.org/fhir/uv/ips/) |   | SHOULD | MAY |
 | [US CORE](https://www.hl7.org/fhir/us/core/) |   | SHOULD | MAY |
