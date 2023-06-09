@@ -23,7 +23,7 @@ As such, this implementation guide recommends that implementors treat storage in
 
 #### Meta Data
 
-The `.sphr ` container should contain two meta data files.  One of these files is a Composition record, which acts like the 'cover page' of the bundle.  This record records ownership, versioning, and various other data elements necessary for parsing the record.  The second file is a DocumentManifest file, which acts as a manifest and table of contents of the container.
+The `.sphr ` container should contain two meta data files.  One of these files is a Composition record, which acts like the 'cover page' of the bundle.  This record records ownership, versioning, and various other data elements necessary for parsing the record.  The second file is an International Patient Summary file, which acts as a manifest and table of contents of critical documents in the record.  
 
 
 #### Compression  
