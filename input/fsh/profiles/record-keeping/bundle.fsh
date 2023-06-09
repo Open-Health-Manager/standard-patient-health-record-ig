@@ -13,17 +13,20 @@ Description: "Standard PHR profile of the Bundle resource."
 * entry ^slicing.ordered = false   // can be omitted, since false is the default
 * entry ^slicing.description = "Slice based on the entry.resource pattern"
 
+// 2023-06-09  we may need to change cardinality on IPA; TBD
+// question:  can a record have multiple IPAs? 
+
 * entry contains 
     primaryPatientResource 1..* MS and
     coverPage 1..1 MS and
-    tableOfContents 1..1 MS and
+    internationalPatientSummary 0..* MS and
     documentReferences 1..* MS and
     mediaReferences 1..* MS and
     provenanceRecords 1..* MS
 
 * entry[primaryPatientResource].resource only Patient
 * entry[coverPage].resource only Composition
-* entry[tableOfContents].resource only DocumentManifest
+* entry[internationalPatientSummary].resource only Composition
 * entry[documentReferences].resource only DocumentReference
 * entry[mediaReferences].resource only Media
 * entry[provenanceRecords].resource only Provenance
