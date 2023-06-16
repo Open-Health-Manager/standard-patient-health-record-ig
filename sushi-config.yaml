@@ -89,7 +89,13 @@ menu:
   # Patient Personas: personas.html
   Patient Personas:
     Index: personas-index.html
-    Pediatric Cancer: persona-william.html
+    Cancer - Adult: persona-journey-b.html
+    Cancer - Pediatric: persona-william.html
+    Chronic Illness (Lupus): persona-journey-e.html
+    Long COVID: persona-journey-d.html
+    Patient Relocation: persona-journey-a.html
+    Sports Outpatient / Cardiac: persona-journey-c.html
+
   Artifacts: artifacts.html
 
 pages:
@@ -115,6 +121,16 @@ pages:
     title: Patient Personas
   persona-william.md:
     title: William Sim
+  persona-journey-a.md:
+    title: Anne
+  persona-journey-b.md:
+    title: Earl
+  persona-journey-c.md:
+    title: Markus
+  persona-journey-d.md:
+    title: Wilma
+  persona-journey-e.md:
+    title: Marcella
   personas-index.md:
     title: Patient Personas
 

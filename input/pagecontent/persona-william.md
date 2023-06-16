@@ -3,7 +3,8 @@
 
 | Patient ID | PatientName   | Primary Diagnosis  | .phr | .sphr |
 | ------------- | :-------- | :-------- | :-------- | :-------- | 
-| wsim001 | William Sim | wsim001 | [WilliamSim.phr](WilliamSim.phr) |  [WilliamSim.sphr](WilliamSim.sphr) | 
+
+
 
 ### Narrative History
 
