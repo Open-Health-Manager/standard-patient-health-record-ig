@@ -17,8 +17,8 @@ sushi --help
 
 ```shell
 # get a copy of the source code
-git clone https://github.com/Open-Health-Manager/standard-patient-health-record-ig
-cd fhir-directory-attestation
+git clone https://github.com/HL7/personal-health-record-format-ig
+cd standard-patient-health-record-ig
 ```
 
 
