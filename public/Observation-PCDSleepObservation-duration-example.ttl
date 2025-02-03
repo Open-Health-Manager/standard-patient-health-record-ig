@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/phr/Observation/PCDSleepObservation-duration-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PCDSleepObservation-duration-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/pcd-sleep-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/pcd-sleep-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PCDSleepObservation-duration-example</b></p><a name=\"PCDSleepObservation-duration-example\"> </a><a name=\"hcPCDSleepObservation-duration-example\"> </a><a name=\"PCDSleepObservation-duration-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 93832-4}\">Sleep duration</span></p><p><b>subject</b>: Jane Smith</p><p><b>effective</b>: 2022-10-08 09:57:34+0000</p><p><b>performer</b>: Jane Smith</p><p><b>value</b>: 9 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:93832-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "93832-4" ] ;
+       fhir:display [ fhir:v "Sleep duration" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "Jane Smith" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-10-08T09:57:34.2112Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:display [ fhir:v "Jane Smith" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "9"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "h" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

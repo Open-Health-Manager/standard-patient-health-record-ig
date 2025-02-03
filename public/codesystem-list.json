@@ -1,0 +1,68 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitBiologicalSexCodeSystem",
+      "title" : "Apple HealthKit Biological Sex Code System",
+      "description" : "Constants indicating the user’s sex."
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitCategoryTypeCodeSystem",
+      "title" : "Apple HealthKit Category Type Code System",
+      "description" : "HKCategoryTypeIdentifier - Identifiers for creating category types."
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitCharacteristicTypeCodeSystem",
+      "title" : "Apple HealthKit Characteristic Type Code System",
+      "description" : "The identifiers that create characteristic type objects."
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitCorrelationTypeCodeSystem",
+      "title" : "Apple HealthKit Correlation Type Code System",
+      "description" : "Code System required for defining correlationType ValueSet"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitQuantityTypeCodeSystem",
+      "title" : "Apple HealthKit Quantity Type Code System",
+      "description" : "Code System required for defining quantityType ValueSet"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitSampleTypeCodeSystem",
+      "title" : "Apple HealthKit Sample Type Code System",
+      "description" : "Code System required for defining sampleType ValueSet"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHEalthKitWorkoutActivityTypeCodeSystem",
+      "title" : "Apple HealthKit Workout Activity Type Code System",
+      "description" : "Code System required for defining workoutActivityType ValueSet"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitWorkoutEventTypeCodeSystem",
+      "title" : "Apple HealthKit Workout Event Type Code System",
+      "description" : "Code System required for defining workout event type ValueSet"
+    }
+  ]
+}

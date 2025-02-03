@@ -1,0 +1,70 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-workout-event-type-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem apple-health-kit-workout-event-type-code-system</b></p><a name=\"apple-health-kit-workout-event-type-code-system\"> </a><a name=\"hcapple-health-kit-workout-event-type-code-system\"> </a><a name=\"apple-health-kit-workout-event-type-code-system-en-US\"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pause<a name=\"apple-health-kit-workout-event-type-code-system-pause\"> </a></td><td>A constant indicating that the workout has paused.</td></tr><tr><td style=\"white-space:nowrap\">resume<a name=\"apple-health-kit-workout-event-type-code-system-resume\"> </a></td><td>A constant indicating that the workout has resumed.</td></tr><tr><td style=\"white-space:nowrap\">motionPaused<a name=\"apple-health-kit-workout-event-type-code-system-motionPaused\"> </a></td><td>A constant indicating that the system has automatically paused a workout session.</td></tr><tr><td style=\"white-space:nowrap\">motionResumed<a name=\"apple-health-kit-workout-event-type-code-system-motionResumed\"> </a></td><td>A constant indicating that the system has automatically resumed a workout session.</td></tr><tr><td style=\"white-space:nowrap\">pauseOrResumeRequest<a name=\"apple-health-kit-workout-event-type-code-system-pauseOrResumeRequest\"> </a></td><td>A constant indicating that the user has requested a pause or resume.</td></tr><tr><td style=\"white-space:nowrap\">lap<a name=\"apple-health-kit-workout-event-type-code-system-lap\"> </a></td><td>A constant indicating a lap.</td></tr><tr><td style=\"white-space:nowrap\">segment<a name=\"apple-health-kit-workout-event-type-code-system-segment\"> </a></td><td>A constant indicating a period of time of interest during a workout.</td></tr><tr><td style=\"white-space:nowrap\">marker<a name=\"apple-health-kit-workout-event-type-code-system-marker\"> </a></td><td>A constant indicating a point of interest during a workout session.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pe"
+  }],
+  "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+  "version" : "1.0.0-ballot",
+  "name" : "AppleHealthKitWorkoutEventTypeCodeSystem",
+  "title" : "Apple HealthKit Workout Event Type Code System",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-18T11:20:50-06:00",
+  "publisher" : "HL7 International / Patient Empowerment",
+  "contact" : [{
+    "name" : "HL7 International / Patient Empowerment",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/patientempowerment"
+    }]
+  }],
+  "description" : "Code System required for defining workout event type ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "pause",
+    "display" : "A constant indicating that the workout has paused."
+  },
+  {
+    "code" : "resume",
+    "display" : "A constant indicating that the workout has resumed."
+  },
+  {
+    "code" : "motionPaused",
+    "display" : "A constant indicating that the system has automatically paused a workout session."
+  },
+  {
+    "code" : "motionResumed",
+    "display" : "A constant indicating that the system has automatically resumed a workout session."
+  },
+  {
+    "code" : "pauseOrResumeRequest",
+    "display" : "A constant indicating that the user has requested a pause or resume."
+  },
+  {
+    "code" : "lap",
+    "display" : "A constant indicating a lap."
+  },
+  {
+    "code" : "segment",
+    "display" : "A constant indicating a period of time of interest during a workout."
+  },
+  {
+    "code" : "marker",
+    "display" : "A constant indicating a point of interest during a workout session."
+  }]
+}

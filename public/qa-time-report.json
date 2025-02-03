@@ -1,0 +1,2186 @@
+{
+  "date" : "Wed, 18 Dec, 2024 11:20:50 -0600",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.phr.json",
+      "size" : 19211,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 8
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 179
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 531
+        },
+        {
+          "activity" : "generate1",
+          "start" : 27,
+          "length" : 94
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 93
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-PhrBundle-example.json",
+      "size" : 6392,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 34
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 306
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 43
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 30
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-pdr-message.json",
+      "size" : 7514,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 159
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 27
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-biological-sex-code-system.json",
+      "size" : 1195,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 30
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 33,
+          "length" : 1464
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-category-type-code-system.json",
+      "size" : 3538,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 32
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 59
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-characteristic-type-code-system.json",
+      "size" : 739,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-correlation-type-code-system.json",
+      "size" : 722,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-quantity-type-code-system.json",
+      "size" : 7501,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 45
+        },
+        {
+          "activity" : "generate2",
+          "start" : 34,
+          "length" : 42
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-sample-type-code-system.json",
+      "size" : 1071,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 28
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-workout-activity-type-code-system.json",
+      "size" : 4135,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 36
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-apple-health-kit-workout-event-type-code-system.json",
+      "size" : 1630,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Composition-jane-doe-composition.json",
+      "size" : 1062,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/DocumentReference-jane-doe-genomics-document.json",
+      "size" : 716,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Media-jane-doe-media.json",
+      "size" : 622,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-PCDSleepObservation-duration-example.json",
+      "size" : 643,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-PCDSleepObservation-stage-example.json",
+      "size" : 802,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-jane-doe.json",
+      "size" : 879,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Provenance-jane-doe-media-provenance.json",
+      "size" : 1038,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/SearchParameter-patient-identifier.json",
+      "size" : 622,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/SearchParameter-search-from-date.json",
+      "size" : 471,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitCategorySample.json",
+      "size" : 2016,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 22,
+          "length" : 153
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 487
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 116
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 1636
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitCorrelationSample.json",
+      "size" : 2092,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 22,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 106
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 136
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 524
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitHealthStoreCharacteristic.json",
+      "size" : 2707,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 16
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 22,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 114
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitObject.json",
+      "size" : 11092,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 82
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 181
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 393
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitQuantitySample.json",
+      "size" : 3169,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 22,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 218
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 125
+        },
+        {
+          "activity" : "generate2",
+          "start" : 37,
+          "length" : 491
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitSample.json",
+      "size" : 2585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 39
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 59
+        },
+        {
+          "activity" : "generate1",
+          "start" : 28,
+          "length" : 105
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 275
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutActivity.json",
+      "size" : 2795,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 19
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 139
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 102
+        },
+        {
+          "activity" : "generate2",
+          "start" : 38,
+          "length" : 474
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutEvent.json",
+      "size" : 3500,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 97
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 148
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutSample.json",
+      "size" : 2984,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 20
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 52
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 109
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 308
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-Environmental.json",
+      "size" : 1573,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 29
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 153
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-FinancialReceipt.json",
+      "size" : 2052,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 128
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-NutrientOuttake.json",
+      "size" : 965,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 20
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 37
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 76
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 462
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PhrBundle.json",
+      "size" : 3356,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "scan",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 95
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 178
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 349
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 29,
+          "length" : 622
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 1340
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 22
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 77,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PhrComposition.json",
+      "size" : 1100,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 28
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 105
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 174
+        },
+        {
+          "activity" : "generate2",
+          "start" : 41,
+          "length" : 592
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PhrDocumentReference.json",
+      "size" : 770,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 99
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 130
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 336
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PhrMedia.json",
+      "size" : 674,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 55
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 88
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 231
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PhrPatient.json",
+      "size" : 690,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 83
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 124
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 349
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PhrProvenance.json",
+      "size" : 714,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 19
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 64
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 94
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 211
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-SocialMedia.json",
+      "size" : 873,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 31
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 107
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-pcd-sleep-observation.json",
+      "size" : 1528,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 37
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 128
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 178
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 338
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 6
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 77,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-biological-sex-value-set.json",
+      "size" : 684,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 2566
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-category-type-value-set.json",
+      "size" : 727,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 99
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-characteristic-type-value-set.json",
+      "size" : 714,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 30,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 72
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-correlation-type-value-set.json",
+      "size" : 710,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 71
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-quantity-type-value-set.json",
+      "size" : 692,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 60
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 109
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-sample-type-value-set.json",
+      "size" : 680,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 59
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-workout-activity-type-value-set.json",
+      "size" : 738,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 102
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 51,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-apple-health-kit-workout-event-type-value-set.json",
+      "size" : 714,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 63
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-pcd-sleep-observation-code.json",
+      "size" : 2729,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 63
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-pcd-sleep-observation-value.json",
+      "size" : 2363,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 31,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 60
+        }
+      ]
+    }
+  ]
+}

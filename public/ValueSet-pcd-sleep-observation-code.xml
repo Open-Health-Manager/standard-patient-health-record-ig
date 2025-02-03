@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pcd-sleep-observation-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet pcd-sleep-observation-code</b></p><a name="pcd-sleep-observation-code"> </a><a name="hcpcd-sleep-observation-code"> </a><a name="pcd-sleep-observation-code-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/93831-6/">93831-6</a></td><td>Deep sleep duration</td></tr><tr><td><a href="https://loinc.org/93830-8/">93830-8</a></td><td>Light sleep duration</td></tr><tr><td><a href="https://loinc.org/93829-0/">93829-0</a></td><td>REM sleep duration</td></tr><tr><td><a href="https://loinc.org/93832-4/">93832-4</a></td><td>Sleep duration</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/258158006">258158006</a></td><td>Sleep, function (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pe"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-code"/>
+  <version value="1.0.0-ballot"/>
+  <name value="PCDSleepObservationCode"/>
+  <title value="Patient contributed data: sleep observation code"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-18T11:20:50-06:00"/>
+  <publisher value="HL7 International / Patient Empowerment"/>
+  <contact>
+    <name value="HL7 International / Patient Empowerment"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientempowerment"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes codes to track patient sleep recorded by device or app"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the Creative Commons Attribution 4.0 International Public License. For more information, see SNOMED IPS Terminology.  The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="93831-6"/>
+        <display value="Deep sleep duration"/>
+      </concept>
+      <concept>
+        <code value="93830-8"/>
+        <display value="Light sleep duration"/>
+      </concept>
+      <concept>
+        <code value="93829-0"/>
+        <display value="REM sleep duration"/>
+      </concept>
+      <concept>
+        <code value="93832-4"/>
+        <display value="Sleep duration"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="258158006"/>
+        <display value="Sleep, function (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

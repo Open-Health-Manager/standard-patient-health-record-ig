@@ -1,0 +1,238 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/phr/Bundle/PhrBundle-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PhrBundle-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrBundle"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrBundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:uuid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123e4567-e89b-12d3-a456-426614174000" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-12-11T07:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://example.org/baseR4/Composition/jane-doe-composition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.org/baseR4/Composition/jane-doe-composition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.org/baseR4/Patient/jane-doe"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.org/baseR4/Patient/jane-doe> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.org/baseR4/DocumentReference/jane-doe-genomics-document"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.org/baseR4/DocumentReference/jane-doe-genomics-document> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.org/baseR4/Media/jane-doe-media"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.org/baseR4/Media/jane-doe-media> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.org/baseR4/Provenance/jane-doe-media-provenance"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.org/baseR4/Provenance/jane-doe-media-provenance> )
+  ] ) . # 
+
+<https://example.org/baseR4/Composition/jane-doe-composition> a fhir:Composition ;
+  fhir:id [ fhir:v "jane-doe-composition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Summary of Jane Doe's patient information including name, contact, gender, birth date, and address.</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11503-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11503-0" ] ;
+       fhir:display [ fhir:v "Medical records" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-12-10"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Jane Doe Patient Summary"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Related Documents" ] ;
+     fhir:entry ( [
+       fhir:link <https://example.org/baseR4/DocumentReference/jane-doe-genomics-document> ;
+       fhir:reference [ fhir:v "https://example.org/baseR4/DocumentReference/jane-doe-genomics-document" ]
+     ] [
+       fhir:link <https://example.org/baseR4/Media/jane-doe-media> ;
+       fhir:reference [ fhir:v "https://example.org/baseR4/Media/jane-doe-media" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/uv/phr/Patient/jane-doe> a fhir:uv .
+
+<https://example.org/baseR4/Patient/jane-doe> a fhir:Patient ;
+  fhir:id [ fhir:v "jane-doe"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrPatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Jane Doe Example</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.example.org/patient"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Doe" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-123-4567" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1985-05-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "123 Main St" ] ) ;
+     fhir:city [ fhir:v "Springfield" ] ;
+     fhir:state [ fhir:v "IL" ] ;
+     fhir:postalCode [ fhir:v "62704" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) . # 
+
+<https://example.org/baseR4/DocumentReference/jane-doe-genomics-document> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "jane-doe-genomics-document"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrDocumentReference"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrDocumentReference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_jane-doe-genomics-document\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference jane-doe-genomics-document</b></p><a name=\"jane-doe-genomics-document\"> </a><a name=\"hcjane-doe-genomics-document\"> </a><a name=\"jane-doe-genomics-document-en-US\"> </a><p><b>status</b>: Current</p><p><b>subject</b>: <a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></p><p><b>date</b>: 2024-12-11 05:22:27+0000</p><p><b>author</b>: <a href=\"http://hospital.example.org/Practitioner/123\">Dr. Smith</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"http://hospital.example.org/reports/jane-doe-genomics.pdf\">http://hospital.example.org/reports/jane-doe-genomics.pdf</a></td><td>Genomics Report for Jane Doe</td><td>2024-12-11 05:22:27+0000</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-12-11T05:22:27.249Z"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://hospital.example.org/Practitioner/123> ;
+     fhir:reference [ fhir:v "http://hospital.example.org/Practitioner/123" ] ;
+     fhir:display [ fhir:v "Dr. Smith" ]
+  ] ) ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "http://hospital.example.org/reports/jane-doe-genomics.pdf"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Genomics Report for Jane Doe" ] ;
+       fhir:creation [ fhir:v "2024-12-11T05:22:27.249Z"^^xsd:dateTime ]
+     ]
+  ] ) . # 
+
+<https://example.org/baseR4/Media/jane-doe-media> a fhir:Media ;
+  fhir:id [ fhir:v "jane-doe-media"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Media_jane-doe-media\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Media jane-doe-media</b></p><a name=\"jane-doe-media\"> </a><a name=\"hcjane-doe-media\"> </a><a name=\"jane-doe-media-en-US\"> </a><p><b>status</b>: Completed</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 257444003}\">Photograph</span></p><p><b>subject</b>: <a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></p><p><b>created</b>: 2024-12-11 05:22:27+0000</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"http://hospital.example.org/media/jane-doe-smartphone-photo.jpg\">http://hospital.example.org/media/jane-doe-smartphone-photo.jpg</a></td><td>Jane Doe Smartphone Photo</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:257444003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "257444003" ] ;
+       fhir:display [ fhir:v "Photograph" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ; # 
+  fhir:created [ fhir:v "2024-12-11T05:22:27.249Z"^^xsd:dateTime] ; # 
+  fhir:content [
+     fhir:contentType [ fhir:v "image/jpeg" ] ;
+     fhir:url [ fhir:v "http://hospital.example.org/media/jane-doe-smartphone-photo.jpg"^^xsd:anyURI ] ;
+     fhir:title [ fhir:v "Jane Doe Smartphone Photo" ]
+  ] . # 
+
+<https://example.org/baseR4/Provenance/jane-doe-media-provenance> a fhir:Provenance ;
+  fhir:id [ fhir:v "jane-doe-media-provenance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Provenance_jane-doe-media-provenance\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Provenance jane-doe-media-provenance</b></p><a name=\"jane-doe-media-provenance\"> </a><a name=\"hcjane-doe-media-provenance\"> </a><a name=\"jane-doe-media-provenance-en-US\"> </a><p>Provenance for <a href=\"Media-jane-doe-media.html\">Media: status = completed; type = Photograph; created[x] = 2024-12-11 05:22:27+0000</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2024-12-11 06:00:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td><td><a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://hl7.org/fhir/uv/phr/Media/jane-doe-media> ;
+     fhir:reference [ fhir:v "Media/jane-doe-media" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2024-12-11T06:00:00Z"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "author" ] ;
+         fhir:display [ fhir:v "Author" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+       fhir:reference [ fhir:v "Patient/jane-doe" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+       fhir:reference [ fhir:v "Patient/jane-doe" ]
+     ]
+  ] ) ; # 
+  fhir:signature ( [
+     fhir:type ( [
+       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1.2.840.10065.1.12.1.1" ] ;
+       fhir:display [ fhir:v "Author's Signature" ]
+     ] ) ;
+     fhir:when [ fhir:v "2024-12-11T06:00:00Z"^^xsd:dateTime ] ;
+     fhir:who [
+       fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+       fhir:reference [ fhir:v "Patient/jane-doe" ]
+     ] ;
+     fhir:data [ fhir:v "c2lnbmF0dXJlCg=="^^xsd:base64Binary ]
+  ] ) . # 
+
+<http://hl7.org/fhir/uv/phr/Media/jane-doe-media> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,14 @@
+{
+    "package-id" : "hl7.fhir.uv.phr",
+    "version" : "1.0.0-ballot",
+    "path" : "http://hl7.org/fhir/uv/phr/2025Jan",
+    "mode" : "working",   
+    "status" : "ballot",  
+    "first": true,
+    "sequence" : "STU1",
+    "category": "Personal Healthcare",
+    "ci-build": "https://build.fhir.org/ig/HL7/personal-health-record-format-ig",
+    "title": "Standard Personal Health Record",
+    "introduction": "A specifcation for a standard personal health record file format, for collecting and assembling longitudinal records from multiple EHR vendors",
+    "desc" : "The initial release of this implementation guide."
+}

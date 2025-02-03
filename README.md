@@ -1,7 +1,12 @@
-## Standard Patient Health Record
+## Patient Health Records
 
-[Current Build (Public)](https://open-health-manager.github.io/standard-patient-health-record-ig/)  
+[Current Build (Public)](https://build.fhir.org/ig/HL7/personal-health-record-format-ig/)  
+[Preview Branches](https://build.fhir.org/ig/HL7/personal-health-record-format-ig/branches/)  
+[IG Proposal](https://confluence.hl7.org/display/FHIR/Personal+Health+Records)  
+[Project Confluence Page](https://confluence.hl7.org/display/PE/Standard+Personal+Health+Record+FHIR+IG)  
+[Project Scope Statement](https://jira.hl7.org/browse/PSS-2125) 
 
+Project Insight Number:  1804
 
 ### Prerequisites 
 
@@ -17,7 +22,7 @@ sushi --help
 
 ```shell
 # get a copy of the source code
-git clone https://github.com/Open-Health-Manager/standard-patient-health-record-ig
+git clone https://github.com/HL7/personal-health-record-format-ig
 cd fhir-directory-attestation
 ```
 
@@ -51,3 +56,4 @@ git checkout -b new-branch
 git commit -a -m 'descriptive message'
 git push origin new-branch
 ```
+

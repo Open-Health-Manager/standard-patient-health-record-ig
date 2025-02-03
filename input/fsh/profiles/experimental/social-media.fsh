@@ -5,5 +5,5 @@
 Logical: SocialMedia
 Parent: DomainResource
 Description: "Standard PHR profile of the SocialMedia resource."
-// Usage: #definition
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
 

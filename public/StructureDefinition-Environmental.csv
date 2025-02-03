@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Environmental","Environmental","","","",0,*,"","","","null {[]} {[]}
+","Environmental","Standard PHR profile of the Environmental resource.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Environmental.temperature","Environmental.temperature","","","",1,1,"","","","BackboneElement {[]} {[]}
+","The ambient temperature","The ambient temperature","","","","","","","","","",,,,,"",,,,"Environmental.temperature",1,1,"",""
+"Environmental.humidity","Environmental.humidity","","","",1,1,"","","","BackboneElement {[]} {[]}
+","The ambient humidity","The ambient humidity","","","","","","","","","",,,,,"",,,,"Environmental.humidity",1,1,"",""

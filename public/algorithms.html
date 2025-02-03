@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Algorithms - Personal Health Records v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"21"}
+    h3,h4,h5,h6{--heading-prefix:"21"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Personal Health Records</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - ballot
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Model
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="datamodel.html">Data Model</a>
+      </li>
+      <li>
+        <a href="functionality.html">Functional Model</a>
+      </li>
+      <li>
+        <a href="recordlifecycle.html">Record Lifecycle</a>
+      </li>
+      <li>
+        <a href="security.html">Security</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="recordkeeping.html">Record Keeping</a>
+      </li>
+      <li>
+        <a href="longitudinal.html">Longitudinal Records</a>
+      </li>
+      <li>
+        <a href="api.html">API Endpoints</a>
+      </li>
+      <li>
+        <a href="annotations.html">Annotations</a>
+      </li>
+      <li>
+        <a href="algorithms.html">Algorithms</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Domains</a>
+      </li>
+      <li>
+        <a href="operating-systems.html">Operating Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Patient Personas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="personas-index.html">Index</a>
+      </li>
+      <li>
+        <a href="persona-thompson-family.html">Thompson Familiy</a>
+      </li>
+      <li>
+        <a href="persona-journey-b.html">Cancer - Adult</a>
+      </li>
+      <li>
+        <a href="persona-william.html">Cancer - Pediatric</a>
+      </li>
+      <li>
+        <a href="persona-journey-e.html">Chronic Illness (Lupus)</a>
+      </li>
+      <li>
+        <a href="persona-journey-d.html">Long COVID</a>
+      </li>
+      <li>
+        <a href="persona-journey-a.html">Patient Relocation</a>
+      </li>
+      <li>
+        <a href="persona-journey-c.html">Sports Outpatient / Cardiac</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Algorithms</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Personal Health Records - Local Development build (v1.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/phr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Algorithms</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>The following algorithms are provided for implementors who wish to add advanced functionalities to their PHR implmentations.</p>
+
+<h4 id="quality-control-checks">Quality Control Checks</h4>
+<p>This algorithm is intended as a high-level quality control check for longitudinal records assembled from multiple healthcare systems.</p>
+
+<ol>
+  <li>Data Extraction and Integration: Collect and consolidate data from all relevant EHR sources into a unified repository.</li>
+  <li>Deduplicate Records - Identify and remove duplicate entries to ensure data uniqueness and accuracy.</li>
+  <li>Validate Resource Coherence: Ensure that all data entities and their relationships form a coherent and interconnected graph.</li>
+  <li>Standardize Units of Measure: Convert all observations to consistent units of measure to maintain uniformity across the PHR.</li>
+  <li>Ensure Terminology Consistency: Map and standardize medical terminologies to ensure semantic consistency throughout the record.</li>
+  <li>Validate and Update Formulas: Review and update any derived data or calculated fields to use current and accurate formulas.</li>
+  <li>Mitigate Social Determinate Bias: Analyze and adjust the data to align racial and sex/gender data.</li>
+  <li>Verify Correct Patient Mapping: Confirm that all records are accurately associated with the correct patient using unique identifiers.</li>
+</ol>
+
+<h4 id="normalize-patient-identifiers">Normalize Patient Identifiers</h4>
+<p>The algorithm for normalizing patient identifiers is intended to ensure consistency in patient data across different healthcare systems. This process simplifies the management of a health records, aiming to enhance the accuracy and accessibility of these records.</p>
+
+<ol>
+  <li>Input Validation: Verify that the patient identifier is a valid, non-empty string containing only permitted characters (typically alphanumeric).</li>
+  <li>Standardize Case: Convert the entire identifier to a consistent case (typically lowercase or uppercase) to eliminate variations caused by different capitalization.</li>
+  <li>Remove Extraneous Spaces: Strip all leading, trailing, and unnecessary internal whitespaces from the identifier to ensure uniform formatting.</li>
+  <li>Remove Special Characters: Eliminate any non-standard punctuation, symbols, or formatting characters that could create inconsistencies across different healthcare systems.</li>
+  <li>Apply Standardization Rules: Implement a predefined set of rules to handle common identifier variations, such as:</li>
+  <li>Removing hyphens or other separators
+– Handling different identifier format conventions
+– Resolving potential alias or alternate identifier formats<br />
+– Validation Check: Confirm that the normalized identifier meets predefined length, format, and content requirements for the specific healthcare system.</li>
+  <li>Generate Unique Internal Identifier: If necessary, create a consistent, internal unique identifier.</li>
+  <li>Output: Return the standardized, clean patient identifier ready for use in health record management systems.</li>
+</ol>
+
+<h4 id="longitudinal-chronology-sorting">Longitudinal Chronology (Sorting)</h4>
+<p>This algorithm is intended to organize patient records in chronological order. Its main function is to sort various entries, like doctor's notes and test results, by their dates. This makes it easier to view a patient's medical history over time. By putting the records in order, the algorithm helps doctors and healthcare providers track changes and patterns in a patient's health, supporting more informed medical decisions and analysis. This straightforward approach aims to improve patient care by providing a clearer picture of each patient's medical journey.</p>
+
+<ol>
+  <li>Data Collection: Gather all patient records from various sources, including doctor's notes, test results, medical procedures, and diagnostic reports.</li>
+  <li>Date Extraction: Parse and extract the date information from each medical record, ensuring consistent date format parsing across different document types and potential date representations.</li>
+  <li>Date Validation: Verify the integrity and validity of extracted dates, checking for:
+– Completeness of date information
+– Realistic date ranges
+– Handling of potential data entry errors or incomplete timestamps</li>
+  <li>Sorting Mechanism: Implement a stable sorting algorithm (such as merge sort or TimSort) to arrange records from earliest to latest chronological order, preserving the original metadata of each record.</li>
+  <li>Handle Ambiguous Timestamps: Develop a resolution strategy for records with:
+– Identical dates
+– Partial or imprecise date information
+– Potential conflicts in chronological placement</li>
+  <li>Create Ordered Sequence: Generate a new, sequentially ordered list of patient records that represents the patient's medical history in precise temporal progression.</li>
+  <li>Metadata Preservation: Ensure that each record maintains its original detailed information while being reordered, allowing for comprehensive review of medical history.</li>
+  <li>Output Preparation: Produce a chronologically sorted collection of patient records that can be easily reviewed by healthcare providers for comprehensive medical assessment.</li>
+</ol>
+
+<h4 id="reminders">Reminders</h4>
+<p>This algorithm is intended to send out reminders based on a schedule. It uses a clock to keep track of time and automatically triggers alerts for tasks or events at predetermined times. This tool is designed to be straightforward and user-friendly, helping individuals stay organized and on top of their schedules without the need for manual reminders. By providing timely notifications, it assists in managing daily routines and appointments efficiently.</p>
+
+<ol>
+  <li>Reminder Input: Capture event details including precise timestamp, description, and notification preference.</li>
+  <li>Time Tracking: Continuously monitor system clock against stored reminder timestamps.</li>
+  <li>Trigger Check: Compare current time with scheduled reminders, identifying when an alert should be generated.</li>
+  <li>Notification Dispatch: When time matches, immediately send personalized reminder through preferred communication channel.</li>
+  <li>Recurrence Management: Update recurring reminders by automatically calculating and setting next trigger time after each notification.</li>
+  <li>User Control: Provide basic options to modify, snooze, or delete individual reminders as needed.</li>
+</ol>
+
+<h4 id="summarize-document">Summarize Document</h4>
+<p>This algorithm is intended to summarize patient records by converting them into a clinical text normal form. After this standardization, it then uses large language models to create a narrative text. This process simplifies complex medical data into a more readable format, making it easier for healthcare professionals to quickly understand a patient's history. The algorithm aims to enhance the efficiency of reviewing patient records by providing clear, concise summaries.</p>
+
+<ol>
+  <li>Ingest FHIR-formatted patient records.</li>
+  <li>Apply LLM-driven clinical text normalization to standardize medical terminology and structure.</li>
+  <li>Insert generated narrative summary into {Resource}.text.div field.</li>
+  <li>Gather all text.div narratives.</li>
+  <li>Apply a second round of LLM-driven analysis, and summarize into a coherent narrative summary.</li>
+  <li>Validate summary for clinical accuracy and patient privacy compliance.</li>
+</ol>
+
+<h4 id="gaps-in-care-reporting">Gaps in Care Reporting</h4>
+<p>This algorithm is intended to generate reports on gaps in healthcare, specifically focusing on routine procedures like annual physicals or breast/prostate cancer screenings for middle-aged individuals. This tool scans patient records to identify when these important health checks are due or overdue. By highlighting these gaps, the algorithm assists healthcare providers in ensuring that patients receive timely and necessary medical attention. This approach aims to promote preventive healthcare and early detection, contributing to better health outcomes.</p>
+
+<ol>
+  <li>Define Screening Criteria: Establish standard screening intervals for key health checks based on age, gender, and clinical guidelines.</li>
+  <li>Patient Record Analysis: Scan comprehensive patient records to identify most recent screening dates for each recommended procedure.</li>
+  <li>Gap Identification: Compare patient's last screening date against recommended interval, flagging procedures that are due or overdue.</li>
+  <li>Risk Stratification: Prioritize gaps based on patient age, medical history, and potential health risks.</li>
+  <li>Report Generation: Create a clear, actionable summary highlighting missed or upcoming preventive screenings.</li>
+  <li>Notification Preparation: Generate patient and provider alerts for recommended health interventions.</li>
+</ol>
+
+<h4 id="smart-agents-scuba-etc">Smart Agents (SCUBA, etc)</h4>
+<p>This algorithm is intended to act as a software agent that monitors a resource, such as Oxygen usage by a SCUBA diver. This tool mimics a SCUBA diver's dive computer which monitors the amount of air remaining, but applies this concept to other resources that need tracking. The algorithm provides a utilization metric, alerting users as the resource depletes over time. This functionality is particularly useful in scenarios where managing the usage of a limited resource is critical (i.e. remaining medication reserves), ensuring users are aware of the remaining quantity and can plan accordingly.</p>
+
+<ol>
+  <li>Initialize Resource Parameters: Define total resource quantity, critical threshold, and measurement interval.</li>
+  <li>Continuous Monitoring: Track real-time resource consumption and calculate remaining quantity.</li>
+  <li>Consumption Rate Calculation: Compute utilization velocity and projected depletion time.</li>
+  <li>Alert Generation: Create graduated warning levels as resource approaches critical thresholds.</li>
+  <li>Predictive Projection: Forecast estimated time remaining based on current consumption pattern.</li>
+  <li>User Notification: Dispatch alerts indicating resource status and recommended actions.</li>
+</ol>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientempowerment">HL7 International / Patient Empowerment</a>.  Package hl7.fhir.uv.phr#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 18, 2024 11:20-0600">2024-12-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/phr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

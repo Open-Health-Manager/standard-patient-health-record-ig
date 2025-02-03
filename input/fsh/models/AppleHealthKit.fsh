@@ -3,9 +3,11 @@
 /*                        Logical Models                        * 
 /*--------------------------------------------------------------*/
 Logical:        AppleHealthKitObject
-Id:             apple-health-kit-object
+Id:             AppleHealthKitObject
 Title:          "Apple HealthKit Object Logical Model"
 Description:    "Data elements for the Apple HealthKit HKObject."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^abstract = true
 * ^status = #draft
 * uuid 1..1 string "The universally unique identifier (UUID) for this HealthKit object."
@@ -34,10 +36,12 @@ Description:    "Data elements for the Apple HealthKit HKObject."
 
 
 Logical:        AppleHealthKitSample
-Id:             apple-health-kit-sample
+Id:             AppleHealthKitSample
 Title:          "Apple HealthKit Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKSample."
 Parent:         AppleHealthKitObject
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^abstract = true
 * ^status = #draft
 * startDate 0..1 dateTime "The sample's start date."
@@ -48,10 +52,12 @@ Parent:         AppleHealthKitObject
 
 
 Logical:        AppleHealthKitCategorySample
-Id:             apple-health-kit-category-sample
+Id:             AppleHealthKitCategorySample
 Title:          "Apple HealthKit Category Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCategorySample."
 Parent:         AppleHealthKitSample
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * categoryType 1..1 code "The category type for this sample."
 * categoryType from AppleHealthKitCategoryTypeValueSet (extensible)
@@ -59,10 +65,12 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitQuantitySample
-Id:             apple-health-kit-quantity-sample
+Id:             AppleHealthKitQuantitySample
 Title:          "Apple HealthKit Quantity Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKQuantitySample."
 Parent:         AppleHealthKitSample
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * quantity 1..1 BackboneElement "The quantity for this sample."
 * quantity.unit 0..1 string "The unit string."
@@ -73,10 +81,12 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitCorrelationSample
-Id:             apple-health-kit-correlation-sample
+Id:             AppleHealthKitCorrelationSample
 Title:          "Apple HealthKit Correlation Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKCorrelation."
 Parent:         AppleHealthKitSample
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * correlationType 1..1 code "The type for this correlation."
 * correlationType from AppleHealthKitCorrelationTypeValueSet (extensible)
@@ -84,35 +94,41 @@ Parent:         AppleHealthKitSample
 
 
 Logical:        AppleHealthKitWorkoutSample
-Id:             apple-health-kit-workout-sample
+Id:             AppleHealthKitWorkoutSample
 Title:          "Apple HealthKit Workout Sample Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkout."
 Parent:         AppleHealthKitSample
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * duration 0..1 decimal "The workout duration in number of seconds."
 * workoutActivityType 0..1 code "The sample's workout activity type." "When HKSample is an HKWorkoutActivity, the corresponding workoutActivityType."
 * workoutActivityType from AppleHealthKitWorkoutActivityTypeValueSet (extensible)
-* workoutActivities 0..* Reference(AppleHealthKitWorkoutActivity) "The sample's workout activities." "The sample's workout activities."
-* workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "The sample's workout events." "The sample's workout events, in agreement with workoutActivities."
+* workoutActivities 0..* AppleHealthKitWorkoutActivity "The sample's workout activities." "The sample's workout activities."
+* workoutEvents 0..* AppleHealthKitWorkoutEvent "The sample's workout events." "The sample's workout events, in agreement with workoutActivities."
 
 
 Logical:        AppleHealthKitWorkoutActivity
-Id:             apple-health-kit-workout-activity
+Id:             AppleHealthKitWorkoutActivity
 Title:          "Apple HealthKit Workout Activity Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutActivity."
 Parent:         AppleHealthKitObject
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * startDate 0..1 dateTime "The Workout Activity start datetime." "The Workout Activity start datetime."
 * endDate 0..1 dateTime "Workout Activity end datetime." "The Workout Activity end datetime."
 * duration 0..1 period "Workout Activity duration" "Workout Activity duration may be derived from endDate - startDate."
 // map allStatistics [ HKQuantity:HKStatistics ]
-* workoutEvents 0..* Reference(AppleHealthKitWorkoutEvent) "Associated Workout Events." "Associated Workout Events."
+* workoutEvents 0..* AppleHealthKitWorkoutEvent "Associated Workout Events." "Associated Workout Events."
 
 Logical:        AppleHealthKitWorkoutEvent
-Id:             apple-health-kit-workout-event
+Id:             AppleHealthKitWorkoutEvent
 Title:          "Apple HealthKit Workout Event Logical Model"
 Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 //Parent:         AppleHealthKitObject
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * metadata 0..1 BackboneElement "The metadata." "The metadata."
 * dateInterval 0..1 BackboneElement "The event's time and duration." "The event's time and duration."
@@ -124,9 +140,11 @@ Description:    "Data elements for the Apple HealthKit HKWorkoutEvent."
 
 
 Logical:        AppleHealthKitHealthStoreCharacteristic
-Id:             apple-health-kit-healthstore-characteristic
+Id:             AppleHealthKitHealthStoreCharacteristic
 Title:          "Apple HealthKit HealthStore Characteristic Logical Model"
 Description:    "Relevant Data elements that correspond to the CharacteristicType stored in Apple HealthStore."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * ^status = #draft
 * characteristicType 1..1 code "The characteristic type."
 * characteristicType from AppleHealthKitCharacteristicTypeValueSet (extensible)
@@ -155,12 +173,17 @@ ValueSet: AppleHealthKitSampleTypeValueSet
 Title: "Apple HealthKit Sample Type Value Set"
 Id: apple-health-kit-sample-type-value-set
 Description: "Possible values for AppleHealthKitSample.sampleType"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitSampleTypeCodeSystem
 
 CodeSystem: AppleHealthKitSampleTypeCodeSystem
 Title: "Apple HealthKit Sample Type Code System"
 Id: apple-health-kit-sample-type-code-system
 Description: "Code System required for defining sampleType ValueSet"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #category "Apple HK CategorySample"
 * #quantity "Apple HK QuantitySample"
 * #correlation "Apple HK CorrelationSample"
@@ -173,12 +196,17 @@ ValueSet: AppleHealthKitQuantityTypeValueSet
 Title: "Apple HealthKit Quantity Type Value Set"
 Id: apple-health-kit-quantity-type-value-set
 Description: "Possible values for AppleHealthKitSample.quantityType"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitQuantityTypeCodeSystem
 
 CodeSystem: AppleHealthKitQuantityTypeCodeSystem
 Title: "Apple HealthKit Quantity Type Code System"
 Id: apple-health-kit-quantity-type-code-system
 Description: "Code System required for defining quantityType ValueSet"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #bodyMassIndex
 * #bodyFatPercentage "Scalar(Percent, 0.0 - 1.0), Discrete"
 * #height "Length, Discrete"
@@ -279,13 +307,17 @@ ValueSet: AppleHealthKitCategoryTypeValueSet
 Title: "Apple HealthKit Category Type Value Set"
 Id: apple-health-kit-category-type-value-set
 Description: "A type that identifies samples that contain a value from a small set of possible values."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitCategoryTypeCodeSystem
 
 CodeSystem: AppleHealthKitCategoryTypeCodeSystem
 Title: "Apple HealthKit Category Type Code System"
 Id: apple-health-kit-category-type-code-system
 Description: "HKCategoryTypeIdentifier - Identifiers for creating category types."
-
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 // activity
 * #appleStandHour
 * #lowCardioFitnessEvent
@@ -389,12 +421,17 @@ ValueSet: AppleHealthKitCorrelationTypeValueSet
 Title: "Apple HealthKit Correlation Type Value Set"
 Id: apple-health-kit-correlation-type-value-set
 Description: "Possible values for AppleHealthKitSample.correlationType"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitCorrelationTypeCodeSystem
 
 CodeSystem: AppleHealthKitCorrelationTypeCodeSystem
 Title: "Apple HealthKit Correlation Type Code System"
 Id: apple-health-kit-correlation-type-code-system
 Description: "Code System required for defining correlationType ValueSet"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #bloodPressure
 * #food
 
@@ -403,12 +440,17 @@ ValueSet: AppleHealthKitWorkoutActivityTypeValueSet
 Title: "Apple HealthKit Workout Activity Type Value Set"
 Id: apple-health-kit-workout-activity-type-value-set
 Description: "Possible values for AppleHealthLitSample.workoutActivityType"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHEalthKitWorkoutActivityTypeCodeSystem
 
 CodeSystem: AppleHEalthKitWorkoutActivityTypeCodeSystem
 Title: "Apple HealthKit Workout Activity Type Code System"
 Id: apple-health-kit-workout-activity-type-code-system
 Description: "Code System required for defining workoutActivityType ValueSet"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #archery
 * #bowling
 * #fencing
@@ -499,12 +541,17 @@ ValueSet: AppleHealthKitWorkoutEventTypeValueSet
 Title: "Apple HealthKit Workout Event Type Value Set"
 Id: apple-health-kit-workout-event-type-value-set
 Description: "Possible values for AppleHealthKitWorkoutEvent.type"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitWorkoutEventTypeCodeSystem
 
 CodeSystem: AppleHealthKitWorkoutEventTypeCodeSystem
 Title: "Apple HealthKit Workout Event Type Code System"
 Id: apple-health-kit-workout-event-type-code-system
 Description: "Code System required for defining workout event type ValueSet"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #pause "A constant indicating that the workout has paused."
 * #resume "A constant indicating that the workout has resumed."
 * #motionPaused "A constant indicating that the system has automatically paused a workout session."
@@ -520,12 +567,17 @@ ValueSet: AppleHealthKitCharacteristicTypeValueSet
 Title: "Apple HealthKit Charactersitic Type Value Set"
 Id: apple-health-kit-characteristic-type-value-set
 Description: "Apple HealthKit Charactersitic Type Value Set"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitCharacteristicTypeCodeSystem
 
 CodeSystem: AppleHealthKitCharacteristicTypeCodeSystem
 Title: "Apple HealthKit Characteristic Type Code System"
 Id: apple-health-kit-characteristic-type-code-system
 Description: "The identifiers that create characteristic type objects."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #biologicalSex
 //* #bloodType
 * #dateOfBirth
@@ -537,12 +589,17 @@ ValueSet: AppleHealthKitBiologicalSexValueSet
 Title: "Apple HealthKit Biological Sex Value Set"
 Id: apple-health-kit-biological-sex-value-set
 Description: "Apple HealthKit Biological Sex Value Set"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * include codes from system AppleHealthKitBiologicalSexCodeSystem
 
 CodeSystem: AppleHealthKitBiologicalSexCodeSystem
 Title: "Apple HealthKit Biological Sex Code System"
 Id: apple-health-kit-biological-sex-code-system
 Description: "Constants indicating the user’s sex."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* ^caseSensitive = false
 * #notSet "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type."
 * #female "A constant indicating that the user is female."
 * #male "A constant indicating that the user is male."

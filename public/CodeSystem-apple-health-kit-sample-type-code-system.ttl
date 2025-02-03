@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apple-health-kit-sample-type-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem apple-health-kit-sample-type-code-system</b></p><a name=\"apple-health-kit-sample-type-code-system\"> </a><a name=\"hcapple-health-kit-sample-type-code-system\"> </a><a name=\"apple-health-kit-sample-type-code-system-en-US\"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">category<a name=\"apple-health-kit-sample-type-code-system-category\"> </a></td><td>Apple HK CategorySample</td></tr><tr><td style=\"white-space:nowrap\">quantity<a name=\"apple-health-kit-sample-type-code-system-quantity\"> </a></td><td>Apple HK QuantitySample</td></tr><tr><td style=\"white-space:nowrap\">correlation<a name=\"apple-health-kit-sample-type-code-system-correlation\"> </a></td><td>Apple HK CorrelationSample</td></tr><tr><td style=\"white-space:nowrap\">workout<a name=\"apple-health-kit-sample-type-code-system-workout\"> </a></td><td>Apple HK Workout</td></tr><tr><td style=\"white-space:nowrap\">workoutActivity<a name=\"apple-health-kit-sample-type-code-system-workoutActivity\"> </a></td><td>Apple HK WorkoutActivity</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"apple-health-kit-sample-type-code-system-other\"> </a></td><td/></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pe" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "AppleHealthKitSampleTypeCodeSystem"] ; # 
+  fhir:title [ fhir:v "Apple HealthKit Sample Type Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-18T11:20:50-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Patient Empowerment"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Patient Empowerment" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/patientempowerment" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code System required for defining sampleType ValueSet"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "category" ] ;
+     fhir:display [ fhir:v "Apple HK CategorySample" ]
+  ] [
+     fhir:code [ fhir:v "quantity" ] ;
+     fhir:display [ fhir:v "Apple HK QuantitySample" ]
+  ] [
+     fhir:code [ fhir:v "correlation" ] ;
+     fhir:display [ fhir:v "Apple HK CorrelationSample" ]
+  ] [
+     fhir:code [ fhir:v "workout" ] ;
+     fhir:display [ fhir:v "Apple HK Workout" ]
+  ] [
+     fhir:code [ fhir:v "workoutActivity" ] ;
+     fhir:display [ fhir:v "Apple HK WorkoutActivity" ]
+  ] [
+     fhir:code [ fhir:v "other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Composition",
+  "id" : "jane-doe-composition",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Summary of Jane Doe's patient information including name, contact, gender, birth date, and address.</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11503-0",
+      "display" : "Medical records"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/jane-doe"
+  },
+  "date" : "2024-12-10",
+  "author" : [{
+    "reference" : "Patient/jane-doe"
+  }],
+  "title" : "Jane Doe Patient Summary",
+  "section" : [{
+    "title" : "Related Documents",
+    "entry" : [{
+      "reference" : "https://example.org/baseR4/DocumentReference/jane-doe-genomics-document"
+    },
+    {
+      "reference" : "https://example.org/baseR4/Media/jane-doe-media"
+    }]
+  }]
+}

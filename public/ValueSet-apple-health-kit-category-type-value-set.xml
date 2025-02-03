@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="apple-health-kit-category-type-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet apple-health-kit-category-type-value-set</b></p><a name="apple-health-kit-category-type-value-set"> </a><a name="hcapple-health-kit-category-type-value-set"> </a><a name="apple-health-kit-category-type-value-set-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-apple-health-kit-category-type-code-system.html"><code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</code></a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pe"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-category-type-value-set"/>
+  <version value="1.0.0-ballot"/>
+  <name value="AppleHealthKitCategoryTypeValueSet"/>
+  <title value="Apple HealthKit Category Type Value Set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-18T11:20:50-06:00"/>
+  <publisher value="HL7 International / Patient Empowerment"/>
+  <contact>
+    <name value="HL7 International / Patient Empowerment"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientempowerment"/>
+    </telecom>
+  </contact>
+  <description value="A type that identifies samples that contain a value from a small set of possible values."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system"/>
+    </include>
+  </compose>
+</ValueSet>

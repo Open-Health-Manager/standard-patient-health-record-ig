@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="patient-identifier"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter patient-identifier</b></p><a name="patient-identifier"> </a><a name="hcpatient-identifier"> </a><a name="patient-identifier-en-US"> </a><h2>PatientIdentifierSearchParameter</h2><p>Parameter <code>identifier</code>:<code>token</code></p><div><p>This SearchParameter enables query of patient by <code>identifier</code> with <code>mutlipleOr</code> enabled.</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pe"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/phr/SearchParameter/patient-identifier"/>
+  <version value="1.0.0-ballot"/>
+  <name value="PatientIdentifierSearchParameter"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+  <status value="active"/>
+  <date value="2024-12-18T11:20:50-06:00"/>
+  <publisher value="HL7 International / Patient Empowerment"/>
+  <contact>
+    <name value="HL7 International / Patient Empowerment"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientempowerment"/>
+    </telecom>
+  </contact>
+  <description value="This SearchParameter enables query of patient by `identifier` with `mutlipleOr` enabled."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <code value="identifier"/>
+  <base value="Patient"/>
+  <type value="token"/>
+  <multipleOr value="true"/>
+</SearchParameter>

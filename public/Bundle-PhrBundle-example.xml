@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="PhrBundle-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrBundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:uuid"/>
+    <value value="123e4567-e89b-12d3-a456-426614174000"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2024-12-11T07:00:00Z"/>
+  <entry>
+    <fullUrl value="https://example.org/baseR4/Composition/jane-doe-composition"/>
+    <resource>
+      <Composition>
+        <id value="jane-doe-composition"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Summary of Jane Doe's patient information including name, contact, gender, birth date, and address.</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11503-0"/>
+            <display value="Medical records"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/jane-doe"/>
+        </subject>
+        <date value="2024-12-10"/>
+        <author>
+          <reference value="Patient/jane-doe"/>
+        </author>
+        <title value="Jane Doe Patient Summary"/>
+        <section>
+          <title value="Related Documents"/>
+          <entry>
+            <reference value="https://example.org/baseR4/DocumentReference/jane-doe-genomics-document"/>
+          </entry>
+          <entry>
+            <reference value="https://example.org/baseR4/Media/jane-doe-media"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/baseR4/Patient/jane-doe"/>
+    <resource>
+      <Patient>
+        <id value="jane-doe"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Jane Doe Example</p></div>
+        </text>
+        <identifier>
+          <system value="http://hospital.example.org/patient"/>
+          <value value="12345"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <family value="Doe"/>
+          <given value="Jane"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="555-123-4567"/>
+          <use value="mobile"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1985-05-15"/>
+        <address>
+          <line value="123 Main St"/>
+          <city value="Springfield"/>
+          <state value="IL"/>
+          <postalCode value="62704"/>
+          <country value="USA"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/baseR4/DocumentReference/jane-doe-genomics-document"/>
+    <resource>
+      <DocumentReference>
+        <id value="jane-doe-genomics-document"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrDocumentReference"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DocumentReference_jane-doe-genomics-document"> </a><p class="res-header-id"><b>Generated Narrative: DocumentReference jane-doe-genomics-document</b></p><a name="jane-doe-genomics-document"> </a><a name="hcjane-doe-genomics-document"> </a><a name="jane-doe-genomics-document-en-US"> </a><p><b>status</b>: Current</p><p><b>subject</b>: <a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></p><p><b>date</b>: 2024-12-11 05:22:27+0000</p><p><b>author</b>: <a href="http://hospital.example.org/Practitioner/123">Dr. Smith</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td><a href="http://hospital.example.org/reports/jane-doe-genomics.pdf">http://hospital.example.org/reports/jane-doe-genomics.pdf</a></td><td>Genomics Report for Jane Doe</td><td>2024-12-11 05:22:27+0000</td></tr></table></blockquote></div>
+        </text>
+        <status value="current"/>
+        <subject>
+          <reference value="Patient/jane-doe"/>
+        </subject>
+        <date value="2024-12-11T05:22:27.249Z"/>
+        <author>
+          <reference value="http://hospital.example.org/Practitioner/123"/>
+          <display value="Dr. Smith"/>
+        </author>
+        <content>
+          <attachment>
+            <contentType value="application/pdf"/>
+            <url value="http://hospital.example.org/reports/jane-doe-genomics.pdf"/>
+            <title value="Genomics Report for Jane Doe"/>
+            <creation value="2024-12-11T05:22:27.249Z"/>
+          </attachment>
+        </content>
+      </DocumentReference>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/baseR4/Media/jane-doe-media"/>
+    <resource>
+      <Media>
+        <id value="jane-doe-media"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Media_jane-doe-media"> </a><p class="res-header-id"><b>Generated Narrative: Media jane-doe-media</b></p><a name="jane-doe-media"> </a><a name="hcjane-doe-media"> </a><a name="jane-doe-media-en-US"> </a><p><b>status</b>: Completed</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 257444003}">Photograph</span></p><p><b>subject</b>: <a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></p><p><b>created</b>: 2024-12-11 05:22:27+0000</p><h3>Contents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td>image/jpeg</td><td><a href="http://hospital.example.org/media/jane-doe-smartphone-photo.jpg">http://hospital.example.org/media/jane-doe-smartphone-photo.jpg</a></td><td>Jane Doe Smartphone Photo</td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="257444003"/>
+            <display value="Photograph"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/jane-doe"/>
+        </subject>
+        <createdDateTime value="2024-12-11T05:22:27.249Z"/>
+        <content>
+          <contentType value="image/jpeg"/>
+          <url value="http://hospital.example.org/media/jane-doe-smartphone-photo.jpg"/>
+          <title value="Jane Doe Smartphone Photo"/>
+        </content>
+      </Media>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/baseR4/Provenance/jane-doe-media-provenance"/>
+    <resource>
+      <Provenance>
+        <id value="jane-doe-media-provenance"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Provenance_jane-doe-media-provenance"> </a><p class="res-header-id"><b>Generated Narrative: Provenance jane-doe-media-provenance</b></p><a name="jane-doe-media-provenance"> </a><a name="hcjane-doe-media-provenance"> </a><a name="jane-doe-media-provenance-en-US"> </a><p>Provenance for <a href="Media-jane-doe-media.html">Media: status = completed; type = Photograph; created[x] = 2024-12-11 05:22:27+0000</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2024-12-11 06:00:00+0000</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td><td><a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td></tr></table></div>
+        </text>
+        <target>
+          <reference value="Media/jane-doe-media"/>
+        </target>
+        <recorded value="2024-12-11T06:00:00Z"/>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+              <display value="Author"/>
+            </coding>
+          </type>
+          <who>
+            <reference value="Patient/jane-doe"/>
+          </who>
+          <onBehalfOf>
+            <reference value="Patient/jane-doe"/>
+          </onBehalfOf>
+        </agent>
+        <signature>
+          <type>
+            <system value="urn:iso-astm:E1762-95:2013"/>
+            <code value="1.2.840.10065.1.12.1.1"/>
+            <display value="Author's Signature"/>
+          </type>
+          <when value="2024-12-11T06:00:00Z"/>
+          <who>
+            <reference value="Patient/jane-doe"/>
+          </who>
+          <data value="c2lnbmF0dXJlCg=="/>
+        </signature>
+      </Provenance>
+    </resource>
+  </entry>
+</Bundle>

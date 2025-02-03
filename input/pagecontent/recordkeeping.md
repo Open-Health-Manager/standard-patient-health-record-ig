@@ -23,7 +23,7 @@ As such, this implementation guide recommends that implementors treat storage in
 
 #### Meta Data
 
-The `.sphr ` container should contain two meta data files.  One of these files is a Composition record, which acts like the 'cover page' of the bundle.  This record records ownership, versioning, and various other data elements necessary for parsing the record.  The second file is a DocumentManifest file, which acts as a manifest and table of contents of the container.
+The `.sphr ` container should contain two meta data files.  One of these files is a Composition record, which acts like the 'cover page' of the bundle.  This record records ownership, versioning, and various other data elements necessary for parsing the record.  The second file is an International Patient Summary file, which acts as a manifest and table of contents of critical documents in the record.  
 
 
 #### Compression  
@@ -73,37 +73,6 @@ Public key encryption and secret key may be combined in a PGP solution.
 
 A SMART Health Links based solution will distribute the encryption key within a shareable QR which the patient can display to recipients of an SPHR file for scanning. The recipient would decrypt the linked file using the A256GCM algorithm.
 
-### API Endpoints
-
-Systems MAY wish to implement standard APIs for generating a `.phr` or `.sphr` file.  Standard API queries that have been used in other systems are listed below.
-
-```bash
-# export everything from a single-user system as a FHIR Bundle
-GET /Bundle/$export
-
-# export everything from a single-user system as an NDJSON Bulkd Data file
-GET /Bundle/$export?outputFormat=ndjson
-
-# export everything from a single-user system as a PHR file
-GET /Bundle/$export?outputFormat=phr
-
-# export everything from a single-user system as a SPHR file with security
-GET /Bundle/$export?outputFormat=sphr
-
-# export everything from a specific date to current from a single-user system
-GET /Bundle/$export?start=2010
-
-# export everything in a specific date range from a single-user system
-GET /Bundle/$export?start=2010&end=2020-06
-
-# export everything for a specific patient in a multi-user system
-GET /Bundle/$export?patient=Patient/12345
-
-# post a record to another system to be imported (NDJSON format)
-POST /Bundle/$import
-```
-
-Systems MUST post the API endpoints they use in the system's CapabilityStatement.  
 
 ### Conformance Testing
 
@@ -152,6 +121,22 @@ The process flows below is based on encrypting files with PGP/GPG utilities, whi
 
 - [Convert a X.509 (PKI) certificate to GPG](https://www.pengdows.com/2020/06/27/convert-a-x-509-pki-certificate-to-gpg/)
 - [GPG Encryption/Decryption in Node.js](https://www.npmjs.com/package/gpg)
+
+
+#### Directory Structure  
+
+The SPHR file format takes much inspiration from the DICOM DIR specification.  Grossly speaking, the DICOM DIR format is like a manilla envelope. It is not a specification about the paper or documents within it, but rather, about the envelope that contains the documents of interest.  
+
+Similarly, SPHR seeks a mechanism whereby a patient's health record can be sent in structured, machine-readable formats; but which can also include copies of the raw data in various other formats.  We can achieve this goal, by adopting a folder format that contains both a specified JSON or NDJSON data, along with elements in the folder that 'ride along' with the structured data.  These ride along files, might be PDFs, photos of receipts, video recordings, or whatever other data that is relevant to the patient's health.  
+
+But to make that happen, we must clarify the details of the envelope that will contain such data.  
+
+- [Opening a DICOMDIR File](https://filext.com/file-extension/DICOMDIR)  
+- [DICOM PS3.3 2024b - Information Object Definitions](https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_F.2.2.2.html)  
+- [DICOM PS3.11 2024b - Media Storage Application Profiles](https://dicom.nema.org/medical/dicom/current/output/chtml/part11/sect_d.3.3.html)  
+
+
+
 
 #### Configuring Operating Systems to Recognize .phr and .sphr Filetypes
 

@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/phr/Composition/jane-doe-composition> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "jane-doe-composition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Summary of Jane Doe's patient information including name, contact, gender, birth date, and address.</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11503-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11503-0" ] ;
+       fhir:display [ fhir:v "Medical records" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-12-10"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Jane Doe Patient Summary"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Related Documents" ] ;
+     fhir:entry ( [
+       fhir:link <https://example.org/baseR4/DocumentReference/jane-doe-genomics-document> ;
+       fhir:reference [ fhir:v "https://example.org/baseR4/DocumentReference/jane-doe-genomics-document" ]
+     ] [
+       fhir:link <https://example.org/baseR4/Media/jane-doe-media> ;
+       fhir:reference [ fhir:v "https://example.org/baseR4/Media/jane-doe-media" ]
+     ] )
+  ] ) . # 
+
+<http://hl7.org/fhir/uv/phr/Patient/jane-doe> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

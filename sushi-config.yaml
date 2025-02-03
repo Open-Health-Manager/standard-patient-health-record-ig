@@ -3,27 +3,34 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: StandardPatientHealthRecordIG
-canonical: https://open-health-manager.github.io/standard-patient-health-record-ig
-name: StandardPatientHealthRecordIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+id: hl7.fhir.uv.phr
+canonical: http://hl7.org/fhir/uv/phr
+name: PatientHealthRecordsIG
+title: Personal Health Records
+description: Guidance on how to create longitudinal personal health records using FHIR.  Exporting, file formats, patient examples, and more.
 status: draft # draft | active | retired | unknown
-version: 0.4.4
+version: 1.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  
+    valueCode: pe
 publisher:
-  name: MITRE
-  url: https://open-health-manager.github.io/standard-patient-health-record-ig
+  name: HL7 International / Patient Empowerment
+  url: http://www.hl7.org/Special/committees/patientempowerment
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
+# dependencies:
+#   hl7.fhir.us.core: 7.0.0
+
 # dependencies:
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
@@ -76,20 +83,30 @@ publisher:
 
 menu:
   Home: index.html
-  Record Keeping: recordkeeping.html
-  Conformance: conformance.html
-  Data Model: datamodel.html
   Functional Model:
+    Conformance: conformance.html
+    Data Model: datamodel.html
     Functional Model: functionality.html
     Record Lifecycle: recordlifecycle.html
     Security: security.html
   Supplemental:
     History: history.html
-    Physiology Simulations: physiology.html
-  # Patient Personas: personas.html
+    Record Keeping: recordkeeping.html
+    Longitudinal Records: longitudinal.html
+    API Endpoints: api.html
+    Annotations: annotations.html
+    Algorithms: algorithms.html
+    Physiology Domains: physiology.html
+    Operating Systems: operating-systems.html
   Patient Personas:
     Index: personas-index.html
-    Pediatric Cancer: persona-william.html
+    Thompson Familiy: persona-thompson-family.html
+    Cancer - Adult: persona-journey-b.html
+    Cancer - Pediatric: persona-william.html
+    Chronic Illness (Lupus): persona-journey-e.html
+    Long COVID: persona-journey-d.html
+    Patient Relocation: persona-journey-a.html
+    Sports Outpatient / Cardiac: persona-journey-c.html
   Artifacts: artifacts.html
 
 pages:
@@ -105,18 +122,40 @@ pages:
     title: Functional Model
   recordlifecycle.md:
     title: Record Lifecycle    
+  annotations.md:
+    title: Annotations
   security.md:
     title: Security
   history.md:
     title: History    
   physiology.md:
-    title: Physiology Simulations
+    title: Physiology Domains
   personas.md:
     title: Patient Personas
   persona-william.md:
     title: William Sim
+  persona-thompson-family.md:
+    title: Thompson Family
+  persona-journey-a.md:
+    title: Anne
+  persona-journey-b.md:
+    title: Earl
+  persona-journey-c.md:
+    title: Markus
+  persona-journey-d.md:
+    title: Wilma
+  persona-journey-e.md:
+    title: Marcella
   personas-index.md:
-    title: Patient Personas
+    title: Personas Index
+  operating-systems.md:
+    title: Operating Systems
+  algorithms.md:
+    title: Algorithms
+  api.md:
+    title: API Endpoints
+  longitudinal.md:
+    title: Longitudinal Records
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

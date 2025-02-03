@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Operating Systems - Personal Health Records v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"20"}
+    h3,h4,h5,h6{--heading-prefix:"20"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Personal Health Records</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - ballot
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Model
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="datamodel.html">Data Model</a>
+      </li>
+      <li>
+        <a href="functionality.html">Functional Model</a>
+      </li>
+      <li>
+        <a href="recordlifecycle.html">Record Lifecycle</a>
+      </li>
+      <li>
+        <a href="security.html">Security</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="recordkeeping.html">Record Keeping</a>
+      </li>
+      <li>
+        <a href="longitudinal.html">Longitudinal Records</a>
+      </li>
+      <li>
+        <a href="api.html">API Endpoints</a>
+      </li>
+      <li>
+        <a href="annotations.html">Annotations</a>
+      </li>
+      <li>
+        <a href="algorithms.html">Algorithms</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Domains</a>
+      </li>
+      <li>
+        <a href="operating-systems.html">Operating Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Patient Personas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="personas-index.html">Index</a>
+      </li>
+      <li>
+        <a href="persona-thompson-family.html">Thompson Familiy</a>
+      </li>
+      <li>
+        <a href="persona-journey-b.html">Cancer - Adult</a>
+      </li>
+      <li>
+        <a href="persona-william.html">Cancer - Pediatric</a>
+      </li>
+      <li>
+        <a href="persona-journey-e.html">Chronic Illness (Lupus)</a>
+      </li>
+      <li>
+        <a href="persona-journey-d.html">Long COVID</a>
+      </li>
+      <li>
+        <a href="persona-journey-a.html">Patient Relocation</a>
+      </li>
+      <li>
+        <a href="persona-journey-c.html">Sports Outpatient / Cardiac</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Operating Systems</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Personal Health Records - Local Development build (v1.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/phr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Operating Systems</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mac-os" id="markdown-toc-mac-os">MAC OS</a></li>
+  <li><a href="#ios" id="markdown-toc-ios">iOS</a></li>
+  <li><a href="#flutter" id="markdown-toc-flutter">Flutter</a></li>
+  <li><a href="#ecmascript-nodejs-javascript" id="markdown-toc-ecmascript-nodejs-javascript">ECMAScript (Node.js, Javascript)</a></li>
+</ul>
+
+</div>
+
+<p>Please find below documentation on implementing FHIR software in various operating systems.</p>
+
+<h3 id="mac-os">MAC OS</h3>
+<ul>
+  <li><a href="https://apple.stackexchange.com/questions/47319/how-can-i-make-os-x-recognize-new-file-extensions">How can I make OS X recognize new file extensions?</a></li>
+  <li><a href="https://superuser.com/questions/246476/create-new-extension-association-and-icon-in-snowleopard/246493#246493">Create new extension association and icon in SnowLeopard</a></li>
+</ul>
+
+<h4 id="utis-and-launch-services">UTIs and Launch Services</h4>
+
+<blockquote>
+  <p>Where is the list of “known” file types stored?</p>
+</blockquote>
+
+<p>The official term for "file types" is <a href="https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_conc/understand_utis_conc.html">Uniform Type Identifiers (UTIs)</a>, and the database of UTIs is maintained by <a href="https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/LaunchServicesConcepts/LSCConcepts/LSCConcepts.html">Launch Services</a>.  Using the Terminal, you can view the contents of the Launch Services database using the lsregister tool, which is stored at:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># the lsregister utility</span>
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister 
+
+<span class="c"># the raw file extention table</span>
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister <span class="nt">-dump</span>
+</code></pre></div></div>
+
+<h4 id="declaring-the-phr-uniform-type-identifier">Declaring the PHR Uniform Type Identifier</h4>
+
+<blockquote>
+  <p>Is there a way to make OS X recognize new file types?</p>
+</blockquote>
+
+<p>This Apple article, <a href="https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_declare/understand_utis_declare.html">"Declaring New Uniform Type Identifiers"</a>, provides useful information on how to do this. Here's the complete process:</p>
+
+<h5 id="1-create-a-dummy-application">1. Create a dummy application</h5>
+<p>Create a dummy application to register with Launch Services:</p>
+
+<ul>
+  <li>Open <a href="https://en.wikipedia.org/wiki/AppleScript_Editor">AppleScript Editor</a> (located in OS X's Utilities folder).</li>
+  <li>Save a new empty script somewhere (eg: on your Desktop), setting its File Format to Application.</li>
+</ul>
+
+<h5 id="2-open-its-infoplist-file">2. Open its Info.plist file</h5>
+<ul>
+  <li>Locate your new dummy application in the Finder.</li>
+  <li>Right-click on it, and select Show Package Contents from the popup menu.</li>
+  <li>Open its Contents folder.</li>
+  <li>Open the Info.plist file in a text editor (eg: TextEdit).</li>
+</ul>
+
+<h5 id="3-add-your-new-uti">3. Add your new UTI</h5>
+<p>There's a choice of two keys:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">UTExportedTypeDeclarations</code> – for your own custom filename extensions.</li>
+  <li><code class="language-plaintext highlighter-rouge">UTImportedTypeDeclarations</code> – for filename extensions which already exist but aren't recognised by OS X.</li>
+</ul>
+
+<p>Choose the key which is most appropriate for your needs.</p>
+
+<p>Then in the <em>Info.plist</em> file, before the final two lines (&lt;/dict&gt;&lt;/plist&gt;), add this code:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;key&gt;</span>UTImportedTypeDeclarations<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;array&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="nt">&lt;key&gt;</span>UTTypeIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>org.hl7.fhir.phr<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;key&gt;</span>UTTypeTagSpecification<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;dict&gt;</span>
+            <span class="nt">&lt;key&gt;</span>public.filename-extension<span class="nt">&lt;/key&gt;</span>
+            <span class="nt">&lt;array&gt;</span>
+                <span class="nt">&lt;string&gt;</span>phr<span class="nt">&lt;/string&gt;</span>
+            <span class="nt">&lt;/array&gt;</span>
+        <span class="nt">&lt;/dict&gt;</span>
+        <span class="nt">&lt;key&gt;</span>UTTypeConformsTo<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;array&gt;</span>
+            <span class="nt">&lt;string&gt;</span>public.data<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;/array&gt;</span>
+        <span class="nt">&lt;key&gt;</span>UTTypeDescription<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>Personal Health Record<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;key&gt;</span>UTTypeIconFile<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>FhirPHR.icns<span class="nt">&lt;/string&gt;</span>
+        <span class="nt">&lt;key&gt;</span>UTTypeReferenceURL<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>https://build.fhir.org/ig/HL7/personal-health-record-format-ig/<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/array&gt;</span>
+</code></pre></div></div>
+
+<h5 id="4-register-your-new-uti-with-launch-services">4. Register your new UTI with Launch Services</h5>
+
+<p>Run this command in the Terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister &lt;PATH_TO_APP&gt;
+</code></pre></div></div>
+
+<p>replacing <PATH_TO_APP> with the path to your dummy application, eg:</PATH_TO_APP></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister ~/Desktop/SampleFhirApp.app 
+</code></pre></div></div>
+
+<p>If you now create a file with your new filename extension, and then select it in the Finder and hit Enter, the Finder should automatically select only the filename part, not the extension.</p>
+
+<p>If you view the contents of the Launch Services database:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -dump
+</code></pre></div></div>
+
+<p>you should find your new UTI listed:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type    id:            50364
+        bindableKey:   12608
+        generation:    1
+        uti:           com.idsoftware.wad
+        description:   Doom WAD file
+        flags:         imported  active  apple-internal  untrusted
+        icon:          DoomWAD.icns
+        conforms to:   public.data
+        tags:          .wad
+</code></pre></div></div>
+
+<p>If you later want to unregister your new UTI, pass the -u option to lsregister:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u ~/Desktop/SampleFhirApp.app 
+</code></pre></div></div>
+
+<h3 id="ios">iOS</h3>
+<ul>
+  <li><a href="https://github.com/StanfordBDHG/HealthKitOnFHIR">HealthKit on FHIR</a></li>
+</ul>
+
+<h3 id="flutter">Flutter</h3>
+<ul>
+  <li><a href="https://docs.flutter.dev/">Flutter documentation</a></li>
+  <li><a href="https://docs.flutter.dev/get-started/flutter-for/android-devs">Flutter for Android</a></li>
+  <li><a href="https://docs.flutter.dev/development/platform-integration/android/plugin-api-migration">Supporting the new Android plugins APIs</a></li>
+  <li><a href="https://flutterappworld.com/a-flutter-plugin-to-store-data-in-secure-storage/">flutter_secure_storage</a></li>
+  <li><a href="https://pub.dev/packages/android_storage">android_storage</a></li>
+  <li><a href="https://pub.dev/packages/icloud_storage">icloud_storage</a></li>
+</ul>
+
+<h3 id="ecmascript-nodejs-javascript">ECMAScript (Node.js, Javascript)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Vendor</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/fhirclient">fhirclient</a></td>
+      <td>smarthealthit</td>
+      <td>The official SMART on FHIR javascript client</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/fhir-kit-client">fhir-kit-client</a></td>
+      <td>Vermonster</td>
+      <td>Modern FHIR client with ES6, SMART, cross-version support, etc</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/fhir-starter">fhir-starter</a></td>
+      <td>symptomatic</td>
+      <td>FhirUtilities, FhirDehydrator, and template FHIR UI components.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/fhir-react">fhir-react</a></td>
+      <td>1uphealth</td>
+      <td>Multi use react component</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/json-schema-resource-validation">json-schema-resource-validation</a></td>
+      <td>VictorGus</td>
+      <td>FHIR validator for R4</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/@asymmetrik/sof-scope-checker">sof-scope-checker</a></td>
+      <td>Asymmetrik</td>
+      <td>Utility to check SMART on FHIR scope access</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/fhirpath">fhirpath</a></td>
+      <td>HL7</td>
+      <td>The official FHIRPath parser</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/is-fhir-date">is-fhir-date</a></td>
+      <td>HenrikJoreteg</td>
+      <td>Checks if a date is FHIR compliant</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/@ahryman40k/ts-fhir-types">ts-fhir-types</a></td>
+      <td>Ahryman40k</td>
+      <td>Typescript definitions</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/fhir-list-addresses">fhir-list-addresses</a></td>
+      <td>careMESH</td>
+      <td>Utility function for extracting addresses</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/hl7v2">hl7v2</a></td>
+      <td>panates</td>
+      <td>HL7 v2 parser, serializer, validator and TCP client/server.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.npmjs.com/package/@redoxengine/redox-hl7-v2">redox-hl7-v2</a></td>
+      <td>Redox</td>
+      <td>This is Redox's battle-tested in-house HL7v2 parser/generator.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientempowerment">HL7 International / Patient Empowerment</a>.  Package hl7.fhir.uv.phr#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 18, 2024 11:20-0600">2024-12-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/phr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

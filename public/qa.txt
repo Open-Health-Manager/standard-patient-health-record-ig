@@ -1,0 +1,109 @@
+PatientHealthRecordsIG : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 0
+IG Publisher Version: 1.8.3
+Generated Wed Dec 18 11:21:46 CST 2024. FHIR version 4.0.1 for hl7.fhir.uv.phr#1.0.0-ballot (canonical = http://hl7.org/fhir/uv/phr)
+ Build Errors : 0 / 0 / 0
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Bundle-PhrBundle-example : 0 / 0 / 14
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Bundle-pdr-message : 0 / 0 / 6
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-biological-sex-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-category-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-characteristic-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-correlation-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-quantity-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-sample-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-workout-activity-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/CodeSystem-apple-health-kit-workout-event-type-code-system : 0 / 0 / 2
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Composition-jane-doe-composition : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/DocumentReference-jane-doe-genomics-document : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.phr : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Media-jane-doe-media : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Observation-PCDSleepObservation-duration-example : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Observation-PCDSleepObservation-stage-example : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Patient-jane-doe : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/Provenance-jane-doe-media-provenance : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/SearchParameter-patient-identifier : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/SearchParameter-search-from-date : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitCategorySample : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitCorrelationSample : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitHealthStoreCharacteristic : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitObject : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitQuantitySample : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitSample : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutActivity : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutEvent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutSample : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-Environmental : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-FinancialReceipt : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-NutrientOuttake : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-PhrBundle : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-PhrComposition : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-PhrDocumentReference : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-PhrMedia : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-PhrPatient : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-PhrProvenance : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-SocialMedia : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/StructureDefinition-pcd-sleep-observation : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-biological-sex-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-category-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-characteristic-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-correlation-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-quantity-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-sample-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-workout-activity-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-apple-health-kit-workout-event-type-value-set : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-pcd-sleep-observation-code : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/personal-health-record-format-ig/fsh-generated/resources/ValueSet-pcd-sleep-observation-value : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/Bundle-PhrBundle-example.json ==
+== fsh-generated/resources/Bundle-pdr-message.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-biological-sex-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-category-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-characteristic-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-correlation-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-quantity-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-sample-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-workout-activity-type-code-system.json ==
+== fsh-generated/resources/CodeSystem-apple-health-kit-workout-event-type-code-system.json ==
+== fsh-generated/resources/Composition-jane-doe-composition.json ==
+== fsh-generated/resources/DocumentReference-jane-doe-genomics-document.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.phr.json ==
+== fsh-generated/resources/Media-jane-doe-media.json ==
+== fsh-generated/resources/Observation-PCDSleepObservation-duration-example.json ==
+== fsh-generated/resources/Observation-PCDSleepObservation-stage-example.json ==
+== fsh-generated/resources/Patient-jane-doe.json ==
+== fsh-generated/resources/Provenance-jane-doe-media-provenance.json ==
+== fsh-generated/resources/SearchParameter-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-search-from-date.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitCategorySample.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitCorrelationSample.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitHealthStoreCharacteristic.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitObject.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitQuantitySample.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitSample.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutActivity.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutEvent.json ==
+== fsh-generated/resources/StructureDefinition-AppleHealthKitWorkoutSample.json ==
+== fsh-generated/resources/StructureDefinition-Environmental.json ==
+== fsh-generated/resources/StructureDefinition-FinancialReceipt.json ==
+== fsh-generated/resources/StructureDefinition-NutrientOuttake.json ==
+== fsh-generated/resources/StructureDefinition-PhrBundle.json ==
+== fsh-generated/resources/StructureDefinition-PhrComposition.json ==
+== fsh-generated/resources/StructureDefinition-PhrDocumentReference.json ==
+== fsh-generated/resources/StructureDefinition-PhrMedia.json ==
+== fsh-generated/resources/StructureDefinition-PhrPatient.json ==
+== fsh-generated/resources/StructureDefinition-PhrProvenance.json ==
+== fsh-generated/resources/StructureDefinition-SocialMedia.json ==
+== fsh-generated/resources/StructureDefinition-pcd-sleep-observation.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-biological-sex-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-category-type-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-characteristic-type-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-correlation-type-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-quantity-type-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-sample-type-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-workout-activity-type-value-set.json ==
+== fsh-generated/resources/ValueSet-apple-health-kit-workout-event-type-value-set.json ==
+== fsh-generated/resources/ValueSet-pcd-sleep-observation-code.json ==
+== fsh-generated/resources/ValueSet-pcd-sleep-observation-value.json ==

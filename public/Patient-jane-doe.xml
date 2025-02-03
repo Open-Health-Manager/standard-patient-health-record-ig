@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="jane-doe"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Jane Doe Example</p></div>
+  </text>
+  <identifier>
+    <system value="http://hospital.example.org/patient"/>
+    <value value="12345"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Doe"/>
+    <given value="Jane"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="555-123-4567"/>
+    <use value="mobile"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1985-05-15"/>
+  <address>
+    <line value="123 Main St"/>
+    <city value="Springfield"/>
+    <state value="IL"/>
+    <postalCode value="62704"/>
+    <country value="USA"/>
+  </address>
+</Patient>

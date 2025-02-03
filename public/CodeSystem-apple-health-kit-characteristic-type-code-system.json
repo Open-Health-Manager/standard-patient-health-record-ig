@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-characteristic-type-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem apple-health-kit-characteristic-type-code-system</b></p><a name=\"apple-health-kit-characteristic-type-code-system\"> </a><a name=\"hcapple-health-kit-characteristic-type-code-system\"> </a><a name=\"apple-health-kit-characteristic-type-code-system-en-US\"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">biologicalSex<a name=\"apple-health-kit-characteristic-type-code-system-biologicalSex\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dateOfBirth<a name=\"apple-health-kit-characteristic-type-code-system-dateOfBirth\"> </a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pe"
+  }],
+  "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system",
+  "version" : "1.0.0-ballot",
+  "name" : "AppleHealthKitCharacteristicTypeCodeSystem",
+  "title" : "Apple HealthKit Characteristic Type Code System",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-18T11:20:50-06:00",
+  "publisher" : "HL7 International / Patient Empowerment",
+  "contact" : [{
+    "name" : "HL7 International / Patient Empowerment",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/patientempowerment"
+    }]
+  }],
+  "description" : "The identifiers that create characteristic type objects.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "biologicalSex"
+  },
+  {
+    "code" : "dateOfBirth"
+  }]
+}

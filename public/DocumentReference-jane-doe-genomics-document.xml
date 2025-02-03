@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="jane-doe-genomics-document"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrDocumentReference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference jane-doe-genomics-document</b></p><a name="jane-doe-genomics-document"> </a><a name="hcjane-doe-genomics-document"> </a><a name="jane-doe-genomics-document-en-US"> </a><p><b>status</b>: Current</p><p><b>subject</b>: <a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></p><p><b>date</b>: 2024-12-11 05:22:27+0000</p><p><b>author</b>: <a href="http://hospital.example.org/Practitioner/123">Dr. Smith</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td><a href="http://hospital.example.org/reports/jane-doe-genomics.pdf">http://hospital.example.org/reports/jane-doe-genomics.pdf</a></td><td>Genomics Report for Jane Doe</td><td>2024-12-11 05:22:27+0000</td></tr></table></blockquote></div>
+  </text>
+  <status value="current"/>
+  <subject>
+    <reference value="Patient/jane-doe"/>
+  </subject>
+  <date value="2024-12-11T05:22:27.249Z"/>
+  <author>
+    <reference value="http://hospital.example.org/Practitioner/123"/>
+    <display value="Dr. Smith"/>
+  </author>
+  <content>
+    <attachment>
+      <contentType value="application/pdf"/>
+      <url value="http://hospital.example.org/reports/jane-doe-genomics.pdf"/>
+      <title value="Genomics Report for Jane Doe"/>
+      <creation value="2024-12-11T05:22:27.249Z"/>
+    </attachment>
+  </content>
+</DocumentReference>

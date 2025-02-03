@@ -3,7 +3,14 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 
 Logical: Environmental
-Parent: DomainResource
+Id: Environmental
+Title: "Environmental"
 Description: "Standard PHR profile of the Environmental resource."
-// Usage: #definition
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
+* temperature 1..1 BackboneElement "The ambient temperature"
+* humidity 1..1 BackboneElement "The ambient humidity"
+
+
+
 

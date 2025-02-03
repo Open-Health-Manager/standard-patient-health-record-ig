@@ -1,0 +1,110 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-biological-sex-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitBiologicalSexValueSet",
+      "title" : "Apple HealthKit Biological Sex Value Set",
+      "description" : "Apple HealthKit Biological Sex Value Set",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-category-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitCategoryTypeValueSet",
+      "title" : "Apple HealthKit Category Type Value Set",
+      "description" : "A type that identifies samples that contain a value from a small set of possible values.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-characteristic-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitCharacteristicTypeValueSet",
+      "title" : "Apple HealthKit Charactersitic Type Value Set",
+      "description" : "Apple HealthKit Charactersitic Type Value Set",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-correlation-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitCorrelationTypeValueSet",
+      "title" : "Apple HealthKit Correlation Type Value Set",
+      "description" : "Possible values for AppleHealthKitSample.correlationType",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-quantity-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitQuantityTypeValueSet",
+      "title" : "Apple HealthKit Quantity Type Value Set",
+      "description" : "Possible values for AppleHealthKitSample.quantityType",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-sample-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitSampleTypeValueSet",
+      "title" : "Apple HealthKit Sample Type Value Set",
+      "description" : "Possible values for AppleHealthKitSample.sampleType",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-activity-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitWorkoutActivityTypeValueSet",
+      "title" : "Apple HealthKit Workout Activity Type Value Set",
+      "description" : "Possible values for AppleHealthLitSample.workoutActivityType",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-event-type-value-set",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "AppleHealthKitWorkoutEventTypeValueSet",
+      "title" : "Apple HealthKit Workout Event Type Value Set",
+      "description" : "Possible values for AppleHealthKitWorkoutEvent.type",
+      "systems" : [
+        "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-code",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "PCDSleepObservationCode",
+      "title" : "Patient contributed data: sleep observation code",
+      "description" : "This value set includes codes to track patient sleep recorded by device or app",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-value",
+      "version" : "1.0.0-ballot",
+      "status" : "draft",
+      "name" : "PCDSleepStageValueCode",
+      "title" : "Patient contributed data: sleep stage value",
+      "description" : "This value set includes codes to track patient sleep values recorded by device or app",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

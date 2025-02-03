@@ -1,0 +1,222 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "pdr-message",
+  "type" : "message",
+  "entry" : [{
+    "fullUrl" : "http://example.org/baseR4/MessageHeader/pdr-message-header",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "pdr-message-header",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_pdr-message-header\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader pdr-message-header</b></p><a name=\"pdr-message-header\"> </a><a name=\"hcpdr-message-header\"> </a><a name=\"pdr-message-header-en-US\"> </a><p><b>event</b>: urn:mitre:healthmanager:pdr</p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://example.org\">http://example.org</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"Bundle-pdr-message.html#http-//example.org/baseR4/Encounter/ee6beac6-aaaa-957c-767e-1e1caa5c816c\">Bundle: type = message</a></li><li><a href=\"Bundle-pdr-message.html#http-//example.org/baseR4/Procedure/ee6beac6-aaaa-957c-767e-1e1c925c816c\">Bundle: type = message</a></li><li><a href=\"Bundle-pdr-message.html#http-//example.org/baseR4/Patient/71a8b156-760b-df6b-859e-eefc7932a526\">Bundle: type = message</a></li></ul></div>"
+      },
+      "eventUri" : "urn:mitre:healthmanager:pdr",
+      "source" : {
+        "endpoint" : "http://example.org"
+      },
+      "focus" : [{
+        "reference" : "http://example.org/baseR4/Encounter/ee6beac6-aaaa-957c-767e-1e1caa5c816c"
+      },
+      {
+        "reference" : "http://example.org/baseR4/Procedure/ee6beac6-aaaa-957c-767e-1e1c925c816c"
+      },
+      {
+        "reference" : "http://example.org/baseR4/Patient/71a8b156-760b-df6b-859e-eefc7932a526"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/baseR4/Patient/71a8b156-760b-df6b-859e-eefc7932a526",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "71a8b156-760b-df6b-859e-eefc7932a526",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_71a8b156-760b-df6b-859e-eefc7932a526\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 71a8b156-760b-df6b-859e-eefc7932a526</b></p><a name=\"71a8b156-760b-df6b-859e-eefc7932a526\"> </a><a name=\"hc71a8b156-760b-df6b-859e-eefc7932a526\"> </a><a name=\"71a8b156-760b-df6b-859e-eefc7932a526-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Adriana394 Kutch271 (official) Female, DoB: 1966-05-16 ( https://github.com/synthetichealth/synthea#71a8b156-760b-df6b-859e-eefc7932a526)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus L}\">Legally Separated</span></td><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><code>urn:mitre:healthmanager:account:username</code>/a394Kutch271</li><li>Medical Record Number/71a8b156-760b-df6b-859e-eefc7932a526</li><li>Social Security Number/999-12-3038</li><li>Driver's license number/S99996224</li><li>Passport Number/X15390510X</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Adriana394 Hintz995 (Name changed for Marriage)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 555-237-5240(Home)</li><li>455 Bayer Rapid Suite 75 Boston MA 02120 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:{urn:ietf:bcp:47 en-US}\">English (United States)</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "71a8b156-760b-df6b-859e-eefc7932a526"
+      },
+      {
+        "system" : "urn:mitre:healthmanager:account:username",
+        "value" : "a394Kutch271"
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR",
+            "display" : "Medical Record Number"
+          }],
+          "text" : "Medical Record Number"
+        },
+        "system" : "http://hospital.smarthealthit.org",
+        "value" : "71a8b156-760b-df6b-859e-eefc7932a526"
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "SS",
+            "display" : "Social Security Number"
+          }],
+          "text" : "Social Security Number"
+        },
+        "system" : "http://hl7.org/fhir/sid/us-ssn",
+        "value" : "999-12-3038"
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "DL",
+            "display" : "Driver's license number"
+          }],
+          "text" : "Driver's license number"
+        },
+        "system" : "urn:oid:2.16.840.1.113883.4.3.25",
+        "value" : "S99996224"
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PPN",
+            "display" : "Passport Number"
+          }],
+          "text" : "Passport Number"
+        },
+        "system" : "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+        "value" : "X15390510X"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Kutch271",
+        "given" : ["Adriana394"],
+        "prefix" : ["Mrs."]
+      },
+      {
+        "use" : "maiden",
+        "family" : "Hintz995",
+        "given" : ["Adriana394"],
+        "prefix" : ["Mrs."]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "555-237-5240",
+        "use" : "home"
+      }],
+      "gender" : "female",
+      "birthDate" : "1966-05-16",
+      "address" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "latitude",
+            "valueDecimal" : 42.3980503884975
+          },
+          {
+            "url" : "longitude",
+            "valueDecimal" : -70.97134547950968
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }],
+        "line" : ["455 Bayer Rapid Suite 75"],
+        "city" : "Boston",
+        "state" : "MA",
+        "postalCode" : "02120",
+        "country" : "US"
+      }],
+      "maritalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "L",
+          "display" : "Legally Separated"
+        }],
+        "text" : "Legally Separated"
+      },
+      "multipleBirthBoolean" : false,
+      "communication" : [{
+        "language" : {
+          "coding" : [{
+            "system" : "urn:ietf:bcp:47",
+            "code" : "en-US",
+            "display" : "English (United States)"
+          }],
+          "text" : "English (United States)"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/baseR4/Encounter/ee6beac6-aaaa-957c-767e-1e1caa5c816c",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "ee6beac6-aaaa-957c-767e-1e1caa5c816c",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_ee6beac6-aaaa-957c-767e-1e1caa5c816c\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter ee6beac6-aaaa-957c-767e-1e1caa5c816c</b></p><a name=\"ee6beac6-aaaa-957c-767e-1e1caa5c816c\"> </a><a name=\"hcee6beac6-aaaa-957c-767e-1e1caa5c816c\"> </a><a name=\"ee6beac6-aaaa-957c-767e-1e1caa5c816c-en-US\"> </a><p><b>identifier</b>: <code>https://github.com/synthetichealth/synthea</code>/ee6beac6-aaaa-957c-767e-1e1caa5c816c\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 185349003}\">Encounter for check up (procedure)</span></p><p><b>subject</b>: <a href=\"Bundle-pdr-message.html#Patient_71a8b156-760b-df6b-859e-eefc7932a526\">Mrs. Adriana394 Kutch271</a></p><p><b>period</b>: 2022-02-15 10:20:13-0500 --&gt; 2022-02-15 10:35:13-0500</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "ee6beac6-aaaa-957c-767e-1e1caa5c816c"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "185349003",
+          "display" : "Encounter for check up (procedure)"
+        }],
+        "text" : "Encounter for check up (procedure)"
+      }],
+      "subject" : {
+        "reference" : "Patient/71a8b156-760b-df6b-859e-eefc7932a526",
+        "display" : "Mrs. Adriana394 Kutch271"
+      },
+      "period" : {
+        "start" : "2022-02-15T10:20:13-05:00",
+        "end" : "2022-02-15T10:35:13-05:00"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/baseR4/Procedure/ee6beac6-aaaa-957c-767e-1e1c925c816c",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "ee6beac6-aaaa-957c-767e-1e1c925c816c",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_ee6beac6-aaaa-957c-767e-1e1c925c816c\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure ee6beac6-aaaa-957c-767e-1e1c925c816c</b></p><a name=\"ee6beac6-aaaa-957c-767e-1e1c925c816c\"> </a><a name=\"hcee6beac6-aaaa-957c-767e-1e1c925c816c\"> </a><a name=\"ee6beac6-aaaa-957c-767e-1e1c925c816c-en-US\"> </a><p><b>identifier</b>: <code>https://github.com/synthetichealth/synthea</code>/ee6beac6-aaaa-957c-767e-1e1c925c816c\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 73761001}\">Colonoscopy</span></p><p><b>subject</b>: <a href=\"Bundle-pdr-message.html#Patient_71a8b156-760b-df6b-859e-eefc7932a526\">Mrs. Adriana394 Kutch271</a></p><p><b>encounter</b>: <a href=\"Bundle-pdr-message.html#Encounter_ee6beac6-aaaa-957c-767e-1e1caa5c816c\">Bundle: type = message</a></p><p><b>performed</b>: 2022-02-15 10:20:13-0500</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "https://github.com/synthetichealth/synthea",
+        "value" : "ee6beac6-aaaa-957c-767e-1e1c925c816c"
+      }],
+      "status" : "completed",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "73761001",
+          "display" : "Colonoscopy (procedure)"
+        }],
+        "text" : "Colonoscopy"
+      },
+      "subject" : {
+        "reference" : "Patient/71a8b156-760b-df6b-859e-eefc7932a526",
+        "display" : "Mrs. Adriana394 Kutch271"
+      },
+      "encounter" : {
+        "reference" : "Encounter/ee6beac6-aaaa-957c-767e-1e1caa5c816c"
+      },
+      "performedDateTime" : "2022-02-15T10:20:13-05:00"
+    }
+  }]
+}

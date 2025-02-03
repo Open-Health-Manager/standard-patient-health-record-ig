@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Wilma - Personal Health Records v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17"}
+    h3,h4,h5,h6{--heading-prefix:"17"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Personal Health Records</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - ballot
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Model
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="datamodel.html">Data Model</a>
+      </li>
+      <li>
+        <a href="functionality.html">Functional Model</a>
+      </li>
+      <li>
+        <a href="recordlifecycle.html">Record Lifecycle</a>
+      </li>
+      <li>
+        <a href="security.html">Security</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Supplemental
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li>
+        <a href="recordkeeping.html">Record Keeping</a>
+      </li>
+      <li>
+        <a href="longitudinal.html">Longitudinal Records</a>
+      </li>
+      <li>
+        <a href="api.html">API Endpoints</a>
+      </li>
+      <li>
+        <a href="annotations.html">Annotations</a>
+      </li>
+      <li>
+        <a href="algorithms.html">Algorithms</a>
+      </li>
+      <li>
+        <a href="physiology.html">Physiology Domains</a>
+      </li>
+      <li>
+        <a href="operating-systems.html">Operating Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Patient Personas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="personas-index.html">Index</a>
+      </li>
+      <li>
+        <a href="persona-thompson-family.html">Thompson Familiy</a>
+      </li>
+      <li>
+        <a href="persona-journey-b.html">Cancer - Adult</a>
+      </li>
+      <li>
+        <a href="persona-william.html">Cancer - Pediatric</a>
+      </li>
+      <li>
+        <a href="persona-journey-e.html">Chronic Illness (Lupus)</a>
+      </li>
+      <li>
+        <a href="persona-journey-d.html">Long COVID</a>
+      </li>
+      <li>
+        <a href="persona-journey-a.html">Patient Relocation</a>
+      </li>
+      <li>
+        <a href="persona-journey-c.html">Sports Outpatient / Cardiac</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Wilma</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Personal Health Records - Local Development build (v1.0.0-ballot) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/phr/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Wilma</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#wilma" id="markdown-toc-wilma">Wilma</a></li>
+  <li><a href="#narrative-history" id="markdown-toc-narrative-history">Narrative History</a></li>
+</ul>
+
+</div>
+<h3 id="wilma">Wilma</h3>
+<p>Self-tracking for Long COVID diagnosis</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient ID</th>
+      <th style="text-align: left">PatientName</th>
+      <th style="text-align: left">Primary Diagnosis</th>
+      <th style="text-align: left">.phr</th>
+      <th style="text-align: left">.sphr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>24f4d2f1-b4ef-0654-25a3-bdce21e7ceef</td>
+      <td style="text-align: left">Wilma Nader</td>
+      <td style="text-align: left">COVID-19</td>
+      <td style="text-align: left"><a href="PatientJourneys/Wilma_Nader_24f4d2f1-b4ef-0654-25a3-bdce21e7ceef.json">json</a></td>
+      <td style="text-align: left"><a href="PatientJourneys/Wilma_Nader_24f4d2f1-b4ef-0654-25a3-bdce21e7ceef.phr">phr</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>ⓘ</strong> Contribute to this guide by helping translate the following patient journey into FHIR resources and refining the patient example!  This narrative is a work in progress, and we have added Eryn Nader as a temporary place holder to a patient with COVID19.  The .phr file needs updating to correspond to the following narrative.  Pull requests encouraged.</p>
+</blockquote>
+
+<h3 id="narrative-history">Narrative History</h3>
+
+<p>Wilma is a 22-year-old Indigenous woman and an enrolled citizen of her federally recognized tribe who lived on the reservation until college and returns to stay with family regularly. She is currently employed part-time as a grocery store clerk and is enrolled full-time as a university student. Wilma was diagnosed with Lupus (an autoimmune disease) as a teenager, and has developed a trusting relationship with her primary care provider (PCP) who has helped her find and maintain a reliable, stable treatment for several years, even as she goes back and forth from university. She was recently sick, likely with COVID-19, but never received a formal diagnosis. Subsequently, she started experiencing a new host of distressing symptoms that she worries started from that acute illness. She is seeking a diagnosis of Long COVID, so that she can document her accommodation needs at work and school and access specialized care. She also wants to contribute her data to science so that care can be improved for others, but wants to protect her community and advance knowledge discovery in line with tribal values and priorities.</p>
+
+<p>Wilma has been seeing the same PCP, a family doctor at her local Indian Health Services (IHS) clinic on the reservation, since childhood. Wilma was diagnosed with Lupus when she was 16, and her PCP helped to find and maintain a stable treatment regimen that works. The provider also addresses barriers to accessing care (e.g., organizing transport) and health-related resources (e.g., healthy foods). Wilma has maintained this care relationship even as she goes back and forth to university. Although her condition does require her to manage her health and different symptoms related to Lupus, she has been able to maintain and enjoy an active lifestyle and fully engages with family and friends, school and work, and hobbies.</p>
+
+<p>Earlier this year, she was ill for about two weeks with “flu-like symptoms” including congestion and coughing, lost sense of smell, and mild GI distress (cramping and diarrhea). She was not hospitalized, and, although she was unable to be tested with a COVID-19 PCR test since she didn’t want to leave isolation from her dorm, it is clear that she was infected with the novel coronavirus. After her cough and congestion improved, she began noticing episodes where her heart started racing for no reason and began feeling weaker over time and started noticing that she didn’t have enough energy for simple activities like washing dishes. On her first gentle hike about six weeks after her illness, her heart started racing, then her knees buckled, and then she passed out and needed to be carried back to the car. After this episode, she started experiencing fatigue so severe that she could barely get off the couch, and she felt like she was having trouble focusing and concentrating on simple tasks. She has also experienced more episodes of dizziness and fainting. All of the symptoms she was tracking typically worsened 12 to 48 hours after activity and lasted for days or weeks, indicating post-exertional malaise (PEM). She has been keeping track of her symptoms and wants to seek a formal diagnosis of Long COVID in order to document her accommodation needs at work and school and get access to enhanced, comprehensive care. Without a formal diagnosis, her accommodation requests have not been approved.</p>
+
+<p>Wilma hopes to use her health data, self-tracking logs, and the reflection and insights they prompted, to advocate for a clinical diagnosis of Long COVID, which will allow her to access care and justify accommodations at school and work. The doctor that she saw at the university clinic dismissed her reports of symptoms, refused to look at her tracking logs documenting post-exertional malaise, and did not believe that her experiences could be related to COVID, due to a lack of an initial PCR test. Without a diagnosis and referral by this provider at the student health clinic, she cannot get on the waitlist for the Long COVID clinic and will not be able to access accommodations (e.g., sitting on a stool when working the register). She shared her data with her trusted PCP at her next visit to the IHS tribal clinic, who believed her and will support her in seeking a formal clinical diagnosis and accessing care.</p>
+
+<p>Wilma has tracked her own personal health data that has given her insight on her condition, which she hopes to use to seek a Long COVID diagnosis. Full detail into the PCD used and shared with providers can be found in Table 9. A summary of the PCD she collects and uses is below.</p>
+
+<p>Wilma has used her personal health data to understand her own body and health since being diagnosed with Lupus and has recently been using it to monitor her illness and recovery. She started noticing patterns of episodes where her heart would race after resolution of her initial COVID-like symptoms, which led her to suspect that something may be wrong with her recovery. Her activity data shows erratic measurements of vital signs especially after physical activity, which confirms her struggles with post-exertional malaise. Her GPS location data adds contextual information to the full picture by documenting the time she spends in different locations, including trends (e.g., less time spent at work and hiking, more time spent at home and at the clinic). Additionally, with GPS location data, she has observed less frequent symptoms at home compared to school, likely because of the support of her family and acceptance by her tribe.</p>
+
+<p>While trying to figure out what has been going on with her health status, Wilma began connecting with online health communities that provide peer support and discussions around health experiences. Wilma found others suffering from similar symptoms through a Facebook group. These communities illuminated the likelihood that Wilma has been experiencing Long COVID and that her many seemingly unrelated symptoms may all tie back to this one cause. She has also become aware that her dizziness post-COVID may be associated with development of COVID-induced Postural Orthostatic tachycardia syndrome (POTS). Group members even shared self-tracked data with each other to analyze and seek insights together, which is how she conducted her own preliminary testing for POTS. They are eager to share their data broadly to help fill gaps in medical knowledge, but the healthcare system and the technical EHR systems are not set up to accept these data.</p>
+
+<p>Wilma is also interested in contributing her data to research, to help promote scientific discovery around the emerging condition. She wants to help generate knowledge around Long COVID, particularly from the patient perspective, so that care can be improved for others. At the same time, she wants to protect her community and is aware of tensions, particularly with mistrust of the healthcare system and medical research, especially around genetic data and tribal sovereignty. She is worried about the data collected, research questions pursued, and limits around security and ownership of existing options, so she is trying to create a partnership between her tribe and her university to potentially start a repository and conduct research on Long COVID. She is interested in the long-term experience and trajectories of recovery or long-term disability, and how the availability of social services and access to tribal healthcare services impact health outcomes.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/patientempowerment">HL7 International / Patient Empowerment</a>.  Package hl7.fhir.uv.phr#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 18, 2024 11:20-0600">2024-12-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/phr/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

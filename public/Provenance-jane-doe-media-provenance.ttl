@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/phr/Provenance/jane-doe-media-provenance> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "jane-doe-media-provenance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance jane-doe-media-provenance</b></p><a name=\"jane-doe-media-provenance\"> </a><a name=\"hcjane-doe-media-provenance\"> </a><a name=\"jane-doe-media-provenance-en-US\"> </a><p>Provenance for <a href=\"Media-jane-doe-media.html\">Media: status = completed; type = Photograph; created[x] = 2024-12-11 05:22:27+0000</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2024-12-11 06:00:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td><td><a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://hl7.org/fhir/uv/phr/Media/jane-doe-media> ;
+     fhir:reference [ fhir:v "Media/jane-doe-media" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2024-12-11T06:00:00Z"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "author" ] ;
+         fhir:display [ fhir:v "Author" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+       fhir:reference [ fhir:v "Patient/jane-doe" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+       fhir:reference [ fhir:v "Patient/jane-doe" ]
+     ]
+  ] ) ; # 
+  fhir:signature ( [
+     fhir:type ( [
+       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1.2.840.10065.1.12.1.1" ] ;
+       fhir:display [ fhir:v "Author's Signature" ]
+     ] ) ;
+     fhir:when [ fhir:v "2024-12-11T06:00:00Z"^^xsd:dateTime ] ;
+     fhir:who [
+       fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+       fhir:reference [ fhir:v "Patient/jane-doe" ]
+     ] ;
+     fhir:data [ fhir:v "c2lnbmF0dXJlCg=="^^xsd:base64Binary ]
+  ] ) . # 
+
+<http://hl7.org/fhir/uv/phr/Media/jane-doe-media> a fhir:uv .
+
+<http://hl7.org/fhir/uv/phr/Patient/jane-doe> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

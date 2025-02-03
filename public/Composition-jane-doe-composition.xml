@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="jane-doe-composition"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Summary of Jane Doe's patient information including name, contact, gender, birth date, and address.</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11503-0"/>
+      <display value="Medical records"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/jane-doe"/>
+  </subject>
+  <date value="2024-12-10"/>
+  <author>
+    <reference value="Patient/jane-doe"/>
+  </author>
+  <title value="Jane Doe Patient Summary"/>
+  <section>
+    <title value="Related Documents"/>
+    <entry>
+      <reference value="https://example.org/baseR4/DocumentReference/jane-doe-genomics-document"/>
+    </entry>
+    <entry>
+      <reference value="https://example.org/baseR4/Media/jane-doe-media"/>
+    </entry>
+  </section>
+</Composition>

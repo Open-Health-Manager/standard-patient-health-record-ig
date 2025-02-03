@@ -3,7 +3,10 @@
 // SUSHI will look for definitions in any file using the .fsh ending.
 
 Logical: NutrientOuttake
+Id: NutrientOuttake
+Title: "Nutrient Outtake"
 Parent: DomainResource
 Description: "Standard PHR profile of the NutrientOuttake resource."
-// Usage: #definition
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 

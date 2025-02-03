@@ -1,0 +1,289 @@
+[
+  {
+    "id" : "apple-health-kit-biological-sex-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitBiologicalSexCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-category-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCategoryTypeCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-characteristic-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCharacteristicTypeCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-correlation-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCorrelationTypeCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-quantity-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitQuantityTypeCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-sample-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitSampleTypeCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-workout-activity-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHEalthKitWorkoutActivityTypeCodeSystem"
+  },
+  {
+    "id" : "apple-health-kit-workout-event-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitWorkoutEventTypeCodeSystem"
+  },
+  {
+    "id" : "hl7.fhir.uv.phr",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/uv/phr/ImplementationGuide/hl7.fhir.uv.phr",
+    "version" : "1.0.0-ballot",
+    "name" : "PatientHealthRecordsIG"
+  },
+  {
+    "id" : "patient-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/uv/phr/SearchParameter/patient-identifier",
+    "version" : "1.0.0-ballot",
+    "name" : "PatientIdentifierSearchParameter"
+  },
+  {
+    "id" : "search-from-date",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/uv/phr/SearchParameter/search-from-date",
+    "version" : "1.0.0-ballot",
+    "name" : "SearchFromDateSearchParameter"
+  },
+  {
+    "id" : "AppleHealthKitCategorySample",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitCategorySample",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCategorySample"
+  },
+  {
+    "id" : "AppleHealthKitCorrelationSample",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitCorrelationSample",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCorrelationSample"
+  },
+  {
+    "id" : "AppleHealthKitHealthStoreCharacteristic",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitHealthStoreCharacteristic",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitHealthStoreCharacteristic"
+  },
+  {
+    "id" : "AppleHealthKitObject",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitObject",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitObject"
+  },
+  {
+    "id" : "AppleHealthKitQuantitySample",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitQuantitySample",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitQuantitySample"
+  },
+  {
+    "id" : "AppleHealthKitSample",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitSample",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitSample"
+  },
+  {
+    "id" : "AppleHealthKitWorkoutActivity",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitWorkoutActivity",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitWorkoutActivity"
+  },
+  {
+    "id" : "AppleHealthKitWorkoutEvent",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitWorkoutEvent",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitWorkoutEvent"
+  },
+  {
+    "id" : "AppleHealthKitWorkoutSample",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/AppleHealthKitWorkoutSample",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitWorkoutSample"
+  },
+  {
+    "id" : "Environmental",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/Environmental",
+    "version" : "1.0.0-ballot",
+    "name" : "Environmental"
+  },
+  {
+    "id" : "FinancialReceipt",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/FinancialReceipt",
+    "version" : "1.0.0-ballot",
+    "name" : "FinancialReceipt"
+  },
+  {
+    "id" : "NutrientOuttake",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/NutrientOuttake",
+    "version" : "1.0.0-ballot",
+    "name" : "NutrientOuttake"
+  },
+  {
+    "id" : "PhrBundle",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrBundle",
+    "version" : "1.0.0-ballot",
+    "name" : "PhrBundle"
+  },
+  {
+    "id" : "PhrComposition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition",
+    "version" : "1.0.0-ballot",
+    "name" : "PhrComposition"
+  },
+  {
+    "id" : "PhrDocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrDocumentReference",
+    "version" : "1.0.0-ballot",
+    "name" : "PhrDocumentReference"
+  },
+  {
+    "id" : "PhrMedia",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia",
+    "version" : "1.0.0-ballot",
+    "name" : "PhrMedia"
+  },
+  {
+    "id" : "PhrPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrPatient",
+    "version" : "1.0.0-ballot",
+    "name" : "PhrPatient"
+  },
+  {
+    "id" : "PhrProvenance",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance",
+    "version" : "1.0.0-ballot",
+    "name" : "PhrProvenance"
+  },
+  {
+    "id" : "SocialMedia",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/SocialMedia",
+    "version" : "1.0.0-ballot",
+    "name" : "SocialMedia"
+  },
+  {
+    "id" : "pcd-sleep-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/phr/StructureDefinition/pcd-sleep-observation",
+    "version" : "1.0.0-ballot",
+    "name" : "PCDSleepObservation"
+  },
+  {
+    "id" : "apple-health-kit-biological-sex-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-biological-sex-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitBiologicalSexValueSet"
+  },
+  {
+    "id" : "apple-health-kit-category-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-category-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCategoryTypeValueSet"
+  },
+  {
+    "id" : "apple-health-kit-characteristic-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-characteristic-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCharacteristicTypeValueSet"
+  },
+  {
+    "id" : "apple-health-kit-correlation-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-correlation-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitCorrelationTypeValueSet"
+  },
+  {
+    "id" : "apple-health-kit-quantity-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-quantity-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitQuantityTypeValueSet"
+  },
+  {
+    "id" : "apple-health-kit-sample-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-sample-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitSampleTypeValueSet"
+  },
+  {
+    "id" : "apple-health-kit-workout-activity-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-activity-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitWorkoutActivityTypeValueSet"
+  },
+  {
+    "id" : "apple-health-kit-workout-event-type-value-set",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-event-type-value-set",
+    "version" : "1.0.0-ballot",
+    "name" : "AppleHealthKitWorkoutEventTypeValueSet"
+  },
+  {
+    "id" : "pcd-sleep-observation-code",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-code",
+    "version" : "1.0.0-ballot",
+    "name" : "PCDSleepObservationCode"
+  },
+  {
+    "id" : "pcd-sleep-observation-value",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-value",
+    "version" : "1.0.0-ballot",
+    "name" : "PCDSleepStageValueCode"
+  }
+]

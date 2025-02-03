@@ -1,0 +1,61 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-sample-type-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem apple-health-kit-sample-type-code-system</b></p><a name=\"apple-health-kit-sample-type-code-system\"> </a><a name=\"hcapple-health-kit-sample-type-code-system\"> </a><a name=\"apple-health-kit-sample-type-code-system-en-US\"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">category<a name=\"apple-health-kit-sample-type-code-system-category\"> </a></td><td>Apple HK CategorySample</td></tr><tr><td style=\"white-space:nowrap\">quantity<a name=\"apple-health-kit-sample-type-code-system-quantity\"> </a></td><td>Apple HK QuantitySample</td></tr><tr><td style=\"white-space:nowrap\">correlation<a name=\"apple-health-kit-sample-type-code-system-correlation\"> </a></td><td>Apple HK CorrelationSample</td></tr><tr><td style=\"white-space:nowrap\">workout<a name=\"apple-health-kit-sample-type-code-system-workout\"> </a></td><td>Apple HK Workout</td></tr><tr><td style=\"white-space:nowrap\">workoutActivity<a name=\"apple-health-kit-sample-type-code-system-workoutActivity\"> </a></td><td>Apple HK WorkoutActivity</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"apple-health-kit-sample-type-code-system-other\"> </a></td><td/></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pe"
+  }],
+  "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+  "version" : "1.0.0-ballot",
+  "name" : "AppleHealthKitSampleTypeCodeSystem",
+  "title" : "Apple HealthKit Sample Type Code System",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-18T11:20:50-06:00",
+  "publisher" : "HL7 International / Patient Empowerment",
+  "contact" : [{
+    "name" : "HL7 International / Patient Empowerment",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/patientempowerment"
+    }]
+  }],
+  "description" : "Code System required for defining sampleType ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "category",
+    "display" : "Apple HK CategorySample"
+  },
+  {
+    "code" : "quantity",
+    "display" : "Apple HK QuantitySample"
+  },
+  {
+    "code" : "correlation",
+    "display" : "Apple HK CorrelationSample"
+  },
+  {
+    "code" : "workout",
+    "display" : "Apple HK Workout"
+  },
+  {
+    "code" : "workoutActivity",
+    "display" : "Apple HK WorkoutActivity"
+  },
+  {
+    "code" : "other"
+  }]
+}

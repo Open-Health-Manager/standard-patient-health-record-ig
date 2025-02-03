@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="apple-health-kit-characteristic-type-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem apple-health-kit-characteristic-type-code-system</b></p><a name="apple-health-kit-characteristic-type-code-system"> </a><a name="hcapple-health-kit-characteristic-type-code-system"> </a><a name="apple-health-kit-characteristic-type-code-system-en-US"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">biologicalSex<a name="apple-health-kit-characteristic-type-code-system-biologicalSex"> </a></td></tr><tr><td style="white-space:nowrap">dateOfBirth<a name="apple-health-kit-characteristic-type-code-system-dateOfBirth"> </a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pe"/>
+  </extension>
+  <url value="http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system"/>
+  <version value="1.0.0-ballot"/>
+  <name value="AppleHealthKitCharacteristicTypeCodeSystem"/>
+  <title value="Apple HealthKit Characteristic Type Code System"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-18T11:20:50-06:00"/>
+  <publisher value="HL7 International / Patient Empowerment"/>
+  <contact>
+    <name value="HL7 International / Patient Empowerment"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientempowerment"/>
+    </telecom>
+  </contact>
+  <description value="The identifiers that create characteristic type objects."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="biologicalSex"/>
+  </concept>
+  <concept>
+    <code value="dateOfBirth"/>
+  </concept>
+</CodeSystem>

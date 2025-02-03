@@ -5,6 +5,7 @@ One of the most challenging aspects of programming a Personal Health Record is d
 | john-doe | John Doe | Diabetic | [ JohnDoe.phr ](JohnDoe.phr) |  |
 | 12724069 | Timmy Smart | Foster Child | [ TimmySmart.phr ](TimmySmart-FosterCareTimeline.phr) |  |
 | wsim001 | William Sim | wsim001 | [WilliamSim.phr](WilliamSim.phr) |  [WilliamSim.sphr](WilliamSim.sphr) | 
+| jenny-m | Jenny M |  Cancer | [JennyM-cancer-patient.phr](JennyM-cancer-patient.phr) |  |  
 | 1 | Candace Salinas |  Asthma | CandaceSalinas.phr |  |  
 | A | Ann | Patient relocation  |  |  |  
 | B | Earl | Cancer diagnosis |  |  |  

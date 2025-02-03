@@ -1,0 +1,1645 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "dd3806bd-f091-4c80-b880-f4b9e0b11073",
+  "meta" : {
+    "lastUpdated" : "2024-12-18T11:20:50.407-06:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-biological-sex-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-biological-sex-code-system.html\">codesystem Apple HealthKit Biological Sex Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system-notSet\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-biological-sex-code-system.html#apple-health-kit-biological-sex-code-system-notSet\">notSet</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system</td><td>A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system-female\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-biological-sex-code-system.html#apple-health-kit-biological-sex-code-system-female\">female</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system</td><td>A constant indicating that the user is female.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system-male\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-biological-sex-code-system.html#apple-health-kit-biological-sex-code-system-male\">male</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system</td><td>A constant indicating that the user is male.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-biological-sex-code-system.html#apple-health-kit-biological-sex-code-system-other\">other</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system</td><td>A constant indicating that the user is otherwise not categorized as either male or female.</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-biological-sex-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitBiologicalSexValueSet",
+      "title" : "Apple HealthKit Biological Sex Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f4eed693-beb7-4ca2-ad1f-e3fbdb6caed0",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+          "code" : "notSet",
+          "display" : "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+          "code" : "female",
+          "display" : "A constant indicating that the user is female."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+          "code" : "male",
+          "display" : "A constant indicating that the user is male."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+          "code" : "other",
+          "display" : "A constant indicating that the user is otherwise not categorized as either male or female."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-category-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-category-type-code-system.html\">codesystem Apple HealthKit Category Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 65 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-appleStandHour\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-appleStandHour\">appleStandHour</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-lowCardioFitnessEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-lowCardioFitnessEvent\">lowCardioFitnessEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-menstrualFlow\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-menstrualFlow\">menstrualFlow</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-intermenstrualBleeding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-intermenstrualBleeding\">intermenstrualBleeding</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-infrequentMenstrualCycles\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-infrequentMenstrualCycles\">infrequentMenstrualCycles</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-irregularMenstrualCycles\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-irregularMenstrualCycles\">irregularMenstrualCycles</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-persistentIntermenstrualBleeding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-persistentIntermenstrualBleeding\">persistentIntermenstrualBleeding</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-prolongedMenstrualPeriods\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-prolongedMenstrualPeriods\">prolongedMenstrualPeriods</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-cervicalMucusQuality\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-cervicalMucusQuality\">cervicalMucusQuality</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-ovulationTestResult\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-ovulationTestResult\">ovulationTestResult</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-sexualActivity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-sexualActivity\">sexualActivity</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-contraceptive\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-contraceptive\">contraceptive</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-pregnancy\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-pregnancy\">pregnancy</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-pregnancyTestResult\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-pregnancyTestResult\">pregnancyTestResult</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-lactation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-lactation\">lactation</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-environmentalAudioExposureEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-environmentalAudioExposureEvent\">environmentalAudioExposureEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-headphoneAudioExposureEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-headphoneAudioExposureEvent\">headphoneAudioExposureEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-audioExposureEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-audioExposureEvent\">audioExposureEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-lowHeartRateEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-lowHeartRateEvent\">lowHeartRateEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-highHeartRateEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-highHeartRateEvent\">highHeartRateEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-irregularHeartRhythmEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-irregularHeartRhythmEvent\">irregularHeartRhythmEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-appleWalkingSteadinessEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-appleWalkingSteadinessEvent\">appleWalkingSteadinessEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-abdominalCramps\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-abdominalCramps\">abdominalCramps</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-bloating\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-bloating\">bloating</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-constipation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-constipation\">constipation</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-diarrhea\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-diarrhea\">diarrhea</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-heartburn\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-heartburn\">heartburn</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-nausea\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-nausea\">nausea</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-vomiting\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-vomiting\">vomiting</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-appetiteChanges\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-appetiteChanges\">appetiteChanges</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-chills\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-chills\">chills</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-dizziness\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-dizziness\">dizziness</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-fainting\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-fainting\">fainting</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-fatigue\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-fatigue\">fatigue</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-fever\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-fever\">fever</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-generalizedBodyAche\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-generalizedBodyAche\">generalizedBodyAche</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-hotFlashes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-hotFlashes\">hotFlashes</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-chestTightnessOrPain\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-chestTightnessOrPain\">chestTightnessOrPain</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-coughing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-coughing\">coughing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-rapidPoundingOrFlutteringHeartbeat\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-rapidPoundingOrFlutteringHeartbeat\">rapidPoundingOrFlutteringHeartbeat</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-shortnessOfBreath\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-shortnessOfBreath\">shortnessOfBreath</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-skippedHeartbeat\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-skippedHeartbeat\">skippedHeartbeat</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-wheezing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-wheezing\">wheezing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-lowerBackPain\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-lowerBackPain\">lowerBackPain</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-headache\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-headache\">headache</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-memoryLapse\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-memoryLapse\">memoryLapse</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-moodChanges\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-moodChanges\">moodChanges</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-lossOfSmell\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-lossOfSmell\">lossOfSmell</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-lossOfTaste\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-lossOfTaste\">lossOfTaste</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-runnyNose\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-runnyNose\">runnyNose</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-soreThroat\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-soreThroat\">soreThroat</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-sinusCongestion\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-sinusCongestion\">sinusCongestion</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-breastPain\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-breastPain\">breastPain</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-pelvicPain\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-pelvicPain\">pelvicPain</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-vaginalDryness\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-vaginalDryness\">vaginalDryness</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-acne\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-acne\">acne</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-drySkin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-drySkin\">drySkin</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-hairLoss\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-hairLoss\">hairLoss</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-nightSweats\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-nightSweats\">nightSweats</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-sleepChanges\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-sleepChanges\">sleepChanges</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-bladderIncontinence\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-bladderIncontinence\">bladderIncontinence</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-sleepAnalysis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-sleepAnalysis\">sleepAnalysis</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-mindfulSession\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-mindfulSession\">mindfulSession</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-toothbrushingEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-toothbrushingEvent\">toothbrushingEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system-handwashingEvent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-category-type-code-system.html#apple-health-kit-category-type-code-system-handwashingEvent\">handwashingEvent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-category-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitCategoryTypeValueSet",
+      "title" : "Apple HealthKit Category Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:99ddd15a-9918-4ff4-a60e-53877f5e783f",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 65,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "appleStandHour"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "lowCardioFitnessEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "menstrualFlow"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "intermenstrualBleeding"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "infrequentMenstrualCycles"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "irregularMenstrualCycles"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "persistentIntermenstrualBleeding"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "prolongedMenstrualPeriods"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "cervicalMucusQuality"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "ovulationTestResult"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "sexualActivity"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "contraceptive"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "pregnancy"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "pregnancyTestResult"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "lactation"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "environmentalAudioExposureEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "headphoneAudioExposureEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "audioExposureEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "lowHeartRateEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "highHeartRateEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "irregularHeartRhythmEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "appleWalkingSteadinessEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "abdominalCramps"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "bloating"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "constipation"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "diarrhea"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "heartburn"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "nausea"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "vomiting"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "appetiteChanges"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "chills"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "dizziness"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "fainting"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "fatigue"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "fever"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "generalizedBodyAche"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "hotFlashes"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "chestTightnessOrPain"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "coughing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "rapidPoundingOrFlutteringHeartbeat"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "shortnessOfBreath"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "skippedHeartbeat"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "wheezing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "lowerBackPain"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "headache"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "memoryLapse"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "moodChanges"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "lossOfSmell"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "lossOfTaste"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "runnyNose"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "soreThroat"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "sinusCongestion"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "breastPain"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "pelvicPain"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "vaginalDryness"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "acne"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "drySkin"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "hairLoss"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "nightSweats"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "sleepChanges"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "bladderIncontinence"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "sleepAnalysis"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "mindfulSession"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "toothbrushingEvent"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-category-type-code-system",
+          "code" : "handwashingEvent"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-characteristic-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-characteristic-type-code-system.html\">codesystem Apple HealthKit Characteristic Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system-biologicalSex\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-characteristic-type-code-system.html#apple-health-kit-characteristic-type-code-system-biologicalSex\">biologicalSex</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system-dateOfBirth\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-characteristic-type-code-system.html#apple-health-kit-characteristic-type-code-system-dateOfBirth\">dateOfBirth</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-characteristic-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitCharacteristicTypeValueSet",
+      "title" : "Apple HealthKit Charactersitic Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cbfd6a2c-0f2c-4261-b3bf-e915cb0acc03",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system",
+          "code" : "biologicalSex"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-characteristic-type-code-system",
+          "code" : "dateOfBirth"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-correlation-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-correlation-type-code-system.html\">codesystem Apple HealthKit Correlation Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system-bloodPressure\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-correlation-type-code-system.html#apple-health-kit-correlation-type-code-system-bloodPressure\">bloodPressure</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system-food\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-correlation-type-code-system.html#apple-health-kit-correlation-type-code-system-food\">food</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-correlation-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitCorrelationTypeValueSet",
+      "title" : "Apple HealthKit Correlation Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a2461a9e-7943-4eb3-8751-840731c2773a",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system",
+          "code" : "bloodPressure"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-correlation-type-code-system",
+          "code" : "food"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-quantity-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html\">codesystem Apple HealthKit Quantity Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 80 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bodyMassIndex\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bodyMassIndex\">bodyMassIndex</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bodyFatPercentage\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bodyFatPercentage\">bodyFatPercentage</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-height\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-height\">height</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bodyMass\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bodyMass\">bodyMass</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-leanBodyMass\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-leanBodyMass\">leanBodyMass</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-waistCircumference\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-waistCircumference\">waistCircumference</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-stepCount\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-stepCount\">stepCount</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-distanceWalkingRunning\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-distanceWalkingRunning\">distanceWalkingRunning</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-distanceCycling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-distanceCycling\">distanceCycling</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-distanceWheelchair\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-distanceWheelchair\">distanceWheelchair</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-basalEnergyBurned\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-basalEnergyBurned\">basalEnergyBurned</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Energy, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-activeEnergyBurned\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-activeEnergyBurned\">activeEnergyBurned</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Energy, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-flightsClimbed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-flightsClimbed\">flightsClimbed</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-nikeFuel\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-nikeFuel\">nikeFuel</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-appleExerciseTime\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-appleExerciseTime\">appleExerciseTime</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Time Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-pushCount\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-pushCount\">pushCount</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-distanceSwimming\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-distanceSwimming\">distanceSwimming</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-swimmingStrokeCount\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-swimmingStrokeCount\">swimmingStrokeCount</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-vo2Max\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-vo2Max\">vo2Max</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>ml/(kg*min) Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-distanceDownhillSnowSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-distanceDownhillSnowSports\">distanceDownhillSnowSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Length, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-heartRate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-heartRate\">heartRate</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bodyTemperature\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bodyTemperature\">bodyTemperature</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Temperature, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-basalBodyTemperature\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-basalBodyTemperature\">basalBodyTemperature</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Basal Body Temperature, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bloodPressureSystolic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bloodPressureSystolic\">bloodPressureSystolic</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Pressure, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bloodPressureDiastolic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bloodPressureDiastolic\">bloodPressureDiastolic</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Pressure, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-respiratoryRate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-respiratoryRate\">respiratoryRate</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-restingHeartRate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-restingHeartRate\">restingHeartRate</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-walkingHeartRateAverage\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-walkingHeartRateAverage\">walkingHeartRateAverage</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count)/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-heartRateVariabilitySDNN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-heartRateVariabilitySDNN\">heartRateVariabilitySDNN</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Time (ms), Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-oxygenSaturation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-oxygenSaturation\">oxygenSaturation</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar (Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-peripheralPerfusionIndex\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-peripheralPerfusionIndex\">peripheralPerfusionIndex</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bloodGlucose\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bloodGlucose\">bloodGlucose</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass/Volume, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-numberOfTimesFallen\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-numberOfTimesFallen\">numberOfTimesFallen</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-electrodermalActivity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-electrodermalActivity\">electrodermalActivity</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Conductance, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-inhalerUsage\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-inhalerUsage\">inhalerUsage</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Count), Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-insulinDelivery\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-insulinDelivery\">insulinDelivery</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Pharmacology (IU) Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-bloodAlcoholContent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-bloodAlcoholContent\">bloodAlcoholContent</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar(Percent, 0.0 - 1.0), Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-forcedVitalCapacity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-forcedVitalCapacity\">forcedVitalCapacity</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Volume, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-forcedExpiratoryVolume1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-forcedExpiratoryVolume1\">forcedExpiratoryVolume1</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Volume, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-peakExpiratoryFlowRate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-peakExpiratoryFlowRate\">peakExpiratoryFlowRate</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Volume/Time, Discrete</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryFatTotal\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryFatTotal\">dietaryFatTotal</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryFatPolyunsaturated\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryFatPolyunsaturated\">dietaryFatPolyunsaturated</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryFatMonounsaturated\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryFatMonounsaturated\">dietaryFatMonounsaturated</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryFatSaturated\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryFatSaturated\">dietaryFatSaturated</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryCholesterol\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryCholesterol\">dietaryCholesterol</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietarySodium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietarySodium\">dietarySodium</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryCarbohydrates\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryCarbohydrates\">dietaryCarbohydrates</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryFiber\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryFiber\">dietaryFiber</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietarySugar\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietarySugar\">dietarySugar</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryEnergyConsumed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryEnergyConsumed\">dietaryEnergyConsumed</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Energy, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryProtein\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryProtein\">dietaryProtein</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminA\">dietaryVitaminA</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminB6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminB6\">dietaryVitaminB6</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminB12\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminB12\">dietaryVitaminB12</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminC\">dietaryVitaminC</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminD\">dietaryVitaminD</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminE\">dietaryVitaminE</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryVitaminK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryVitaminK\">dietaryVitaminK</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryCalcium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryCalcium\">dietaryCalcium</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryIron\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryIron\">dietaryIron</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryThiamin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryThiamin\">dietaryThiamin</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryRiboflavin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryRiboflavin\">dietaryRiboflavin</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryNiacin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryNiacin\">dietaryNiacin</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryFolate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryFolate\">dietaryFolate</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryBiotin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryBiotin\">dietaryBiotin</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryPantothenicAcid\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryPantothenicAcid\">dietaryPantothenicAcid</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryPhosphorus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryPhosphorus\">dietaryPhosphorus</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryIodine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryIodine\">dietaryIodine</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryMagnesium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryMagnesium\">dietaryMagnesium</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryZinc\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryZinc\">dietaryZinc</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietarySelenium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietarySelenium\">dietarySelenium</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryCopper\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryCopper\">dietaryCopper</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryManganese\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryManganese\">dietaryManganese</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryChromium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryChromium\">dietaryChromium</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryMolybdenum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryMolybdenum\">dietaryMolybdenum</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryChloride\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryChloride\">dietaryChloride</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryPotassium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryPotassium\">dietaryPotassium</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryCaffeine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryCaffeine\">dietaryCaffeine</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Mass, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-dietaryWater\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-dietaryWater\">dietaryWater</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Volume, Cumulative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system-uvExposure\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-quantity-type-code-system.html#apple-health-kit-quantity-type-code-system-uvExposure\">uvExposure</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system</td><td>Scalar (Count), Discrete</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-quantity-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitQuantityTypeValueSet",
+      "title" : "Apple HealthKit Quantity Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4a47d440-88f6-405f-9974-ba6ea237ce79",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 80,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bodyMassIndex"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bodyFatPercentage",
+          "display" : "Scalar(Percent, 0.0 - 1.0), Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "height",
+          "display" : "Length, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bodyMass",
+          "display" : "Mass, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "leanBodyMass",
+          "display" : "Mass, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "waistCircumference",
+          "display" : "Length, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "stepCount",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "distanceWalkingRunning",
+          "display" : "Length, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "distanceCycling",
+          "display" : "Length, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "distanceWheelchair",
+          "display" : "Length, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "basalEnergyBurned",
+          "display" : "Energy, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "activeEnergyBurned",
+          "display" : "Energy, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "flightsClimbed",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "nikeFuel",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "appleExerciseTime",
+          "display" : "Time Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "pushCount",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "distanceSwimming",
+          "display" : "Length, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "swimmingStrokeCount",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "vo2Max",
+          "display" : "ml/(kg*min) Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "distanceDownhillSnowSports",
+          "display" : "Length, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "heartRate",
+          "display" : "Scalar(Count)/Time, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bodyTemperature",
+          "display" : "Temperature, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "basalBodyTemperature",
+          "display" : "Basal Body Temperature, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bloodPressureSystolic",
+          "display" : "Pressure, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bloodPressureDiastolic",
+          "display" : "Pressure, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "respiratoryRate",
+          "display" : "Scalar(Count)/Time, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "restingHeartRate",
+          "display" : "Scalar(Count)/Time, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "walkingHeartRateAverage",
+          "display" : "Scalar(Count)/Time, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "heartRateVariabilitySDNN",
+          "display" : "Time (ms), Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "oxygenSaturation",
+          "display" : "Scalar (Percent, 0.0 - 1.0), Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "peripheralPerfusionIndex",
+          "display" : "Scalar(Percent, 0.0 - 1.0), Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bloodGlucose",
+          "display" : "Mass/Volume, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "numberOfTimesFallen",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "electrodermalActivity",
+          "display" : "Conductance, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "inhalerUsage",
+          "display" : "Scalar(Count), Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "insulinDelivery",
+          "display" : "Pharmacology (IU) Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "bloodAlcoholContent",
+          "display" : "Scalar(Percent, 0.0 - 1.0), Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "forcedVitalCapacity",
+          "display" : "Volume, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "forcedExpiratoryVolume1",
+          "display" : "Volume, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "peakExpiratoryFlowRate",
+          "display" : "Volume/Time, Discrete"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryFatTotal",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryFatPolyunsaturated",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryFatMonounsaturated",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryFatSaturated",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryCholesterol",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietarySodium",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryCarbohydrates",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryFiber",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietarySugar",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryEnergyConsumed",
+          "display" : "Energy, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryProtein",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminA",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminB6",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminB12",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminC",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminD",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminE",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryVitaminK",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryCalcium",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryIron",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryThiamin",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryRiboflavin",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryNiacin",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryFolate",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryBiotin",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryPantothenicAcid",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryPhosphorus",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryIodine",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryMagnesium",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryZinc",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietarySelenium",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryCopper",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryManganese",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryChromium",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryMolybdenum",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryChloride",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryPotassium",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryCaffeine",
+          "display" : "Mass, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "dietaryWater",
+          "display" : "Volume, Cumulative"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-quantity-type-code-system",
+          "code" : "uvExposure",
+          "display" : "Scalar (Count), Discrete"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-sample-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html\">codesystem Apple HealthKit Sample Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system-category\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html#apple-health-kit-sample-type-code-system-category\">category</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</td><td>Apple HK CategorySample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system-quantity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html#apple-health-kit-sample-type-code-system-quantity\">quantity</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</td><td>Apple HK QuantitySample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system-correlation\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html#apple-health-kit-sample-type-code-system-correlation\">correlation</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</td><td>Apple HK CorrelationSample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system-workout\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html#apple-health-kit-sample-type-code-system-workout\">workout</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</td><td>Apple HK Workout</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system-workoutActivity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html#apple-health-kit-sample-type-code-system-workoutActivity\">workoutActivity</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</td><td>Apple HK WorkoutActivity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-sample-type-code-system.html#apple-health-kit-sample-type-code-system-other\">other</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-sample-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitSampleTypeValueSet",
+      "title" : "Apple HealthKit Sample Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b8166b1b-b1a9-4353-a375-7042e12fd08d",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+          "code" : "category",
+          "display" : "Apple HK CategorySample"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+          "code" : "quantity",
+          "display" : "Apple HK QuantitySample"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+          "code" : "correlation",
+          "display" : "Apple HK CorrelationSample"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+          "code" : "workout",
+          "display" : "Apple HK Workout"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+          "code" : "workoutActivity",
+          "display" : "Apple HK WorkoutActivity"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-sample-type-code-system",
+          "code" : "other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-activity-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html\">codesystem Apple HealthKit Workout Activity Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 83 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-archery\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-archery\">archery</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-bowling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-bowling\">bowling</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-fencing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-fencing\">fencing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-gymnastics\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-gymnastics\">gymnastics</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-trackAndField\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-trackAndField\">trackAndField</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-americanFootball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-americanFootball\">americanFootball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-australianFootball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-australianFootball\">australianFootball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-baseball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-baseball\">baseball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-basketball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-basketball\">basketball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-cricket\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-cricket\">cricket</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-discSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-discSports\">discSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-handball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-handball\">handball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-hockey\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-hockey\">hockey</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-lacrosse\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-lacrosse\">lacrosse</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-rugby\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-rugby\">rugby</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-soccer\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-soccer\">soccer</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-softball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-softball\">softball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-volleyball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-volleyball\">volleyball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-preparationAndRecovery\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-preparationAndRecovery\">preparationAndRecovery</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-flexibility\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-flexibility\">flexibility</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-cooldown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-cooldown\">cooldown</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-walking\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-walking\">walking</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-running\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-running\">running</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-wheelchairWalkPace\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-wheelchairWalkPace\">wheelchairWalkPace</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-wheelchairRunPace\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-wheelchairRunPace\">wheelchairRunPace</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-cycling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-cycling\">cycling</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-handCycling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-handCycling\">handCycling</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-coreTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-coreTraining\">coreTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-elliptical\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-elliptical\">elliptical</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-functionalStrengthTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-functionalStrengthTraining\">functionalStrengthTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-traditionalStrengthTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-traditionalStrengthTraining\">traditionalStrengthTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-crossTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-crossTraining\">crossTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-mixedCardio\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-mixedCardio\">mixedCardio</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-highIntensityIntervalTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-highIntensityIntervalTraining\">highIntensityIntervalTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-jumpRope\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-jumpRope\">jumpRope</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-stairClimbing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-stairClimbing\">stairClimbing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-stairs\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-stairs\">stairs</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-stepTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-stepTraining\">stepTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-fitnessGaming\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-fitnessGaming\">fitnessGaming</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-barre\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-barre\">barre</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-cardioDance\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-cardioDance\">cardioDance</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-socialDance\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-socialDance\">socialDance</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-yoga\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-yoga\">yoga</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-mindAndBody\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-mindAndBody\">mindAndBody</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-pilates\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-pilates\">pilates</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-badminton\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-badminton\">badminton</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-pickleball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-pickleball\">pickleball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-racquetball\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-racquetball\">racquetball</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-squash\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-squash\">squash</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-tableTennis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-tableTennis\">tableTennis</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-tennis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-tennis\">tennis</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-climbing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-climbing\">climbing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-equestrianSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-equestrianSports\">equestrianSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-fishing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-fishing\">fishing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-golf\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-golf\">golf</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-hiking\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-hiking\">hiking</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-hunting\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-hunting\">hunting</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-play\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-play\">play</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-crossCountrySkiing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-crossCountrySkiing\">crossCountrySkiing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-curling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-curling\">curling</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-downhillSkiing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-downhillSkiing\">downhillSkiing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-snowSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-snowSports\">snowSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-snowboarding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-snowboarding\">snowboarding</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-skatingSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-skatingSports\">skatingSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-paddleSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-paddleSports\">paddleSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-rowing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-rowing\">rowing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-sailing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-sailing\">sailing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-surfingSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-surfingSports\">surfingSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-swimming\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-swimming\">swimming</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-waterFitness\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-waterFitness\">waterFitness</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-waterPolo\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-waterPolo\">waterPolo</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-waterSports\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-waterSports\">waterSports</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-boxing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-boxing\">boxing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-kickboxing\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-kickboxing\">kickboxing</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-martialArts\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-martialArts\">martialArts</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-taiChi\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-taiChi\">taiChi</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-wrestling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-wrestling\">wrestling</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-other\">other</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-dance\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-dance\">dance</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td>depreciated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-danceInspiredTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-danceInspiredTraining\">danceInspiredTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td>depreciated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-mixedMetabolicCardioTraining\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-mixedMetabolicCardioTraining\">mixedMetabolicCardioTraining</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td>depreciated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-swimBikeRun\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-swimBikeRun\">swimBikeRun</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system-transition\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-activity-type-code-system.html#apple-health-kit-workout-activity-type-code-system-transition\">transition</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-activity-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitWorkoutActivityTypeValueSet",
+      "title" : "Apple HealthKit Workout Activity Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4b64fd4a-bcde-4866-b653-3302d78197e1",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 83,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "archery"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "bowling"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "fencing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "gymnastics"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "trackAndField"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "americanFootball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "australianFootball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "baseball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "basketball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "cricket"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "discSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "handball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "hockey"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "lacrosse"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "rugby"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "soccer"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "softball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "volleyball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "preparationAndRecovery"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "flexibility"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "cooldown"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "walking"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "running"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "wheelchairWalkPace"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "wheelchairRunPace"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "cycling"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "handCycling"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "coreTraining"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "elliptical"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "functionalStrengthTraining"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "traditionalStrengthTraining"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "crossTraining"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "mixedCardio"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "highIntensityIntervalTraining"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "jumpRope"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "stairClimbing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "stairs"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "stepTraining"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "fitnessGaming"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "barre"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "cardioDance"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "socialDance"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "yoga"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "mindAndBody"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "pilates"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "badminton"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "pickleball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "racquetball"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "squash"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "tableTennis"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "tennis"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "climbing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "equestrianSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "fishing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "golf"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "hiking"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "hunting"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "play"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "crossCountrySkiing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "curling"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "downhillSkiing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "snowSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "snowboarding"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "skatingSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "paddleSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "rowing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "sailing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "surfingSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "swimming"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "waterFitness"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "waterPolo"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "waterSports"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "boxing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "kickboxing"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "martialArts"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "taiChi"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "wrestling"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "other"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "dance",
+          "display" : "depreciated"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "danceInspiredTraining",
+          "display" : "depreciated"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "mixedMetabolicCardioTraining",
+          "display" : "depreciated"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "swimBikeRun"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-activity-type-code-system",
+          "code" : "transition"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-event-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html\">codesystem Apple HealthKit Workout Event Type Code System v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-pause\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-pause\">pause</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating that the workout has paused.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-resume\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-resume\">resume</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating that the workout has resumed.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-motionPaused\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-motionPaused\">motionPaused</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating that the system has automatically paused a workout session.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-motionResumed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-motionResumed\">motionResumed</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating that the system has automatically resumed a workout session.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-pauseOrResumeRequest\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-pauseOrResumeRequest\">pauseOrResumeRequest</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating that the user has requested a pause or resume.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-lap\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-lap\">lap</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating a lap.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-segment\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-segment\">segment</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating a period of time of interest during a workout.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system-marker\"> </a>\u00a0\u00a0<a href=\"CodeSystem-apple-health-kit-workout-event-type-code-system.html#apple-health-kit-workout-event-type-code-system-marker\">marker</a></td><td>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system</td><td>A constant indicating a point of interest during a workout session.</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/apple-health-kit-workout-event-type-value-set",
+      "version" : "1.0.0-ballot",
+      "name" : "AppleHealthKitWorkoutEventTypeValueSet",
+      "title" : "Apple HealthKit Workout Event Type Value Set",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9710f411-c31e-4e78-9db3-57b22b4f9335",
+        "timestamp" : "2024-12-18T11:21:14-06:00",
+        "total" : 8,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system|1.0.0-ballot"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "pause",
+          "display" : "A constant indicating that the workout has paused."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "resume",
+          "display" : "A constant indicating that the workout has resumed."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "motionPaused",
+          "display" : "A constant indicating that the system has automatically paused a workout session."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "motionResumed",
+          "display" : "A constant indicating that the system has automatically resumed a workout session."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "pauseOrResumeRequest",
+          "display" : "A constant indicating that the user has requested a pause or resume."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "lap",
+          "display" : "A constant indicating a lap."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "segment",
+          "display" : "A constant indicating a period of time of interest during a workout."
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-workout-event-type-code-system",
+          "code" : "marker",
+          "display" : "A constant indicating a point of interest during a workout session."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on:</p><ul><li>Loinc v2.78</li><li>SNOMED CT International edition 01-Aug 2024</li></ul></div><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-93831-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/93831-6/\">93831-6</a></td><td>http://loinc.org</td><td>Deep sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-93830-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/93830-8/\">93830-8</a></td><td>http://loinc.org</td><td>Light sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-93829-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/93829-0/\">93829-0</a></td><td>http://loinc.org</td><td>REM sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-93832-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/93832-4/\">93832-4</a></td><td>http://loinc.org</td><td>Sleep duration</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-258158006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/258158006\">258158006</a></td><td>http://snomed.info/sct</td><td>Sleep</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-code",
+      "version" : "1.0.0-ballot",
+      "name" : "PCDSleepObservationCode",
+      "title" : "Patient contributed data: sleep observation code",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:785856a9-4dca-4f97-ad2b-5767cb22edbc",
+        "timestamp" : "2024-12-18T11:21:15-06:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.78"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.78"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "93831-6",
+          "display" : "Deep sleep duration"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "93830-8",
+          "display" : "Light sleep duration"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "93829-0",
+          "display" : "REM sleep duration"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "93832-4",
+          "display" : "Sleep duration"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "258158006",
+          "display" : "Sleep"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-value",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Aug 2024</p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-248220008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/248220008\">248220008</a></td><td>http://snomed.info/sct</td><td>Asleep</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-248218005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/248218005\">248218005</a></td><td>http://snomed.info/sct</td><td>Awake</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-60984000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/60984000\">60984000</a></td><td>http://snomed.info/sct</td><td>Non-rapid eye movement sleep</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-89129007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/89129007\">89129007</a></td><td>http://snomed.info/sct</td><td>Rapid eye movement sleep</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-261665006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/phr/ValueSet/pcd-sleep-observation-value",
+      "version" : "1.0.0-ballot",
+      "name" : "PCDSleepStageValueCode",
+      "title" : "Patient contributed data: sleep stage value",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-12-18T11:20:50-06:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8705dd12-898d-4a77-b3f6-436ce59973ca",
+        "timestamp" : "2024-12-18T11:21:15-06:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248220008",
+          "display" : "Asleep"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "248218005",
+          "display" : "Awake"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "60984000",
+          "display" : "Non-rapid eye movement sleep"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "89129007",
+          "display" : "Rapid eye movement sleep"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  }]
+}

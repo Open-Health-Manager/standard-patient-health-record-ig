@@ -1,0 +1,104 @@
+{
+  "package": "hl7.fhir.uv.phr",
+  "version": "1.0.0-ballot",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [],
+  "profiles": {
+    "Bundle": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrBundle",
+        "title": "PhrBundle"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrComposition",
+        "title": "PhrComposition"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrDocumentReference",
+        "title": "PhrDocumentReference"
+      }
+    ],
+    "Media": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia",
+        "title": "PhrMedia"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrPatient",
+        "title": "PhrPatient"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance",
+        "title": "PhrProvenance"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://hl7.org/fhir/uv/phr/StructureDefinition/pcd-sleep-observation",
+        "title": "Patient contributed data: sleep observation"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Bundle.entry.resource.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "AppleHealthKitWorkoutActivity",
+      "AppleHealthKitWorkoutEvent.dateInterval"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

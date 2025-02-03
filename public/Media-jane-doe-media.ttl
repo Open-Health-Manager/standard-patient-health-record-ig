@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/phr/Media/jane-doe-media> a fhir:Media ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "jane-doe-media"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/phr/StructureDefinition/PhrMedia>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Media jane-doe-media</b></p><a name=\"jane-doe-media\"> </a><a name=\"hcjane-doe-media\"> </a><a name=\"jane-doe-media-en-US\"> </a><p><b>status</b>: Completed</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 257444003}\">Photograph</span></p><p><b>subject</b>: <a href=\"Patient-jane-doe.html\">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></p><p><b>created</b>: 2024-12-11 05:22:27+0000</p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"http://hospital.example.org/media/jane-doe-smartphone-photo.jpg\">http://hospital.example.org/media/jane-doe-smartphone-photo.jpg</a></td><td>Jane Doe Smartphone Photo</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:257444003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "257444003" ] ;
+       fhir:display [ fhir:v "Photograph" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/phr/Patient/jane-doe> ;
+     fhir:reference [ fhir:v "Patient/jane-doe" ]
+  ] ; # 
+  fhir:created [ fhir:v "2024-12-11T05:22:27.249Z"^^xsd:dateTime] ; # 
+  fhir:content [
+     fhir:contentType [ fhir:v "image/jpeg" ] ;
+     fhir:url [ fhir:v "http://hospital.example.org/media/jane-doe-smartphone-photo.jpg"^^xsd:anyURI ] ;
+     fhir:title [ fhir:v "Jane Doe Smartphone Photo" ]
+  ] . # 
+
+<http://hl7.org/fhir/uv/phr/Patient/jane-doe> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

@@ -3,16 +3,15 @@ Id:          pcd-sleep-observation
 Parent:      Observation
 Title:       "Patient contributed data: sleep observation"
 Description: "patient sleep logs recorded by device or app."
-
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-wg].valueCode = #pe
+* ^experimental = true
 * code from pcd-sleep-observation-code (required)
-
 * effective[x] 1..1
 * effective[x] only dateTime or Period
-
 * value[x] 1..1
 * value[x] MS
 * value[x] only CodeableConcept or Quantity
-* valueCodeableConcept from pcd-sleep-observation-value (required)
+// * valueCodeableConcept from pcd-sleep-observation-value
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,7 +20,7 @@ InstanceOf: PCDSleepObservation
 Description: "Example - pcd-sleep-observation stage"
 Usage: #example
 * subject.display = "Jane Smith"
-* subject.reference = "Patient/janesmith"
+* performer.display = "Jane Smith"
 * status = #final
 * code = http://snomed.info/sct#258158006 "Sleep, function (observable entity)"
 * effectivePeriod.start = "2022-10-07T22:57:00Z"
@@ -35,7 +34,7 @@ InstanceOf: PCDSleepObservation
 Description: "Example - pcd-sleep-observation duration"
 Usage: #example
 * subject.display = "Jane Smith"
-* subject.reference = "Patient/janesmith"
+* performer.display = "Jane Smith"
 * status = #final
 * code = http://loinc.org#93832-4	"Sleep duration"
 * effectiveDateTime = "2022-10-08T09:57:34.2112Z"

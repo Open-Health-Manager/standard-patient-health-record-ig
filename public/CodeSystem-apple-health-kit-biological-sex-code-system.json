@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "apple-health-kit-biological-sex-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem apple-health-kit-biological-sex-code-system</b></p><a name=\"apple-health-kit-biological-sex-code-system\"> </a><a name=\"hcapple-health-kit-biological-sex-code-system\"> </a><a name=\"apple-health-kit-biological-sex-code-system-en-US\"> </a><p>This case-insensitive code system <code>http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">notSet<a name=\"apple-health-kit-biological-sex-code-system-notSet\"> </a></td><td>A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type.</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"apple-health-kit-biological-sex-code-system-female\"> </a></td><td>A constant indicating that the user is female.</td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"apple-health-kit-biological-sex-code-system-male\"> </a></td><td>A constant indicating that the user is male.</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"apple-health-kit-biological-sex-code-system-other\"> </a></td><td>A constant indicating that the user is otherwise not categorized as either male or female.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pe"
+  }],
+  "url" : "http://hl7.org/fhir/uv/phr/CodeSystem/apple-health-kit-biological-sex-code-system",
+  "version" : "1.0.0-ballot",
+  "name" : "AppleHealthKitBiologicalSexCodeSystem",
+  "title" : "Apple HealthKit Biological Sex Code System",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-18T11:20:50-06:00",
+  "publisher" : "HL7 International / Patient Empowerment",
+  "contact" : [{
+    "name" : "HL7 International / Patient Empowerment",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/patientempowerment"
+    }]
+  }],
+  "description" : "Constants indicating the user’s sex.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "notSet",
+    "display" : "A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type."
+  },
+  {
+    "code" : "female",
+    "display" : "A constant indicating that the user is female."
+  },
+  {
+    "code" : "male",
+    "display" : "A constant indicating that the user is male."
+  },
+  {
+    "code" : "other",
+    "display" : "A constant indicating that the user is otherwise not categorized as either male or female."
+  }]
+}

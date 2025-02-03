@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="jane-doe-media-provenance"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/phr/StructureDefinition/PhrProvenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance jane-doe-media-provenance</b></p><a name="jane-doe-media-provenance"> </a><a name="hcjane-doe-media-provenance"> </a><a name="jane-doe-media-provenance-en-US"> </a><p>Provenance for <a href="Media-jane-doe-media.html">Media: status = completed; type = Photograph; created[x] = 2024-12-11 05:22:27+0000</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2024-12-11 06:00:00+0000</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td><td><a href="Patient-jane-doe.html">Jane Doe (official) Female, DoB: 1985-05-15 ( http://hospital.example.org/patient#12345)</a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Media/jane-doe-media"/>
+  </target>
+  <recorded value="2024-12-11T06:00:00Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+        <display value="Author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Patient/jane-doe"/>
+    </who>
+    <onBehalfOf>
+      <reference value="Patient/jane-doe"/>
+    </onBehalfOf>
+  </agent>
+  <signature>
+    <type>
+      <system value="urn:iso-astm:E1762-95:2013"/>
+      <code value="1.2.840.10065.1.12.1.1"/>
+      <display value="Author's Signature"/>
+    </type>
+    <when value="2024-12-11T06:00:00Z"/>
+    <who>
+      <reference value="Patient/jane-doe"/>
+    </who>
+    <data value="c2lnbmF0dXJlCg=="/>
+  </signature>
+</Provenance>

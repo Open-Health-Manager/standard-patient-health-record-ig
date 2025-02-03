@@ -1,0 +1,54 @@
+{
+    "resourceType": "Procedure",
+    "id": "acupuncture-procedure-1234",
+    "subject": {
+      "reference": "Patient/example",
+      "display": "John Doe"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "386637004",
+          "display": "Acupuncture (procedure)"
+        }
+      ],
+      "text": "Acupuncture therapy"
+    },
+    "performedDateTime": "2024-01-16",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/example",
+          "display": "Dr. Jane Smith"
+        },
+        "role": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "223366", 
+              "display": "Acupuncturist"
+            }
+          ]
+        }
+      }
+    ],
+    "location": {
+      "reference": "Location/1",
+      "display": "Acupuncture Clinic"
+    },
+    "reasonCode": [
+      {
+        "text": "Chronic back pain"
+      }
+    ],
+    "outcome": {
+      "text": "Patient reported reduced pain levels"
+    },
+    "note": [
+      {
+        "text": "Patient tolerated procedure well without any complications."
+      }
+    ]
+  }
